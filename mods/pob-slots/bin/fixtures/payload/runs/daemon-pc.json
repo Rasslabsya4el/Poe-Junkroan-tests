@@ -1,0 +1,2 @@
+{"host": "pc", "pid": 7000, "last_tick": "2026-10-11T11:59:50+00:00", "slots_total": 7, "slots_in_use": 2, "reserved": 1, "reserved_until": "2026-10-11T13:00:00+00:00",
+ "waits": {"j-20261011-1005-b002": {"kind": "after", "text": "waits for snap-run", "host_fixed": false}, "j-x": {"kind": "k"}}}

@@ -1,0 +1,182 @@
+[
+ {
+  "ok": true,
+  "slug": "bleed_bow",
+  "seed": 1,
+  "ratio_lane": 1.565,
+  "audit": [],
+  "audit_errors": 0,
+  "fixed_point_gain": 0.0,
+  "stages": [{"name": "final", "violation": 0.0}]
+ },
+ {
+  "ok": true,
+  "slug": "bleed_bow",
+  "seed": 2,
+  "ratio_lane": 1.414,
+  "audit": [],
+  "audit_errors": 0,
+  "fixed_point_gain": 0.0,
+  "stages": [{"name": "final", "violation": 0.0}]
+ },
+ {
+  "ok": true,
+  "slug": "bleed_bow",
+  "seed": 3,
+  "ratio_lane": 1.403,
+  "audit": [],
+  "audit_errors": 0,
+  "fixed_point_gain": 0.0,
+  "stages": [{"name": "final", "violation": 0.0}]
+ },
+ {
+  "ok": true,
+  "slug": "burning_arrow_snipe",
+  "seed": 1,
+  "ratio_lane": 1.366,
+  "audit": ["[error] fixed point: the loop was not at a fixed point: one more pass gained +2.8%"],
+  "audit_errors": 1,
+  "fixed_point_gain": 0.028,
+  "stages": [{"name": "fixed point check", "violation": 0.0}]
+ },
+ {
+  "ok": true,
+  "slug": "burning_arrow_snipe",
+  "seed": 2,
+  "ratio_lane": 1.797,
+  "audit": [],
+  "audit_errors": 0,
+  "fixed_point_gain": 0.0,
+  "stages": [{"name": "final", "violation": 0.0}]
+ },
+ {
+  "ok": true,
+  "slug": "burning_arrow_snipe",
+  "seed": 3,
+  "ratio_lane": 1.838,
+  "audit": [],
+  "audit_errors": 0,
+  "fixed_point_gain": 0.0,
+  "stages": [{"name": "final", "violation": 0.0}]
+ },
+ {
+  "ok": true,
+  "slug": "cold_dot",
+  "seed": 1,
+  "ratio_lane": 1.124,
+  "audit": [],
+  "audit_errors": 0,
+  "fixed_point_gain": 0.0,
+  "stages": [{"name": "final", "violation": 0.0}]
+ },
+ {
+  "ok": true,
+  "slug": "cold_dot",
+  "seed": 2,
+  "ratio_lane": 0.971,
+  "audit": [],
+  "audit_errors": 0,
+  "fixed_point_gain": 0.0,
+  "stages": [{"name": "final", "violation": 0.0}]
+ },
+ {
+  "ok": true,
+  "slug": "cold_dot",
+  "seed": 3,
+  "ratio_lane": 1.311,
+  "audit": [],
+  "audit_errors": 0,
+  "fixed_point_gain": 0.0,
+  "stages": [{"name": "final", "violation": 0.0}]
+ },
+ {
+  "ok": true,
+  "slug": "impale_ballista",
+  "seed": 1,
+  "ratio_lane": 1.194,
+  "audit": ["[error] fixed point: the loop was not at a fixed point: one more pass gained +2.3%"],
+  "audit_errors": 1,
+  "fixed_point_gain": 0.023,
+  "stages": [{"name": "fixed point check", "violation": 0.0}]
+ },
+ {
+  "ok": true,
+  "slug": "impale_ballista",
+  "seed": 2,
+  "ratio_lane": 0.924,
+  "audit": [],
+  "audit_errors": 0,
+  "fixed_point_gain": 0.0,
+  "stages": [{"name": "final", "violation": 0.0}]
+ },
+ {
+  "ok": true,
+  "slug": "impale_ballista",
+  "seed": 3,
+  "ratio_lane": 0.801,
+  "audit": [],
+  "audit_errors": 0,
+  "fixed_point_gain": 0.0,
+  "stages": [{"name": "final", "violation": 0.0}]
+ },
+ {
+  "ok": true,
+  "slug": "stormbrand",
+  "seed": 1,
+  "ratio_lane": 1.694,
+  "audit": [],
+  "audit_errors": 0,
+  "fixed_point_gain": 0.0,
+  "stages": [{"name": "final", "violation": 0.0}]
+ },
+ {
+  "ok": true,
+  "slug": "stormbrand",
+  "seed": 2,
+  "ratio_lane": 1.741,
+  "audit": [],
+  "audit_errors": 0,
+  "fixed_point_gain": 0.0,
+  "stages": [{"name": "final", "violation": 0.0}]
+ },
+ {
+  "ok": true,
+  "slug": "stormbrand",
+  "seed": 3,
+  "ratio_lane": 1.242,
+  "audit": [],
+  "audit_errors": 0,
+  "fixed_point_gain": 0.0,
+  "stages": [{"name": "final", "violation": 0.0}]
+ },
+ {
+  "ok": true,
+  "slug": "summon_raging_spirits",
+  "seed": 1,
+  "ratio_lane": 1.825,
+  "audit": [],
+  "audit_errors": 0,
+  "fixed_point_gain": 0.0,
+  "stages": [{"name": "final", "violation": 0.0}]
+ },
+ {
+  "ok": true,
+  "slug": "summon_raging_spirits",
+  "seed": 2,
+  "ratio_lane": 1.565,
+  "audit": [],
+  "audit_errors": 0,
+  "fixed_point_gain": 0.0,
+  "stages": [{"name": "final", "violation": 0.0}]
+ },
+ {
+  "ok": true,
+  "slug": "summon_raging_spirits",
+  "seed": 3,
+  "ratio_lane": 1.589,
+  "audit": ["[error] fixed point: the loop was not at a fixed point: one more pass gained +1.4%"],
+  "audit_errors": 1,
+  "fixed_point_gain": 0.014,
+  "stages": [{"name": "fixed point check", "violation": 0.0}]
+ }
+]

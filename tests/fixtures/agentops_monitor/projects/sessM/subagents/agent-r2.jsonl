@@ -1,0 +1,3 @@
+{"type": "user", "message": {"role": "user", "content": "You implement #52 monitor: write tests"}, "timestamp": "2026-09-26T10:02:30Z"}
+{"type": "assistant", "message": {"id": "msg_r2_1", "model": "claude-opus-5", "usage": {"input_tokens": 1000, "cache_creation_input_tokens": 0, "cache_read_input_tokens": 0, "output_tokens": 100}}, "timestamp": "2026-09-26T10:03:30Z"}
+{"type": "assistant", "message": {"id": "msg_r2_2", "model": "claude-opus-5", "usage": {"input_tokens": 400, "cache_creation_input_tokens": 0, "cache_read_input_tokens": 600, "output_tokens": 60}}, "timestamp": "2026-09-26T10:05:30Z"}

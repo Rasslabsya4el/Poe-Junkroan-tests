@@ -1,0 +1,482 @@
+# Scaling vectors (derived from PoB's mod parser)
+
+477 vectors over 4838 sources. `per:X` = rewards scale with X; `cond:X` = rewards need condition X.
+Payoff counts by family; top payoff sources named. Use this to propose skeletons; PoB verifies.
+
+- **cond:UsingFlask** (206 payoffs: ascendancy 4, notable 5, unique 197; 0 direct enablers): Atziri's Promise, Amethyst Flask; Blightwell, Shield Crab Talisman; Blood of the Karui, Sanctified Life Flask; Bottled Faith, Sulphur Flask; Cinderswallow Urn, Silver Flask; Coralito's Signature, Diamond Flask
+- **cond:{Hand}Attack** (96 payoffs: notable 1, unique 95; 0 direct enablers): Actum, Butcher Axe; Aurumvorax, Basket Rapier; Bloodseeker, Hellion's Paw; Brain Rattler, Meatgrinder; Brutus' Lead Sprinkler, Ritual Sceptre; Cane of Kulemak, Serpentine Staff
+- **cond:CriticalStrike** (93 payoffs: ascendancy 3, keystone 1, mastery 42, notable 13, unique 34; 0 direct enablers): Abberath's Horn, Goat's Horn; Atziri's Acuity, Vaal Gauntlets; Coralito's Signature, Diamond Flask; Death's Hand, Karui Sceptre; Entropic Devastation, Assassin's Mitts; Goredrill, Skinning Knife
+- **cond:LowLife** (77 payoffs: ascendancy 5, keystone 1, mastery 8, notable 2, unique 61; 0 direct enablers): Ambu's Charge, Crusader Chainmail; Araku Tiki, Coral Amulet; Daresso's Courage, Baroque Round Shield; Deidbell, Gilded Sallet; Deidbellow, Gilded Sallet; Dreadbeak, Rusted Sword
+- **per:PowerCharge** (72 payoffs: ascendancy 5, notable 4, unique 63; 0 direct enablers): Auxium, Crystal Belt; Badge of the Brotherhood, Turquoise Amulet; Cane of Kulemak, Serpentine Staff; Cane of Unravelling, Ezomyte Staff; Fenumus' Toxins, Necromancer Circlet; Inya's Epiphany, Arcanist Slippers
+- **per:FrenzyCharge** (70 payoffs: ascendancy 1, mastery 2, notable 1, unique 66; 0 direct enablers): Badge of the Brotherhood, Turquoise Amulet; Blood of Summer, Rusted Sword; Cane of Kulemak, Serpentine Staff; Darkray Vectors, Dragonscale Boots; Hopeshredder, Ranger Bow; Hyaon's Fury, Legion Sword
+- **per:Life** (63 payoffs: ascendancy 2, mastery 26, notable 6, unique 29; 403 direct enablers): Balefire, Opal Sceptre; Blood Sacrifice, Crimson Jewel; Cinderswallow Urn, Silver Flask; Death Rush, Amethyst Ring; Extractor Mentis, Agate Amulet; Forbidden Taste, Quartz Flask
+- **cond:Cursed** (56 payoffs: ascendancy 1, mastery 30, notable 9, unique 16; 0 direct enablers): Asenath's Gentle Touch, Silk Gloves; Atziri's Mirror, Golden Buckler; Chalice of Horrors, War Buckler; Cospri's Will, Assassin's Garb; Gluttony, Leather Belt; Rotblood Promise, Unset Ring
+- **per:EnduranceCharge** (55 payoffs: ascendancy 6, mastery 7, notable 1, unique 41; 0 direct enablers): Cane of Kulemak, Serpentine Staff; Daresso's Defiance, Full Dragonscale; Kaom's Way, Coral Ring; Nebuloch, Nightmare Mace; Paradoxica, Vaal Rapier; Precursor's Emblem, Prismatic Ring
+- **cond:KilledRecently** (53 payoffs: ascendancy 4, mastery 9, notable 6, unique 34; 0 direct enablers): Cane of Kulemak, Serpentine Staff; Death Rush, Amethyst Ring; Divinarius, Imperial Skean; Edge of Madness, Etched Greatsword; Extractor Mentis, Agate Amulet; Gifts from Above, Diamond Ring
+- **cond:DualWielding** (52 payoffs: mastery 12, notable 28, unique 12; 0 direct enablers): Mark of the Doubting Knight, Platinum Kris; Prismatic Eclipse, Twilight Blade; Replica Ungil's Gauche, Boot Knife; Replica Wings of Entropy, Ezomyte Axe; Rigwald's Command, Midnight Blade; Rigwald's Savagery, Royal Axe
+- **cond:Ignited** (51 payoffs: mastery 8, unique 43; 0 direct enablers): Abberath's Horn, Goat's Horn; Berek's Pass, Two-Stone Ring; Bloodboil, Coral Ring; Brutus' Lead Sprinkler, Ritual Sceptre; Chain of Endurance, Chain Belt; Cinderswallow Urn, Silver Flask
+- **cond:UsingStaff** (50 payoffs: mastery 25, notable 11, unique 14; 0 direct enablers): Duskdawn, Maelstrom Staff; Hegemony's Era, Judgement Staff; Martyr of Innocence, Highborn Staff; Replica Blood Thorn, Gnarled Branch; Replica Duskdawn, Maelstrom Staff; The Blood Thorn, Gnarled Branch
+- **per:Int** (48 payoffs: ascendancy 1, mastery 12, notable 1, unique 34; 222 direct enablers): Curtain Call, Plague Mask; Dendrobate, Sentinel Jacket; Fractal Thoughts, Vaal Mask; Hand of Thought and Motion, Imperial Claw; Hand of Wisdom and Action, Imperial Claw; Hyrri's Demise, Sharktooth Arrow Quiver
+- **per:Str** (46 payoffs: ascendancy 2, mastery 5, notable 2, unique 37; 215 direct enablers): Abberath's Hooves, Goathide Boots; Brutus' Lead Sprinkler, Ritual Sceptre; Doon Cuebiyari, Vaal Sceptre; Geofri's Sanctuary, Elegant Ringmail; Hyrri's Demise, Sharktooth Arrow Quiver; Mask of the Tribunal, Magistrate Crown
+- **cond:UsingShield** (43 payoffs: ascendancy 2, mastery 15, notable 25, unique 1; 0 direct enablers): Seething Fury, Viridian Jewel; Aggressive Bastion; Arcane Guarding; Strike Leader; Retaliation; Deflection
+- **cond:BlockedRecently** (41 payoffs: ascendancy 4, mastery 19, notable 4, unique 14; 0 direct enablers): Martyr of Innocence, Highborn Staff; Mistwall, Lacquered Buckler; Replica Advancing Fortress, Gut Ripper; Replica Mistwall, Lacquered Buckler; Replica Ungil's Gauche, Boot Knife; The Anticipation, Ezomyte Tower Shield
+- **cond:Bleeding** (37 payoffs: mastery 9, notable 4, unique 24; 0 direct enablers): Chain of Endurance, Chain Belt; Farrul's Pounce, Hydrascale Gauntlets; Flesh-Eater, Dream Mace; Gorebreaker, Spiked Club; Goredrill, Skinning Knife; Haemophilia, Serpentscale Gauntlets
+- **cond:BeenHitRecently** (36 payoffs: mastery 21, notable 3, unique 12; 0 direct enablers): Ambu's Charge, Crusader Chainmail; Binds of Bloody Vengeance, Vanguard Belt; Doppelganger Guise, Sadist Garb; Grelwood Shank, Eternal Sword; Kintsugi, Exquisite Leather; Nebuloch, Nightmare Mace
+- **per:Dex** (36 payoffs: mastery 3, notable 1, unique 32; 223 direct enablers): Briskwrap, Sun Leather; Curtain Call, Plague Mask; Dendrobate, Sentinel Jacket; Fractal Thoughts, Vaal Mask; Garukhan's Flight, Stealth Boots; Hand of Thought and Motion, Imperial Claw
+- **per:Level** (35 payoffs: ascendancy 2, mastery 6, notable 1, unique 26; 0 direct enablers): Edge of Madness, Etched Greatsword; Kikazaru, Topaz Ring; Nevalius Inheritance, Cloth Belt; Oni-Goroshi, Charan's Sword; Replica Harvest, Jasper Chopper; The Dark Seer, Shadow Sceptre
+- **cond:CritRecently** (34 payoffs: mastery 10, notable 7, unique 17; 0 direct enablers): Atziri's Acuity, Vaal Gauntlets; Bitterbind Point, Titanium Spirit Shield; Duskdawn, Maelstrom Staff; Gifts from Above, Diamond Ring; Qotra's Regulator, Sovereign Spiked Shield; Replica Atziri's Acuity, Vaal Gauntlets
+- **cond:Chilled** (33 payoffs: ascendancy 1, notable 7, unique 25; 0 direct enablers): Chain of Endurance, Chain Belt; Cospri's Malice, Jewelled Foil; Dyadian Dawn, Heavy Belt; Dyadus, Infernal Axe; Expedition's End, Sentinel Jacket; Frostbreath, Ornate Mace
+- **cond:FullLife** (32 payoffs: mastery 11, notable 5, unique 16; 0 direct enablers): Daresso's Salute, Citrine Amulet; Fox's Fortune, Wild Leather; Foxshade, Wild Leather; Ondar's Clasp, Wrapped Mitts; Reaper's Pursuit, Shadow Axe; Shavronne's Gambit, Scholar Boots
+- **cond:Effective** (32 payoffs: mastery 21, notable 4, unique 7; 0 direct enablers): Starlight Chalice, Iron Flask; The Balance of Terror, Cobalt Jewel; The Grey Wind, Spectral Axe; Heraldry; Master of Fire; Link Mastery: Enemies near your Linked targets have Fire, Cold and Lightni
+- **cond:?** (29 payoffs: ascendancy 13, mastery 5, notable 5, unique 6; 0 direct enablers): Conqueror's Potency, Cobalt Jewel; Nevalius Inheritance, Cloth Belt; Survival Secrets, Cobalt Jewel; That Which Was Taken, Crimson Jewel; The Tides of Time, Vanguard Belt; Perfected Formula
+- **cond:UsingMace** (26 payoffs: ascendancy 1, mastery 25; 0 direct enablers): Mace Mastery: All Damage with Maces and Sceptres inflicts Chill; Mace Mastery: Crush Enemies on hit with Maces and Sceptres; None Weapon Master
+- **cond:Frozen** (25 payoffs: unique 25; 0 direct enablers): Berek's Grip, Two-Stone Ring; Berek's Pass, Two-Stone Ring; Cameria's Avarice, Gavel; Cameria's Maul, Gavel; Chain of Endurance, Chain Belt; Fate of the Vaal, Gemstone Sword
+- **cond:AffectedByGloriousMadness** (24 payoffs: ascendancy 2, unique 22; 0 direct enablers): Beacon of Madness, Two-Toned Boots; None You're the crazy one!
+- **cond:Shocked** (24 payoffs: notable 4, unique 20; 0 direct enablers): Berek's Grip, Two-Stone Ring; Chain of Endurance, Chain Belt; Doryani's Fist, Vaal Gauntlets; Fate of the Vaal, Gemstone Sword; Maligaro's Restraint, Chain Belt; Replica Windripper, Imperial Bow
+- **cond:RareOrUnique** (23 payoffs: ascendancy 3, mastery 17, notable 2, unique 1; 0 direct enablers): Medved's Challenge, Runic Gauntlets; Brutal Infamy; Arcane Heroism; Two Hand Mastery: 40% increased Damage with Hits against Rare and Unique Enemi; Critical Mastery: +25% to Critical Strike Multiplier against Unique Enemies; Accuracy Mastery: 40% more Accuracy Rating against Unique Enemies
+- **cond:Phasing** (22 payoffs: mastery 3, notable 2, unique 17; 0 direct enablers): Allure, Vaal Claw; Ascent From Flesh, Chain Belt; Mistwall, Lacquered Buckler; Replica Mistwall, Lacquered Buckler; Replica Voidwalker, Murder Boots; That Which Was Taken, Crimson Jewel
+- **cond:Focused** (22 payoffs: unique 22; 0 direct enablers): Cane of Kulemak, Serpentine Staff; Hyperboreus, Leather Belt; Paradoxica, Vaal Rapier; Replica Paradoxica, Vaal Rapier; The Devouring Diadem, Necromancer Circlet; The Queen's Hunger, Vaal Regalia
+- **cond:Leeching** (22 payoffs: ascendancy 4, mastery 9, notable 5, unique 4; 0 direct enablers): Carnage Heart, Onyx Amulet; Offering to the Serpent, Legion Gloves; That Which Was Taken, Crimson Jewel; Fuel the Fight; Feed the Fury; Adrenaline
+- **cond:Stationary** (22 payoffs: ascendancy 1, keystone 1, mastery 5, notable 7, unique 8; 0 direct enablers): Gorgon's Gaze, Regicide Mask; Grelwood Shank, Eternal Sword; Replica Red Trail, Titan Greaves; The Brine Crown, Prophet Crown; The Red Trail, Titan Greaves; Mindfulness
+- **cond:AtCloseRange** (21 payoffs: mastery 16, notable 1, unique 4; 0 direct enablers): Arborix, Assassin Bow; Chin Sol, Assassin Bow; Righteous Fury; Attack Mastery: 5% increased Attack Speed per Enemy in Close Range; Accuracy Mastery: 50% more Accuracy Rating at Close Range
+- **per:ElderItem** (21 payoffs: unique 21; 0 direct enablers): Blasphemer's Grasp, Assassin's Mitts; Bound by Destiny, Prismatic Jewel; Replica Eternity Shroud, Blood Raiment; Venarius' Astrolabe, Astrolabe Amulet
+- **per:EnergyShield** (21 payoffs: ascendancy 1, mastery 5, notable 3, unique 12; 215 direct enablers): Blood Sacrifice, Crimson Jewel; Cinderswallow Urn, Silver Flask; Ephemeral Edge, Dusk Blade; Mask of the Spirit Drinker, Magistrate Crown; Mask of the Stitched Demon, Magistrate Crown; Oni-Goroshi, Charan's Sword
+- **cond:NeverCrit** (20 payoffs: unique 20; 0 direct enablers): Stormblood, Sapphire Flask; Stormblood, Topaz Flask
+- **per:Devotion** (19 payoffs: unique 19; 0 direct enablers): Militant Faith, Timeless Jewel
+- **per:Mana** (18 payoffs: ascendancy 2, notable 4, unique 12; 179 direct enablers): Balefire, Opal Sceptre; Blood Sacrifice, Crimson Jewel; Cinderswallow Urn, Silver Flask; Mind of the Council, Harlequin Mask; Omeyocan, Carnal Boots; That Which Was Taken, Crimson Jewel
+- **cond:Blinded** (18 payoffs: ascendancy 1, mastery 2, notable 1, unique 14; 0 direct enablers): Corona Solaris, Crystal Wand; Eclipse Solaris, Faun's Horn; Farrul's Bite, Harlequin Mask; Kongming's Stratagem, Ancient Spirit Shield; Maloney's Nightfall, Vile Arrow Quiver; Retaliation Charm, Citrine Amulet
+- **per:FireResistTotal** (18 payoffs: mastery 8, unique 10; 0 direct enablers): The Wise Oak, Bismuth Flask; Fire Mastery: Regenerate 1 Life per second for each 1% Uncapped Fire Resis
+- **per:FrenzyCharges** (17 payoffs: ascendancy 4, mastery 3, unique 10; 0 direct enablers): Ahn's Might, Midnight Blade; Daresso's Passion, Estoc; Precursor's Emblem, Prismatic Ring; Snakebite, Assassin's Mitts; The Gluttonous Tide, Citadel Bow; Touch of Anguish, Imperial Claw
+- **cond:OffHandAttack** (17 payoffs: mastery 8, notable 2, unique 7; 0 direct enablers): Replica Wings of Entropy, Ezomyte Axe; Seething Fury, Viridian Jewel; Tecrod's Gaze, Murderous Eye Jewel; Ambidexterity; Quick and Deadly; Claw Mastery: Gain 25 Life per Enemy Hit with Main Hand Claw Attacks; Gain
+- **per:EnduranceCharges** (16 payoffs: ascendancy 2, mastery 3, notable 1, unique 10; 0 direct enablers): Ahn's Heritage, Colossal Tower Shield; Precursor's Emblem, Prismatic Ring; Veruso's Battering Rams, Titan Gauntlets; Wyrmsign, Wyrmscale Gauntlets; Enduring Ward; Charge Mastery: Cannot be Ignited while at maximum Endurance Charges
+- **cond:StarsAreAligned** (16 payoffs: unique 16; 0 direct enablers): Venarius' Astrolabe, Astrolabe Amulet
+- **cond:FullEnergyShield** (15 payoffs: ascendancy 2, mastery 6, notable 3, unique 4; 0 direct enablers): Brittle Barrier, Cobalt Jewel; Nomic's Storm, Strapped Boots; That Which Was Taken, Crimson Jewel; Light Eater; Thaumophage; Void Barrier
+- **per:GrandSpectrum** (15 payoffs: unique 15; 0 direct enablers): Grand Spectrum, Cobalt Jewel; Grand Spectrum, Crimson Jewel; Grand Spectrum, Viridian Jewel
+- **cond:TwoHighestAttributesEqual** (15 payoffs: unique 15; 0 direct enablers): Leadership's Price, Onyx Amulet
+- **per:LifeReserved** (15 payoffs: mastery 8, unique 7; 0 direct enablers): Malachai's Awakening, Iron Mask; The Ivory Tower, Saint's Hauberk; Reservation Mastery: +1% to all maximum Elemental Resistances if you have Reserve
+- **cond:MainHandAttack** (14 payoffs: mastery 8, notable 2, unique 4; 0 direct enablers): Replica Wings of Entropy, Ezomyte Axe; Tecrod's Gaze, Murderous Eye Jewel; Ambidexterity; Quick and Deadly; Claw Mastery: Gain 25 Life per Enemy Hit with Main Hand Claw Attacks; Gain; Two Hand Mastery: 30% increased Armour and Evasion Rating if your Main Hand We
+- **cond:AffectedByArcaneSurge** (14 payoffs: ascendancy 8, unique 6; 0 direct enablers): That Which Was Taken, Crimson Jewel; None Illuminated Devotion
+- **cond:HaveBestialMinion** (14 payoffs: unique 14; 0 direct enablers): Yriel's Fostering, Exquisite Leather
+- **per:AllocatedLifeMastery** (14 payoffs: mastery 14; 0 direct enablers): Life Mastery: 10% more Maximum Life if you have at least 6 Life Masteries 
+- **cond:UsedWarcryRecently** (13 payoffs: ascendancy 1, notable 4, unique 8; 0 direct enablers): Al Dhih, Timeworn Claw; Brinerot Flag, Tarnished Spirit Shield; Debeon's Dirge, Despot Axe; Deidbellow, Gilded Sallet; Mutewind Pennant, Enameled Buckler; Haunting Shout
+- **per:PoisonStack** (13 payoffs: mastery 8, unique 5; 0 direct enablers): Apep's Slumber, Vaal Spirit Shield; Temptation Step, Shagreen Boots; The Golden Rule, Viridian Jewel; Poison Mastery: Recover 3% of Life on Killing a Poisoned Enemy; Dagger Mastery: 8% more Damage with Hits and Ailments against Enemies affect
+- **cond:SoulGainPrevention** (13 payoffs: unique 13; 0 direct enablers): Bitterbind Point, Titanium Spirit Shield; Hateforge, Ancient Gauntlets; The Devouring Diadem, Necromancer Circlet; The Queen's Hunger, Vaal Regalia
+- **cond:ConsumedCorpseRecently** (13 payoffs: ascendancy 4, notable 2, unique 7; 0 direct enablers): Corpsewalker, Carnal Boots; Soulwrest, Ezomyte Staff; The Devouring Diadem, Necromancer Circlet; The Queen's Hunger, Vaal Regalia; Undertaker; None Necromancer
+- **cond:Burning** (13 payoffs: mastery 8, notable 1, unique 4; 0 direct enablers): Glitterdisc, Burnished Spiked Shield; Oro's Sacrifice, Infernal Sword; That Which Was Taken, Crimson Jewel; Xoph's Inception, Citadel Bow; Wrapped in Flame; Fire Mastery: Burning Enemies you kill have a 3% chance to Explode, dealin
+- **per:NearbyEnemies** (13 payoffs: ascendancy 1, mastery 10, notable 2; 0 direct enablers): Assured Strike; Attack Mastery: 5% increased Attack Speed per Enemy in Close Range; None Overwhelm
+- **per:PowerCharges** (12 payoffs: ascendancy 2, mastery 3, notable 1, unique 6; 0 direct enablers): Ahn's Contempt, Praetor Crown; Precursor's Emblem, Prismatic Ring; That Which Was Taken, Crimson Jewel; Powerful Ward; Charge Mastery: Cannot be Shocked while at maximum Power Charges; None The King's Contempt
+- **cond:Poisoned** (12 payoffs: notable 1, unique 11; 0 direct enablers): Apep's Slumber, Vaal Spirit Shield; Apep's Supremacy, Vaal Spirit Shield; Chain of Endurance, Chain Belt; Icefang Orbit, Iron Ring; Inextricable Fate, Fugitive Boots; Replica Red Trail, Titan Greaves
+- **cond:LifeRegenBurstFull** (12 payoffs: ascendancy 2, mastery 6, notable 2, unique 2; 0 direct enablers): Bound by Destiny, Prismatic Jewel; That Which Was Taken, Crimson Jewel; Surging Vitality; Surge of Vigour; Evasion and Energy Shield Mastery: Every 4 seconds, Regenerate Energy Shield equal to 1% of Eva; Armour and Evasion Mastery: Every 4 seconds, Regenerate Life equal to 1% of Armour and E
+- **cond:LifeRegenBurstAvg** (12 payoffs: ascendancy 2, mastery 6, notable 2, unique 2; 0 direct enablers): Bound by Destiny, Prismatic Jewel; That Which Was Taken, Crimson Jewel; Surging Vitality; Surge of Vigour; Evasion and Energy Shield Mastery: Every 4 seconds, Regenerate Energy Shield equal to 1% of Eva; Armour and Evasion Mastery: Every 4 seconds, Regenerate Life equal to 1% of Armour and E
+- **cond:HaveEnergyShield** (12 payoffs: ascendancy 2, mastery 5, unique 5; 0 direct enablers): Broken Faith, Archon Kite Shield; Emperor's Vigilance, Steel Kite Shield; Evasion and Energy Shield Mastery: 30% increased Evasion Rating while you have Energy Shield; Chaos Mastery: Deal 10% more Chaos Damage to enemies which have Energy Shie; None Occultist; None Vile Bastion
+- **cond:AffectedByMalevolence** (12 payoffs: unique 12; 0 direct enablers): Sublime Vision, Prismatic Jewel; Watcher's Eye, Prismatic Jewel
+- **cond:ArmourMax** (12 payoffs: mastery 10, notable 2; 0 direct enablers): Dragon Hunter; Armour Mastery: 20% chance to Defend with 200% of Armour
+- **cond:ArmourAvg** (12 payoffs: mastery 10, notable 2; 0 direct enablers): Dragon Hunter; Armour Mastery: 20% chance to Defend with 200% of Armour
+- **cond:SuppressedRecently** (12 payoffs: mastery 12; 0 direct enablers): Spell Suppression Mastery: Inflict Fire, Cold and Lightning Exposure on Enemies when yo; Spell Suppression Mastery: You have Phasing if you have Suppressed Spell Damage Recentl
+- **per:HunterItem** (11 payoffs: unique 11; 0 direct enablers): Bound by Destiny, Prismatic Jewel; Venarius' Astrolabe, Astrolabe Amulet
+- **per:BlockChance** (11 payoffs: mastery 4, notable 1, unique 6; 66 direct enablers): Cybil's Paw, Thresher Claw; Duskdawn, Maelstrom Staff; Light of Lunaris, Jingling Spirit Shield; Replica Duskdawn, Maelstrom Staff; That Which Was Taken, Crimson Jewel; Confident Combatant
+- **per:Evasion** (11 payoffs: mastery 8, unique 3; 146 direct enablers): Dreamfeather, Eternal Sword; Queen of the Forest, Destiny Leather; The Queen's Hunger, Vaal Regalia; Evasion and Energy Shield Mastery: Every 4 seconds, Regenerate Energy Shield equal to 1% of Eva; Armour and Evasion Mastery: Every 4 seconds, Regenerate Life equal to 1% of Armour and E
+- **per:CorruptedItem** (11 payoffs: ascendancy 2, unique 9; 0 direct enablers): Hungry Abyss, Viridian Jewel; Shadowstitch, Sacrificial Garb; Vivinsect, Unset Ring; Voll's Vision, Praetor Crown; None Corruption's Embrace
+- **per:RageEffect** (11 payoffs: ascendancy 2, mastery 4, notable 1, unique 4; 1 direct enablers): Kaom's Primacy, Karui Chopper; Rigwald's Command, Midnight Blade; The Grey Wind, Spectral Axe; Vengeance; Rage Mastery: Every Rage also grants 1% increased Stun Threshold; None Crave the Slaughter
+- **per:ShaperItem** (10 payoffs: unique 10; 0 direct enablers): Bound by Destiny, Prismatic Jewel; The Eternity Shroud, Blood Raiment; Venarius' Astrolabe, Astrolabe Amulet
+- **per:EnergyShieldOnWeapon 2** (10 payoffs: mastery 5, notable 1, unique 4; 0 direct enablers): Cerberus Limb, Blood Sceptre; Seething Fury, Viridian Jewel; Gladiatorial Combat; Shield Mastery: +1% to Critical Strike Multiplier per 10 Maximum Energy Shie
+- **per:ManaReserved** (10 payoffs: mastery 8, unique 2; 0 direct enablers): Clear Mind, Cobalt Jewel; Memory Vault, Praetor Crown; Reservation Mastery: +1% to all maximum Elemental Resistances if you have Reserve
+- **cond:averageRepeat|alwaysFinalRepeat** (10 payoffs: ascendancy 1, mastery 8, unique 1; 0 direct enablers): Lioneye's Glare, Imperial Bow; Caster Mastery: Final Repeat of Spells has 40% increased Area of Effect; None Fatal Flourish
+- **cond:AffectedByClarity** (10 payoffs: unique 10; 0 direct enablers): Sublime Vision, Prismatic Jewel; Watcher's Eye, Prismatic Jewel
+- **per:LightningResistTotal** (10 payoffs: unique 10; 0 direct enablers): The Wise Oak, Bismuth Flask
+- **per:ColdResistTotal** (10 payoffs: unique 10; 0 direct enablers): The Wise Oak, Bismuth Flask
+- **cond:UsingWand** (10 payoffs: mastery 8, notable 2; 0 direct enablers): Wandslinger; Explosive Force; Wand Mastery: Attacks have 100% Arcane Might while wielding a Wand
+- **per:RedSocketInWeapon 1** (10 payoffs: mastery 10; 0 direct enablers): Staff Mastery: 12% increased maximum Life and Mana if your equipped Staff h
+- **per:BlueSocketInWeapon 1** (10 payoffs: mastery 10; 0 direct enablers): Staff Mastery: 12% increased maximum Life and Mana if your equipped Staff h
+- **cond:StunnedRecently** (10 payoffs: mastery 10; 0 direct enablers): Stun Mastery: Hits against you Cannot be Critical Strikes if you've been S
+- **cond:Channelling** (9 payoffs: notable 8, unique 1; 0 direct enablers): Assailum, Sinner Tricorne; Arcane Adept; Stoic Focus; Unwavering Focus; Unrestrained Focus; Vital Focus
+- **per:CrusaderItem** (9 payoffs: unique 9; 0 direct enablers): Bound by Destiny, Prismatic Jewel; Venarius' Astrolabe, Astrolabe Amulet
+- **cond:NearbyRareOrUniqueEnemy|RareOrUnique** (9 payoffs: unique 9; 0 direct enablers): Cane of Kulemak, Serpentine Staff; Hyperboreus, Leather Belt; Paradoxica, Vaal Rapier; Replica Paradoxica, Vaal Rapier; The Queen's Hunger, Vaal Regalia
+- **per:RedSocketIn{SlotName}** (9 payoffs: unique 9; 0 direct enablers): Crown of the Tyrant, Magistrate Crown; Prismatic Eclipse, Twilight Blade; Scaeva, Gladius; The Pariah, Unset Ring; Triad Grip, Mesh Gloves
+- **per:GreenSocketIn{SlotName}** (9 payoffs: unique 9; 0 direct enablers): Crown of the Tyrant, Magistrate Crown; Prismatic Eclipse, Twilight Blade; Scaeva, Gladius; The Pariah, Unset Ring; Triad Grip, Mesh Gloves
+- **per:BlueSocketIn{SlotName}** (9 payoffs: unique 9; 0 direct enablers): Crown of the Tyrant, Magistrate Crown; Prismatic Eclipse, Twilight Blade; Scaeva, Gladius; The Pariah, Unset Ring; Triad Grip, Mesh Gloves
+- **per:WhiteSocketIn{SlotName}** (9 payoffs: unique 9; 0 direct enablers): Crown of the Tyrant, Magistrate Crown; Prismatic Eclipse, Twilight Blade; Scaeva, Gladius; The Pariah, Unset Ring; Triad Grip, Mesh Gloves
+- **cond:HaveTotem** (9 payoffs: ascendancy 1, mastery 6, unique 2; 0 direct enablers): Dawnstrider, Vaal Greaves; That Which Was Taken, Crimson Jewel; Totem Mastery: 5% of Damage from Hits is taken from your nearest Totem's Li; None Conjoined Spire
+- **per:SiphoningCharge** (9 payoffs: unique 9; 0 direct enablers): Disintegrator, Maelstrom Staff
+- **cond:Marked** (9 payoffs: mastery 4, notable 4, unique 1; 0 direct enablers): Mercenary's Lot, Slink Gloves; Hound's Mark; Mark the Prey; Marked for Death; Mark Mastery: 50% more Accuracy Rating against Marked Enemy
+- **per:FortificationStacks** (9 payoffs: mastery 6, notable 1, unique 2; 0 direct enablers): The Celestial Brace, Goliath Gauntlets; Willowgift, Jade Amulet; Steadfast; Fortify Mastery: 2% reduced Duration of Ailments inflicted on you per Fortifi; Fortify Mastery: 4% increased Stun and Block Recovery per Fortification; Fortify Mastery: 10% reduced Damage over Time Taken while you have at least 2
+- **per:NonInstantSpellCastRecently** (9 payoffs: mastery 8, unique 1; 0 direct enablers): The Sands of Time, Tyrant's Sekhem; Caster Mastery: 6% increased Cast Speed for each different Non-Instant Spell
+- **cond:SummonedTotemRecently** (9 payoffs: mastery 6, notable 3; 0 direct enablers): Ancestral Inspiration; Ancestral Echo; Sleepless Sentries; Totem Mastery: 40% increased Critical Strike Chance if you've Summoned a To
+- **cond:UsingLifeFlask** (9 payoffs: notable 9; 0 direct enablers): Colloidal Mixture; Hardened Scars; Numbing Elixir; Heart of Oak
+- **per:AllocatedMastery** (9 payoffs: mastery 9; 0 direct enablers): Attributes Mastery: +5 to Strength per Allocated Mastery Passive Skill; Attributes Mastery: +5 to Intelligence per Allocated Mastery Passive Skill; Attributes Mastery: +5 to Dexterity per Allocated Mastery Passive Skill
+- **cond:UsingDagger** (9 payoffs: ascendancy 1, mastery 8; 0 direct enablers): Dagger Mastery: +10% chance to Suppress Spell Damage for each Dagger you're ; Dagger Mastery: 50% increased Projectile Speed while wielding a Dagger; None Weapon Master
+- **per:LifeCost** (9 payoffs: ascendancy 4, mastery 5; 0 direct enablers): Physical Mastery: 40% increased Physical Damage with Skills that Cost Life; None Unlight Silhouette; None Cannibalised Faith
+- **cond:HaveBeastSpectre** (9 payoffs: ascendancy 9; 0 direct enablers): None Fertile Will; None Farric Will; None Wild Will
+- **cond:Moving** (8 payoffs: notable 1, unique 7; 0 direct enablers): Beltimber Blade, Eternal Sword; Garukhan's Flight, Stealth Boots; Gorgon's Gaze, Regicide Mask; Hopeshredder, Ranger Bow; Replica Stampede, Assassin's Boots; The Stampede, Assassin's Boots
+- **per:RedeemerItem** (8 payoffs: unique 8; 0 direct enablers): Bound by Destiny, Prismatic Jewel; Venarius' Astrolabe, Astrolabe Amulet
+- **per:Rage** (8 payoffs: ascendancy 1, mastery 4, unique 3; 0 direct enablers): Chains of Emancipation, Chain Belt; That Which Was Taken, Crimson Jewel; The Caged Mammoth, Antique Gauntlets; Rage Mastery: 1% increased Movement Speed per 5 Rage; None Berserker
+- **per:ManaBurnStacks** (8 payoffs: mastery 5, unique 3; 0 direct enablers): Sap of the Seasons, Prismatic Tincture; The Battle Within, Oakbranch Tincture; Wildfire Phloem, Ashbark Tincture; Tincture Mastery: 1% increased Flask Charges gained per Mana Burn on you
+- **cond:AffectedByPrecision** (8 payoffs: unique 8; 0 direct enablers): Sublime Vision, Prismatic Jewel; Watcher's Eye, Prismatic Jewel
+- **cond:AffectedByWrath** (8 payoffs: unique 8; 0 direct enablers): Sublime Vision, Prismatic Jewel; Watcher's Eye, Prismatic Jewel
+- **per:TotemsSummoned** (8 payoffs: ascendancy 3, notable 2, unique 3; 0 direct enablers): Trolltimber Spire, Cedar Tower Shield; Tukohama's Fortress, Ebony Tower Shield; Wood, Stone, and Spell; Watchtowers; None Ritual of Awakening
+- **cond:AffectedByVitality** (8 payoffs: unique 8; 0 direct enablers): Watcher's Eye, Prismatic Jewel
+- **cond:DetonatedMinesRecently** (8 payoffs: mastery 5, notable 3; 0 direct enablers): Blast Waves; Arcane Pyrotechnics; Mine Mastery: Regenerate 2.5% of Life per Second if you've Detonated a Min
+- **cond:StunnedEnemyRecently** (8 payoffs: mastery 5, notable 3; 0 direct enablers): Battlefield Dominator; Ribcage Crusher; Relentless; Staff Mastery: +8% Chance to Block Attack Damage if you've Stunned an Enemy
+- **cond:AverageResourceGain** (8 payoffs: mastery 7, notable 1; 0 direct enablers): Excess Sustenance; Recovery Mastery: 3% chance to Recover all Life when you Kill an Enemy
+- **cond:MaxResourceGain** (8 payoffs: mastery 7, notable 1; 0 direct enablers): Excess Sustenance; Recovery Mastery: 3% chance to Recover all Life when you Kill an Enemy
+- **per:Herald|AuraAffectingSelf** (8 payoffs: mastery 8; 0 direct enablers): Reservation Mastery: 8% increased Damage for each of your Aura or Herald Skills a
+- **cond:CastOnFrostbolt** (8 payoffs: mastery 8; 0 direct enablers): Caster Mastery: Final Repeat of Spells has 40% increased Area of Effect
+- **per:Armour** (7 payoffs: mastery 4, unique 3; 150 direct enablers): Aegis Aurora, Champion Kite Shield; Replica Dreamfeather, Eternal Sword; Armour and Evasion Mastery: Every 4 seconds, Regenerate Life equal to 1% of Armour and E
+- **per:NearbyCorpse** (7 payoffs: ascendancy 3, unique 4; 0 direct enablers): Asenath's Gentle Touch, Silk Gloves; Corpsewalker, Carnal Boots; None Essence Glutton; None Plaguebringer
+- **cond:OnConsecratedGround** (7 payoffs: unique 7; 0 direct enablers): Bottled Faith, Sulphur Flask; Gifts from Above, Diamond Ring; Replica Gifts from Above, Diamond Ring; Watcher's Eye, Prismatic Jewel
+- **per:WarlordItem** (7 payoffs: unique 7; 0 direct enablers): Bound by Destiny, Prismatic Jewel; Venarius' Astrolabe, Astrolabe Amulet
+- **cond:AffectedByHeraldofIce** (7 payoffs: notable 1, unique 6; 0 direct enablers): Circle of Ambition, Prismatic Ring; Circle of Fear, Sapphire Ring; Heraldry
+- **cond:AffectedByHeraldofAsh** (7 payoffs: notable 1, unique 6; 0 direct enablers): Circle of Ambition, Prismatic Ring; Circle of Anguish, Ruby Ring; Heraldry
+- **cond:AffectedByHeraldofThunder** (7 payoffs: notable 1, unique 6; 0 direct enablers): Circle of Ambition, Prismatic Ring; Circle of Regret, Topaz Ring; Heraldry
+- **per:AbyssJewel** (7 payoffs: unique 7; 0 direct enablers): Hale Negator, Mind Cage; Lightpoacher, Great Crown; Shroud of the Lightless, Carnal Armour
+- **cond:UsingSword** (7 payoffs: ascendancy 1, mastery 4, unique 2; 0 direct enablers): Rigwald's Savagery, Royal Axe; Sword Mastery: Off Hand Accuracy is equal to Main Hand Accuracy while wield; None Weapon Master
+- **cond:HaveDamageableMinion** (7 payoffs: mastery 5, unique 2; 0 direct enablers): Spinehail, Vile Arrow Quiver; The Hallowed Monarch, Faithful Helmet; Minion Defence Mastery: Link Skills can target Damageable Minions
+- **cond:AffectedByAnger** (7 payoffs: unique 7; 0 direct enablers): Sublime Vision, Prismatic Jewel; Watcher's Eye, Prismatic Jewel
+- **cond:AffectedByDiscipline** (7 payoffs: unique 7; 0 direct enablers): Sublime Vision, Prismatic Jewel; Watcher's Eye, Prismatic Jewel
+- **cond:AffectedByHaste** (7 payoffs: unique 7; 0 direct enablers): Sublime Vision, Prismatic Jewel; Watcher's Eye, Prismatic Jewel
+- **cond:AffectedByHatred** (7 payoffs: unique 7; 0 direct enablers): Sublime Vision, Prismatic Jewel; Watcher's Eye, Prismatic Jewel
+- **cond:AffectedByPurityofElements** (7 payoffs: unique 7; 0 direct enablers): Sublime Vision, Prismatic Jewel; Watcher's Eye, Prismatic Jewel
+- **cond:AffectedByPurityofFire** (7 payoffs: unique 7; 0 direct enablers): Sublime Vision, Prismatic Jewel; Watcher's Eye, Prismatic Jewel
+- **cond:AffectedByPurityofIce** (7 payoffs: unique 7; 0 direct enablers): Sublime Vision, Prismatic Jewel; Watcher's Eye, Prismatic Jewel
+- **cond:AffectedByZealotry** (7 payoffs: unique 7; 0 direct enablers): Sublime Vision, Prismatic Jewel; Watcher's Eye, Prismatic Jewel
+- **per:CurseExpired** (7 payoffs: mastery 6, unique 1; 0 direct enablers): The Felbog Fang, Citrine Amulet; Curse Mastery: Your Curses have 20% increased Effect if 50% of Curse Durati
+- **per:LinkedTargets** (7 payoffs: mastery 4, notable 2, unique 1; 0 direct enablers): The Hand of Phrecia, Mesh Gloves; Potent Connections; Link Mastery: Your Movement Speed is equal to the highest Movement Speed a
+- **per:StationarySeconds** (7 payoffs: mastery 5, notable 2; 0 direct enablers): Expansive Might; Settling Ash; Armour Mastery: 20% increased Armour per second you've been stationary, up t
+- **per:MissingBarkskinStacks** (7 payoffs: ascendancy 7; 0 direct enablers): None Lesson of the Seasons
+- **per:ShieldBlockChance** (6 payoffs: mastery 5, unique 1; 0 direct enablers): Cerberus Limb, Blood Sceptre; Shield Mastery: +1% Chance to Block Attack Damage per 5% Chance to Block on 
+- **cond:LowMana** (6 payoffs: unique 6; 0 direct enablers): Dance of the Offered, Carnal Boots; Ikiaho's Promise, Coral Amulet; Infernal Mantle, Widowsilk Robe; Omeyocan, Carnal Boots
+- **cond:Insane** (6 payoffs: unique 6; 0 direct enablers): Doppelganger Guise, Sadist Garb
+- **cond:DualWieldingClaws** (6 payoffs: mastery 4, unique 2; 0 direct enablers): Essentia Sanguis, Vaal Claw; Claw Mastery: Inherent Attack Speed bonus from Dual Wielding is doubled wh
+- **per:ActiveZombieLimit** (6 payoffs: ascendancy 2, unique 4; 8 direct enablers): Femurs of the Saints, Primordial Staff; Rotting Legion, Loricated Ringmail; None Umbral Army; None Femurs of the Saints
+- **per:Chain** (6 payoffs: ascendancy 1, mastery 3, unique 2; 0 direct enablers): Gloomfang, Blue Pearl Amulet; Projectile Mastery: Projectiles deal 20% increased Damage with Hits and Ailments; None Gloomfang
+- **cond:HitRecently** (6 payoffs: notable 2, unique 4; 0 direct enablers): Medved's Challenge, Runic Gauntlets; Precursor's Emblem, Prismatic Ring; Replica Three-step Assault, Shagreen Boots; Courage; Hit and Run
+- **per:Ward** (6 payoffs: unique 6; 7 direct enablers): Nightgrip, Runic Gages
+- **cond:Fortified** (6 payoffs: ascendancy 2, notable 2, unique 2; 0 direct enablers): Perseverance, Vanguard Belt; That Which Was Taken, Crimson Jewel; Rampart; Aggressive Defence; None Armour and Evasion, Attack Damage while Fortified
+- **cond:CritInPast8Sec** (6 payoffs: keystone 1, unique 5; 0 direct enablers): Qotra's Regulator, Sovereign Spiked Shield; Shade of Solaris, Sage Wand; That Which Was Taken, Crimson Jewel; Elemental Overload
+- **cond:BloodStance** (6 payoffs: mastery 4, unique 2; 0 direct enablers): Scorpion's Call, Heavy Arrow Quiver; Axe Mastery: 30% increased Damage while in Blood Stance; 15% increased Ar
+- **cond:SandStance** (6 payoffs: mastery 4, unique 2; 0 direct enablers): Scorpion's Call, Heavy Arrow Quiver; Axe Mastery: 30% increased Damage while in Blood Stance; 15% increased Ar
+- **cond:AffectedByDetermination** (6 payoffs: unique 6; 0 direct enablers): Sublime Vision, Prismatic Jewel; Watcher's Eye, Prismatic Jewel
+- **cond:AffectedByPride** (6 payoffs: unique 6; 0 direct enablers): Sublime Vision, Prismatic Jewel; Watcher's Eye, Prismatic Jewel
+- **per:AllocatedMasteryType** (6 payoffs: ascendancy 5, notable 1; 0 direct enablers): Knowledge Barrier; None Trickster; None Polymath
+- **cond:AffectedByHerald** (6 payoffs: notable 6; 0 direct enablers): Lasting Impression; Endbringer; Agent of Destruction
+- **per:ArmourOnWeapon 2|EvasionOnWeapon 2** (6 payoffs: mastery 5, notable 1; 0 direct enablers): Gladiatorial Combat; Shield Mastery: 2% increased Attack Damage per 75 Armour or Evasion Rating o
+- **cond:UsingBow** (6 payoffs: mastery 5, notable 1; 0 direct enablers): Tempered Arrowheads; Bow Mastery: 20% increased Area of Effect while wielding a Bow
+- **cond:WieldingDifferentWeaponTypes** (6 payoffs: mastery 4, notable 2; 0 direct enablers): Quick and Deadly; Dual Wielding Mastery: 60% increased Damage while wielding two different Weapon Typ
+- **per:EvasionOnBody Armour** (6 payoffs: ascendancy 1, mastery 5; 0 direct enablers): Evasion Mastery: +15% chance to Suppress Spell Damage if Equipped Helmet, Bod; None Escape Artist
+- **per:ColdResistOverCap** (6 payoffs: mastery 6; 0 direct enablers): Cold Mastery: +1% to Cold Damage over Time Multiplier for each 4% Overcapp
+- **per:HitsSuppressedRecently** (6 payoffs: mastery 6; 0 direct enablers): Spell Suppression Mastery: Prevent +1% of Suppressed Spell Damage per Hit Suppressed Re
+- **cond:Taunted** (5 payoffs: ascendancy 1, notable 2, unique 2; 0 direct enablers): Al Dhih, Timeworn Claw; Redblade Banner, Painted Tower Shield; Provocateur; None Al Dhih
+- **per:RageStack** (5 payoffs: mastery 4, unique 1; 0 direct enablers): Bear's Girdle, Leather Belt; Rage Mastery: Nearby Enemies are Intimidated while you have Rage
+- **cond:UsedMovementSkillRecently** (5 payoffs: notable 1, unique 4; 0 direct enablers): Beltimber Blade, Eternal Sword; Bronn's Lithe, Cutthroat's Garb; Gluttony, Leather Belt; Scornflux, Satin Slippers; Mysticism
+- **per:ActiveSpectreLimit** (5 payoffs: ascendancy 2, unique 3; 10 direct enablers): Bitterbind Point, Titanium Spirit Shield; Femurs of the Saints, Primordial Staff; None Umbral Army; None Femurs of the Saints
+- **cond:Unarmed** (5 payoffs: unique 5; 0 direct enablers): Doryani's Fist, Vaal Gauntlets; Martial Artistry, Crimson Jewel
+- **per:PierceCount** (5 payoffs: unique 5; 5 direct enablers): Drillneck, Penetrating Arrow Quiver; Slivertongue, Harbinger Bow
+- **per:ManaSpentRecently** (5 payoffs: unique 5; 0 direct enablers): Indigon, Hubris Circlet; Kalisa's Grace, Samite Gloves; Replica Kalisa's Grace, Samite Gloves
+- **per:NonCorruptedItem** (5 payoffs: unique 5; 0 direct enablers): Malachai's Vision, Praetor Crown; Vivinsect, Unset Ring
+- **cond:ConnectedToScionStart** (5 payoffs: unique 5; 0 direct enablers): Pure Talent, Viridian Jewel; Replica Pure Talent, Viridian Jewel
+- **cond:UsedVaalSkillRecently** (5 payoffs: unique 5; 0 direct enablers): Sacrificial Heart, Paua Amulet; Triumvirate Authority, Unset Ring; Zerphi's Heart, Paua Amulet
+- **cond:AffectedByGrace** (5 payoffs: unique 5; 0 direct enablers): Sublime Vision, Prismatic Jewel; Watcher's Eye, Prismatic Jewel
+- **cond:BetweenYouAndLinkedTarget** (5 payoffs: mastery 4, unique 1; 0 direct enablers): That Which Was Taken, Crimson Jewel; Link Mastery: Enemies in your Link Beams cannot apply Elemental Ailments
+- **cond:HaveMaximumRage** (5 payoffs: mastery 4, unique 1; 0 direct enablers): The Grey Wind, Spectral Axe; Rage Mastery: 25% increased Maximum total Life Recovery per second from Le
+- **cond:HaveAvatarOfFire** (5 payoffs: unique 5; 0 direct enablers): Vulconus, Demon Dagger
+- **per:PiercedCount** (5 payoffs: mastery 3, unique 2; 0 direct enablers): Xoph's Inception, Citadel Bow; Projectile Mastery: Projectiles deal 20% increased Damage with Hits and Ailments
+- **cond:NonPoisonedOnly** (5 payoffs: mastery 4, notable 1; 0 direct enablers): Low Tolerance; Poison Mastery: Poisons you inflict on non-Poisoned Enemies deal 300% increa
+- **cond:HasLightningExposure** (5 payoffs: mastery 5; 0 direct enablers): Lightning Mastery: 60% increased Critical Strike Chance against enemies with Li
+- **per:EvasionOnHelmet** (5 payoffs: mastery 5; 0 direct enablers): Evasion Mastery: +15% chance to Suppress Spell Damage if Equipped Helmet, Bod
+- **per:EvasionOnGloves** (5 payoffs: mastery 5; 0 direct enablers): Evasion Mastery: +15% chance to Suppress Spell Damage if Equipped Helmet, Bod
+- **per:EvasionOnBoots** (5 payoffs: mastery 5; 0 direct enablers): Evasion Mastery: +15% chance to Suppress Spell Damage if Equipped Helmet, Bod
+- **cond:Stunned** (5 payoffs: mastery 5; 0 direct enablers): Stun Mastery: +50% to Critical Strike Multiplier against Stunned Enemies
+- **cond:OneSecondAttackTime** (5 payoffs: mastery 5; 0 direct enablers): Mace Mastery: 12% chance to deal Double Damage with Attacks if Attack Time
+- **per:ImpaleStacks** (5 payoffs: mastery 5; 0 direct enablers): Physical Mastery: +6% to Damage over Time Multiplier for Bleeding per Impale o
+- **cond:UsingTincture** (5 payoffs: mastery 5; 0 direct enablers): Tincture Mastery: 30% increased Evasion Rating while you have an active Tinctu
+- **per:ArmourOnHelmet** (5 payoffs: mastery 5; 0 direct enablers): Armour Mastery: +1% to all maximum Elemental Resistances if Equipped Helmet,
+- **per:ArmourOnBody Armour** (5 payoffs: mastery 5; 0 direct enablers): Armour Mastery: +1% to all maximum Elemental Resistances if Equipped Helmet,
+- **per:ArmourOnGloves** (5 payoffs: mastery 5; 0 direct enablers): Armour Mastery: +1% to all maximum Elemental Resistances if Equipped Helmet,
+- **per:ArmourOnBoots** (5 payoffs: mastery 5; 0 direct enablers): Armour Mastery: +1% to all maximum Elemental Resistances if Equipped Helmet,
+- **cond:CastDashRecently** (4 payoffs: unique 4; 0 direct enablers): Arborix, Assassin Bow
+- **cond:HaveIronReflexes** (4 payoffs: unique 4; 0 direct enablers): Arborix, Assassin Bow
+- **cond:AffectedByHeraldofAgony** (4 payoffs: unique 4; 0 direct enablers): Circle of Ambition, Prismatic Ring; Circle of Nostalgia, Amethyst Ring
+- **cond:AffectedByHeraldofPurity** (4 payoffs: unique 4; 0 direct enablers): Circle of Ambition, Prismatic Ring; Circle of Guilt, Iron Ring
+- **per:LowestAttribute** (4 payoffs: mastery 3, unique 1; 0 direct enablers): Cyclopean Coil, Leather Belt; Attributes Mastery: 1% increased Damage per 5 of your lowest Attribute
+- **per:CurseOnEnemy** (4 payoffs: unique 4; 0 direct enablers): Doedre's Scorn, Lunaris Circlet; Vixen's Entrapment, Embroidered Gloves
+- **cond:AffectedByCat'sStealth** (4 payoffs: unique 4; 0 direct enablers): Farrul's Chase, Slink Boots; Farrul's Fur, Triumphant Lamellar; Farrul's Pounce, Hydrascale Gauntlets
+- **per:Spider's WebStack** (4 payoffs: unique 4; 0 direct enablers): Fenumus' Spinnerets, Assassin's Boots; Fenumus' Weave, Carnal Mitts
+- **cond:KilledUniqueEnemy** (4 payoffs: ascendancy 1, unique 3; 0 direct enablers): Impresence, Onyx Amulet; Solstice Vigil, Onyx Amulet; That Which Was Taken, Crimson Jewel; None Headsman
+- **per:GraspingVinesAffectingEnemy** (4 payoffs: unique 4; 0 direct enablers): Inextricable Fate, Fugitive Boots
+- **cond:ShockedEnemyRecently** (4 payoffs: notable 3, unique 1; 0 direct enablers): Inpulsa's Broken Heart, Sadist Garb; Inspired Oppression; Static Blows; Sadist
+- **cond:UsingManaFlask** (4 payoffs: notable 3, unique 1; 0 direct enablers): Khatal's Geyser, Lapis Amulet; Primal Spirit; Essence Extraction; Numbing Elixir
+- **per:BuffOnSelf** (4 payoffs: unique 4; 0 direct enablers): Mantra of Flames, Crimson Jewel
+- **per:EnemyPower** (4 payoffs: unique 4; 0 direct enablers): Nametaker, Graceful Sword
+- **cond:Onslaught** (4 payoffs: notable 1, unique 3; 0 direct enablers): Relentless Fury, Decorative Axe; Three-step Assault, Shagreen Boots; Graceful Assault
+- **cond:AffectedByAvian'sMight** (4 payoffs: unique 4; 0 direct enablers): Saqawal's Winds, Soldier Gloves
+- **cond:LeechingEnergyShield** (4 payoffs: notable 2, unique 2; 0 direct enablers): Stormseeker, Ambush Mitts; Essence Rush
+- **cond:ConsumedCorpseInPast2Sec** (4 payoffs: ascendancy 2, unique 2; 0 direct enablers): That Which Was Taken, Crimson Jewel; None Essence Glutton
+- **cond:CastSpellRecently** (4 payoffs: ascendancy 2, notable 1, unique 1; 0 direct enablers): That Which Was Taken, Crimson Jewel; Conjured Wall; None Guardian; None Bastion of Hope
+- **per:TotalCharges** (4 payoffs: mastery 3, unique 1; 0 direct enablers): The Highwayman, Gold Ring; Charge Mastery: 3% increased Damage per Endurance, Frenzy or Power Charge
+- **cond:OffHandIsEmpty** (4 payoffs: unique 4; 0 direct enablers): White Wind, Imperial Skean
+- **cond:DualWielding|UsingShield** (4 payoffs: notable 4; 0 direct enablers): Weapon Artistry; Wall of Steel; As The Mountain; Brutal Blade
+- **cond:BrandLastHalf** (4 payoffs: mastery 3, notable 1; 0 direct enablers): Holy Conquest; Brand Mastery: Brands have 30% increased Area of Effect if 50% of Attached 
+- **cond:AffectedByNonVaalGuardSkill** (4 payoffs: keystone 4; 0 direct enablers): Veteran's Awareness
+- **per:ClawItem** (4 payoffs: mastery 4; 0 direct enablers): Claw Mastery: 10% of Life Leech is Instant per Equipped Claw
+- **cond:DualWieldingDaggers** (4 payoffs: mastery 4; 0 direct enablers): Dagger Mastery: +10% chance to Suppress Spell Damage for each Dagger you're 
+- **cond:SupportedBySpellslinger** (4 payoffs: mastery 4; 0 direct enablers): Wand Mastery: 25% increased Mana Reservation Efficiency of Skills Supporte
+- **per:PowerChargeMax** (4 payoffs: ascendancy 4; 0 direct enablers): None Deathmarked
+- **per:LifeUnreserved** (4 payoffs: ascendancy 4; 0 direct enablers): None Unlight Silhouette; None Cannibalised Faith
+- **cond:SpawnedCorpseRecently** (4 payoffs: ascendancy 4; 0 direct enablers): None Corpse Pact
+- **per:BarkskinStacks** (4 payoffs: ascendancy 4; 0 direct enablers): None Lesson of the Seasons
+- **cond:Unbound** (4 payoffs: ascendancy 4; 0 direct enablers): None Avatar of the Wilds
+- **cond:AffectedByApproachingFlames** (3 payoffs: unique 3; 0 direct enablers): Annihilation's Approach, Dragonscale Boots
+- **per:Intensity** (3 payoffs: unique 3; 0 direct enablers): Apex Mode, Cobalt Jewel; Nadir Mode, Cobalt Jewel
+- **per:LifeReservedPercent** (3 payoffs: ascendancy 1, unique 2; 0 direct enablers): Bloodseeker, Hellion's Paw; Waxen Soul, Saint's Hauberk; None Farewell to Flesh
+- **per:NonVaalSummonedMinion** (3 payoffs: unique 3; 0 direct enablers): Bonemeld, Marble Amulet
+- **cond:Scorched** (3 payoffs: unique 3; 0 direct enablers): Chain of Endurance, Chain Belt; Yoke of Suffering, Onyx Amulet
+- **cond:Brittle** (3 payoffs: unique 3; 0 direct enablers): Chain of Endurance, Chain Belt; Yoke of Suffering, Onyx Amulet
+- **cond:Sapped** (3 payoffs: unique 3; 0 direct enablers): Chain of Endurance, Chain Belt; Yoke of Suffering, Onyx Amulet
+- **per:CrabBarriers** (3 payoffs: unique 3; 0 direct enablers): Craiceann's Chitin, Magistrate Crown; Craiceann's Tracks, Goliath Greaves
+- **cond:IntHigherThanStr** (3 payoffs: ascendancy 2, unique 1; 0 direct enablers): Cyclopean Coil, Leather Belt; None Righteous Providence
+- **cond:TrapOrMineThrownRecently** (3 payoffs: notable 1, unique 2; 0 direct enablers): Deerstalker, Deerskin Boots; Guerilla Tactics
+- **cond:NonCritRecently** (3 payoffs: unique 3; 0 direct enablers): Duskdawn, Maelstrom Staff; Light of Lunaris, Jingling Spirit Shield; Replica Duskdawn, Maelstrom Staff
+- **per:ActiveSkeletonLimit** (3 payoffs: ascendancy 2, unique 1; 9 direct enablers): Femurs of the Saints, Primordial Staff; None Umbral Army; None Femurs of the Saints
+- **per:ActiveRagingSpiritLimit** (3 payoffs: ascendancy 2, unique 1; 2 direct enablers): Femurs of the Saints, Primordial Staff; None Umbral Army; None Femurs of the Saints
+- **per:Sextant** (3 payoffs: unique 3; 0 direct enablers): Flamesight, Solaris Circlet; Galesight, Solaris Circlet; Thundersight, Solaris Circlet
+- **per:LifeRegen** (3 payoffs: unique 3; 37 direct enablers): Kaom's Spirit, Titan Gauntlets
+- **per:SpiritCharge** (3 payoffs: unique 3; 0 direct enablers): Lightpoacher, Great Crown
+- **per:Accuracy** (3 payoffs: ascendancy 1, unique 2; 95 direct enablers): Obscurantis, Lion Pelt; Oskarm, Nubuck Gloves; None Undeniable
+- **cond:ConnectedToMarauderStart** (3 payoffs: unique 3; 0 direct enablers): Pure Talent, Viridian Jewel; Replica Pure Talent, Viridian Jewel
+- **cond:ConnectedToDuelistStart** (3 payoffs: unique 3; 0 direct enablers): Pure Talent, Viridian Jewel; Replica Pure Talent, Viridian Jewel
+- **cond:ConnectedToTemplarStart** (3 payoffs: unique 3; 0 direct enablers): Pure Talent, Viridian Jewel; Replica Pure Talent, Viridian Jewel
+- **per:ActiveBrand** (3 payoffs: notable 1, unique 2; 0 direct enablers): Replica Tukohama's Fortress, Ebony Tower Shield; Chip Away
+- **cond:UsingAxe** (3 payoffs: ascendancy 1, unique 2; 0 direct enablers): Rigwald's Command, Midnight Blade; None Weapon Master
+- **cond:Hindered** (3 payoffs: ascendancy 1, unique 2; 0 direct enablers): Singularity, Platinum Sceptre; None Withering Presence
+- **cond:OnFungalGround|Stationary** (3 payoffs: unique 3; 0 direct enablers): Sporeguard, Saint's Hauberk
+- **cond:Maimed** (3 payoffs: notable 2, unique 1; 0 direct enablers): Taproot, Ambusher; Compound Injury; Smite the Weak
+- **cond:HitSpellRecently|TotemsHitSpellRecently** (3 payoffs: ascendancy 2, unique 1; 0 direct enablers): That Which Was Taken, Crimson Jewel; None Hierophant; None Arcane Blessing
+- **cond:AttackedRecently** (3 payoffs: ascendancy 2, unique 1; 0 direct enablers): That Which Was Taken, Crimson Jewel; None Guardian; None Bastion of Hope
+- **per:NearbyAlly** (3 payoffs: notable 2, unique 1; 0 direct enablers): That Which Was Taken, Crimson Jewel; Glory of Command
+- **cond:Elusive** (3 payoffs: ascendancy 2, unique 1; 0 direct enablers): That Which Was Taken, Crimson Jewel; None Mistwalker; None The Vivid Cat
+- **per:Herald** (3 payoffs: notable 2, unique 1; 0 direct enablers): The Coming Calamity, Destroyer Regalia; Endbringer; Discord Artisan
+- **cond:PhysicalAegisDepleted** (3 payoffs: unique 3; 0 direct enablers): The Ghastly Theatre, Teak Round Shield
+- **cond:AffectedByPurityofLightning** (3 payoffs: unique 3; 0 direct enablers): Watcher's Eye, Prismatic Jewel
+- **per:EnemyKilledRecently** (3 payoffs: ascendancy 1, notable 1, unique 1; 0 direct enablers): Zeel's Amplifier, Polished Spiked Shield; Assert Dominance; None Impact
+- **per:WitheredStack** (3 payoffs: mastery 3; 0 direct enablers): Chaos Mastery: Recover 1% of Life per Withered Debuff on each Enemy you Kil
+- **per:ActiveTotemLimit** (3 payoffs: ascendancy 3; 8 direct enablers): None Conjoined Spire
+- **cond:UsingClaw** (3 payoffs: ascendancy 3; 0 direct enablers): None Weapon Master
+- **cond:InChillingArea** (2 payoffs: unique 2; 0 direct enablers): Algor Mortis, Carnal Mitts
+- **cond:EnergyShieldRechargeRecently** (2 payoffs: unique 2; 0 direct enablers): Ascent From Flesh, Chain Belt; The Devouring Diadem, Necromancer Circlet
+- **per:Rampage** (2 payoffs: unique 2; 0 direct enablers): Bisco's Leash, Heavy Belt; Sinvicta's Mettle, Ezomyte Axe
+- **per:WarcryPower** (2 payoffs: notable 1, unique 1; 2 direct enablers): Brinerot Flag, Tarnished Spirit Shield; Warning Call
+- **cond:HaveGhastlyEyeJewelIn{SlotName}** (2 payoffs: unique 2; 0 direct enablers): Command of the Pit, Riveted Gloves
+- **cond:HitSpellRecently** (2 payoffs: unique 2; 0 direct enablers): Command of the Pit, Riveted Gloves; Precursor's Emblem, Prismatic Ring
+- **cond:AffectedByVulnerability** (2 payoffs: unique 2; 0 direct enablers): Coward's Chains, Chain Belt; Coward's Legacy, Chain Belt
+- **per:Omni** (2 payoffs: unique 2; 0 direct enablers): Crystallised Omniscience, Onyx Amulet
+- **cond:DexHigherThanInt** (2 payoffs: unique 2; 0 direct enablers): Cyclopean Coil, Leather Belt; Fractal Thoughts, Vaal Mask
+- **cond:BlockedSpellRecently** (2 payoffs: unique 2; 0 direct enablers): Daresso's Courage, Baroque Round Shield
+- **cond:BlockedAttackRecently** (2 payoffs: unique 2; 0 direct enablers): Daresso's Courage, Baroque Round Shield
+- **per:LightRadiusInc** (2 payoffs: unique 2; 0 direct enablers): Eclipse Solaris, Faun's Horn
+- **cond:EVBypass** (2 payoffs: unique 2; 0 direct enablers): Emperor's Vigilance, Steel Kite Shield
+- **per:ShockedEnemyKilledRecently** (2 payoffs: unique 2; 0 direct enablers): Esh's Mirror, Vaal Spirit Shield
+- **per:FragileRegrowthCount** (2 payoffs: unique 2; 0 direct enablers): Fragile Bloom, Crimson Jewel; Replica Fragile Bloom, Crimson Jewel
+- **cond:Divinity** (2 payoffs: unique 2; 0 direct enablers): Garb of the Ephemeral, Savant's Robe
+- **cond:GainedPowerChargeRecently** (2 payoffs: unique 2; 0 direct enablers): Goblinedge, Ambusher; The Ephemeral Bond, Lapis Amulet
+- **cond:UsedFireSkillRecently** (2 payoffs: unique 2; 0 direct enablers): Heatshiver, Leather Hood; Hrimnor's Resolve, Samnite Helmet
+- **cond:BeenSavageHitRecently** (2 payoffs: notable 1, unique 1; 0 direct enablers): Hezmana's Bloodlust, Vaal Axe; Savage Response
+- **per:MagicItem** (2 payoffs: unique 2; 0 direct enablers): Hidden Potential, Viridian Jewel; The Ascetic, Gold Amulet
+- **cond:usedByMirage** (2 payoffs: unique 2; 0 direct enablers): Lioneye's Glare, Imperial Bow
+- **per:Str|Dex|Int** (2 payoffs: unique 2; 0 direct enablers): Mask of the Tribunal, Magistrate Crown
+- **cond:KilledTauntedEnemyRecently** (2 payoffs: unique 2; 0 direct enablers): Mutewind Pennant, Enameled Buckler; Replica Allure, Vaal Claw
+- **per:FireResistOver75|ColdResistOver75|LightningResistOver75** (2 payoffs: unique 2; 0 direct enablers): Nebulis, Void Sceptre
+- **cond:HerEmbrace** (2 payoffs: unique 2; 0 direct enablers): Oni-Goroshi, Charan's Sword
+- **per:UniqueItem** (2 payoffs: unique 2; 0 direct enablers): Perandus Signet, Paua Ring
+- **cond:SummonedGolemInPast8Sec** (2 payoffs: unique 2; 0 direct enablers): Primordial Might, Crimson Jewel; Replica Primordial Might, Crimson Jewel
+- **per:ArmourDoubled** (2 payoffs: ascendancy 1, unique 1; 0 direct enablers): Prospero's Protection, Iron Ring; None Unbreakable
+- **cond:ConnectedToRangerStart** (2 payoffs: unique 2; 0 direct enablers): Pure Talent, Viridian Jewel; Replica Pure Talent, Viridian Jewel
+- **cond:ConnectedToShadowStart** (2 payoffs: unique 2; 0 direct enablers): Pure Talent, Viridian Jewel; Replica Pure Talent, Viridian Jewel
+- **cond:ConnectedToWitchStart** (2 payoffs: unique 2; 0 direct enablers): Pure Talent, Viridian Jewel; Replica Pure Talent, Viridian Jewel
+- **cond:IgnitedEnemyRecently** (2 payoffs: notable 1, unique 1; 0 direct enablers): Razor of the Seventh Sun, Midnight Blade; Sadist
+- **cond:AffectedByAvian'sFlight** (2 payoffs: unique 2; 0 direct enablers): Saqawal's Talons, Hydrascale Boots
+- **cond:ChangedStanceRecently** (2 payoffs: notable 1, unique 1; 0 direct enablers): Scorpion's Call, Heavy Arrow Quiver; Dance of Blades
+- **per:ActiveVoidSpawnLimit** (2 payoffs: unique 2; 0 direct enablers): Servant of Decay, Torturer Garb
+- **per:ForkRemaining** (2 payoffs: unique 2; 0 direct enablers): Slivertongue, Harbinger Bow
+- **per:GhastlyEyeJewelIn{SlotName}** (2 payoffs: unique 2; 0 direct enablers): Spinesnatch, Fleshripper; Wraithlord, Bone Circlet
+- **cond:OnShockedGround** (2 payoffs: unique 2; 0 direct enablers): Steppan Eard, Sorcerer Boots; Wake of Destruction, Mesh Boots
+- **per:ShockedNonShockedEnemyRecently** (2 payoffs: unique 2; 0 direct enablers): Stormfire, Opal Ring
+- **cond:LeechingMana** (2 payoffs: unique 2; 0 direct enablers): Stormseeker, Ambush Mitts
+- **per:EnergyShieldOnHelmet** (2 payoffs: ascendancy 1, unique 1; 0 direct enablers): That Which Was Taken, Crimson Jewel; None Escape Artist
+- **per:PoisonAppliedRecently** (2 payoffs: ascendancy 1, unique 1; 0 direct enablers): That Which Was Taken, Crimson Jewel; None Toxic Delivery
+- **cond:SelfCastVulnerability** (2 payoffs: unique 2; 0 direct enablers): The Balance of Terror, Cobalt Jewel
+- **cond:SelfCastTemporalChains** (2 payoffs: unique 2; 0 direct enablers): The Balance of Terror, Cobalt Jewel
+- **cond:SelfCastEnfeeble** (2 payoffs: unique 2; 0 direct enablers): The Balance of Terror, Cobalt Jewel
+- **cond:SelfCastElementalWeakness** (2 payoffs: unique 2; 0 direct enablers): The Balance of Terror, Cobalt Jewel
+- **cond:SelfCastDespair** (2 payoffs: unique 2; 0 direct enablers): The Balance of Terror, Cobalt Jewel
+- **cond:SelfCastFrostbite** (2 payoffs: unique 2; 0 direct enablers): The Balance of Terror, Cobalt Jewel
+- **cond:SelfCastFlammability** (2 payoffs: unique 2; 0 direct enablers): The Balance of Terror, Cobalt Jewel
+- **cond:SelfCastConductivity** (2 payoffs: unique 2; 0 direct enablers): The Balance of Terror, Cobalt Jewel
+- **cond:FrozenEnemyRecently** (2 payoffs: notable 1, unique 1; 0 direct enablers): The Halcyon, Jade Amulet; Inspired Oppression
+- **per:LowestOfMaximumLifeAndMaximumMana** (2 payoffs: unique 2; 0 direct enablers): The Scales of Justice, Chiming Spirit Shield
+- **per:EmptyWhiteSocketsInAnySlot** (2 payoffs: unique 2; 0 direct enablers): The Untouched Soul, Gold Amulet
+- **cond:TriggeredTrapsRecently** (2 payoffs: notable 1, unique 1; 0 direct enablers): Tinkerskin, Sadist Garb; Arcane Pyrotechnics
+- **cond:HaveSearchingEyeJewelIn{SlotName}** (2 payoffs: unique 2; 0 direct enablers): Tombfist, Steelscale Gauntlets
+- **per:ChannellingTime** (2 payoffs: notable 2; 0 direct enablers): Arcane Adept; Precise Focus
+- **cond:HitRecentlyWithWeapon** (2 payoffs: notable 2; 0 direct enablers): Combat Rhythm
+- **cond:CastMarkRecently** (2 payoffs: notable 2; 0 direct enablers): Relentless Pursuit
+- **per:ManaUnreserved** (2 payoffs: ascendancy 1, notable 1; 0 direct enablers): Stubborn Student; None Sanctuary of Thought
+- **cond:UsingTwoHandedWeapon** (2 payoffs: notable 2; 0 direct enablers): Titanic Swings
+- **cond:UsingMeleeWeapon** (2 payoffs: notable 2; 0 direct enablers): Titanic Swings
+- **per:MineDetonatedRecently** (2 payoffs: ascendancy 1, notable 1; 0 direct enablers): Mixed Munitions; None Pyromaniac
+- **cond:MinionsCreatedRecently** (2 payoffs: notable 2; 0 direct enablers): Call to the Slaughter
+- **cond:UsedRetaliationRecently** (2 payoffs: notable 2; 0 direct enablers): Careful Counterattack
+- **cond:BeenHitByAttackRecently** (2 payoffs: keystone 2; 0 direct enablers): Wind Dancer
+- **cond:EnergyShieldRechargePastTwoSec** (2 payoffs: mastery 2; 0 direct enablers): Evasion and Energy Shield Mastery: 100% increased Evasion Rating if Energy Shield Recharge has 
+- **cond:HelmetArmourHigherThanEvasion** (2 payoffs: mastery 2; 0 direct enablers): Armour and Evasion Mastery: Immune to Bleeding if Equipped Helmet has higher Armour than
+- **cond:HelmetEvasionHigherThanArmour** (2 payoffs: mastery 2; 0 direct enablers): Armour and Evasion Mastery: Immune to Bleeding if Equipped Helmet has higher Armour than
+- **per:EnemyPresenceSeconds** (2 payoffs: ascendancy 2; 0 direct enablers): None Gladiator; None War of Attrition
+- **per:SocketedGemsInBoots** (2 payoffs: ascendancy 2; 0 direct enablers): None  Precursor's Release; None Oath of the Maji
+- **cond:UsingBoots** (2 payoffs: ascendancy 2; 0 direct enablers): None  Precursor's Release; None Oath of the Maji
+- **per:SocketedGemsInHelmet** (2 payoffs: ascendancy 2; 0 direct enablers): None  Precursor's Release; None Oath of the Maji
+- **cond:UsingHelmet** (2 payoffs: ascendancy 2; 0 direct enablers): None  Precursor's Release; None Oath of the Maji
+- **per:SocketedGemsInBody Armour** (2 payoffs: ascendancy 2; 0 direct enablers): None  Precursor's Release; None Oath of the Maji
+- **cond:UsingBody Armour** (2 payoffs: ascendancy 2; 0 direct enablers): None  Precursor's Release; None Oath of the Maji
+- **per:SocketedGemsInGloves** (2 payoffs: ascendancy 2; 0 direct enablers): None  Precursor's Release; None Oath of the Maji
+- **cond:UsingGloves** (2 payoffs: ascendancy 2; 0 direct enablers): None  Precursor's Release; None Oath of the Maji
+- **per:FoulbornUniqueItem** (2 payoffs: ascendancy 2; 0 direct enablers): None Esh of the Storm; None Tul of the Blizzard
+- **per:FortificationStacksOver20** (2 payoffs: ascendancy 2; 0 direct enablers): None Unstoppable Hero
+- **per:GaleForce** (2 payoffs: ascendancy 2; 0 direct enablers): None Wind Ward; None Gathering Winds
+- **per:SummonedMinion** (2 payoffs: ascendancy 2; 0 direct enablers): None Primal Roar; None Bone Barrier
+- **cond:HaveElementalOverload** (1 payoffs: unique 1; 0 direct enablers): Augyre, Void Sceptre
+- **cond:HaveResoluteTechnique** (1 payoffs: unique 1; 0 direct enablers): Augyre, Void Sceptre
+- **cond:BeenCritRecently** (1 payoffs: unique 1; 0 direct enablers): Binds of Bloody Vengeance, Vanguard Belt
+- **cond:KilledPoisonedLast2Seconds** (1 payoffs: unique 1; 0 direct enablers): Bino's Kitchen Knife, Slaughter Knife
+- **per:AbyssJewelType** (1 payoffs: unique 1; 0 direct enablers): Bubonic Trail, Murder Boots
+- **per:RareAbyssJewels** (1 payoffs: unique 1; 0 direct enablers): Bubonic Trail, Murder Boots
+- **per:MagicAbyssJewels** (1 payoffs: unique 1; 0 direct enablers): Bubonic Trail, Murder Boots
+- **per:UniqueAbyssJewels** (1 payoffs: unique 1; 0 direct enablers): Bubonic Trail, Murder Boots
+- **per:ArmourOnWeapon 2** (1 payoffs: unique 1; 0 direct enablers): Cerberus Limb, Blood Sceptre
+- **per:EvasionOnWeapon 2** (1 payoffs: unique 1; 0 direct enablers): Cerberus Limb, Blood Sceptre
+- **cond:HaveHypnoticEyeJewelIn{SlotName}** (1 payoffs: unique 1; 0 direct enablers): Command of the Pit, Riveted Gloves
+- **per:CrabBarrier** (1 payoffs: unique 1; 0 direct enablers): Craiceann's Pincers, Titan Gauntlets
+- **cond:StrHigherThanDex** (1 payoffs: unique 1; 0 direct enablers): Cyclopean Coil, Leather Belt
+- **cond:KilledLast3Seconds** (1 payoffs: unique 1; 0 direct enablers): Death's Oath, Astral Plate
+- **per:ShaperOrElderItem** (1 payoffs: unique 1; 0 direct enablers): Disintegrator, Maelstrom Staff
+- **cond:UsedSkillRecently** (1 payoffs: unique 1; 0 direct enablers): Disintegrator, Maelstrom Staff
+- **per:FireResistOverCap** (1 payoffs: unique 1; 0 direct enablers): Enmity's Embrace, Vermillion Ring
+- **per:MaxEnergyShieldLeechInstanceDoubled** (1 payoffs: unique 1; 0 direct enablers): Essentia Sanguis, Vaal Claw
+- **per:ChaosResist** (1 payoffs: unique 1; 103 direct enablers): Eternal Damnation, Agate Amulet
+- **cond:AffectedByCat'sStealth|AffectedByCat'sAgility** (1 payoffs: unique 1; 0 direct enablers): Farrul's Bite, Harlequin Mask
+- **cond:StrHigherThanInt** (1 payoffs: unique 1; 0 direct enablers): Fractal Thoughts, Vaal Mask
+- **cond:GainedFrenzyChargeRecently** (1 payoffs: unique 1; 0 direct enablers): Goblinedge, Ambusher
+- **cond:Excommunicated** (1 payoffs: unique 1; 0 direct enablers): Hand of Heresy, Martyr Gloves
+- **per:ChillEffect** (1 payoffs: unique 1; 0 direct enablers): Heatshiver, Leather Hood
+- **cond:UsedColdSkillRecently** (1 payoffs: unique 1; 0 direct enablers): Heatshiver, Leather Hood
+- **cond:Ignited|Frozen|Shocked** (1 payoffs: unique 1; 0 direct enablers): Immortal Flesh, Leather Belt
+- **cond:OnScorchedGround** (1 payoffs: unique 1; 0 direct enablers): Legacy of Fury, Wyrmscale Boots
+- **cond:CastLast1Seconds** (1 payoffs: unique 1; 0 direct enablers): Lifesprig, Driftwood Wand
+- **per:DexDoubled** (1 payoffs: unique 1; 0 direct enablers): Might and Influence, Viridian Jewel
+- **cond:SummonedGolemInPast10Sec** (1 payoffs: unique 1; 0 direct enablers): Mutewind Seal, Unset Ring
+- **per:ColdResistOver75** (1 payoffs: unique 1; 0 direct enablers): Nebulis, Void Sceptre
+- **per:LightningResistOver75** (1 payoffs: unique 1; 0 direct enablers): Nebulis, Void Sceptre
+- **per:LowestOfArmourAndEvasion** (1 payoffs: unique 1; 0 direct enablers): Perseverance, Vanguard Belt
+- **cond:alwaysFinalRepeat** (1 payoffs: unique 1; 0 direct enablers): Plume of Pursuit, Bone Circlet
+- **per:SocketedGemsIn{SlotName}** (1 payoffs: unique 1; 0 direct enablers): Pragmatism, Colosseum Plate
+- **per:NonElderItem** (1 payoffs: unique 1; 0 direct enablers): Replica Eternity Shroud, Blood Raiment
+- **cond:AffectedByCat'sAgility** (1 payoffs: unique 1; 0 direct enablers): Replica Farrul's Fur, Triumphant Lamellar
+- **per:ShockEffect** (1 payoffs: unique 1; 0 direct enablers): Replica Heatshiver, Leather Hood
+- **per:MissingColdResist** (1 payoffs: unique 1; 0 direct enablers): Replica Nebulis, Void Sceptre
+- **per:MissingFireResist** (1 payoffs: unique 1; 0 direct enablers): Replica Nebulis, Void Sceptre
+- **per:ColdResist** (1 payoffs: unique 1; 108 direct enablers): Rotmother's Mutiny, Pearlescent Amulet
+- **per:FireResist** (1 payoffs: unique 1; 107 direct enablers): Rotmother's Mutiny, Pearlescent Amulet
+- **per:LightningResist** (1 payoffs: unique 1; 78 direct enablers): Rotmother's Mutiny, Pearlescent Amulet
+- **per:CurseOnSelf** (1 payoffs: unique 1; 0 direct enablers): Self-Flagellation, Viridian Jewel
+- **per:ForkedCount** (1 payoffs: unique 1; 0 direct enablers): Slivertongue, Harbinger Bow
+- **cond:SacrificeMinionOnAttack** (1 payoffs: unique 1; 0 direct enablers): Spinehail, Vile Arrow Quiver
+- **per:MurderousEyeJewelIn{SlotName}** (1 payoffs: unique 1; 0 direct enablers): Spinesnatch, Fleshripper
+- **per:SearchingEyeJewelIn{SlotName}** (1 payoffs: unique 1; 0 direct enablers): Spinesnatch, Fleshripper
+- **per:HypnoticEyeJewelIn{SlotName}** (1 payoffs: unique 1; 0 direct enablers): Spinesnatch, Fleshripper
+- **cond:OnFungalGround** (1 payoffs: unique 1; 0 direct enablers): Sporeguard, Saint's Hauberk
+- **cond:OnBurningGround** (1 payoffs: unique 1; 0 direct enablers): Steppan Eard, Sorcerer Boots
+- **cond:OnChilledGround** (1 payoffs: unique 1; 0 direct enablers): Steppan Eard, Sorcerer Boots
+- **per:PrimordialItem** (1 payoffs: unique 1; 0 direct enablers): The Anima Stone, Prismatic Jewel
+- **per:NormalItem** (1 payoffs: unique 1; 0 direct enablers): The Ascetic, Gold Amulet
+- **cond:SelfCastPunishment** (1 payoffs: unique 1; 0 direct enablers): The Balance of Terror, Cobalt Jewel
+- **per:ActiveAnimatedWeaponLimitDoubled** (1 payoffs: unique 1; 0 direct enablers): The Dark Monarch, Lich's Circlet
+- **per:ActiveGolemLimitDoubled** (1 payoffs: unique 1; 0 direct enablers): The Dark Monarch, Lich's Circlet
+- **per:ActiveRagingSpiritLimitDoubled** (1 payoffs: unique 1; 0 direct enablers): The Dark Monarch, Lich's Circlet
+- **per:ActiveSpectreLimitDoubled** (1 payoffs: unique 1; 0 direct enablers): The Dark Monarch, Lich's Circlet
+- **per:ActiveSpiderLimitDoubled** (1 payoffs: unique 1; 0 direct enablers): The Dark Monarch, Lich's Circlet
+- **per:ActiveZombieLimitDoubled** (1 payoffs: unique 1; 0 direct enablers): The Dark Monarch, Lich's Circlet
+- **per:ActiveReaperLimitDoubled** (1 payoffs: unique 1; 0 direct enablers): The Dark Monarch, Lich's Circlet
+- **per:ActiveSentinelOfAbsolutionLimitDoubled** (1 payoffs: unique 1; 0 direct enablers): The Dark Monarch, Lich's Circlet
+- **per:ActiveSentinelOfDominanceLimitDoubled** (1 payoffs: unique 1; 0 direct enablers): The Dark Monarch, Lich's Circlet
+- **per:ActiveSentinelOfPurityLimitDoubled** (1 payoffs: unique 1; 0 direct enablers): The Dark Monarch, Lich's Circlet
+- **per:ActiveHolyRelicLimitDoubled** (1 payoffs: unique 1; 0 direct enablers): The Dark Monarch, Lich's Circlet
+- **per:ActivePhantasmLimitDoubled** (1 payoffs: unique 1; 0 direct enablers): The Dark Monarch, Lich's Circlet
+- **per:ActiveSkeletonLimitDoubled** (1 payoffs: unique 1; 0 direct enablers): The Dark Monarch, Lich's Circlet
+- **per:ActiveWolfLimitDoubled** (1 payoffs: unique 1; 0 direct enablers): The Dark Monarch, Lich's Circlet
+- **per:ActiveLivingLightningLimitDoubled** (1 payoffs: unique 1; 0 direct enablers): The Dark Monarch, Lich's Circlet
+- **per:ActiveHolyStrikeMinionLimitDoubled** (1 payoffs: unique 1; 0 direct enablers): The Dark Monarch, Lich's Circlet
+- **per:NonShaperItem** (1 payoffs: unique 1; 0 direct enablers): The Eternity Shroud, Blood Raiment
+- **per:LifeLeechRateDoubled** (1 payoffs: unique 1; 0 direct enablers): The Highwayman, Gold Ring
+- **cond:Frozen|Chilled|Shocked|Ignited|Scorched|Brittle|Sapped** (1 payoffs: unique 1; 0 direct enablers): The Tempest Rising, Goliath Greaves
+- **per:EmptyRedSocketsInAnySlot** (1 payoffs: unique 1; 0 direct enablers): The Untouched Soul, Gold Amulet
+- **per:EmptyGreenSocketsInAnySlot** (1 payoffs: unique 1; 0 direct enablers): The Untouched Soul, Gold Amulet
+- **per:EmptyBlueSocketsInAnySlot** (1 payoffs: unique 1; 0 direct enablers): The Untouched Soul, Gold Amulet
+- **cond:HaveMurderousEyeJewelIn{SlotName}** (1 payoffs: unique 1; 0 direct enablers): Tombfist, Steelscale Gauntlets
+- **per:SocketedRedGemsIn{SlotName}** (1 payoffs: unique 1; 0 direct enablers): Triad Grip, Mesh Gloves
+- **per:SocketedGreenGemsIn{SlotName}** (1 payoffs: unique 1; 0 direct enablers): Triad Grip, Mesh Gloves
+- **per:SocketedBlueGemsIn{SlotName}** (1 payoffs: unique 1; 0 direct enablers): Triad Grip, Mesh Gloves
+- **per:EmptySocketIn{SlotName}** (1 payoffs: unique 1; 0 direct enablers): Triad Grip, Mesh Gloves
+- **cond:MagicItemInRing 2** (1 payoffs: unique 1; 0 direct enablers): Viridi's Veil, Praetor Crown
+- **cond:MagicItemInRing 1** (1 payoffs: unique 1; 0 direct enablers): Viridi's Veil, Praetor Crown
+- **per:AreaOfEffectDoubled** (1 payoffs: unique 1; 0 direct enablers): Weight of the Empire, Crimson Jewel
+- **cond:HaveMaximumFortification** (1 payoffs: unique 1; 0 direct enablers): Willowgift, Jade Amulet
+- **cond:UsedTravelSkillRecently** (1 payoffs: notable 1; 0 direct enablers): Martial Momentum
+- **per:ManaBurnStacks|WeepingWoundsStacks** (1 payoffs: notable 1; 0 direct enablers): Legacy of the Wilds
+- **cond:UsingMace|UsingStaff** (1 payoffs: notable 1; 0 direct enablers): Weight Advantage
+- **cond:UsingStaff|UsingShield** (1 payoffs: notable 1; 0 direct enablers): Safeguard
+- **cond:UsedWarcryInPast8Seconds** (1 payoffs: notable 1; 0 direct enablers): Warning Call
+- **cond:UsedMinionSkillRecently** (1 payoffs: notable 1; 0 direct enablers): Enduring Bond
+- **per:LifeSpentRecently** (1 payoffs: notable 1; 0 direct enablers): Blood Artist
+- **per:SpellBlockChance** (1 payoffs: notable 1; 39 direct enablers): Mystic Bulwark
+- **cond:ShatteredEnemyRecently** (1 payoffs: notable 1; 0 direct enablers): Winter's Embrace
+- **cond:ChilledEnemyRecently** (1 payoffs: notable 1; 0 direct enablers): Sadist
+- **cond:CursedEnemyRecently** (1 payoffs: notable 1; 0 direct enablers): Sap Psyche
+- **cond:Ignited|Chilled** (1 payoffs: notable 1; 0 direct enablers): Snowforged
+- **per:WarcryUsedRecently** (1 payoffs: notable 1; 0 direct enablers): Admonisher
+- **cond:Frozen|Chilled|Shocked|Ignited|Scorched|Brittle|Sapped|Poisoned|Bleeding** (1 payoffs: notable 1; 0 direct enablers): Astonishing Affliction
+- **per:ChaosResistDoubled** (1 payoffs: notable 1; 0 direct enablers): Cleansed Thoughts
+- **cond:StunnedWhileCastingRecently** (1 payoffs: notable 1; 0 direct enablers): Arcane Retaliation
+- **cond:UsingClaw|UsingDagger** (1 payoffs: notable 1; 0 direct enablers): Disease Vector
+- **per:ActiveGolemLimit** (1 payoffs: notable 1; 7 direct enablers): Primordial Bond
+- **per:AffectedByWarcryBuffDuration** (1 payoffs: notable 1; 0 direct enablers): Escalation
+- **cond:LinkedRecently** (1 payoffs: notable 1; 0 direct enablers): Inspiring Bond
+- **cond:NoSummonedTotemsInPastTwoSeconds** (1 payoffs: notable 1; 0 direct enablers): Ancestral Might
+- **cond:UsingAxe|UsingSword** (1 payoffs: notable 1; 0 direct enablers): Wound Aggravation
+- **cond:MinionsDiedRecently** (1 payoffs: notable 1; 0 direct enablers): Life from Death
+- **cond:CritWithHeraldSkillRecently** (1 payoffs: notable 1; 0 direct enablers): Self-Fulfilling Prophecy
+- **per:EnergyShieldDoubled** (1 payoffs: keystone 1; 0 direct enablers): Ghost Reaver
+- **per:GraspingVinesCount** (1 payoffs: keystone 1; 0 direct enablers): Nature's Patience
+- **per:BlockChanceDoubled** (1 payoffs: keystone 1; 0 direct enablers): Glancing Blows
+- **per:EvasionDoubled** (1 payoffs: keystone 1; 0 direct enablers): Arrow Dancing
+- **cond:AtMostOneNearbyRareOrUniqueEnemy** (1 payoffs: ascendancy 1; 0 direct enablers): None Opportunistic
+- **per:NearbyRareOrUniqueEnemies** (1 payoffs: ascendancy 1; 0 direct enablers): None Opportunistic
+- **per:Defiance** (1 payoffs: ascendancy 1; 0 direct enablers): None Defy Pain
+- **per:SynapticRingEquipped** (1 payoffs: ascendancy 1; 0 direct enablers): None Esh of the Storm
+- **per:CryonicRingEquipped** (1 payoffs: ascendancy 1; 0 direct enablers): None Tul of the Blizzard
+- **cond:DexSingleHighestAttribute** (1 payoffs: ascendancy 1; 0 direct enablers): None Cryogenesis
+- **cond:IntSingleHighestAttribute** (1 payoffs: ascendancy 1; 0 direct enablers): None Cryogenesis
+- **per:ActivePhantasmLimit** (1 payoffs: ascendancy 1; 1 direct enablers): None Umbral Army
+- **cond:Convergence** (1 payoffs: ascendancy 1; 0 direct enablers): None Heart of Destruction
+- **cond:AppliedExposureRecently** (1 payoffs: ascendancy 1; 0 direct enablers): None Mastermind of Discord
+- **cond:HallowingFlame** (1 payoffs: ascendancy 1; 0 direct enablers): None Marshal of Divinity
+- **per:HallowingFlameStacksRemovedByAlly** (1 payoffs: ascendancy 1; 0 direct enablers): None Marshal of Divinity
+- **cond:BrandLastQuarter** (1 payoffs: ascendancy 1; 0 direct enablers): None Sign of Purpose
+- **per:CastLast8Seconds** (1 payoffs: ascendancy 1; 0 direct enablers): None Instruments of Virtue
+- **per:ManaReservedPercent** (1 payoffs: ascendancy 1; 0 direct enablers): None Farewell to Flesh
+- **per:CorpseConsumedRecently** (1 payoffs: ascendancy 1; 0 direct enablers): None Corpse Pact
+- **cond:UnbrokenWard** (1 payoffs: ascendancy 1; 0 direct enablers): None Boon of the Mountain
+- **per:BeenHitRecently** (1 payoffs: ascendancy 1; 0 direct enablers): None Boon of the Sun
+- **cond:HaveDiamondFlask** (1 payoffs: ascendancy 1; 0 direct enablers): None Master Distiller
+- **cond:HaveBismuthFlask** (1 payoffs: ascendancy 1; 0 direct enablers): None Master Distiller
+- **cond:HaveAmethystFlask** (1 payoffs: ascendancy 1; 0 direct enablers): None Master Distiller
+- **per:TrapTriggeredRecently** (1 payoffs: ascendancy 1; 0 direct enablers): None Pyromaniac
+- **per:SoulCost** (1 payoffs: ascendancy 1; 2 direct enablers): None Priest of Kopec
+- **per:OathOfTheMajiDoubled** (1 payoffs: ascendancy 1; 0 direct enablers): None Oath of the Maji

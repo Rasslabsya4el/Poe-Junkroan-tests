@@ -1,0 +1,170 @@
+{
+ "c-level": {
+  "level": {
+   "day1": [
+    75,
+    80
+   ],
+   "endgame": [
+    95,
+    100
+   ],
+   "mirror": [
+    100,
+    100
+   ],
+   "t16": [
+    90,
+    95
+   ],
+   "uber": [
+    97,
+    100
+   ],
+   "uber_plus": [
+    97,
+    100
+   ]
+  }
+ },
+ "g-rarity": {
+  "open_mod_never_below_share": 0.002,
+  "open_mod_two_lines_below_share": 0.01
+ },
+ "gm-level": {
+  "gem_level": {
+   "day1": 18,
+   "t16": 20
+  },
+  "gem_quality": {
+   "day1": 0
+  }
+ },
+ "gm-sockets": {
+  "coloured_max": {
+   "day1": 2,
+   "endgame": 8,
+   "mirror": null,
+   "t16": 4
+  }
+ },
+ "gm-transfigured": {
+  "transfigured_gem": {
+   "day1": {
+    "level": 18,
+    "quality": 0
+   }
+  }
+ },
+ "gm-vaal": {
+  "vaal_gem": {
+   "day1": {
+    "level": 18,
+    "quality": 0
+   },
+   "endgame": {
+    "level": 20,
+    "quality": 20
+   },
+   "mirror": [
+    {
+     "level": 21,
+     "quality": 20
+    },
+    {
+     "level": 20,
+     "quality": 23
+    }
+   ],
+   "t16": {
+    "level": 20,
+    "quality": 0
+   }
+  }
+ },
+ "i-bases": {
+  "base_level_max": {
+   "day1": 70
+  },
+  "item_level_max": {
+   "day1": 70,
+   "t16": 83
+  },
+  "template_item_level": {
+   "day1": 72
+  },
+  "weapon_item_level": {
+   "day1": 76
+  }
+ },
+ "i-bench": {
+  "bench_max_map_tier": {
+   "day1": 10,
+   "t16": 16
+  }
+ },
+ "j-regular": {
+  "count_max": {
+   "day1": 2
+  },
+  "useful_mods": {
+   "day1": 1,
+   "endgame": 2,
+   "mirror": 4,
+   "t16": 1,
+   "uber": 3
+  }
+ },
+ "o-flasks": {
+  "base_level_max": {
+   "day1": 70
+  },
+  "item_level_max": {
+   "day1": 70
+  }
+ },
+ "o-tinctures": {
+  "tinctures": {
+   "day1": true
+  }
+ },
+ "t-anoint": {
+  "oil_max": {
+   "day1": "Black",
+   "endgame": "Prismatic",
+   "t16": "Silver"
+  }
+ },
+ "t-cluster": {
+  "passives": {
+   "large": {
+    "day1": 0,
+    "endgame": null,
+    "t16": 12
+   },
+   "medium": {
+    "day1": 0,
+    "endgame": null,
+    "t16": 6
+   }
+  },
+  "sizes": {
+   "day1": [],
+   "endgame": "all",
+   "t16": [
+    "large",
+    "medium"
+   ]
+  }
+ },
+ "t-nodes": {
+  "attribute_plus30_nodes_max": {
+   "day1": 1
+  }
+ },
+ "c-bandits": {
+  "bandit": {
+   "day1": "None"
+  }
+ }
+}

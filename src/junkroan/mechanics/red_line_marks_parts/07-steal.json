@@ -1,0 +1,62 @@
+[
+  {
+    "line": "10% chance to Steal Power, Frenzy, and Endurance Charges on Hit",
+    "surfaces": ["unique"],
+    "sources": ["Surgebinders, Dragonscale Gauntlets"],
+    "group": "steal",
+    "kind": "steal_charges",
+    "boss_lane": [],
+    "optimistic_lane": [],
+    "zero_reason": "steal: stealing charges counts 0 on every lane (kind steal_charges)",
+    "why": "steals Power, Frenzy and Endurance Charges from the enemy; the enemy has no charges to steal (boss and map), so the steal never counts.",
+    "partial_part": ""
+  },
+  {
+    "line": "25% chance to Steal Power, Frenzy, and Endurance Charges on Hit",
+    "surfaces": ["unique"],
+    "sources": ["The Highwayman, Gold Ring"],
+    "group": "steal",
+    "kind": "steal_charges",
+    "boss_lane": [],
+    "optimistic_lane": [],
+    "zero_reason": "steal: stealing charges counts 0 on every lane (kind steal_charges)",
+    "why": "steals Power, Frenzy and Endurance Charges from the enemy; the enemy has no charges to steal, so the steal never counts.",
+    "partial_part": ""
+  },
+  {
+    "line": "25% chance to Steal Power, Frenzy, and Endurance Charges on Hit with Claws",
+    "surfaces": ["notable"],
+    "sources": ["54791"],
+    "group": "steal",
+    "kind": "steal_charges",
+    "boss_lane": [],
+    "optimistic_lane": [],
+    "zero_reason": "steal: stealing charges counts 0 on every lane (kind steal_charges)",
+    "why": "steals Power, Frenzy and Endurance Charges from the enemy with Claw hits; the enemy has no charges to steal, so the steal never counts.",
+    "partial_part": ""
+  },
+  {
+    "line": "50% increased Stealth if you've Hit With a Claw Recently",
+    "surfaces": ["mastery"],
+    "sources": ["12518", "19050", "4788", "53365"],
+    "group": "steal",
+    "kind": "no_representation",
+    "boss_lane": [],
+    "optimistic_lane": [],
+    "zero_reason": "no_representation: PoB has no output for Stealth (ModCache.lua:5911 keeps the line with an empty mod list); counts 0 on every lane",
+    "why": "Stealth is the being-hard-to-see state, not one of the 7 outputs (no damage, no EHP, no Life or Mana); PoB holds the line as text only, and Cat's Stealth in PoB is a separate buff with its own mods.",
+    "partial_part": ""
+  },
+  {
+    "line": "Steal Power, Frenzy, and Endurance Charges on Hit",
+    "surfaces": ["unique"],
+    "sources": ["The Highwayman, Gold Ring"],
+    "group": "steal",
+    "kind": "steal_charges",
+    "boss_lane": [],
+    "optimistic_lane": [],
+    "zero_reason": "steal: stealing charges counts 0 on every lane (kind steal_charges)",
+    "why": "steals Power, Frenzy and Endurance Charges from the enemy on every hit; the enemy has no charges to steal, so the steal never counts.",
+    "partial_part": ""
+  }
+]
