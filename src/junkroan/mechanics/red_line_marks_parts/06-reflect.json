@@ -1,0 +1,486 @@
+[
+ {
+  "line": "10% of Damage you Reflect to Enemies when Hit is leeched as Life",
+  "surfaces": [
+   "unique"
+  ],
+  "sources": [
+   "Thousand Teeth Temu, Vaal Buckler"
+  ],
+  "group": "reflect",
+  "kind": "reflect_to_enemies",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "no_representation: PoB has no output for this damage, the line is not counted (kind of unsupported_lines.json)",
+  "why": "PoB already parses the leech (DamageLifeLeech 10, ModCache.lua:2756) on all damage; the reflected-to-enemies damage has no PoB mod",
+  "partial_part": "you Reflect to Enemies when Hit"
+ },
+ {
+  "line": "20% chance on Hit to remove all Impales from Enemy Impales removed this way multiply their Reflected Damage for this Hit by the number of Hits they have left",
+  "surfaces": [
+   "mastery"
+  ],
+  "sources": [
+   "31400",
+   "47059",
+   "48982",
+   "49677",
+   "52074"
+  ],
+  "group": "reflect",
+  "kind": "impale_reflect",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "no_representation: PoB has no output for this damage, the line is not counted (kind of unsupported_lines.json)",
+  "why": "PoB parses the 20% chance on Hit fragment (ModCache.lua:3812) but not the impale removal or its Reflected Damage multiplier",
+  "partial_part": "to remove all Impales from Enemy Impales removed this way multiply their Reflected Damage for this Hit by the number of Hits they have left"
+ },
+ {
+  "line": "Blind you inflict is Reflected to you",
+  "surfaces": [
+   "unique"
+  ],
+  "sources": [
+   "Retaliation Charm, Citrine Amulet"
+  ],
+  "group": "reflect",
+  "kind": "blind_reflected",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "no_representation: PoB has no output for this damage, the line is not counted (kind of unsupported_lines.json)",
+  "why": "the blind you inflict on enemies is reflected to you: no PoB mod or output for a player blind",
+  "partial_part": ""
+ },
+ {
+  "line": "Call of Steel causes 10% increased Reflected Damage",
+  "surfaces": [
+   "mastery"
+  ],
+  "sources": [
+   "31400",
+   "47059",
+   "48982",
+   "49677",
+   "52074"
+  ],
+  "group": "reflect",
+  "kind": "reflected_damage_increase",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "no_representation: PoB has no output for this damage, the line is not counted (kind of unsupported_lines.json)",
+  "why": "Reflected Damage dealt by Call of Steel: PoB has no reflected-damage output (ModCache.lua:7933 unparsed)",
+  "partial_part": ""
+ },
+ {
+  "line": "Call of Steel deals Reflected Damage with 40% increased Area of Effect",
+  "surfaces": [
+   "mastery"
+  ],
+  "sources": [
+   "31400",
+   "47059",
+   "48982",
+   "49677",
+   "52074"
+  ],
+  "group": "reflect",
+  "kind": "reflected_damage_increase",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "no_representation: PoB has no output for this damage, the line is not counted (kind of unsupported_lines.json)",
+  "why": "Reflected Damage dealt by Call of Steel: PoB has no reflected-damage output (ModCache.lua:7933 unparsed)",
+  "partial_part": ""
+ },
+ {
+  "line": "Prevent +50% of Reflected Damage",
+  "surfaces": [
+   "mastery"
+  ],
+  "sources": [
+   "12503",
+   "12873",
+   "17127",
+   "31818",
+   "33657",
+   "42792"
+  ],
+  "group": "reflect",
+  "kind": "reflect_taken_reduction",
+  "type": "any",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "no_representation: PoB has no player-only always-on phrase for a reduction of reflected damage taken: its phrases are the minion-wide 'you and your minions take X% reduced reflected damage' (ModParser.lua:4687) and the effect-limited 'X% reduced reflected damage taken during effect' (ModParser.lua:4684)",
+  "why": "Prevent +X% of Reflected Damage is a reduction of ReflectedDamageTaken (CalcDefence.lua:1906); the one PoB phrase for the same mod carries 'during effect', which this line does not say, and the minion-wide one would also count minions, so both lanes are empty",
+  "partial_part": ""
+ },
+ {
+  "line": "Prevent +50% of Reflected Damage during Effect",
+  "surfaces": [
+   "gear_affix"
+  ],
+  "sources": [
+   "ModMaster#667"
+  ],
+  "group": "reflect",
+  "kind": "uptime_dependent",
+  "type": "any",
+  "boss_lane": [],
+  "optimistic_lane": [
+   "50% reduced Reflected Damage taken during Effect"
+  ],
+  "zero_reason": "",
+  "why": "reduced Reflected Damage taken during an Effect (a duration): optimistic lane at full uptime, boss lane empty (#965 parked)",
+  "partial_part": "", "stand_blind": {"reason_kind": "flag-only", "why": "Prevent +50% of Reflected Damage: the stands take no reflected damage, so no PoB output reads the prevention"}
+ },
+ {
+  "line": "Prevent +60% of Reflected Elemental Damage",
+  "surfaces": [
+   "mastery"
+  ],
+  "sources": [
+   "13387",
+   "34317",
+   "44298",
+   "48660",
+   "5348",
+   "5726"
+  ],
+  "group": "reflect",
+  "kind": "reflect_taken_reduction",
+  "type": "any",
+  "boss_lane": [],
+  "optimistic_lane": [
+   "60% reduced Reflected Elemental Damage taken"
+  ],
+  "zero_reason": "",
+  "why": "Prevent +X% of Reflected Elemental Damage is a reduction of ElementalReflectedDamageTaken (CalcDefence.lua:1909); new kind, optimistic lane only",
+  "partial_part": "", "stand_blind": {"reason_kind": "flag-only", "why": "Prevent +60% of Reflected Elemental Damage: the stands take no reflected damage, so no PoB output reads the prevention"}
+ },
+ {
+  "line": "Prevent +60% of Reflected Physical Damage",
+  "surfaces": [
+   "mastery"
+  ],
+  "sources": [
+   "12169",
+   "12239",
+   "20675",
+   "52220",
+   "64042"
+  ],
+  "group": "reflect",
+  "kind": "reflect_taken_reduction",
+  "type": "any",
+  "boss_lane": [],
+  "optimistic_lane": [
+   "60% reduced Reflected Physical Damage taken"
+  ],
+  "zero_reason": "",
+  "why": "Prevent +X% of Reflected Physical Damage is a reduction of PhysicalReflectedDamageTaken; new kind, optimistic lane only",
+  "partial_part": "", "stand_blind": {"reason_kind": "flag-only", "why": "Prevent +60% of Reflected Physical Damage: the stands take no reflected damage, so no PoB output reads the prevention"}
+ },
+ {
+  "line": "Reflects 1 to 1000 Physical Damage to Attackers on Block",
+  "surfaces": [
+   "unique"
+  ],
+  "sources": [
+   "Thousand Teeth Temu, Vaal Buckler"
+  ],
+  "group": "reflect",
+  "kind": "reflect_to_attackers",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "no_representation: PoB has no output for this damage, the line is not counted (kind of unsupported_lines.json)",
+  "why": "damage reflected to attackers has no PoB output (flat melee physical forms parse to an empty mod list, ModParser.lua:4813)",
+  "partial_part": ""
+ },
+ {
+  "line": "Reflects 10 Cold Damage to Melee Attackers",
+  "surfaces": [
+   "unique"
+  ],
+  "sources": [
+   "Hrimsorrow, Goathide Gloves"
+  ],
+  "group": "reflect",
+  "kind": "reflect_to_attackers",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "no_representation: PoB has no output for this damage, the line is not counted (kind of unsupported_lines.json)",
+  "why": "damage reflected to attackers has no PoB output (flat melee physical forms parse to an empty mod list, ModParser.lua:4813)",
+  "partial_part": ""
+ },
+ {
+  "line": "Reflects 100 Cold Damage to Melee Attackers",
+  "surfaces": [
+   "unique"
+  ],
+  "sources": [
+   "Hrimsorrow, Goathide Gloves"
+  ],
+  "group": "reflect",
+  "kind": "reflect_to_attackers",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "no_representation: PoB has no output for this damage, the line is not counted (kind of unsupported_lines.json)",
+  "why": "damage reflected to attackers has no PoB output (flat melee physical forms parse to an empty mod list, ModParser.lua:4813)",
+  "partial_part": ""
+ },
+ {
+  "line": "Reflects 1000 to 10000 Physical Damage to Attackers on Block",
+  "surfaces": [
+   "unique"
+  ],
+  "sources": [
+   "Thousand Teeth Temu, Vaal Buckler"
+  ],
+  "group": "reflect",
+  "kind": "reflect_to_attackers",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "no_representation: PoB has no output for this damage, the line is not counted (kind of unsupported_lines.json)",
+  "why": "damage reflected to attackers has no PoB output (flat melee physical forms parse to an empty mod list, ModParser.lua:4813)",
+  "partial_part": ""
+ },
+ {
+  "line": "Reflects 125 Physical Damage to Melee Attackers",
+  "surfaces": [
+   "unique"
+  ],
+  "sources": [
+   "Chain of Endurance, Chain Belt"
+  ],
+  "group": "reflect",
+  "kind": "reflect_to_attackers",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "no_representation: PoB has no output for this damage, the line is not counted (kind of unsupported_lines.json)",
+  "why": "damage reflected to attackers has no PoB output (flat melee physical forms parse to an empty mod list, ModParser.lua:4813)",
+  "partial_part": ""
+ },
+ {
+  "line": "Reflects 15 Chaos Damage to Melee Attackers",
+  "surfaces": [
+   "unique"
+  ],
+  "sources": [
+   "Lightbane Raiment, Ornate Ringmail"
+  ],
+  "group": "reflect",
+  "kind": "reflect_to_attackers",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "no_representation: PoB has no output for this damage, the line is not counted (kind of unsupported_lines.json)",
+  "why": "damage reflected to attackers has no PoB output (flat melee physical forms parse to an empty mod list, ModParser.lua:4813)",
+  "partial_part": ""
+ },
+ {
+  "line": "Reflects 18 Physical Damage to Melee Attackers",
+  "surfaces": [
+   "gear_affix"
+  ],
+  "sources": [
+   "AttackerTakesDamage3"
+  ],
+  "group": "reflect",
+  "kind": "reflect_to_attackers",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "no_representation: PoB has no output for this damage, the line is not counted (kind of unsupported_lines.json)",
+  "why": "damage reflected to attackers has no PoB output (flat melee physical forms parse to an empty mod list, ModParser.lua:4813)",
+  "partial_part": ""
+ },
+ {
+  "line": "Reflects 200 to 250 Physical Damage to Attackers on Block",
+  "surfaces": [
+   "unique"
+  ],
+  "sources": [
+   "The Anvil, Amber Amulet"
+  ],
+  "group": "reflect",
+  "kind": "reflect_to_attackers",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "no_representation: PoB has no output for this damage, the line is not counted (kind of unsupported_lines.json)",
+  "why": "damage reflected to attackers has no PoB output (flat melee physical forms parse to an empty mod list, ModParser.lua:4813)",
+  "partial_part": ""
+ },
+ {
+  "line": "Reflects 240 to 300 Physical Damage to Attackers on Block",
+  "surfaces": [
+   "unique"
+  ],
+  "sources": [
+   "The Anvil, Amber Amulet"
+  ],
+  "group": "reflect",
+  "kind": "reflect_to_attackers",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "no_representation: PoB has no output for this damage, the line is not counted (kind of unsupported_lines.json)",
+  "why": "damage reflected to attackers has no PoB output (flat melee physical forms parse to an empty mod list, ModParser.lua:4813)",
+  "partial_part": ""
+ },
+ {
+  "line": "Reflects 3 Physical Damage to Melee Attackers",
+  "surfaces": [
+   "gear_affix"
+  ],
+  "sources": [
+   "AttackerTakesDamage1"
+  ],
+  "group": "reflect",
+  "kind": "reflect_to_attackers",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "no_representation: PoB has no output for this damage, the line is not counted (kind of unsupported_lines.json)",
+  "why": "damage reflected to attackers has no PoB output (flat melee physical forms parse to an empty mod list, ModParser.lua:4813)",
+  "partial_part": ""
+ },
+ {
+  "line": "Reflects 30 Chaos Damage to Melee Attackers",
+  "surfaces": [
+   "unique"
+  ],
+  "sources": [
+   "Lightbane Raiment, Ornate Ringmail"
+  ],
+  "group": "reflect",
+  "kind": "reflect_to_attackers",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "no_representation: PoB has no output for this damage, the line is not counted (kind of unsupported_lines.json)",
+  "why": "damage reflected to attackers has no PoB output (flat melee physical forms parse to an empty mod list, ModParser.lua:4813)",
+  "partial_part": ""
+ },
+ {
+  "line": "Reflects 33 Physical Damage to Attackers on Block",
+  "surfaces": [
+   "unique"
+  ],
+  "sources": [
+   "The Blood Thorn, Gnarled Branch"
+  ],
+  "group": "reflect",
+  "kind": "reflect_to_attackers",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "no_representation: PoB has no output for this damage, the line is not counted (kind of unsupported_lines.json)",
+  "why": "damage reflected to attackers has no PoB output (flat melee physical forms parse to an empty mod list, ModParser.lua:4813)",
+  "partial_part": ""
+ },
+ {
+  "line": "Reflects 38 Cold Damage to Melee Attackers",
+  "surfaces": [
+   "unique"
+  ],
+  "sources": [
+   "Kaltenhalt, Painted Buckler"
+  ],
+  "group": "reflect",
+  "kind": "reflect_to_attackers",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "no_representation: PoB has no output for this damage, the line is not counted (kind of unsupported_lines.json)",
+  "why": "damage reflected to attackers has no PoB output (flat melee physical forms parse to an empty mod list, ModParser.lua:4813)",
+  "partial_part": ""
+ },
+ {
+  "line": "Reflects 38 Physical Damage to Melee Attackers",
+  "surfaces": [
+   "gear_affix"
+  ],
+  "sources": [
+   "AttackerTakesDamage4"
+  ],
+  "group": "reflect",
+  "kind": "reflect_to_attackers",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "no_representation: PoB has no output for this damage, the line is not counted (kind of unsupported_lines.json)",
+  "why": "damage reflected to attackers has no PoB output (flat melee physical forms parse to an empty mod list, ModParser.lua:4813)",
+  "partial_part": ""
+ },
+ {
+  "line": "Reflects 5 Physical Damage to Melee Attackers",
+  "surfaces": [
+   "unique"
+  ],
+  "sources": [
+   "Crown of Thorns, Vine Circlet"
+  ],
+  "group": "reflect",
+  "kind": "reflect_to_attackers",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "no_representation: PoB has no output for this damage, the line is not counted (kind of unsupported_lines.json)",
+  "why": "damage reflected to attackers has no PoB output (flat melee physical forms parse to an empty mod list, ModParser.lua:4813)",
+  "partial_part": ""
+ },
+ {
+  "line": "Reflects 50 Physical Damage to Melee Attackers",
+  "surfaces": [
+   "notable"
+  ],
+  "sources": [
+   "10542"
+  ],
+  "group": "reflect",
+  "kind": "reflect_to_attackers",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "no_representation: PoB has no output for this damage, the line is not counted (kind of unsupported_lines.json)",
+  "why": "damage reflected to attackers has no PoB output (flat melee physical forms parse to an empty mod list, ModParser.lua:4813)",
+  "partial_part": ""
+ },
+ {
+  "line": "Reflects 8 Cold Damage to Melee Attackers",
+  "surfaces": [
+   "unique"
+  ],
+  "sources": [
+   "Kaltenhalt, Painted Buckler"
+  ],
+  "group": "reflect",
+  "kind": "reflect_to_attackers",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "no_representation: PoB has no output for this damage, the line is not counted (kind of unsupported_lines.json)",
+  "why": "damage reflected to attackers has no PoB output (flat melee physical forms parse to an empty mod list, ModParser.lua:4813)",
+  "partial_part": ""
+ },
+ {
+  "line": "Reflects 8 Physical Damage to Melee Attackers",
+  "surfaces": [
+   "gear_affix"
+  ],
+  "sources": [
+   "AttackerTakesDamage2"
+  ],
+  "group": "reflect",
+  "kind": "reflect_to_attackers",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "no_representation: PoB has no output for this damage, the line is not counted (kind of unsupported_lines.json)",
+  "why": "damage reflected to attackers has no PoB output (flat melee physical forms parse to an empty mod list, ModParser.lua:4813)",
+  "partial_part": ""
+ },
+ {
+  "line": "Reflects 81 Physical Damage to Melee Attackers",
+  "surfaces": [
+   "unique"
+  ],
+  "sources": [
+   "Advancing Fortress, Gut Ripper"
+  ],
+  "group": "reflect",
+  "kind": "reflect_to_attackers",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "no_representation: PoB has no output for this damage, the line is not counted (kind of unsupported_lines.json)",
+  "why": "damage reflected to attackers has no PoB output (flat melee physical forms parse to an empty mod list, ModParser.lua:4813)",
+  "partial_part": ""
+ }
+]

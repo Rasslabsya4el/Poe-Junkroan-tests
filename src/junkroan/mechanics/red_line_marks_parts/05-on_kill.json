@@ -1,0 +1,807 @@
+[
+ {
+  "line": "+3 seconds to Duration of Frenzy and Power Charges on Culling Strike",
+  "surfaces": [
+   "unique"
+  ],
+  "sources": [
+   "Goblinedge, Ambusher"
+  ],
+  "group": "on_kill",
+  "kind": "no_representation",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "no_representation: charge duration is not read by any of the 7 outputs (PoB keeps Power/Frenzy ChargesDuration as display only; its own parse of the line is the Frenzy skill's Duration)",
+  "why": "+3 s of charge duration on Culling Strike moves no PoB output and a culling kill is an on-kill event (on_kill_generator: boss 0)",
+  "partial_part": "seconds to Duration of Frenzy and Power Charges on Culling Strike"
+ },
+ {
+  "line": "10% chance to create Consecrated Ground on Melee Kill, lasting 4 seconds",
+  "surfaces": [
+   "notable"
+  ],
+  "sources": [
+   "55002"
+  ],
+  "group": "on_kill",
+  "kind": "uptime_dependent",
+  "boss_lane": [],
+  "optimistic_lane": [
+   "You have Consecrated Ground around you while stationary"
+  ],
+  "zero_reason": "",
+  "why": "Consecrated Ground for 4 s on a 10% melee kill is a timed effect after an event (uptime rule parked, #965): optimistic lane at full uptime through PoB's own OnConsecratedGround condition (ModParser.lua:2902), boss lane empty",
+  "partial_part": "",
+  "stand_blind": {
+   "reason_kind": "flag-only",
+   "why": "Consecrated Ground condition has no consumer: 'You have Consecrated Ground around you while stationary' moves nothing on any stand"
+  }
+ },
+ {
+  "line": "10% chance to create a Smoke Cloud on Kill",
+  "surfaces": [
+   "notable"
+  ],
+  "sources": [
+   "13790"
+  ],
+  "group": "on_kill",
+  "kind": "no_representation",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "no_representation: a Smoke Cloud has no PoB mod or output (only 'creates a smoke cloud on use' is parsed, to nothing, ModParser.lua:5045)",
+  "why": "a cloud on kill that blinds and hides: no damage and no EHP number in PoB; also an on-kill event (boss 0)",
+  "partial_part": ""
+ },
+ {
+  "line": "10% chance to gain a Frenzy Charge on Kill",
+  "surfaces": [
+   "unique"
+  ],
+  "sources": [
+   "Victario's Acuity, Turquoise Amulet"
+  ],
+  "group": "on_kill",
+  "kind": "on_kill_generator",
+  "boss_lane": [],
+  "optimistic_lane": [
+   "+1 to Minimum Frenzy Charges"
+  ],
+  "zero_reason": "",
+  "why": "PoB has no kill rate, so the optimistic lane (JSON on_kill_generator: on) holds the charge the line grants as one minimum charge (PoB PowerChargesMin/FrenzyChargesMin/EnduranceChargesMin, CalcPerform.lua:1021-1048); boss lane 0 (no kills on a boss, no enabler named)",
+  "partial_part": "",
+  "stand_blind": {
+   "reason_kind": "uptime-saturated",
+   "why": "Frenzy Charges already at their maximum of 3 on the spell and minion stands (attack stand holds 1 Frenzy); the charge the line grants moves no output"
+  }
+ },
+ {
+  "line": "10% chance to gain a Power Charge on Kill",
+  "surfaces": [
+   "notable",
+   "unique"
+  ],
+  "sources": [
+   "41476",
+   "Victario's Acuity, Turquoise Amulet"
+  ],
+  "group": "on_kill",
+  "kind": "on_kill_generator",
+  "boss_lane": [],
+  "optimistic_lane": [
+   "+1 to Minimum Power Charges"
+  ],
+  "zero_reason": "",
+  "why": "PoB has no kill rate, so the optimistic lane (JSON on_kill_generator: on) holds the charge the line grants as one minimum charge (PoB PowerChargesMin/FrenzyChargesMin/EnduranceChargesMin, CalcPerform.lua:1021-1048); boss lane 0 (no kills on a boss, no enabler named)",
+  "partial_part": ""
+ },
+ {
+  "line": "10% chance to gain a Power, Frenzy or Endurance Charge on Kill",
+  "surfaces": [
+   "unique"
+  ],
+  "sources": [
+   "Lochtonial Caress, Iron Gauntlets"
+  ],
+  "group": "on_kill",
+  "kind": "on_kill_generator",
+  "boss_lane": [],
+  "optimistic_lane": [
+   "+1 to Minimum Power Charges",
+   "+1 to Minimum Frenzy Charges",
+   "+1 to Minimum Endurance Charges"
+  ],
+  "zero_reason": "",
+  "why": "PoB has no kill rate, so the optimistic lane (JSON on_kill_generator: on) holds the charge the line grants as one minimum charge (PoB PowerChargesMin/FrenzyChargesMin/EnduranceChargesMin, CalcPerform.lua:1021-1048); boss lane 0 (no kills on a boss, no enabler named)",
+  "partial_part": ""
+ },
+ {
+  "line": "10% chance to gain an Endurance Charge on Kill while holding a Shield",
+  "surfaces": [
+   "notable"
+  ],
+  "sources": [
+   "861"
+  ],
+  "group": "on_kill",
+  "kind": "on_kill_generator",
+  "boss_lane": [],
+  "optimistic_lane": [
+   "+1 to Minimum Endurance Charges while holding a Shield"
+  ],
+  "zero_reason": "",
+  "why": "PoB has no kill rate, so the optimistic lane (JSON on_kill_generator: on) holds the charge the line grants as one minimum charge (PoB PowerChargesMin/FrenzyChargesMin/EnduranceChargesMin, CalcPerform.lua:1021-1048); boss lane 0 (no kills on a boss, no enabler named)",
+  "partial_part": "",
+  "stand_blind": {
+   "reason_kind": "mechanic-absent",
+   "why": "no stand holds a Shield, so the while-holding-a-Shield condition is never met and the Endurance Charge this line grants never fires on the stands"
+  }
+ },
+ {
+  "line": "10% chance to grant a Power Charge to nearby Allies on Kill",
+  "surfaces": [
+   "unique"
+  ],
+  "sources": [
+   "Victario's Charity, Laminated Kite Shield"
+  ],
+  "group": "on_kill",
+  "kind": "no_representation",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "no_representation: the Power Charge goes to nearby allies, not to the player; PoB has no ally charge",
+  "why": "charge granted to allies on kill: the player's own PoB numbers do not change",
+  "partial_part": ""
+ },
+ {
+  "line": "10% chance to remove 1 Mana Burn on Kill",
+  "surfaces": [
+   "unique"
+  ],
+  "sources": [
+   "The Living Blade, Ezomyte Blade"
+  ],
+  "group": "on_kill",
+  "kind": "no_representation",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "no_representation: Mana Burn is not a PoB mechanic; PoB's own partial parse (Mana +10 if killed recently) is a misparse",
+  "why": "removing Mana Burn on kill has no PoB output",
+  "partial_part": "to remove 1 Mana Burn on Kill"
+ },
+ {
+  "line": "13% chance to gain a Power, Frenzy or Endurance Charge on Kill",
+  "surfaces": [
+   "unique"
+  ],
+  "sources": [
+   "Lochtonial Caress, Iron Gauntlets"
+  ],
+  "group": "on_kill",
+  "kind": "on_kill_generator",
+  "boss_lane": [],
+  "optimistic_lane": [
+   "+1 to Minimum Power Charges",
+   "+1 to Minimum Frenzy Charges",
+   "+1 to Minimum Endurance Charges"
+  ],
+  "zero_reason": "",
+  "why": "PoB has no kill rate, so the optimistic lane (JSON on_kill_generator: on) holds the charge the line grants as one minimum charge (PoB PowerChargesMin/FrenzyChargesMin/EnduranceChargesMin, CalcPerform.lua:1021-1048); boss lane 0 (no kills on a boss, no enabler named)",
+  "partial_part": ""
+ },
+ {
+  "line": "25% chance to Intimidate nearby Enemies for 4 seconds on Melee Kill",
+  "surfaces": [
+   "notable"
+  ],
+  "sources": [
+   "20996"
+  ],
+  "group": "on_kill",
+  "kind": "on_kill_generator",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "no_representation: PoB's Intimidated condition comes only with a line that has its own condition (BlockedRecently, UsedWarcryRecently, ModParser.lua:5021-5035); no plain phrase for Intimidate on kill for 4 s exists (on_kill_generator, uptime_dependent)",
+  "why": "Intimidate on a 25% melee kill for 4 s: no unconditional PoB phrase stands for it",
+  "partial_part": ""
+ },
+ {
+  "line": "25% chance to gain a Frenzy Charge on Kill",
+  "surfaces": [
+   "unique"
+  ],
+  "sources": [
+   "Daresso's Passion, Estoc"
+  ],
+  "group": "on_kill",
+  "kind": "on_kill_generator",
+  "boss_lane": [],
+  "optimistic_lane": [
+   "+1 to Minimum Frenzy Charges"
+  ],
+  "zero_reason": "",
+  "why": "PoB has no kill rate, so the optimistic lane (JSON on_kill_generator: on) holds the charge the line grants as one minimum charge (PoB PowerChargesMin/FrenzyChargesMin/EnduranceChargesMin, CalcPerform.lua:1021-1048); boss lane 0 (no kills on a boss, no enabler named)",
+  "partial_part": "",
+  "stand_blind": {
+   "reason_kind": "uptime-saturated",
+   "why": "Frenzy Charges already at their maximum of 3 on the spell and minion stands (attack stand holds 1 Frenzy); the charge the line grants moves no output"
+  }
+ },
+ {
+  "line": "25% chance to gain a Power, Frenzy or Endurance Charge on Kill",
+  "surfaces": [
+   "ascendancy"
+  ],
+  "sources": [
+   "19355"
+  ],
+  "group": "on_kill",
+  "kind": "on_kill_generator",
+  "boss_lane": [],
+  "optimistic_lane": [
+   "+1 to Minimum Power Charges",
+   "+1 to Minimum Frenzy Charges",
+   "+1 to Minimum Endurance Charges"
+  ],
+  "zero_reason": "",
+  "why": "PoB has no kill rate, so the optimistic lane (JSON on_kill_generator: on) holds the charge the line grants as one minimum charge (PoB PowerChargesMin/FrenzyChargesMin/EnduranceChargesMin, CalcPerform.lua:1021-1048); boss lane 0 (no kills on a boss, no enabler named)",
+  "partial_part": ""
+ },
+ {
+  "line": "30% chance to gain a Power Charge on Kill",
+  "surfaces": [
+   "unique"
+  ],
+  "sources": [
+   "Storm Prison, Spiraled Wand"
+  ],
+  "group": "on_kill",
+  "kind": "on_kill_generator",
+  "boss_lane": [],
+  "optimistic_lane": [
+   "+1 to Minimum Power Charges"
+  ],
+  "zero_reason": "",
+  "why": "PoB has no kill rate, so the optimistic lane (JSON on_kill_generator: on) holds the charge the line grants as one minimum charge (PoB PowerChargesMin/FrenzyChargesMin/EnduranceChargesMin, CalcPerform.lua:1021-1048); boss lane 0 (no kills on a boss, no enabler named)",
+  "partial_part": ""
+ },
+ {
+  "line": "5% chance to gain a Frenzy Charge on Kill",
+  "surfaces": [
+   "gear_affix"
+  ],
+  "sources": [
+   "ChanceToGainFrenzyChargeOnKillUberElder1",
+   "ChanceToGainFrenzyChargeOnKillUberShaper1",
+   "FrenzyChargeOnKillInfluence1"
+  ],
+  "group": "on_kill",
+  "kind": "on_kill_generator",
+  "boss_lane": [],
+  "optimistic_lane": [
+   "+1 to Minimum Frenzy Charges"
+  ],
+  "zero_reason": "",
+  "why": "PoB has no kill rate, so the optimistic lane (JSON on_kill_generator: on) holds the charge the line grants as one minimum charge (PoB PowerChargesMin/FrenzyChargesMin/EnduranceChargesMin, CalcPerform.lua:1021-1048); boss lane 0 (no kills on a boss, no enabler named)",
+  "partial_part": "",
+  "stand_blind": {
+   "reason_kind": "uptime-saturated",
+   "why": "Frenzy Charges already at their maximum of 3 on the spell and minion stands (attack stand holds 1 Frenzy); the charge the line grants moves no output"
+  }
+ },
+ {
+  "line": "5% chance to gain a Frenzy Charge on Kill while Dual Wielding",
+  "surfaces": [
+   "notable"
+  ],
+  "sources": [
+   "23232"
+  ],
+  "group": "on_kill",
+  "kind": "on_kill_generator",
+  "boss_lane": [],
+  "optimistic_lane": [
+   "+1 to Minimum Frenzy Charges while Dual Wielding"
+  ],
+  "zero_reason": "",
+  "why": "PoB has no kill rate, so the optimistic lane (JSON on_kill_generator: on) holds the charge the line grants as one minimum charge (PoB PowerChargesMin/FrenzyChargesMin/EnduranceChargesMin, CalcPerform.lua:1021-1048); boss lane 0 (no kills on a boss, no enabler named)",
+  "partial_part": "",
+  "stand_blind": {
+   "reason_kind": "mechanic-absent",
+   "why": "no stand Dual Wields, so the while-Dual-Wielding condition is never met and the Frenzy Charge this line grants never fires on the stands"
+  }
+ },
+ {
+  "line": "5% chance to gain a Power Charge on Kill",
+  "surfaces": [
+   "gear_affix"
+  ],
+  "sources": [
+   "ChanceToGainPowerChargeOnKillUber1",
+   "PowerChargeOnKillInfluence1"
+  ],
+  "group": "on_kill",
+  "kind": "on_kill_generator",
+  "boss_lane": [],
+  "optimistic_lane": [
+   "+1 to Minimum Power Charges"
+  ],
+  "zero_reason": "",
+  "why": "PoB has no kill rate, so the optimistic lane (JSON on_kill_generator: on) holds the charge the line grants as one minimum charge (PoB PowerChargesMin/FrenzyChargesMin/EnduranceChargesMin, CalcPerform.lua:1021-1048); boss lane 0 (no kills on a boss, no enabler named)",
+  "partial_part": ""
+ },
+ {
+  "line": "5% chance to gain a Power, Frenzy or Endurance Charge on Kill",
+  "surfaces": [
+   "gear_affix"
+  ],
+  "sources": [
+   "PowerFrenzyOrEnduranceChargeOnKillUber1_",
+   "RandomChargeOnKillInfluence1___"
+  ],
+  "group": "on_kill",
+  "kind": "on_kill_generator",
+  "boss_lane": [],
+  "optimistic_lane": [
+   "+1 to Minimum Power Charges",
+   "+1 to Minimum Frenzy Charges",
+   "+1 to Minimum Endurance Charges"
+  ],
+  "zero_reason": "",
+  "why": "PoB has no kill rate, so the optimistic lane (JSON on_kill_generator: on) holds the charge the line grants as one minimum charge (PoB PowerChargesMin/FrenzyChargesMin/EnduranceChargesMin, CalcPerform.lua:1021-1048); boss lane 0 (no kills on a boss, no enabler named)",
+  "partial_part": ""
+ },
+ {
+  "line": "5% chance to gain an Endurance Charge on Kill",
+  "surfaces": [
+   "gear_affix"
+  ],
+  "sources": [
+   "ChanceToGainEnduranceChargeOnKillUber1",
+   "EnduranceChargeOnKillInfluence1"
+  ],
+  "group": "on_kill",
+  "kind": "on_kill_generator",
+  "boss_lane": [],
+  "optimistic_lane": [
+   "+1 to Minimum Endurance Charges"
+  ],
+  "zero_reason": "",
+  "why": "PoB has no kill rate, so the optimistic lane (JSON on_kill_generator: on) holds the charge the line grants as one minimum charge (PoB PowerChargesMin/FrenzyChargesMin/EnduranceChargesMin, CalcPerform.lua:1021-1048); boss lane 0 (no kills on a boss, no enabler named)",
+  "partial_part": "",
+  "stand_blind": {
+   "reason_kind": "uptime-saturated",
+   "why": "Endurance Charges already at their maximum of 3 on the spell and minion stands; the charge the line grants moves no output"
+  }
+ },
+ {
+  "line": "5% chance to grant Chaotic Might to nearby Enemies on Kill",
+  "surfaces": [
+   "unique"
+  ],
+  "sources": [
+   "Extractor Mentis, Agate Amulet"
+  ],
+  "group": "on_kill",
+  "kind": "no_representation",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "no_representation: Chaotic Might is granted to enemies; PoB's own partial parse (Condition:ChaoticMight, ModParser.lua:3977) misreads it as the player buff",
+  "why": "a buff to nearby enemies: no player number moves",
+  "partial_part": "to grant Chaotic Might to nearby Enemies on Kill"
+ },
+ {
+  "line": "5% chance to grant Onslaught to nearby Enemies on Kill",
+  "surfaces": [
+   "unique"
+  ],
+  "sources": [
+   "Extractor Mentis, Agate Amulet"
+  ],
+  "group": "on_kill",
+  "kind": "no_representation",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "no_representation: Onslaught is granted to enemies; PoB's own partial parse (Condition:Onslaught, ModParser.lua:3973) misreads it as the player buff",
+  "why": "a buff to nearby enemies: no player number moves",
+  "partial_part": "to grant Onslaught to nearby Enemies on Kill"
+ },
+ {
+  "line": "8% chance to gain a Frenzy Charge on Kill",
+  "surfaces": [
+   "notable"
+  ],
+  "sources": [
+   "58921"
+  ],
+  "group": "on_kill",
+  "kind": "on_kill_generator",
+  "boss_lane": [],
+  "optimistic_lane": [
+   "+1 to Minimum Frenzy Charges"
+  ],
+  "zero_reason": "",
+  "why": "PoB has no kill rate, so the optimistic lane (JSON on_kill_generator: on) holds the charge the line grants as one minimum charge (PoB PowerChargesMin/FrenzyChargesMin/EnduranceChargesMin, CalcPerform.lua:1021-1048); boss lane 0 (no kills on a boss, no enabler named)",
+  "partial_part": "",
+  "stand_blind": {
+   "reason_kind": "uptime-saturated",
+   "why": "Frenzy Charges already at their maximum of 3 on the spell and minion stands (attack stand holds 1 Frenzy); the charge the line grants moves no output"
+  }
+ },
+ {
+  "line": "8% chance to gain a Power Charge on Kill",
+  "surfaces": [
+   "notable"
+  ],
+  "sources": [
+   "9261"
+  ],
+  "group": "on_kill",
+  "kind": "on_kill_generator",
+  "boss_lane": [],
+  "optimistic_lane": [
+   "+1 to Minimum Power Charges"
+  ],
+  "zero_reason": "",
+  "why": "PoB has no kill rate, so the optimistic lane (JSON on_kill_generator: on) holds the charge the line grants as one minimum charge (PoB PowerChargesMin/FrenzyChargesMin/EnduranceChargesMin, CalcPerform.lua:1021-1048); boss lane 0 (no kills on a boss, no enabler named)",
+  "partial_part": ""
+ },
+ {
+  "line": "8% chance to gain a Power, Frenzy or Endurance Charge on Kill",
+  "surfaces": [
+   "notable"
+  ],
+  "sources": [
+   "47471"
+  ],
+  "group": "on_kill",
+  "kind": "on_kill_generator",
+  "boss_lane": [],
+  "optimistic_lane": [
+   "+1 to Minimum Power Charges",
+   "+1 to Minimum Frenzy Charges",
+   "+1 to Minimum Endurance Charges"
+  ],
+  "zero_reason": "",
+  "why": "PoB has no kill rate, so the optimistic lane (JSON on_kill_generator: on) holds the charge the line grants as one minimum charge (PoB PowerChargesMin/FrenzyChargesMin/EnduranceChargesMin, CalcPerform.lua:1021-1048); boss lane 0 (no kills on a boss, no enabler named)",
+  "partial_part": ""
+ },
+ {
+  "line": "8% chance to gain an Endurance Charge on Kill",
+  "surfaces": [
+   "notable"
+  ],
+  "sources": [
+   "64882"
+  ],
+  "group": "on_kill",
+  "kind": "on_kill_generator",
+  "boss_lane": [],
+  "optimistic_lane": [
+   "+1 to Minimum Endurance Charges"
+  ],
+  "zero_reason": "",
+  "why": "PoB has no kill rate, so the optimistic lane (JSON on_kill_generator: on) holds the charge the line grants as one minimum charge (PoB PowerChargesMin/FrenzyChargesMin/EnduranceChargesMin, CalcPerform.lua:1021-1048); boss lane 0 (no kills on a boss, no enabler named)",
+  "partial_part": "",
+  "stand_blind": {
+   "reason_kind": "uptime-saturated",
+   "why": "Endurance Charges already at their maximum of 3 on the spell and minion stands; the charge the line grants moves no output"
+  }
+ },
+ {
+  "line": "9% chance to gain a Power, Frenzy or Endurance Charge on Kill",
+  "surfaces": [
+   "gear_affix"
+  ],
+  "sources": [
+   "PowerFrenzyOrEnduranceChargeOnKillUber2",
+   "RandomChargeOnKillInfluence2"
+  ],
+  "group": "on_kill",
+  "kind": "on_kill_generator",
+  "boss_lane": [],
+  "optimistic_lane": [
+   "+1 to Minimum Power Charges",
+   "+1 to Minimum Frenzy Charges",
+   "+1 to Minimum Endurance Charges"
+  ],
+  "zero_reason": "",
+  "why": "PoB has no kill rate, so the optimistic lane (JSON on_kill_generator: on) holds the charge the line grants as one minimum charge (PoB PowerChargesMin/FrenzyChargesMin/EnduranceChargesMin, CalcPerform.lua:1021-1048); boss lane 0 (no kills on a boss, no enabler named)",
+  "partial_part": ""
+ },
+ {
+  "line": "Bleeding Enemies you Kill Explode, dealing 20% of their Maximum Life as Physical Damage",
+  "surfaces": [
+   "ascendancy"
+  ],
+  "sources": [
+   "27864"
+  ],
+  "group": "on_kill",
+  "kind": "no_representation",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "no_representation: PoB parses the line (ExplodeMod + CanExplode, ModParser.lua:2106-2118) but only monster-explode skills read ExplodeMod (Data/Skills/other.lua), so no output moves",
+  "why": "explosion on kill of a bleeding enemy: no PoB damage output reads it; also an on-kill event (boss 0)",
+  "partial_part": ""
+ },
+ {
+  "line": "Cursed Enemies you Kill are destroyed",
+  "surfaces": [
+   "notable"
+  ],
+  "sources": [
+   "51748"
+  ],
+  "group": "on_kill",
+  "kind": "no_representation",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "no_representation: destroying the corpse of a cursed enemy has no PoB output",
+  "why": "corpse destruction: no damage or defence number in PoB",
+  "partial_part": ""
+ },
+ {
+  "line": "Enemies Killed by your Hits are destroyed",
+  "surfaces": [
+   "mastery"
+  ],
+  "sources": [
+   "24224",
+   "28039",
+   "4424",
+   "58540"
+  ],
+  "group": "on_kill",
+  "kind": "no_representation",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "no_representation: destroying the corpse of a killed enemy has no PoB output",
+  "why": "corpse destruction: no damage or defence number in PoB",
+  "partial_part": ""
+ },
+ {
+  "line": "Enemies Killed near your Banner have 20% chance to Explode, dealing a tenth of their Life as Physical Damage",
+  "surfaces": [
+   "notable"
+  ],
+  "sources": [
+   "40619"
+  ],
+  "group": "on_kill",
+  "kind": "no_representation",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "no_representation: ExplodeMod is read only by monster-explode skills (Data/Skills/other.lua), so a Banner explosion moves no output",
+  "why": "explosion near a Banner on kill: no PoB damage output reads it",
+  "partial_part": ""
+ },
+ {
+  "line": "Enemies you Kill that are affected by Elemental Ailments grant 100% increased Flask Charges",
+  "surfaces": [
+   "mastery"
+  ],
+  "sources": [
+   "18750",
+   "20736",
+   "41016",
+   "45019",
+   "46665",
+   "46761",
+   "9393",
+   "9458"
+  ],
+  "group": "on_kill",
+  "kind": "on_kill_generator",
+  "boss_lane": [],
+  "optimistic_lane": [
+   "100% increased Flask Charges gained"
+  ],
+  "zero_reason": "",
+  "why": "flask charges from kills of ailment-affected enemies: PoB has no kill rate, so the optimistic lane (on_kill_generator: on) takes the line as FlaskChargesGained INC (ModParser.lua:878); boss lane 0 (no kills on a boss)",
+  "partial_part": "",
+  "stand_blind": {
+   "reason_kind": "mechanic-absent",
+   "why": "the stands have no kill-triggered Flask Charge gain, so 100% increased Flask Charges gained moves no output"
+  }
+ },
+ {
+  "line": "Gain 135 Life on Culling Strike",
+  "surfaces": [
+   "unique"
+  ],
+  "sources": [
+   "Goblinedge, Ambusher"
+  ],
+  "group": "on_kill",
+  "kind": "on_kill_generator",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "no_representation: PoB reads LifeOnKill only for display (CalcOffence.lua:3689, CalcSections.lua:1141); none of the 7 outputs moves",
+  "why": "life on a culling kill: on-kill (boss 0), and PoB has no output that counts life on kill as recovery",
+  "partial_part": "on Culling Strike"
+ },
+ {
+  "line": "Gain 15 Mana on Culling Strike",
+  "surfaces": [
+   "unique"
+  ],
+  "sources": [
+   "Goblinedge, Ambusher"
+  ],
+  "group": "on_kill",
+  "kind": "on_kill_generator",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "mana_sustain: mana on kill never counts as sustain (on_kill_generator)",
+  "why": "mana on a culling kill: never sustain by the owner's verdict",
+  "partial_part": "on Culling Strike"
+ },
+ {
+  "line": "Gain 20 Fortification on Melee Kill against a Rare or Unique Enemy",
+  "surfaces": [
+   "mastery"
+  ],
+  "sources": [
+   "51974",
+   "59335"
+  ],
+  "group": "on_kill",
+  "kind": "on_kill_generator",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "on_kill_generator: PoB already counts the Fortification part (MinimumFortification under KilledRecently, ModCache.lua:8895); the leftover 'against a Rare or Unique Enemy' is a target condition that adds no number",
+  "why": "what is left of the line is an enemy-type condition: nothing for a lane to carry",
+  "partial_part": "against a Rare or Unique Enemy"
+ },
+ {
+  "line": "Gain a Frenzy Charge on every 50th Rampage Kill",
+  "surfaces": [
+   "unique"
+  ],
+  "sources": [
+   "Sinvicta's Mettle, Ezomyte Axe"
+  ],
+  "group": "on_kill",
+  "kind": "on_kill_generator",
+  "boss_lane": [],
+  "optimistic_lane": [
+   "+1 to Minimum Frenzy Charges"
+  ],
+  "zero_reason": "",
+  "why": "every 50th Rampage kill gives one Frenzy Charge: PoB has no kill rate, so the optimistic lane (on_kill_generator: on) holds one minimum Frenzy Charge (FrenzyChargesMin, CalcPerform.lua:1033); boss lane 0 (no kills on a boss)",
+  "partial_part": "a Charge on every 50th Kill",
+  "stand_blind": {
+   "reason_kind": "uptime-saturated",
+   "why": "Frenzy Charges already at their maximum of 3 on the spell and minion stands (attack stand holds 1 Frenzy); the charge the line grants moves no output"
+  }
+ },
+ {
+  "line": "Ignited Enemies Killed by your Hits are destroyed",
+  "surfaces": [
+   "notable"
+  ],
+  "sources": [
+   "56696"
+  ],
+  "group": "on_kill",
+  "kind": "no_representation",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "no_representation: destroying the corpse of a killed enemy has no PoB output",
+  "why": "corpse destruction: no damage or defence number in PoB",
+  "partial_part": ""
+ },
+ {
+  "line": "Offerings Kill affected Damagable targets when Offering Duration expires",
+  "surfaces": [
+   "ascendancy"
+  ],
+  "sources": [
+   "14190"
+  ],
+  "group": "on_kill",
+  "kind": "no_representation",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "no_representation: killing affected targets when an Offering expires has no PoB output (no kill damage, no kill rate)",
+  "why": "an Offering's expiry kill: PoB has no output for it; also an on-kill event (boss 0)",
+  "partial_part": ""
+ },
+ {
+  "line": "Recover 0.5% of Life per Poison affecting Enemies you Kill",
+  "surfaces": [
+   "ascendancy"
+  ],
+  "sources": [
+   "19598"
+  ],
+  "group": "on_kill",
+  "kind": "on_kill_generator",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "no_representation: PoB cannot parse the line, and life recovered on kill is read only for display (CalcOffence.lua:3689), so no output of the 7 moves",
+  "why": "life per Poison on a killed enemy: on-kill (boss 0), no PoB recovery output",
+  "partial_part": ""
+ },
+ {
+  "line": "When you Kill a Rare Monster, 18% chance to gain one of its Modifiers for 10 seconds",
+  "surfaces": [
+   "gear_affix"
+  ],
+  "sources": [
+   "GainRareMonsterModsOnKillChanceUber1"
+  ],
+  "group": "on_kill",
+  "kind": "no_representation",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "no_representation: one random Modifier of a killed Rare monster has no PoB phrase or output",
+  "why": "a random rare-monster modifier for 10 s: no fixed PoB mod stands for it; also on kill (boss 0)",
+  "partial_part": ""
+ },
+ {
+  "line": "When you Kill a Rare Monster, 26% chance to gain one of its Modifiers for 10 seconds",
+  "surfaces": [
+   "gear_affix"
+  ],
+  "sources": [
+   "GainRareMonsterModsOnKillChanceInfluence1"
+  ],
+  "group": "on_kill",
+  "kind": "no_representation",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "no_representation: one random Modifier of a killed Rare monster has no PoB phrase or output",
+  "why": "a random rare-monster modifier for 10 s: no fixed PoB mod stands for it; also on kill (boss 0)",
+  "partial_part": ""
+ },
+ {
+  "line": "When you Kill a Rare Monster, 36% chance to gain one of its Modifiers for 10 seconds",
+  "surfaces": [
+   "gear_affix"
+  ],
+  "sources": [
+   "GainRareMonsterModsOnKillChanceInfluence2"
+  ],
+  "group": "on_kill",
+  "kind": "no_representation",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "no_representation: one random Modifier of a killed Rare monster has no PoB phrase or output",
+  "why": "a random rare-monster modifier for 10 s: no fixed PoB mod stands for it; also on kill (boss 0)",
+  "partial_part": ""
+ },
+ {
+  "line": "When you kill a Poisoned Enemy during any Flask Effect, Enemies within 1.5 metres are Poisoned",
+  "surfaces": [
+   "ascendancy"
+  ],
+  "sources": [
+   "1697"
+  ],
+  "group": "on_kill",
+  "kind": "no_representation",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "no_representation: poison spread to enemies within 1.5 metres on a kill has no PoB output (no kill rate)",
+  "why": "spreading poison on a kill during a flask: no PoB number for it; on-kill (boss 0)",
+  "partial_part": ""
+ },
+ {
+  "line": "You gain Onslaught for 3 seconds on Culling Strike",
+  "surfaces": [
+   "unique"
+  ],
+  "sources": [
+   "Relentless Fury, Decorative Axe"
+  ],
+  "group": "on_kill",
+  "kind": "on_kill_generator",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "uptime_dependent: Onslaught for 3 s after a culling kill is a timed effect; PoB's own partial parse already sets the Onslaught condition (ModParser.lua:3973), so a lane adds nothing",
+  "why": "PoB already counts Onslaught from this line without its trigger; nothing is left to add",
+  "partial_part": "on Culling Strike"
+ }
+]

@@ -1,0 +1,13 @@
+{
+  "tool_name": "Bash",
+  "tool_input": {
+    "command": "gh issue comment 183 --repo Rasslabsya4el/Poe-Junkroan --body \"The brain, 2026-09-27 (the next session, for [Verify the split here](https://github.com/Rasslabsya4el/Poe-Junkroan/issues/151)): **a correction of my answer of 17:20.**\n\nMy table there gave the cause for #84 as \\\"GitHub closed it once, at 20:44:34 UTC ... the session's command at 21:14:52 came 30 min later and changed nothing\\\". That cause is wrong. The right one is in ORCH's closing comment above: session 56fb2510 never ran \\`gh issue close 84\\`. The strings \\`gh issue close 84\\` and \\`gh issue close 81\\` stand only inside a heredoc, the body of a worker spec, written in the same Bash call that then ran \\`gh issue close 93\\`; that call's output is the success line of #93 alone.\n\n| | my answer of 17:20 | as it is |\n|---|---|---|\n| what the session did about #84 | a close of an already closed issue (a no-op) | no close command at all, the text is in a heredoc |\n| what the rule must tell apart | a close that closed nothing | a close command that was never run; the rule reads the call's own output, so it covers both |\n| closed issues over the 18 sessions | 32 | 32 |\n| the baseline | \\$3.44 per closed issue (\\$109.97 / 32) | the same |\n\nThe numbers do not move. The same wrong cause stands in \\`docs/STATE.md\\` of 41227c9 and is corrected at the next State commit; the outcome line of the \\`researcher-how\\` check (wrong-fact) stays as logged, its reason was this same reading.\" && echo posted",
+    "description": "Post the correction of the #84 cause on the indicators ticket"
+  },
+  "tool_response": {
+    "stdout": "https://github.com/Rasslabsya4el/Poe-Junkroan/issues/183#issuecomment-5857265674\nposted",
+    "stderr": "",
+    "interrupted": false,
+    "isImage": false
+  }
+}

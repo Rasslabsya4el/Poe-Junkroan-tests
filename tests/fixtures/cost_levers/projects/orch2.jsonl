@@ -1,0 +1,4 @@
+{"type": "custom-title", "customTitle": "orch #11", "timestamp": "2026-01-01T00:00:00Z"}
+{"type": "user", "message": {"role": "user", "content": "Take ready issues #11"}, "timestamp": "2026-01-01T00:00:01Z"}
+{"type": "assistant", "message": {"id": "orch2_m1", "model": "claude-opus-5-5", "usage": {"input_tokens": 500, "cache_creation_input_tokens": 0, "cache_read_input_tokens": 0, "output_tokens": 0}}, "timestamp": "2026-01-01T01:00:00Z"}
+{"type": "assistant", "message": {"id": "orch2_m2", "model": "claude-opus-5-5", "usage": {"input_tokens": 500, "cache_creation_input_tokens": 0, "cache_read_input_tokens": 0, "output_tokens": 0}}, "timestamp": "2026-01-01T13:00:00Z"}

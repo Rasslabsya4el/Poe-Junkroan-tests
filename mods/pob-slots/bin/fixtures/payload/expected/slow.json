@@ -1,0 +1,1223 @@
+{
+ "at": "12:00:00",
+ "cost_day": {
+  "by_day": [
+   {
+    "context": 100,
+    "cost_usd": 12.5,
+    "key": "2026-10-11",
+    "turns": 4,
+    "unpriced_turns": 0
+   }
+  ],
+  "by_issue": [
+   {
+    "cost_usd": 9.0,
+    "key": "796",
+    "turns": 3
+   },
+   {
+    "cost_usd": 3.5,
+    "key": "801",
+    "turns": 1
+   }
+  ],
+  "by_model": [
+   {
+    "context": 100,
+    "cost_usd": 10.0,
+    "key": "claude-sonnet-5-5",
+    "turns": 3,
+    "unpriced_turns": 0
+   }
+  ],
+  "by_session": [
+   {
+    "cost_usd": 9.0,
+    "key": "orch1",
+    "turns": 3
+   }
+  ],
+  "cut": {
+   "by_day": [
+    {
+     "cost_usd": 10.102499999999997,
+     "key": "2026-10-11",
+     "tokens": 6862100,
+     "turns": 5
+    }
+   ],
+   "by_issue": [
+    {
+     "cost_usd": 4.249999999999999,
+     "number": 796,
+     "open": false,
+     "reason": "COMPLETED",
+     "state": "closed",
+     "title": "Split the monitor",
+     "tokens": 2610000,
+     "turns": 3
+    }
+   ],
+   "by_kind": [
+    {
+     "cost_usd": 5.101999999999999,
+     "key": "input",
+     "tokens": 1902000
+    },
+    {
+     "cost_usd": 2.0999999999999996,
+     "key": "cache_write",
+     "tokens": 350000
+    },
+    {
+     "cost_usd": 1.3499999999999999,
+     "key": "cache_read",
+     "tokens": 4500000
+    },
+    {
+     "cost_usd": 1.5505,
+     "key": "output",
+     "tokens": 110100
+    }
+   ],
+   "by_mod": [
+    {
+     "calls": 1,
+     "cost_usd": 0.0025,
+     "key": "monitor",
+     "model": "claude-haiku-5-5",
+     "tokens": 2100,
+     "turns": 1,
+     "unpriced_calls": 0
+    }
+   ],
+   "by_model": [
+    {
+     "cost_usd": 9.749999999999998,
+     "key": "claude-sonnet-5-5",
+     "tokens": 6550000,
+     "turns": 3,
+     "unpriced_turns": 0
+    },
+    {
+     "cost_usd": 0.3525,
+     "key": "claude-haiku-5-5",
+     "tokens": 312100,
+     "turns": 2,
+     "unpriced_turns": 0
+    }
+   ],
+   "by_role": [
+    {
+     "cost_usd": 5.85,
+     "group": "main",
+     "key": "brain",
+     "n": 1,
+     "tokens": 4250000,
+     "turns": 1,
+     "types": []
+    },
+    {
+     "cost_usd": 2.55,
+     "group": "main",
+     "key": "orch",
+     "n": 1,
+     "tokens": 1530000,
+     "turns": 1,
+     "types": []
+    },
+    {
+     "cost_usd": 1.3499999999999999,
+     "group": "sub",
+     "key": "worker",
+     "n": 1,
+     "tokens": 770000,
+     "turns": 1,
+     "types": []
+    },
+    {
+     "cost_usd": 0.35,
+     "group": "sub",
+     "key": "researcher-find",
+     "n": 1,
+     "tokens": 310000,
+     "turns": 1,
+     "types": []
+    },
+    {
+     "cost_usd": 0.0025,
+     "group": "mod",
+     "key": "mod",
+     "n": 1,
+     "tokens": 2100,
+     "turns": 1,
+     "types": []
+    }
+   ],
+   "by_role_model": [
+    {
+     "closed": null,
+     "cost_usd": 5.85,
+     "ended": null,
+     "first": "2026-10-11",
+     "group": "main",
+     "last": "2026-10-11",
+     "led": 1,
+     "model": "claude-sonnet-5-5",
+     "n": 1,
+     "role": "brain",
+     "spawned": {
+      "agents": 0,
+      "cost_usd": 0.0,
+      "tokens": 0,
+      "turns": 0
+     },
+     "tokens": 4250000,
+     "turns": 1,
+     "unpriced_turns": 0
+    },
+    {
+     "closed": 0,
+     "cost_usd": 2.55,
+     "ended": 0,
+     "first": "2026-10-11",
+     "group": "main",
+     "last": "2026-10-11",
+     "led": 1,
+     "model": "claude-sonnet-5-5",
+     "n": 1,
+     "role": "orch",
+     "spawned": {
+      "agents": 2,
+      "cost_usd": 1.6999999999999997,
+      "tokens": 1080000,
+      "turns": 2
+     },
+     "tokens": 1530000,
+     "turns": 1,
+     "unpriced_turns": 0
+    },
+    {
+     "closed": null,
+     "cost_usd": 1.3499999999999999,
+     "ended": null,
+     "first": "2026-10-11",
+     "group": "sub",
+     "last": "2026-10-11",
+     "led": 0,
+     "model": "claude-sonnet-5-5",
+     "n": 1,
+     "role": "worker",
+     "spawned": {
+      "agents": 0,
+      "cost_usd": 0.0,
+      "tokens": 0,
+      "turns": 0
+     },
+     "tokens": 770000,
+     "turns": 1,
+     "unpriced_turns": 0
+    },
+    {
+     "closed": null,
+     "cost_usd": 0.35,
+     "ended": null,
+     "first": "2026-10-11",
+     "group": "sub",
+     "last": "2026-10-11",
+     "led": 0,
+     "model": "claude-haiku-5-5",
+     "n": 1,
+     "role": "researcher-find",
+     "spawned": {
+      "agents": 0,
+      "cost_usd": 0.0,
+      "tokens": 0,
+      "turns": 0
+     },
+     "tokens": 310000,
+     "turns": 1,
+     "unpriced_turns": 0
+    },
+    {
+     "closed": null,
+     "cost_usd": 0.0025,
+     "ended": null,
+     "first": "2026-10-11",
+     "group": "mod",
+     "last": "2026-10-11",
+     "led": 0,
+     "model": "claude-haiku-5-5",
+     "n": 1,
+     "role": "monitor",
+     "spawned": {
+      "agents": 0,
+      "cost_usd": 0.0,
+      "tokens": 0,
+      "turns": 0
+     },
+     "tokens": 2100,
+     "turns": 1,
+     "unpriced_turns": 0
+    }
+   ],
+   "by_spawner": [
+    {
+     "chats": [
+      "Brain: PoB"
+     ],
+     "cost_usd": 5.85,
+     "key": "brain",
+     "own": {
+      "cost_usd": 5.85,
+      "tokens": 4250000,
+      "turns": 1
+     },
+     "roles": [],
+     "sessions": 1,
+     "sub": {
+      "agents": 0,
+      "cost_usd": 0.0,
+      "tokens": 0,
+      "turns": 0
+     },
+     "tokens": 4250000,
+     "turns": 1
+    },
+    {
+     "chats": [],
+     "cost_usd": 4.249999999999999,
+     "key": "orch",
+     "own": {
+      "cost_usd": 2.55,
+      "tokens": 1530000,
+      "turns": 1
+     },
+     "roles": [
+      {
+       "agents": 1,
+       "cost_usd": 1.3499999999999999,
+       "key": "worker",
+       "tokens": 770000,
+       "turns": 1,
+       "types": []
+      },
+      {
+       "agents": 1,
+       "cost_usd": 0.35,
+       "key": "researcher-find",
+       "tokens": 310000,
+       "turns": 1,
+       "types": []
+      }
+     ],
+     "sessions": 1,
+     "sub": {
+      "agents": 2,
+      "cost_usd": 1.6999999999999997,
+      "tokens": 1080000,
+      "turns": 2
+     },
+     "tokens": 2610000,
+     "turns": 3
+    }
+   ],
+   "by_who": [
+    {
+     "cost_usd": 5.85,
+     "key": "Brain: PoB",
+     "kind": "chat",
+     "sessions": 1,
+     "sub_usd": 0.0,
+     "tokens": 4250000,
+     "turns": 1
+    },
+    {
+     "cost_usd": 4.249999999999999,
+     "key": "ORCH",
+     "kind": "orch",
+     "sessions": 1,
+     "sub_usd": 1.6999999999999997,
+     "tokens": 2610000,
+     "turns": 3
+    },
+    {
+     "cost_usd": 0.0025,
+     "key": "monitor",
+     "kind": "mod",
+     "sessions": 0,
+     "sub_usd": 0.0,
+     "tokens": 2100,
+     "turns": 1
+    }
+   ],
+   "days": 1,
+   "issue_rest": {
+    "cost_usd": 0,
+    "n": 0,
+    "tokens": 0
+   },
+   "no_issue": {
+    "cost_usd": 5.8525,
+    "tokens": 4252100,
+    "turns": 2
+   },
+   "since": "2026-10-11T00:00:00+00:00",
+   "total": {
+    "cost_usd": 10.102499999999997,
+    "limit_days": 7,
+    "limit_pct": 0.6122727272727271,
+    "limit_usd_per_pct": 16.5,
+    "tokens": {
+     "cache_read": 4500000,
+     "cache_write": 350000,
+     "input": 1902000,
+     "output": 110100
+    },
+    "turns": 5,
+    "unpriced_turns": 0
+   },
+   "until": "2026-10-11T12:00:00+00:00"
+  },
+  "total": {
+   "cost_usd": 12.5,
+   "turns": 4
+  }
+ },
+ "cost_month": {
+  "by_day": [
+   {
+    "context": 100,
+    "cost_usd": 12.5,
+    "key": "2026-10-11",
+    "turns": 4,
+    "unpriced_turns": 0
+   }
+  ],
+  "by_issue": [
+   {
+    "cost_usd": 9.0,
+    "key": "796",
+    "turns": 3
+   },
+   {
+    "cost_usd": 3.5,
+    "key": "801",
+    "turns": 1
+   }
+  ],
+  "by_model": [
+   {
+    "context": 100,
+    "cost_usd": 10.0,
+    "key": "claude-sonnet-5-5",
+    "turns": 3,
+    "unpriced_turns": 0
+   }
+  ],
+  "by_session": [
+   {
+    "cost_usd": 9.0,
+    "key": "orch1",
+    "turns": 3
+   }
+  ],
+  "cut": {
+   "by_day": [
+    {
+     "cost_usd": 10.102499999999997,
+     "key": "2026-10-11",
+     "tokens": 6862100,
+     "turns": 5
+    },
+    {
+     "cost_usd": 0.315,
+     "key": "2026-10-04",
+     "tokens": 101000,
+     "turns": 1
+    }
+   ],
+   "by_issue": [
+    {
+     "cost_usd": 4.249999999999999,
+     "number": 796,
+     "open": false,
+     "reason": "COMPLETED",
+     "state": "closed",
+     "title": "Split the monitor",
+     "tokens": 2610000,
+     "turns": 3
+    }
+   ],
+   "by_kind": [
+    {
+     "cost_usd": 5.401999999999999,
+     "key": "input",
+     "tokens": 2002000
+    },
+    {
+     "cost_usd": 2.0999999999999996,
+     "key": "cache_write",
+     "tokens": 350000
+    },
+    {
+     "cost_usd": 1.3499999999999999,
+     "key": "cache_read",
+     "tokens": 4500000
+    },
+    {
+     "cost_usd": 1.5655,
+     "key": "output",
+     "tokens": 111100
+    }
+   ],
+   "by_mod": [
+    {
+     "calls": 1,
+     "cost_usd": 0.0025,
+     "key": "monitor",
+     "model": "claude-haiku-5-5",
+     "tokens": 2100,
+     "turns": 1,
+     "unpriced_calls": 0
+    }
+   ],
+   "by_model": [
+    {
+     "cost_usd": 10.064999999999998,
+     "key": "claude-sonnet-5-5",
+     "tokens": 6651000,
+     "turns": 4,
+     "unpriced_turns": 0
+    },
+    {
+     "cost_usd": 0.3525,
+     "key": "claude-haiku-5-5",
+     "tokens": 312100,
+     "turns": 2,
+     "unpriced_turns": 0
+    }
+   ],
+   "by_role": [
+    {
+     "cost_usd": 5.85,
+     "group": "main",
+     "key": "brain",
+     "n": 1,
+     "tokens": 4250000,
+     "turns": 1,
+     "types": []
+    },
+    {
+     "cost_usd": 2.55,
+     "group": "main",
+     "key": "orch",
+     "n": 1,
+     "tokens": 1530000,
+     "turns": 1,
+     "types": []
+    },
+    {
+     "cost_usd": 1.3499999999999999,
+     "group": "sub",
+     "key": "worker",
+     "n": 1,
+     "tokens": 770000,
+     "turns": 1,
+     "types": []
+    },
+    {
+     "cost_usd": 0.35,
+     "group": "sub",
+     "key": "researcher-find",
+     "n": 1,
+     "tokens": 310000,
+     "turns": 1,
+     "types": []
+    },
+    {
+     "cost_usd": 0.315,
+     "group": "main",
+     "key": "other_chat",
+     "n": 1,
+     "tokens": 101000,
+     "turns": 1,
+     "types": []
+    },
+    {
+     "cost_usd": 0.0025,
+     "group": "mod",
+     "key": "mod",
+     "n": 1,
+     "tokens": 2100,
+     "turns": 1,
+     "types": []
+    }
+   ],
+   "by_role_model": [
+    {
+     "closed": null,
+     "cost_usd": 5.85,
+     "ended": null,
+     "first": "2026-10-11",
+     "group": "main",
+     "last": "2026-10-11",
+     "led": 1,
+     "model": "claude-sonnet-5-5",
+     "n": 1,
+     "role": "brain",
+     "spawned": {
+      "agents": 0,
+      "cost_usd": 0.0,
+      "tokens": 0,
+      "turns": 0
+     },
+     "tokens": 4250000,
+     "turns": 1,
+     "unpriced_turns": 0
+    },
+    {
+     "closed": 0,
+     "cost_usd": 2.55,
+     "ended": 0,
+     "first": "2026-10-11",
+     "group": "main",
+     "last": "2026-10-11",
+     "led": 1,
+     "model": "claude-sonnet-5-5",
+     "n": 1,
+     "role": "orch",
+     "spawned": {
+      "agents": 2,
+      "cost_usd": 1.6999999999999997,
+      "tokens": 1080000,
+      "turns": 2
+     },
+     "tokens": 1530000,
+     "turns": 1,
+     "unpriced_turns": 0
+    },
+    {
+     "closed": null,
+     "cost_usd": 1.3499999999999999,
+     "ended": null,
+     "first": "2026-10-11",
+     "group": "sub",
+     "last": "2026-10-11",
+     "led": 0,
+     "model": "claude-sonnet-5-5",
+     "n": 1,
+     "role": "worker",
+     "spawned": {
+      "agents": 0,
+      "cost_usd": 0.0,
+      "tokens": 0,
+      "turns": 0
+     },
+     "tokens": 770000,
+     "turns": 1,
+     "unpriced_turns": 0
+    },
+    {
+     "closed": null,
+     "cost_usd": 0.35,
+     "ended": null,
+     "first": "2026-10-11",
+     "group": "sub",
+     "last": "2026-10-11",
+     "led": 0,
+     "model": "claude-haiku-5-5",
+     "n": 1,
+     "role": "researcher-find",
+     "spawned": {
+      "agents": 0,
+      "cost_usd": 0.0,
+      "tokens": 0,
+      "turns": 0
+     },
+     "tokens": 310000,
+     "turns": 1,
+     "unpriced_turns": 0
+    },
+    {
+     "closed": null,
+     "cost_usd": 0.315,
+     "ended": null,
+     "first": "2026-10-04",
+     "group": "main",
+     "last": "2026-10-04",
+     "led": 1,
+     "model": "claude-sonnet-5-5",
+     "n": 1,
+     "role": "other_chat",
+     "spawned": {
+      "agents": 0,
+      "cost_usd": 0.0,
+      "tokens": 0,
+      "turns": 0
+     },
+     "tokens": 101000,
+     "turns": 1,
+     "unpriced_turns": 0
+    },
+    {
+     "closed": null,
+     "cost_usd": 0.0025,
+     "ended": null,
+     "first": "2026-10-11",
+     "group": "mod",
+     "last": "2026-10-11",
+     "led": 0,
+     "model": "claude-haiku-5-5",
+     "n": 1,
+     "role": "monitor",
+     "spawned": {
+      "agents": 0,
+      "cost_usd": 0.0,
+      "tokens": 0,
+      "turns": 0
+     },
+     "tokens": 2100,
+     "turns": 1,
+     "unpriced_turns": 0
+    }
+   ],
+   "by_spawner": [
+    {
+     "chats": [
+      "Brain: PoB"
+     ],
+     "cost_usd": 5.85,
+     "key": "brain",
+     "own": {
+      "cost_usd": 5.85,
+      "tokens": 4250000,
+      "turns": 1
+     },
+     "roles": [],
+     "sessions": 1,
+     "sub": {
+      "agents": 0,
+      "cost_usd": 0.0,
+      "tokens": 0,
+      "turns": 0
+     },
+     "tokens": 4250000,
+     "turns": 1
+    },
+    {
+     "chats": [],
+     "cost_usd": 4.249999999999999,
+     "key": "orch",
+     "own": {
+      "cost_usd": 2.55,
+      "tokens": 1530000,
+      "turns": 1
+     },
+     "roles": [
+      {
+       "agents": 1,
+       "cost_usd": 1.3499999999999999,
+       "key": "worker",
+       "tokens": 770000,
+       "turns": 1,
+       "types": []
+      },
+      {
+       "agents": 1,
+       "cost_usd": 0.35,
+       "key": "researcher-find",
+       "tokens": 310000,
+       "turns": 1,
+       "types": []
+      }
+     ],
+     "sessions": 1,
+     "sub": {
+      "agents": 2,
+      "cost_usd": 1.6999999999999997,
+      "tokens": 1080000,
+      "turns": 2
+     },
+     "tokens": 2610000,
+     "turns": 3
+    },
+    {
+     "chats": [],
+     "cost_usd": 0.315,
+     "key": "other_chat",
+     "own": {
+      "cost_usd": 0.315,
+      "tokens": 101000,
+      "turns": 1
+     },
+     "roles": [],
+     "sessions": 1,
+     "sub": {
+      "agents": 0,
+      "cost_usd": 0.0,
+      "tokens": 0,
+      "turns": 0
+     },
+     "tokens": 101000,
+     "turns": 1
+    }
+   ],
+   "by_who": [
+    {
+     "cost_usd": 5.85,
+     "key": "Brain: PoB",
+     "kind": "chat",
+     "sessions": 1,
+     "sub_usd": 0.0,
+     "tokens": 4250000,
+     "turns": 1
+    },
+    {
+     "cost_usd": 4.249999999999999,
+     "key": "ORCH",
+     "kind": "orch",
+     "sessions": 1,
+     "sub_usd": 1.6999999999999997,
+     "tokens": 2610000,
+     "turns": 3
+    },
+    {
+     "cost_usd": 0.315,
+     "key": "",
+     "kind": "untitled",
+     "sessions": 1,
+     "sub_usd": 0.0,
+     "tokens": 101000,
+     "turns": 1
+    },
+    {
+     "cost_usd": 0.0025,
+     "key": "monitor",
+     "kind": "mod",
+     "sessions": 0,
+     "sub_usd": 0.0,
+     "tokens": 2100,
+     "turns": 1
+    }
+   ],
+   "days": 30,
+   "issue_rest": {
+    "cost_usd": 0,
+    "n": 0,
+    "tokens": 0
+   },
+   "no_issue": {
+    "cost_usd": 6.1675,
+    "tokens": 4353100,
+    "turns": 3
+   },
+   "since": "2026-09-12T00:00:00+00:00",
+   "total": {
+    "cost_usd": 10.417499999999997,
+    "limit_days": 30,
+    "limit_pct": 0.1473181818181818,
+    "limit_usd_per_pct": 16.5,
+    "tokens": {
+     "cache_read": 4500000,
+     "cache_write": 350000,
+     "input": 2002000,
+     "output": 111100
+    },
+    "turns": 6,
+    "unpriced_turns": 0
+   },
+   "until": "2026-10-11T12:00:00+00:00"
+  },
+  "total": {
+   "cost_usd": 12.5,
+   "turns": 4
+  }
+ },
+ "cost_week": {
+  "by_day": [
+   {
+    "context": 100,
+    "cost_usd": 12.5,
+    "key": "2026-10-11",
+    "turns": 4,
+    "unpriced_turns": 0
+   }
+  ],
+  "by_issue": [
+   {
+    "cost_usd": 9.0,
+    "key": "796",
+    "turns": 3
+   },
+   {
+    "cost_usd": 3.5,
+    "key": "801",
+    "turns": 1
+   }
+  ],
+  "by_model": [
+   {
+    "context": 100,
+    "cost_usd": 10.0,
+    "key": "claude-sonnet-5-5",
+    "turns": 3,
+    "unpriced_turns": 0
+   }
+  ],
+  "by_session": [
+   {
+    "cost_usd": 9.0,
+    "key": "orch1",
+    "turns": 3
+   }
+  ],
+  "cut": {
+   "by_day": [
+    {
+     "cost_usd": 10.102499999999997,
+     "key": "2026-10-11",
+     "tokens": 6862100,
+     "turns": 5
+    }
+   ],
+   "by_issue": [
+    {
+     "cost_usd": 4.249999999999999,
+     "number": 796,
+     "open": false,
+     "reason": "COMPLETED",
+     "state": "closed",
+     "title": "Split the monitor",
+     "tokens": 2610000,
+     "turns": 3
+    }
+   ],
+   "by_kind": [
+    {
+     "cost_usd": 5.101999999999999,
+     "key": "input",
+     "tokens": 1902000
+    },
+    {
+     "cost_usd": 2.0999999999999996,
+     "key": "cache_write",
+     "tokens": 350000
+    },
+    {
+     "cost_usd": 1.3499999999999999,
+     "key": "cache_read",
+     "tokens": 4500000
+    },
+    {
+     "cost_usd": 1.5505,
+     "key": "output",
+     "tokens": 110100
+    }
+   ],
+   "by_mod": [
+    {
+     "calls": 1,
+     "cost_usd": 0.0025,
+     "key": "monitor",
+     "model": "claude-haiku-5-5",
+     "tokens": 2100,
+     "turns": 1,
+     "unpriced_calls": 0
+    }
+   ],
+   "by_model": [
+    {
+     "cost_usd": 9.749999999999998,
+     "key": "claude-sonnet-5-5",
+     "tokens": 6550000,
+     "turns": 3,
+     "unpriced_turns": 0
+    },
+    {
+     "cost_usd": 0.3525,
+     "key": "claude-haiku-5-5",
+     "tokens": 312100,
+     "turns": 2,
+     "unpriced_turns": 0
+    }
+   ],
+   "by_role": [
+    {
+     "cost_usd": 5.85,
+     "group": "main",
+     "key": "brain",
+     "n": 1,
+     "tokens": 4250000,
+     "turns": 1,
+     "types": []
+    },
+    {
+     "cost_usd": 2.55,
+     "group": "main",
+     "key": "orch",
+     "n": 1,
+     "tokens": 1530000,
+     "turns": 1,
+     "types": []
+    },
+    {
+     "cost_usd": 1.3499999999999999,
+     "group": "sub",
+     "key": "worker",
+     "n": 1,
+     "tokens": 770000,
+     "turns": 1,
+     "types": []
+    },
+    {
+     "cost_usd": 0.35,
+     "group": "sub",
+     "key": "researcher-find",
+     "n": 1,
+     "tokens": 310000,
+     "turns": 1,
+     "types": []
+    },
+    {
+     "cost_usd": 0.0025,
+     "group": "mod",
+     "key": "mod",
+     "n": 1,
+     "tokens": 2100,
+     "turns": 1,
+     "types": []
+    }
+   ],
+   "by_role_model": [
+    {
+     "closed": null,
+     "cost_usd": 5.85,
+     "ended": null,
+     "first": "2026-10-11",
+     "group": "main",
+     "last": "2026-10-11",
+     "led": 1,
+     "model": "claude-sonnet-5-5",
+     "n": 1,
+     "role": "brain",
+     "spawned": {
+      "agents": 0,
+      "cost_usd": 0.0,
+      "tokens": 0,
+      "turns": 0
+     },
+     "tokens": 4250000,
+     "turns": 1,
+     "unpriced_turns": 0
+    },
+    {
+     "closed": 0,
+     "cost_usd": 2.55,
+     "ended": 0,
+     "first": "2026-10-11",
+     "group": "main",
+     "last": "2026-10-11",
+     "led": 1,
+     "model": "claude-sonnet-5-5",
+     "n": 1,
+     "role": "orch",
+     "spawned": {
+      "agents": 2,
+      "cost_usd": 1.6999999999999997,
+      "tokens": 1080000,
+      "turns": 2
+     },
+     "tokens": 1530000,
+     "turns": 1,
+     "unpriced_turns": 0
+    },
+    {
+     "closed": null,
+     "cost_usd": 1.3499999999999999,
+     "ended": null,
+     "first": "2026-10-11",
+     "group": "sub",
+     "last": "2026-10-11",
+     "led": 0,
+     "model": "claude-sonnet-5-5",
+     "n": 1,
+     "role": "worker",
+     "spawned": {
+      "agents": 0,
+      "cost_usd": 0.0,
+      "tokens": 0,
+      "turns": 0
+     },
+     "tokens": 770000,
+     "turns": 1,
+     "unpriced_turns": 0
+    },
+    {
+     "closed": null,
+     "cost_usd": 0.35,
+     "ended": null,
+     "first": "2026-10-11",
+     "group": "sub",
+     "last": "2026-10-11",
+     "led": 0,
+     "model": "claude-haiku-5-5",
+     "n": 1,
+     "role": "researcher-find",
+     "spawned": {
+      "agents": 0,
+      "cost_usd": 0.0,
+      "tokens": 0,
+      "turns": 0
+     },
+     "tokens": 310000,
+     "turns": 1,
+     "unpriced_turns": 0
+    },
+    {
+     "closed": null,
+     "cost_usd": 0.0025,
+     "ended": null,
+     "first": "2026-10-11",
+     "group": "mod",
+     "last": "2026-10-11",
+     "led": 0,
+     "model": "claude-haiku-5-5",
+     "n": 1,
+     "role": "monitor",
+     "spawned": {
+      "agents": 0,
+      "cost_usd": 0.0,
+      "tokens": 0,
+      "turns": 0
+     },
+     "tokens": 2100,
+     "turns": 1,
+     "unpriced_turns": 0
+    }
+   ],
+   "by_spawner": [
+    {
+     "chats": [
+      "Brain: PoB"
+     ],
+     "cost_usd": 5.85,
+     "key": "brain",
+     "own": {
+      "cost_usd": 5.85,
+      "tokens": 4250000,
+      "turns": 1
+     },
+     "roles": [],
+     "sessions": 1,
+     "sub": {
+      "agents": 0,
+      "cost_usd": 0.0,
+      "tokens": 0,
+      "turns": 0
+     },
+     "tokens": 4250000,
+     "turns": 1
+    },
+    {
+     "chats": [],
+     "cost_usd": 4.249999999999999,
+     "key": "orch",
+     "own": {
+      "cost_usd": 2.55,
+      "tokens": 1530000,
+      "turns": 1
+     },
+     "roles": [
+      {
+       "agents": 1,
+       "cost_usd": 1.3499999999999999,
+       "key": "worker",
+       "tokens": 770000,
+       "turns": 1,
+       "types": []
+      },
+      {
+       "agents": 1,
+       "cost_usd": 0.35,
+       "key": "researcher-find",
+       "tokens": 310000,
+       "turns": 1,
+       "types": []
+      }
+     ],
+     "sessions": 1,
+     "sub": {
+      "agents": 2,
+      "cost_usd": 1.6999999999999997,
+      "tokens": 1080000,
+      "turns": 2
+     },
+     "tokens": 2610000,
+     "turns": 3
+    }
+   ],
+   "by_who": [
+    {
+     "cost_usd": 5.85,
+     "key": "Brain: PoB",
+     "kind": "chat",
+     "sessions": 1,
+     "sub_usd": 0.0,
+     "tokens": 4250000,
+     "turns": 1
+    },
+    {
+     "cost_usd": 4.249999999999999,
+     "key": "ORCH",
+     "kind": "orch",
+     "sessions": 1,
+     "sub_usd": 1.6999999999999997,
+     "tokens": 2610000,
+     "turns": 3
+    },
+    {
+     "cost_usd": 0.0025,
+     "key": "monitor",
+     "kind": "mod",
+     "sessions": 0,
+     "sub_usd": 0.0,
+     "tokens": 2100,
+     "turns": 1
+    }
+   ],
+   "days": 7,
+   "issue_rest": {
+    "cost_usd": 0,
+    "n": 0,
+    "tokens": 0
+   },
+   "no_issue": {
+    "cost_usd": 5.8525,
+    "tokens": 4252100,
+    "turns": 2
+   },
+   "since": "2026-10-05T00:00:00+00:00",
+   "total": {
+    "cost_usd": 10.102499999999997,
+    "limit_days": 7,
+    "limit_pct": 0.6122727272727271,
+    "limit_usd_per_pct": 16.5,
+    "tokens": {
+     "cache_read": 4500000,
+     "cache_write": 350000,
+     "input": 1902000,
+     "output": 110100
+    },
+    "turns": 5,
+    "unpriced_turns": 0
+   },
+   "until": "2026-10-11T12:00:00+00:00"
+  },
+  "total": {
+   "cost_usd": 12.5,
+   "turns": 4
+  }
+ }
+}

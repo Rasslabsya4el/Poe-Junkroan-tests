@@ -1,0 +1,2 @@
+{"type": "user", "message": {"role": "user", "content": "Issue #55 (poe-junkroan-v2): do the thing. Also see #54 for context."}, "timestamp": "2026-09-26T20:17:10Z"}
+{"type": "assistant", "message": {"id": "msg_y1", "model": "claude-sonnet-5", "usage": {"input_tokens": 1000, "cache_creation_input_tokens": 0, "cache_read_input_tokens": 0, "output_tokens": 100}}, "timestamp": "2026-09-26T20:18:00Z"}

@@ -1,0 +1,14 @@
+[
+  {
+    "line": "Maximum Quality is 200%",
+    "surfaces": ["unique"],
+    "sources": ["Ixchel's Temptation, Gold Ring"],
+    "group": "item_text",
+    "kind": "no_representation",
+    "boss_lane": [],
+    "optimistic_lane": [],
+    "zero_reason": "no_representation: PoB maps this line to an empty mod list with the text left unparsed (vendor/pob/source/src/Data/ModCache.lua:9953), and no PoB code reads MaximumQualityOverride; the line only lifts the gem quality ceiling, which is a rail (gems.quality), not a PoB stat, so no stand output moves",
+    "why": "The unique's line raises the ceiling of gem quality to 200%; PoB parses it to nothing, so it has no PoB line to count and the gem quality rail is the place it would act.",
+    "partial_part": ""
+  }
+]

@@ -1,0 +1,160 @@
+{
+  "source": "Zizaran 3.27 Keepers of the Flame league-starter guides, one early-game loadout per build (scripts/extract_loadout.py)",
+  "league": "3.27 Keepers of the Flame",
+  "collected": "2026-09-18",
+  "note": "Extracted from tests/fixtures/zizaran_327/<file>: the item set, tree spec, skill set and config set the manifest's early_loadout names, as a single-loadout PoB. Regenerate with `python scripts/extract_loadout.py`.",
+  "builds": [
+    {
+      "slug": "champion_explosive_arrow",
+      "title": "Explosive Arrow Champion Leaguestarter",
+      "level": 69,
+      "class": "Duelist",
+      "ascendancy": "Champion",
+      "main_skill": "Explosive Arrow (Ballista Totem)",
+      "tree_version": "3_26",
+      "pob_url": "https://pobb.in/tgEiSsv1npXY",
+      "from": {
+        "file": "champion_explosive_arrow.pob.txt",
+        "item_set": "Early Game",
+        "spec": "Level 69 - Merciless Lab",
+        "skill_set": "Level 38+",
+        "config_set": "Default",
+        "linked_by": "inferred",
+        "level_source": "spec title"
+      }
+    },
+    {
+      "slug": "elementalist_lightning_conduit",
+      "title": "Lightning Conduit Elementalist Leaguestarter",
+      "level": 85,
+      "class": "Witch",
+      "ascendancy": "Elementalist",
+      "main_skill": "Lightning Conduit",
+      "tree_version": "3_26",
+      "pob_url": "https://pobb.in/G_VL8P-w0Vh6",
+      "from": {
+        "file": "elementalist_lightning_conduit.pob.txt",
+        "item_set": "Early Game {4}",
+        "spec": "Early Game {4}",
+        "skill_set": "Early Game {4}",
+        "config_set": "Default",
+        "linked_by": "author marker {4}",
+        "level_source": "estimated from 118 allocated nodes"
+      }
+    },
+    {
+      "slug": "gladiator_earthquake",
+      "title": "Earthquake Gladiator Leaguestarter",
+      "level": 68,
+      "class": "Duelist",
+      "ascendancy": "Gladiator",
+      "main_skill": "Earthquake",
+      "tree_version": "3_26",
+      "pob_url": "https://pobb.in/i8BRUJoDWa4e",
+      "from": {
+        "file": "gladiator_earthquake.pob.txt",
+        "item_set": "Early Game",
+        "spec": "Level 68 - Merc Lab (Swap to 1H)",
+        "skill_set": "Maps {1,2,3}",
+        "config_set": "Default {1,3}",
+        "linked_by": "inferred",
+        "level_source": "spec title"
+      }
+    },
+    {
+      "slug": "juggernaut_boneshatter",
+      "title": "Bleed Boneshatter Juggernaut Leaguestarter",
+      "level": 82,
+      "class": "Marauder",
+      "ascendancy": "Juggernaut",
+      "main_skill": "Boneshatter of Complex Trauma",
+      "tree_version": "3_26",
+      "pob_url": "https://pobb.in/uKL64yR_gshv",
+      "from": {
+        "file": "juggernaut_boneshatter.pob.txt",
+        "item_set": "Early Game {1}",
+        "spec": "Early Game {1}",
+        "skill_set": "Early Game {1}",
+        "config_set": "Default {1,2,3,4}",
+        "linked_by": "author marker {1}",
+        "level_source": "estimated from 115 allocated nodes"
+      }
+    },
+    {
+      "slug": "slayer_earthshatter",
+      "title": "Earthshatter Slayer Leaguestarter (ft. Carn)",
+      "level": 65,
+      "class": "Duelist",
+      "ascendancy": "Slayer",
+      "main_skill": "Earthshatter",
+      "tree_version": "3_26",
+      "pob_url": "https://pobb.in/a9IXV_SNxQHe",
+      "from": {
+        "file": "slayer_earthshatter.pob.txt",
+        "item_set": "Basic gear {2}",
+        "spec": "Early Maps {2}",
+        "skill_set": "Early Maps {2}",
+        "config_set": "Default",
+        "linked_by": "author marker {2}",
+        "level_source": "estimated from 98 allocated nodes"
+      }
+    },
+    {
+      "slug": "hierophant_storm_burst",
+      "title": "Storm Burst Totems Hierophant Leaguestarter (ft. Oscrix)",
+      "level": 66,
+      "class": "Templar",
+      "ascendancy": "Hierophant",
+      "main_skill": "Storm Burst (Spell Totem)",
+      "tree_version": "3_26",
+      "pob_url": "https://pobb.in/QRrYaTXg4ElD",
+      "from": {
+        "file": "hierophant_storm_burst.pob.txt",
+        "item_set": "Early Maps {1}",
+        "spec": "Early Maps {1} Merc Lab",
+        "skill_set": "Early Maps {1}",
+        "config_set": "Early Maps {1}",
+        "linked_by": "author marker {1}",
+        "level_source": "estimated from 99 allocated nodes"
+      }
+    },
+    {
+      "slug": "assassin_poison_spark",
+      "title": "Poison Spark Assassin Leaguestarter (ft. Goratha)",
+      "level": 87,
+      "class": "Shadow",
+      "ascendancy": "Assassin",
+      "main_skill": "Spark of the Nova (poison)",
+      "tree_version": "3_26",
+      "pob_url": "https://pobb.in/7ZcpNh1SAnvn",
+      "from": {
+        "file": "assassin_poison_spark.pob.txt",
+        "item_set": "Poison Spark Maps (Reverse Chill)",
+        "spec": "Poison Spark Maps (Reverse Chill)",
+        "skill_set": "Poison Spark Maps (Reverse Chill)",
+        "config_set": "Default",
+        "linked_by": "identical titles across all three set types",
+        "level_source": "estimated from 120 allocated nodes"
+      }
+    },
+    {
+      "slug": "necromancer_raise_spectre",
+      "title": "Forged Frostbearer Spectre Necromancer Leaguestarter (ft. Helm Breaker)",
+      "level": 92,
+      "class": "Witch",
+      "ascendancy": "Necromancer",
+      "main_skill": "Raise Spectre",
+      "tree_version": "3_26",
+      "pob_url": "https://maxroll.gg/poe/pob/t11sg0yu",
+      "from": {
+        "file": "necromancer_raise_spectre.pob.txt",
+        "item_set": "Early 6L Rare {1}",
+        "spec": "LvLing lvl 92 Trigger wand {1}",
+        "skill_set": "Early Rare 6 link {1}",
+        "config_set": "Early {1}",
+        "linked_by": "author marker {1}",
+        "level_source": "spec title"
+      }
+    }
+  ]
+}

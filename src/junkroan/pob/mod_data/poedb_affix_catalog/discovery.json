@@ -1,0 +1,2144 @@
+{
+  "coverage_summary": {
+    "covered_base_count": 968,
+    "page_count": 56,
+    "shared_page_count": 50,
+    "special_page_count": 6,
+    "uncovered_base_count": 4
+  },
+  "generated_at": "2026-07-22T13:37:26Z",
+  "pages": [
+    {
+      "discovery_kind": "shared",
+      "has_shared_coverage": true,
+      "item_types": [
+        "Amulet"
+      ],
+      "matched_base_count": 54,
+      "matched_base_names": [
+        "Agate Amulet",
+        "Amber Amulet",
+        "Ashscale Talisman",
+        "Astrolabe Amulet",
+        "Avian Twins Talisman",
+        "Avian Twins Talisman (Cold-To-Fire)",
+        "Avian Twins Talisman (Cold-To-Lightning)",
+        "Avian Twins Talisman (Fire-To-Cold)",
+        "Avian Twins Talisman (Fire-To-Lightning)",
+        "Avian Twins Talisman (Lightning-To-Cold)",
+        "Black Maw Talisman",
+        "Blue Pearl Amulet",
+        "Bonespire Talisman",
+        "Breakrib Talisman",
+        "Chrysalis Talisman",
+        "Citrine Amulet",
+        "Clutching Talisman",
+        "Coral Amulet",
+        "Deadhand Talisman",
+        "Deep One Talisman",
+        "Fangjaw Talisman",
+        "Focused Amulet",
+        "Gold Amulet",
+        "Greatwolf Talisman",
+        "Hexclaw Talisman",
+        "Horned Talisman",
+        "Jade Amulet",
+        "Jet Amulet",
+        "Lapis Amulet",
+        "Lone Antler Talisman",
+        "Longtooth Talisman",
+        "Mandible Talisman",
+        "Marble Amulet",
+        "Monkey Paw Talisman",
+        "Monkey Paw Talisman (Frenzy)",
+        "Monkey Paw Talisman (Power)",
+        "Monkey Twins Talisman",
+        "Onyx Amulet",
+        "Paua Amulet",
+        "Primal Skull Talisman",
+        "Rot Head Talisman",
+        "Rotfeather Talisman",
+        "Ruby Amulet",
+        "Seaglass Amulet",
+        "Simplex Amulet",
+        "Spinefuse Talisman",
+        "Splitnewt Talisman",
+        "Three Hands Talisman",
+        "Three Rat Talisman",
+        "Turquoise Amulet",
+        "Undying Flesh Talisman",
+        "Unset Amulet",
+        "Wereclaw Talisman",
+        "Writhing Talisman"
+      ],
+      "notes": "",
+      "page_id": "Amulets",
+      "slot_families": [
+        "amulet"
+      ],
+      "source_url": "https://poedb.tw/us/Amulets",
+      "sub_types": [
+        null,
+        "Talisman"
+      ]
+    },
+    {
+      "discovery_kind": "shared",
+      "has_shared_coverage": true,
+      "item_types": [
+        "Belt"
+      ],
+      "matched_base_count": 14,
+      "matched_base_names": [
+        "Chain Belt",
+        "Cloth Belt",
+        "Cord Belt",
+        "Crystal Belt",
+        "Golden Obi",
+        "Heavy Belt",
+        "Leather Belt",
+        "Mechalarm Belt",
+        "Mechanical Belt",
+        "Micro-Distillery Belt",
+        "Rustic Sash",
+        "Studded Belt",
+        "Stygian Vise",
+        "Vanguard Belt"
+      ],
+      "notes": "",
+      "page_id": "Belts",
+      "slot_families": [
+        "belt"
+      ],
+      "source_url": "https://poedb.tw/us/Belts",
+      "sub_types": [
+        null
+      ]
+    },
+    {
+      "discovery_kind": "shared",
+      "has_shared_coverage": true,
+      "item_types": [
+        "Body Armour"
+      ],
+      "matched_base_count": 20,
+      "matched_base_names": [
+        "Assassin's Garb",
+        "Astral Leather",
+        "Buckskin Tunic",
+        "Coronal Leather",
+        "Cutthroat's Garb",
+        "Destiny Leather",
+        "Eelskin Tunic",
+        "Exquisite Leather",
+        "Frontier Leather",
+        "Full Leather",
+        "Glorious Leather",
+        "Shabby Jerkin",
+        "Sharkskin Tunic",
+        "Strapped Leather",
+        "Sun Leather",
+        "Supreme Leather",
+        "Syndicate's Garb",
+        "Thief's Garb",
+        "Wild Leather",
+        "Zodiac Leather"
+      ],
+      "notes": "",
+      "page_id": "Body_Armours_dex",
+      "slot_families": [
+        "body"
+      ],
+      "source_url": "https://poedb.tw/us/Body_Armours_dex",
+      "sub_types": [
+        "Evasion"
+      ]
+    },
+    {
+      "discovery_kind": "shared",
+      "has_shared_coverage": true,
+      "item_types": [
+        "Body Armour"
+      ],
+      "matched_base_count": 20,
+      "matched_base_names": [
+        "Blood Raiment",
+        "Bone Armour",
+        "Carnal Armour",
+        "Crimson Raiment",
+        "Crypt Armour",
+        "Lacquered Garb",
+        "Necrotic Armour",
+        "Oiled Coat",
+        "Oiled Vest",
+        "Padded Jacket",
+        "Padded Vest",
+        "Quilted Jacket",
+        "Sadist Garb",
+        "Sanguine Raiment",
+        "Scarlet Raiment",
+        "Sentinel Jacket",
+        "Sleek Coat",
+        "Torturer Garb",
+        "Varnished Coat",
+        "Waxed Garb"
+      ],
+      "notes": "",
+      "page_id": "Body_Armours_dex_int",
+      "slot_families": [
+        "body"
+      ],
+      "source_url": "https://poedb.tw/us/Body_Armours_dex_int",
+      "sub_types": [
+        "Evasion/Energy Shield"
+      ]
+    },
+    {
+      "discovery_kind": "shared",
+      "has_shared_coverage": true,
+      "item_types": [
+        "Body Armour"
+      ],
+      "matched_base_count": 20,
+      "matched_base_names": [
+        "Arcane Vestment",
+        "Cabalist Regalia",
+        "Conjurer's Vestment",
+        "Destroyer Regalia",
+        "Mage's Vestment",
+        "Necromancer Silks",
+        "Nightweave Robe",
+        "Occultist's Vestment",
+        "Sage's Robe",
+        "Savant's Robe",
+        "Scholar's Robe",
+        "Silk Robe",
+        "Silken Garb",
+        "Silken Vest",
+        "Silken Wrap",
+        "Simple Robe",
+        "Spidersilk Robe",
+        "Twilight Regalia",
+        "Vaal Regalia",
+        "Widowsilk Robe"
+      ],
+      "notes": "",
+      "page_id": "Body_Armours_int",
+      "slot_families": [
+        "body"
+      ],
+      "source_url": "https://poedb.tw/us/Body_Armours_int",
+      "sub_types": [
+        "Energy Shield"
+      ]
+    },
+    {
+      "discovery_kind": "shared",
+      "has_shared_coverage": true,
+      "item_types": [
+        "Body Armour"
+      ],
+      "matched_base_count": 20,
+      "matched_base_names": [
+        "Arena Plate",
+        "Astral Plate",
+        "Battle Plate",
+        "Bronze Plate",
+        "Chestplate",
+        "Colosseum Plate",
+        "Copper Plate",
+        "Crusader Plate",
+        "Full Plate",
+        "Gladiator Plate",
+        "Glorious Plate",
+        "Golden Plate",
+        "Legion Plate",
+        "Lordly Plate",
+        "Majestic Plate",
+        "Plate Vest",
+        "Royal Plate",
+        "Sun Plate",
+        "Titan Plate",
+        "War Plate"
+      ],
+      "notes": "",
+      "page_id": "Body_Armours_str",
+      "slot_families": [
+        "body"
+      ],
+      "source_url": "https://poedb.tw/us/Body_Armours_str",
+      "sub_types": [
+        "Armour"
+      ]
+    },
+    {
+      "discovery_kind": "shared",
+      "has_shared_coverage": true,
+      "item_types": [
+        "Body Armour"
+      ],
+      "matched_base_count": 20,
+      "matched_base_names": [
+        "Battle Lamellar",
+        "Commander's Brigandine",
+        "Conquest Lamellar",
+        "Desert Brigandine",
+        "Dragonscale Doublet",
+        "Field Lamellar",
+        "Full Dragonscale",
+        "Full Scale Armour",
+        "Full Wyrmscale",
+        "Full Wyvernscale",
+        "General's Brigandine",
+        "Hussar Brigandine",
+        "Infantry Brigandine",
+        "Light Brigandine",
+        "Marshall's Brigandine",
+        "Scale Doublet",
+        "Scale Vest",
+        "Soldier's Brigandine",
+        "Triumphant Lamellar",
+        "Wyrmscale Doublet"
+      ],
+      "notes": "",
+      "page_id": "Body_Armours_str_dex",
+      "slot_families": [
+        "body"
+      ],
+      "source_url": "https://poedb.tw/us/Body_Armours_str_dex",
+      "sub_types": [
+        "Armour/Evasion"
+      ]
+    },
+    {
+      "discovery_kind": "shared",
+      "has_shared_coverage": true,
+      "item_types": [
+        "Body Armour"
+      ],
+      "matched_base_count": 3,
+      "matched_base_names": [
+        "Golden Mantle",
+        "Grasping Mail",
+        "Sacrificial Garb"
+      ],
+      "notes": "",
+      "page_id": "Body_Armours_str_dex_int",
+      "slot_families": [
+        "body"
+      ],
+      "source_url": "https://poedb.tw/us/Body_Armours_str_dex_int",
+      "sub_types": [
+        "Armour/Evasion/Energy Shield"
+      ]
+    },
+    {
+      "discovery_kind": "shared",
+      "has_shared_coverage": true,
+      "item_types": [
+        "Body Armour"
+      ],
+      "matched_base_count": 20,
+      "matched_base_names": [
+        "Chain Hauberk",
+        "Chainmail Doublet",
+        "Chainmail Tunic",
+        "Chainmail Vest",
+        "Conquest Chainmail",
+        "Crusader Chainmail",
+        "Devout Chainmail",
+        "Elegant Ringmail",
+        "Full Chainmail",
+        "Full Ringmail",
+        "Grand Ringmail",
+        "Holy Chainmail",
+        "Latticed Ringmail",
+        "Loricated Ringmail",
+        "Ornate Ringmail",
+        "Paladin's Hauberk",
+        "Ringmail Coat",
+        "Sacred Chainmail",
+        "Saint's Hauberk",
+        "Saintly Chainmail"
+      ],
+      "notes": "",
+      "page_id": "Body_Armours_str_int",
+      "slot_families": [
+        "body"
+      ],
+      "source_url": "https://poedb.tw/us/Body_Armours_str_int",
+      "sub_types": [
+        "Armour/Energy Shield"
+      ]
+    },
+    {
+      "discovery_kind": "shared",
+      "has_shared_coverage": true,
+      "item_types": [
+        "Boots"
+      ],
+      "matched_base_count": 14,
+      "matched_base_names": [
+        "Cloudwhisper Boots",
+        "Deerskin Boots",
+        "Eelskin Boots",
+        "Goathide Boots",
+        "Harpyskin Boots",
+        "Nubuck Boots",
+        "Rawhide Boots",
+        "Shagreen Boots",
+        "Sharkskin Boots",
+        "Slink Boots",
+        "Stealth Boots",
+        "Stormrider Boots",
+        "Velour Boots",
+        "Windbreak Boots"
+      ],
+      "notes": "",
+      "page_id": "Boots_dex",
+      "slot_families": [
+        "boots"
+      ],
+      "source_url": "https://poedb.tw/us/Boots_dex",
+      "sub_types": [
+        "Evasion"
+      ]
+    },
+    {
+      "discovery_kind": "shared",
+      "has_shared_coverage": true,
+      "item_types": [
+        "Boots"
+      ],
+      "matched_base_count": 13,
+      "matched_base_names": [
+        "Ambush Boots",
+        "Assassin's Boots",
+        "Carnal Boots",
+        "Clasped Boots",
+        "Fugitive Boots",
+        "Infiltrator Boots",
+        "Murder Boots",
+        "Phantom Boots",
+        "Shackled Boots",
+        "Strapped Boots",
+        "Trapper Boots",
+        "Two-Toned Boots (Evasion/Energy Shield)",
+        "Wrapped Boots"
+      ],
+      "notes": "",
+      "page_id": "Boots_dex_int",
+      "slot_families": [
+        "boots"
+      ],
+      "source_url": "https://poedb.tw/us/Boots_dex_int",
+      "sub_types": [
+        "Evasion/Energy Shield"
+      ]
+    },
+    {
+      "discovery_kind": "shared",
+      "has_shared_coverage": true,
+      "item_types": [
+        "Boots"
+      ],
+      "matched_base_count": 14,
+      "matched_base_names": [
+        "Arcanist Slippers",
+        "Conjurer Boots",
+        "Dreamquest Slippers",
+        "Duskwalk Slippers",
+        "Nightwind Slippers",
+        "Sage Slippers",
+        "Samite Slippers",
+        "Satin Slippers",
+        "Scholar Boots",
+        "Silk Slippers",
+        "Sorcerer Boots",
+        "Velvet Slippers",
+        "Warlock Boots",
+        "Wool Shoes"
+      ],
+      "notes": "",
+      "page_id": "Boots_int",
+      "slot_families": [
+        "boots"
+      ],
+      "source_url": "https://poedb.tw/us/Boots_int",
+      "sub_types": [
+        "Energy Shield"
+      ]
+    },
+    {
+      "discovery_kind": "shared",
+      "has_shared_coverage": true,
+      "item_types": [
+        "Boots"
+      ],
+      "matched_base_count": 14,
+      "matched_base_names": [
+        "Ancient Greaves",
+        "Antique Greaves",
+        "Basemetal Treads",
+        "Brimstone Treads",
+        "Darksteel Treads",
+        "Goliath Greaves",
+        "Iron Greaves",
+        "Leviathan Greaves",
+        "Plated Greaves",
+        "Precursor Greaves",
+        "Reinforced Greaves",
+        "Steel Greaves",
+        "Titan Greaves",
+        "Vaal Greaves"
+      ],
+      "notes": "",
+      "page_id": "Boots_str",
+      "slot_families": [
+        "boots"
+      ],
+      "source_url": "https://poedb.tw/us/Boots_str",
+      "sub_types": [
+        "Armour"
+      ]
+    },
+    {
+      "discovery_kind": "shared",
+      "has_shared_coverage": true,
+      "item_types": [
+        "Boots"
+      ],
+      "matched_base_count": 11,
+      "matched_base_names": [
+        "Bronzescale Boots",
+        "Chimerascale Boots",
+        "Dragonscale Boots",
+        "Hydrascale Boots",
+        "Ironscale Boots",
+        "Leatherscale Boots",
+        "Serpentscale Boots",
+        "Steelscale Boots",
+        "Two-Toned Boots (Armour/Evasion)",
+        "Wyrmscale Boots",
+        "Wyvernscale Boots"
+      ],
+      "notes": "",
+      "page_id": "Boots_str_dex",
+      "slot_families": [
+        "boots"
+      ],
+      "source_url": "https://poedb.tw/us/Boots_str_dex",
+      "sub_types": [
+        "Armour/Evasion"
+      ]
+    },
+    {
+      "discovery_kind": "shared",
+      "has_shared_coverage": true,
+      "item_types": [
+        "Boots"
+      ],
+      "matched_base_count": 11,
+      "matched_base_names": [
+        "Chain Boots",
+        "Crusader Boots",
+        "Legion Boots",
+        "Martyr Boots",
+        "Mesh Boots",
+        "Paladin Boots",
+        "Ringmail Boots",
+        "Riveted Boots",
+        "Soldier Boots",
+        "Two-Toned Boots (Armour/Energy Shield)",
+        "Zealot Boots"
+      ],
+      "notes": "",
+      "page_id": "Boots_str_int",
+      "slot_families": [
+        "boots"
+      ],
+      "source_url": "https://poedb.tw/us/Boots_str_int",
+      "sub_types": [
+        "Armour/Energy Shield"
+      ]
+    },
+    {
+      "discovery_kind": "shared",
+      "has_shared_coverage": true,
+      "item_types": [
+        "Bow"
+      ],
+      "matched_base_count": 29,
+      "matched_base_names": [
+        "Assassin Bow",
+        "Bone Bow",
+        "Citadel Bow",
+        "Composite Bow",
+        "Compound Bow",
+        "Crude Bow",
+        "Death Bow",
+        "Decimation Bow",
+        "Decurve Bow",
+        "Ethereal Bow",
+        "Foundry Bow",
+        "Grove Bow",
+        "Harbinger Bow",
+        "Hedron Bow",
+        "Highborn Bow",
+        "Imperial Bow",
+        "Ivory Bow",
+        "Long Bow",
+        "Maraketh Bow",
+        "Ranger Bow",
+        "Recurve Bow",
+        "Reflex Bow",
+        "Royal Bow",
+        "Short Bow",
+        "Sniper Bow",
+        "Solarine Bow",
+        "Spine Bow",
+        "Steelwood Bow",
+        "Thicket Bow"
+      ],
+      "notes": "",
+      "page_id": "Bows",
+      "slot_families": [
+        "bow"
+      ],
+      "source_url": "https://poedb.tw/us/Bows",
+      "sub_types": [
+        null
+      ]
+    },
+    {
+      "discovery_kind": "shared",
+      "has_shared_coverage": true,
+      "item_types": [
+        "Claw"
+      ],
+      "matched_base_count": 28,
+      "matched_base_names": [
+        "Awl",
+        "Blinder",
+        "Cat's Paw",
+        "Double Claw",
+        "Eagle Claw",
+        "Eye Gouger",
+        "Fright Claw",
+        "Gemini Claw",
+        "Gouger",
+        "Great White Claw",
+        "Gut Ripper",
+        "Hellion's Paw",
+        "Imperial Claw",
+        "Malign Fangs",
+        "Nailed Fist",
+        "Noble Claw",
+        "Prehistoric Claw",
+        "Shadow Fangs",
+        "Sharktooth Claw",
+        "Sparkling Claw",
+        "Terror Claw",
+        "Thresher Claw",
+        "Throat Stabber",
+        "Tiger's Paw",
+        "Timeworn Claw",
+        "Twin Claw",
+        "Vaal Claw",
+        "Void Fangs"
+      ],
+      "notes": "",
+      "page_id": "Claws",
+      "slot_families": [
+        "claw"
+      ],
+      "source_url": "https://poedb.tw/us/Claws",
+      "sub_types": [
+        null
+      ]
+    },
+    {
+      "discovery_kind": "shared",
+      "has_shared_coverage": true,
+      "item_types": [
+        "Dagger"
+      ],
+      "matched_base_count": 14,
+      "matched_base_names": [
+        "Ambusher",
+        "Ethereal Blade",
+        "Flaying Knife",
+        "Glass Shank",
+        "Gutting Knife",
+        "Hollowpoint Dagger",
+        "Pneumatic Dagger",
+        "Poignard",
+        "Pressurised Dagger",
+        "Prong Dagger",
+        "Sai",
+        "Skinning Knife",
+        "Stiletto",
+        "Trisula"
+      ],
+      "notes": "",
+      "page_id": "Daggers",
+      "slot_families": [
+        "dagger"
+      ],
+      "source_url": "https://poedb.tw/us/Daggers",
+      "sub_types": [
+        null
+      ]
+    },
+    {
+      "discovery_kind": "shared",
+      "has_shared_coverage": true,
+      "item_types": [
+        "Gloves"
+      ],
+      "matched_base_count": 15,
+      "matched_base_names": [
+        "Apprentice Gloves",
+        "Deerskin Gloves",
+        "Eelskin Gloves",
+        "Goathide Gloves",
+        "Gripped Gloves",
+        "Harpyskin Gloves",
+        "Nubuck Gloves",
+        "Rawhide Gloves",
+        "Shagreen Gloves",
+        "Sharkskin Gloves",
+        "Slink Gloves",
+        "Stealth Gloves",
+        "Tinker Gloves",
+        "Trapsetter Gloves",
+        "Velour Gloves"
+      ],
+      "notes": "",
+      "page_id": "Gloves_dex",
+      "slot_families": [
+        "gloves"
+      ],
+      "source_url": "https://poedb.tw/us/Gloves_dex",
+      "sub_types": [
+        "Evasion"
+      ]
+    },
+    {
+      "discovery_kind": "shared",
+      "has_shared_coverage": true,
+      "item_types": [
+        "Gloves"
+      ],
+      "matched_base_count": 10,
+      "matched_base_names": [
+        "Ambush Mitts",
+        "Assassin's Mitts",
+        "Carnal Mitts",
+        "Clasped Mitts",
+        "Infiltrator Mitts",
+        "Murder Mitts",
+        "Phantom Mitts",
+        "Strapped Mitts",
+        "Trapper Mitts",
+        "Wrapped Mitts"
+      ],
+      "notes": "",
+      "page_id": "Gloves_dex_int",
+      "slot_families": [
+        "gloves"
+      ],
+      "source_url": "https://poedb.tw/us/Gloves_dex_int",
+      "sub_types": [
+        "Evasion/Energy Shield"
+      ]
+    },
+    {
+      "discovery_kind": "shared",
+      "has_shared_coverage": true,
+      "item_types": [
+        "Gloves"
+      ],
+      "matched_base_count": 15,
+      "matched_base_names": [
+        "Aetherwind Gloves",
+        "Arcanist Gloves",
+        "Conjurer Gloves",
+        "Embroidered Gloves",
+        "Fingerless Silk Gloves",
+        "Leyline Gloves",
+        "Nexus Gloves",
+        "Sage Gloves",
+        "Samite Gloves",
+        "Satin Gloves",
+        "Silk Gloves",
+        "Sorcerer Gloves",
+        "Velvet Gloves",
+        "Warlock Gloves",
+        "Wool Gloves"
+      ],
+      "notes": "",
+      "page_id": "Gloves_int",
+      "slot_families": [
+        "gloves"
+      ],
+      "source_url": "https://poedb.tw/us/Gloves_int",
+      "sub_types": [
+        "Energy Shield"
+      ]
+    },
+    {
+      "discovery_kind": "shared",
+      "has_shared_coverage": true,
+      "item_types": [
+        "Gloves"
+      ],
+      "matched_base_count": 15,
+      "matched_base_names": [
+        "Ancient Gauntlets",
+        "Antique Gauntlets",
+        "Bronze Gauntlets",
+        "Goliath Gauntlets",
+        "Guarding Gauntlets",
+        "Iron Gauntlets",
+        "Leviathan Gauntlets",
+        "Plated Gauntlets",
+        "Precursor Gauntlets",
+        "Preserving Gauntlets",
+        "Spiked Gloves",
+        "Steel Gauntlets",
+        "Thwarting Gauntlets",
+        "Titan Gauntlets",
+        "Vaal Gauntlets"
+      ],
+      "notes": "",
+      "page_id": "Gloves_str",
+      "slot_families": [
+        "gloves"
+      ],
+      "source_url": "https://poedb.tw/us/Gloves_str",
+      "sub_types": [
+        "Armour"
+      ]
+    },
+    {
+      "discovery_kind": "shared",
+      "has_shared_coverage": true,
+      "item_types": [
+        "Gloves"
+      ],
+      "matched_base_count": 10,
+      "matched_base_names": [
+        "Bronzescale Gauntlets",
+        "Chimerascale Gauntlets",
+        "Dragonscale Gauntlets",
+        "Fishscale Gauntlets",
+        "Hydrascale Gauntlets",
+        "Ironscale Gauntlets",
+        "Serpentscale Gauntlets",
+        "Steelscale Gauntlets",
+        "Wyrmscale Gauntlets",
+        "Wyvernscale Gauntlets"
+      ],
+      "notes": "",
+      "page_id": "Gloves_str_dex",
+      "slot_families": [
+        "gloves"
+      ],
+      "source_url": "https://poedb.tw/us/Gloves_str_dex",
+      "sub_types": [
+        "Armour/Evasion"
+      ]
+    },
+    {
+      "discovery_kind": "shared",
+      "has_shared_coverage": true,
+      "item_types": [
+        "Gloves"
+      ],
+      "matched_base_count": 11,
+      "matched_base_names": [
+        "Apothecary's Gloves",
+        "Chain Gloves",
+        "Crusader Gloves",
+        "Legion Gloves",
+        "Martyr Gloves",
+        "Mesh Gloves",
+        "Paladin Gloves",
+        "Ringmail Gloves",
+        "Riveted Gloves",
+        "Soldier Gloves",
+        "Zealot Gloves"
+      ],
+      "notes": "",
+      "page_id": "Gloves_str_int",
+      "slot_families": [
+        "gloves"
+      ],
+      "source_url": "https://poedb.tw/us/Gloves_str_int",
+      "sub_types": [
+        "Armour/Energy Shield"
+      ]
+    },
+    {
+      "discovery_kind": "shared",
+      "has_shared_coverage": true,
+      "item_types": [
+        "Helmet"
+      ],
+      "matched_base_count": 13,
+      "matched_base_names": [
+        "Dire Pelt",
+        "Grizzly Pelt",
+        "Hunter Hood",
+        "Leather Cap",
+        "Leather Hood",
+        "Lion Pelt",
+        "Majestic Pelt",
+        "Noble Tricorne",
+        "Silken Hood",
+        "Sinner Tricorne",
+        "Tricorne",
+        "Ursine Pelt",
+        "Wolf Pelt"
+      ],
+      "notes": "",
+      "page_id": "Helmets_dex",
+      "slot_families": [
+        "helmet"
+      ],
+      "source_url": "https://poedb.tw/us/Helmets_dex",
+      "sub_types": [
+        "Evasion"
+      ]
+    },
+    {
+      "discovery_kind": "shared",
+      "has_shared_coverage": true,
+      "item_types": [
+        "Helmet"
+      ],
+      "matched_base_count": 17,
+      "matched_base_names": [
+        "Ancient Mask",
+        "Blizzard Crown",
+        "Callous Mask",
+        "Deicide Mask",
+        "Festival Mask",
+        "Gale Crown",
+        "Golden Mask",
+        "Harlequin Mask",
+        "Iron Mask",
+        "Jester Mask",
+        "Plague Mask",
+        "Raven Mask",
+        "Regicide Mask",
+        "Scare Mask",
+        "Torturer's Mask",
+        "Vaal Mask",
+        "Winter Crown"
+      ],
+      "notes": "",
+      "page_id": "Helmets_dex_int",
+      "slot_families": [
+        "helmet"
+      ],
+      "source_url": "https://poedb.tw/us/Helmets_dex_int",
+      "sub_types": [
+        "Evasion/Energy Shield"
+      ]
+    },
+    {
+      "discovery_kind": "shared",
+      "has_shared_coverage": true,
+      "item_types": [
+        "Helmet"
+      ],
+      "matched_base_count": 14,
+      "matched_base_names": [
+        "Bone Circlet",
+        "Hubris Circlet",
+        "Iron Circlet",
+        "Lich's Circlet",
+        "Lunaris Circlet",
+        "Mind Cage",
+        "Moonlit Circlet",
+        "Necromancer Circlet",
+        "Solaris Circlet",
+        "Steel Circlet",
+        "Sunfire Circlet",
+        "Torture Cage",
+        "Tribal Circlet",
+        "Vine Circlet"
+      ],
+      "notes": "",
+      "page_id": "Helmets_int",
+      "slot_families": [
+        "helmet"
+      ],
+      "source_url": "https://poedb.tw/us/Helmets_int",
+      "sub_types": [
+        "Energy Shield"
+      ]
+    },
+    {
+      "discovery_kind": "shared",
+      "has_shared_coverage": true,
+      "item_types": [
+        "Helmet"
+      ],
+      "matched_base_count": 14,
+      "matched_base_names": [
+        "Barbute Helmet",
+        "Close Helmet",
+        "Cone Helmet",
+        "Conqueror's Helmet",
+        "Eternal Burgonet",
+        "Ezomyte Burgonet",
+        "General's Helmet",
+        "Giantslayer Helmet",
+        "Gladiator Helmet",
+        "Iron Hat",
+        "Reaver Helmet",
+        "Royal Burgonet",
+        "Samnite Helmet",
+        "Siege Helmet"
+      ],
+      "notes": "",
+      "page_id": "Helmets_str",
+      "slot_families": [
+        "helmet"
+      ],
+      "source_url": "https://poedb.tw/us/Helmets_str",
+      "sub_types": [
+        "Armour"
+      ]
+    },
+    {
+      "discovery_kind": "shared",
+      "has_shared_coverage": true,
+      "item_types": [
+        "Helmet"
+      ],
+      "matched_base_count": 16,
+      "matched_base_names": [
+        "Atonement Mask",
+        "Battered Helm",
+        "Conquest Helmet",
+        "Fencer Helm",
+        "Fluted Bascinet",
+        "Gilded Sallet",
+        "Haunted Bascinet",
+        "Knight Helm",
+        "Lacquered Helmet",
+        "Nightmare Bascinet",
+        "Penitent Mask",
+        "Pig-Faced Bascinet",
+        "Sallet",
+        "Secutor Helm",
+        "Sorrow Mask",
+        "Visored Sallet"
+      ],
+      "notes": "",
+      "page_id": "Helmets_str_dex",
+      "slot_families": [
+        "helmet"
+      ],
+      "source_url": "https://poedb.tw/us/Helmets_str_dex",
+      "sub_types": [
+        "Armour/Evasion"
+      ]
+    },
+    {
+      "discovery_kind": "shared",
+      "has_shared_coverage": true,
+      "item_types": [
+        "Helmet"
+      ],
+      "matched_base_count": 17,
+      "matched_base_names": [
+        "Archdemon Crown",
+        "Aventail Helmet",
+        "Bone Helmet",
+        "Crusader Helmet",
+        "Demon Crown",
+        "Divine Crown",
+        "Faithful Helmet",
+        "Great Crown",
+        "Great Helmet",
+        "Imp Crown",
+        "Magistrate Crown",
+        "Paladin Crown",
+        "Praetor Crown",
+        "Prophet Crown",
+        "Rusted Coif",
+        "Soldier Helmet",
+        "Zealot Helmet"
+      ],
+      "notes": "",
+      "page_id": "Helmets_str_int",
+      "slot_families": [
+        "helmet"
+      ],
+      "source_url": "https://poedb.tw/us/Helmets_str_int",
+      "sub_types": [
+        "Armour/Energy Shield"
+      ]
+    },
+    {
+      "discovery_kind": "shared",
+      "has_shared_coverage": true,
+      "item_types": [
+        "One Handed Axe"
+      ],
+      "matched_base_count": 28,
+      "matched_base_names": [
+        "Arming Axe",
+        "Boarding Axe",
+        "Broad Axe",
+        "Butcher Axe",
+        "Ceremonial Axe",
+        "Chest Splitter",
+        "Cleaver",
+        "Decorative Axe",
+        "Disapprobation Axe",
+        "Engraved Hatchet",
+        "Etched Hatchet",
+        "Infernal Axe",
+        "Jade Hatchet",
+        "Jasper Axe",
+        "Karui Axe",
+        "Maltreatment Axe",
+        "Psychotic Axe",
+        "Reaver Axe",
+        "Royal Axe",
+        "Runic Hatchet",
+        "Rusted Hatchet",
+        "Siege Axe",
+        "Spectral Axe",
+        "Tomahawk",
+        "Vaal Hatchet",
+        "War Axe",
+        "Wraith Axe",
+        "Wrist Chopper"
+      ],
+      "notes": "",
+      "page_id": "One_Hand_Axes",
+      "slot_families": [
+        "axe"
+      ],
+      "source_url": "https://poedb.tw/us/One_Hand_Axes",
+      "sub_types": [
+        null
+      ]
+    },
+    {
+      "discovery_kind": "shared",
+      "has_shared_coverage": true,
+      "item_types": [
+        "One Handed Mace"
+      ],
+      "matched_base_count": 28,
+      "matched_base_names": [
+        "Ancestral Club",
+        "Auric Mace",
+        "Barbed Club",
+        "Battle Hammer",
+        "Behemoth Mace",
+        "Bladed Mace",
+        "Boom Mace",
+        "Ceremonial Mace",
+        "Crack Mace",
+        "Dragon Mace",
+        "Dream Mace",
+        "Driftwood Club",
+        "Flanged Mace",
+        "Flare Mace",
+        "Gavel",
+        "Legion Hammer",
+        "Nightmare Mace",
+        "Ornate Mace",
+        "Pernach",
+        "Petrified Club",
+        "Phantom Mace",
+        "Rock Breaker",
+        "Spiked Club",
+        "Stone Hammer",
+        "Tenderizer",
+        "Tribal Club",
+        "War Hammer",
+        "Wyrm Mace"
+      ],
+      "notes": "",
+      "page_id": "One_Hand_Maces",
+      "slot_families": [
+        "mace"
+      ],
+      "source_url": "https://poedb.tw/us/One_Hand_Maces",
+      "sub_types": [
+        null
+      ]
+    },
+    {
+      "discovery_kind": "shared",
+      "has_shared_coverage": true,
+      "item_types": [
+        "One Handed Sword"
+      ],
+      "matched_base_count": 31,
+      "matched_base_names": [
+        "Anarchic Spiritblade",
+        "Ancient Sword",
+        "Baselard",
+        "Battle Sword",
+        "Broad Sword",
+        "Capricious Spiritblade",
+        "Charan's Sword",
+        "Copper Sword",
+        "Corsair Sword",
+        "Cutlass",
+        "Dusk Blade",
+        "Elder Sword",
+        "Elegant Sword",
+        "Energy Blade One Handed",
+        "Eternal Sword",
+        "Fickle Spiritblade",
+        "Gemstone Sword",
+        "Gladius",
+        "Graceful Sword",
+        "Grappler",
+        "Hook Sword",
+        "Legion Sword",
+        "Midnight Blade",
+        "Random One Hand Sword",
+        "Rusted Sword",
+        "Sabre",
+        "Tiger Hook",
+        "Twilight Blade",
+        "Vaal Blade",
+        "Variscite Blade",
+        "War Sword"
+      ],
+      "notes": "",
+      "page_id": "One_Hand_Swords",
+      "slot_families": [
+        "sword"
+      ],
+      "source_url": "https://poedb.tw/us/One_Hand_Swords",
+      "sub_types": [
+        null
+      ]
+    },
+    {
+      "discovery_kind": "shared",
+      "has_shared_coverage": true,
+      "item_types": [
+        "Quiver"
+      ],
+      "matched_base_count": 20,
+      "matched_base_names": [
+        "Artillery Quiver",
+        "Blazing Arrow Quiver",
+        "Blunt Arrow Quiver",
+        "Broadhead Arrow Quiver",
+        "Conductive Quiver",
+        "Cured Quiver",
+        "Feathered Arrow Quiver",
+        "Fire Arrow Quiver",
+        "Heavy Arrow Quiver",
+        "Heavy Quiver",
+        "Light Quiver",
+        "Ornate Quiver",
+        "Penetrating Arrow Quiver",
+        "Primal Arrow Quiver",
+        "Rugged Quiver",
+        "Serrated Arrow Quiver",
+        "Sharktooth Arrow Quiver",
+        "Spike-Point Arrow Quiver",
+        "Two-Point Arrow Quiver",
+        "Vile Arrow Quiver"
+      ],
+      "notes": "",
+      "page_id": "Quivers",
+      "slot_families": [
+        "quiver"
+      ],
+      "source_url": "https://poedb.tw/us/Quivers",
+      "sub_types": [
+        null
+      ]
+    },
+    {
+      "discovery_kind": "shared",
+      "has_shared_coverage": true,
+      "item_types": [
+        "Ring"
+      ],
+      "matched_base_count": 44,
+      "matched_base_names": [
+        "Amethyst Ring",
+        "Bone Ring",
+        "Breach Ring",
+        "Cerulean Ring",
+        "Cogwork Ring",
+        "Composite Ring",
+        "Coral Ring",
+        "Cryonic Ring",
+        "Diamond Ring",
+        "Dusk Ring",
+        "Enthalpic Ring",
+        "Formless Ring",
+        "Fugitive Ring",
+        "Geodesic Ring",
+        "Gloam Ring",
+        "Gold Ring",
+        "Golden Hoop",
+        "Helical Ring",
+        "Iolite Ring",
+        "Iron Ring",
+        "Jet Ring",
+        "Manifold Ring",
+        "Moonstone Ring",
+        "Nameless Ring",
+        "Opal Ring",
+        "Organic Ring",
+        "Paua Ring",
+        "Penumbra Ring",
+        "Prismatic Ring",
+        "Ratcheting Ring",
+        "Ring",
+        "Ruby Ring",
+        "Sapphire Ring",
+        "Shadowed Ring",
+        "Steel Ring",
+        "Synaptic Ring",
+        "Tenebrous Ring",
+        "Topaz Ring",
+        "Two-Stone Ring",
+        "Two-Stone Ring (Cold/Lightning)",
+        "Two-Stone Ring (Fire/Cold)",
+        "Two-Stone Ring (Fire/Lightning)",
+        "Unset Ring",
+        "Vermillion Ring"
+      ],
+      "notes": "",
+      "page_id": "Rings",
+      "slot_families": [
+        "ring"
+      ],
+      "source_url": "https://poedb.tw/us/Rings",
+      "sub_types": [
+        null
+      ]
+    },
+    {
+      "discovery_kind": "shared",
+      "has_shared_coverage": true,
+      "item_types": [
+        "Dagger"
+      ],
+      "matched_base_count": 18,
+      "matched_base_names": [
+        "Boot Blade",
+        "Boot Knife",
+        "Butcher Knife",
+        "Carving Knife",
+        "Copper Kris",
+        "Demon Dagger",
+        "Ezomyte Dagger",
+        "Fiend Dagger",
+        "Flashfire Blade",
+        "Flickerflame Blade",
+        "Golden Kris",
+        "Imp Dagger",
+        "Imperial Skean",
+        "Infernal Blade",
+        "Platinum Kris",
+        "Royal Skean",
+        "Skean",
+        "Slaughter Knife"
+      ],
+      "notes": "",
+      "page_id": "Rune_Daggers",
+      "slot_families": [
+        "dagger"
+      ],
+      "source_url": "https://poedb.tw/us/Rune_Daggers",
+      "sub_types": [
+        "Rune Dagger"
+      ]
+    },
+    {
+      "discovery_kind": "shared",
+      "has_shared_coverage": true,
+      "item_types": [
+        "Sceptre"
+      ],
+      "matched_base_count": 28,
+      "matched_base_names": [
+        "Abyssal Sceptre",
+        "Alternating Sceptre",
+        "Blood Sceptre",
+        "Bronze Sceptre",
+        "Carnal Sceptre",
+        "Crystal Sceptre",
+        "Darkwood Sceptre",
+        "Driftwood Sceptre",
+        "Grinning Fetish",
+        "Horned Sceptre",
+        "Iron Sceptre",
+        "Karui Sceptre",
+        "Lead Sceptre",
+        "Ochre Sceptre",
+        "Opal Sceptre",
+        "Oscillating Sceptre",
+        "Platinum Sceptre",
+        "Quartz Sceptre",
+        "Ritual Sceptre",
+        "Royal Sceptre",
+        "Sambar Sceptre",
+        "Sekhem",
+        "Shadow Sceptre",
+        "Stabilising Sceptre",
+        "Stag Sceptre",
+        "Tyrant's Sekhem",
+        "Vaal Sceptre",
+        "Void Sceptre"
+      ],
+      "notes": "",
+      "page_id": "Sceptres",
+      "slot_families": [
+        "mace"
+      ],
+      "source_url": "https://poedb.tw/us/Sceptres",
+      "sub_types": [
+        null
+      ]
+    },
+    {
+      "discovery_kind": "shared",
+      "has_shared_coverage": true,
+      "item_types": [
+        "Shield"
+      ],
+      "matched_base_count": 19,
+      "matched_base_names": [
+        "Battle Buckler",
+        "Cold-attuned Buckler",
+        "Corrugated Buckler",
+        "Crusader Buckler",
+        "Enameled Buckler",
+        "Endothermic Buckler",
+        "Gilded Buckler",
+        "Goathide Buckler",
+        "Golden Buckler",
+        "Hammered Buckler",
+        "Imperial Buckler",
+        "Ironwood Buckler",
+        "Lacquered Buckler",
+        "Oak Buckler",
+        "Painted Buckler",
+        "Pine Buckler",
+        "Polar Buckler",
+        "Vaal Buckler",
+        "War Buckler"
+      ],
+      "notes": "",
+      "page_id": "Shields_dex",
+      "slot_families": [
+        "shield"
+      ],
+      "source_url": "https://poedb.tw/us/Shields_dex",
+      "sub_types": [
+        "Evasion"
+      ]
+    },
+    {
+      "discovery_kind": "shared",
+      "has_shared_coverage": true,
+      "item_types": [
+        "Shield"
+      ],
+      "matched_base_count": 13,
+      "matched_base_names": [
+        "Alder Spiked Shield",
+        "Alloyed Spiked Shield",
+        "Burnished Spiked Shield",
+        "Compound Spiked Shield",
+        "Driftwood Spiked Shield",
+        "Ezomyte Spiked Shield",
+        "Mirrored Spiked Shield",
+        "Ornate Spiked Shield",
+        "Polished Spiked Shield",
+        "Redwood Spiked Shield",
+        "Sovereign Spiked Shield",
+        "Spiked Bundle",
+        "Supreme Spiked Shield"
+      ],
+      "notes": "",
+      "page_id": "Shields_dex_int",
+      "slot_families": [
+        "shield"
+      ],
+      "source_url": "https://poedb.tw/us/Shields_dex_int",
+      "sub_types": [
+        "Evasion/Energy Shield"
+      ]
+    },
+    {
+      "discovery_kind": "shared",
+      "has_shared_coverage": true,
+      "item_types": [
+        "Shield"
+      ],
+      "matched_base_count": 19,
+      "matched_base_names": [
+        "Ancient Spirit Shield",
+        "Bone Spirit Shield",
+        "Brass Spirit Shield",
+        "Chiming Spirit Shield",
+        "Exhausting Spirit Shield",
+        "Fossilised Spirit Shield",
+        "Harmonic Spirit Shield",
+        "Ivory Spirit Shield",
+        "Jingling Spirit Shield",
+        "Lacewood Spirit Shield",
+        "Subsuming Spirit Shield",
+        "Tarnished Spirit Shield",
+        "Thorium Spirit Shield",
+        "Titanium Spirit Shield",
+        "Transfer-attuned Spirit Shield",
+        "Twig Spirit Shield",
+        "Vaal Spirit Shield",
+        "Walnut Spirit Shield",
+        "Yew Spirit Shield"
+      ],
+      "notes": "",
+      "page_id": "Shields_int",
+      "slot_families": [
+        "shield"
+      ],
+      "source_url": "https://poedb.tw/us/Shields_int",
+      "sub_types": [
+        "Energy Shield"
+      ]
+    },
+    {
+      "discovery_kind": "shared",
+      "has_shared_coverage": true,
+      "item_types": [
+        "Shield"
+      ],
+      "matched_base_count": 20,
+      "matched_base_names": [
+        "Bronze Tower Shield",
+        "Buckskin Tower Shield",
+        "Cedar Tower Shield",
+        "Colossal Tower Shield",
+        "Copper Tower Shield",
+        "Corroded Tower Shield",
+        "Crested Tower Shield",
+        "Ebony Tower Shield",
+        "Exothermic Tower Shield",
+        "Ezomyte Tower Shield",
+        "Girded Tower Shield",
+        "Heat-attuned Tower Shield",
+        "Magmatic Tower Shield",
+        "Mahogany Tower Shield",
+        "Painted Tower Shield",
+        "Pinnacle Tower Shield",
+        "Rawhide Tower Shield",
+        "Reinforced Tower Shield",
+        "Shagreen Tower Shield",
+        "Splintered Tower Shield"
+      ],
+      "notes": "",
+      "page_id": "Shields_str",
+      "slot_families": [
+        "shield"
+      ],
+      "source_url": "https://poedb.tw/us/Shields_str",
+      "sub_types": [
+        "Armour"
+      ]
+    },
+    {
+      "discovery_kind": "shared",
+      "has_shared_coverage": true,
+      "item_types": [
+        "Shield"
+      ],
+      "matched_base_count": 13,
+      "matched_base_names": [
+        "Baroque Round Shield",
+        "Cardinal Round Shield",
+        "Crimson Round Shield",
+        "Elegant Round Shield",
+        "Fir Round Shield",
+        "Maple Round Shield",
+        "Rotted Round Shield",
+        "Scarlet Round Shield",
+        "Spiked Round Shield",
+        "Spiny Round Shield",
+        "Splendid Round Shield",
+        "Studded Round Shield",
+        "Teak Round Shield"
+      ],
+      "notes": "",
+      "page_id": "Shields_str_dex",
+      "slot_families": [
+        "shield"
+      ],
+      "source_url": "https://poedb.tw/us/Shields_str_dex",
+      "sub_types": [
+        "Armour/Evasion"
+      ]
+    },
+    {
+      "discovery_kind": "shared",
+      "has_shared_coverage": true,
+      "item_types": [
+        "Shield"
+      ],
+      "matched_base_count": 13,
+      "matched_base_names": [
+        "Angelic Kite Shield",
+        "Archon Kite Shield",
+        "Branded Kite Shield",
+        "Ceremonial Kite Shield",
+        "Champion Kite Shield",
+        "Etched Kite Shield",
+        "Laminated Kite Shield",
+        "Layered Kite Shield",
+        "Linden Kite Shield",
+        "Mosaic Kite Shield",
+        "Plank Kite Shield",
+        "Reinforced Kite Shield",
+        "Steel Kite Shield"
+      ],
+      "notes": "",
+      "page_id": "Shields_str_int",
+      "slot_families": [
+        "shield"
+      ],
+      "source_url": "https://poedb.tw/us/Shields_str_int",
+      "sub_types": [
+        "Armour/Energy Shield"
+      ]
+    },
+    {
+      "discovery_kind": "shared",
+      "has_shared_coverage": true,
+      "item_types": [
+        "Staff"
+      ],
+      "matched_base_count": 16,
+      "matched_base_names": [
+        "Battery Staff",
+        "Crescent Staff",
+        "Eclipse Staff",
+        "Gnarled Branch",
+        "Highborn Staff",
+        "Imperial Staff",
+        "Lathi",
+        "Long Staff",
+        "Moon Staff",
+        "Primitive Staff",
+        "Primordial Staff",
+        "Quarterstaff",
+        "Reciprocation Staff",
+        "Royal Staff",
+        "Transformer Staff",
+        "Woodful Staff"
+      ],
+      "notes": "",
+      "page_id": "Staves",
+      "slot_families": [
+        "staff"
+      ],
+      "source_url": "https://poedb.tw/us/Staves",
+      "sub_types": [
+        null
+      ]
+    },
+    {
+      "discovery_kind": "shared",
+      "has_shared_coverage": true,
+      "item_types": [
+        "One Handed Sword"
+      ],
+      "matched_base_count": 25,
+      "matched_base_names": [
+        "Antique Rapier",
+        "Apex Rapier",
+        "Basket Rapier",
+        "Battered Foil",
+        "Burnished Foil",
+        "Courtesan Sword",
+        "Dragonbone Rapier",
+        "Dragoon Sword",
+        "Elegant Foil",
+        "Estoc",
+        "Fancy Foil",
+        "Harpy Rapier",
+        "Jagged Foil",
+        "Jewelled Foil",
+        "Pecoraro",
+        "Primeval Rapier",
+        "Rusted Spike",
+        "Serrated Foil",
+        "Smallsword",
+        "Spiraled Foil",
+        "Tempered Foil",
+        "Thorn Rapier",
+        "Vaal Rapier",
+        "Whalebone Rapier",
+        "Wyrmbone Rapier"
+      ],
+      "notes": "",
+      "page_id": "Thrusting_One_Hand_Swords",
+      "slot_families": [
+        "sword"
+      ],
+      "source_url": "https://poedb.tw/us/Thrusting_One_Hand_Swords",
+      "sub_types": [
+        "Thrusting"
+      ]
+    },
+    {
+      "discovery_kind": "shared",
+      "has_shared_coverage": true,
+      "item_types": [
+        "Two Handed Axe"
+      ],
+      "matched_base_count": 25,
+      "matched_base_names": [
+        "Abyssal Axe",
+        "Apex Cleaver",
+        "Dagger Axe",
+        "Despot Axe",
+        "Double Axe",
+        "Ezomyte Axe",
+        "Fleshripper",
+        "Gilded Axe",
+        "Headsman Axe",
+        "Honed Cleaver",
+        "Jade Chopper",
+        "Jasper Chopper",
+        "Karui Chopper",
+        "Labrys",
+        "Noble Axe",
+        "Poleaxe",
+        "Prime Cleaver",
+        "Shadow Axe",
+        "Stone Axe",
+        "Sundering Axe",
+        "Talon Axe",
+        "Timber Axe",
+        "Vaal Axe",
+        "Void Axe",
+        "Woodsplitter"
+      ],
+      "notes": "",
+      "page_id": "Two_Hand_Axes",
+      "slot_families": [
+        "axe"
+      ],
+      "source_url": "https://poedb.tw/us/Two_Hand_Axes",
+      "sub_types": [
+        null
+      ]
+    },
+    {
+      "discovery_kind": "shared",
+      "has_shared_coverage": true,
+      "item_types": [
+        "Two Handed Mace"
+      ],
+      "matched_base_count": 25,
+      "matched_base_names": [
+        "Blunt Force Condenser",
+        "Brass Maul",
+        "Colossus Mallet",
+        "Coronal Maul",
+        "Crushing Force Magnifier",
+        "Dread Maul",
+        "Driftwood Maul",
+        "Fright Maul",
+        "Great Mallet",
+        "Impact Force Propagator",
+        "Imperial Maul",
+        "Jagged Maul",
+        "Karui Maul",
+        "Mallet",
+        "Meatgrinder",
+        "Morning Star",
+        "Piledriver",
+        "Plated Maul",
+        "Sledgehammer",
+        "Solar Maul",
+        "Spiny Maul",
+        "Steelhead",
+        "Terror Maul",
+        "Totemic Maul",
+        "Tribal Maul"
+      ],
+      "notes": "",
+      "page_id": "Two_Hand_Maces",
+      "slot_families": [
+        "mace"
+      ],
+      "source_url": "https://poedb.tw/us/Two_Hand_Maces",
+      "sub_types": [
+        null
+      ]
+    },
+    {
+      "discovery_kind": "shared",
+      "has_shared_coverage": true,
+      "item_types": [
+        "Two Handed Sword"
+      ],
+      "matched_base_count": 28,
+      "matched_base_names": [
+        "Banishing Blade",
+        "Bastard Sword",
+        "Blasting Blade",
+        "Butcher Sword",
+        "Corroded Blade",
+        "Curved Blade",
+        "Energy Blade Two Handed",
+        "Engraved Greatsword",
+        "Etched Greatsword",
+        "Exquisite Blade",
+        "Ezomyte Blade",
+        "Footman Sword",
+        "Headman's Sword",
+        "Highland Blade",
+        "Infernal Sword",
+        "Keyblade",
+        "Lion Sword",
+        "Lithe Blade",
+        "Longsword",
+        "Ornate Sword",
+        "Random Two Hand Sword",
+        "Reaver Sword",
+        "Rebuking Blade",
+        "Spectral Sword",
+        "Tiger Sword",
+        "Two-Handed Sword",
+        "Vaal Greatsword",
+        "Wraith Sword"
+      ],
+      "notes": "",
+      "page_id": "Two_Hand_Swords",
+      "slot_families": [
+        "sword"
+      ],
+      "source_url": "https://poedb.tw/us/Two_Hand_Swords",
+      "sub_types": [
+        null
+      ]
+    },
+    {
+      "discovery_kind": "shared",
+      "has_shared_coverage": true,
+      "item_types": [
+        "Wand"
+      ],
+      "matched_base_count": 28,
+      "matched_base_names": [
+        "Accumulator Wand",
+        "Assembler Wand",
+        "Blasting Wand",
+        "Calling Wand",
+        "Carved Wand",
+        "Coiled Wand",
+        "Congregator Wand",
+        "Convening Wand",
+        "Convoking Wand",
+        "Crystal Wand",
+        "Demon's Horn",
+        "Driftwood Wand",
+        "Engraved Wand",
+        "Faun's Horn",
+        "Goat's Horn",
+        "Heathen Wand",
+        "Imbued Wand",
+        "Kinetic Wand",
+        "Omen Wand",
+        "Opal Wand",
+        "Pagan Wand",
+        "Profane Wand",
+        "Prophecy Wand",
+        "Quartz Wand",
+        "Sage Wand",
+        "Somatic Wand",
+        "Spiraled Wand",
+        "Tornado Wand"
+      ],
+      "notes": "",
+      "page_id": "Wands",
+      "slot_families": [
+        "wand"
+      ],
+      "source_url": "https://poedb.tw/us/Wands",
+      "sub_types": [
+        null
+      ]
+    },
+    {
+      "discovery_kind": "shared",
+      "has_shared_coverage": true,
+      "item_types": [
+        "Staff"
+      ],
+      "matched_base_count": 12,
+      "matched_base_names": [
+        "Capacity Rod",
+        "Coiled Staff",
+        "Eventuality Rod",
+        "Ezomyte Staff",
+        "Foul Staff",
+        "Iron Staff",
+        "Judgement Staff",
+        "Maelstrom Staff",
+        "Military Staff",
+        "Potentiality Rod",
+        "Serpentine Staff",
+        "Vile Staff"
+      ],
+      "notes": "",
+      "page_id": "Warstaves",
+      "slot_families": [
+        "staff"
+      ],
+      "source_url": "https://poedb.tw/us/Warstaves",
+      "sub_types": [
+        "Warstaff"
+      ]
+    },
+    {
+      "discovery_kind": "special",
+      "has_shared_coverage": true,
+      "item_types": [
+        "Ring"
+      ],
+      "matched_base_count": 1,
+      "matched_base_names": [
+        "Bone Ring"
+      ],
+      "notes": "Special implicit ring base with its own PoEDB modifier pool.",
+      "page_id": "Bone_Ring",
+      "slot_families": [
+        "ring"
+      ],
+      "source_url": "https://poedb.tw/us/Bone_Ring",
+      "sub_types": [
+        null
+      ]
+    },
+    {
+      "discovery_kind": "special",
+      "has_shared_coverage": true,
+      "item_types": [
+        "Shield"
+      ],
+      "matched_base_count": 1,
+      "matched_base_names": [
+        "Bone Spirit Shield"
+      ],
+      "notes": "Minion shield base with its own PoEDB modifier pool.",
+      "page_id": "Bone_Spirit_Shield",
+      "slot_families": [
+        "shield"
+      ],
+      "source_url": "https://poedb.tw/us/Bone_Spirit_Shield",
+      "sub_types": [
+        "Energy Shield"
+      ]
+    },
+    {
+      "discovery_kind": "special",
+      "has_shared_coverage": true,
+      "item_types": [
+        "Wand"
+      ],
+      "matched_base_count": 1,
+      "matched_base_names": [
+        "Convoking Wand"
+      ],
+      "notes": "Minion wand base with its own PoEDB modifier pool.",
+      "page_id": "Convoking_Wand",
+      "slot_families": [
+        "wand"
+      ],
+      "source_url": "https://poedb.tw/us/Convoking_Wand",
+      "sub_types": [
+        null
+      ]
+    },
+    {
+      "discovery_kind": "special",
+      "has_shared_coverage": false,
+      "item_types": [
+        "Helmet"
+      ],
+      "matched_base_count": 3,
+      "matched_base_names": [
+        "Runic Crest",
+        "Runic Crown",
+        "Runic Helm"
+      ],
+      "notes": "Representative PoEDB ward helmet page covering all ward helmet bases.",
+      "page_id": "Runic_Crown",
+      "slot_families": [
+        "helmet"
+      ],
+      "source_url": "https://poedb.tw/us/Runic_Crown",
+      "sub_types": [
+        "Ward"
+      ]
+    },
+    {
+      "discovery_kind": "special",
+      "has_shared_coverage": false,
+      "item_types": [
+        "Gloves"
+      ],
+      "matched_base_count": 3,
+      "matched_base_names": [
+        "Runic Gages",
+        "Runic Gauntlets",
+        "Runic Gloves"
+      ],
+      "notes": "Representative PoEDB ward glove page covering all ward glove bases.",
+      "page_id": "Runic_Gauntlets",
+      "slot_families": [
+        "gloves"
+      ],
+      "source_url": "https://poedb.tw/us/Runic_Gauntlets",
+      "sub_types": [
+        "Ward"
+      ]
+    },
+    {
+      "discovery_kind": "special",
+      "has_shared_coverage": false,
+      "item_types": [
+        "Boots"
+      ],
+      "matched_base_count": 3,
+      "matched_base_names": [
+        "Runic Greaves",
+        "Runic Sabatons",
+        "Runic Sollerets"
+      ],
+      "notes": "Representative PoEDB ward boot page covering all ward boot bases.",
+      "page_id": "Runic_Sabatons",
+      "slot_families": [
+        "boots"
+      ],
+      "source_url": "https://poedb.tw/us/Runic_Sabatons",
+      "sub_types": [
+        "Ward"
+      ]
+    }
+  ],
+  "parser_version": "op2f10b-poedb-affix-ingestion-v1",
+  "record_kind": "poedb_affix_page_discovery",
+  "schema_version": "1.0.0",
+  "scope": {
+    "equipable_slot_families": [
+      "amulet",
+      "axe",
+      "belt",
+      "body",
+      "boots",
+      "bow",
+      "claw",
+      "dagger",
+      "gloves",
+      "helmet",
+      "mace",
+      "quiver",
+      "ring",
+      "shield",
+      "staff",
+      "sword",
+      "wand"
+    ],
+    "ignored_slot_families": [
+      "flask",
+      "graft",
+      "jewel",
+      "tincture"
+    ],
+    "items_corpus_base_count": 972,
+    "items_corpus_path": "src/junkroan/pob/corpus_data/items.json",
+    "items_corpus_sha256": "bc4bef9542db2949a3fba6ccfdf5377069a218abb43af3fea276e553d9fbc903"
+  },
+  "special_probe_failures": [],
+  "uncovered_bases": [
+    {
+      "candidate_page_id": null,
+      "candidate_reason": "promo_base_without_distinct_modifier_page",
+      "name": "Golden Caligae",
+      "slot_family": "boots",
+      "sub_type": null,
+      "tags": [
+        "armour",
+        "boots",
+        "default",
+        "demigods",
+        "not_for_sale"
+      ],
+      "type": "Boots"
+    },
+    {
+      "candidate_page_id": null,
+      "candidate_reason": "promo_base_without_distinct_modifier_page",
+      "name": "Golden Bracers",
+      "slot_family": "gloves",
+      "sub_type": null,
+      "tags": [
+        "armour",
+        "default",
+        "demigods",
+        "gloves",
+        "not_for_sale"
+      ],
+      "type": "Gloves"
+    },
+    {
+      "candidate_page_id": null,
+      "candidate_reason": "promo_base_without_distinct_modifier_page",
+      "name": "Golden Wreath",
+      "slot_family": "helmet",
+      "sub_type": null,
+      "tags": [
+        "armour",
+        "default",
+        "demigods",
+        "helmet",
+        "not_for_sale"
+      ],
+      "type": "Helmet"
+    },
+    {
+      "candidate_page_id": null,
+      "candidate_reason": "promo_base_without_distinct_modifier_page",
+      "name": "Golden Flame",
+      "slot_family": "shield",
+      "sub_type": null,
+      "tags": [
+        "armour",
+        "default",
+        "demigods",
+        "not_for_sale",
+        "shield"
+      ],
+      "type": "Shield"
+    }
+  ]
+}

@@ -1,0 +1,2 @@
+{"type": "user", "message": {"role": "user", "content": "poe-junkroan-v2 opus 5.5 lead session, please continue"}, "timestamp": "2026-09-20T11:55:00Z"}
+{"type": "assistant", "message": {"id": "msg_b1", "model": "claude-opus-5-5", "usage": {"input_tokens": 1000, "cache_creation_input_tokens": 500, "cache_read_input_tokens": 2000, "output_tokens": 100}}, "timestamp": "2026-09-20T12:00:00Z"}

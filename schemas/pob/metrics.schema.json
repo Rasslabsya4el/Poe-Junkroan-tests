@@ -1,0 +1,629 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/schemas/pob/metrics.schema.json",
+  "title": "PoB normalized metrics",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "baseline",
+    "conditional",
+    "metadata",
+    "warnings"
+  ],
+  "properties": {
+    "baseline": {
+      "$ref": "#/$defs/metric_section"
+    },
+    "conditional": {
+      "$ref": "#/$defs/metric_section"
+    },
+    "metadata": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "run_id",
+        "build_id",
+        "build_source",
+        "evaluated_at",
+        "supported_path",
+        "input_fingerprint",
+        "raw_metrics_fingerprint",
+        "runtime_metadata",
+        "pob_release",
+        "artifact_root"
+      ],
+      "properties": {
+        "run_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "build_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "build_source": {
+          "type": "string",
+          "minLength": 1
+        },
+        "evaluated_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "supported_path": {
+          "type": "string",
+          "minLength": 1
+        },
+        "input_fingerprint": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "raw_metrics_fingerprint": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "runtime_metadata": {
+          "type": "object"
+        },
+        "artifact_root": {
+          "type": "string",
+          "minLength": 1
+        },
+        "pob_release": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "repo",
+            "tag",
+            "asset_name",
+            "asset_sha256",
+            "lock_fingerprint"
+          ],
+          "properties": {
+            "repo": {
+              "type": "string",
+              "minLength": 1
+            },
+            "tag": {
+              "type": "string",
+              "minLength": 1
+            },
+            "asset_name": {
+              "type": "string",
+              "minLength": 1
+            },
+            "asset_sha256": {
+              "type": "string",
+              "pattern": "^[a-f0-9]{64}$"
+            },
+            "lock_fingerprint": {
+              "type": "string",
+              "pattern": "^[a-f0-9]{64}$"
+            }
+          }
+        }
+      }
+    },
+    "warnings": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    }
+  },
+  "$defs": {
+    "metric_section": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "metrics"
+      ],
+      "properties": {
+        "metrics": {
+          "type": "object",
+          "minProperties": 1,
+          "additionalProperties": {
+            "type": "number"
+          }
+        },
+        "calc_snapshot": {
+          "$ref": "#/$defs/calc_snapshot"
+        }
+      }
+    },
+    "calc_snapshot": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "config_set_id",
+        "state_role",
+        "config_summary",
+        "metric_sources",
+        "main_output",
+        "calcs_output",
+        "display_families",
+        "warnings",
+        "warning_codes",
+        "triage"
+      ],
+      "properties": {
+        "config_set_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "state_role": {
+          "type": "string",
+          "enum": [
+            "baseline",
+            "conditional"
+          ]
+        },
+        "config_summary": {
+          "type": "object"
+        },
+        "metric_sources": {
+          "type": "object",
+          "minProperties": 1,
+          "additionalProperties": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "main_output": {
+          "$ref": "#/$defs/scalar_output_map"
+        },
+        "calcs_output": {
+          "$ref": "#/$defs/scalar_output_map"
+        },
+        "display_families": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "player",
+            "minion"
+          ],
+          "properties": {
+            "player": {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/display_family"
+              }
+            },
+            "minion": {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/display_family"
+              }
+            }
+          }
+        },
+        "warnings": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "warning_codes": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "triage": {
+          "$ref": "#/$defs/triage"
+        }
+      }
+    },
+    "scalar_output_map": {
+      "type": "object",
+      "additionalProperties": {
+        "$ref": "#/$defs/scalar_value"
+      }
+    },
+    "scalar_value": {
+      "type": [
+        "number",
+        "string",
+        "boolean",
+        "null"
+      ]
+    },
+    "display_family": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "family_id",
+        "rows"
+      ],
+      "properties": {
+        "family_id": {
+          "type": "string",
+          "enum": [
+            "offense",
+            "requirements",
+            "defense",
+            "resources",
+            "resistances",
+            "movement",
+            "utility",
+            "other"
+          ]
+        },
+        "rows": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/display_row"
+          }
+        }
+      }
+    },
+    "display_row": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "stat_key",
+        "label",
+        "value",
+        "overcap_value",
+        "warning",
+        "lower_is_better",
+        "source_output"
+      ],
+      "properties": {
+        "stat_key": {
+          "type": "string",
+          "minLength": 1
+        },
+        "label": {
+          "type": "string",
+          "minLength": 1
+        },
+        "value": {
+          "$ref": "#/$defs/scalar_value"
+        },
+        "overcap_value": {
+          "$ref": "#/$defs/scalar_value"
+        },
+        "warning": {
+          "$ref": "#/$defs/scalar_value"
+        },
+        "lower_is_better": {
+          "type": "boolean"
+        },
+        "source_output": {
+          "type": "string",
+          "enum": [
+            "main_output",
+            "main_output.minion"
+          ]
+        }
+      }
+    },
+    "triage": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "cap_pressure",
+        "requirement_pressure",
+        "saturation",
+        "constraint_failures"
+      ],
+      "properties": {
+        "cap_pressure": {
+          "$ref": "#/$defs/cap_pressure"
+        },
+        "requirement_pressure": {
+          "$ref": "#/$defs/requirement_pressure"
+        },
+        "saturation": {
+          "$ref": "#/$defs/saturation"
+        },
+        "constraint_failures": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    },
+    "cap_pressure": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "elemental_resistances": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "fire": {
+              "$ref": "#/$defs/cap_entry"
+            },
+            "cold": {
+              "$ref": "#/$defs/cap_entry"
+            },
+            "lightning": {
+              "$ref": "#/$defs/cap_entry"
+            }
+          }
+        },
+        "elemental_resistance_min_overcap": {
+          "type": "number"
+        },
+        "elemental_resistances_solved": {
+          "type": "boolean"
+        },
+        "chaos_resistance": {
+          "$ref": "#/$defs/cap_entry"
+        },
+        "spell_suppression": {
+          "$ref": "#/$defs/cap_entry"
+        },
+        "block": {
+          "$ref": "#/$defs/cap_entry"
+        },
+        "spell_block": {
+          "$ref": "#/$defs/cap_entry"
+        }
+      }
+    },
+    "cap_entry": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "current",
+        "cap",
+        "missing_to_cap",
+        "overcap",
+        "uncapped_total",
+        "is_capped",
+        "near_cap"
+      ],
+      "properties": {
+        "current": {
+          "type": "number"
+        },
+        "cap": {
+          "type": "number"
+        },
+        "missing_to_cap": {
+          "type": "number"
+        },
+        "overcap": {
+          "type": "number"
+        },
+        "uncapped_total": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "is_capped": {
+          "type": "boolean"
+        },
+        "near_cap": {
+          "type": "boolean"
+        }
+      }
+    },
+    "requirement_pressure": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "strength",
+        "dexterity",
+        "intelligence",
+        "omniscience"
+      ],
+      "properties": {
+        "strength": {
+          "$ref": "#/$defs/requirement_entry"
+        },
+        "dexterity": {
+          "$ref": "#/$defs/requirement_entry"
+        },
+        "intelligence": {
+          "$ref": "#/$defs/requirement_entry"
+        },
+        "omniscience": {
+          "$ref": "#/$defs/requirement_entry"
+        }
+      }
+    },
+    "requirement_entry": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "available",
+        "required",
+        "shortfall",
+        "satisfied"
+      ],
+      "properties": {
+        "available": {
+          "type": "number"
+        },
+        "required": {
+          "type": "number"
+        },
+        "shortfall": {
+          "type": "number"
+        },
+        "satisfied": {
+          "type": "boolean"
+        }
+      }
+    },
+    "saturation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "movement_speed",
+        "resources",
+        "cost_pressure",
+        "avoidance_overcaps",
+        "damage_profile"
+      ],
+      "properties": {
+        "movement_speed": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "ratio",
+            "modifier_percent"
+          ],
+          "properties": {
+            "ratio": {
+              "type": "number"
+            },
+            "modifier_percent": {
+              "type": "number"
+            }
+          }
+        },
+        "resources": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "life",
+            "mana",
+            "energy_shield"
+          ],
+          "properties": {
+            "life": {
+              "$ref": "#/$defs/resource_pool_entry"
+            },
+            "mana": {
+              "$ref": "#/$defs/resource_pool_entry"
+            },
+            "energy_shield": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "current",
+                "recovery_cap"
+              ],
+              "properties": {
+                "current": {
+                  "type": "number"
+                },
+                "recovery_cap": {
+                  "type": "number"
+                }
+              }
+            }
+          }
+        },
+        "cost_pressure": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "mana",
+            "life",
+            "energy_shield",
+            "rage"
+          ],
+          "properties": {
+            "mana": {
+              "$ref": "#/$defs/cost_pressure_entry"
+            },
+            "life": {
+              "$ref": "#/$defs/cost_pressure_entry"
+            },
+            "energy_shield": {
+              "$ref": "#/$defs/cost_pressure_entry"
+            },
+            "rage": {
+              "$ref": "#/$defs/cost_pressure_entry"
+            }
+          }
+        },
+        "avoidance_overcaps": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "block",
+            "spell_block",
+            "spell_suppression"
+          ],
+          "properties": {
+            "block": {
+              "type": "number"
+            },
+            "spell_block": {
+              "type": "number"
+            },
+            "spell_suppression": {
+              "type": "number"
+            }
+          }
+        },
+        "damage_profile": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "hit_chance",
+            "missing_to_hit_cap",
+            "crit_chance",
+            "crit_multiplier"
+          ],
+          "properties": {
+            "hit_chance": {
+              "type": "number"
+            },
+            "missing_to_hit_cap": {
+              "type": "number"
+            },
+            "crit_chance": {
+              "type": "number"
+            },
+            "crit_multiplier": {
+              "type": "number"
+            }
+          }
+        }
+      }
+    },
+    "resource_pool_entry": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "current",
+        "percent",
+        "empty_or_negative"
+      ],
+      "properties": {
+        "current": {
+          "type": "number"
+        },
+        "percent": {
+          "type": "number"
+        },
+        "empty_or_negative": {
+          "type": "boolean"
+        }
+      }
+    },
+    "cost_pressure_entry": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "cost",
+        "cost_per_second",
+        "recovery_per_second"
+      ],
+      "properties": {
+        "cost": {
+          "type": "number"
+        },
+        "cost_per_second": {
+          "type": "number"
+        },
+        "recovery_per_second": {
+          "type": "number"
+        }
+      }
+    }
+  }
+}
