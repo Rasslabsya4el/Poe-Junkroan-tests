@@ -1,0 +1,413 @@
+[
+ {
+  "line": "+10% to all Elemental Resistances and maximum Elemental Resistances while affected by a Non-Vaal Guard Skill 20% additional Physical Damage Reduction while affected by a Non-Vaal Guard Skill 20% more Damage taken if a Non-Vaal Guard Buff was lost Recently",
+  "surfaces": [
+   "keystone"
+  ],
+  "sources": [
+   "32118"
+  ],
+  "group": "buff",
+  "kind": "guard_skill_buff",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "guard_skill: a Non-Vaal Guard Skill buff counts 0 on every lane (owner verdict)",
+  "why": "the keystone's three lines all hang on a Guard Skill buff (PoB already holds them under Condition:AffectedByNonVaalGuardSkill, ModCache.lua:344,3802,4121); guard skills count 0",
+  "partial_part": "20% additional Physical Damage Reduction while affected by a Non-Vaal Guard Skill 20% more Damage taken if a Non-Vaal Guard Buff was lost Recently"
+ },
+ {
+  "line": "20% increased Buff Effect of your Links for which 50% of Link Duration has Expired",
+  "surfaces": [
+   "notable"
+  ],
+  "sources": [
+   "46471"
+  ],
+  "group": "buff",
+  "kind": "uptime_dependent",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "uptime_dependent: PoB already counts the 20% increased Buff Effect of your Links unconditionally (full uptime, ModCache.lua:3923), so nothing is left to add",
+  "why": "the unparsed condition (50% of Link Duration expired) is an uptime window; the parked uptime rule (#965) writes nothing and the optimistic lane at full uptime equals what PoB counts",
+  "partial_part": "for which 50% of Link Duration has Expired"
+ },
+ {
+  "line": "Auras from your Skills grant 2% increased Attack and Cast Speed to you and Allies",
+  "surfaces": [
+   "ascendancy"
+  ],
+  "sources": [
+   "10099"
+  ],
+  "group": "buff",
+  "kind": "aura_grant_per_aura",
+  "boss_lane": [],
+  "optimistic_lane": [
+   "2% increased Attack and Cast Speed for each of your Aura or Herald Skills affecting you"
+  ],
+  "zero_reason": "",
+  "why": "each aura skill grants the speed (addToAura, ModParser.lua:1289), so it scales with the aura count; PoB's multiplier AuraAffectingSelf counts auras and heralds (ModParser.lua:1398); new kind, optimistic lane only",
+  "partial_part": "",
+  "type": "any"
+ },
+ {
+  "line": "Auras from your Skills grant 3% increased Attack and Cast Speed to you and Allies",
+  "surfaces": [
+   "ascendancy"
+  ],
+  "sources": [
+   "36017"
+  ],
+  "group": "buff",
+  "kind": "aura_grant_per_aura",
+  "boss_lane": [],
+  "optimistic_lane": [
+   "3% increased Attack and Cast Speed for each of your Aura or Herald Skills affecting you"
+  ],
+  "zero_reason": "",
+  "why": "the same per-aura grant at 3% (addToAura, ModParser.lua:1289; multiplier AuraAffectingSelf, ModParser.lua:1398); new kind, optimistic lane only",
+  "partial_part": "",
+  "type": "any"
+ },
+ {
+  "line": "Auras from your Skills have 8% increased Effect on you for each Herald affecting you, up to a maximum of 40%",
+  "surfaces": [
+   "notable"
+  ],
+  "sources": [
+   "51870"
+  ],
+  "group": "buff",
+  "kind": "aura_effect_per_herald",
+  "boss_lane": [],
+  "optimistic_lane": [
+   "Auras from your Skills have 40% increased Effect on you"
+  ],
+  "zero_reason": "",
+  "why": "the 8% per Herald up to 40% is counted at its maximum on the optimistic lane (5 Heralds); PoB parses only '..., up to 40%' of the node text (ModParser.lua:4001), so the lane carries the parsed form 'Auras from your Skills have 40% increased Effect on you' (measured: spell CombinedDPS, attack CombinedDPS, minion TotalEHP and PhysicalMaximumHitTaken moved); new kind, optimistic lane only",
+  "partial_part": "",
+  "type": "any"
+ },
+ {
+  "line": "Fortifying Hits against Unique Enemies grant 100% increased Fortification",
+  "surfaces": [
+   "notable"
+  ],
+  "sources": [
+   "1340"
+  ],
+  "group": "buff",
+  "kind": "fortification_effect",
+  "boss_lane": [],
+  "optimistic_lane": [
+   "{formula}% less Damage Taken when Hit while Fortified"
+  ],
+  "zero_reason": "",
+  "why": "PoB's Fortification is DamageTakenWhenHit MORE -stacks (CalcPerform.lua:649), 100% increased Fortification adds one more stacks-worth; the stacks are PoB's base_max_fortification (CalcSetup.lua:520), carried by vars; applies only while Fortified; new kind, optimistic lane only",
+  "partial_part": "",
+  "formula": "MaximumFortification * 1.0",
+  "vars": {
+   "MaximumFortification": 20
+  },
+  "stand_blind": {
+   "reason_kind": "mechanic-absent",
+   "why": "no stand is Fortified: Fortification stacks never build on the stands, so 100% increased Fortification moves no output"
+  }
+ },
+ {
+  "line": "Fortifying Hits grant 60% increased Fortification",
+  "surfaces": [
+   "notable"
+  ],
+  "sources": [
+   "29764"
+  ],
+  "group": "buff",
+  "kind": "fortification_effect",
+  "boss_lane": [],
+  "optimistic_lane": [
+   "{formula}% less Damage Taken when Hit while Fortified"
+  ],
+  "zero_reason": "",
+  "why": "60% increased Fortification = 0.6 x the stacks as extra less damage taken (CalcPerform.lua:649); stacks from PoB's base_max_fortification (CalcSetup.lua:520), carried by vars; applies only while Fortified; new kind, optimistic lane only",
+  "partial_part": "",
+  "formula": "MaximumFortification * 0.6",
+  "vars": {
+   "MaximumFortification": 20
+  },
+  "stand_blind": {
+   "reason_kind": "mechanic-absent",
+   "why": "no stand is Fortified: Fortification stacks never build on the stands, so 60% increased Fortification moves no output"
+  }
+ },
+ {
+  "line": "Gain Phasing on Hit with this weapon",
+  "surfaces": [
+   "gear_affix"
+  ],
+  "sources": [
+   "DeepwaterSwordPhasingOnHit"
+  ],
+  "group": "buff",
+  "kind": "uptime_dependent",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "uptime_dependent: PoB already parses Phasing as Condition:Phasing at full uptime (ModParser.lua:3972), the on-hit trigger and its duration stay unparsed",
+  "why": "the line is a duration buff after an event; the parked uptime rule (#965) writes nothing and full uptime is what PoB already counts",
+  "partial_part": "on Hit with this weapon"
+ },
+ {
+  "line": "Gain a random Blood Shrine buff every 10 seconds",
+  "surfaces": [
+   "unique"
+  ],
+  "sources": [
+   "Waxen Soul, Saint's Hauberk"
+  ],
+  "group": "buff",
+  "kind": "random_shrine_buff",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "no_representation: a random Blood Shrine buff every 10 seconds has no PoB mod or output (ModCache.lua:9176 unparsed)",
+  "why": "a random shrine buff of unknown effect: PoB has no Blood Shrine and no random buff to count",
+  "partial_part": ""
+ },
+ {
+  "line": "Hits with Melee Movement Skills have 40% chance to Fortify",
+  "surfaces": [
+   "gear_affix"
+  ],
+  "sources": [
+   "MovementSkillsFortifyOnHitChanceUber1"
+  ],
+  "group": "buff",
+  "kind": "uptime_dependent",
+  "boss_lane": [],
+  "optimistic_lane": [
+   "Fortify"
+  ],
+  "zero_reason": "",
+  "why": "a Fortify source on a melee hit (40% chance on Melee Movement Skill hits; the chance and the movement-skill gate are not carried); PoB takes it as the flag Condition:Fortified (specialModList 'fortify', ModParser.lua:2582) which gives the max stacks; a buff for a duration after an event: uptime rule parked (#965), optimistic lane at full uptime, boss lane empty",
+  "partial_part": "",
+  "type": "attack",
+  "stand_blind": {
+   "reason_kind": "mechanic-absent",
+   "why": "no stand is Fortified: Fortification stacks never build on the stands, so the Fortify this line grants moves no output"
+  }
+ },
+ {
+  "line": "Increases and Reductions to Light Radius also apply to Effect of your Link Skill Buffs on your Mercenary",
+  "surfaces": [
+   "ascendancy"
+  ],
+  "sources": [
+   "31517"
+  ],
+  "group": "buff",
+  "kind": "mercenary_link_effect",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "no_representation: PoB has no Mercenary and no Light Radius scaling of Link buffs on it (ModCache.lua:9609 unparsed)",
+  "why": "the effect lands on the Mercenary's Link buff, not on a player output PoB computes",
+  "partial_part": ""
+ },
+ {
+  "line": "Melee Hits Fortify",
+  "surfaces": [
+   "mastery"
+  ],
+  "sources": [
+   "51974",
+   "59335"
+  ],
+  "group": "buff",
+  "kind": "uptime_dependent",
+  "boss_lane": [],
+  "optimistic_lane": [
+   "Fortify"
+  ],
+  "zero_reason": "",
+  "why": "a Fortify source on a melee hit (every Melee Hit); PoB takes it as the flag Condition:Fortified (specialModList 'fortify', ModParser.lua:2582) which gives the max stacks; a buff for a duration after an event: uptime rule parked (#965), optimistic lane at full uptime, boss lane empty",
+  "partial_part": "",
+  "type": "attack",
+  "stand_blind": {
+   "reason_kind": "mechanic-absent",
+   "why": "no stand is Fortified: Fortification stacks never build on the stands, so the Fortify this line grants moves no output"
+  }
+ },
+ {
+  "line": "Melee Hits have 50% chance to Fortify",
+  "surfaces": [
+   "ascendancy"
+  ],
+  "sources": [
+   "39598"
+  ],
+  "group": "buff",
+  "kind": "uptime_dependent",
+  "boss_lane": [],
+  "optimistic_lane": [
+   "Fortify"
+  ],
+  "zero_reason": "",
+  "why": "a Fortify source on a melee hit (50% chance on Melee Hits; the chance is not carried); PoB takes it as the flag Condition:Fortified (specialModList 'fortify', ModParser.lua:2582) which gives the max stacks; a buff for a duration after an event: uptime rule parked (#965), optimistic lane at full uptime, boss lane empty",
+  "partial_part": "",
+  "type": "attack",
+  "stand_blind": {
+   "reason_kind": "mechanic-absent",
+   "why": "no stand is Fortified: Fortification stacks never build on the stands, so the Fortify this line grants moves no output"
+  }
+ },
+ {
+  "line": "Melee Hits which Stun have 10% chance to Fortify",
+  "surfaces": [
+   "gear_affix"
+  ],
+  "sources": [
+   "FortifyOnMeleeStunInfluence1",
+   "FortifyOnMeleeStunUber1"
+  ],
+  "group": "buff",
+  "kind": "uptime_dependent",
+  "boss_lane": [],
+  "optimistic_lane": [
+   "Fortify"
+  ],
+  "zero_reason": "",
+  "why": "a Fortify source on a melee hit (10% chance on Melee Hits that Stun; the chance and the Stun gate are not carried); PoB takes it as the flag Condition:Fortified (specialModList 'fortify', ModParser.lua:2582) which gives the max stacks; a buff for a duration after an event: uptime rule parked (#965), optimistic lane at full uptime, boss lane empty",
+  "partial_part": "",
+  "type": "attack",
+  "stand_blind": {
+   "reason_kind": "mechanic-absent",
+   "why": "no stand is Fortified: Fortification stacks never build on the stands, so the Fortify this line grants moves no output"
+  }
+ },
+ {
+  "line": "Melee Hits which Stun have 15% chance to Fortify",
+  "surfaces": [
+   "gear_affix"
+  ],
+  "sources": [
+   "GainFortifyOnStunChanceUber1"
+  ],
+  "group": "buff",
+  "kind": "uptime_dependent",
+  "boss_lane": [],
+  "optimistic_lane": [
+   "Fortify"
+  ],
+  "zero_reason": "",
+  "why": "a Fortify source on a melee hit (15% chance on Melee Hits that Stun; the chance and the Stun gate are not carried); PoB takes it as the flag Condition:Fortified (specialModList 'fortify', ModParser.lua:2582) which gives the max stacks; a buff for a duration after an event: uptime rule parked (#965), optimistic lane at full uptime, boss lane empty",
+  "partial_part": "",
+  "type": "attack",
+  "stand_blind": {
+   "reason_kind": "mechanic-absent",
+   "why": "no stand is Fortified: Fortification stacks never build on the stands, so the Fortify this line grants moves no output"
+  }
+ },
+ {
+  "line": "Melee Hits with Maces, Sceptres or Staves Fortify for 6 seconds",
+  "surfaces": [
+   "notable"
+  ],
+  "sources": [
+   "13054"
+  ],
+  "group": "buff",
+  "kind": "uptime_dependent",
+  "boss_lane": [],
+  "optimistic_lane": [
+   "Fortify"
+  ],
+  "zero_reason": "",
+  "why": "a Fortify source on a melee hit (Melee Hits with Maces, Sceptres or Staves for 6 seconds; the weapon gate is not carried); PoB takes it as the flag Condition:Fortified (specialModList 'fortify', ModParser.lua:2582) which gives the max stacks; a buff for a duration after an event: uptime rule parked (#965), optimistic lane at full uptime, boss lane empty",
+  "partial_part": "",
+  "type": "attack",
+  "stand_blind": {
+   "reason_kind": "mechanic-absent",
+   "why": "no stand is Fortified: Fortification stacks never build on the stands, so the Fortify this line grants moves no output"
+  }
+ },
+ {
+  "line": "Non-Cursed Enemies you inflict Non-Aura Curses on are Blinded for 4 seconds",
+  "surfaces": [
+   "mastery"
+  ],
+  "sources": [
+   "22959",
+   "23796",
+   "50540",
+   "61785",
+   "62506",
+   "6570"
+  ],
+  "group": "buff",
+  "kind": "uptime_dependent",
+  "boss_lane": [],
+  "optimistic_lane": [
+   "Nearby Enemies are Blinded"
+  ],
+  "zero_reason": "",
+  "why": "a curse-applied Blind lasting 4 seconds is a duration after an event: uptime rule parked (#965), optimistic lane at full uptime with PoB's cached 'Nearby Enemies are Blinded' (ModCache.lua:10345), boss lane empty; the curse and not-cursed gates are not carried",
+  "partial_part": "",
+  "stand_blind": {
+   "reason_kind": "uptime-saturated",
+   "why": "uptime-dependent Blind after a curse: Blinded is already at full uptime on the optimistic lane of these stands"
+  }
+ },
+ {
+  "line": "Retaliation Skills Fortify on Melee Hit",
+  "surfaces": [
+   "notable"
+  ],
+  "sources": [
+   "41305"
+  ],
+  "group": "buff",
+  "kind": "uptime_dependent",
+  "boss_lane": [],
+  "optimistic_lane": [
+   "Fortify"
+  ],
+  "zero_reason": "",
+  "why": "a Fortify source on a melee hit (Retaliation Skills on Melee Hit; the skill gate is not carried); PoB takes it as the flag Condition:Fortified (specialModList 'fortify', ModParser.lua:2582) which gives the max stacks; a buff for a duration after an event: uptime rule parked (#965), optimistic lane at full uptime, boss lane empty",
+  "partial_part": "",
+  "type": "attack",
+  "stand_blind": {
+   "reason_kind": "mechanic-absent",
+   "why": "no stand is Fortified: Fortification stacks never build on the stands, so the Fortify this line grants moves no output"
+  }
+ },
+ {
+  "line": "Your Banner Buffs Linger on you for 3 seconds after you leave the Area",
+  "surfaces": [
+   "notable"
+  ],
+  "sources": [
+   "63033"
+  ],
+  "group": "buff",
+  "kind": "uptime_dependent",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "uptime_dependent: a linger window after leaving the Banner's area is an uptime window with no PoB mod; the parked uptime rule (#965) writes nothing",
+  "why": "linger after leaving the area is an uptime window of a placed Banner; the parked uptime rule (#965) writes nothing",
+  "partial_part": ""
+ },
+ {
+  "line": "Your Mercenary has 50% increased effect of Non-Curse Auras from Skills",
+  "surfaces": [
+   "ascendancy"
+  ],
+  "sources": [
+   "56292"
+  ],
+  "group": "buff",
+  "kind": "mercenary_aura_effect",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "no_representation: the Mercenary's own aura effect has no PoB actor or output (ModCache.lua:9522 family unparsed)",
+  "why": "the increased aura effect lands on the Mercenary, not on a player output PoB computes",
+  "partial_part": ""
+ }
+]

@@ -1,0 +1,1633 @@
+[
+ {
+  "line": "10% Global chance to Blind Enemies on hit",
+  "surfaces": [
+   "gear_affix"
+  ],
+  "sources": [
+   "GlobalChanceToBlindOnHitInfluence1__"
+  ],
+  "group": "on_hit",
+  "kind": "chance_enemy_debuff",
+  "boss_lane": [
+   "Nearby Enemies are Blinded"
+  ],
+  "optimistic_lane": [
+   "Nearby Enemies are Blinded"
+  ],
+  "zero_reason": "",
+  "why": "chance to Blind on Hit: PoB parses 'Nearby Enemies are Blinded' (ModCache.lua:10345) as the enemy Condition:Blinded; counted by the D40 uptime rule on the boss lane, on in the optimistic lane",
+  "partial_part": ""
+ },
+ {
+  "line": "10% chance to Aggravate Bleeding on targets you Hit with Attacks",
+  "surfaces": [
+   "notable"
+  ],
+  "sources": [
+   "26294"
+  ],
+  "group": "on_hit",
+  "kind": "chance_enemy_debuff",
+  "type": "attack",
+  "boss_lane": [
+   "200% more Damage with Bleeding"
+  ],
+  "optimistic_lane": [
+   "200% more Damage with Bleeding"
+  ],
+  "zero_reason": "",
+  "why": "aggravated bleed = bleed damage as though the enemy moves, PoB's own 200% more Damage with Bleeding while the enemy moves (CalcSetup.lua:537); D40 uptime rule on the boss lane",
+  "partial_part": "",
+  "stand_blind": {
+   "reason_kind": "mechanic-absent",
+   "why": "no stand inflicts Bleeding, so Aggravate Bleeding has no Bleeding to act on"
+  }
+ },
+ {
+  "line": "10% chance to Blind Enemies on Hit",
+  "surfaces": [
+   "notable"
+  ],
+  "sources": [
+   "46074"
+  ],
+  "group": "on_hit",
+  "kind": "chance_enemy_debuff",
+  "boss_lane": [
+   "Nearby Enemies are Blinded"
+  ],
+  "optimistic_lane": [
+   "Nearby Enemies are Blinded"
+  ],
+  "zero_reason": "",
+  "why": "chance to Blind on Hit: PoB parses 'Nearby Enemies are Blinded' (ModCache.lua:10345) as the enemy Condition:Blinded; counted by the D40 uptime rule on the boss lane, on in the optimistic lane",
+  "partial_part": ""
+ },
+ {
+  "line": "10% chance to Blind Enemies on hit",
+  "surfaces": [
+   "unique"
+  ],
+  "sources": [
+   "Moonsorrow, Kinetic Wand"
+  ],
+  "group": "on_hit",
+  "kind": "chance_enemy_debuff",
+  "boss_lane": [
+   "Nearby Enemies are Blinded"
+  ],
+  "optimistic_lane": [
+   "Nearby Enemies are Blinded"
+  ],
+  "zero_reason": "",
+  "why": "chance to Blind on Hit: PoB parses 'Nearby Enemies are Blinded' (ModCache.lua:10345) as the enemy Condition:Blinded; counted by the D40 uptime rule on the boss lane, on in the optimistic lane",
+  "partial_part": ""
+ },
+ {
+  "line": "10% chance to Hinder Enemies on Hit with Spells",
+  "surfaces": [
+   "notable"
+  ],
+  "sources": [
+   "14085"
+  ],
+  "group": "on_hit",
+  "kind": "chance_enemy_debuff",
+  "type": "spell",
+  "boss_lane": [
+   "Nearby Enemies are Hindered, with 25% reduced Movement Speed"
+  ],
+  "optimistic_lane": [
+   "Nearby Enemies are Hindered, with 25% reduced Movement Speed"
+  ],
+  "zero_reason": "",
+  "why": "chance to Hinder on Hit by Spells: PoB's 'Nearby Enemies are Hindered, with 25% reduced Movement Speed' sets enemy Condition:Hindered (ModCache.lua:10353); D40 uptime rule on the boss lane",
+  "partial_part": "",
+  "stand_blind": {
+   "reason_kind": "flag-only",
+   "why": "enemy Hindered has no numeric consumer in the 7 outputs"
+  }
+ },
+ {
+  "line": "10% chance to Maim on Hit",
+  "surfaces": [
+   "gear_affix"
+  ],
+  "sources": [
+   "LocalChanceToMaimPhysicalDamageInfluence1"
+  ],
+  "group": "on_hit",
+  "kind": "chance_enemy_debuff",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "chance_enemy_debuff: no PoB mod line sets the enemy Maimed condition, only the config checkbox conditionEnemyMaimed (ConfigOptions.lua:1825)",
+  "why": "chance to Maim on Hit: enemy Maimed is set only by the conditionEnemyMaimed config (ConfigOptions.lua:1825); no ModParser phrase sets it (ModCache.lua:8584 'Enemies near your Banner are Maimed' is unparsed)",
+  "partial_part": ""
+ },
+ {
+  "line": "10% chance to Taunt Enemies on Hit with Attacks",
+  "surfaces": [
+   "gear_affix"
+  ],
+  "sources": [
+   "TauntOnHitWeaponInfluence3"
+  ],
+  "group": "on_hit",
+  "kind": "chance_enemy_debuff",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "chance_enemy_debuff: no PoB mod line sets the enemy Taunted condition, only the config checkbox conditionEnemyTaunted (ConfigOptions.lua:1840)",
+  "why": "chance to Taunt on Hit: enemy Taunted is set only by the conditionEnemyTaunted config (ConfigOptions.lua:1840); no ModParser phrase sets it",
+  "partial_part": ""
+ },
+ {
+  "line": "10% chance to Taunt Enemies on Projectile Hit",
+  "surfaces": [
+   "notable"
+  ],
+  "sources": [
+   "12400"
+  ],
+  "group": "on_hit",
+  "kind": "chance_enemy_debuff",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "chance_enemy_debuff: no PoB mod line sets the enemy Taunted condition (ConfigOptions.lua:1840); note PoB counts a false ProjectileCount +10 from this line",
+  "why": "PoB reads the line as ProjectileCount BASE 10 (ModCache.lua:2469), a false +10 projectiles; the Taunt it leaves unparsed has no mod line (ConfigOptions.lua:1840)",
+  "partial_part": "to Taunt Enemies on Hit"
+ },
+ {
+  "line": "10% chance to create Consecrated Ground when you Hit a Rare or Unique Enemy, lasting 8 seconds",
+  "surfaces": [
+   "ascendancy"
+  ],
+  "sources": [
+   "43962"
+  ],
+  "group": "on_hit",
+  "kind": "uptime_dependent",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "uptime_dependent: the ground's worth is the presence of an 8 s ground after a chance on Hit; the uptime rule is parked (#965)",
+  "why": "Consecrated Ground lasting 8 s after a 10% chance on Hit: a duration's uptime; no PoB line sets OnConsecratedGround without Stationary (ModParser.lua:2902)",
+  "partial_part": ""
+ },
+ {
+  "line": "10% chance to create a Smoke Cloud when Hit",
+  "surfaces": [
+   "unique"
+  ],
+  "sources": [
+   "Maloney's Nightfall, Vile Arrow Quiver"
+  ],
+  "group": "on_hit",
+  "kind": "uptime_dependent",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "uptime_dependent: the cloud's worth is its presence after being Hit; the uptime rule is parked (#965)",
+  "why": "Smoke Cloud after being Hit: a duration's uptime, PoB has no Smoke Cloud line",
+  "partial_part": ""
+ },
+ {
+  "line": "100% chance to create Consecrated Ground when you Block",
+  "surfaces": [
+   "unique"
+  ],
+  "sources": [
+   "Zahndethus' Cassock, Sage's Robe"
+  ],
+  "group": "on_hit",
+  "kind": "uptime_dependent",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "uptime_dependent: the ground's worth is its presence after a Block; the uptime rule is parked (#965)",
+  "why": "ground created on Block: a duration's uptime; no PoB line sets the ground condition without Stationary (ModParser.lua:2902)",
+  "partial_part": ""
+ },
+ {
+  "line": "100% chance to create Desecrated Ground when you Block",
+  "surfaces": [
+   "unique"
+  ],
+  "sources": [
+   "Lightbane Raiment, Ornate Ringmail"
+  ],
+  "group": "on_hit",
+  "kind": "uptime_dependent",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "uptime_dependent: the ground's worth is its presence after a Block; the uptime rule is parked (#965)",
+  "why": "ground created on Block: a duration's uptime; no PoB line sets the ground condition without Stationary (ModParser.lua:2902)",
+  "partial_part": ""
+ },
+ {
+  "line": "15% chance to Blind Enemies on Hit with Attacks",
+  "surfaces": [
+   "unique"
+  ],
+  "sources": [
+   "Retaliation Charm, Citrine Amulet"
+  ],
+  "group": "on_hit",
+  "kind": "chance_enemy_debuff",
+  "boss_lane": [
+   "Nearby Enemies are Blinded"
+  ],
+  "optimistic_lane": [
+   "Nearby Enemies are Blinded"
+  ],
+  "zero_reason": "",
+  "why": "chance to Blind on Hit: PoB parses 'Nearby Enemies are Blinded' (ModCache.lua:10345) as the enemy Condition:Blinded; counted by the D40 uptime rule on the boss lane, on in the optimistic lane",
+  "partial_part": ""
+ },
+ {
+  "line": "15% chance to Intimidate Enemies for 4 seconds on Hit with Attacks",
+  "surfaces": [
+   "notable"
+  ],
+  "sources": [
+   "4940"
+  ],
+  "group": "on_hit",
+  "kind": "chance_enemy_debuff",
+  "type": "attack",
+  "boss_lane": [
+   "Nearby Enemies are Intimidated"
+  ],
+  "optimistic_lane": [
+   "Nearby Enemies are Intimidated"
+  ],
+  "zero_reason": "",
+  "why": "chance to Intimidate on Hit with Attacks: 'Nearby Enemies are Intimidated' sets enemy Condition:Intimidated (ModCache.lua:10354), 10% increased Attack damage taken (CalcSetup.lua:64); D40 uptime rule on the boss lane",
+  "partial_part": "",
+  "stand_blind": {
+   "reason_kind": "flag-only",
+   "why": "enemy Intimidated has no numeric consumer in the 7 outputs"
+  }
+ },
+ {
+  "line": "15% chance to Maim on Hit",
+  "surfaces": [
+   "gear_affix"
+  ],
+  "sources": [
+   "ChanceToMaimUber1",
+   "LocalChanceToMaimPhysicalDamageInfluence2"
+  ],
+  "group": "on_hit",
+  "kind": "chance_enemy_debuff",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "chance_enemy_debuff: no PoB mod line sets the enemy Maimed condition, only the config checkbox conditionEnemyMaimed (ConfigOptions.lua:1825)",
+  "why": "chance to Maim on Hit: enemy Maimed is set only by the conditionEnemyMaimed config (ConfigOptions.lua:1825); no ModParser phrase sets it (ModCache.lua:8584 'Enemies near your Banner are Maimed' is unparsed)",
+  "partial_part": ""
+ },
+ {
+  "line": "17% chance to Blind Enemies on Hit with Attacks",
+  "surfaces": [
+   "gear_affix"
+  ],
+  "sources": [
+   "BlindOnHitWeaponInfluence1"
+  ],
+  "group": "on_hit",
+  "kind": "chance_enemy_debuff",
+  "boss_lane": [
+   "Nearby Enemies are Blinded"
+  ],
+  "optimistic_lane": [
+   "Nearby Enemies are Blinded"
+  ],
+  "zero_reason": "",
+  "why": "chance to Blind on Hit: PoB parses 'Nearby Enemies are Blinded' (ModCache.lua:10345) as the enemy Condition:Blinded; counted by the D40 uptime rule on the boss lane, on in the optimistic lane",
+  "partial_part": ""
+ },
+ {
+  "line": "18% chance to Maim on Hit",
+  "surfaces": [
+   "unique"
+  ],
+  "sources": [
+   "Taproot, Ambusher"
+  ],
+  "group": "on_hit",
+  "kind": "chance_enemy_debuff",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "chance_enemy_debuff: no PoB mod line sets the enemy Maimed condition, only the config checkbox conditionEnemyMaimed (ConfigOptions.lua:1825)",
+  "why": "chance to Maim on Hit: enemy Maimed is set only by the conditionEnemyMaimed config (ConfigOptions.lua:1825); no ModParser phrase sets it (ModCache.lua:8584 'Enemies near your Banner are Maimed' is unparsed)",
+  "partial_part": ""
+ },
+ {
+  "line": "20% chance to Blind Enemies on Hit with Attacks",
+  "surfaces": [
+   "notable"
+  ],
+  "sources": [
+   "570"
+  ],
+  "group": "on_hit",
+  "kind": "chance_enemy_debuff",
+  "boss_lane": [
+   "Nearby Enemies are Blinded"
+  ],
+  "optimistic_lane": [
+   "Nearby Enemies are Blinded"
+  ],
+  "zero_reason": "",
+  "why": "chance to Blind on Hit: PoB parses 'Nearby Enemies are Blinded' (ModCache.lua:10345) as the enemy Condition:Blinded; counted by the D40 uptime rule on the boss lane, on in the optimistic lane",
+  "partial_part": ""
+ },
+ {
+  "line": "20% chance to Blind Enemies with Off Hand Hits",
+  "surfaces": [
+   "mastery"
+  ],
+  "sources": [
+   "50071",
+   "51761",
+   "52018",
+   "8872"
+  ],
+  "group": "on_hit",
+  "kind": "chance_enemy_debuff",
+  "boss_lane": [
+   "Nearby Enemies are Blinded"
+  ],
+  "optimistic_lane": [
+   "Nearby Enemies are Blinded"
+  ],
+  "zero_reason": "",
+  "why": "chance to Blind on Hit: PoB parses 'Nearby Enemies are Blinded' (ModCache.lua:10345) as the enemy Condition:Blinded; counted by the D40 uptime rule on the boss lane, on in the optimistic lane",
+  "partial_part": ""
+ },
+ {
+  "line": "20% chance to Cover Rare or Unique Enemies in Ash for 10 Seconds on Hit",
+  "surfaces": [
+   "ascendancy"
+  ],
+  "sources": [
+   "57052"
+  ],
+  "group": "on_hit",
+  "kind": "chance_enemy_debuff",
+  "boss_lane": [
+   "Nearby Enemies are Covered in Ash"
+  ],
+  "optimistic_lane": [
+   "Nearby Enemies are Covered in Ash"
+  ],
+  "zero_reason": "",
+  "why": "chance to Cover Rare or Unique Enemies in Ash: 'Nearby Enemies are Covered in Ash' = CoveredInAshEffect 20 (ModCache.lua:10349, CalcPerform.lua:916); a boss is Unique; D40 uptime rule on the boss lane",
+  "partial_part": ""
+ },
+ {
+  "line": "20% chance to Freeze Enemies for 1 second when they Hit you",
+  "surfaces": [
+   "unique"
+  ],
+  "sources": [
+   "Icetomb, Latticed Ringmail"
+  ],
+  "group": "on_hit",
+  "kind": "no_representation",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "no_representation: PoB has no output for freezing attackers when they Hit you (ModCache.lua:3840 leaves the rest unparsed)",
+  "why": "PoB reads EnemyFreezeChance BASE 20 (ModCache.lua:3840); the retaliation freeze of attackers has no PoB output",
+  "partial_part": "Enemies for 1 second when they Hit you"
+ },
+ {
+  "line": "20% chance to Maim Enemies with Main Hand Hits",
+  "surfaces": [
+   "mastery"
+  ],
+  "sources": [
+   "50071",
+   "51761",
+   "52018",
+   "8872"
+  ],
+  "group": "on_hit",
+  "kind": "chance_enemy_debuff",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "chance_enemy_debuff: no PoB mod line sets the enemy Maimed condition, only the config checkbox conditionEnemyMaimed (ConfigOptions.lua:1825)",
+  "why": "chance to Maim on Hit: enemy Maimed is set only by the conditionEnemyMaimed config (ConfigOptions.lua:1825); no ModParser phrase sets it (ModCache.lua:8584 'Enemies near your Banner are Maimed' is unparsed)",
+  "partial_part": ""
+ },
+ {
+  "line": "20% chance to Maim on Hit",
+  "surfaces": [
+   "gear_affix"
+  ],
+  "sources": [
+   "ChanceToMaimUber2",
+   "LocalChanceToMaimPhysicalDamageInfluence3"
+  ],
+  "group": "on_hit",
+  "kind": "chance_enemy_debuff",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "chance_enemy_debuff: no PoB mod line sets the enemy Maimed condition, only the config checkbox conditionEnemyMaimed (ConfigOptions.lua:1825)",
+  "why": "chance to Maim on Hit: enemy Maimed is set only by the conditionEnemyMaimed config (ConfigOptions.lua:1825); no ModParser phrase sets it (ModCache.lua:8584 'Enemies near your Banner are Maimed' is unparsed)",
+  "partial_part": ""
+ },
+ {
+  "line": "21% chance to Blind Enemies on Hit with Attacks",
+  "surfaces": [
+   "gear_affix"
+  ],
+  "sources": [
+   "BlindOnHitWeaponInfluence2"
+  ],
+  "group": "on_hit",
+  "kind": "chance_enemy_debuff",
+  "boss_lane": [
+   "Nearby Enemies are Blinded"
+  ],
+  "optimistic_lane": [
+   "Nearby Enemies are Blinded"
+  ],
+  "zero_reason": "",
+  "why": "chance to Blind on Hit: PoB parses 'Nearby Enemies are Blinded' (ModCache.lua:10345) as the enemy Condition:Blinded; counted by the D40 uptime rule on the boss lane, on in the optimistic lane",
+  "partial_part": ""
+ },
+ {
+  "line": "24% chance to Blind Enemies on Hit with Attacks",
+  "surfaces": [
+   "gear_affix"
+  ],
+  "sources": [
+   "BlindOnHitWeaponInfluence3"
+  ],
+  "group": "on_hit",
+  "kind": "chance_enemy_debuff",
+  "boss_lane": [
+   "Nearby Enemies are Blinded"
+  ],
+  "optimistic_lane": [
+   "Nearby Enemies are Blinded"
+  ],
+  "zero_reason": "",
+  "why": "chance to Blind on Hit: PoB parses 'Nearby Enemies are Blinded' (ModCache.lua:10345) as the enemy Condition:Blinded; counted by the D40 uptime rule on the boss lane, on in the optimistic lane",
+  "partial_part": ""
+ },
+ {
+  "line": "25% chance to Aggravate Bleeding on targets you Hit with Attacks",
+  "surfaces": [
+   "ascendancy"
+  ],
+  "sources": [
+   "34774"
+  ],
+  "group": "on_hit",
+  "kind": "chance_enemy_debuff",
+  "type": "attack",
+  "boss_lane": [
+   "200% more Damage with Bleeding"
+  ],
+  "optimistic_lane": [
+   "200% more Damage with Bleeding"
+  ],
+  "zero_reason": "",
+  "why": "aggravated bleed = bleed damage as though the enemy moves, PoB's own 200% more Damage with Bleeding while the enemy moves (CalcSetup.lua:537); D40 uptime rule on the boss lane",
+  "partial_part": "",
+  "stand_blind": {
+   "reason_kind": "mechanic-absent",
+   "why": "no stand inflicts Bleeding, so Aggravate Bleeding has no Bleeding to act on"
+  }
+ },
+ {
+  "line": "25% chance to Aggravate Bleeding on targets you Hit with Exerted Attacks",
+  "surfaces": [
+   "mastery"
+  ],
+  "sources": [
+   "22295",
+   "37956",
+   "40170",
+   "43601",
+   "63710"
+  ],
+  "group": "on_hit",
+  "kind": "uptime_dependent",
+  "type": "attack",
+  "boss_lane": [],
+  "optimistic_lane": [
+   "200% more Damage with Bleeding"
+  ],
+  "zero_reason": "",
+  "why": "exerted attacks are a warcry-timed window: optimistic lane at full uptime with PoB's 200% more bleed damage of a moving enemy (CalcSetup.lua:537), boss lane empty (#965 parked)",
+  "partial_part": "",
+  "stand_blind": {
+   "reason_kind": "mechanic-absent",
+   "why": "no stand inflicts Bleeding, so Aggravate Bleeding has no Bleeding to act on"
+  }
+ },
+ {
+  "line": "25% chance to Blind Enemies on Hit",
+  "surfaces": [
+   "ascendancy"
+  ],
+  "sources": [
+   "58827"
+  ],
+  "group": "on_hit",
+  "kind": "chance_enemy_debuff",
+  "boss_lane": [
+   "Nearby Enemies are Blinded"
+  ],
+  "optimistic_lane": [
+   "Nearby Enemies are Blinded"
+  ],
+  "zero_reason": "",
+  "why": "chance to Blind on Hit: PoB parses 'Nearby Enemies are Blinded' (ModCache.lua:10345) as the enemy Condition:Blinded; counted by the D40 uptime rule on the boss lane, on in the optimistic lane",
+  "partial_part": ""
+ },
+ {
+  "line": "25% chance to Blind with Hits against Bleeding Enemies",
+  "surfaces": [
+   "notable"
+  ],
+  "sources": [
+   "42338"
+  ],
+  "group": "on_hit",
+  "kind": "chance_enemy_debuff",
+  "boss_lane": [
+   "Nearby Enemies are Blinded"
+  ],
+  "optimistic_lane": [
+   "Nearby Enemies are Blinded"
+  ],
+  "zero_reason": "",
+  "why": "chance to Blind on Hit: PoB parses 'Nearby Enemies are Blinded' (ModCache.lua:10345) as the enemy Condition:Blinded; counted by the D40 uptime rule on the boss lane, on in the optimistic lane",
+  "partial_part": ""
+ },
+ {
+  "line": "25% chance to create Consecrated Ground when you Block",
+  "surfaces": [
+   "unique"
+  ],
+  "sources": [
+   "Zahndethus' Cassock, Sage's Robe"
+  ],
+  "group": "on_hit",
+  "kind": "uptime_dependent",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "uptime_dependent: the ground's worth is its presence after a Block; the uptime rule is parked (#965)",
+  "why": "ground created on Block: a duration's uptime; no PoB line sets the ground condition without Stationary (ModParser.lua:2902)",
+  "partial_part": ""
+ },
+ {
+  "line": "25% chance to create Desecrated Ground when you Block",
+  "surfaces": [
+   "unique"
+  ],
+  "sources": [
+   "Lightbane Raiment, Ornate Ringmail"
+  ],
+  "group": "on_hit",
+  "kind": "uptime_dependent",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "uptime_dependent: the ground's worth is its presence after a Block; the uptime rule is parked (#965)",
+  "why": "ground created on Block: a duration's uptime; no PoB line sets the ground condition without Stationary (ModParser.lua:2902)",
+  "partial_part": ""
+ },
+ {
+  "line": "25% chance to create a Smoke Cloud when Hit",
+  "surfaces": [
+   "unique"
+  ],
+  "sources": [
+   "Maloney's Nightfall, Vile Arrow Quiver"
+  ],
+  "group": "on_hit",
+  "kind": "uptime_dependent",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "uptime_dependent: the cloud's worth is its presence after being Hit; the uptime rule is parked (#965)",
+  "why": "Smoke Cloud after being Hit: a duration's uptime, PoB has no Smoke Cloud line",
+  "partial_part": ""
+ },
+ {
+  "line": "25% chance to deal a Stunning Hit to Nearby Enemy Monsters when you're Stunned",
+  "surfaces": [
+   "mastery"
+  ],
+  "sources": [
+   "19725",
+   "37698",
+   "53216",
+   "62023",
+   "6588"
+  ],
+  "group": "on_hit",
+  "kind": "no_representation",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "no_representation: PoB has no output for a retaliation Stun when you are Stunned",
+  "why": "a Stunning Hit to nearby monsters when you are Stunned: no PoB output",
+  "partial_part": ""
+ },
+ {
+  "line": "30% Chance to cause Bleeding Enemies to Flee on hit",
+  "surfaces": [
+   "unique"
+  ],
+  "sources": [
+   "Rive, Terror Claw"
+  ],
+  "group": "on_hit",
+  "kind": "no_representation",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "no_representation: PoB has no output for Bleeding enemies Fleeing; note PoB counts a false BleedChance 30 from this line",
+  "why": "PoB reads BleedChance BASE 30 for attacks (ModCache.lua:4766), a false bleed chance; Flee has no PoB output",
+  "partial_part": "Enemies to Flee"
+ },
+ {
+  "line": "30% chance to gain Unholy Might on Block for 3 seconds",
+  "surfaces": [
+   "unique"
+  ],
+  "sources": [
+   "Broken Faith, Archon Kite Shield"
+  ],
+  "group": "on_hit",
+  "kind": "on_block_generator",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "on_block_generator: PoB counts Unholy Might unconditionally (ModCache.lua:9126); a lane only adds, so the on Block restriction cannot be written",
+  "why": "PoB already counts Condition:UnholyMight unconditionally (ModCache.lua:9126), at full uptime; the unparsed 'on Block' trigger cannot be narrowed by an added line",
+  "partial_part": "on Block"
+ },
+ {
+  "line": "30% chance to take 50% less Area Damage from Hits",
+  "surfaces": [
+   "ascendancy"
+  ],
+  "sources": [
+   "47778"
+  ],
+  "group": "on_hit",
+  "kind": "no_representation",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "no_representation: PoB has no Area Damage taken stat; note PoB counts a false Damage BASE 30 from this line",
+  "why": "PoB reads Damage BASE 30 with the Area flag (ModCache.lua:4838), a false flat damage; PoB has no Area Damage taken stat",
+  "partial_part": "to take 50% less from Hits"
+ },
+ {
+  "line": "33% chance to Chill Attackers for 4 seconds on Block",
+  "surfaces": [
+   "gear_affix"
+  ],
+  "sources": [
+   "ChanceToChillAttackersOnBlockInfluence1",
+   "ChanceToChillAttackersOnBlockUber1"
+  ],
+  "group": "on_hit",
+  "kind": "on_block_generator",
+  "boss_lane": [],
+  "optimistic_lane": [
+   "Nearby Enemies are Chilled"
+  ],
+  "zero_reason": "",
+  "why": "Chill of attackers on Block: PoB's 'Nearby Enemies are Chilled' sets enemy Condition:Chilled (ModCache.lua:10348); on_block_generator kind: boss lane off, optimistic lane on",
+  "partial_part": "",
+  "stand_blind": {
+   "reason_kind": "flag-only",
+   "why": "enemy Chilled has no numeric consumer in the 7 outputs"
+  }
+ },
+ {
+  "line": "46% chance to Chill Attackers for 4 seconds on Block",
+  "surfaces": [
+   "gear_affix"
+  ],
+  "sources": [
+   "ChanceToChillAttackersOnBlockInfluence2",
+   "ChanceToChillAttackersOnBlockUber2"
+  ],
+  "group": "on_hit",
+  "kind": "on_block_generator",
+  "boss_lane": [],
+  "optimistic_lane": [
+   "Nearby Enemies are Chilled"
+  ],
+  "zero_reason": "",
+  "why": "Chill of attackers on Block: PoB's 'Nearby Enemies are Chilled' sets enemy Condition:Chilled (ModCache.lua:10348); on_block_generator kind: boss lane off, optimistic lane on",
+  "partial_part": "",
+  "stand_blind": {
+   "reason_kind": "flag-only",
+   "why": "enemy Chilled has no numeric consumer in the 7 outputs"
+  }
+ },
+ {
+  "line": "5% chance to Blind Enemies on Hit",
+  "surfaces": [
+   "notable"
+  ],
+  "sources": [
+   "26322"
+  ],
+  "group": "on_hit",
+  "kind": "chance_enemy_debuff",
+  "boss_lane": [
+   "Nearby Enemies are Blinded"
+  ],
+  "optimistic_lane": [
+   "Nearby Enemies are Blinded"
+  ],
+  "zero_reason": "",
+  "why": "chance to Blind on Hit: PoB parses 'Nearby Enemies are Blinded' (ModCache.lua:10345) as the enemy Condition:Blinded; counted by the D40 uptime rule on the boss lane, on in the optimistic lane",
+  "partial_part": ""
+ },
+ {
+  "line": "5% chance to Cover Enemies in Ash on Hit while you are Burning",
+  "surfaces": [
+   "notable"
+  ],
+  "sources": [
+   "10952"
+  ],
+  "group": "on_hit",
+  "kind": "chance_enemy_debuff",
+  "boss_lane": [],
+  "optimistic_lane": [
+   "Nearby Enemies are Covered in Ash"
+  ],
+  "zero_reason": "",
+  "why": "chance to Cover in Ash on Hit while the player is Burning: no proof of a self-burn source on the boss lane, optimistic lane 'Nearby Enemies are Covered in Ash' (ModCache.lua:10349)",
+  "partial_part": "",
+  "stand_blind": {
+   "reason_kind": "uptime-saturated",
+   "why": "the move was read on a lane this record does not hold (boss_lane is []): +32,856 CombinedDPS on the attack stand boss lane; the full stand check decides, PoB was not run here"
+  }
+ },
+ {
+  "line": "5% chance to Restore your Ward on Hit",
+  "surfaces": [
+   "ascendancy"
+  ],
+  "sources": [
+   "40953"
+  ],
+  "group": "on_hit",
+  "kind": "no_representation",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "no_representation: PoB has no output for restoring Ward; note PoB counts a false Ward BASE 5 from this line",
+  "why": "PoB reads Ward BASE 5 (ModCache.lua:5619), a false +5 Ward; Restore Ward on Hit has no PoB output",
+  "partial_part": "to Restore your"
+ },
+ {
+  "line": "50% chance to Aggravate Bleeding on targets you Stun with Attacks Hits",
+  "surfaces": [
+   "mastery"
+  ],
+  "sources": [
+   "22295",
+   "37956",
+   "40170",
+   "43601",
+   "63710"
+  ],
+  "group": "on_hit",
+  "kind": "on_stun_conditional",
+  "type": "attack",
+  "boss_lane": [],
+  "optimistic_lane": [
+   "200% more Damage with Bleeding"
+  ],
+  "zero_reason": "",
+  "why": "aggravation only on a Stunning Hit; stuns on a boss are not guaranteed, so optimistic lane only with PoB's 200% more bleed damage of a moving enemy (CalcSetup.lua:537); new kind",
+  "partial_part": "",
+  "stand_blind": {
+   "reason_kind": "mechanic-absent",
+   "why": "no stand inflicts Bleeding, so Aggravate Bleeding has no Bleeding to act on"
+  }
+ },
+ {
+  "line": "50% chance to create Consecrated Ground when you Block",
+  "surfaces": [
+   "unique"
+  ],
+  "sources": [
+   "Zahndethus' Cassock, Sage's Robe"
+  ],
+  "group": "on_hit",
+  "kind": "uptime_dependent",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "uptime_dependent: the ground's worth is its presence after a Block; the uptime rule is parked (#965)",
+  "why": "ground created on Block: a duration's uptime; no PoB line sets the ground condition without Stationary (ModParser.lua:2902)",
+  "partial_part": ""
+ },
+ {
+  "line": "50% chance to create Desecrated Ground when you Block",
+  "surfaces": [
+   "unique"
+  ],
+  "sources": [
+   "Lightbane Raiment, Ornate Ringmail"
+  ],
+  "group": "on_hit",
+  "kind": "uptime_dependent",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "uptime_dependent: the ground's worth is its presence after a Block; the uptime rule is parked (#965)",
+  "why": "ground created on Block: a duration's uptime; no PoB line sets the ground condition without Stationary (ModParser.lua:2902)",
+  "partial_part": ""
+ },
+ {
+  "line": "6% Global chance to Blind Enemies on hit",
+  "surfaces": [
+   "gear_affix"
+  ],
+  "sources": [
+   "BlindOnHitSupportedUber1"
+  ],
+  "group": "on_hit",
+  "kind": "chance_enemy_debuff",
+  "boss_lane": [
+   "Nearby Enemies are Blinded"
+  ],
+  "optimistic_lane": [
+   "Nearby Enemies are Blinded"
+  ],
+  "zero_reason": "",
+  "why": "chance to Blind on Hit: PoB parses 'Nearby Enemies are Blinded' (ModCache.lua:10345) as the enemy Condition:Blinded; counted by the D40 uptime rule on the boss lane, on in the optimistic lane",
+  "partial_part": ""
+ },
+ {
+  "line": "6% chance to Blind Enemies on Hit with Attacks",
+  "surfaces": [
+   "gear_affix"
+  ],
+  "sources": [
+   "BlindOnHitShaperUber1",
+   "BlindOnHitUber1"
+  ],
+  "group": "on_hit",
+  "kind": "chance_enemy_debuff",
+  "boss_lane": [
+   "Nearby Enemies are Blinded"
+  ],
+  "optimistic_lane": [
+   "Nearby Enemies are Blinded"
+  ],
+  "zero_reason": "",
+  "why": "chance to Blind on Hit: PoB parses 'Nearby Enemies are Blinded' (ModCache.lua:10345) as the enemy Condition:Blinded; counted by the D40 uptime rule on the boss lane, on in the optimistic lane",
+  "partial_part": ""
+ },
+ {
+  "line": "6% chance to Taunt Enemies on Hit with Attacks",
+  "surfaces": [
+   "gear_affix"
+  ],
+  "sources": [
+   "TauntOnHitWeaponInfluence1"
+  ],
+  "group": "on_hit",
+  "kind": "chance_enemy_debuff",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "chance_enemy_debuff: no PoB mod line sets the enemy Taunted condition, only the config checkbox conditionEnemyTaunted (ConfigOptions.lua:1840)",
+  "why": "chance to Taunt on Hit: enemy Taunted is set only by the conditionEnemyTaunted config (ConfigOptions.lua:1840); no ModParser phrase sets it",
+  "partial_part": ""
+ },
+ {
+  "line": "8% Global chance to Blind Enemies on hit",
+  "surfaces": [
+   "gear_affix"
+  ],
+  "sources": [
+   "BlindOnHitSupportedUber2"
+  ],
+  "group": "on_hit",
+  "kind": "chance_enemy_debuff",
+  "boss_lane": [
+   "Nearby Enemies are Blinded"
+  ],
+  "optimistic_lane": [
+   "Nearby Enemies are Blinded"
+  ],
+  "zero_reason": "",
+  "why": "chance to Blind on Hit: PoB parses 'Nearby Enemies are Blinded' (ModCache.lua:10345) as the enemy Condition:Blinded; counted by the D40 uptime rule on the boss lane, on in the optimistic lane",
+  "partial_part": ""
+ },
+ {
+  "line": "8% chance to Blind Enemies on Hit with Attacks",
+  "surfaces": [
+   "gear_affix"
+  ],
+  "sources": [
+   "BlindOnHitShaperUber2",
+   "BlindOnHitUber2"
+  ],
+  "group": "on_hit",
+  "kind": "chance_enemy_debuff",
+  "boss_lane": [
+   "Nearby Enemies are Blinded"
+  ],
+  "optimistic_lane": [
+   "Nearby Enemies are Blinded"
+  ],
+  "zero_reason": "",
+  "why": "chance to Blind on Hit: PoB parses 'Nearby Enemies are Blinded' (ModCache.lua:10345) as the enemy Condition:Blinded; counted by the D40 uptime rule on the boss lane, on in the optimistic lane",
+  "partial_part": ""
+ },
+ {
+  "line": "8% chance to Taunt Enemies on Hit with Attacks",
+  "surfaces": [
+   "gear_affix"
+  ],
+  "sources": [
+   "TauntOnHitWeaponInfluence2"
+  ],
+  "group": "on_hit",
+  "kind": "chance_enemy_debuff",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "chance_enemy_debuff: no PoB mod line sets the enemy Taunted condition, only the config checkbox conditionEnemyTaunted (ConfigOptions.lua:1840)",
+  "why": "chance to Taunt on Hit: enemy Taunted is set only by the conditionEnemyTaunted config (ConfigOptions.lua:1840); no ModParser phrase sets it",
+  "partial_part": ""
+ },
+ {
+  "line": "Always Hits Burning Enemies",
+  "surfaces": [
+   "gear_affix"
+  ],
+  "sources": [
+   "DeepwaterSwordAlwaysHit"
+  ],
+  "group": "on_hit",
+  "kind": "always_hit_condition",
+  "type": "attack",
+  "boss_lane": [],
+  "optimistic_lane": [
+   "Your Hits can't be Evaded"
+  ],
+  "zero_reason": "",
+  "why": "Always Hits Burning Enemies: PoB's CannotBeEvaded flag (phrase of ModParser.lua:5422 without the blinded condition) while the enemy burns; new kind, optimistic lane only",
+  "partial_part": "",
+  "stand_blind": {
+   "reason_kind": "flag-only",
+   "why": "CannotBeEvaded is a PoB flag; measured on the attack stand (smite-s4) it moves none of the 7 outputs"
+  }
+ },
+ {
+  "line": "Attack Hits Aggravate any Bleeding on targets which is older than 4 seconds",
+  "surfaces": [
+   "mastery"
+  ],
+  "sources": [
+   "22295",
+   "37956",
+   "40170",
+   "43601",
+   "63710"
+  ],
+  "group": "on_hit",
+  "kind": "uptime_dependent",
+  "type": "attack",
+  "boss_lane": [],
+  "optimistic_lane": [
+   "200% more Damage with Bleeding"
+  ],
+  "zero_reason": "",
+  "why": "aggravation of a bleed older than 4 s depends on bleed age uptime: optimistic lane at full uptime (200% more Damage with Bleeding, CalcSetup.lua:537), boss lane empty (#965 parked)",
+  "partial_part": "",
+  "stand_blind": {
+   "reason_kind": "mechanic-absent",
+   "why": "no stand inflicts Bleeding, so Aggravate Bleeding has no Bleeding to act on"
+  }
+ },
+ {
+  "line": "Attacks have 10% chance to Maim on Hit",
+  "surfaces": [
+   "notable"
+  ],
+  "sources": [
+   "41284",
+   "44670"
+  ],
+  "group": "on_hit",
+  "kind": "chance_enemy_debuff",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "chance_enemy_debuff: no PoB mod line sets the enemy Maimed condition, only the config checkbox conditionEnemyMaimed (ConfigOptions.lua:1825)",
+  "why": "chance to Maim on Hit: enemy Maimed is set only by the conditionEnemyMaimed config (ConfigOptions.lua:1825); no ModParser phrase sets it (ModCache.lua:8584 'Enemies near your Banner are Maimed' is unparsed)",
+  "partial_part": ""
+ },
+ {
+  "line": "Attacks have 15% chance to Maim on Hit",
+  "surfaces": [
+   "gear_affix"
+  ],
+  "sources": [
+   "MaimOnHitInfluence1",
+   "MaimOnHitQuiverUber1"
+  ],
+  "group": "on_hit",
+  "kind": "chance_enemy_debuff",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "chance_enemy_debuff: no PoB mod line sets the enemy Maimed condition, only the config checkbox conditionEnemyMaimed (ConfigOptions.lua:1825)",
+  "why": "chance to Maim on Hit: enemy Maimed is set only by the conditionEnemyMaimed config (ConfigOptions.lua:1825); no ModParser phrase sets it (ModCache.lua:8584 'Enemies near your Banner are Maimed' is unparsed)",
+  "partial_part": ""
+ },
+ {
+  "line": "Attacks have 20% chance to Maim on Hit",
+  "surfaces": [
+   "gear_affix"
+  ],
+  "sources": [
+   "MaimOnHitInfluence2___",
+   "MaimOnHitQuiverUber2"
+  ],
+  "group": "on_hit",
+  "kind": "chance_enemy_debuff",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "chance_enemy_debuff: no PoB mod line sets the enemy Maimed condition, only the config checkbox conditionEnemyMaimed (ConfigOptions.lua:1825)",
+  "why": "chance to Maim on Hit: enemy Maimed is set only by the conditionEnemyMaimed config (ConfigOptions.lua:1825); no ModParser phrase sets it (ModCache.lua:8584 'Enemies near your Banner are Maimed' is unparsed)",
+  "partial_part": ""
+ },
+ {
+  "line": "Blind Enemies on Hit",
+  "surfaces": [
+   "ascendancy"
+  ],
+  "sources": [
+   "5087"
+  ],
+  "group": "on_hit",
+  "kind": "chance_enemy_debuff",
+  "boss_lane": [
+   "Nearby Enemies are Blinded"
+  ],
+  "optimistic_lane": [
+   "Nearby Enemies are Blinded"
+  ],
+  "zero_reason": "",
+  "why": "chance to Blind on Hit: PoB parses 'Nearby Enemies are Blinded' (ModCache.lua:10345) as the enemy Condition:Blinded; counted by the D40 uptime rule on the boss lane, on in the optimistic lane",
+  "partial_part": ""
+ },
+ {
+  "line": "Chaos Spells have 10% chance to Hinder Enemies on Hit",
+  "surfaces": [
+   "notable"
+  ],
+  "sources": [
+   "49273"
+  ],
+  "group": "on_hit",
+  "kind": "chance_enemy_debuff",
+  "type": "spell",
+  "boss_lane": [
+   "Nearby Enemies are Hindered, with 25% reduced Movement Speed"
+  ],
+  "optimistic_lane": [
+   "Nearby Enemies are Hindered, with 25% reduced Movement Speed"
+  ],
+  "zero_reason": "",
+  "why": "chance to Hinder on Hit by Spells: PoB's 'Nearby Enemies are Hindered, with 25% reduced Movement Speed' sets enemy Condition:Hindered (ModCache.lua:10353); D40 uptime rule on the boss lane",
+  "partial_part": "",
+  "stand_blind": {
+   "reason_kind": "flag-only",
+   "why": "enemy Hindered has no numeric consumer in the 7 outputs"
+  }
+ },
+ {
+  "line": "Crush Enemies for 4 seconds when you Hit them while they are on Full Life",
+  "surfaces": [
+   "notable"
+  ],
+  "sources": [
+   "26564"
+  ],
+  "group": "on_hit",
+  "kind": "first_seconds_only",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "first_seconds_only: Crush lasts 4 s from the first hit, the enemy is on full life once",
+  "why": "Crush for 4 s on the first Hit at full life",
+  "partial_part": ""
+ },
+ {
+  "line": "Curse Enemies with Socketed Hex Curse Gem on Hit",
+  "surfaces": [
+   "unique"
+  ],
+  "sources": [
+   "Mark of Submission, Unset Ring"
+  ],
+  "group": "on_hit",
+  "kind": "no_representation",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "no_representation: PoB has no line that curses on Hit with a socketed Hex gem",
+  "why": "Hex curse of a socketed gem on Hit: no PoB mod line for it",
+  "partial_part": ""
+ },
+ {
+  "line": "Damage of Enemies Hitting you is Unlucky",
+  "surfaces": [
+   "ascendancy"
+  ],
+  "sources": [
+   "14103"
+  ],
+  "group": "on_hit",
+  "kind": "no_representation",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "no_representation: PoB has no output for enemy damage being Unlucky (ModCache.lua:8354 unparsed)",
+  "why": "unlucky enemy damage: PoB has no enemy damage roll",
+  "partial_part": ""
+ },
+ {
+  "line": "Damage of Enemies Hitting you is Unlucky while you are on Full Life",
+  "surfaces": [
+   "unique"
+  ],
+  "sources": [
+   "Foxshade, Wild Leather"
+  ],
+  "group": "on_hit",
+  "kind": "no_representation",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "no_representation: PoB has no output for enemy damage being Unlucky (ModCache.lua:8354 unparsed)",
+  "why": "unlucky enemy damage: PoB has no enemy damage roll",
+  "partial_part": ""
+ },
+ {
+  "line": "Every 10 seconds: Take 50% less Damage from Hits for 5 seconds Take 50% less Damage over Time for 5 seconds",
+  "surfaces": [
+   "ascendancy"
+  ],
+  "sources": [
+   "28884"
+  ],
+  "group": "on_hit",
+  "kind": "uptime_dependent",
+  "boss_lane": [],
+  "optimistic_lane": [
+   "50% less Damage taken from Hits",
+   "50% less Damage over Time taken"
+  ],
+  "zero_reason": "",
+  "why": "5 s of every 10 s window (Heartstopper form, ModParser.lua:3014-3020 behind a config mode): optimistic lane at full uptime, boss lane empty (#965 parked)",
+  "partial_part": ""
+ },
+ {
+  "line": "Flasks adjacent to applied Tincture have 10% increased Effect when used if you've Hit an enemy with a Weapon Recently",
+  "surfaces": [
+   "mastery"
+  ],
+  "sources": [
+   "15697",
+   "38622",
+   "44206",
+   "44330",
+   "56519"
+  ],
+  "group": "on_hit",
+  "kind": "no_representation",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "no_representation: PoB has no flask adjacency for Tinctures",
+  "why": "adjacent Tincture flask effect: PoB has no adjacency",
+  "partial_part": ""
+ },
+ {
+  "line": "Flasks adjacent to applied Tincture have 30% increased Effect when used if you've Hit an enemy with a Weapon Recently",
+  "surfaces": [
+   "ascendancy"
+  ],
+  "sources": [
+   "34637"
+  ],
+  "group": "on_hit",
+  "kind": "no_representation",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "no_representation: PoB has no flask adjacency for Tinctures",
+  "why": "adjacent Tincture flask effect: PoB has no adjacency",
+  "partial_part": ""
+ },
+ {
+  "line": "Gain 3 Mana per Taunted Enemy Hit",
+  "surfaces": [
+   "unique"
+  ],
+  "sources": [
+   "Brinerot Flag, Tarnished Spirit Shield"
+  ],
+  "group": "on_hit",
+  "kind": "chance_enemy_debuff",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "chance_enemy_debuff: needs the enemy Taunted condition, no PoB mod line sets it; note PoB counts a false Mana BASE 3 from this line; mana on hit is no sustain",
+  "why": "PoB reads Mana BASE 3 (ModCache.lua:8949), a false +3 Mana; mana per Taunted enemy Hit needs the Taunted enemy condition no mod line sets",
+  "partial_part": "per Taunted Enemy Hit"
+ },
+ {
+  "line": "Gain Defiance for 10 seconds on losing Life to an Enemy Hit, no more than once every 0.3 seconds",
+  "surfaces": [
+   "ascendancy"
+  ],
+  "sources": [
+   "9271"
+  ],
+  "group": "on_hit",
+  "kind": "ramp_window",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "ramp_window: Defiance gains one stack per Hit taken within 0.3 s; PoB has no boss hit rate to count it at the 2.5 s window",
+  "why": "Defiance stacks per Hit taken: PoB has no enemy hit rate, so no stack count at the 2.5 s window can be computed",
+  "partial_part": ""
+ },
+ {
+  "line": "Gain Unholy Might on Block for 10 seconds",
+  "surfaces": [
+   "unique"
+  ],
+  "sources": [
+   "Broken Faith, Archon Kite Shield"
+  ],
+  "group": "on_hit",
+  "kind": "on_block_generator",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "on_block_generator: PoB counts Unholy Might unconditionally (ModCache.lua:9126); a lane only adds, so the on Block restriction cannot be written",
+  "why": "PoB already counts Condition:UnholyMight unconditionally (ModCache.lua:9126), at full uptime; the unparsed 'on Block' trigger cannot be narrowed by an added line",
+  "partial_part": "on Block"
+ },
+ {
+  "line": "Hits Stun as though dealing 50% more Melee Fire Damage",
+  "surfaces": [
+   "notable"
+  ],
+  "sources": [
+   "19794"
+  ],
+  "group": "on_hit",
+  "kind": "no_representation",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "no_representation: PoB has no mod that scales only the stun calculation (ModCache.lua:9450 unparsed)",
+  "why": "stun chance 'as though' more damage: no stun output in the objective",
+  "partial_part": ""
+ },
+ {
+  "line": "If your Mercenary's Life is higher than your own, 20% of Damage from Hits is taken from your Mercenary's Life before you",
+  "surfaces": [
+   "ascendancy"
+  ],
+  "sources": [
+   "1564"
+  ],
+  "group": "on_hit",
+  "kind": "no_representation",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "no_representation: PoB has no Mercenary life pool",
+  "why": "Mercenary life soaks Hit damage: PoB has no Mercenary",
+  "partial_part": ""
+ },
+ {
+  "line": "Ignites from Stunning Melee Hits deal 20% more Damage",
+  "surfaces": [
+   "notable"
+  ],
+  "sources": [
+   "19794"
+  ],
+  "group": "on_hit",
+  "kind": "on_stun_conditional",
+  "type": "attack",
+  "boss_lane": [],
+  "optimistic_lane": [
+   "20% more Damage with Ignite"
+  ],
+  "zero_reason": "",
+  "why": "Ignite damage from Stunning Hits only; stuns on a boss are not guaranteed, optimistic lane only (phrase form ModCache.lua:4588); new kind",
+  "partial_part": ""
+ },
+ {
+  "line": "Inflict a Grasping Vine on Hit against Enemies with fewer than 8 Grasping Vines during Effect of any Life Flask",
+  "surfaces": [
+   "notable"
+  ],
+  "sources": [
+   "203"
+  ],
+  "group": "on_hit",
+  "kind": "ramp_window",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "ramp_window: vines stack per Hit up to 8 during a Life Flask (uptime_dependent); no PoB line sets the enemy vine count",
+  "why": "vines per Hit up to 8 while a Life Flask is active: stacks need a hit rate and a flask uptime; PoB's vine multipliers are set only through its own lines",
+  "partial_part": ""
+ },
+ {
+  "line": "Lightning Damage of Enemies Hitting you while you're Shocked is Unlucky",
+  "surfaces": [
+   "mastery"
+  ],
+  "sources": [
+   "14122",
+   "240",
+   "37532",
+   "58816",
+   "63482"
+  ],
+  "group": "on_hit",
+  "kind": "no_representation",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "no_representation: PoB has no output for enemy damage being Unlucky (ModCache.lua:8354 unparsed)",
+  "why": "unlucky enemy damage: PoB has no enemy damage roll",
+  "partial_part": ""
+ },
+ {
+  "line": "Lose 1 Bark when Hit by Enemy Spell Damage",
+  "surfaces": [
+   "ascendancy"
+  ],
+  "sources": [
+   "11597"
+  ],
+  "group": "on_hit",
+  "kind": "no_representation",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "no_representation: PoB has no output for Bark; note PoB counts a false Damage BASE -1 from this line",
+  "why": "PoB reads Damage BASE -1 with the Spell flag (ModCache.lua:9825), a false penalty; Bark has no PoB output",
+  "partial_part": "Bark when Hit by Enemy"
+ },
+ {
+  "line": "Lose all Gale Force when Hit",
+  "surfaces": [
+   "ascendancy"
+  ],
+  "sources": [
+   "23169"
+  ],
+  "group": "on_hit",
+  "kind": "no_representation",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "ramp_window: Gale Force counts at the 2.5 s window; no PoB line removes it when Hit",
+  "why": "losing Gale Force when Hit: PoB counts Gale Force stacks at the ramp window by their own line, no line subtracts them",
+  "partial_part": ""
+ },
+ {
+  "line": "Maim you inflict causes Hits against the target to have 20% more Critical Strike Chance",
+  "surfaces": [
+   "ascendancy"
+  ],
+  "sources": [
+   "64963"
+  ],
+  "group": "on_hit",
+  "kind": "uptime_dependent",
+  "boss_lane": [],
+  "optimistic_lane": [
+   "20% more Critical Strike Chance"
+  ],
+  "zero_reason": "",
+  "why": "needs Maim on the target (uptime of the maim); optimistic lane at full uptime, boss lane empty (#965 parked)",
+  "partial_part": ""
+ },
+ {
+  "line": "Melee Strikes Curse Enemies with Flammability on Hit, ignoring Curse Limit",
+  "surfaces": [
+   "gear_affix"
+  ],
+  "sources": [
+   "DeepwaterSwordFlammability"
+  ],
+  "group": "on_hit",
+  "kind": "chance_enemy_debuff",
+  "type": "attack",
+  "boss_lane": [
+   "Curse Enemies with Flammability on Hit"
+  ],
+  "optimistic_lane": [
+   "Curse Enemies with Flammability on Hit"
+  ],
+  "zero_reason": "",
+  "why": "PoB parses 'Curse Enemies with Flammability on Hit' as a triggered Flammability level 1 (ModCache.lua:8286); a Hit always applies it",
+  "partial_part": "",
+  "stand_blind": {
+   "reason_kind": "flag-only",
+   "why": "Curse line has no numeric consumer in the 7 outputs"
+  }
+ },
+ {
+  "line": "Projectiles deal 20% increased Damage with Hits and Ailments for each remaining Chain, up to a maximum of 100%",
+  "surfaces": [
+   "notable"
+  ],
+  "sources": [
+   "42068"
+  ],
+  "group": "on_hit",
+  "kind": "no_representation",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "no_representation: the cap of 100% cannot be written as an added line",
+  "why": "PoB parses the 20% per remaining Chain (ModCache.lua:10609) and leaves the cap unparsed; a lane cannot lower it",
+  "partial_part": ", up to a maximum of 100%"
+ },
+ {
+  "line": "Projectiles deal 40% increased Damage with Hits to targets at the start of their movement, reducing to 0% as they travel farther",
+  "surfaces": [
+   "notable"
+  ],
+  "sources": [
+   "31513"
+  ],
+  "group": "on_hit",
+  "kind": "no_representation",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "no_representation: PoB's ModCache parses the whole line with a DistanceRamp (ModCache.lua:10613)",
+  "why": "ModCache.lua:10613 parses the line with a DistanceRamp tag; nothing is left to add",
+  "partial_part": "reducing to 0% as they travel farther"
+ },
+ {
+  "line": "Projectiles gain Damage as they travel farther, dealing up to 30% more Damage with Hits and Ailments",
+  "surfaces": [
+   "ascendancy"
+  ],
+  "sources": [
+   "45313"
+  ],
+  "group": "on_hit",
+  "kind": "distance_ramp",
+  "boss_lane": [],
+  "optimistic_lane": [
+   "Projectiles gain Damage as they travel farther, dealing up to 30% more Damage with Hits and Ailments"
+  ],
+  "zero_reason": "",
+  "why": "PoB's own phrase parses the line with a DistanceRamp tag (ModParser.lua:2499 / 2644, ModCache.lua:10627); new kind, optimistic lane only (a distance is not a time ramp)",
+  "partial_part": ""
+ },
+ {
+  "line": "Projectiles gain Damage as they travel farther, dealing up to 60% increased Damage with Hits to targets",
+  "surfaces": [
+   "notable"
+  ],
+  "sources": [
+   "8458"
+  ],
+  "group": "on_hit",
+  "kind": "distance_ramp",
+  "type": "attack",
+  "boss_lane": [],
+  "optimistic_lane": [
+   "Projectiles gain Damage as they travel farther, dealing up to 60% increased Damage with Hits to targets"
+  ],
+  "zero_reason": "",
+  "why": "PoB's own phrase parses the line with a DistanceRamp tag (ModParser.lua:2499 / 2644, ModCache.lua:10627); new kind, optimistic lane only (a distance is not a time ramp)",
+  "partial_part": "",
+  "stand_blind": {
+   "reason_kind": "mechanic-absent",
+   "why": "no stand fires Projectiles, so the Damage that grows with distance travelled has no Projectile to act on"
+  }
+ },
+ {
+  "line": "Ruthless Hits Intimidate Enemies for 4 seconds",
+  "surfaces": [
+   "mastery"
+  ],
+  "sources": [
+   "25934",
+   "35118",
+   "39338",
+   "6912"
+  ],
+  "group": "on_hit",
+  "kind": "uptime_dependent",
+  "type": "attack",
+  "boss_lane": [],
+  "optimistic_lane": [
+   "Nearby Enemies are Intimidated"
+  ],
+  "zero_reason": "",
+  "why": "Ruthless Hit (every third attack) Intimidates for 4 s: uptime of a timed window, optimistic lane at full uptime, boss lane empty (#965 parked)",
+  "partial_part": "",
+  "stand_blind": {
+   "reason_kind": "flag-only",
+   "why": "enemy Intimidated has no numeric consumer in the 7 outputs"
+  }
+ },
+ {
+  "line": "Socketed Golem Skills have 25% chance to Taunt on Hit",
+  "surfaces": [
+   "unique"
+  ],
+  "sources": [
+   "Redblade Band, Unset Ring"
+  ],
+  "group": "on_hit",
+  "kind": "proxy_delivery",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "proxy_delivery: Taunt on Hit of Golem skills goes to the Golem, not the player; no PoB mod line sets Taunted anyway",
+  "why": "the Taunt comes from socketed Golem skills (minions), not the player; no PoB mod line sets the enemy Taunted condition",
+  "partial_part": ""
+ },
+ {
+  "line": "Take 40% less Damage from Hits",
+  "surfaces": [
+   "ascendancy"
+  ],
+  "sources": [
+   "52408"
+  ],
+  "group": "on_hit",
+  "kind": "no_representation",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "no_representation: PoB already counts the 40% (a little too much, it includes DoT); a lane only adds",
+  "why": "PoB counts DamageTaken MORE -40 for all damage (ModCache.lua:12296); 'from Hits' only narrows it and no added line can subtract it",
+  "partial_part": "from Hits"
+ },
+ {
+  "line": "Taunt on Hit",
+  "surfaces": [
+   "ascendancy"
+  ],
+  "sources": [
+   "39598",
+   "56967"
+  ],
+  "group": "on_hit",
+  "kind": "chance_enemy_debuff",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "chance_enemy_debuff: no PoB mod line sets the enemy Taunted condition, only the config checkbox conditionEnemyTaunted (ConfigOptions.lua:1840)",
+  "why": "chance to Taunt on Hit: enemy Taunted is set only by the conditionEnemyTaunted config (ConfigOptions.lua:1840); no ModParser phrase sets it",
+  "partial_part": ""
+ },
+ {
+  "line": "When Hit, gain a random Movement Speed modifier from 40% reduced to 100% increased, until Hit again",
+  "surfaces": [
+   "unique"
+  ],
+  "sources": [
+   "Gamblesprint, Hydrascale Boots"
+  ],
+  "group": "on_hit",
+  "kind": "no_representation",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "no_representation: PoB has no random movement speed",
+  "why": "random Movement Speed until Hit again: no PoB output",
+  "partial_part": ""
+ },
+ {
+  "line": "You take 100% of Elemental Damage from Blocked Hits",
+  "surfaces": [
+   "unique"
+  ],
+  "sources": [
+   "The Flawed Refuge, Maple Round Shield"
+  ],
+  "group": "on_hit",
+  "kind": "no_representation",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "no_representation: PoB has no output for Elemental Damage of Blocked Hits",
+  "why": "taking 100% of Elemental Damage from Blocked Hits: PoB has no blocked-hit elemental damage",
+  "partial_part": ""
+ },
+ {
+  "line": "Your Mercenary Taunts on Hit",
+  "surfaces": [
+   "ascendancy"
+  ],
+  "sources": [
+   "56292"
+  ],
+  "group": "on_hit",
+  "kind": "proxy_delivery",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "proxy_delivery: Taunt on Hit of the Mercenary goes to the Mercenary, not the player",
+  "why": "the Taunt comes from the Mercenary, not the player; no PoB mod line sets the enemy Taunted condition",
+  "partial_part": ""
+ }
+]

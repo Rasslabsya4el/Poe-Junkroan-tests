@@ -1,0 +1,521 @@
+{
+  "source": "Zizaran 3.25 Settlers of Kalguur league-starter build guides",
+  "league": "3.25 Settlers of Kalguur",
+  "collected": "2026-09-18",
+  "tree_versions": [
+    "3_25"
+  ],
+  "note": "Import codes fetched verbatim from pobb.in/<id>/raw, from pobb.in user paths (pobb.in/u/<user>/<slug>/raw) and from the Maxroll planner API (https://planners.maxroll.gg/profiles/poe/<id>, field data.pobCode). PoB tree_versions record the passive-tree data version the code actually targets; it lags the league when a patch shipped no tree change. '{n}' in a title is the author's own marker linking an item set / tree spec / skill set.",
+  "excluded": [],
+  "builds": [
+    {
+      "slug": "hierophant_ice_nova_archmage",
+      "file": "hierophant_ice_nova_archmage.pob.txt",
+      "title": "Ice Nova Archmage Hierophant Leaguestarter",
+      "class": "Templar",
+      "ascendancy": "Hierophant",
+      "ascendancy_in_pob": "Hierophant",
+      "main_skill": "Ice Nova of Frostbolts (Archmage)",
+      "league": "3.25 Settlers of Kalguur",
+      "maxroll_url": null,
+      "pob_url": "https://pobb.in/20ygT23MsdQV",
+      "youtube_url": "https://www.youtube.com/watch?v=Kbu2hLKek18",
+      "fetched": "2026-09-18",
+      "pob_build_level": 99,
+      "tree_versions": [
+        "3_25"
+      ],
+      "loadouts": {
+        "item_sets": [
+          "Early Game",
+          "Midgame",
+          "Endgame",
+          "Endgame - Ailment Avoid"
+        ],
+        "specs": [
+          "Level 12",
+          "Level 25",
+          "Level 31 - Normal Lab",
+          "Level 55 - Cruel Lab",
+          "Level 68 - Merciless Lab",
+          "Level 82 - Uber Lab",
+          "Midgame",
+          "Endgame - No unique jewels/less gear",
+          "Endgame - Unique Jewels/Big Gear"
+        ],
+        "skill_sets": [
+          "Level 1 - 18",
+          "Level 18-31",
+          "Level 31 - Maps",
+          "Endgame",
+          "Endgame - Kitava's Thirst"
+        ]
+      },
+      "early_loadout": {
+        "item_set": "Early Game",
+        "spec": "Level 68 - Merciless Lab",
+        "skill_set": "Level 31 - Maps",
+        "level": 68,
+        "level_source": "spec title",
+        "linked_by": "inferred",
+        "spec_allocated_nodes": 99,
+        "gear_slots": {
+          "Gloves": "RARE",
+          "Weapon 1": "RARE",
+          "Helmet": "RARE",
+          "Belt": "RARE",
+          "Amulet": "RARE",
+          "Weapon 2": "RARE",
+          "Ring 2": "RARE",
+          "Body Armour": "RARE",
+          "Ring 1": "RARE",
+          "Boots": "RARE"
+        },
+        "uniques": {},
+        "flask_count": 5
+      }
+    },
+    {
+      "slug": "gladiator_lacerate",
+      "file": "gladiator_lacerate.pob.txt",
+      "title": "Bleed Lacerate Gladiator Leaguestarter",
+      "class": "Duelist",
+      "ascendancy": "Gladiator",
+      "ascendancy_in_pob": "Gladiator",
+      "main_skill": "Lacerate of Haemorrhage",
+      "league": "3.25 Settlers of Kalguur",
+      "maxroll_url": "https://maxroll.gg/poe/build-guides/lacerate-gladiator-league-starter",
+      "pob_url": "https://pobb.in/wELCM8sLamR1",
+      "youtube_url": "https://www.youtube.com/watch?v=3KgSrJiTqoQ",
+      "fetched": "2026-09-18",
+      "pob_build_level": 99,
+      "tree_versions": [
+        "3_25"
+      ],
+      "loadouts": {
+        "item_sets": [
+          "Level 13 example",
+          "Early Game",
+          "Midgame",
+          "Endgame",
+          "Minmax"
+        ],
+        "specs": [
+          "^2LEVELING",
+          "Level 12",
+          "Level 23",
+          "Level 33 - Normal Lab",
+          "Level 42",
+          "Level 52 - Cruel Lab",
+          "Level 68 - Merc Lab (Swap to 1H)",
+          "^2MAPS",
+          "Midgame - Uber Lab",
+          "Endgame - Mapping",
+          "Endgame - Bossing",
+          "Endgame - SC Cluster Setup"
+        ],
+        "skill_sets": [
+          "Level 1 - 12",
+          "Level 12 - 18",
+          "Level 18 - 31",
+          "Level 31 - 38",
+          "Level 38 - Maps",
+          "Maps",
+          "Awakened Gems and stuff"
+        ]
+      },
+      "early_loadout": {
+        "item_set": "Early Game",
+        "spec": "Level 68 - Merc Lab (Swap to 1H)",
+        "skill_set": "Level 38 - Maps",
+        "level": 68,
+        "level_source": "spec title",
+        "linked_by": "inferred",
+        "spec_allocated_nodes": 98,
+        "gear_slots": {
+          "Gloves": "RARE",
+          "Weapon 1": "RARE",
+          "Helmet": "RARE",
+          "Belt": "RARE",
+          "Amulet": "RARE",
+          "Weapon 2": "RARE",
+          "Ring 2": "RARE",
+          "Body Armour": "RARE",
+          "Ring 1": "RARE",
+          "Boots": "RARE"
+        },
+        "uniques": {},
+        "flask_count": 5
+      }
+    },
+    {
+      "slug": "slayer_ground_slam",
+      "file": "slayer_ground_slam.pob.txt",
+      "title": "Ground Slam Slayer Leaguestarter",
+      "class": "Duelist",
+      "ascendancy": "Slayer",
+      "ascendancy_in_pob": "Slayer",
+      "main_skill": "Vaal Ground Slam of Earthshaking",
+      "league": "3.25 Settlers of Kalguur",
+      "maxroll_url": null,
+      "pob_url": "https://pobb.in/BuNxOBIGRtX3",
+      "youtube_url": "https://www.youtube.com/watch?v=OWdT2nVYBgc",
+      "fetched": "2026-09-18",
+      "pob_build_level": 100,
+      "tree_versions": [
+        "3_25"
+      ],
+      "loadouts": {
+        "item_sets": [
+          "Leveling",
+          "Basic gear (Blood magic)",
+          "Early endgame (Blood Magic)",
+          "Basic gear (Automation)",
+          "Early endgame (Automation)",
+          "Super endgame (Automation)"
+        ],
+        "specs": [
+          "Leveling (1-13)",
+          "Leveling (13-37) Part 1",
+          "Leveling (13-37) Part 2",
+          "Leveling (38 - Act 6)",
+          "Leveling (Act 6 - Cruel Lab)",
+          "Leveling (Cruel lab - Merc lab)",
+          "Blood Magic {95}",
+          "Automation {95}",
+          "Blood Magic {100}",
+          "Automation {100}",
+          "Super Endgame Automation {100}"
+        ],
+        "skill_sets": [
+          "Leveling (1-12)",
+          "Leveling (12-37)",
+          "Leveling (38-Act 6)",
+          "Leveling (Act 6 - Merc lab)",
+          "AUTOMATION",
+          "Blood Magic"
+        ]
+      },
+      "early_loadout": {
+        "item_set": "Basic gear (Blood magic)",
+        "spec": "Leveling (Cruel lab - Merc lab)",
+        "skill_set": "Blood Magic",
+        "level": 61,
+        "level_source": "estimated from 94 allocated nodes",
+        "linked_by": "inferred",
+        "spec_allocated_nodes": 94,
+        "gear_slots": {
+          "Gloves": "RARE",
+          "Weapon 1": "RARE",
+          "Helmet": "RARE",
+          "Belt": "RARE",
+          "Amulet": "UNIQUE",
+          "Belt Abyssal Socket 1": "RARE",
+          "Ring 2": "UNIQUE",
+          "Body Armour": "RARE",
+          "Ring 1": "UNIQUE",
+          "Boots": "RARE"
+        },
+        "uniques": {
+          "Amulet": "Hinekora's Sight",
+          "Ring 2": "Kaom's Sign",
+          "Ring 1": "Kaom's Sign"
+        },
+        "flask_count": 5
+      }
+    },
+    {
+      "slug": "gladiator_eviscerate_retaliate",
+      "file": "gladiator_eviscerate_retaliate.pob.txt",
+      "title": "Eviscerate & Retaliate Gladiator Leaguestarter (ft. Goratha)",
+      "class": "Duelist",
+      "ascendancy": "Gladiator",
+      "ascendancy_in_pob": "Gladiator",
+      "main_skill": "Sunder / Eviscerate",
+      "league": "3.25 Settlers of Kalguur",
+      "maxroll_url": null,
+      "pob_url": "https://pobb.in/4_eAbfqEiRXe",
+      "youtube_url": "https://www.youtube.com/watch?v=H3_bpfkWjlY",
+      "fetched": "2026-09-18",
+      "pob_build_level": 98,
+      "tree_versions": [
+        "3_25"
+      ],
+      "loadouts": {
+        "item_sets": [
+          "Level 13 example",
+          "Level 13 example with shield",
+          "Early Game",
+          "Midgame",
+          "Endgame",
+          "Minmax"
+        ],
+        "specs": [
+          "^2LEVELING",
+          "Level 12",
+          "Level 23",
+          "Level 38 - Normal Lab swap to shield if retaliation is good",
+          "Level 54 - Cruel Lab",
+          "Level 68 - Merc Lab",
+          "^2MAPS",
+          "Midgame - Uber Lab",
+          "Endgame - Mapping",
+          "Endgame - Mapping (more dmg variant)",
+          "Endgame - SC Cluster Setup",
+          "Endgame - Bossing",
+          "^4RETALIATION LEVELING (NOT A BAIT XD)",
+          "Level 12 (retaliation)",
+          "Level 23 (retaliation)",
+          "Level 38 - Normal Lab (retaliation)",
+          "Level 54 - Cruel Lab (retaliation)",
+          "Level 68 - Merc Lab (retaliation)"
+        ],
+        "skill_sets": [
+          "Level 1 - 12",
+          "Level 12 - 18",
+          "Level 18 - 31",
+          "Level 31 - 38",
+          "Level 38 - Maps",
+          "Maps",
+          "Awakened Gems and stuff"
+        ]
+      },
+      "early_loadout": {
+        "item_set": "Early Game",
+        "spec": "Level 68 - Merc Lab",
+        "skill_set": "Level 38 - Maps",
+        "level": 68,
+        "level_source": "spec title",
+        "linked_by": "inferred",
+        "spec_allocated_nodes": 103,
+        "gear_slots": {
+          "Gloves": "RARE",
+          "Weapon 1": "RARE",
+          "Helmet": "RARE",
+          "Belt": "RARE",
+          "Amulet": "RARE",
+          "Weapon 2": "RARE",
+          "Ring 2": "RARE",
+          "Body Armour": "RARE",
+          "Ring 1": "RARE",
+          "Boots": "RARE"
+        },
+        "uniques": {},
+        "flask_count": 5
+      }
+    },
+    {
+      "slug": "berserker_ground_slam_autocry",
+      "file": "berserker_ground_slam_autocry.pob.txt",
+      "title": "Autocry Slammer Berserker Leaguestarter",
+      "class": "Marauder",
+      "ascendancy": "Berserker",
+      "ascendancy_in_pob": "Berserker",
+      "main_skill": "Ground Slam of Earthshaking",
+      "league": "3.25 Settlers of Kalguur",
+      "maxroll_url": null,
+      "pob_url": "https://pobb.in/vYfc3T0fTQFN",
+      "youtube_url": "https://www.youtube.com/watch?v=CiMKUZJclcg",
+      "fetched": "2026-09-18",
+      "pob_build_level": 100,
+      "tree_versions": [
+        "3_25"
+      ],
+      "loadouts": {
+        "item_sets": [
+          "Level 13 example",
+          "Early Game {5}",
+          "Midgame {4}",
+          "Endgame {1}",
+          "Endgame - Cluster {2,3}"
+        ],
+        "specs": [
+          "^2LEVELING",
+          "Level 12",
+          "Level 22",
+          "Level 31 - Normal Lab",
+          "Level 45",
+          "Level 54 - Cruel Lab",
+          "Level 60",
+          "Level 70 - Merciless Lab",
+          "^2MAPS",
+          "Early Game {5}",
+          "Midgame {4}",
+          "Endgame - No Cluster {1}",
+          "Endgame - Cluster {2,3}"
+        ],
+        "skill_sets": [
+          "^2Level 1 - 12",
+          "^2Level 12 - 18",
+          "^2Level 18 - 31",
+          "^2Level 31 - 38",
+          "^2Level 38 - 55",
+          "^2Level 55 - Maps",
+          "^4Maps {1,2,4,5}",
+          "^4Awakened Gems {3}"
+        ]
+      },
+      "early_loadout": {
+        "item_set": "Early Game {5}",
+        "spec": "Early Game {5}",
+        "skill_set": "Maps {1,2,4,5}",
+        "level": 85,
+        "level_source": "estimated from 118 allocated nodes",
+        "linked_by": "author marker {5}",
+        "spec_allocated_nodes": 118,
+        "gear_slots": {
+          "Gloves": "RARE",
+          "Weapon 1": "RARE",
+          "Helmet": "RARE",
+          "Belt": "RARE",
+          "Amulet": "RARE",
+          "Ring 2": "RARE",
+          "Body Armour": "RARE",
+          "Ring 1": "RARE",
+          "Boots": "RARE"
+        },
+        "uniques": {},
+        "flask_count": 5
+      }
+    },
+    {
+      "slug": "gladiator_spectral_shield_throw",
+      "file": "gladiator_spectral_shield_throw.pob.txt",
+      "title": "Bleed SST Gladiator Leaguestarter",
+      "class": "Duelist",
+      "ascendancy": "Gladiator",
+      "ascendancy_in_pob": "Gladiator",
+      "main_skill": "Spectral Shield Throw",
+      "league": "3.25 Settlers of Kalguur",
+      "maxroll_url": null,
+      "pob_url": "https://pobb.in/shIlZ8ebpX5s",
+      "youtube_url": "https://www.youtube.com/watch?v=3mGPRKypl6k",
+      "fetched": "2026-09-18",
+      "pob_build_level": 100,
+      "tree_versions": [
+        "3_25"
+      ],
+      "loadouts": {
+        "item_sets": [
+          "Early {3}",
+          "Midgame {2,4}",
+          "MinMax {1}"
+        ],
+        "specs": [
+          "Level 20",
+          "Level 32 + Normal Lab",
+          "Level 46",
+          "Level 55 + Cruel Lab",
+          "Level 62",
+          "Level 74 + Merc Lab {3}",
+          "Level 83 + Uber lab - No cluster {4}",
+          "Level 93 + Uber lab - No cluster {2}",
+          "Level 100 + Cluster {1}"
+        ],
+        "skill_sets": [
+          "Level 1-12",
+          "Level 12-18",
+          "Level 18-38",
+          "Level 38 -  Maps",
+          "Maps {2,3,4}",
+          "MinMax {1}"
+        ]
+      },
+      "early_loadout": {
+        "item_set": "Early {3}",
+        "spec": "Level 74 + Merc Lab {3}",
+        "skill_set": "Maps {2,3,4}",
+        "level": 74,
+        "level_source": "spec title",
+        "linked_by": "author marker {3}",
+        "spec_allocated_nodes": 105,
+        "gear_slots": {
+          "Gloves": "RARE",
+          "Weapon 1": "RARE",
+          "Helmet": "RARE",
+          "Belt": "RARE",
+          "Amulet": "RARE",
+          "Weapon 2": "RARE",
+          "Ring 2": "RARE",
+          "Body Armour": "RARE",
+          "Ring 1": "UNIQUE",
+          "Boots": "RARE"
+        },
+        "uniques": {
+          "Ring 1": "Kaom's Sign"
+        },
+        "flask_count": 5
+      }
+    },
+    {
+      "slug": "champion_explosive_arrow",
+      "file": "champion_explosive_arrow.pob.txt",
+      "title": "Explosive Arrow Ballista Champion Leaguestarter",
+      "class": "Duelist",
+      "ascendancy": "Champion",
+      "ascendancy_in_pob": "Champion",
+      "main_skill": "Explosive Arrow (Ballista Totem)",
+      "league": "3.25 Settlers of Kalguur",
+      "maxroll_url": "https://maxroll.gg/poe/build-guides/explosive-arrow-ballista-champion-league-starter",
+      "pob_url": "https://pobb.in/5mc-zEY068U9",
+      "youtube_url": "https://www.youtube.com/watch?v=OiYAdPeadXE",
+      "fetched": "2026-09-18",
+      "pob_build_level": 98,
+      "tree_versions": [
+        "3_25"
+      ],
+      "loadouts": {
+        "item_sets": [
+          "Splitting Steel Leveling",
+          "Useful leveling uniques",
+          "Early Game",
+          "Midgame",
+          "Endgame",
+          "Endgame - Replica Dragonfang"
+        ],
+        "specs": [
+          "Level 13",
+          "Level 32 - Normal Lab",
+          "Level 57 - Cruel Lab",
+          "Level 69 - Merciless Lab",
+          "Level 87 - Uber Lab (pre-annoint)",
+          "----ENDGAME----",
+          "Endgame",
+          "Endgame - Unnatural Instinct",
+          "Endgame - Replica Dragonfang"
+        ],
+        "skill_sets": [
+          "Level 1-12",
+          "Level 12-28",
+          "Level 28-38",
+          "Level 38+",
+          "Endgame",
+          "Endgame - Replica Dragonfang"
+        ]
+      },
+      "early_loadout": {
+        "item_set": "Early Game",
+        "spec": "Level 69 - Merciless Lab",
+        "skill_set": "Level 38+",
+        "level": 69,
+        "level_source": "spec title",
+        "linked_by": "inferred",
+        "spec_allocated_nodes": 99,
+        "gear_slots": {
+          "Gloves": "RARE",
+          "Weapon 1": "RARE",
+          "Helmet": "RARE",
+          "Belt": "RARE",
+          "Amulet": "RARE",
+          "Weapon 2": "RARE",
+          "Ring 2": "RARE",
+          "Body Armour": "RARE",
+          "Ring 1": "RARE",
+          "Boots": "RARE"
+        },
+        "uniques": {},
+        "flask_count": 5
+      }
+    }
+  ]
+}

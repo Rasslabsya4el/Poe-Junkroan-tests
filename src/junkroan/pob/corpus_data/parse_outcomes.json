@@ -1,0 +1,4093 @@
+{
+  "+0.2 metres to Melee Strike Range if you have Killed Recently": {
+    "extra": "",
+    "mod_types": [
+      "BASE"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "+0.3 metres to Melee Strike Range if you have Killed Recently": {
+    "extra": "",
+    "mod_types": [
+      "BASE"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "+0.8% to Spell Critical Strike Chance": {
+    "extra": "",
+    "mod_types": [
+      "BASE"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "+1 to Level of Socketed Chaos Gems": {
+    "extra": "",
+    "mod_types": [
+      "LIST"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "+1 to Level of all Fire Skill Gems": {
+    "extra": "",
+    "mod_types": [
+      "LIST"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "+1 to Level of all Lightning Skill Gems": {
+    "extra": "",
+    "mod_types": [
+      "LIST"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "+1 to Level of all Physical Skill Gems": {
+    "extra": "",
+    "mod_types": [
+      "LIST"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "+1% Chance to Block Attack Damage per Endurance Charge": {
+    "extra": "",
+    "mod_types": [
+      "BASE"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "+10% to all Elemental Resistances and maximum Elemental Resistances while affected by a Non-Vaal Guard Skill\n20% additional Physical Damage Reduction while affected by a Non-Vaal Guard Skill\n20% more Damage taken if a Non-Vaal Guard Buff was lost Recently": {
+    "extra": "  \n20% additional Physical Damage Reduction \n20% more Damage taken if a Non- Guard Buff was lost Recently ",
+    "mod_types": [
+      "BASE"
+    ],
+    "ok": true,
+    "unsupported": true
+  },
+  "+11% Chance to Block Spell Damage if you have Blocked Spell Damage Recently": {
+    "extra": "",
+    "mod_types": [
+      "BASE"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "+13 to maximum Energy Shield": {
+    "extra": "",
+    "mod_types": [
+      "BASE"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "+130 to maximum Energy Shield": {
+    "extra": "",
+    "mod_types": [
+      "BASE"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "+135 to maximum Energy Shield": {
+    "extra": "",
+    "mod_types": [
+      "BASE"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "+14% to Damage over Time Multiplier with Attack Skills": {
+    "extra": "",
+    "mod_types": [
+      "BASE"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "+15 to Armour": {
+    "extra": "",
+    "mod_types": [
+      "BASE"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "+15 to maximum Mana": {
+    "extra": "",
+    "mod_types": [
+      "BASE"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "+17% Chance to Block Attack Damage if you were Damaged by a Hit Recently": {
+    "extra": "",
+    "mod_types": [
+      "BASE"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "+17% Chance to Block Spell Damage if you were Damaged by a Hit Recently": {
+    "extra": "",
+    "mod_types": [
+      "BASE"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "+175 to Accuracy Rating": {
+    "extra": "",
+    "mod_types": [
+      "BASE"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "+18% to Chaos Damage over Time Multiplier with Attack Skills": {
+    "extra": "",
+    "mod_types": [
+      "BASE"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "+18% to Damage over Time Multiplier with Attack Skills": {
+    "extra": "",
+    "mod_types": [
+      "BASE"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "+18% to Physical Damage over Time Multiplier with Attack Skills": {
+    "extra": "",
+    "mod_types": [
+      "BASE"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "+2 to Level of Socketed Chaos Gems": {
+    "extra": "",
+    "mod_types": [
+      "LIST"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "+20% chance to Suppress Spell Damage while your Off Hand is empty": {
+    "extra": "",
+    "mod_types": [
+      "BASE"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "+21% Chance to Block Attack Damage if you were Damaged by a Hit Recently": {
+    "extra": "",
+    "mod_types": [
+      "BASE"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "+21% Chance to Block Spell Damage if you were Damaged by a Hit Recently": {
+    "extra": "",
+    "mod_types": [
+      "BASE"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "+22% to Damage over Time Multiplier with Attack Skills": {
+    "extra": "",
+    "mod_types": [
+      "BASE"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "+225 to Accuracy Rating": {
+    "extra": "",
+    "mod_types": [
+      "BASE"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "+28% to Critical Strike Multiplier if you've Killed Recently": {
+    "extra": "",
+    "mod_types": [
+      "BASE"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "+3% Chance to Block Attack Damage if there are at least 5 nearby Enemies": {
+    "extra": "  if there are at least 5 nearby Enemies ",
+    "mod_types": [
+      "BASE"
+    ],
+    "ok": true,
+    "unsupported": true
+  },
+  "+33% to Critical Strike Multiplier if you've Killed Recently": {
+    "extra": "",
+    "mod_types": [
+      "BASE"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "+4% to Critical Strike Multiplier for each Mine Detonated\nRecently, up to 40%": {
+    "extra": "  for each  Detonated\nRecently, up to 40% ",
+    "mod_types": [
+      "BASE"
+    ],
+    "ok": true,
+    "unsupported": true
+  },
+  "+40% to Damage over Time Multiplier for Poison inflicted with this Weapon": {
+    "extra": "",
+    "mod_types": [
+      "BASE"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "+47% to Damage over Time Multiplier for Poison inflicted with this Weapon": {
+    "extra": "",
+    "mod_types": [
+      "BASE"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "+5% Chance to Block Attack Damage if there are at least 5 nearby Enemies": {
+    "extra": "  if there are at least 5 nearby Enemies ",
+    "mod_types": [
+      "BASE"
+    ],
+    "ok": true,
+    "unsupported": true
+  },
+  "+50% to all Elemental Resistances if you have an Equipped Helmet with no Socketed Gems": {
+    "extra": "",
+    "mod_types": [
+      "BASE"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "+6% Chance to Block Attack Damage if you have Blocked Attack Damage Recently": {
+    "extra": "",
+    "mod_types": [
+      "BASE"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "+65 to Accuracy Rating": {
+    "extra": "",
+    "mod_types": [
+      "BASE"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "+8 to Armour": {
+    "extra": "",
+    "mod_types": [
+      "BASE"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "+8% Chance to Block Attack Damage if you have Blocked Attack Damage Recently": {
+    "extra": "",
+    "mod_types": [
+      "BASE"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "+8% Chance to Block Spell Damage if you have Blocked Spell Damage Recently": {
+    "extra": "",
+    "mod_types": [
+      "BASE"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "+85 to maximum Energy Shield": {
+    "extra": "",
+    "mod_types": [
+      "BASE"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "+9% to Damage over Time Multiplier with Attack Skills": {
+    "extra": "",
+    "mod_types": [
+      "BASE"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "-1 to maximum number of Summoned Totems\nYou can have an additional Brand Attached to an Enemy": {
+    "extra": " \nYou can have an additional  Attached to an Enemy ",
+    "mod_types": [
+      "BASE"
+    ],
+    "ok": true,
+    "unsupported": true
+  },
+  "-10% to maximum Chance to Block Attack Damage\n-10% to maximum Chance to Block Spell Damage\n+2% Chance to Block Spell Damage for each 1% Overcapped Chance to Block Attack Damage": {
+    "extra": " \n-10% to maximum Chance to Block  Damage\n+2% Chance to Block Spell Damage for each 1% Overcapped Chance to Block Attack Damage ",
+    "mod_types": [
+      "BASE"
+    ],
+    "ok": true,
+    "unsupported": true
+  },
+  "-6 Maximum Life per Level": {
+    "extra": "",
+    "mod_types": [
+      "BASE"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "0.3% of Cold Damage Leeched as Energy Shield": {
+    "extra": "",
+    "mod_types": [
+      "BASE"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "0.3% of Fire Damage Leeched as Energy Shield": {
+    "extra": "",
+    "mod_types": [
+      "BASE"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "0.4% of Attack Damage Leeched as Life during Effect": {
+    "extra": "",
+    "mod_types": [
+      "BASE"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "0.4% of Spell Damage Leeched as Energy Shield during Effect": {
+    "extra": "",
+    "mod_types": [
+      "BASE"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "0.5% of Attack Damage Leeched as Life during Effect": {
+    "extra": "",
+    "mod_types": [
+      "BASE"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "0.5% of Spell Damage Leeched as Energy Shield during Effect": {
+    "extra": "",
+    "mod_types": [
+      "BASE"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "0.6% of Attack Damage Leeched as Life during Effect": {
+    "extra": "",
+    "mod_types": [
+      "BASE"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "0.6% of Spell Damage Leeched as Energy Shield during Effect": {
+    "extra": "",
+    "mod_types": [
+      "BASE"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "0.7% of Attack Damage Leeched as Life during Effect": {
+    "extra": "",
+    "mod_types": [
+      "BASE"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "0.7% of Spell Damage Leeched as Energy Shield during Effect": {
+    "extra": "",
+    "mod_types": [
+      "BASE"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "1% increased Spell Damage per 10 Strength": {
+    "extra": "",
+    "mod_types": [
+      "INC"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "1% increased Spell Damage per 16 Dexterity": {
+    "extra": "",
+    "mod_types": [
+      "INC"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "1% increased Spell Damage per 16 Strength": {
+    "extra": "",
+    "mod_types": [
+      "INC"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "1.5% of Physical Damage prevented from Hits in the past\n10 seconds is Regenerated as Life per second": {
+    "extra": "  prevented from Hits in the past\n10 seconds is Regenerated as Life per second ",
+    "mod_types": [
+      "BASE"
+    ],
+    "ok": true,
+    "unsupported": true
+  },
+  "10% chance to Avoid non-Damaging Ailments on you per Bark below maximum": {
+    "extra": "",
+    "mod_types": [
+      "BASE"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "10% chance to Taunt Enemies on Hit with Attacks": {
+    "extra": " to Taunt Enemies  with Attacks ",
+    "mod_types": [],
+    "ok": true,
+    "unsupported": true
+  },
+  "10% increased Attack Speed if you've been Hit Recently": {
+    "extra": "",
+    "mod_types": [
+      "INC"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "10% increased Critical Strike Chance for each Mine Detonated\nRecently, up to 100%": {
+    "extra": "  for each  Detonated\nRecently, up to 100% ",
+    "mod_types": [
+      "INC"
+    ],
+    "ok": true,
+    "unsupported": true
+  },
+  "10% increased Effect of Arcane Surge on you per\n200 Mana spent Recently, up to 50%": {
+    "extra": "  per\n200 Mana spent Recently, up to 50% ",
+    "mod_types": [
+      "INC"
+    ],
+    "ok": true,
+    "unsupported": true
+  },
+  "10% increased Mana Recovery rate": {
+    "extra": "",
+    "mod_types": [
+      "INC"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "10% increased Minion Damage per Raised Spectre": {
+    "extra": "",
+    "mod_types": [
+      "LIST"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "10% increased Quantity of Primal Wisps found in the Viridian Wildwood": {
+    "extra": " Quantity of Primal Wisps found in the Viridian Wildwood ",
+    "mod_types": [],
+    "ok": true,
+    "unsupported": true
+  },
+  "10% increased Quantity of Vivid Wisps found in the Viridian Wildwood": {
+    "extra": " Quantity of Vivid Wisps found in the Viridian Wildwood ",
+    "mod_types": [],
+    "ok": true,
+    "unsupported": true
+  },
+  "10% increased Quantity of Wild Wisps found in the Viridian Wildwood": {
+    "extra": " Quantity of Wild Wisps found in the Viridian Wildwood ",
+    "mod_types": [],
+    "ok": true,
+    "unsupported": true
+  },
+  "10% increased Rarity of Items found from Slain Unique Enemies": {
+    "extra": "  from Slain Unique Enemies ",
+    "mod_types": [
+      "INC"
+    ],
+    "ok": true,
+    "unsupported": true
+  },
+  "10% of Damage Leeched as Life while Focused": {
+    "extra": "",
+    "mod_types": [
+      "BASE"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "10% reduced Duration of Damaging Ailments on you per Bark": {
+    "extra": "",
+    "mod_types": [
+      "INC"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "100% chance to Defend with 200% of Armour\nMaximum Damage Reduction for any Damage Type is 50%": {
+    "extra": " to Defend with 200% of \nMaximum Damage Reduction for any Damage Type is 50% ",
+    "mod_types": [
+      "BASE"
+    ],
+    "ok": true,
+    "unsupported": true
+  },
+  "100% increased Armour and Energy Shield from Equipped Body Armour if Equipped Helmet,\nGloves and Boots all have Armour and Energy Shield": {
+    "extra": "   if Equipped Helmet,\nGloves and Boots all have Armour and Energy Shield ",
+    "mod_types": [
+      "INC"
+    ],
+    "ok": true,
+    "unsupported": true
+  },
+  "104% more Recovery if used while on Low Life": {
+    "extra": "",
+    "mod_types": [
+      "MORE"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "11% increased Attack Speed while Fortified": {
+    "extra": "",
+    "mod_types": [
+      "INC"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "11% increased Mana Recovery rate": {
+    "extra": "",
+    "mod_types": [
+      "INC"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "110% more Recovery if used while on Low Life": {
+    "extra": "",
+    "mod_types": [
+      "MORE"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "116% more Recovery if used while on Low Life": {
+    "extra": "",
+    "mod_types": [
+      "MORE"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "118% increased Physical Damage": {
+    "extra": "",
+    "mod_types": [
+      "INC"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "122% more Recovery if used while on Low Life": {
+    "extra": "",
+    "mod_types": [
+      "MORE"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "125% increased Charges per use": {
+    "extra": "",
+    "mod_types": [
+      "INC"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "13% additional Elemental Resistances during Effect": {
+    "extra": "",
+    "mod_types": [
+      "BASE"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "13% chance to gain a Power, Frenzy or Endurance Charge on Kill": {
+    "extra": "a Power, Frenzy or Endurance Charge  ",
+    "mod_types": [],
+    "ok": false,
+    "unsupported": true
+  },
+  "13% chance to inflict Lightning Exposure on Hit": {
+    "extra": "",
+    "mod_types": [
+      "BASE"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "13% increased Area Damage": {
+    "extra": "",
+    "mod_types": [
+      "INC"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "13% increased Movement Speed when on Low Life": {
+    "extra": "",
+    "mod_types": [
+      "INC"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "13% reduced Effect of Freeze on you": {
+    "extra": "",
+    "mod_types": [
+      "INC"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "13% reduced Mana Cost of Minion Skills": {
+    "extra": "",
+    "mod_types": [
+      "INC"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "135% increased Charges per use": {
+    "extra": "",
+    "mod_types": [
+      "INC"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "14% increased Attack Speed while Fortified": {
+    "extra": "",
+    "mod_types": [
+      "INC"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "14% increased Flask Mana Recovery rate": {
+    "extra": "",
+    "mod_types": [
+      "INC"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "15 Mana gained when you Block": {
+    "extra": "",
+    "mod_types": [
+      "BASE"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "15% chance that if you would gain Rage on Hit, you instead gain up to your maximum Rage": {
+    "extra": " that if you would gain Rage , you instead gain up to your  ",
+    "mod_types": [
+      "BASE"
+    ],
+    "ok": true,
+    "unsupported": true
+  },
+  "15% chance to Blind Enemies on Hit with Attacks": {
+    "extra": " to Blind Enemies  with Attacks ",
+    "mod_types": [],
+    "ok": true,
+    "unsupported": true
+  },
+  "15% chance to gain a Frenzy Charge on Hit while Blinded": {
+    "extra": "a Frenzy Charge on Hit  ",
+    "mod_types": [],
+    "ok": false,
+    "unsupported": true
+  },
+  "15% increased Attack Speed if you've Killed Recently": {
+    "extra": "",
+    "mod_types": [
+      "INC"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "15% increased Cast Speed if you've Killed Recently": {
+    "extra": "",
+    "mod_types": [
+      "INC"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "15% reduced Mana Cost of Skills": {
+    "extra": "",
+    "mod_types": [
+      "INC"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "16% additional Elemental Resistances during Effect": {
+    "extra": "",
+    "mod_types": [
+      "BASE"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "16% chance to Gain Arcane Surge when you deal a Critical Strike": {
+    "extra": "",
+    "mod_types": [
+      "FLAG"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "16% increased Damage with Bow Skills": {
+    "extra": "",
+    "mod_types": [
+      "INC"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "17% chance to gain Unholy Might for 3 seconds on Kill": {
+    "extra": "",
+    "mod_types": [
+      "FLAG"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "18% chance to Maim on Hit": {
+    "extra": " to Maim  ",
+    "mod_types": [],
+    "ok": true,
+    "unsupported": true
+  },
+  "18% increased Energy Shield Recovery rate": {
+    "extra": "",
+    "mod_types": [
+      "INC"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "18% increased Life Recovery rate": {
+    "extra": "",
+    "mod_types": [
+      "INC"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "18% reduced Attribute Requirements": {
+    "extra": "",
+    "mod_types": [
+      "INC"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "18% reduced Effect of Freeze on you": {
+    "extra": "",
+    "mod_types": [
+      "INC"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "19% increased Attack Speed if you've Killed Recently": {
+    "extra": "",
+    "mod_types": [
+      "INC"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "19% increased Cast Speed if you've Killed Recently": {
+    "extra": "",
+    "mod_types": [
+      "INC"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "2 Valour consumed for that Banner": {
+    "extra": " Valour consumed for that Banner ",
+    "mod_types": [],
+    "ok": true,
+    "unsupported": true
+  },
+  "20% chance on Hit to remove all Impales from Enemy\nImpales removed this way multiply their Reflected Damage for this Hit by the number of Hits they have left": {
+    "extra": "  to remove all Impales from Enemy\nImpales removed this way multiply their Reflected  for this Hit by the number of Hits they have left ",
+    "mod_types": [
+      "BASE"
+    ],
+    "ok": true,
+    "unsupported": true
+  },
+  "20% increased Attack Speed if you've Killed Recently": {
+    "extra": "",
+    "mod_types": [
+      "INC"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "20% increased Cast Speed if you've Killed Recently": {
+    "extra": "",
+    "mod_types": [
+      "INC"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "20% increased Flask Mana Recovery rate": {
+    "extra": "",
+    "mod_types": [
+      "INC"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "20% increased Maximum total Life Recovery per second from\nLeech if you've dealt a Critical Strike recently": {
+    "extra": " Maximum total  Recovery per second from\nLeech  ",
+    "mod_types": [
+      "INC"
+    ],
+    "ok": true,
+    "unsupported": true
+  },
+  "20% increased Movement Speed during Effect": {
+    "extra": "",
+    "mod_types": [
+      "INC"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "20% less Attack Damage taken if you haven't been Hit by an Attack Recently\n10% more chance to Evade Attacks if you have been Hit by an Attack Recently\n20% more Attack Damage taken if you have been Hit by an Attack Recently": {
+    "extra": "  \n10% more chance to Evade Attacks \n20% more Attack Damage taken if you have been Hit by an Attack Recently ",
+    "mod_types": [
+      "MORE"
+    ],
+    "ok": true,
+    "unsupported": true
+  },
+  "20% reduced Endurance, Frenzy and Power Charge Duration": {
+    "extra": "",
+    "mod_types": [
+      "INC"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "20% reduced Enemy Stun Threshold with this Weapon": {
+    "extra": " Enemy Stun Thresh ",
+    "mod_types": [],
+    "ok": true,
+    "unsupported": true
+  },
+  "206% increased Physical Damage": {
+    "extra": "",
+    "mod_types": [
+      "INC"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "21% chance to Freeze, Shock and Ignite during Effect": {
+    "extra": "",
+    "mod_types": [
+      "BASE"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "21% chance to gain Unholy Might for 3 seconds on Kill": {
+    "extra": "",
+    "mod_types": [
+      "FLAG"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "21% increased Attack Speed while Fortified": {
+    "extra": "",
+    "mod_types": [
+      "INC"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "23% chance to gain an Endurance Charge when you Taunt an Enemy": {
+    "extra": "an Endurance Charge when you Taunt an Enemy ",
+    "mod_types": [],
+    "ok": false,
+    "unsupported": true
+  },
+  "23% increased Energy Shield from Equipped Body Armour": {
+    "extra": "",
+    "mod_types": [
+      "INC"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "23% increased Melee Damage during any Flask Effect": {
+    "extra": "",
+    "mod_types": [
+      "INC"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "23% increased Projectile Attack Damage during any Flask Effect": {
+    "extra": "",
+    "mod_types": [
+      "INC"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "23% increased Spell Damage during any Flask Effect": {
+    "extra": "",
+    "mod_types": [
+      "INC"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "23% reduced Fishing Pool Consumption": {
+    "extra": " Fishing Pool Consumption ",
+    "mod_types": [],
+    "ok": true,
+    "unsupported": true
+  },
+  "24% chance to gain Unholy Might for 3 seconds on Kill": {
+    "extra": "",
+    "mod_types": [
+      "FLAG"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "24% increased Attack Speed while Fortified": {
+    "extra": "",
+    "mod_types": [
+      "INC"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "25 to 44 added Fire Damage against Burning Enemies": {
+    "extra": "",
+    "mod_types": [
+      "BASE"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "25% chance to Freeze, Shock and Ignite during Effect": {
+    "extra": "",
+    "mod_types": [
+      "BASE"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "25% faster Restoration of Ward": {
+    "extra": "",
+    "mod_types": [
+      "INC"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "25% increased Attack Speed if you've Killed Recently": {
+    "extra": "",
+    "mod_types": [
+      "INC"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "25% increased Cast Speed if you've Killed Recently": {
+    "extra": "",
+    "mod_types": [
+      "INC"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "25% increased Damage while you have no Energy Shield": {
+    "extra": "",
+    "mod_types": [
+      "INC"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "25% increased Maximum Life if you have Equipped Gloves with no Socketed Gems": {
+    "extra": "",
+    "mod_types": [
+      "INC"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "25% more Maximum Lightning Damage\n50% less Minimum Lightning Damage\nCannot deal non-Lightning Damage": {
+    "extra": " \n50% less Minimum Lightning Damage\nCannot deal non-Lightning Damage ",
+    "mod_types": [
+      "MORE"
+    ],
+    "ok": true,
+    "unsupported": true
+  },
+  "25% more Melee Damage while Burning": {
+    "extra": "",
+    "mod_types": [
+      "MORE"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "25% reduced effect": {
+    "extra": "",
+    "mod_types": [
+      "INC"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "26% increased Damage with Bow Skills": {
+    "extra": "",
+    "mod_types": [
+      "INC"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "26% increased Flask Mana Recovery rate": {
+    "extra": "",
+    "mod_types": [
+      "INC"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "28% increased Melee Damage during any Flask Effect": {
+    "extra": "",
+    "mod_types": [
+      "INC"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "28% increased Projectile Attack Damage during any Flask Effect": {
+    "extra": "",
+    "mod_types": [
+      "INC"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "28% increased Spell Damage during any Flask Effect": {
+    "extra": "",
+    "mod_types": [
+      "INC"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "29% chance to Freeze, Shock and Ignite during Effect": {
+    "extra": "",
+    "mod_types": [
+      "BASE"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "29% increased Attack Speed if you've Killed Recently": {
+    "extra": "",
+    "mod_types": [
+      "INC"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "29% increased Cast Speed if you've Killed Recently": {
+    "extra": "",
+    "mod_types": [
+      "INC"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "29% increased Critical Strike Chance": {
+    "extra": "",
+    "mod_types": [
+      "INC"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "295% increased Physical Damage": {
+    "extra": "",
+    "mod_types": [
+      "INC"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "3% increased Area of Effect per 50 Strength": {
+    "extra": "",
+    "mod_types": [
+      "INC"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "30 to 49 added Fire Damage against Burning Enemies": {
+    "extra": "",
+    "mod_types": [
+      "BASE"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "30% chance to gain a Power Charge on Kill": {
+    "extra": "a Power Charge  ",
+    "mod_types": [],
+    "ok": false,
+    "unsupported": true
+  },
+  "30% increased Armour and Evasion Rating if your Main Hand Weapon\nhas a Red and Green Socket": {
+    "extra": "  if your \nhas a Red and Green Socket ",
+    "mod_types": [
+      "INC"
+    ],
+    "ok": true,
+    "unsupported": true
+  },
+  "30% increased Damage with Hits and Ailments against Blinded Enemies": {
+    "extra": "",
+    "mod_types": [
+      "INC"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "30% increased Movement Speed if you have Equipped Boots with no Socketed Gems": {
+    "extra": "",
+    "mod_types": [
+      "INC"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "32% increased Flask Mana Recovery rate": {
+    "extra": "",
+    "mod_types": [
+      "INC"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "32% reduced Attribute Requirements": {
+    "extra": "",
+    "mod_types": [
+      "INC"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "33% Chance to Avoid being Stunned during Effect": {
+    "extra": "",
+    "mod_types": [
+      "BASE"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "33% chance to Avoid being Ignited during Effect": {
+    "extra": "",
+    "mod_types": [
+      "BASE"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "33% chance to Avoid being Shocked during Effect": {
+    "extra": "",
+    "mod_types": [
+      "BASE"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "33% chance to Freeze, Shock and Ignite during Effect": {
+    "extra": "",
+    "mod_types": [
+      "BASE"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "33% increased Damage with Hits and Ailments against Blinded Enemies": {
+    "extra": "",
+    "mod_types": [
+      "INC"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "34% increased Damage with Bow Skills": {
+    "extra": "",
+    "mod_types": [
+      "INC"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "35 Life gained when you Block": {
+    "extra": "",
+    "mod_types": [
+      "BASE"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "35% increased Damage with Non-Vaal Skills during Soul Gain Prevention": {
+    "extra": "",
+    "mod_types": [
+      "INC"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "36% increased Critical Strike Chance if you have Killed Recently": {
+    "extra": "",
+    "mod_types": [
+      "INC"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "38% Chance to Avoid being Stunned during Effect": {
+    "extra": "",
+    "mod_types": [
+      "BASE"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "38% chance to Avoid being Ignited during Effect": {
+    "extra": "",
+    "mod_types": [
+      "BASE"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "38% chance to Avoid being Shocked during Effect": {
+    "extra": "",
+    "mod_types": [
+      "BASE"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "38% increased Rarity of Items Dropped by Slain Rare or Unique Enemies": {
+    "extra": "",
+    "mod_types": [
+      "INC"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "39% reduced Effect of Chill on you during Effect": {
+    "extra": "",
+    "mod_types": [
+      "INC"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "39% reduced Effect of Curses on you during Effect": {
+    "extra": "",
+    "mod_types": [
+      "INC"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "39% reduced Effect of Shock on you during Effect": {
+    "extra": "",
+    "mod_types": [
+      "INC"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "39% reduced Freeze Duration on you during Effect": {
+    "extra": "",
+    "mod_types": [
+      "INC"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "4% chance to gain a Frenzy Charge when you Hit a Rare or Unique Enemy": {
+    "extra": "a Frenzy Charge when you Hit a Rare or Unique Enemy ",
+    "mod_types": [],
+    "ok": false,
+    "unsupported": true
+  },
+  "40% increased Critical Strike Chance against Blinded Enemies": {
+    "extra": "",
+    "mod_types": [
+      "INC"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "40% more Attack Damage if Accuracy Rating is higher than Maximum Life\nNever deal Critical Strikes": {
+    "extra": "  if Accuracy Rating is higher than Maximum Life\nNever deal Critical Strikes ",
+    "mod_types": [
+      "MORE"
+    ],
+    "ok": true,
+    "unsupported": true
+  },
+  "43% Chance to Avoid being Stunned during Effect": {
+    "extra": "",
+    "mod_types": [
+      "BASE"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "43% chance to Avoid being Ignited during Effect": {
+    "extra": "",
+    "mod_types": [
+      "BASE"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "43% chance to Avoid being Shocked during Effect": {
+    "extra": "",
+    "mod_types": [
+      "BASE"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "43% increased Armour during Effect": {
+    "extra": "",
+    "mod_types": [
+      "INC"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "43% increased Evasion Rating during Effect": {
+    "extra": "",
+    "mod_types": [
+      "INC"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "44% increased Mana Recovered": {
+    "extra": "",
+    "mod_types": [
+      "INC"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "45% chance to Blind Enemies on Critical Strike": {
+    "extra": " to Blind Enemies ",
+    "mod_types": [],
+    "ok": true,
+    "unsupported": true
+  },
+  "45% increased Armour and Energy Shield": {
+    "extra": "",
+    "mod_types": [
+      "INC"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "45% reduced Effect of Chill on you during Effect": {
+    "extra": "",
+    "mod_types": [
+      "INC"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "45% reduced Effect of Curses on you during Effect": {
+    "extra": "",
+    "mod_types": [
+      "INC"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "45% reduced Effect of Shock on you during Effect": {
+    "extra": "",
+    "mod_types": [
+      "INC"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "45% reduced Freeze Duration on you during Effect": {
+    "extra": "",
+    "mod_types": [
+      "INC"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "46% increased Critical Strike Chance if you have Killed Recently": {
+    "extra": "",
+    "mod_types": [
+      "INC"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "46% increased Damage with Non-Vaal Skills during Soul Gain Prevention": {
+    "extra": "",
+    "mod_types": [
+      "INC"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "48% Chance to Avoid being Stunned during Effect": {
+    "extra": "",
+    "mod_types": [
+      "BASE"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "48% chance to Avoid being Ignited during Effect": {
+    "extra": "",
+    "mod_types": [
+      "BASE"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "48% chance to Avoid being Shocked during Effect": {
+    "extra": "",
+    "mod_types": [
+      "BASE"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "48% increased Armour during Effect": {
+    "extra": "",
+    "mod_types": [
+      "INC"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "48% increased Evasion Rating during Effect": {
+    "extra": "",
+    "mod_types": [
+      "INC"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "5% chance to Defend with 200% of Armour for each\ntime you've been Hit by an Enemy Recently, up to 30%": {
+    "extra": " to Defend with 200% of  for each\ntime you've been Hit by an Enemy Recently, up to 30% ",
+    "mod_types": [
+      "BASE"
+    ],
+    "ok": true,
+    "unsupported": true
+  },
+  "5% increased Character Size": {
+    "extra": " Character Size ",
+    "mod_types": [],
+    "ok": true,
+    "unsupported": true
+  },
+  "5% increased Poison Duration for each Poison you have inflicted Recently, up\nto a maximum of 100%": {
+    "extra": "  , up\nto a maximum of 100% ",
+    "mod_types": [
+      "INC"
+    ],
+    "ok": true,
+    "unsupported": true
+  },
+  "5% reduced Damage taken from Damage Over Time": {
+    "extra": "",
+    "mod_types": [
+      "INC"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "50% Chance to Avoid being Stunned during Effect": {
+    "extra": "",
+    "mod_types": [
+      "BASE"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "50% increased Armour": {
+    "extra": "",
+    "mod_types": [
+      "INC"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "50% increased Critical Strike Chance if you have Killed Recently": {
+    "extra": "",
+    "mod_types": [
+      "INC"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "50% increased Life Reservation Efficiency of Skills": {
+    "extra": "",
+    "mod_types": [
+      "INC"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "50% increased Mana Recovered": {
+    "extra": "",
+    "mod_types": [
+      "INC"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "50% less Life Regeneration Rate\n50% less maximum Total Life Recovery per Second from Leech\nEnergy Shield Recharge instead applies to Life": {
+    "extra": " \n50% less maximum Total Life Recovery per Second from Leech\nEnergy Shield Recharge instead applies to Life ",
+    "mod_types": [
+      "MORE"
+    ],
+    "ok": true,
+    "unsupported": true
+  },
+  "50% of Physical, Cold and Lightning Damage Converted to Fire Damage\nDeal no Non-Fire Damage": {
+    "extra": " Physical, Cold and  \nDeal no Non-Fire Damage ",
+    "mod_types": [
+      "BASE"
+    ],
+    "ok": true,
+    "unsupported": true
+  },
+  "50% of Recovery applied Instantly": {
+    "extra": "",
+    "mod_types": [
+      "BASE"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "50% reduced Effect of Chill on you during Effect": {
+    "extra": "",
+    "mod_types": [
+      "INC"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "50% reduced Effect of Curses on you during Effect": {
+    "extra": "",
+    "mod_types": [
+      "INC"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "50% reduced Effect of Shock on you during Effect": {
+    "extra": "",
+    "mod_types": [
+      "INC"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "50% reduced Freeze Duration on you during Effect": {
+    "extra": "",
+    "mod_types": [
+      "INC"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "53% increased Armour during Effect": {
+    "extra": "",
+    "mod_types": [
+      "INC"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "53% increased Evasion Rating during Effect": {
+    "extra": "",
+    "mod_types": [
+      "INC"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "54% increased Block and Stun Recovery during Effect": {
+    "extra": "",
+    "mod_types": [
+      "INC"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "56% increased Mana Recovered": {
+    "extra": "",
+    "mod_types": [
+      "INC"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "56% reduced Effect of Chill on you during Effect": {
+    "extra": "",
+    "mod_types": [
+      "INC"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "56% reduced Effect of Curses on you during Effect": {
+    "extra": "",
+    "mod_types": [
+      "INC"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "56% reduced Effect of Shock on you during Effect": {
+    "extra": "",
+    "mod_types": [
+      "INC"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "56% reduced Freeze Duration on you during Effect": {
+    "extra": "",
+    "mod_types": [
+      "INC"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "6 to 9 Added Physical Damage with Bow Attacks": {
+    "extra": "",
+    "mod_types": [
+      "BASE"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "6% chance to Avoid Cold Damage from Hits": {
+    "extra": "",
+    "mod_types": [
+      "BASE"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "6% chance to Avoid Lightning Damage from Hits": {
+    "extra": "",
+    "mod_types": [
+      "BASE"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "6% chance to Ignite": {
+    "extra": "",
+    "mod_types": [
+      "BASE"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "6% chance to Taunt Enemies on Hit with Attacks": {
+    "extra": " to Taunt Enemies  with Attacks ",
+    "mod_types": [],
+    "ok": true,
+    "unsupported": true
+  },
+  "6% chance to deal Double Damage if you have Stunned an Enemy Recently": {
+    "extra": "",
+    "mod_types": [
+      "BASE"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "6% chance to gain Unholy Might for 3 seconds on Kill": {
+    "extra": "",
+    "mod_types": [
+      "FLAG"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "60% increased Block and Stun Recovery during Effect": {
+    "extra": "",
+    "mod_types": [
+      "INC"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "62% increased Mana Recovered": {
+    "extra": "",
+    "mod_types": [
+      "INC"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "65% increased Physical Damage": {
+    "extra": "",
+    "mod_types": [
+      "INC"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "66% increased Block and Stun Recovery during Effect": {
+    "extra": "",
+    "mod_types": [
+      "INC"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "72% increased Block and Stun Recovery during Effect": {
+    "extra": "",
+    "mod_types": [
+      "INC"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "75% increased Charges per use": {
+    "extra": "",
+    "mod_types": [
+      "INC"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "78% increased Block and Stun Recovery during Effect": {
+    "extra": "",
+    "mod_types": [
+      "INC"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "8% chance to Taunt Enemies on Hit with Attacks": {
+    "extra": " to Taunt Enemies  with Attacks ",
+    "mod_types": [],
+    "ok": true,
+    "unsupported": true
+  },
+  "8% chance to gain Unholy Might for 3 seconds on Kill": {
+    "extra": "",
+    "mod_types": [
+      "FLAG"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "8% chance to gain an Endurance Charge on Critical Strike": {
+    "extra": "an Endurance Charge ",
+    "mod_types": [],
+    "ok": false,
+    "unsupported": true
+  },
+  "8% chance to gain an Endurance Charge when you Hit a Bleeding Enemy": {
+    "extra": "an Endurance Charge when you Hit a Bleeding Enemy ",
+    "mod_types": [],
+    "ok": false,
+    "unsupported": true
+  },
+  "8% increased Damage with Bow Skills": {
+    "extra": "",
+    "mod_types": [
+      "INC"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "8% increased Flask Mana Recovery rate": {
+    "extra": "",
+    "mod_types": [
+      "INC"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "8% increased Mana Recovery rate": {
+    "extra": "",
+    "mod_types": [
+      "INC"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "8% increased Movement Speed if you haven't been Hit Recently": {
+    "extra": "",
+    "mod_types": [
+      "INC"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "88% increased Energy Shield": {
+    "extra": "",
+    "mod_types": [
+      "INC"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "90% increased Armour and Energy Shield": {
+    "extra": "",
+    "mod_types": [
+      "INC"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "90% increased Critical Strike Chance against Poisoned Enemies": {
+    "extra": "",
+    "mod_types": [
+      "INC"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "90% increased Critical Strike Chance if you have Killed Recently": {
+    "extra": "",
+    "mod_types": [
+      "INC"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "Adds 1 to 15 Lightning Damage to Attacks": {
+    "extra": "",
+    "mod_types": [
+      "BASE"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "Adds 1 to 32 Lightning Damage to Attacks": {
+    "extra": "",
+    "mod_types": [
+      "BASE"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "Adds 1 to 44 Lightning Damage if you've dealt a Critical Strike Recently": {
+    "extra": "",
+    "mod_types": [
+      "BASE"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "Adds 1 to 54 Lightning Damage if you've dealt a Critical Strike Recently": {
+    "extra": "",
+    "mod_types": [
+      "BASE"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "Adds 10 to 25 Fire Damage to Attacks": {
+    "extra": "",
+    "mod_types": [
+      "BASE"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "Adds 130 to 195 Cold Damage": {
+    "extra": "",
+    "mod_types": [
+      "BASE"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "Adds 17 to 32 Cold Damage to Spells": {
+    "extra": "",
+    "mod_types": [
+      "BASE"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "Adds 18 to 24 Cold Damage if you've dealt a Critical Strike Recently": {
+    "extra": "",
+    "mod_types": [
+      "BASE"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "Adds 18 to 24 Fire Damage if you've dealt a Critical Strike Recently": {
+    "extra": "",
+    "mod_types": [
+      "BASE"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "Adds 18 to 28 Chaos Damage to Spells and Attacks during any Flask Effect": {
+    "extra": "",
+    "mod_types": [
+      "BASE"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "Adds 2 to 4 Cold Damage to Attacks with this Weapon per 10 Dexterity": {
+    "extra": "",
+    "mod_types": [
+      "BASE"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "Adds 20 to 36 Physical Damage to Spells": {
+    "extra": "",
+    "mod_types": [
+      "BASE"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "Adds 20 to 38 Cold Damage against Chilled or Frozen Enemies": {
+    "extra": "",
+    "mod_types": [
+      "BASE"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "Adds 23 to 31 Cold Damage if you've dealt a Critical Strike Recently": {
+    "extra": "",
+    "mod_types": [
+      "BASE"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "Adds 23 to 31 Fire Damage if you've dealt a Critical Strike Recently": {
+    "extra": "",
+    "mod_types": [
+      "BASE"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "Adds 23 to 42 Fire Damage against Ignited Enemies": {
+    "extra": "",
+    "mod_types": [
+      "BASE"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "Adds 23 to 45 Cold Damage against Chilled or Frozen Enemies": {
+    "extra": "",
+    "mod_types": [
+      "BASE"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "Adds 25 to 36 Physical Damage": {
+    "extra": "",
+    "mod_types": [
+      "BASE"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "Adds 25 to 46 Physical Damage to Spells": {
+    "extra": "",
+    "mod_types": [
+      "BASE"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "Adds 27 to 51 Fire Damage against Ignited Enemies": {
+    "extra": "",
+    "mod_types": [
+      "BASE"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "Adds 27 to 86 Physical Damage": {
+    "extra": "",
+    "mod_types": [
+      "BASE"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "Adds 3 to 5 Cold Damage to Attacks with this Weapon per 10 Dexterity": {
+    "extra": "",
+    "mod_types": [
+      "BASE"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "Adds 3 to 6 Cold Damage to Attacks": {
+    "extra": "",
+    "mod_types": [
+      "BASE"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "Adds 30 to 55 Physical Damage to Spells": {
+    "extra": "",
+    "mod_types": [
+      "BASE"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "Adds 33 to 47 Cold Damage to Attacks": {
+    "extra": "",
+    "mod_types": [
+      "BASE"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "Adds 36 to 102 Physical Damage": {
+    "extra": "",
+    "mod_types": [
+      "BASE"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "Adds 38 to 105 Physical Damage": {
+    "extra": "",
+    "mod_types": [
+      "BASE"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "Adds 47 to 87 Physical Damage to Spells": {
+    "extra": "",
+    "mod_types": [
+      "BASE"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "Adds 5 to 11 Physical Damage to Attacks": {
+    "extra": "",
+    "mod_types": [
+      "BASE"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "Adds 5 to 71 Lightning Damage against Shocked Enemies": {
+    "extra": "",
+    "mod_types": [
+      "BASE"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "Adds 57 to 104 Physical Damage to Spells": {
+    "extra": "",
+    "mod_types": [
+      "BASE"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "Adds 6 to 13 Cold Damage to Attacks": {
+    "extra": "",
+    "mod_types": [
+      "BASE"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "Adds 6 to 84 Lightning Damage against Shocked Enemies": {
+    "extra": "",
+    "mod_types": [
+      "BASE"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "Adds 60 to 110 Chaos Damage in Off Hand": {
+    "extra": "",
+    "mod_types": [
+      "BASE"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "Adds 60 to 110 Fire Damage in Main Hand": {
+    "extra": "",
+    "mod_types": [
+      "BASE"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "Adds 76 to 141 Physical Damage to Spells": {
+    "extra": "",
+    "mod_types": [
+      "BASE"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "Adds 88 to 183 Chaos Damage in Off Hand": {
+    "extra": "",
+    "mod_types": [
+      "BASE"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "Adds 88 to 183 Fire Damage in Main Hand": {
+    "extra": "",
+    "mod_types": [
+      "BASE"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "Adds 9 to 20 Fire Damage to Spells and Attacks": {
+    "extra": "",
+    "mod_types": [
+      "BASE"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "Adds 90 to 167 Physical Damage to Spells": {
+    "extra": "",
+    "mod_types": [
+      "BASE"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "Always Hits Burning Enemies": {
+    "extra": "Always Hits Burning Enemies ",
+    "mod_types": [],
+    "ok": false,
+    "unsupported": true
+  },
+  "Attack Projectiles always inflict Bleeding and Maim, and Knock Back Enemies\nProjectiles cannot Pierce, Fork or Chain": {
+    "extra": "Attack Projectiles always inflict Bleeding and Maim, and Knock Back Enemies\nProjectiles cannot Pierce, Fork or Chain ",
+    "mod_types": [],
+    "ok": false,
+    "unsupported": true
+  },
+  "Attacks have +0.8% to Critical Strike Chance": {
+    "extra": "",
+    "mod_types": [
+      "BASE"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "Attacks with this Weapon Penetrate 10% Cold Resistance": {
+    "extra": "",
+    "mod_types": [
+      "BASE"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "Attacks with this Weapon Penetrate 10% Fire Resistance": {
+    "extra": "",
+    "mod_types": [
+      "BASE"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "Attacks with this Weapon Penetrate 10% Lightning Resistance": {
+    "extra": "",
+    "mod_types": [
+      "BASE"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "Attacks with this Weapon Penetrate 12% Cold Resistance": {
+    "extra": "",
+    "mod_types": [
+      "BASE"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "Attacks with this Weapon Penetrate 12% Fire Resistance": {
+    "extra": "",
+    "mod_types": [
+      "BASE"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "Attacks with this Weapon Penetrate 12% Lightning Resistance": {
+    "extra": "",
+    "mod_types": [
+      "BASE"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "Attacks with this Weapon Penetrate 6% Cold Resistance": {
+    "extra": "",
+    "mod_types": [
+      "BASE"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "Attacks with this Weapon Penetrate 6% Fire Resistance": {
+    "extra": "",
+    "mod_types": [
+      "BASE"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "Attacks with this Weapon Penetrate 6% Lightning Resistance": {
+    "extra": "",
+    "mod_types": [
+      "BASE"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "Attacks with this Weapon deal 80 to 120 added Chaos Damage against\nEnemies affected by at least 5 Poisons": {
+    "extra": " against\nEnemies affected by at least 5 Poisons ",
+    "mod_types": [
+      "BASE"
+    ],
+    "ok": true,
+    "unsupported": true
+  },
+  "Auras from your Skills can only affect you\nAura Skills have 1% more Aura Effect per 2% of maximum Mana they Reserve\n40% more Mana Reservation of Aura Skills": {
+    "extra": "Auras from your Skills can only affect you\nAura Skills have 1% more Aura Effect per 2% of maximum Mana they Reserve\n40% more Mana Reservation of Aura Skills ",
+    "mod_types": [],
+    "ok": false,
+    "unsupported": true
+  },
+  "Auras from your Skills grant 2% increased Attack and Cast\nSpeed to you and Allies": {
+    "extra": " Attack and Cast\nSpeed  ",
+    "mod_types": [],
+    "ok": true,
+    "unsupported": true
+  },
+  "Auras from your Skills grant 3% increased Attack and Cast\nSpeed to you and Allies": {
+    "extra": " Attack and Cast\nSpeed  ",
+    "mod_types": [],
+    "ok": true,
+    "unsupported": true
+  },
+  "Auras from your Skills have 8% increased Effect on you for\neach Herald affecting you, up to a maximum of 40%": {
+    "extra": "Auras from your Skills have 8% increased Effect on you for\neach Herald affecting you, up to a maximum of 40% ",
+    "mod_types": [],
+    "ok": false,
+    "unsupported": true
+  },
+  "Bleeding Enemies you Kill Explode, dealing 20% of\ntheir Maximum Life as Physical Damage": {
+    "extra": "Bleeding Enemies you Kill Explode, dealing 20% of\ntheir Maximum Life as Physical Damage ",
+    "mod_types": [],
+    "ok": false,
+    "unsupported": true
+  },
+  "Cannot Evade enemy Attacks\nCannot be Stunned": {
+    "extra": "Cannot Evade enemy Attacks\nCannot be Stunned ",
+    "mod_types": [],
+    "ok": false,
+    "unsupported": true
+  },
+  "Cannot Ignite, Chill, Freeze or Shock\nCritical Strikes inflict Scorch, Brittle and Sapped": {
+    "extra": "Cannot Ignite, Chill, Freeze or Shock\nCritical Strikes inflict Scorch, Brittle and Sapped ",
+    "mod_types": [],
+    "ok": false,
+    "unsupported": true
+  },
+  "Cannot Recover Energy Shield to above Armour\n3% of Physical Damage prevented from Hits Recently is Regenerated as Energy Shield per second": {
+    "extra": "Cannot Recover Energy Shield to above Armour\n3% of Physical Damage prevented from Hits Recently is Regenerated as Energy Shield per second ",
+    "mod_types": [],
+    "ok": false,
+    "unsupported": true
+  },
+  "Cannot Recover Energy Shield to above Evasion Rating\nEvery 2 seconds, gain a Ghost Shroud, up to a maximum of 3\nWhen Hit, lose a Ghost Shroud to Recover Energy Shield equal to 3% of your Evasion Rating": {
+    "extra": "Cannot Recover Energy Shield to above Evasion Rating\nEvery 2 seconds, gain a Ghost Shroud, up to a maximum of 3\nWhen Hit, lose a Ghost Shroud to Recover Energy Shield equal to 3% of your Evasion Rating ",
+    "mod_types": [],
+    "ok": false,
+    "unsupported": true
+  },
+  "Chance to Block Attack Damage is doubled\nChance to Block Spell Damage is doubled\nYou take 65% of Damage from Blocked Hits": {
+    "extra": " Attack Damage \nChance to Block  Damage is doubled\nYou take 65% of Damage from Blocked Hits ",
+    "mod_types": [
+      "MORE",
+      "OVERRIDE"
+    ],
+    "ok": true,
+    "unsupported": true
+  },
+  "Consecrated Ground you create also grants\n50% reduced duration of Damaging Ailments on you": {
+    "extra": "Consecrated Ground you create also grants\n50% reduced duration of Damaging Ailments on you ",
+    "mod_types": [],
+    "ok": false,
+    "unsupported": true
+  },
+  "Consecrated Ground you create causes Life Regeneration to\nalso Recover Energy Shield for you and Allies": {
+    "extra": "Consecrated Ground you create causes Life Regeneration to\nalso Recover Energy Shield for you and Allies ",
+    "mod_types": [],
+    "ok": false,
+    "unsupported": true
+  },
+  "Damage over Time Multiplier for Ailments is equal to Critical Strike Multiplier\nCritical Strikes do not deal extra Damage\nNon-Critical Strikes cannot inflict Ailments": {
+    "extra": "Damage over Time Multiplier for Ailments is equal to Critical Strike Multiplier\nCritical Strikes do not deal extra Damage\nNon-Critical Strikes cannot inflict Ailments ",
+    "mod_types": [],
+    "ok": false,
+    "unsupported": true
+  },
+  "Damageable Minions deal 30% increased Damage for each second they have been alive,\nup to a maximum of 150%": {
+    "extra": "Damageable Minions deal 30% increased Damage for each second they have been alive,\nup to a maximum of 150% ",
+    "mod_types": [],
+    "ok": false,
+    "unsupported": true
+  },
+  "Damageable Minions take 5% increased Damage for each second they have been alive,\nup to a maximum of 50%": {
+    "extra": "Damageable Minions take 5% increased Damage for each second they have been alive,\nup to a maximum of 50% ",
+    "mod_types": [],
+    "ok": false,
+    "unsupported": true
+  },
+  "Defences from Equipped Body Armour are doubled if it has no Socketed Gems": {
+    "extra": "",
+    "mod_types": [
+      "MORE",
+      "OVERRIDE"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "Dexterity provides no inherent bonus to Evasion Rating\n+1% Chance to Suppress Spell Damage per 15 Dexterity": {
+    "extra": "Dexterity provides no inherent bonus to Evasion Rating\n+1% Chance to Suppress Spell Damage per 15 Dexterity ",
+    "mod_types": [],
+    "ok": false,
+    "unsupported": true
+  },
+  "Effect does not Queue": {
+    "extra": "Effect does not Queue ",
+    "mod_types": [],
+    "ok": false,
+    "unsupported": true
+  },
+  "Effect is not removed when Unreserved Mana is Filled": {
+    "extra": "",
+    "mod_types": [
+      "FLAG"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "Enemies Chilled by your Hits have Cold Damage taken increased by Chill Effect\nEnemies in your Chilling Areas have Cold Damage taken increased by Chill Effect\nCannot deal non-Cold Damage": {
+    "extra": "your Hits have Cold Damage taken increased by Chill Effect\nEnemies in your Chilling Areas have Cold Damage taken increased by Chill Effect\nCannot deal non-Cold Damage ",
+    "mod_types": [],
+    "ok": false,
+    "unsupported": true
+  },
+  "Enemies Killed with Attack or Spell Hits Explode, dealing 5% of their Life as Fire Damage": {
+    "extra": "",
+    "mod_types": [
+      "FLAG",
+      "LIST"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "Enemies Pacified by you take 20% increased Damage": {
+    "extra": "",
+    "mod_types": [
+      "LIST"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "Enemies have 20% reduced Evasion if you have Hit them Recently": {
+    "extra": "Enemies have 20% reduced Evasion if you have Hit them Recently ",
+    "mod_types": [],
+    "ok": false,
+    "unsupported": true
+  },
+  "Enemies you Kill have a 16% chance to Explode, dealing a tenth of their maximum Life as Physical Damage": {
+    "extra": "",
+    "mod_types": [
+      "FLAG",
+      "LIST"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "Enemies you Kill that are affected by Elemental Ailments\ngrant 100% increased Flask Charges": {
+    "extra": "Enemies you Kill that are affected by Elemental Ailments\ngrant 100% increased Flask Charges ",
+    "mod_types": [],
+    "ok": false,
+    "unsupported": true
+  },
+  "Energy Shield Recharge is not interrupted by Damage if Recharge began Recently\n40% less Energy Shield Recharge Rate": {
+    "extra": "Energy Shield Recharge is not interrupted by Damage if Recharge began Recently\n40% less Energy Shield Recharge Rate ",
+    "mod_types": [],
+    "ok": false,
+    "unsupported": true
+  },
+  "Equip a Wildwood Rucksack which has 20 Inventory Slots": {
+    "extra": "Equip a Wildwood Rucksack which has 20 Inventory Slots ",
+    "mod_types": [],
+    "ok": false,
+    "unsupported": true
+  },
+  "Evasion Rating is Doubled against Projectile Attacks\n25% less Evasion Rating against Melee Attacks": {
+    "extra": "  against Projectile Attacks\n25% less Evasion Rating against  Attacks ",
+    "mod_types": [
+      "MORE",
+      "OVERRIDE"
+    ],
+    "ok": true,
+    "unsupported": true
+  },
+  "Every 10 seconds, gain 30% of Physical Damage\nas Extra Fire Damage for 4 seconds": {
+    "extra": "Every 10 seconds, gain 30% of Physical Damage\nas Extra Fire Damage for 4 seconds ",
+    "mod_types": [],
+    "ok": false,
+    "unsupported": true
+  },
+  "Every 10 seconds:\nTake 50% less Damage from Hits for 5 seconds\nTake 50% less Damage over Time for 5 seconds": {
+    "extra": "Every 10 seconds:\nTake 50% less Damage from Hits for 5 seconds\nTake 50% less Damage over Time for 5 seconds ",
+    "mod_types": [],
+    "ok": false,
+    "unsupported": true
+  },
+  "Every second, Consume a nearby Corpse to Recover 5% of Life and Mana\n10% more Damage taken if you haven't Consumed a Corpse Recently": {
+    "extra": "Every second, Consume a nearby Corpse to Recover 5% of Life and Mana\n10% more Damage taken if you haven't Consumed a Corpse Recently ",
+    "mod_types": [],
+    "ok": false,
+    "unsupported": true
+  },
+  "Flasks adjacent to active Tinctures gain 2 charges when you Hit an\nEnemy with a Melee Weapon, no more than once every second": {
+    "extra": "Flasks adjacent to active Tinctures gain 2 charges when you Hit an\nEnemy with a Melee Weapon, no more than once every second ",
+    "mod_types": [],
+    "ok": false,
+    "unsupported": true
+  },
+  "Flasks adjacent to active Tinctures gain 3 charges when you Hit an\nEnemy with a Melee Weapon, no more than once every second": {
+    "extra": "Flasks adjacent to active Tinctures gain 3 charges when you Hit an\nEnemy with a Melee Weapon, no more than once every second ",
+    "mod_types": [],
+    "ok": false,
+    "unsupported": true
+  },
+  "Flasks adjacent to applied Tincture have 10% increased Effect when\nused if you've Hit an enemy with a Weapon Recently": {
+    "extra": "Flasks adjacent to applied Tincture have 10% increased Effect when\nused if you've Hit an enemy with a Weapon Recently ",
+    "mod_types": [],
+    "ok": false,
+    "unsupported": true
+  },
+  "Flasks adjacent to applied Tincture have 30% increased Effect when\nused if you've Hit an enemy with a Weapon Recently": {
+    "extra": "Flasks adjacent to applied Tincture have 30% increased Effect when\nused if you've Hit an enemy with a Weapon Recently ",
+    "mod_types": [],
+    "ok": false,
+    "unsupported": true
+  },
+  "For each nearby corpse, you and nearby Allies Regenerate 5 Mana\nper second, up to 50 per second": {
+    "extra": "you and nearby Allies Regenerate 5 Mana\nper second, up to 50 per second ",
+    "mod_types": [],
+    "ok": false,
+    "unsupported": true
+  },
+  "Gain 1 Charge when you are Hit by an Enemy": {
+    "extra": " Charge when you are Hit by an Enemy ",
+    "mod_types": [],
+    "ok": true,
+    "unsupported": true
+  },
+  "Gain 1 Gale Force when you use a Skill\n10% increased Effect of Tailwind on you per Gale Force": {
+    "extra": " Gale Force when you use a Skill\n10% increased   ",
+    "mod_types": [
+      "BASE"
+    ],
+    "ok": true,
+    "unsupported": true
+  },
+  "Gain 1 Unbound Fury when you inflict an Elemental Ailment with a Hit on an Enemy, no more than once every 0.2 seconds for each type of Ailment\nCannot gain Unbound Fury while Unbound": {
+    "extra": " Unbound Fury when you inflict an Elemental Ailment with a Hit on an Enemy, no more than once every 0.2 seconds for each type of Ailment\nCannot gain Unbound Fury while Unbound ",
+    "mod_types": [],
+    "ok": true,
+    "unsupported": true
+  },
+  "Gain 135 Life on Culling Strike": {
+    "extra": "  on Culling Strike ",
+    "mod_types": [
+      "BASE"
+    ],
+    "ok": true,
+    "unsupported": true
+  },
+  "Gain 14% of Physical Damage as Extra Chaos Damage": {
+    "extra": "",
+    "mod_types": [
+      "BASE"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "Gain 15 Mana on Culling Strike": {
+    "extra": "  on Culling Strike ",
+    "mod_types": [
+      "BASE"
+    ],
+    "ok": true,
+    "unsupported": true
+  },
+  "Gain 2 Endurance Charge on use": {
+    "extra": " Endurance Charge on use ",
+    "mod_types": [],
+    "ok": true,
+    "unsupported": true
+  },
+  "Gain 2 Frenzy Charge on use": {
+    "extra": "Charge on use ",
+    "mod_types": [],
+    "ok": true,
+    "unsupported": true
+  },
+  "Gain 2 Grasping Vines each second while stationary\n2% chance to deal Double Damage per Grasping Vine\n1% less Damage taken per Grasping Vine": {
+    "extra": " Grasping Vines each second \n2% chance  \n1% less Damage taken per Grasping Vine ",
+    "mod_types": [
+      "BASE"
+    ],
+    "ok": true,
+    "unsupported": true
+  },
+  "Gain 2 Power Charge on use": {
+    "extra": " Power Charge on use ",
+    "mod_types": [],
+    "ok": true,
+    "unsupported": true
+  },
+  "Gain 20% of Physical Damage as Extra Cold Damage if you've\nused a Sapphire Flask Recently": {
+    "extra": "   if you've\nused a Sapphire Flask Recently ",
+    "mod_types": [
+      "BASE"
+    ],
+    "ok": true,
+    "unsupported": true
+  },
+  "Gain 20% of Physical Damage as Extra Fire Damage if you've\nused a Ruby Flask Recently": {
+    "extra": "   if you've\nused a Ruby Flask Recently ",
+    "mod_types": [
+      "BASE"
+    ],
+    "ok": true,
+    "unsupported": true
+  },
+  "Gain 20% of Physical Damage as Extra Lightning Damage if you've\nused a Topaz Flask Recently": {
+    "extra": "   if you've\nused a Topaz Flask Recently ",
+    "mod_types": [
+      "BASE"
+    ],
+    "ok": true,
+    "unsupported": true
+  },
+  "Gain 3 Mana per Enemy Hit with Spells": {
+    "extra": "",
+    "mod_types": [
+      "BASE"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "Gain 43 Life per Blinded Enemy Hit with this Weapon": {
+    "extra": "",
+    "mod_types": [
+      "BASE"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "Gain 7 Life per Enemy Hit with Spells": {
+    "extra": "",
+    "mod_types": [
+      "BASE"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "Gain 8% of Maximum Mana as Extra Maximum Energy Shield": {
+    "extra": "",
+    "mod_types": [
+      "BASE"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "Gain 8% of Physical Damage as Extra Chaos Damage": {
+    "extra": "",
+    "mod_types": [
+      "BASE"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "Gain Accuracy Rating equal to your Strength": {
+    "extra": "",
+    "mod_types": [
+      "BASE"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "Gain Defiance for 10 seconds on losing Life to an Enemy Hit, no\nmore than once every 0.3 seconds": {
+    "extra": "Defiance  on losing Life to an Enemy Hit, no\nmore than once every 0.3 seconds ",
+    "mod_types": [],
+    "ok": false,
+    "unsupported": true
+  },
+  "Gain Phasing on Hit with this weapon": {
+    "extra": " o ",
+    "mod_types": [
+      "FLAG"
+    ],
+    "ok": true,
+    "unsupported": true
+  },
+  "Gain an Endurance Charge every 4 seconds while Stationary": {
+    "extra": "an Endurance Charge every 4 seconds  ",
+    "mod_types": [],
+    "ok": false,
+    "unsupported": true
+  },
+  "Gain an Endurance, Frenzy or Power charge when you Block": {
+    "extra": "an Endurance, Frenzy or Power charge when you Block ",
+    "mod_types": [],
+    "ok": false,
+    "unsupported": true
+  },
+  "Grant bonuses to Non-Channelling Skills you use by consuming 3 Charges from a Flask of\neach of the following types, if possible:": {
+    "extra": "Grant bonuses to Non-Channelling Skills you use by consuming 3 Charges from a Flask of\neach of the following types, if possible: ",
+    "mod_types": [],
+    "ok": false,
+    "unsupported": true
+  },
+  "Grants 110% of Life Recovery to Minions": {
+    "extra": "% of  Recovery to s ",
+    "mod_types": [
+      "LIST"
+    ],
+    "ok": true,
+    "unsupported": true
+  },
+  "Grants 130% of Life Recovery to Minions": {
+    "extra": "% of  Recovery to s ",
+    "mod_types": [
+      "LIST"
+    ],
+    "ok": true,
+    "unsupported": true
+  },
+  "Grants 150% of Life Recovery to Minions": {
+    "extra": "% of  Recovery to s ",
+    "mod_types": [
+      "LIST"
+    ],
+    "ok": true,
+    "unsupported": true
+  },
+  "Grants 170% of Life Recovery to Minions": {
+    "extra": "% of  Recovery to s ",
+    "mod_types": [
+      "LIST"
+    ],
+    "ok": true,
+    "unsupported": true
+  },
+  "Grants Immunity to Chill for 10 seconds if used while Chilled": {
+    "extra": "",
+    "mod_types": [
+      "FLAG"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "Grants Immunity to Chill for 13 seconds if used while Chilled": {
+    "extra": "",
+    "mod_types": [
+      "FLAG"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "Grants Immunity to Chill for 16 seconds if used while Chilled": {
+    "extra": "",
+    "mod_types": [
+      "FLAG"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "Grants Immunity to Chill for 7 seconds if used while Chilled": {
+    "extra": "",
+    "mod_types": [
+      "FLAG"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "Grants Immunity to Freeze for 10 seconds if used while Frozen": {
+    "extra": "",
+    "mod_types": [
+      "FLAG"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "Grants Immunity to Freeze for 13 seconds if used while Frozen": {
+    "extra": "",
+    "mod_types": [
+      "FLAG"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "Grants Immunity to Freeze for 16 seconds if used while Frozen": {
+    "extra": "",
+    "mod_types": [
+      "FLAG"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "Grants Immunity to Freeze for 7 seconds if used while Frozen": {
+    "extra": "",
+    "mod_types": [
+      "FLAG"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "Grants Immunity to Hinder for 10 seconds if used while Hindered": {
+    "extra": "Grants Immunity to Hinder for 10 seconds if used while Hindered ",
+    "mod_types": [],
+    "ok": false,
+    "unsupported": true
+  },
+  "Grants Immunity to Hinder for 13 seconds if used while Hindered": {
+    "extra": "Grants Immunity to Hinder for 13 seconds if used while Hindered ",
+    "mod_types": [],
+    "ok": false,
+    "unsupported": true
+  },
+  "Grants Immunity to Hinder for 7 seconds if used while Hindered": {
+    "extra": "Grants Immunity to Hinder for 7 seconds if used while Hindered ",
+    "mod_types": [],
+    "ok": false,
+    "unsupported": true
+  },
+  "Grants Immunity to Maim for 10 seconds if used while Maimed": {
+    "extra": "Grants Immunity to Maim for 10 seconds if used while Maimed ",
+    "mod_types": [],
+    "ok": false,
+    "unsupported": true
+  },
+  "Grants Immunity to Maim for 13 seconds if used while Maimed": {
+    "extra": "Grants Immunity to Maim for 13 seconds if used while Maimed ",
+    "mod_types": [],
+    "ok": false,
+    "unsupported": true
+  },
+  "Grants Immunity to Maim for 7 seconds if used while Maimed": {
+    "extra": "Grants Immunity to Maim for 7 seconds if used while Maimed ",
+    "mod_types": [],
+    "ok": false,
+    "unsupported": true
+  },
+  "Grants Immunity to Poison for 10 seconds if used while Poisoned": {
+    "extra": "",
+    "mod_types": [
+      "FLAG"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "Grants Immunity to Poison for 13 seconds if used while Poisoned": {
+    "extra": "",
+    "mod_types": [
+      "FLAG"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "Grants Immunity to Poison for 7 seconds if used while Poisoned": {
+    "extra": "",
+    "mod_types": [
+      "FLAG"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "Grants Immunity to Shock for 10 seconds if used while Shocked": {
+    "extra": "",
+    "mod_types": [
+      "FLAG"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "Grants Immunity to Shock for 13 seconds if used while Shocked": {
+    "extra": "",
+    "mod_types": [
+      "FLAG"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "Grants Immunity to Shock for 7 seconds if used while Shocked": {
+    "extra": "",
+    "mod_types": [
+      "FLAG"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "Grants Level 1 Convocation Skill": {
+    "extra": "",
+    "mod_types": [
+      "LIST"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "Grants Level 20 Affliction Skill": {
+    "extra": "",
+    "mod_types": [
+      "LIST"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "Grants Level 20 Decoy Totem Skill": {
+    "extra": "",
+    "mod_types": [
+      "LIST"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "Grants Level 20 Pacify Skill": {
+    "extra": "",
+    "mod_types": [
+      "LIST"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "Grants Level 20 Penance Mark Skill": {
+    "extra": "",
+    "mod_types": [
+      "LIST"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "Grants Level 20 Summon Dark Effigy Skill": {
+    "extra": "",
+    "mod_types": [],
+    "ok": false,
+    "unsupported": true
+  },
+  "Grants Level 22 Anger Skill": {
+    "extra": "",
+    "mod_types": [
+      "LIST"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "Grants Level 22 Clarity Skill": {
+    "extra": "",
+    "mod_types": [
+      "LIST"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "Grants Level 22 Determination Skill": {
+    "extra": "",
+    "mod_types": [
+      "LIST"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "Grants Level 22 Discipline Skill": {
+    "extra": "",
+    "mod_types": [
+      "LIST"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "Grants Level 22 Grace Skill": {
+    "extra": "",
+    "mod_types": [
+      "LIST"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "Grants Level 22 Haste Skill": {
+    "extra": "",
+    "mod_types": [
+      "LIST"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "Grants Level 22 Herald of Ash Skill": {
+    "extra": "",
+    "mod_types": [
+      "LIST"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "Grants Level 22 Herald of Ice Skill": {
+    "extra": "",
+    "mod_types": [
+      "LIST"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "Grants Level 22 Herald of Thunder Skill": {
+    "extra": "",
+    "mod_types": [
+      "LIST"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "Grants Level 22 Intimidating Cry Skill": {
+    "extra": "",
+    "mod_types": [
+      "LIST"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "Grants Level 22 Rallying Cry Skill": {
+    "extra": "",
+    "mod_types": [
+      "LIST"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "Grants Level 22 Vitality Skill": {
+    "extra": "",
+    "mod_types": [
+      "LIST"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "Grants Level 22 Wrath Skill": {
+    "extra": "",
+    "mod_types": [
+      "LIST"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "Grants maximum Energy Shield equal to 10% of your Reserved Mana to\nyou and nearby Allies": {
+    "extra": "Grants maximum Energy Shield equal to 10% of your Reserved Mana to\nyou and nearby Allies ",
+    "mod_types": [],
+    "ok": false,
+    "unsupported": true
+  },
+  "Hinders nearby Enemies with 20% reduced Movement Speed if used while not on Full Life": {
+    "extra": "Hinders nearby Enemies with 20% reduced Movement Speed if used while not on Full Life ",
+    "mod_types": [],
+    "ok": false,
+    "unsupported": true
+  },
+  "Hinders nearby Enemies with 20% reduced Movement Speed if used while not on Full Mana": {
+    "extra": "Hinders nearby Enemies with 20% reduced Movement Speed if used while not on Full Mana ",
+    "mod_types": [],
+    "ok": false,
+    "unsupported": true
+  },
+  "Hinders nearby Enemies with 26% reduced Movement Speed if used while not on Full Life": {
+    "extra": "Hinders nearby Enemies with 26% reduced Movement Speed if used while not on Full Life ",
+    "mod_types": [],
+    "ok": false,
+    "unsupported": true
+  },
+  "Hinders nearby Enemies with 26% reduced Movement Speed if used while not on Full Mana": {
+    "extra": "Hinders nearby Enemies with 26% reduced Movement Speed if used while not on Full Mana ",
+    "mod_types": [],
+    "ok": false,
+    "unsupported": true
+  },
+  "Hinders nearby Enemies with 32% reduced Movement Speed if used while not on Full Life": {
+    "extra": "Hinders nearby Enemies with 32% reduced Movement Speed if used while not on Full Life ",
+    "mod_types": [],
+    "ok": false,
+    "unsupported": true
+  },
+  "Hinders nearby Enemies with 32% reduced Movement Speed if used while not on Full Mana": {
+    "extra": "Hinders nearby Enemies with 32% reduced Movement Speed if used while not on Full Mana ",
+    "mod_types": [],
+    "ok": false,
+    "unsupported": true
+  },
+  "Hits that deal Elemental Damage remove Exposure to those Elements and inflict Exposure to other Elements\nExposure inflicted this way applies -25% to Resistances": {
+    "extra": "Hits that deal Elemental Damage remove Exposure to those Elements and inflict Exposure to other Elements\nExposure inflicted this way applies -25% to Resistances ",
+    "mod_types": [],
+    "ok": false,
+    "unsupported": true
+  },
+  "Hits with Melee Movement Skills have 40% chance to Fortify": {
+    "extra": "Hits with Melee Movement Skills have 40% chance to Fortify ",
+    "mod_types": [],
+    "ok": false,
+    "unsupported": true
+  },
+  "Hits with this Weapon have 58% chance to ignore Enemy Physical Damage Reduction": {
+    "extra": "",
+    "mod_types": [
+      "BASE"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "Hits with this Weapon have 73% chance to ignore Enemy Physical Damage Reduction": {
+    "extra": "",
+    "mod_types": [
+      "BASE"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "Hits with this Weapon have Culling Strike against Bleeding Enemies": {
+    "extra": "",
+    "mod_types": [
+      "MAX"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "If you've Impaled an Enemy Recently, you\nand nearby Allies have +1000 to Armour": {
+    "extra": "If you've Impaled an Enemy Recently, you\nand nearby Allies have +1000 to Armour ",
+    "mod_types": [],
+    "ok": false,
+    "unsupported": true
+  },
+  "If your Mercenary's Life is higher than your own, 20% of Damage from Hits is\ntaken from your Mercenary's Life before you": {
+    "extra": "If your Mercenary's Life is higher than your own, 20% of Damage from Hits is\ntaken from your Mercenary's Life before you ",
+    "mod_types": [],
+    "ok": false,
+    "unsupported": true
+  },
+  "Immunity to Bleeding and Corrupted Blood during Effect": {
+    "extra": "",
+    "mod_types": [
+      "FLAG"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "Immunity to Freeze and Chill during Effect": {
+    "extra": "",
+    "mod_types": [
+      "FLAG"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "Immunity to Ignite during Effect": {
+    "extra": "",
+    "mod_types": [
+      "FLAG"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "Immunity to Poison during Effect": {
+    "extra": "",
+    "mod_types": [
+      "FLAG"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "Immunity to Shock during Effect": {
+    "extra": "",
+    "mod_types": [
+      "FLAG"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "Increases and Reductions to Armour also apply to Energy\nShield Recharge Rate at 20% of their value": {
+    "extra": "Increases and Reductions to Armour also apply to Energy\nShield Recharge Rate at 20% of their value ",
+    "mod_types": [],
+    "ok": false,
+    "unsupported": true
+  },
+  "Increases and Reductions to Light Radius also apply to Effect\nof your Link Skill Buffs on your Mercenary": {
+    "extra": "Increases and Reductions to Light Radius also apply to Effect\nof your Link Skill Buffs on your Mercenary ",
+    "mod_types": [],
+    "ok": false,
+    "unsupported": true
+  },
+  "Inflict a Grasping Vine on Hit against Enemies with fewer than\n8 Grasping Vines during Effect of any Life Flask": {
+    "extra": "Inflict a Grasping Vine on Hit against Enemies with fewer than\n8 Grasping Vines during Effect of any Life Flask ",
+    "mod_types": [],
+    "ok": false,
+    "unsupported": true
+  },
+  "Instant Recovery when on Low Life": {
+    "extra": "",
+    "mod_types": [
+      "BASE",
+      "DUMMY"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "Intelligence provides no inherent bonus to Energy Shield\n2% reduced Duration of Elemental Ailments on you per 15 Intelligence": {
+    "extra": "Intelligence provides no inherent bonus to Energy Shield\n2% reduced Duration of Elemental Ailments on you per 15 Intelligence ",
+    "mod_types": [],
+    "ok": false,
+    "unsupported": true
+  },
+  "Karui Stone Hook": {
+    "extra": "Karui Stone Hook ",
+    "mod_types": [],
+    "ok": false,
+    "unsupported": true
+  },
+  "Leech Energy Shield instead of Life\nMaximum total Energy Shield Recovery per second from Leech is doubled\nCannot Recharge Energy Shield": {
+    "extra": "Leech  instead of Life\nMaximum total Energy Shield Recovery per second from Leech \nCannot Recharge Energy Shield ",
+    "mod_types": [
+      "MORE",
+      "OVERRIDE"
+    ],
+    "ok": true,
+    "unsupported": true
+  },
+  "Life Flask Effects are not removed when Unreserved Life is Filled\nLife Flask Effects do not Queue": {
+    "extra": "Life Flask Effects are not removed when Unreserved Life is Filled\nLife Flask Effects do not Queue ",
+    "mod_types": [],
+    "ok": false,
+    "unsupported": true
+  },
+  "Life Leech from Melee Damage is Instant\nCannot Recover Life other than from Leech": {
+    "extra": "Life Leech from Melee Damage is Instant\nCannot Recover Life other than from Leech ",
+    "mod_types": [],
+    "ok": false,
+    "unsupported": true
+  },
+  "Lose all Rage on reaching Maximum Rage and gain Wild Savagery\nfor 1 second per 10 Rage lost this way": {
+    "extra": "Lose all Rage on reaching Maximum Rage and gain Wild Savagery\nfor 1 second per 10 Rage lost this way ",
+    "mod_types": [],
+    "ok": false,
+    "unsupported": true
+  },
+  "Mana Recovery occurs instantly at the end of Effect": {
+    "extra": "Mana Recovery occurs instantly at the end of Effect ",
+    "mod_types": [],
+    "ok": false,
+    "unsupported": true
+  },
+  "Melee Strikes Curse Enemies with Flammability on Hit, ignoring Curse Limit": {
+    "extra": "Melee Strikes Curse Enemies with Flammability on Hit, ignoring Curse Limit ",
+    "mod_types": [],
+    "ok": false,
+    "unsupported": true
+  },
+  "Minions affected by Affliction have Onslaught": {
+    "extra": "affected by Affliction have Onslaught ",
+    "mod_types": [],
+    "ok": false,
+    "unsupported": true
+  },
+  "Minions deal 7 to 13 additional Cold Damage": {
+    "extra": "",
+    "mod_types": [
+      "LIST"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "Minions deal 7 to 14 additional Attack Physical Damage": {
+    "extra": " to 14 additional  ",
+    "mod_types": [
+      "LIST"
+    ],
+    "ok": true,
+    "unsupported": true
+  },
+  "Minions have +325 to Armour": {
+    "extra": "",
+    "mod_types": [
+      "LIST"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "Minions have 13% increased Movement Speed": {
+    "extra": "",
+    "mod_types": [
+      "LIST"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "Minions have 35% increased Movement Speed": {
+    "extra": "",
+    "mod_types": [
+      "LIST"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "Modifiers to Chance to Suppress Spell Damage instead apply to Chance to Dodge Spell Hits at 50% of their value\nMaximum Chance to Dodge Spell Hits is 75%": {
+    "extra": "Modifiers to Chance  instead apply to Chance to Dodge  Hits at 50% of their value\nMaximum Chance to Dodge Spell Hits ",
+    "mod_types": [
+      "OVERRIDE"
+    ],
+    "ok": true,
+    "unsupported": true
+  },
+  "Nearby Enemy Monsters' Fire Resistance against\nDamage over Time is -20% while you are Stationary": {
+    "extra": " against\nDamage over Time  ",
+    "mod_types": [
+      "LIST"
+    ],
+    "ok": true,
+    "unsupported": true
+  },
+  "Non-Spectre Minions' Base Attack time is equal to\nthe Attack time of your Main Hand Weapon": {
+    "extra": "Non-Spectre Minions' Base Attack time is equal to\nthe Attack time of your Main Hand Weapon ",
+    "mod_types": [],
+    "ok": false,
+    "unsupported": true
+  },
+  "Non-Unique Jewels cause Increases and Reductions to other Damage Types in a Large Radius to be Transformed to apply to Fire Damage": {
+    "extra": "",
+    "mod_types": [
+      "LIST"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "Non-Unique Jewels cause Small and Notable Passive Skills in a Large Radius to\nalso grant +4 to Strength": {
+    "extra": "Non-Unique Jewels cause Small and Notable Passive Skills in a Large Radius to\nalso grant +4 to Strength ",
+    "mod_types": [],
+    "ok": false,
+    "unsupported": true
+  },
+  "Phantasms from Penance Mark grant 50% increased Flask Charges": {
+    "extra": "Phantasms from Penance Mark grant 50% increased Flask Charges ",
+    "mod_types": [],
+    "ok": false,
+    "unsupported": true
+  },
+  "Phantasms from Penance Mark have a 50% chance to grant a Vaal Soul when Killed": {
+    "extra": "Phantasms from Penance Mark have a 50% chance to grant a Vaal Soul when Killed ",
+    "mod_types": [],
+    "ok": false,
+    "unsupported": true
+  },
+  "Prevent +50% of Reflected Damage during Effect": {
+    "extra": "Prevent +50% of Reflected Damage during Effect ",
+    "mod_types": [],
+    "ok": false,
+    "unsupported": true
+  },
+  "Projectiles deal 20% increased Damage with Hits and Ailments for\neach remaining Chain, up to a maximum of 100%": {
+    "extra": "   for\neach remaining Chain, up to a maximum of 100% ",
+    "mod_types": [
+      "INC"
+    ],
+    "ok": true,
+    "unsupported": true
+  },
+  "Projectiles deal 40% increased Damage with Hits to targets at the start\nof their movement, reducing to 0% as they travel farther": {
+    "extra": "   to targets at the start\nof their movement, reducing to 0% as they travel farther ",
+    "mod_types": [
+      "INC"
+    ],
+    "ok": true,
+    "unsupported": true
+  },
+  "Projectiles gain Damage as they travel farther, dealing up\nto 30% more Damage with Hits and Ailments": {
+    "extra": "Damage as they travel farther, dealing up\nto 30% more Damage with Hits and Ailments ",
+    "mod_types": [],
+    "ok": false,
+    "unsupported": true
+  },
+  "Projectiles gain Damage as they travel farther, dealing up\nto 60% increased Damage with Hits to targets": {
+    "extra": "Damage as they travel farther, dealing up\nto 60% increased Damage with Hits to targets ",
+    "mod_types": [],
+    "ok": false,
+    "unsupported": true
+  },
+  "Rare and Unique Enemies within 120 metres have Minimap Icons": {
+    "extra": "Rare and Unique Enemies within 120 metres have Minimap Icons ",
+    "mod_types": [],
+    "ok": false,
+    "unsupported": true
+  },
+  "Recover 4% of Energy Shield when you Block": {
+    "extra": "",
+    "mod_types": [
+      "BASE"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "Recover 4% of your maximum Mana when you Block": {
+    "extra": "",
+    "mod_types": [
+      "BASE"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "Recover an additional 14% of Flask's Life Recovery Amount over 10 seconds if used while not on Full Life": {
+    "extra": "",
+    "mod_types": [
+      "BASE"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "Recover an additional 20% of Flask's Life Recovery Amount over 10 seconds if used while not on Full Life": {
+    "extra": "",
+    "mod_types": [
+      "BASE"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "Recover an additional 26% of Flask's Life Recovery Amount over 10 seconds if used while not on Full Life": {
+    "extra": "",
+    "mod_types": [
+      "BASE"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "Recover an additional 32% of Flask's Life Recovery Amount over 10 seconds if used while not on Full Life": {
+    "extra": "",
+    "mod_types": [
+      "BASE"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "Reflects 15 Chaos Damage to Melee Attackers": {
+    "extra": "Reflects 15 Chaos Damage to Melee Attackers ",
+    "mod_types": [],
+    "ok": false,
+    "unsupported": true
+  },
+  "Reflects 33 Physical Damage to Attackers on Block": {
+    "extra": "Reflects 33 Physical Damage to Attackers on Block ",
+    "mod_types": [],
+    "ok": false,
+    "unsupported": true
+  },
+  "Reflects 38 Cold Damage to Melee Attackers": {
+    "extra": "Reflects 38 Cold Damage to Melee Attackers ",
+    "mod_types": [],
+    "ok": false,
+    "unsupported": true
+  },
+  "Reflects 8 Cold Damage to Melee Attackers": {
+    "extra": "Reflects 8 Cold Damage to Melee Attackers ",
+    "mod_types": [],
+    "ok": false,
+    "unsupported": true
+  },
+  "Regenerate 70.9 Life per second": {
+    "extra": "",
+    "mod_types": [
+      "BASE"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "Remove Chill and Freeze when you use a Flask": {
+    "extra": "Remove Chill and Freeze when you use a Flask ",
+    "mod_types": [],
+    "ok": false,
+    "unsupported": true
+  },
+  "Remove Ignite and Burning when you use a Flask": {
+    "extra": "Remove Ignite and Burning when you use a Flask ",
+    "mod_types": [],
+    "ok": false,
+    "unsupported": true
+  },
+  "Remove Shock when you use a Flask": {
+    "extra": "Remove Shock when you use a Flask ",
+    "mod_types": [],
+    "ok": false,
+    "unsupported": true
+  },
+  "Removes 10% of Life Recovered from Mana when used": {
+    "extra": "% of  from Mana when used ",
+    "mod_types": [
+      "BASE"
+    ],
+    "ok": true,
+    "unsupported": true
+  },
+  "Removes 15% of Mana Recovered from Life when used": {
+    "extra": "% of  from Life when used ",
+    "mod_types": [
+      "BASE"
+    ],
+    "ok": true,
+    "unsupported": true
+  },
+  "Removes Bleeding when you use a Warcry": {
+    "extra": "Removes Bleeding when you use a Warcry ",
+    "mod_types": [],
+    "ok": false,
+    "unsupported": true
+  },
+  "Removes Burning on use": {
+    "extra": "",
+    "mod_types": [],
+    "ok": true,
+    "unsupported": false
+  },
+  "Removes Curses on use": {
+    "extra": "",
+    "mod_types": [],
+    "ok": true,
+    "unsupported": false
+  },
+  "Removes all Energy Shield\nWhile not on Full Life, Sacrifice 20% of Mana per Second to Recover that much Life": {
+    "extra": "Removes all Energy Shield\nWhile not on Full Life, Sacrifice 20% of Mana per Second to Recover that much Life ",
+    "mod_types": [],
+    "ok": false,
+    "unsupported": true
+  },
+  "Removes all Mana": {
+    "extra": "",
+    "mod_types": [
+      "MORE"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "Removes all mana\n10% more maximum Life\nSkills Cost Life instead of Mana\nSkills Reserve Life instead of Mana": {
+    "extra": "Removes all mana\n10% more maximum Life\nSkills Cost Life instead of Mana\nSkills Reserve Life instead of Mana ",
+    "mod_types": [],
+    "ok": false,
+    "unsupported": true
+  },
+  "Rhoa Feather Lure": {
+    "extra": "Rhoa Feather Lure ",
+    "mod_types": [],
+    "ok": false,
+    "unsupported": true
+  },
+  "Skills that have dealt a Critical Strike in the past 8 seconds deal 40% more Elemental Damage with Hits and Ailments\nYour Critical Strikes do not deal extra Damage\nAilments never count as being from Critical Strikes": {
+    "extra": "  \nYour Critical Strikes do not deal extra Damage\nAilments never count as being  ",
+    "mod_types": [
+      "MORE"
+    ],
+    "ok": true,
+    "unsupported": true
+  },
+  "Socketed Attacks have +1% to Critical Strike Chance": {
+    "extra": "",
+    "mod_types": [
+      "LIST"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "Socketed Attacks have +2% to Critical Strike Chance": {
+    "extra": "",
+    "mod_types": [
+      "LIST"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "Socketed Attacks have +30% to Critical Strike Multiplier": {
+    "extra": "",
+    "mod_types": [
+      "LIST"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "Socketed Attacks have +50% to Critical Strike Multiplier": {
+    "extra": "",
+    "mod_types": [
+      "LIST"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "Socketed Gems are Supported by Level 10 Power Charge On Critical Strike": {
+    "extra": "",
+    "mod_types": [
+      "LIST"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "Socketed Gems are Supported by Level 16 Chance To Bleed": {
+    "extra": "",
+    "mod_types": [
+      "LIST"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "Socketed Gems are Supported by Level 18 Cast On Melee Kill": {
+    "extra": "",
+    "mod_types": [
+      "LIST"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "Socketed Gems are Supported by Level 18 Chance To Bleed": {
+    "extra": "",
+    "mod_types": [
+      "LIST"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "Socketed Gems are Supported by Level 20 Cast On Melee Kill": {
+    "extra": "",
+    "mod_types": [
+      "LIST"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "Socketed Gems are Supported by Level 20 Chance To Bleed": {
+    "extra": "",
+    "mod_types": [
+      "LIST"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "Socketed Gems are supported by Level 16 Additional Accuracy": {
+    "extra": "",
+    "mod_types": [
+      "LIST"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "Socketed Gems are supported by Level 16 Faster Projectiles": {
+    "extra": "",
+    "mod_types": [
+      "LIST"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "Socketed Gems are supported by Level 18 Additional Accuracy": {
+    "extra": "",
+    "mod_types": [
+      "LIST"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "Socketed Gems are supported by Level 18 Elemental Damage with Attacks": {
+    "extra": "",
+    "mod_types": [
+      "LIST"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "Socketed Gems are supported by Level 18 Faster Projectiles": {
+    "extra": "",
+    "mod_types": [
+      "LIST"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "Socketed Gems are supported by Level 18 Increased Critical Damage": {
+    "extra": "",
+    "mod_types": [
+      "LIST"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "Socketed Gems are supported by Level 20 Elemental Damage with Attacks": {
+    "extra": "",
+    "mod_types": [
+      "LIST"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "Socketed Gems are supported by Level 20 Increased Critical Damage": {
+    "extra": "",
+    "mod_types": [
+      "LIST"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "Socketed Movement Skills Cost no Mana": {
+    "extra": "Socketed Movement Skills Cost no Mana ",
+    "mod_types": [],
+    "ok": false,
+    "unsupported": true
+  },
+  "Socketed Spells have +1% to Critical Strike Chance": {
+    "extra": "",
+    "mod_types": [
+      "LIST"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "Socketed Spells have +2% to Critical Strike Chance": {
+    "extra": "",
+    "mod_types": [
+      "LIST"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "Socketed Spells have +30% to Critical Strike Multiplier": {
+    "extra": "",
+    "mod_types": [
+      "LIST"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "Socketed Spells have +50% to Critical Strike Multiplier": {
+    "extra": "",
+    "mod_types": [
+      "LIST"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "Spells Triggered this way have 150% more Cost": {
+    "extra": "Spells Triggered this way have 150% more Cost ",
+    "mod_types": [],
+    "ok": false,
+    "unsupported": true
+  },
+  "Spells you cast yourself gain Added Physical Damage equal to 75% of Life Cost, if Life Cost is not higher than the maximum you could spend": {
+    "extra": "",
+    "mod_types": [
+      "BASE"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "Spend Energy Shield before Mana for Skill Mana Costs\nEnergy Shield protects Mana instead of Life\n50% less Energy Shield Recharge Rate": {
+    "extra": "Spend Energy Shield before Mana for Skill Mana Costs\nEnergy Shield protects Mana instead of Life\n50% less Energy Shield Recharge Rate ",
+    "mod_types": [],
+    "ok": false,
+    "unsupported": true
+  },
+  "Summoned Raging Spirits deal 140% increased Damage": {
+    "extra": "",
+    "mod_types": [
+      "LIST"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "Take 50% less Damage over Time if you've started taking Damage over Time in the past second\n100% more Duration of Ailments on you": {
+    "extra": "  if you've started taking Damage over Time in the past second\n100% more Duration of Ailments on you ",
+    "mod_types": [
+      "MORE"
+    ],
+    "ok": true,
+    "unsupported": true
+  },
+  "Tinctures applied to you have 75% increased Effect per empty Flask Slot": {
+    "extra": "Tinctures applied to you have 75% increased Effect per empty Flask Slot ",
+    "mod_types": [],
+    "ok": false,
+    "unsupported": true
+  },
+  "Tinctures inflict Weeping Wounds instead of Mana Burn\nEffects that interact with Mana Burn interact with Weeping Wounds instead": {
+    "extra": "Tinctures inflict Weeping Wounds instead of Mana Burn\nEffects that interact with Mana Burn interact with Weeping Wounds instead ",
+    "mod_types": [],
+    "ok": false,
+    "unsupported": true
+  },
+  "Trigger Level 20 Tawhoa's Chosen when you Attack with\na Non-Vaal Slam or Strike Skill near an Enemy": {
+    "extra": "Trigger Level 20 Tawhoa's Chosen when you Attack with\na Non-Vaal Slam or Strike Skill near an Enemy ",
+    "mod_types": [],
+    "ok": false,
+    "unsupported": true
+  },
+  "Trigger Level 30 Assassin's Mark on Attack Critical Strike against\na Rare or Unique Enemy and you have no Mark": {
+    "extra": "Trigger Level 30 Assassin's Mark on Attack Critical Strike against\na Rare or Unique Enemy and you have no Mark ",
+    "mod_types": [],
+    "ok": false,
+    "unsupported": true
+  },
+  "Trigger a Socketed Spell when you Use a Skill, with a 8 second Cooldown": {
+    "extra": "",
+    "mod_types": [
+      "LIST"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "Trigger level 20 Ghostly Artillery when you Attack with this Weapon": {
+    "extra": "",
+    "mod_types": [
+      "LIST"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "Triggers Level 20 Primal Aegis when Allocated\nPrimal Aegis can take 75 Elemental Damage per Allocated Notable Passive Skill": {
+    "extra": "",
+    "mod_types": [],
+    "ok": true,
+    "unsupported": false
+  },
+  "Unattached Brands gain 20% increased Brand Attachment Range per\nsecond, up to a maximum of 100%": {
+    "extra": "Unattached Brands gain 20% increased Brand Attachment Range per\nsecond, up to a maximum of 100% ",
+    "mod_types": [],
+    "ok": false,
+    "unsupported": true
+  },
+  "When you Kill a Rare Monster, 18% chance to gain one of its Modifiers for 10 seconds": {
+    "extra": "When you Kill a Rare Monster, 18% chance to gain one of its Modifiers for 10 seconds ",
+    "mod_types": [],
+    "ok": false,
+    "unsupported": true
+  },
+  "When you Kill a Rare Monster, 26% chance to gain one of its Modifiers for 10 seconds": {
+    "extra": "When you Kill a Rare Monster, 26% chance to gain one of its Modifiers for 10 seconds ",
+    "mod_types": [],
+    "ok": false,
+    "unsupported": true
+  },
+  "When you Kill a Rare Monster, 36% chance to gain one of its Modifiers for 10 seconds": {
+    "extra": "When you Kill a Rare Monster, 36% chance to gain one of its Modifiers for 10 seconds ",
+    "mod_types": [],
+    "ok": false,
+    "unsupported": true
+  },
+  "When your Hits Impale Enemies, also Impale other Enemies near them\nInflict 5 additional Impales on Enemies you Impale\nFor 5 seconds after you Impale Enemies, they cannot be Impaled again, and Impales cannot be Called from them": {
+    "extra": "When your Hits Impale Enemies, also Impale other Enemies near them\nInflict 5 additional Impales on Enemies you Impale\nFor 5 seconds after you Impale Enemies, they cannot be Impaled again, and Impales cannot be Called from them ",
+    "mod_types": [],
+    "ok": false,
+    "unsupported": true
+  },
+  "You and Allies near your Banner have +1% to Damage over Time Multiplier per": {
+    "extra": "You and Allies near your Banner have +1% to Damage over Time Multiplier per ",
+    "mod_types": [],
+    "ok": false,
+    "unsupported": true
+  },
+  "You and nearby Allies deal 6 to 12 added Physical Damage for\neach Impale on Enemy": {
+    "extra": " for\neach Impale on Enemy ",
+    "mod_types": [
+      "LIST"
+    ],
+    "ok": true,
+    "unsupported": true
+  },
+  "You and your Minions prevent +100% of Reflected Elemental Damage": {
+    "extra": "You and your Minions prevent +100% of Reflected Elemental Damage ",
+    "mod_types": [],
+    "ok": false,
+    "unsupported": true
+  },
+  "You and your Minions prevent +100% of Reflected Physical Damage": {
+    "extra": "You and your Minions prevent +100% of Reflected Physical Damage ",
+    "mod_types": [],
+    "ok": false,
+    "unsupported": true
+  },
+  "You and your Minions prevent +48% of Reflected Elemental Damage": {
+    "extra": "You and your Minions prevent +48% of Reflected Elemental Damage ",
+    "mod_types": [],
+    "ok": false,
+    "unsupported": true
+  },
+  "You and your Minions prevent +48% of Reflected Physical Damage": {
+    "extra": "You and your Minions prevent +48% of Reflected Physical Damage ",
+    "mod_types": [],
+    "ok": false,
+    "unsupported": true
+  },
+  "You and your Minions prevent +66% of Reflected Elemental Damage": {
+    "extra": "You and your Minions prevent +66% of Reflected Elemental Damage ",
+    "mod_types": [],
+    "ok": false,
+    "unsupported": true
+  },
+  "You and your Minions prevent +66% of Reflected Physical Damage": {
+    "extra": "You and your Minions prevent +66% of Reflected Physical Damage ",
+    "mod_types": [],
+    "ok": false,
+    "unsupported": true
+  },
+  "You are Immune to Ailments while Focused": {
+    "extra": "Immune to Ailments  ",
+    "mod_types": [],
+    "ok": false,
+    "unsupported": true
+  },
+  "You can inflict Bleeding on an Enemy up to 8 times\nYour Bleeding does not deal extra Damage while the Enemy is moving and cannot be Aggravated\n50% less Damage with Bleeding": {
+    "extra": "You can inflict Bleeding on an Enemy up to 8 times\nYour Bleeding does not deal extra Damage while the Enemy is moving and cannot be Aggravated\n50% less Damage with Bleeding ",
+    "mod_types": [],
+    "ok": false,
+    "unsupported": true
+  },
+  "You can inflict an additional Ignite on each Enemy\nBase Ignite Duration is 1 second\n25% less Damage with Ignite\nCannot deal non-Fire Damage": {
+    "extra": "You can inflict an additional Ignite on each Enemy\nBase  second\n25% less Damage with Ignite\nCannot deal non-Fire Damage ",
+    "mod_types": [
+      "OVERRIDE"
+    ],
+    "ok": true,
+    "unsupported": true
+  },
+  "You can only have one Herald\n50% more Effect of Herald Buffs on you\n100% more Damage with Hits from Herald Skills\n50% more Damage Over Time with Herald Skills\nMinions from Herald Skills deal 25% more Damage\nYour Aura Skills are Disabled": {
+    "extra": "You can only have one Herald\n50% more Effect of Herald Buffs on you\n100% more Damage with Hits from Herald Skills\n50% more Damage Over Time with Herald Skills\nMinions from Herald Skills deal 25% more Damage\nYour Aura Skills are Disabled ",
+    "mod_types": [],
+    "ok": false,
+    "unsupported": true
+  },
+  "You can't deal Damage with Skills yourself\n+1 to maximum number of Summoned Totems": {
+    "extra": "You can't deal Damage with Skills yourself\n+1 to maximum number of Summoned Totems ",
+    "mod_types": [],
+    "ok": false,
+    "unsupported": true
+  },
+  "You count as Dual Wielding while you are Unencumbered\n40% more Attack Speed with Melee Skills while you are Unencumbered\nAdds 14 to 20 Attack Physical Damage to Melee Skills per 10 Dexterity while you are Unencumbered": {
+    "extra": "You count as Dual Wielding while you are Unencumbered\n40% more Attack Speed with Melee Skills while you are Unencumbered\nAdds 14 to 20 Attack Physical Damage to Melee Skills per 10 Dexterity while you are Unencumbered ",
+    "mod_types": [],
+    "ok": false,
+    "unsupported": true
+  },
+  "You have Onslaught during Soul Gain Prevention": {
+    "extra": "",
+    "mod_types": [
+      "FLAG"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "You have Tailwind if you have dealt a Critical Strike Recently": {
+    "extra": "",
+    "mod_types": [
+      "FLAG"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "You have Vaal Pact while Focused": {
+    "extra": "",
+    "mod_types": [
+      "LIST"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "Your Hexes have infinite Duration\n20% less Effect of your Curses": {
+    "extra": "Your Hexes have infinite Duration\n20% less Effect of your Curses ",
+    "mod_types": [],
+    "ok": false,
+    "unsupported": true
+  },
+  "Your Hits against Marked Enemy cannot be Blocked or Suppressed": {
+    "extra": "Your Hits against Marked Enemy cannot be Blocked or Suppressed ",
+    "mod_types": [],
+    "ok": false,
+    "unsupported": true
+  },
+  "Your Mercenary and their Minions deal 8% more Damage for\neach Unique item they have equipped": {
+    "extra": "Your Mercenary and their Minions deal 8% more Damage for\neach Unique item they have equipped ",
+    "mod_types": [],
+    "ok": false,
+    "unsupported": true
+  },
+  "Your Warcries attempt to shake extra items from Corpses": {
+    "extra": "Your Warcries attempt to shake extra items from Corpses ",
+    "mod_types": [],
+    "ok": false,
+    "unsupported": true
+  },
+  "Your Warcries do not grant Buffs or Charges to You\n100% more Warcry Duration": {
+    "extra": "Your Warcries do not grant Buffs or Charges to You\n100% more Warcry Duration ",
+    "mod_types": [],
+    "ok": false,
+    "unsupported": true
+  },
+  "Your Warcries open Chests": {
+    "extra": "Your Warcries open Chests ",
+    "mod_types": [],
+    "ok": false,
+    "unsupported": true
+  },
+  "Your hits can't be Evaded\nNever deal Critical Strikes": {
+    "extra": "Your hits can't be Evaded\nNever deal Critical Strikes ",
+    "mod_types": [],
+    "ok": false,
+    "unsupported": true
+  },
+  "Zealotry has 31% increased Aura Effect": {
+    "extra": "",
+    "mod_types": [
+      "INC"
+    ],
+    "ok": true,
+    "unsupported": false
+  },
+  "Zealotry has 51% increased Aura Effect": {
+    "extra": "",
+    "mod_types": [
+      "INC"
+    ],
+    "ok": true,
+    "unsupported": false
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "schema_version": "1.0.0",
+  "notes": [
+    {
+      "id": "pride.ramp_seconds",
+   "skill_gates": [
+    "Pride"
+   ],
+   "effect": "constraint",
+   "summary": "Pride's aura builds from its initial effect to its maximum over 4 seconds of the enemy staying in it; PoB models only the two ends (prideEffect MIN / MAX), so the value reached inside the ramp budget is written as a custom modifier on top of MIN.",
+   "params": {
+    "ramp_seconds": 4
+   },
+   "applies_to": "single_target",
+   "source": "https://www.poewiki.net/wiki/Pride"
+  },
+  {
+   "id": "perforate.overlapping_spikes_on_one_target",
+   "skill_gates": [
+    "Perforate"
+   ],
+   "effect": "constraint",
+   "summary": "Blood Stance spikes burst from the ground in sequence over an area: one boss-sized target is caught by 1-2 of them, not by every spike (PoB asks for the number and caps it at the skill's spike count). Sand Stance thrusts the spikes outwards and has no overlap at all.",
+   "params": {
+    "overlaps_blood_stance": 1
+   },
+   "applies_to": "single_target",
+   "source": "docs/readings/2026-09-18-frozen-campaigns-part2.md (the user's reading; the low end of 1-2 until the queued Perforate research lands)"
+  },
+  {
+   "id": "volatile_dead.orb_cap",
+      "skill_gates": [
+        "Volatile Dead"
+      ],
+      "effect": "constraint",
+      "summary": "Single-target damage is capped by corpse generation rate and the active orb cap, not only by listed damage per orb.",
+      "params": {},
+      "applies_to": "single_target",
+      "source": "https://www.poewiki.net/wiki/Volatile_Dead"
+    },
+    {
+      "id": "detonate_dead_of_scavenging.native_corpse_only",
+      "skill_gates": [
+        "Detonate Dead of Scavenging"
+      ],
+      "effect": "constraint",
+      "summary": "Cannot consume player-created corpses; single-target damage depends on native corpse availability and corpse life.",
+      "params": {},
+      "applies_to": "single_target",
+      "source": "https://www.poewiki.net/wiki/Detonate_Dead_of_Scavenging"
+    },
+    {
+      "id": "fireball.explosion_overlap",
+      "skill_gates": [
+        "Fireball"
+      ],
+      "effect": "note",
+      "summary": "Multiple fireball explosions from one cast overlap on a single target only when projectiles detonate on other enemies or terrain; PoB single-hit DPS does not model this.",
+      "params": {},
+      "applies_to": "single_target",
+      "source": "https://www.poewiki.net/wiki/Fireball"
+    },
+    {
+      "id": "brands.attached_count_is_counted_by_pob_once",
+      "skill_gates": [
+        "Storm Brand",
+        "Penance Brand",
+        "Armageddon Brand",
+        "Wintertide Brand",
+        "Arcanist Brand"
+      ],
+      "effect": "note",
+      "summary": "PoB counts the brands attached to the enemy itself: AttachedBrandCount = min(BrandsAttachedLimit, ActiveBrandLimit) unless the config names fewer (CalcPerform.lua:1322-1326), and multiplies the brand's TotalDPS by it (CalcOffence.lua:2423-2425; Wintertide Brand part 1 puts it into its own Damage MORE, Data/Skills/act_int.lua:21108-21134). Sources of 'You can have an additional Brand Attached to an Enemy' (Brand Mastery, Runebinder) raise that number, so they are not worthless. FullDPS multiplies once more by the gem's instance count (Calcs.lua:289), so a brand gem stays at count 1 (#963: PobSession.load_xml and set_skills write it).",
+      "params": {
+        "brand_mastery_effect_id": 32877
+      },
+      "applies_to": "both",
+      "source": "measured 2026-10-13 (#963): hit_penance_brand s4 TotalDPS 1,163,543 = AverageHit 319,374 x HitSpeed 1.8216 x AttachedBrandCount 2; FullDPS 2,327,429 with gem count 2, 1,163,543 with gem count 1"
+    }
+  ]
+}

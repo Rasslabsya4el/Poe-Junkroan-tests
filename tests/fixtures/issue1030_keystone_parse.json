@@ -1,0 +1,169 @@
+[
+ {
+  "keystone": "Chaos Inoculation",
+  "stats": [
+   "Maximum Life becomes 1, Immune to Chaos Damage"
+  ],
+  "parsed": [
+   {
+    "line": "Maximum Life becomes 1, Immune to Chaos Damage",
+    "mods": [
+     {
+      "flags": [],
+      "keyword_flags": [],
+      "name": "ChaosInoculation",
+      "tags": [],
+      "type": "FLAG",
+      "value": true
+     },
+     {
+      "flags": [],
+      "keyword_flags": [],
+      "name": "ChaosDamageTaken",
+      "tags": [],
+      "type": "MORE",
+      "value": -100
+     }
+    ],
+    "ok": true,
+    "unsupported": false
+   }
+  ]
+ },
+ {
+  "keystone": "Blood Magic",
+  "stats": [
+   "Removes all mana\n10% more maximum Life\nSkills Cost Life instead of Mana\nSkills Reserve Life instead of Mana"
+  ],
+  "parsed": [
+   {
+    "line": "Removes all mana",
+    "mods": [
+     {
+      "flags": [],
+      "keyword_flags": [],
+      "name": "Mana",
+      "tags": [],
+      "type": "MORE",
+      "value": -100
+     }
+    ],
+    "ok": true,
+    "unsupported": false
+   },
+   {
+    "line": "10% more maximum Life",
+    "mods": [
+     {
+      "flags": [],
+      "keyword_flags": [],
+      "name": "Life",
+      "tags": [],
+      "type": "MORE",
+      "value": 10
+     }
+    ],
+    "ok": true,
+    "unsupported": false
+   },
+   {
+    "line": "Skills Cost Life instead of Mana",
+    "mods": [
+     {
+      "flags": [],
+      "keyword_flags": [],
+      "name": "CostLifeInsteadOfMana",
+      "tags": [],
+      "type": "FLAG",
+      "value": true
+     }
+    ],
+    "ok": true,
+    "unsupported": false
+   },
+   {
+    "line": "Skills Reserve Life instead of Mana",
+    "mods": [
+     {
+      "flags": [],
+      "keyword_flags": [],
+      "name": "BloodMagicReserved",
+      "tags": [],
+      "type": "FLAG",
+      "value": true
+     }
+    ],
+    "ok": true,
+    "unsupported": false
+   }
+  ]
+ },
+ {
+  "keystone": "Mind Over Matter",
+  "stats": [
+   "40% of Damage is taken from Mana before Life"
+  ],
+  "parsed": [
+   {
+    "line": "40% of Damage is taken from Mana before Life",
+    "mods": [
+     {
+      "flags": [],
+      "keyword_flags": [],
+      "name": "DamageTakenFromManaBeforeLife",
+      "tags": [],
+      "type": "BASE",
+      "value": 40
+     }
+    ],
+    "ok": true,
+    "unsupported": false
+   }
+  ]
+ },
+ {
+  "keystone": "Iron Grip",
+  "stats": [
+   "Strength's Damage bonus applies to Projectile Attack Damage as well as Melee Damage"
+  ],
+  "parsed": [
+   {
+    "line": "Strength's Damage bonus applies to Projectile Attack Damage as well as Melee Damage",
+    "mods": [
+     {
+      "flags": [],
+      "keyword_flags": [],
+      "name": "IronGrip",
+      "tags": [],
+      "type": "FLAG",
+      "value": true
+     }
+    ],
+    "ok": true,
+    "unsupported": false
+   }
+  ]
+ },
+ {
+  "keystone": "Elemental Equilibrium",
+  "stats": [
+   "Hits that deal Elemental Damage remove Exposure to those Elements and inflict Exposure to other Elements\nExposure inflicted this way applies -25% to Resistances"
+  ],
+  "parsed": [
+   {
+    "extra": "Hits that deal Elemental Damage remove Exposure to those Elements and inflict Exposure to other Elements ",
+    "line": "Hits that deal Elemental Damage remove Exposure to those Elements and inflict Exposure to other Elements",
+    "mods": [],
+    "ok": false,
+    "unsupported": true
+   },
+   {
+    "extra": "Exposure inflicted this way applies -25% to Resistances ",
+    "line": "Exposure inflicted this way applies -25% to Resistances",
+    "mods": [],
+    "ok": false,
+    "unsupported": true
+   }
+  ]
+ }
+]

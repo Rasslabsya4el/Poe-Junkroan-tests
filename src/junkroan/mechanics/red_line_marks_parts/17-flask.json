@@ -1,0 +1,82 @@
+[
+ {
+  "line": "Gain 20% of Physical Damage as Extra Cold Damage if you've used a Sapphire Flask Recently",
+  "surfaces": [
+   "ascendancy"
+  ],
+  "sources": [
+   "54928"
+  ],
+  "group": "flask",
+  "kind": "uptime_dependent",
+  "boss_lane": [],
+  "optimistic_lane": [
+   "Gain 20% of Physical Damage as Extra Cold Damage"
+  ],
+  "zero_reason": "",
+  "type": "attack",
+  "why": "the extra Cold gain holds only within 4 s of using a Sapphire Flask, so its worth is the flask-use uptime (parked #965): optimistic lane at full uptime, boss lane empty",
+  "partial_part": "if you've used a Sapphire Flask Recently"
+ },
+ {
+  "line": "Gain 20% of Physical Damage as Extra Fire Damage if you've used a Ruby Flask Recently",
+  "surfaces": [
+   "ascendancy"
+  ],
+  "sources": [
+   "54928"
+  ],
+  "group": "flask",
+  "kind": "uptime_dependent",
+  "boss_lane": [],
+  "optimistic_lane": [
+   "Gain 20% of Physical Damage as Extra Fire Damage"
+  ],
+  "zero_reason": "",
+  "type": "attack",
+  "why": "the extra Fire gain holds only within 4 s of using a Ruby Flask, so its worth is the flask-use uptime (parked #965): optimistic lane at full uptime, boss lane empty",
+  "partial_part": "if you've used a Ruby Flask Recently"
+ },
+ {
+  "line": "Gain 20% of Physical Damage as Extra Lightning Damage if you've used a Topaz Flask Recently",
+  "surfaces": [
+   "ascendancy"
+  ],
+  "sources": [
+   "54928"
+  ],
+  "group": "flask",
+  "kind": "uptime_dependent",
+  "boss_lane": [],
+  "optimistic_lane": [
+   "Gain 20% of Physical Damage as Extra Lightning Damage"
+  ],
+  "zero_reason": "",
+  "type": "attack",
+  "why": "the extra Lightning gain holds only within 4 s of using a Topaz Flask, so its worth is the flask-use uptime (parked #965): optimistic lane at full uptime, boss lane empty",
+  "partial_part": "if you've used a Topaz Flask Recently"
+ },
+ {
+  "line": "Tinctures applied to you have 75% increased Effect per empty Flask Slot",
+  "surfaces": [
+   "ascendancy"
+  ],
+  "sources": [
+   "63362"
+  ],
+  "group": "flask",
+  "kind": "per_empty_flask_slot",
+  "boss_lane": [],
+  "optimistic_lane": [
+   "Tinctures applied to you have 75% increased Effect"
+  ],
+  "zero_reason": "",
+  "type": "attack",
+  "why": "PoB has no empty-Flask-slot multiplier for TinctureEffect; the lane carries the line's value for one empty slot (the least a build with a tincture and a free slot holds), a new kind so optimistic lane only",
+  "partial_part": "",
+  "stand_blind": {
+   "reason_kind": "mechanic-absent",
+   "why": "no stand carries a Tincture, so the Tincture effect per empty Flask Slot has nothing to scale"
+  }
+ }
+]
