@@ -1,0 +1,11 @@
+{
+ "pobbin_id": "ZopWMFtrGpNZ",
+ "pobbin_url": "https://pobb.in/ZopWMFtrGpNZ",
+ "author_pobbin_url": "https://pobb.in/XdmDHsFHiMlV",
+ "ratio_lane": 1.3144373526369755,
+ "stat": "CombinedDPS",
+ "ours": 737408.39215511,
+ "author_lane": 561006.87543286,
+ "ours_life": 3779,
+ "loop_stop": "converged"
+}

@@ -1,0 +1,16 @@
+[project]
+name = "poe-junkroan-v2"
+version = "0.1.0"
+description = "Machine search for Path of Exile builds with Path of Building as the numeric oracle."
+requires-python = ">=3.12"
+dependencies = []
+
+[project.scripts]
+junkroan = "junkroan.cli:main"
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "jsonschema>=4", "lupa>=2.8", "pytest-xdist==3.8.0", "pytest-testmon==2.2.0"]
+research = ["highspy>=1.15"]
+
+[tool.setuptools.packages.find]
+where = ["src"]

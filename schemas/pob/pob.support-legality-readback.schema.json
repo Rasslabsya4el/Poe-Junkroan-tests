@@ -1,0 +1,464 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://poe-build-research.local/schemas/pob/pob.support-legality-readback.schema.json",
+  "title": "PoB support legality read-back",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "record_kind",
+    "proposal",
+    "runtime_observation",
+    "tag_precheck",
+    "observed_rows",
+    "summary",
+    "forbidden_decision_outputs_absent",
+    "publication_outputs_absent"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "1.0.0"
+    },
+    "record_kind": {
+      "type": "string",
+      "const": "pob_support_legality_readback"
+    },
+    "proposal": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "active_skill",
+        "requested_supports"
+      ],
+      "properties": {
+        "active_skill": {
+          "$ref": "#/$defs/active_skill_request"
+        },
+        "requested_supports": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/support_request"
+          }
+        }
+      }
+    },
+    "runtime_observation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "observation_state",
+        "authority",
+        "observation_ref",
+        "observed_socket_group_id",
+        "observed_active_skill_id",
+        "message"
+      ],
+      "properties": {
+        "observation_state": {
+          "type": "string",
+          "enum": [
+            "observed",
+            "needs_pob_runtime",
+            "unsupported_by_tooling"
+          ]
+        },
+        "authority": {
+          "type": "string",
+          "enum": [
+            "pinned_pob_skills_state_readback",
+            "none"
+          ]
+        },
+        "observation_ref": {
+          "$ref": "#/$defs/nullable_string"
+        },
+        "observed_socket_group_id": {
+          "$ref": "#/$defs/nullable_string"
+        },
+        "observed_active_skill_id": {
+          "$ref": "#/$defs/nullable_string"
+        },
+        "message": {
+          "$ref": "#/$defs/non_empty_string"
+        }
+      }
+    },
+    "tag_precheck": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "source",
+        "concerns_can_mark_legal",
+        "concerns"
+      ],
+      "properties": {
+        "source": {
+          "type": "string",
+          "enum": [
+            "skill_requirements_packet",
+            "absent"
+          ]
+        },
+        "concerns_can_mark_legal": {
+          "type": "boolean",
+          "const": false
+        },
+        "concerns": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/tag_precheck_concern"
+          }
+        }
+      }
+    },
+    "observed_rows": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/observed_row"
+      }
+    },
+    "summary": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "packet_status",
+        "all_supports_accepted",
+        "accepted_count",
+        "disabled_count",
+        "blocked_count",
+        "warning_count",
+        "unsupported_by_tooling_count",
+        "needs_pob_runtime_count",
+        "fail_closed",
+        "blockers"
+      ],
+      "properties": {
+        "packet_status": {
+          "type": "string",
+          "enum": [
+            "accepted",
+            "blocked",
+            "needs_pob_runtime"
+          ]
+        },
+        "all_supports_accepted": {
+          "type": "boolean"
+        },
+        "accepted_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "disabled_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "blocked_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "warning_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "unsupported_by_tooling_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "needs_pob_runtime_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "fail_closed": {
+          "type": "boolean"
+        },
+        "blockers": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/non_empty_string"
+          }
+        }
+      }
+    },
+    "forbidden_decision_outputs_absent": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "class_selected",
+        "ascendancy_selected",
+        "tree_route_selected",
+        "item_plan_selected",
+        "support_setup_selected",
+        "final_build_decision",
+        "publication_output"
+      ],
+      "properties": {
+        "class_selected": {
+          "type": "boolean",
+          "const": false
+        },
+        "ascendancy_selected": {
+          "type": "boolean",
+          "const": false
+        },
+        "tree_route_selected": {
+          "type": "boolean",
+          "const": false
+        },
+        "item_plan_selected": {
+          "type": "boolean",
+          "const": false
+        },
+        "support_setup_selected": {
+          "type": "boolean",
+          "const": false
+        },
+        "final_build_decision": {
+          "type": "boolean",
+          "const": false
+        },
+        "publication_output": {
+          "type": "boolean",
+          "const": false
+        }
+      }
+    },
+    "publication_outputs_absent": {
+      "type": "boolean",
+      "const": true
+    }
+  },
+  "$defs": {
+    "active_skill_request": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "name",
+        "skill_id",
+        "socket_group_id",
+        "active_skill_id"
+      ],
+      "properties": {
+        "name": {
+          "$ref": "#/$defs/non_empty_string"
+        },
+        "skill_id": {
+          "$ref": "#/$defs/nullable_string"
+        },
+        "socket_group_id": {
+          "$ref": "#/$defs/nullable_string"
+        },
+        "active_skill_id": {
+          "$ref": "#/$defs/nullable_string"
+        }
+      }
+    },
+    "support_request": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "name",
+        "skill_id",
+        "gem_entry_id"
+      ],
+      "properties": {
+        "name": {
+          "$ref": "#/$defs/non_empty_string"
+        },
+        "skill_id": {
+          "$ref": "#/$defs/nullable_string"
+        },
+        "gem_entry_id": {
+          "$ref": "#/$defs/nullable_string"
+        }
+      }
+    },
+    "tag_precheck_concern": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "concern_id",
+        "status",
+        "summary"
+      ],
+      "properties": {
+        "concern_id": {
+          "$ref": "#/$defs/non_empty_string"
+        },
+        "status": {
+          "$ref": "#/$defs/non_empty_string"
+        },
+        "summary": {
+          "$ref": "#/$defs/non_empty_string"
+        }
+      }
+    },
+    "observed_row": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "support_name",
+        "requested_index",
+        "status",
+        "row_kind",
+        "observed_from_pob",
+        "authority",
+        "source",
+        "matched_support_link",
+        "matched_gem_entry",
+        "tag_precheck_concern_ids",
+        "reason"
+      ],
+      "properties": {
+        "support_name": {
+          "$ref": "#/$defs/non_empty_string"
+        },
+        "requested_index": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "accepted",
+            "disabled",
+            "blocked",
+            "warning",
+            "unsupported_by_tooling",
+            "needs_pob_runtime"
+          ]
+        },
+        "row_kind": {
+          "type": "string",
+          "enum": [
+            "pob_accepted_support",
+            "pob_disabled_support",
+            "pob_blocked_support",
+            "pob_warning_support",
+            "unresolved_requested_support",
+            "runtime_unavailable"
+          ]
+        },
+        "observed_from_pob": {
+          "type": "boolean"
+        },
+        "authority": {
+          "type": "string",
+          "enum": [
+            "pob_support_link",
+            "pob_gem_entry",
+            "none"
+          ]
+        },
+        "source": {
+          "type": "string",
+          "enum": [
+            "active_skill_support_links",
+            "socket_group_gem_entry",
+            "unresolved_requested_support",
+            "runtime_unavailable",
+            "active_skill_unresolved"
+          ]
+        },
+        "matched_support_link": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/support_link"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "matched_gem_entry": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/gem_entry"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "tag_precheck_concern_ids": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/non_empty_string"
+          }
+        },
+        "reason": {
+          "$ref": "#/$defs/non_empty_string"
+        }
+      }
+    },
+    "support_link": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "name",
+        "skill_id",
+        "from_item",
+        "source_gem_entry_id"
+      ],
+      "properties": {
+        "name": {
+          "$ref": "#/$defs/non_empty_string"
+        },
+        "skill_id": {
+          "$ref": "#/$defs/nullable_string"
+        },
+        "from_item": {
+          "type": "boolean"
+        },
+        "source_gem_entry_id": {
+          "$ref": "#/$defs/nullable_string"
+        }
+      }
+    },
+    "gem_entry": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "gem_entry_id",
+        "gem_name",
+        "skill_id",
+        "enabled",
+        "is_support"
+      ],
+      "properties": {
+        "gem_entry_id": {
+          "$ref": "#/$defs/nullable_string"
+        },
+        "gem_name": {
+          "$ref": "#/$defs/non_empty_string"
+        },
+        "skill_id": {
+          "$ref": "#/$defs/nullable_string"
+        },
+        "enabled": {
+          "type": "boolean"
+        },
+        "is_support": {
+          "type": "boolean"
+        }
+      }
+    },
+    "non_empty_string": {
+      "type": "string",
+      "minLength": 1
+    },
+    "nullable_string": {
+      "anyOf": [
+        {
+          "type": "string",
+          "minLength": 1
+        },
+        {
+          "type": "null"
+        }
+      ]
+    }
+  }
+}

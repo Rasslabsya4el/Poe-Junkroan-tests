@@ -1,0 +1,36 @@
+author tree 3_28 -> 3_29: 106 nodes, 0 lost
+author gems normalized to the rails: level 18/0 -> 18/0 on 8 gems (1 flat-reservation auras kept below the rail)
+author uniques from PoB's database (current variant, mid roll) ['Weapon 1']: CombinedDPS 68,835 -> 68,835, FullDPS 609,973 -> 609,973 (author's own config)
+author raw 609,973 FullDPS; under our lane 606,671 (choices {'elementalArmyExposureType': '0'}); objective maximize FullDPS subject to Life >= 4559, EffectiveMovementSpeedMod >= 1.164, MoMCastsAfterMaxHit >= 3, ElementalOverloadUptime >= 0.9, TotalEHP >= 21482.8, PhysicalMaximumHitTaken >= 5257.3, FireMaximumHitTaken >= 20831.6, ColdMaximumHitTaken >= 21699.9, LightningMaximumHitTaken >= 20831.6, RampBudget >= RampStages, FireResist >= FireResistMax, ColdResist >= ColdResistMax, LightningResist >= LightningResistMax, Str >= ReqStr, Dex >= ReqDex, Int >= ReqInt, ManaUnreserved >= ManaOverReserved, ManaCostPool >= ManaCost, LifeUnreserved >= LifeCost, NetLifeRegen+NetEnergyShieldRegen+SelfCostPerSecond >= 0*Life, ManaRegenRecovery+ManaLeechGainRate+ManaRecoup >= 0.85*ManaSustainPerSecondCost, LifeRegenRecovery+LifeLeechGainRate+LifeRecoup >= 0.85*LifeSustainPerSecondCost, EnergyShieldRegenRecovery+EnergyShieldLeechGainRate+EnergyShieldRecoup+EnergyShieldRechargeForCosts >= 0.85*ESSustainPerSecondCost
+pantheon_major: 'TheBrineKing' -> 'None' (rails)
+pantheon_minor: 'Ryslatha' -> 'None' (rails)
+step start: skeleton applied
+  skeleton applied                  14 s  value      181,350  viol 9.484  ramp 0 s/2.5 s   minions {'Absolution': 3, 'Raise Zombie': 6, 'Summon Carrion Golem': 1} minion skills {'Absolution': 2, 'Raise Zombie': 3, 'Summon Carrion Golem': 1}
+step start: config (conservative lane)
+  config (conservative lane)       3.6 s  value      199,823  viol 9.484  ramp 0 s/2.5 s  2 inputs on  [+10.2% vs skeleton applied]
+step skipped: rig gear
+step skipped: rig tree
+step skipped: gear pass 1 (rig tree)
+step start: gear pass 1 (empty tree)
+  gear pass 1 (empty tree)       7.5 min  value      170,565  viol 8.449  ramp 0 s/2.5 s    [-14.6% vs config (conservative lane)]
+step skipped: config re-derived (after gear pass 1)
+step start: flat-reservation aura levels
+  flat-reservation aura levels      11 s  value      170,565  viol 8.313  ramp 0 s/2.5 s  Clarity 1  [+0.0% vs gear pass 1 (empty tree)]
+step skipped: supports re-picked (no number)
+step skipped: tree seed toward <stat>
+step start: tree greedy
+  tree greedy                    8.7 min  value      500,036  viol 0.901  ramp 0 s/2.5 s  budget spent  [+193.2% vs flat-reservation aura levels]
+step start: gear pass 2 (with tree)
+  gear pass 2 (with tree)         43 min  value      500,036  viol 0.322  ramp 0 s/2.5 s    [+0.0% vs tree greedy]
+step start: tree rebuilt on gear
+  tree rebuilt on gear            23 min  value      462,030  viol 0.000  ramp 0 s/2.5 s  500,036 (viol 0.322) -> 462,030 (viol 0.000) kept [sum 462,030 (viol 0.000); cover 396,588 (viol 0.000) | rebuild before: construction 500,036 (viol 0.322: TotalEHP 0.21, LightningMaximumHitTaken 0.0713, ColdMaximumHitTaken 0.0398) | delivered 500,036 (viol 0.322: TotalEHP 0.21, LightningMaximumHitTaken 0.0713, ColdMaximumHitTaken 0.0398) | rebuild sum: construction 462,030 (viol 0.000) | delivered 462,030 (viol 0.000) | rebuild cover: construction 396,588 (viol 0.000) | delivered 396,588 (viol 0.000)]  [-7.6% vs gear pass 2 (with tree)]
+step start: anoint
+  anoint                            14 s  value      495,640  viol 0.000  ramp 0 s/2.5 s  anoint: Redemption, score 462,030 -> 495,640, 198 measured, 14 s  [+7.3% vs tree rebuilt on gear]
+step start: flasks
+  flasks                         9.5 min  value      495,640  viol 0.000  ramp 0 s/2.5 s  flask: Flask 1 'Seething Divine Life Flask of Damping' (input), score 495640 -> 495640, 79 measured, 45 s; flask: Flask 2 'Masochist's Eternal Life Flask of Abundance' (input), score 495640 -> 495640, 243 measured, 2.1 min; flask: Flask 3 'Wide Ruby Flask of Imposing' (input), score 495640 -> 495640, 243 measured, 2 min; flask: Flask 4 'Scholar's Divine Life Flask of Sealing' (input), score 495640 -> 495640, 243 measured, 2.5 min; flask: Flask 5 'Seething Divine Life Flask of Obstruction' (input), score 495640 -> 495640, 243 measured, 2.1 min; 495,640 -> 495,640; 1051 measured  [+0.0% vs anoint]
+step skipped: clusters
+step start: jewels
+  jewels                          14 min  value      499,620  viol 0.000  ramp 0 s/2.5 s  socket 36634 'Minions deal 15% increased Damage'; 1952 measured  [+0.8% vs flasks]
+step skipped: supports re-picked
+step skipped: utility links
+step skipped: tree refine

@@ -1,0 +1,4252 @@
+{
+  "tier_counts": {
+    "4": 63,
+    "7": 29,
+    "6": 39,
+    "2": 87,
+    "5": 54,
+    "3": 78,
+    "8": 20,
+    "1": 37,
+    "11": 4,
+    "9": 11,
+    "13": 1,
+    "12": 2,
+    "10": 1
+  },
+  "t1_per_rare": [
+    0,
+    0,
+    0,
+    0,
+    3,
+    0,
+    0,
+    0,
+    0,
+    2,
+    2,
+    0,
+    2,
+    1,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    1,
+    0,
+    1,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    1,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    1,
+    0,
+    1,
+    1,
+    1,
+    2,
+    0,
+    0,
+    0,
+    0,
+    2,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    1,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1
+  ],
+  "items": [
+    {
+      "build": "stormbrand",
+      "name": "Loath Roar",
+      "base": "Karui Sceptre",
+      "mods": [
+        {
+          "line": "Adds 17 to 27 Physical Damage",
+          "group": "LocalPhysicalDamage",
+          "tier": 4,
+          "of": 9,
+          "crafted": false
+        },
+        {
+          "line": "24% increased Fire Damage",
+          "group": "FireDamageWeaponPrefix",
+          "tier": 7,
+          "of": 8,
+          "crafted": false
+        },
+        {
+          "line": "Adds 26 to 50 Fire Damage",
+          "group": "LocalFireDamage",
+          "tier": 6,
+          "of": 10,
+          "crafted": false
+        },
+        {
+          "line": "Adds 10 to 170 Lightning Damage to Spells",
+          "group": "SpellAddedLightningDamage",
+          "tier": 2,
+          "of": 9,
+          "crafted": false
+        },
+        {
+          "line": "27% chance to Freeze",
+          "group": "ChanceToFreeze",
+          "tier": 2,
+          "of": 3,
+          "crafted": false
+        },
+        {
+          "line": "{crafted}15% increased Cast Speed",
+          "group": "IncreasedCastSpeed",
+          "tier": 5,
+          "of": 7,
+          "crafted": true
+        }
+      ]
+    },
+    {
+      "build": "stormbrand",
+      "name": "Tempest Crusher",
+      "base": "Blood Sceptre",
+      "mods": [
+        {
+          "line": "52% increased Spell Damage",
+          "group": "WeaponSpellDamage",
+          "tier": 5,
+          "of": 8,
+          "crafted": false
+        },
+        {
+          "line": "Adds 34 to 72 Cold Damage to Spells",
+          "group": "SpellAddedColdDamage",
+          "tier": 3,
+          "of": 9,
+          "crafted": false
+        },
+        {
+          "line": "35% increased Stun Duration on Enemies",
+          "group": null,
+          "tier": null,
+          "crafted": false
+        },
+        {
+          "line": "{crafted}17% increased Cast Speed",
+          "group": "IncreasedCastSpeed",
+          "tier": 4,
+          "of": 7,
+          "crafted": true
+        }
+      ]
+    },
+    {
+      "build": "stormbrand",
+      "name": "Glyph Claw",
+      "base": "Vaal Gauntlets",
+      "mods": [
+        {
+          "line": "Adds 9 to 19 Fire Damage to Attacks",
+          "group": "FireDamage",
+          "tier": 2,
+          "of": 6,
+          "crafted": false
+        },
+        {
+          "line": "+111 to maximum Life",
+          "group": "IncreasedLife",
+          "tier": 2,
+          "of": 9,
+          "crafted": false
+        },
+        {
+          "line": "13% increased Life Regeneration rate",
+          "group": "LifeRegenerationRate",
+          "tier": 4,
+          "of": 5,
+          "crafted": false
+        },
+        {
+          "line": "+40% to Fire Resistance",
+          "group": "FireResistance",
+          "tier": 3,
+          "of": 8,
+          "crafted": false
+        },
+        {
+          "line": "+39% to Lightning Resistance",
+          "group": "LightningResistance",
+          "tier": 3,
+          "of": 8,
+          "crafted": false
+        },
+        {
+          "line": "{crafted}49% increased Armour",
+          "group": "LocalPhysicalDamageReductionRatingPercent",
+          "tier": 5,
+          "of": 7,
+          "crafted": true
+        }
+      ]
+    },
+    {
+      "build": "stormbrand",
+      "name": "Kraken Knot",
+      "base": "Two-Stone Ring",
+      "mods": [
+        {
+          "line": "+131 to Accuracy Rating",
+          "group": "IncreasedAccuracy",
+          "tier": 4,
+          "of": 5,
+          "crafted": false
+        },
+        {
+          "line": "10% increased Cast Speed",
+          "group": "IncreasedCastSpeed",
+          "tier": 2,
+          "of": 3,
+          "crafted": false
+        },
+        {
+          "line": "+9 to maximum Life",
+          "group": "IncreasedLife",
+          "tier": 8,
+          "of": 8,
+          "crafted": false
+        },
+        {
+          "line": "{crafted}+19% to Lightning Resistance",
+          "group": "LightningResistance",
+          "tier": 6,
+          "of": 8,
+          "crafted": true
+        }
+      ]
+    },
+    {
+      "build": "stormbrand",
+      "name": "Dread Slippers",
+      "base": "Goliath Greaves",
+      "mods": [
+        {
+          "line": "32% reduced Attribute Requirements",
+          "group": "LocalAttributeRequirements",
+          "tier": 1,
+          "of": 2,
+          "crafted": false
+        },
+        {
+          "line": "53% increased Armour",
+          "group": "LocalPhysicalDamageReductionRatingPercent",
+          "tier": 5,
+          "of": 7,
+          "crafted": false
+        },
+        {
+          "line": "+116 to maximum Life",
+          "group": "IncreasedLife",
+          "tier": 1,
+          "of": 9,
+          "crafted": false
+        },
+        {
+          "line": "Regenerate 25.7 Life per second",
+          "group": "LifeRegeneration",
+          "tier": 4,
+          "of": 8,
+          "crafted": false
+        },
+        {
+          "line": "30% increased Movement Speed",
+          "group": "MovementVelocity",
+          "tier": 2,
+          "of": 6,
+          "crafted": false
+        },
+        {
+          "line": "28% increased Stun and Block Recovery",
+          "group": "StunRecovery",
+          "tier": 1,
+          "of": 6,
+          "crafted": false
+        }
+      ]
+    },
+    {
+      "build": "stormbrand",
+      "name": "Hate Visage",
+      "base": "Necromancer Circlet",
+      "mods": [
+        {
+          "line": "+76 to maximum Life",
+          "group": "IncreasedLife",
+          "tier": 5,
+          "of": 10,
+          "crafted": false
+        },
+        {
+          "line": "Regenerate 41.8 Life per second",
+          "group": "LifeRegeneration",
+          "tier": 4,
+          "of": 9,
+          "crafted": false
+        },
+        {
+          "line": "+50 to maximum Mana",
+          "group": "IncreasedMana",
+          "tier": 5,
+          "of": 12,
+          "crafted": false
+        },
+        {
+          "line": "+21% to Fire Resistance",
+          "group": "FireResistance",
+          "tier": 6,
+          "of": 8,
+          "crafted": false
+        },
+        {
+          "line": "+42% to Cold Resistance",
+          "group": "ColdResistance",
+          "tier": 2,
+          "of": 8,
+          "crafted": false
+        },
+        {
+          "line": "{crafted}71% increased Energy Shield",
+          "group": "LocalEnergyShieldPercent",
+          "tier": 3,
+          "of": 7,
+          "crafted": true
+        }
+      ]
+    },
+    {
+      "build": "stormbrand",
+      "name": "Empyrean Grip",
+      "base": "Two-Stone Ring",
+      "mods": [
+        {
+          "line": "12% increased Cast Speed",
+          "group": "IncreasedCastSpeed",
+          "tier": 2,
+          "of": 3,
+          "crafted": false
+        },
+        {
+          "line": "+95 to maximum Life",
+          "group": "IncreasedLife",
+          "tier": 2,
+          "of": 8,
+          "crafted": false
+        },
+        {
+          "line": "+29 to maximum Mana",
+          "group": "IncreasedMana",
+          "tier": 11,
+          "of": 13,
+          "crafted": false
+        },
+        {
+          "line": "{crafted}+14% to Cold and Lightning Resistances",
+          "group": null,
+          "tier": null,
+          "crafted": true
+        }
+      ]
+    },
+    {
+      "build": "stormbrand",
+      "name": "Doom Trap",
+      "base": "Rustic Sash",
+      "mods": [
+        {
+          "line": "+98 to maximum Life",
+          "group": "IncreasedLife",
+          "tier": 4,
+          "of": 10,
+          "crafted": false
+        },
+        {
+          "line": "+52 to maximum Mana",
+          "group": "IncreasedMana",
+          "tier": 4,
+          "of": 11,
+          "crafted": false
+        },
+        {
+          "line": "+45% to Fire Resistance",
+          "group": "FireResistance",
+          "tier": 2,
+          "of": 8,
+          "crafted": false
+        },
+        {
+          "line": "+26% to Lightning Resistance",
+          "group": "LightningResistance",
+          "tier": 5,
+          "of": 8,
+          "crafted": false
+        },
+        {
+          "line": "25% increased Stun and Block Recovery",
+          "group": "StunRecovery",
+          "tier": 2,
+          "of": 6,
+          "crafted": false
+        },
+        {
+          "line": "29% increased Flask Life Recovery rate",
+          "group": "BeltFlaskLifeRecoveryRate",
+          "tier": 2,
+          "of": 6,
+          "crafted": false
+        }
+      ]
+    },
+    {
+      "build": "stormbrand",
+      "name": "Gale Shroud",
+      "base": "Savant's Robe",
+      "mods": [
+        {
+          "line": "+29 to Intelligence",
+          "group": "Intelligence",
+          "tier": 5,
+          "of": 9,
+          "crafted": false
+        },
+        {
+          "line": "+15 to maximum Energy Shield",
+          "group": "LocalBaseEnergyShieldAndLife",
+          "tier": 3,
+          "of": 4,
+          "crafted": false
+        },
+        {
+          "line": "+119 to maximum Life",
+          "group": "IncreasedLife",
+          "tier": 5,
+          "of": 13,
+          "crafted": false
+        },
+        {
+          "line": "+34 to maximum Mana",
+          "group": "IncreasedMana",
+          "tier": 9,
+          "of": 12,
+          "crafted": false
+        },
+        {
+          "line": "+42% to Cold Resistance",
+          "group": "ColdResistance",
+          "tier": 2,
+          "of": 8,
+          "crafted": false
+        },
+        {
+          "line": "{crafted}+13% to Fire and Cold Resistances",
+          "group": null,
+          "tier": null,
+          "crafted": true
+        }
+      ]
+    },
+    {
+      "build": "smite",
+      "name": "Carrion Shelter",
+      "base": "Samnite Helmet",
+      "mods": [
+        {
+          "line": "+43 to Armour",
+          "group": "LocalBaseArmourAndLife",
+          "tier": 2,
+          "of": 3,
+          "crafted": false
+        },
+        {
+          "line": "+133 to maximum Life",
+          "group": "IncreasedLife",
+          "tier": 1,
+          "of": 10,
+          "crafted": false
+        },
+        {
+          "line": "Regenerate 47.5 Life per second",
+          "group": "LifeRegeneration",
+          "tier": 4,
+          "of": 9,
+          "crafted": false
+        },
+        {
+          "line": "+37% to Cold Resistance",
+          "group": "ColdResistance",
+          "tier": 3,
+          "of": 8,
+          "crafted": false
+        },
+        {
+          "line": "+36% to Lightning Resistance",
+          "group": "LightningResistance",
+          "tier": 3,
+          "of": 8,
+          "crafted": false
+        },
+        {
+          "line": "Reflects 8 Physical Damage to Melee Attackers",
+          "group": "AttackerTakesDamageNoRange",
+          "tier": 1,
+          "of": 2,
+          "crafted": false
+        }
+      ]
+    },
+    {
+      "build": "smite",
+      "name": "Behemoth Vise",
+      "base": "Shagreen Gloves",
+      "mods": [
+        {
+          "line": "Adds 13 to 24 Cold Damage to Attacks",
+          "group": "ColdDamage",
+          "tier": 1,
+          "of": 6,
+          "crafted": false
+        },
+        {
+          "line": "+287 to Accuracy Rating",
+          "group": "IncreasedAccuracy",
+          "tier": 3,
+          "of": 6,
+          "crafted": false
+        },
+        {
+          "line": "+40 to Evasion Rating",
+          "group": "LocalBaseEvasionRatingAndLife",
+          "tier": 1,
+          "of": 2,
+          "crafted": false
+        },
+        {
+          "line": "+28 to maximum Life",
+          "group": "IncreasedLife",
+          "tier": 7,
+          "of": 9,
+          "crafted": false
+        },
+        {
+          "line": "+34% to Cold Resistance",
+          "group": "ColdResistance",
+          "tier": 4,
+          "of": 8,
+          "crafted": false
+        },
+        {
+          "line": "+31% to Lightning Resistance",
+          "group": "LightningResistance",
+          "tier": 4,
+          "of": 8,
+          "crafted": false
+        },
+        {
+          "line": "{crafted}+47 to maximum Life",
+          "group": "IncreasedLife",
+          "tier": 6,
+          "of": 9,
+          "crafted": true
+        }
+      ]
+    },
+    {
+      "build": "smite",
+      "name": "Pain Shackle",
+      "base": "Rustic Sash",
+      "mods": [
+        {
+          "line": "+13 to maximum Energy Shield",
+          "group": "EnergyShield",
+          "tier": 9,
+          "of": 12,
+          "crafted": false
+        },
+        {
+          "line": "+112 to maximum Life",
+          "group": "IncreasedLife",
+          "tier": 3,
+          "of": 10,
+          "crafted": false
+        },
+        {
+          "line": "+27% to Fire Resistance",
+          "group": "FireResistance",
+          "tier": 5,
+          "of": 8,
+          "crafted": false
+        },
+        {
+          "line": "23% increased Stun and Block Recovery",
+          "group": "StunRecovery",
+          "tier": 2,
+          "of": 6,
+          "crafted": false
+        },
+        {
+          "line": "33% increased Flask Mana Recovery rate",
+          "group": "BeltFlaskManaRecoveryRate",
+          "tier": 2,
+          "of": 6,
+          "crafted": false
+        },
+        {
+          "line": "{crafted}+30 to Strength",
+          "group": "Strength",
+          "tier": 6,
+          "of": 10,
+          "crafted": true
+        }
+      ]
+    },
+    {
+      "build": "smite",
+      "name": "Plague March",
+      "base": "Hydrascale Boots",
+      "mods": [
+        {
+          "line": "23% increased Armour and Evasion",
+          "group": "LocalArmourAndEvasion",
+          "tier": 7,
+          "of": 7,
+          "crafted": false
+        },
+        {
+          "line": "+126 to maximum Life",
+          "group": "IncreasedLife",
+          "tier": 1,
+          "of": 9,
+          "crafted": false
+        },
+        {
+          "line": "+45% to Fire Resistance",
+          "group": "FireResistance",
+          "tier": 2,
+          "of": 8,
+          "crafted": false
+        },
+        {
+          "line": "28% increased Stun and Block Recovery",
+          "group": "StunRecovery",
+          "tier": 1,
+          "of": 6,
+          "crafted": false
+        },
+        {
+          "line": "{crafted}22% increased Movement Speed",
+          "group": null,
+          "tier": null,
+          "crafted": true
+        }
+      ]
+    },
+    {
+      "build": "smite",
+      "name": "Sorrow Coil",
+      "base": "Two-Stone Ring",
+      "mods": [
+        {
+          "line": "Adds 9 to 15 Fire Damage to Attacks",
+          "group": "FireDamage",
+          "tier": 6,
+          "of": 9,
+          "crafted": false
+        },
+        {
+          "line": "+12 to maximum Energy Shield",
+          "group": "EnergyShield",
+          "tier": 9,
+          "of": 11,
+          "crafted": false
+        },
+        {
+          "line": "+101 to maximum Life",
+          "group": "IncreasedLife",
+          "tier": 1,
+          "of": 8,
+          "crafted": false
+        },
+        {
+          "line": "+44% to Cold Resistance",
+          "group": "ColdResistance",
+          "tier": 2,
+          "of": 8,
+          "crafted": false
+        },
+        {
+          "line": "Gain 15 Life per Enemy Killed",
+          "group": "LifeGainedFromEnemyDeath",
+          "tier": 5,
+          "of": 6,
+          "crafted": false
+        },
+        {
+          "line": "{crafted}+23% to Fire Resistance",
+          "group": "FireResistance",
+          "tier": 6,
+          "of": 8,
+          "crafted": true
+        }
+      ]
+    },
+    {
+      "build": "smite",
+      "name": "Mind Collar",
+      "base": "Agate Amulet",
+      "mods": [
+        {
+          "line": "18% increased Evasion Rating",
+          "group": "GlobalEvasionRatingPercent",
+          "tier": 5,
+          "of": 7,
+          "crafted": false
+        },
+        {
+          "line": "+100 to maximum Life",
+          "group": "IncreasedLife",
+          "tier": 2,
+          "of": 9,
+          "crafted": false
+        },
+        {
+          "line": "Regenerate 15.1 Life per second",
+          "group": "LifeRegeneration",
+          "tier": 6,
+          "of": 8,
+          "crafted": false
+        },
+        {
+          "line": "+10% to all Elemental Resistances",
+          "group": "AllResistances",
+          "tier": 4,
+          "of": 6,
+          "crafted": false
+        },
+        {
+          "line": "{crafted}Adds 11 to 26 Cold Damage to Attacks",
+          "group": null,
+          "tier": null,
+          "crafted": true
+        }
+      ]
+    },
+    {
+      "build": "smite",
+      "name": "Brood Knot",
+      "base": "Topaz Ring",
+      "mods": [
+        {
+          "line": "+28 to Dexterity",
+          "group": "Dexterity",
+          "tier": 5,
+          "of": 9,
+          "crafted": false
+        },
+        {
+          "line": "+109 to maximum Life",
+          "group": "IncreasedLife",
+          "tier": 1,
+          "of": 8,
+          "crafted": false
+        },
+        {
+          "line": "+47 to maximum Mana",
+          "group": "IncreasedMana",
+          "tier": 7,
+          "of": 13,
+          "crafted": false
+        },
+        {
+          "line": "+39% to Lightning Resistance",
+          "group": "LightningResistance",
+          "tier": 3,
+          "of": 8,
+          "crafted": false
+        },
+        {
+          "line": "{crafted}+18 to Intelligence",
+          "group": "Intelligence",
+          "tier": 7,
+          "of": 9,
+          "crafted": true
+        }
+      ]
+    },
+    {
+      "build": "smite",
+      "name": "Morbid Impaler",
+      "base": "Pecoraro",
+      "mods": [
+        {
+          "line": "Adds 49 to 94 Fire Damage",
+          "group": "LocalFireDamage",
+          "tier": 4,
+          "of": 10,
+          "crafted": false
+        },
+        {
+          "line": "Adds 39 to 69 Cold Damage",
+          "group": "LocalColdDamage",
+          "tier": 5,
+          "of": 10,
+          "crafted": false
+        },
+        {
+          "line": "Adds 14 to 255 Lightning Damage",
+          "group": "LocalLightningDamage",
+          "tier": 2,
+          "of": 10,
+          "crafted": false
+        },
+        {
+          "line": "24% increased Attack Speed",
+          "group": "LocalIncreasedAttackSpeed",
+          "tier": 2,
+          "of": 8,
+          "crafted": false
+        },
+        {
+          "line": "{crafted}19% increased Critical Strike Chance",
+          "group": "LocalCriticalStrikeChance",
+          "tier": 5,
+          "of": 6,
+          "crafted": true
+        }
+      ]
+    },
+    {
+      "build": "smite",
+      "name": "Dire Thirst",
+      "base": "Fancy Foil",
+      "mods": [
+        {
+          "line": "+1 to Level of Socketed Melee Gems",
+          "group": "LocalIncreaseSocketedMeleeGemLevel",
+          "tier": 2,
+          "of": 2,
+          "crafted": false
+        },
+        {
+          "line": "Adds 16 to 34 Cold Damage",
+          "group": "LocalColdDamage",
+          "tier": 7,
+          "of": 10,
+          "crafted": false
+        },
+        {
+          "line": "Adds 14 to 197 Lightning Damage",
+          "group": "LocalLightningDamage",
+          "tier": 3,
+          "of": 10,
+          "crafted": false
+        },
+        {
+          "line": "8% increased Attack Speed",
+          "group": "LocalIncreasedAttackSpeed",
+          "tier": 7,
+          "of": 8,
+          "crafted": false
+        },
+        {
+          "line": "+233 to Accuracy Rating",
+          "group": "LocalAccuracyRating",
+          "tier": 3,
+          "of": 5,
+          "crafted": false
+        },
+        {
+          "line": "{crafted}19% increased Critical Strike Chance",
+          "group": "LocalCriticalStrikeChance",
+          "tier": 5,
+          "of": 6,
+          "crafted": true
+        }
+      ]
+    },
+    {
+      "build": "spark",
+      "name": "Behemoth Whorl",
+      "base": "Two-Stone Ring",
+      "mods": [
+        {
+          "line": "Adds 6 to 10 Physical Damage to Attacks",
+          "group": "PhysicalDamage",
+          "tier": 3,
+          "of": 6,
+          "crafted": false
+        },
+        {
+          "line": "16% increased Fire Damage",
+          "group": "FireDamagePercentage",
+          "tier": 2,
+          "of": 4,
+          "crafted": false
+        },
+        {
+          "line": "+15 to maximum Energy Shield",
+          "group": "EnergyShield",
+          "tier": 8,
+          "of": 11,
+          "crafted": false
+        },
+        {
+          "line": "+73 to maximum Life",
+          "group": "IncreasedLife",
+          "tier": 3,
+          "of": 8,
+          "crafted": false
+        },
+        {
+          "line": "12% increased Rarity of Items found",
+          "group": "ItemFoundRarityIncrease",
+          "tier": 3,
+          "of": 4,
+          "crafted": false
+        },
+        {
+          "line": "+25% to Cold Resistance",
+          "group": "ColdResistance",
+          "tier": 5,
+          "of": 8,
+          "crafted": false
+        }
+      ]
+    },
+    {
+      "build": "spark",
+      "name": "Mind Breaker",
+      "base": "Carnal Sceptre",
+      "mods": [
+        {
+          "line": "+24% to Fire Damage over Time Multiplier",
+          "group": "FireDamageOverTimeMultiplier",
+          "tier": 3,
+          "of": 5,
+          "crafted": false
+        },
+        {
+          "line": "Adds 9 to 15 Fire Damage",
+          "group": "LocalFireDamage",
+          "tier": 9,
+          "of": 10,
+          "crafted": false
+        },
+        {
+          "line": "Adds 5 to 88 Lightning Damage to Spells",
+          "group": null,
+          "tier": null,
+          "crafted": false
+        },
+        {
+          "line": "8% increased Attack Speed",
+          "group": "LocalIncreasedAttackSpeed",
+          "tier": 7,
+          "of": 8,
+          "crafted": false
+        },
+        {
+          "line": "21% increased Cast Speed",
+          "group": "IncreasedCastSpeed",
+          "tier": 3,
+          "of": 7,
+          "crafted": false
+        },
+        {
+          "line": "{crafted}39% increased Spell Damage",
+          "group": "WeaponSpellDamage",
+          "tier": 6,
+          "of": 8,
+          "crafted": true
+        }
+      ]
+    },
+    {
+      "build": "spark",
+      "name": "Horror Gorget",
+      "base": "Citrine Amulet",
+      "mods": [
+        {
+          "line": "+81 to maximum Life",
+          "group": "IncreasedLife",
+          "tier": 4,
+          "of": 9,
+          "crafted": false
+        },
+        {
+          "line": "Regenerate 1 Life per second",
+          "group": "LifeRegeneration",
+          "tier": 8,
+          "of": 8,
+          "crafted": false
+        },
+        {
+          "line": "+38% to Lightning Resistance",
+          "group": "LightningResistance",
+          "tier": 3,
+          "of": 8,
+          "crafted": false
+        },
+        {
+          "line": "{crafted}8% increased Cast Speed",
+          "group": "IncreasedCastSpeed",
+          "tier": 4,
+          "of": 4,
+          "crafted": true
+        }
+      ]
+    },
+    {
+      "build": "spark",
+      "name": "Hypnotic Crest",
+      "base": "Steel Circlet",
+      "mods": [
+        {
+          "line": "+38 to Intelligence",
+          "group": "Intelligence",
+          "tier": 4,
+          "of": 10,
+          "crafted": false
+        },
+        {
+          "line": "+17 to maximum Energy Shield",
+          "group": "LocalBaseEnergyShieldAndLife",
+          "tier": 1,
+          "of": 3,
+          "crafted": false
+        },
+        {
+          "line": "77% increased Energy Shield",
+          "group": "LocalEnergyShieldPercent",
+          "tier": 3,
+          "of": 7,
+          "crafted": false
+        },
+        {
+          "line": "29% increased Energy Shield Recharge Rate",
+          "group": "EnergyShieldRegeneration",
+          "tier": 4,
+          "of": 5,
+          "crafted": false
+        },
+        {
+          "line": "+104 to maximum Life",
+          "group": "IncreasedLife",
+          "tier": 3,
+          "of": 10,
+          "crafted": false
+        },
+        {
+          "line": "{crafted}+26% to Cold Resistance",
+          "group": "ColdResistance",
+          "tier": 5,
+          "of": 8,
+          "crafted": true
+        }
+      ]
+    },
+    {
+      "build": "spark",
+      "name": "Blight Trail",
+      "base": "Samite Slippers",
+      "mods": [
+        {
+          "line": "+40 to Intelligence",
+          "group": "Intelligence",
+          "tier": 3,
+          "of": 9,
+          "crafted": false
+        },
+        {
+          "line": "+79 to maximum Life",
+          "group": "IncreasedLife",
+          "tier": 4,
+          "of": 9,
+          "crafted": false
+        },
+        {
+          "line": "+22% to Fire Resistance",
+          "group": "FireResistance",
+          "tier": 6,
+          "of": 8,
+          "crafted": false
+        },
+        {
+          "line": "25% increased Movement Speed",
+          "group": "MovementVelocity",
+          "tier": 3,
+          "of": 6,
+          "crafted": false
+        },
+        {
+          "line": "{crafted}24% reduced Effect of Chill and Shock on you",
+          "group": null,
+          "tier": null,
+          "crafted": true
+        }
+      ]
+    },
+    {
+      "build": "spark",
+      "name": "Carrion Salvation",
+      "base": "Elegant Ringmail",
+      "mods": [
+        {
+          "line": "+17 to Intelligence",
+          "group": "Intelligence",
+          "tier": 8,
+          "of": 9,
+          "crafted": false
+        },
+        {
+          "line": "+125 to maximum Life",
+          "group": "IncreasedLife",
+          "tier": 5,
+          "of": 13,
+          "crafted": false
+        },
+        {
+          "line": "+41% to Lightning Resistance",
+          "group": "LightningResistance",
+          "tier": 3,
+          "of": 8,
+          "crafted": false
+        },
+        {
+          "line": "{crafted}Regenerate 150 Energy Shield per second while a Rare or Unique Enemy is Nearby",
+          "group": null,
+          "tier": null,
+          "crafted": true
+        }
+      ]
+    },
+    {
+      "build": "spark",
+      "name": "Skull Blow",
+      "base": "Carnal Sceptre",
+      "mods": [
+        {
+          "line": "57% increased Lightning Damage",
+          "group": "LightningDamageWeaponPrefix",
+          "tier": 4,
+          "of": 8,
+          "crafted": false
+        },
+        {
+          "line": "Adds 9 to 138 Lightning Damage to Spells",
+          "group": "SpellAddedLightningDamage",
+          "tier": 3,
+          "of": 9,
+          "crafted": false
+        },
+        {
+          "line": "+64 to maximum Mana",
+          "group": "IncreasedMana",
+          "tier": 9,
+          "of": 12,
+          "crafted": false
+        },
+        {
+          "line": "Grants 23 Life per Enemy Hit",
+          "group": "LifeGainPerTargetLocal",
+          "tier": 2,
+          "of": 8,
+          "crafted": false
+        },
+        {
+          "line": "{crafted}15% increased Cast Speed",
+          "group": "IncreasedCastSpeed",
+          "tier": 5,
+          "of": 7,
+          "crafted": true
+        }
+      ]
+    },
+    {
+      "build": "spark",
+      "name": "Gloom Thread",
+      "base": "Heavy Belt",
+      "mods": [
+        {
+          "line": "+127 to maximum Life",
+          "group": "IncreasedLife",
+          "tier": 2,
+          "of": 10,
+          "crafted": false
+        },
+        {
+          "line": "Regenerate 34.5 Life per second",
+          "group": "LifeRegeneration",
+          "tier": 4,
+          "of": 9,
+          "crafted": false
+        },
+        {
+          "line": "+17 to maximum Mana",
+          "group": "IncreasedMana",
+          "tier": 11,
+          "of": 11,
+          "crafted": false
+        },
+        {
+          "line": "+33% to Lightning Resistance",
+          "group": "LightningResistance",
+          "tier": 4,
+          "of": 8,
+          "crafted": false
+        }
+      ]
+    },
+    {
+      "build": "spark",
+      "name": "Miracle Finger",
+      "base": "Topaz Ring",
+      "mods": [
+        {
+          "line": "+29 to Strength",
+          "group": "Strength",
+          "tier": 5,
+          "of": 9,
+          "crafted": false
+        },
+        {
+          "line": "+99 to maximum Life",
+          "group": "IncreasedLife",
+          "tier": 2,
+          "of": 8,
+          "crafted": false
+        },
+        {
+          "line": "+37% to Fire Resistance",
+          "group": "FireResistance",
+          "tier": 3,
+          "of": 8,
+          "crafted": false
+        },
+        {
+          "line": "{crafted}+23% to Cold Resistance",
+          "group": "ColdResistance",
+          "tier": 6,
+          "of": 8,
+          "crafted": true
+        }
+      ]
+    },
+    {
+      "build": "ignite_penance_brand",
+      "name": "Death Medallion",
+      "base": "Onyx Amulet",
+      "mods": [
+        {
+          "line": "+16% to Damage over Time Multiplier",
+          "group": "GlobalDamageOverTimeMultiplier",
+          "tier": 3,
+          "of": 5,
+          "crafted": false
+        },
+        {
+          "line": "+31% to Global Critical Strike Multiplier",
+          "group": "CriticalStrikeMultiplier",
+          "tier": 2,
+          "of": 6,
+          "crafted": false
+        },
+        {
+          "line": "+21 to maximum Energy Shield",
+          "group": "EnergyShield",
+          "tier": 7,
+          "of": 12,
+          "crafted": false
+        },
+        {
+          "line": "+103 to maximum Life",
+          "group": "IncreasedLife",
+          "tier": 2,
+          "of": 9,
+          "crafted": false
+        }
+      ]
+    },
+    {
+      "build": "ignite_penance_brand",
+      "name": "Brood Roar",
+      "base": "Platinum Sceptre",
+      "mods": [
+        {
+          "line": "+18 to Strength",
+          "group": "Strength",
+          "tier": 7,
+          "of": 9,
+          "crafted": false
+        },
+        {
+          "line": "+28% to Fire Damage over Time Multiplier",
+          "group": "FireDamageOverTimeMultiplier",
+          "tier": 3,
+          "of": 5,
+          "crafted": false
+        },
+        {
+          "line": "Adds 54 to 99 Fire Damage",
+          "group": "LocalFireDamage",
+          "tier": 4,
+          "of": 10,
+          "crafted": false
+        },
+        {
+          "line": "17% increased Cold Damage",
+          "group": "ColdDamageWeaponPrefix",
+          "tier": 8,
+          "of": 8,
+          "crafted": false
+        },
+        {
+          "line": "+1 to Level of all Fire Spell Skill Gems",
+          "group": "GlobalIncreaseFireSpellSkillGemLevel",
+          "tier": 1,
+          "of": 1,
+          "crafted": false
+        },
+        {
+          "line": "{crafted}26% increased Fire Damage",
+          "group": "FireDamageWeaponPrefix",
+          "tier": 7,
+          "of": 8,
+          "crafted": true
+        }
+      ]
+    },
+    {
+      "build": "ignite_penance_brand",
+      "name": "Havoc Slippers",
+      "base": "Serpentscale Boots",
+      "mods": [
+        {
+          "line": "+37 to Armour",
+          "group": "LocalBaseArmourAndEvasionRating",
+          "tier": 2,
+          "of": 4,
+          "crafted": false
+        },
+        {
+          "line": "+42 to Evasion Rating",
+          "group": "LocalBaseArmourAndEvasionRating",
+          "tier": 2,
+          "of": 4,
+          "crafted": false
+        },
+        {
+          "line": "+88 to maximum Life",
+          "group": "IncreasedLife",
+          "tier": 3,
+          "of": 9,
+          "crafted": false
+        },
+        {
+          "line": "+25% to Lightning Resistance",
+          "group": "LightningResistance",
+          "tier": 5,
+          "of": 8,
+          "crafted": false
+        },
+        {
+          "line": "25% increased Movement Speed",
+          "group": "MovementVelocity",
+          "tier": 3,
+          "of": 6,
+          "crafted": false
+        },
+        {
+          "line": "{crafted}+23% to Fire Resistance",
+          "group": "FireResistance",
+          "tier": 6,
+          "of": 8,
+          "crafted": true
+        }
+      ]
+    },
+    {
+      "build": "ignite_penance_brand",
+      "name": "Sorrow Lash",
+      "base": "Heavy Belt",
+      "mods": [
+        {
+          "line": "+60 to maximum Life",
+          "group": "IncreasedLife",
+          "tier": 6,
+          "of": 10,
+          "crafted": false
+        },
+        {
+          "line": "+57 to maximum Mana",
+          "group": "IncreasedMana",
+          "tier": 3,
+          "of": 11,
+          "crafted": false
+        },
+        {
+          "line": "Regenerate 5.3 Mana per second",
+          "group": null,
+          "tier": null,
+          "crafted": false
+        },
+        {
+          "line": "+37% to Cold Resistance",
+          "group": "ColdResistance",
+          "tier": 3,
+          "of": 8,
+          "crafted": false
+        },
+        {
+          "line": "28% increased Flask Life Recovery rate",
+          "group": "BeltFlaskLifeRecoveryRate",
+          "tier": 3,
+          "of": 6,
+          "crafted": false
+        },
+        {
+          "line": "{crafted}+28% to Fire Resistance",
+          "group": "FireResistance",
+          "tier": 5,
+          "of": 8,
+          "crafted": true
+        }
+      ]
+    },
+    {
+      "build": "ignite_penance_brand",
+      "name": "Brimstone Star",
+      "base": "Thorium Spirit Shield",
+      "mods": [
+        {
+          "line": "55% increased Chance to Block",
+          "group": "LocalIncreasedBlockPercentage",
+          "tier": 5,
+          "of": 7,
+          "crafted": false
+        },
+        {
+          "line": "+23 to maximum Energy Shield",
+          "group": "LocalBaseEnergyShieldAndLife",
+          "tier": 1,
+          "of": 3,
+          "crafted": false
+        },
+        {
+          "line": "+120 to maximum Life",
+          "group": "IncreasedLife",
+          "tier": 3,
+          "of": 11,
+          "crafted": false
+        },
+        {
+          "line": "35% increased Mana Regeneration Rate",
+          "group": "ManaRegeneration",
+          "tier": 4,
+          "of": 6,
+          "crafted": false
+        },
+        {
+          "line": "+40% to Fire Resistance",
+          "group": "FireResistance",
+          "tier": 3,
+          "of": 8,
+          "crafted": false
+        },
+        {
+          "line": "+29% to Lightning Resistance",
+          "group": "LightningResistance",
+          "tier": 5,
+          "of": 8,
+          "crafted": false
+        }
+      ]
+    },
+    {
+      "build": "ignite_penance_brand",
+      "name": "Gale Knot",
+      "base": "Two-Stone Ring",
+      "mods": [
+        {
+          "line": "22% increased Cold Damage",
+          "group": "ColdDamagePercentage",
+          "tier": 1,
+          "of": 4,
+          "crafted": false
+        },
+        {
+          "line": "Adds 10 to 22 Cold Damage to Attacks",
+          "group": "ColdDamage",
+          "tier": 4,
+          "of": 9,
+          "crafted": false
+        },
+        {
+          "line": "+18 to maximum Energy Shield",
+          "group": "EnergyShield",
+          "tier": 7,
+          "of": 11,
+          "crafted": false
+        },
+        {
+          "line": "+44 to maximum Mana",
+          "group": "IncreasedMana",
+          "tier": 8,
+          "of": 13,
+          "crafted": false
+        },
+        {
+          "line": "51% increased Mana Regeneration Rate",
+          "group": "ManaRegeneration",
+          "tier": 2,
+          "of": 6,
+          "crafted": false
+        },
+        {
+          "line": "+33% to Lightning Resistance",
+          "group": "LightningResistance",
+          "tier": 4,
+          "of": 8,
+          "crafted": false
+        }
+      ]
+    },
+    {
+      "build": "ignite_penance_brand",
+      "name": "Onslaught Coat",
+      "base": "Necromancer Silks",
+      "mods": [
+        {
+          "line": "18% reduced Attribute Requirements",
+          "group": "LocalAttributeRequirements",
+          "tier": 2,
+          "of": 2,
+          "crafted": false
+        },
+        {
+          "line": "+23 to maximum Energy Shield",
+          "group": "LocalBaseEnergyShieldAndLife",
+          "tier": 2,
+          "of": 4,
+          "crafted": false
+        },
+        {
+          "line": "+98 to maximum Life",
+          "group": "IncreasedLife",
+          "tier": 7,
+          "of": 13,
+          "crafted": false
+        },
+        {
+          "line": "+41% to Cold Resistance",
+          "group": "ColdResistance",
+          "tier": 3,
+          "of": 8,
+          "crafted": false
+        }
+      ]
+    },
+    {
+      "build": "ignite_penance_brand",
+      "name": "Horror Coil",
+      "base": "Sapphire Ring",
+      "mods": [
+        {
+          "line": "Adds 4 to 9 Physical Damage to Attacks",
+          "group": "PhysicalDamage",
+          "tier": 3,
+          "of": 6,
+          "crafted": false
+        },
+        {
+          "line": "11% increased Global Accuracy Rating",
+          "group": "LightRadiusAndAccuracyPercent",
+          "tier": 3,
+          "of": 3,
+          "crafted": false
+        },
+        {
+          "line": "12% increased Cast Speed",
+          "group": "IncreasedCastSpeed",
+          "tier": 2,
+          "of": 3,
+          "crafted": false
+        },
+        {
+          "line": "+101 to maximum Life",
+          "group": "IncreasedLife",
+          "tier": 1,
+          "of": 8,
+          "crafted": false
+        },
+        {
+          "line": "5% increased Light Radius",
+          "group": "LightRadiusAndAccuracyPercent",
+          "tier": 3,
+          "of": 3,
+          "crafted": false
+        },
+        {
+          "line": "{crafted}+22% to Lightning Resistance",
+          "group": "LightningResistance",
+          "tier": 6,
+          "of": 8,
+          "crafted": true
+        }
+      ]
+    },
+    {
+      "build": "ignite_penance_brand",
+      "name": "Grim Nails",
+      "base": "Wyrmscale Gauntlets",
+      "mods": [
+        {
+          "line": "+25 to Dexterity",
+          "group": "Dexterity",
+          "tier": 7,
+          "of": 10,
+          "crafted": false
+        },
+        {
+          "line": "Adds 7 to 10 Cold Damage to Attacks",
+          "group": "ColdDamage",
+          "tier": 4,
+          "of": 6,
+          "crafted": false
+        },
+        {
+          "line": "61% increased Armour and Evasion",
+          "group": "LocalArmourAndEvasion",
+          "tier": 4,
+          "of": 7,
+          "crafted": false
+        },
+        {
+          "line": "+126 to maximum Life",
+          "group": "IncreasedLife",
+          "tier": 1,
+          "of": 9,
+          "crafted": false
+        },
+        {
+          "line": "+23% to Cold Resistance",
+          "group": "ColdResistance",
+          "tier": 6,
+          "of": 8,
+          "crafted": false
+        },
+        {
+          "line": "+32% to Lightning Resistance",
+          "group": "LightningResistance",
+          "tier": 4,
+          "of": 8,
+          "crafted": false
+        }
+      ]
+    },
+    {
+      "build": "hit_penance_brand",
+      "name": "Honour Eye",
+      "base": "Two-Stone Ring",
+      "mods": [
+        {
+          "line": "+46 to Strength",
+          "group": "Strength",
+          "tier": 2,
+          "of": 9,
+          "crafted": false
+        },
+        {
+          "line": "+20 to maximum Energy Shield",
+          "group": "EnergyShield",
+          "tier": 6,
+          "of": 11,
+          "crafted": false
+        },
+        {
+          "line": "+33% to Fire Resistance",
+          "group": "FireResistance",
+          "tier": 4,
+          "of": 8,
+          "crafted": false
+        },
+        {
+          "line": "+32% to Lightning Resistance",
+          "group": "LightningResistance",
+          "tier": 4,
+          "of": 8,
+          "crafted": false
+        },
+        {
+          "line": "{crafted}+49 to maximum Life",
+          "group": "IncreasedLife",
+          "tier": 5,
+          "of": 8,
+          "crafted": true
+        }
+      ]
+    },
+    {
+      "build": "hit_penance_brand",
+      "name": "Storm Harness",
+      "base": "Leather Belt",
+      "mods": [
+        {
+          "line": "+21 to Strength",
+          "group": "Strength",
+          "tier": 8,
+          "of": 10,
+          "crafted": false
+        },
+        {
+          "line": "+129 to maximum Life",
+          "group": "IncreasedLife",
+          "tier": 2,
+          "of": 10,
+          "crafted": false
+        },
+        {
+          "line": "+17 to maximum Mana",
+          "group": "IncreasedMana",
+          "tier": 11,
+          "of": 11,
+          "crafted": false
+        },
+        {
+          "line": "{crafted}+27% to Cold Resistance",
+          "group": "ColdResistance",
+          "tier": 5,
+          "of": 8,
+          "crafted": true
+        }
+      ]
+    },
+    {
+      "build": "hit_penance_brand",
+      "name": "Honour Loop",
+      "base": "Topaz Ring",
+      "mods": [
+        {
+          "line": "+25 to Dexterity",
+          "group": "Dexterity",
+          "tier": 6,
+          "of": 9,
+          "crafted": false
+        },
+        {
+          "line": "14% increased Cast Speed",
+          "group": "IncreasedCastSpeed",
+          "tier": 1,
+          "of": 3,
+          "crafted": false
+        },
+        {
+          "line": "+75 to maximum Life",
+          "group": "IncreasedLife",
+          "tier": 3,
+          "of": 8,
+          "crafted": false
+        },
+        {
+          "line": "+15 to maximum Mana",
+          "group": "IncreasedMana",
+          "tier": 13,
+          "of": 13,
+          "crafted": false
+        },
+        {
+          "line": "{crafted}+25% to Fire Resistance",
+          "group": "FireResistance",
+          "tier": 5,
+          "of": 8,
+          "crafted": true
+        }
+      ]
+    },
+    {
+      "build": "hit_penance_brand",
+      "name": "Miracle Paw",
+      "base": "Legion Gloves",
+      "mods": [
+        {
+          "line": "+30 to Armour",
+          "group": "LocalBaseArmourAndEnergyShield",
+          "tier": 2,
+          "of": 4,
+          "crafted": false
+        },
+        {
+          "line": "+15 to maximum Energy Shield",
+          "group": "LocalBaseArmourAndEnergyShield",
+          "tier": 2,
+          "of": 4,
+          "crafted": false
+        },
+        {
+          "line": "+107 to maximum Life",
+          "group": "IncreasedLife",
+          "tier": 2,
+          "of": 9,
+          "crafted": false
+        },
+        {
+          "line": "Regenerate 24.8 Life per second",
+          "group": "LifeRegeneration",
+          "tier": 4,
+          "of": 8,
+          "crafted": false
+        },
+        {
+          "line": "+28% to Lightning Resistance",
+          "group": "LightningResistance",
+          "tier": 5,
+          "of": 8,
+          "crafted": false
+        },
+        {
+          "line": "+14% to Chaos Resistance",
+          "group": "ChaosResistance",
+          "tier": 5,
+          "of": 6,
+          "crafted": false
+        }
+      ]
+    },
+    {
+      "build": "hit_penance_brand",
+      "name": "Death Peak",
+      "base": "Lunaris Circlet",
+      "mods": [
+        {
+          "line": "+15 to Intelligence",
+          "group": "Intelligence",
+          "tier": 9,
+          "of": 10,
+          "crafted": false
+        },
+        {
+          "line": "+95 to maximum Life",
+          "group": "IncreasedLife",
+          "tier": 4,
+          "of": 10,
+          "crafted": false
+        },
+        {
+          "line": "+17% to Cold Resistance",
+          "group": "ColdResistance",
+          "tier": 7,
+          "of": 8,
+          "crafted": false
+        },
+        {
+          "line": "{crafted}+15% to Fire and Cold Resistances",
+          "group": null,
+          "tier": null,
+          "crafted": true
+        }
+      ]
+    },
+    {
+      "build": "hit_penance_brand",
+      "name": "Spirit Gnarl",
+      "base": "Void Sceptre",
+      "mods": [
+        {
+          "line": "Adds 18 to 31 Physical Damage",
+          "group": "LocalPhysicalDamage",
+          "tier": 4,
+          "of": 9,
+          "crafted": false
+        },
+        {
+          "line": "Adds 2 to 21 Lightning Damage to Spells",
+          "group": null,
+          "tier": null,
+          "crafted": false
+        },
+        {
+          "line": "8% increased Cast Speed",
+          "group": "IncreasedCastSpeed",
+          "tier": 7,
+          "of": 7,
+          "crafted": false
+        },
+        {
+          "line": "+15% to Global Critical Strike Multiplier",
+          "group": "CriticalStrikeMultiplier",
+          "tier": 5,
+          "of": 6,
+          "crafted": false
+        },
+        {
+          "line": "+1 to Level of all Physical Spell Skill Gems",
+          "group": "GlobalIncreasePhysicalSpellSkillGemLevel",
+          "tier": 1,
+          "of": 1,
+          "crafted": false
+        },
+        {
+          "line": "{crafted}44% increased Spell Critical Strike Chance",
+          "group": "SpellCriticalStrikeChance",
+          "tier": 6,
+          "of": 6,
+          "crafted": true
+        }
+      ]
+    },
+    {
+      "build": "hit_penance_brand",
+      "name": "Viper Locket",
+      "base": "Amber Amulet",
+      "mods": [
+        {
+          "line": "+49 to Dexterity",
+          "group": "Dexterity",
+          "tier": 2,
+          "of": 9,
+          "crafted": false
+        },
+        {
+          "line": "Regenerate 75.6 Life per second",
+          "group": "LifeRegeneration",
+          "tier": 1,
+          "of": 8,
+          "crafted": false
+        },
+        {
+          "line": "+24 to maximum Mana",
+          "group": "IncreasedMana",
+          "tier": 12,
+          "of": 13,
+          "crafted": false
+        },
+        {
+          "line": "18% increased Rarity of Items found",
+          "group": "ItemFoundRarityIncrease",
+          "tier": 2,
+          "of": 4,
+          "crafted": false
+        },
+        {
+          "line": "+8% to all Elemental Resistances",
+          "group": "AllResistances",
+          "tier": 5,
+          "of": 6,
+          "crafted": false
+        },
+        {
+          "line": "{crafted}+54 to maximum Life",
+          "group": "IncreasedLife",
+          "tier": 6,
+          "of": 9,
+          "crafted": true
+        }
+      ]
+    },
+    {
+      "build": "hit_penance_brand",
+      "name": "Torment Urge",
+      "base": "Conjurer Boots",
+      "mods": [
+        {
+          "line": "+14 to Intelligence",
+          "group": "Intelligence",
+          "tier": 8,
+          "of": 9,
+          "crafted": false
+        },
+        {
+          "line": "+21 to maximum Mana",
+          "group": "IncreasedMana",
+          "tier": 11,
+          "of": 12,
+          "crafted": false
+        },
+        {
+          "line": "15% increased Rarity of Items found",
+          "group": "ItemFoundRarityIncreasePrefix",
+          "tier": 1,
+          "of": 2,
+          "crafted": false
+        },
+        {
+          "line": "+33% to Fire Resistance",
+          "group": "FireResistance",
+          "tier": 4,
+          "of": 8,
+          "crafted": false
+        },
+        {
+          "line": "+25% to Lightning Resistance",
+          "group": "LightningResistance",
+          "tier": 5,
+          "of": 8,
+          "crafted": false
+        },
+        {
+          "line": "25% increased Movement Speed",
+          "group": "MovementVelocity",
+          "tier": 3,
+          "of": 6,
+          "crafted": false
+        }
+      ]
+    },
+    {
+      "build": "hit_penance_brand",
+      "name": "Horror Coat",
+      "base": "Vaal Regalia",
+      "mods": [
+        {
+          "line": "+114 to maximum Life",
+          "group": "IncreasedLife",
+          "tier": 6,
+          "of": 13,
+          "crafted": false
+        },
+        {
+          "line": "Regenerate 46.2 Life per second",
+          "group": "LifeRegeneration",
+          "tier": 6,
+          "of": 11,
+          "crafted": false
+        },
+        {
+          "line": "+50 to maximum Mana",
+          "group": "IncreasedMana",
+          "tier": 5,
+          "of": 12,
+          "crafted": false
+        },
+        {
+          "line": "Reflects 23 Physical Damage to Melee Attackers",
+          "group": "AttackerTakesDamageNoRange",
+          "tier": 2,
+          "of": 4,
+          "crafted": false
+        },
+        {
+          "line": "{crafted}+30% to Cold Resistance",
+          "group": "ColdResistance",
+          "tier": 4,
+          "of": 8,
+          "crafted": true
+        }
+      ]
+    },
+    {
+      "build": "hit_penance_brand",
+      "name": "Beast Breaker",
+      "base": "Vaal Sceptre",
+      "mods": [
+        {
+          "line": "+1 to Level of Socketed Melee Gems",
+          "group": "LocalIncreaseSocketedMeleeGemLevel",
+          "tier": 2,
+          "of": 2,
+          "crafted": false
+        },
+        {
+          "line": "18% increased Cold Damage",
+          "group": "ColdDamageWeaponPrefix",
+          "tier": 8,
+          "of": 8,
+          "crafted": false
+        },
+        {
+          "line": "Adds 3 to 114 Lightning Damage to Spells",
+          "group": null,
+          "tier": null,
+          "crafted": false
+        },
+        {
+          "line": "18% increased Attack Speed",
+          "group": "LocalIncreasedAttackSpeed",
+          "tier": 4,
+          "of": 8,
+          "crafted": false
+        },
+        {
+          "line": "66% increased Spell Critical Strike Chance",
+          "group": "SpellCriticalStrikeChance",
+          "tier": 4,
+          "of": 6,
+          "crafted": false
+        },
+        {
+          "line": "{crafted}53% increased Spell Damage",
+          "group": "WeaponSpellDamage",
+          "tier": 5,
+          "of": 8,
+          "crafted": true
+        }
+      ]
+    },
+    {
+      "build": "poison_spectral_throw",
+      "name": "Spirit Tether",
+      "base": "Heavy Belt",
+      "mods": [
+        {
+          "line": "+10 to Strength",
+          "group": "Strength",
+          "tier": 10,
+          "of": 10,
+          "crafted": false
+        },
+        {
+          "line": "+124 to maximum Life",
+          "group": "IncreasedLife",
+          "tier": 2,
+          "of": 10,
+          "crafted": false
+        },
+        {
+          "line": "+7% to Cold Resistance",
+          "group": "ColdResistance",
+          "tier": 8,
+          "of": 8,
+          "crafted": false
+        },
+        {
+          "line": "+23% to Lightning Resistance",
+          "group": "LightningResistance",
+          "tier": 6,
+          "of": 8,
+          "crafted": false
+        },
+        {
+          "line": "6% increased Flask Life Recovery rate",
+          "group": "BeltFlaskLifeRecoveryRate",
+          "tier": 6,
+          "of": 6,
+          "crafted": false
+        }
+      ]
+    },
+    {
+      "build": "poison_spectral_throw",
+      "name": "Behemoth Coil",
+      "base": "Two-Stone Ring",
+      "mods": [
+        {
+          "line": "+15 to Dexterity",
+          "group": "Dexterity",
+          "tier": 8,
+          "of": 9,
+          "crafted": false
+        },
+        {
+          "line": "Adds 7 to 11 Physical Damage to Attacks",
+          "group": "PhysicalDamage",
+          "tier": 2,
+          "of": 6,
+          "crafted": false
+        },
+        {
+          "line": "Adds 9 to 19 Fire Damage to Attacks",
+          "group": "FireDamage",
+          "tier": 5,
+          "of": 9,
+          "crafted": false
+        },
+        {
+          "line": "+82 to maximum Life",
+          "group": "IncreasedLife",
+          "tier": 3,
+          "of": 8,
+          "crafted": false
+        },
+        {
+          "line": "{crafted}+25% to Cold Resistance",
+          "group": "ColdResistance",
+          "tier": 5,
+          "of": 8,
+          "crafted": true
+        }
+      ]
+    },
+    {
+      "build": "poison_spectral_throw",
+      "name": "Demon Crown",
+      "base": "Ursine Pelt",
+      "mods": [
+        {
+          "line": "15% increased Global Accuracy Rating",
+          "group": "LightRadiusAndAccuracyPercent",
+          "tier": 2,
+          "of": 3,
+          "crafted": false
+        },
+        {
+          "line": "+126 to maximum Life",
+          "group": "IncreasedLife",
+          "tier": 2,
+          "of": 10,
+          "crafted": false
+        },
+        {
+          "line": "+41% to Fire Resistance",
+          "group": "FireResistance",
+          "tier": 3,
+          "of": 8,
+          "crafted": false
+        },
+        {
+          "line": "10% increased Light Radius",
+          "group": "LightRadiusAndAccuracyPercent",
+          "tier": 2,
+          "of": 3,
+          "crafted": false
+        },
+        {
+          "line": "{crafted}+12% to Fire and Chaos Resistances",
+          "group": null,
+          "tier": null,
+          "crafted": true
+        }
+      ]
+    },
+    {
+      "build": "poison_spectral_throw",
+      "name": "Horror Shell",
+      "base": "Sentinel Jacket",
+      "mods": [
+        {
+          "line": "+38 to Evasion Rating",
+          "group": "LocalBaseEvasionRatingAndEnergyShield",
+          "tier": 6,
+          "of": 8,
+          "crafted": false
+        },
+        {
+          "line": "+13 to maximum Energy Shield",
+          "group": "LocalBaseEnergyShieldAndLife",
+          "tier": 3,
+          "of": 4,
+          "crafted": false
+        },
+        {
+          "line": "+94 to maximum Life",
+          "group": "IncreasedLife",
+          "tier": 7,
+          "of": 13,
+          "crafted": false
+        },
+        {
+          "line": "+31% to Lightning Resistance",
+          "group": "LightningResistance",
+          "tier": 4,
+          "of": 8,
+          "crafted": false
+        },
+        {
+          "line": "{crafted}+21 to Strength and Intelligence",
+          "group": null,
+          "tier": null,
+          "crafted": true
+        }
+      ]
+    },
+    {
+      "build": "poison_spectral_throw",
+      "name": "Torment Hoof",
+      "base": "Eelskin Boots",
+      "mods": [
+        {
+          "line": "18% reduced Attribute Requirements",
+          "group": "LocalAttributeRequirements",
+          "tier": 2,
+          "of": 2,
+          "crafted": false
+        },
+        {
+          "line": "+91 to maximum Life",
+          "group": "IncreasedLife",
+          "tier": 3,
+          "of": 9,
+          "crafted": false
+        },
+        {
+          "line": "+19% to Fire Resistance",
+          "group": "FireResistance",
+          "tier": 6,
+          "of": 8,
+          "crafted": false
+        },
+        {
+          "line": "+28% to Cold Resistance",
+          "group": "ColdResistance",
+          "tier": 5,
+          "of": 8,
+          "crafted": false
+        },
+        {
+          "line": "{crafted}12% increased Movement Speed",
+          "group": null,
+          "tier": null,
+          "crafted": true
+        }
+      ]
+    },
+    {
+      "build": "poison_spectral_throw",
+      "name": "Viper Loop",
+      "base": "Two-Stone Ring",
+      "mods": [
+        {
+          "line": "Adds 3 to 8 Cold Damage to Attacks",
+          "group": "ColdDamage",
+          "tier": 8,
+          "of": 9,
+          "crafted": false
+        },
+        {
+          "line": "+169 to Accuracy Rating",
+          "group": "IncreasedAccuracy",
+          "tier": 3,
+          "of": 5,
+          "crafted": false
+        },
+        {
+          "line": "+61 to Evasion Rating",
+          "group": "EvasionRating",
+          "tier": 4,
+          "of": 7,
+          "crafted": false
+        },
+        {
+          "line": "+75 to maximum Life",
+          "group": "IncreasedLife",
+          "tier": 3,
+          "of": 8,
+          "crafted": false
+        },
+        {
+          "line": "+3% to all Elemental Resistances",
+          "group": "AllResistances",
+          "tier": 5,
+          "of": 5,
+          "crafted": false
+        },
+        {
+          "line": "+31% to Lightning Resistance",
+          "group": "LightningResistance",
+          "tier": 4,
+          "of": 8,
+          "crafted": false
+        }
+      ]
+    },
+    {
+      "build": "poison_spectral_throw",
+      "name": "Rune Rock",
+      "base": "Crusader Buckler",
+      "mods": [
+        {
+          "line": "64% increased Chance to Block",
+          "group": "LocalIncreasedBlockPercentage",
+          "tier": 3,
+          "of": 7,
+          "crafted": false
+        },
+        {
+          "line": "+16% to all Elemental Resistances",
+          "group": "AllResistances",
+          "tier": 2,
+          "of": 6,
+          "crafted": false
+        },
+        {
+          "line": "+44% to Fire Resistance",
+          "group": "FireResistance",
+          "tier": 2,
+          "of": 8,
+          "crafted": false
+        },
+        {
+          "line": "+12% to Cold Resistance",
+          "group": "ColdResistance",
+          "tier": 7,
+          "of": 8,
+          "crafted": false
+        },
+        {
+          "line": "Reflects 46 Physical Damage to Melee Attackers",
+          "group": "AttackerTakesDamageNoRange",
+          "tier": 1,
+          "of": 4,
+          "crafted": false
+        },
+        {
+          "line": "{crafted}+58 to maximum Life",
+          "group": "IncreasedLife",
+          "tier": 7,
+          "of": 11,
+          "crafted": true
+        }
+      ]
+    },
+    {
+      "build": "poison_spectral_throw",
+      "name": "Pain Clutches",
+      "base": "Hydrascale Gauntlets",
+      "mods": [
+        {
+          "line": "Adds 1 to 34 Lightning Damage to Attacks",
+          "group": "LightningDamage",
+          "tier": 2,
+          "of": 6,
+          "crafted": false
+        },
+        {
+          "line": "+101 to maximum Life",
+          "group": "IncreasedLife",
+          "tier": 2,
+          "of": 9,
+          "crafted": false
+        },
+        {
+          "line": "+22% to Cold Resistance",
+          "group": "ColdResistance",
+          "tier": 6,
+          "of": 8,
+          "crafted": false
+        },
+        {
+          "line": "+40% to Lightning Resistance",
+          "group": "LightningResistance",
+          "tier": 3,
+          "of": 8,
+          "crafted": false
+        },
+        {
+          "line": "0.28% of Physical Attack Damage Leeched as Life",
+          "group": "LifeLeechPermyriad",
+          "tier": 1,
+          "of": 1,
+          "crafted": false
+        },
+        {
+          "line": "{crafted}Adds 8 to 16 Chaos Damage to Attacks",
+          "group": null,
+          "tier": null,
+          "crafted": true
+        }
+      ]
+    },
+    {
+      "build": "regular_viper_strike",
+      "name": "Carrion Harness",
+      "base": "Heavy Belt",
+      "mods": [
+        {
+          "line": "+7 to Armour",
+          "group": "PhysicalDamageReductionRating",
+          "tier": 8,
+          "of": 8,
+          "crafted": false
+        },
+        {
+          "line": "+46 to maximum Energy Shield",
+          "group": "EnergyShield",
+          "tier": 2,
+          "of": 12,
+          "crafted": false
+        },
+        {
+          "line": "+111 to maximum Life",
+          "group": "IncreasedLife",
+          "tier": 3,
+          "of": 10,
+          "crafted": false
+        },
+        {
+          "line": "+34% to Cold Resistance",
+          "group": "ColdResistance",
+          "tier": 4,
+          "of": 8,
+          "crafted": false
+        }
+      ]
+    },
+    {
+      "build": "regular_viper_strike",
+      "name": "Dusk Rosary",
+      "base": "Amber Amulet",
+      "mods": [
+        {
+          "line": "+65 to maximum Life",
+          "group": "IncreasedLife",
+          "tier": 5,
+          "of": 9,
+          "crafted": false
+        },
+        {
+          "line": "Regenerate 25.1 Life per second",
+          "group": "LifeRegeneration",
+          "tier": 4,
+          "of": 8,
+          "crafted": false
+        },
+        {
+          "line": "21% increased Rarity of Items found",
+          "group": "ItemFoundRarityIncrease",
+          "tier": 1,
+          "of": 4,
+          "crafted": false
+        },
+        {
+          "line": "+14% to all Elemental Resistances",
+          "group": "AllResistances",
+          "tier": 3,
+          "of": 6,
+          "crafted": false
+        },
+        {
+          "line": "{crafted}+18 to Intelligence",
+          "group": "Intelligence",
+          "tier": 7,
+          "of": 9,
+          "crafted": true
+        }
+      ]
+    },
+    {
+      "build": "regular_viper_strike",
+      "name": "Bramble Crest",
+      "base": "Ursine Pelt",
+      "mods": [
+        {
+          "line": "+10% chance to Suppress Spell Damage",
+          "group": "ChanceToSuppressSpells",
+          "tier": 3,
+          "of": 5,
+          "crafted": false
+        },
+        {
+          "line": "+291 to Accuracy Rating",
+          "group": "IncreasedAccuracy",
+          "tier": 3,
+          "of": 6,
+          "crafted": false
+        },
+        {
+          "line": "+50 to Evasion Rating",
+          "group": "LocalBaseEvasionRatingAndLife",
+          "tier": 1,
+          "of": 3,
+          "crafted": false
+        },
+        {
+          "line": "+71 to maximum Life",
+          "group": "IncreasedLife",
+          "tier": 5,
+          "of": 10,
+          "crafted": false
+        },
+        {
+          "line": "{crafted}+16% to Fire and Cold Resistances",
+          "group": null,
+          "tier": null,
+          "crafted": true
+        }
+      ]
+    },
+    {
+      "build": "regular_viper_strike",
+      "name": "Kraken Nails",
+      "base": "Shagreen Gloves",
+      "mods": [
+        {
+          "line": "Adds 15 to 25 Fire Damage to Attacks",
+          "group": "FireDamage",
+          "tier": 1,
+          "of": 6,
+          "crafted": false
+        },
+        {
+          "line": "31% increased Evasion Rating",
+          "group": "LocalEvasionRatingAndStunRecoveryIncreasePercent",
+          "tier": 3,
+          "of": 6,
+          "crafted": false
+        },
+        {
+          "line": "+88 to maximum Life",
+          "group": "IncreasedLife",
+          "tier": 3,
+          "of": 9,
+          "crafted": false
+        },
+        {
+          "line": "+28% to Cold Resistance",
+          "group": "ColdResistance",
+          "tier": 5,
+          "of": 8,
+          "crafted": false
+        },
+        {
+          "line": "{crafted}+28% to Lightning Resistance",
+          "group": "LightningResistance",
+          "tier": 5,
+          "of": 8,
+          "crafted": true
+        }
+      ]
+    },
+    {
+      "build": "regular_viper_strike",
+      "name": "Armageddon Scratch",
+      "base": "Cutlass",
+      "mods": [
+        {
+          "line": "127% increased Physical Damage",
+          "group": "LocalPhysicalDamagePercent",
+          "tier": 4,
+          "of": 8,
+          "crafted": false
+        },
+        {
+          "line": "15% increased Attack Speed",
+          "group": "LocalIncreasedAttackSpeed",
+          "tier": 5,
+          "of": 8,
+          "crafted": false
+        },
+        {
+          "line": "17% increased Global Accuracy Rating",
+          "group": "LocalLightRadiusAndAccuracyPercent",
+          "tier": 1,
+          "of": 3,
+          "crafted": false
+        },
+        {
+          "line": "15% increased Light Radius",
+          "group": "LocalLightRadiusAndAccuracyPercent",
+          "tier": 1,
+          "of": 3,
+          "crafted": false
+        },
+        {
+          "line": "{crafted}Adds 15 to 27 Physical Damage",
+          "group": "LocalPhysicalDamage",
+          "tier": 4,
+          "of": 9,
+          "crafted": true
+        }
+      ]
+    },
+    {
+      "build": "regular_viper_strike",
+      "name": "Ghoul Turn",
+      "base": "Two-Stone Ring",
+      "mods": [
+        {
+          "line": "+25 to Dexterity",
+          "group": "Dexterity",
+          "tier": 6,
+          "of": 9,
+          "crafted": false
+        },
+        {
+          "line": "+90 to maximum Life",
+          "group": "IncreasedLife",
+          "tier": 2,
+          "of": 8,
+          "crafted": false
+        },
+        {
+          "line": "+13% to Cold Resistance",
+          "group": "ColdResistance",
+          "tier": 7,
+          "of": 8,
+          "crafted": false
+        }
+      ]
+    },
+    {
+      "build": "regular_viper_strike",
+      "name": "Corruption Eye",
+      "base": "Two-Stone Ring",
+      "mods": [
+        {
+          "line": "Adds 3 to 6 Physical Damage to Attacks",
+          "group": "PhysicalDamage",
+          "tier": 4,
+          "of": 6,
+          "crafted": false
+        },
+        {
+          "line": "+4 to Evasion Rating",
+          "group": "EvasionRating",
+          "tier": 7,
+          "of": 7,
+          "crafted": false
+        },
+        {
+          "line": "+63 to maximum Life",
+          "group": "IncreasedLife",
+          "tier": 4,
+          "of": 8,
+          "crafted": false
+        },
+        {
+          "line": "Regenerate 6.2 Life per second",
+          "group": "LifeRegeneration",
+          "tier": 6,
+          "of": 7,
+          "crafted": false
+        },
+        {
+          "line": "+3% to all Elemental Resistances",
+          "group": "AllResistances",
+          "tier": 5,
+          "of": 5,
+          "crafted": false
+        },
+        {
+          "line": "+12% to Fire Resistance",
+          "group": "FireResistance",
+          "tier": 7,
+          "of": 8,
+          "crafted": false
+        }
+      ]
+    },
+    {
+      "build": "regular_viper_strike",
+      "name": "Hate Keep",
+      "base": "General's Brigandine",
+      "mods": [
+        {
+          "line": "+190 to Armour",
+          "group": "LocalBaseArmourAndEvasionRating",
+          "tier": 3,
+          "of": 8,
+          "crafted": false
+        },
+        {
+          "line": "+147 to Evasion Rating",
+          "group": "LocalBaseArmourAndEvasionRating",
+          "tier": 3,
+          "of": 8,
+          "crafted": false
+        },
+        {
+          "line": "+30% to Fire Resistance",
+          "group": "FireResistance",
+          "tier": 4,
+          "of": 8,
+          "crafted": false
+        },
+        {
+          "line": "+39% to Cold Resistance",
+          "group": "ColdResistance",
+          "tier": 3,
+          "of": 8,
+          "crafted": false
+        },
+        {
+          "line": "+28% to Lightning Resistance",
+          "group": "LightningResistance",
+          "tier": 5,
+          "of": 8,
+          "crafted": false
+        },
+        {
+          "line": "{crafted}46% increased Armour and Evasion",
+          "group": "LocalArmourAndEvasion",
+          "tier": 6,
+          "of": 8,
+          "crafted": true
+        }
+      ]
+    },
+    {
+      "build": "regular_viper_strike",
+      "name": "Glyph Spark",
+      "base": "Dragonscale Boots",
+      "mods": [
+        {
+          "line": "107% increased Armour and Evasion",
+          "group": null,
+          "tier": null,
+          "crafted": false
+        },
+        {
+          "line": "+23% to Fire Resistance",
+          "group": "FireResistance",
+          "tier": 6,
+          "of": 8,
+          "crafted": false
+        },
+        {
+          "line": "+22% to Lightning Resistance",
+          "group": "LightningResistance",
+          "tier": 6,
+          "of": 8,
+          "crafted": false
+        },
+        {
+          "line": "30% increased Movement Speed",
+          "group": "MovementVelocity",
+          "tier": 2,
+          "of": 6,
+          "crafted": false
+        },
+        {
+          "line": "15% increased Stun and Block Recovery",
+          "group": "LocalArmourAndEvasionAndStunRecovery",
+          "tier": 2,
+          "of": 6,
+          "crafted": false
+        }
+      ]
+    },
+    {
+      "build": "regular_viper_strike",
+      "name": "Wrath Skewer",
+      "base": "Corsair Sword",
+      "mods": [
+        {
+          "line": "18% reduced Attribute Requirements",
+          "group": "LocalAttributeRequirements",
+          "tier": 2,
+          "of": 2,
+          "crafted": false
+        },
+        {
+          "line": "25% increased Physical Damage",
+          "group": "LocalIncreasedPhysicalDamagePercentAndAccuracyRating",
+          "tier": 6,
+          "of": 8,
+          "crafted": false
+        },
+        {
+          "line": "Adds 13 to 24 Physical Damage",
+          "group": "LocalPhysicalDamage",
+          "tier": 5,
+          "of": 9,
+          "crafted": false
+        },
+        {
+          "line": "17% increased Global Accuracy Rating",
+          "group": "LocalLightRadiusAndAccuracyPercent",
+          "tier": 1,
+          "of": 3,
+          "crafted": false
+        },
+        {
+          "line": "+442 to Accuracy Rating",
+          "group": "LocalAccuracyRating",
+          "tier": 2,
+          "of": 5,
+          "crafted": false
+        },
+        {
+          "line": "15% increased Light Radius",
+          "group": "LocalLightRadiusAndAccuracyPercent",
+          "tier": 1,
+          "of": 3,
+          "crafted": false
+        },
+        {
+          "line": "{crafted}75% increased Physical Damage",
+          "group": "LocalIncreasedPhysicalDamagePercentAndAccuracyRating",
+          "tier": 1,
+          "of": 8,
+          "crafted": true
+        }
+      ]
+    },
+    {
+      "build": "winter_orb",
+      "name": "Apocalypse Whorl",
+      "base": "Amethyst Ring",
+      "mods": [
+        {
+          "line": "16% increased Rarity of Items found",
+          "group": "ItemFoundRarityIncrease",
+          "tier": 2,
+          "of": 4,
+          "crafted": false
+        },
+        {
+          "line": "+13% to all Elemental Resistances",
+          "group": "AllResistances",
+          "tier": 2,
+          "of": 5,
+          "crafted": false
+        },
+        {
+          "line": "+25% to Cold Resistance",
+          "group": "ColdResistance",
+          "tier": 5,
+          "of": 8,
+          "crafted": false
+        },
+        {
+          "line": "9% of Damage taken Recouped as Life",
+          "group": "DamageTakenGainedAsLife",
+          "tier": 3,
+          "of": 4,
+          "crafted": false
+        },
+        {
+          "line": "{crafted}+54 to maximum Life",
+          "group": "IncreasedLife",
+          "tier": 5,
+          "of": 8,
+          "crafted": true
+        }
+      ]
+    },
+    {
+      "build": "winter_orb",
+      "name": "Demon Locket",
+      "base": "Jade Amulet",
+      "mods": [
+        {
+          "line": "19% increased Cast Speed",
+          "group": "IncreasedCastSpeed",
+          "tier": 1,
+          "of": 4,
+          "crafted": false
+        },
+        {
+          "line": "+18% to Global Critical Strike Multiplier",
+          "group": "CriticalStrikeMultiplier",
+          "tier": 5,
+          "of": 6,
+          "crafted": false
+        },
+        {
+          "line": "+36 to maximum Life",
+          "group": "IncreasedLife",
+          "tier": 7,
+          "of": 9,
+          "crafted": false
+        },
+        {
+          "line": "Regenerate 19.4 Life per second",
+          "group": "LifeRegeneration",
+          "tier": 5,
+          "of": 8,
+          "crafted": false
+        }
+      ]
+    },
+    {
+      "build": "winter_orb",
+      "name": "Maelstrom Whorl",
+      "base": "Amethyst Ring",
+      "mods": [
+        {
+          "line": "Adds 8 to 19 Cold Damage to Attacks",
+          "group": "ColdDamage",
+          "tier": 5,
+          "of": 9,
+          "crafted": false
+        },
+        {
+          "line": "22% increased Mana Regeneration Rate",
+          "group": "ManaRegeneration",
+          "tier": 5,
+          "of": 6,
+          "crafted": false
+        },
+        {
+          "line": "11% increased Rarity of Items found",
+          "group": "ItemFoundRarityIncrease",
+          "tier": 3,
+          "of": 4,
+          "crafted": false
+        },
+        {
+          "line": "+14% to all Elemental Resistances",
+          "group": "AllResistances",
+          "tier": 2,
+          "of": 5,
+          "crafted": false
+        },
+        {
+          "line": "{crafted}+50 to maximum Life",
+          "group": "IncreasedLife",
+          "tier": 5,
+          "of": 8,
+          "crafted": true
+        }
+      ]
+    },
+    {
+      "build": "winter_orb",
+      "name": "Plague Branch",
+      "base": "Opal Wand",
+      "mods": [
+        {
+          "line": "82% increased Spell Damage",
+          "group": "WeaponSpellDamage",
+          "tier": 3,
+          "of": 8,
+          "crafted": false
+        },
+        {
+          "line": "33% increased Physical Damage",
+          "group": "LocalIncreasedPhysicalDamagePercentAndAccuracyRating",
+          "tier": 6,
+          "of": 8,
+          "crafted": false
+        },
+        {
+          "line": "+20% to Global Critical Strike Multiplier",
+          "group": "CriticalStrikeMultiplier",
+          "tier": 4,
+          "of": 6,
+          "crafted": false
+        },
+        {
+          "line": "+102 to maximum Mana",
+          "group": "IncreasedMana",
+          "tier": 5,
+          "of": 12,
+          "crafted": false
+        },
+        {
+          "line": "+68 to Accuracy Rating",
+          "group": "LocalIncreasedPhysicalDamagePercentAndAccuracyRating",
+          "tier": 6,
+          "of": 8,
+          "crafted": false
+        },
+        {
+          "line": "25% chance to Freeze",
+          "group": "ChanceToFreeze",
+          "tier": 2,
+          "of": 3,
+          "crafted": false
+        },
+        {
+          "line": "{crafted}15% increased Cast Speed",
+          "group": "IncreasedCastSpeed",
+          "tier": 5,
+          "of": 7,
+          "crafted": true
+        }
+      ]
+    },
+    {
+      "build": "winter_orb",
+      "name": "Mind Emblem",
+      "base": "Harmonic Spirit Shield",
+      "mods": [
+        {
+          "line": "10% increased Spell Damage",
+          "group": "WeaponSpellDamage",
+          "tier": 8,
+          "of": 8,
+          "crafted": false
+        },
+        {
+          "line": "85% increased Spell Critical Strike Chance",
+          "group": "SpellCriticalStrikeChance",
+          "tier": 2,
+          "of": 6,
+          "crafted": false
+        },
+        {
+          "line": "+73 to maximum Energy Shield",
+          "group": "LocalEnergyShield",
+          "tier": 2,
+          "of": 10,
+          "crafted": false
+        },
+        {
+          "line": "54% increased Energy Shield",
+          "group": "LocalEnergyShieldPercent",
+          "tier": 6,
+          "of": 8,
+          "crafted": false
+        },
+        {
+          "line": "{crafted}+35% to Fire Resistance",
+          "group": "FireResistance",
+          "tier": 4,
+          "of": 8,
+          "crafted": true
+        }
+      ]
+    },
+    {
+      "build": "winter_orb",
+      "name": "Damnation Suit",
+      "base": "Savant's Robe",
+      "mods": [
+        {
+          "line": "+32 to Intelligence",
+          "group": "Intelligence",
+          "tier": 5,
+          "of": 9,
+          "crafted": false
+        },
+        {
+          "line": "+33 to maximum Energy Shield",
+          "group": "LocalEnergyShield",
+          "tier": 6,
+          "of": 11,
+          "crafted": false
+        },
+        {
+          "line": "90% increased Energy Shield",
+          "group": "LocalEnergyShieldPercent",
+          "tier": 3,
+          "of": 8,
+          "crafted": false
+        },
+        {
+          "line": "+40% to Cold Resistance",
+          "group": "ColdResistance",
+          "tier": 3,
+          "of": 8,
+          "crafted": false
+        },
+        {
+          "line": "+34% to Lightning Resistance",
+          "group": "LightningResistance",
+          "tier": 4,
+          "of": 8,
+          "crafted": false
+        },
+        {
+          "line": "15% increased Stun and Block Recovery",
+          "group": "LocalEnergyShieldAndStunRecoveryPercent",
+          "tier": 2,
+          "of": 6,
+          "crafted": false
+        }
+      ]
+    },
+    {
+      "build": "winter_orb",
+      "name": "Carrion Road",
+      "base": "Samite Slippers",
+      "mods": [
+        {
+          "line": "77% increased Energy Shield",
+          "group": "LocalEnergyShieldPercent",
+          "tier": 3,
+          "of": 7,
+          "crafted": false
+        },
+        {
+          "line": "+36 to maximum Life",
+          "group": "IncreasedLife",
+          "tier": 7,
+          "of": 9,
+          "crafted": false
+        },
+        {
+          "line": "+21% to Cold Resistance",
+          "group": "ColdResistance",
+          "tier": 6,
+          "of": 8,
+          "crafted": false
+        },
+        {
+          "line": "30% increased Movement Speed",
+          "group": "MovementVelocity",
+          "tier": 2,
+          "of": 6,
+          "crafted": false
+        },
+        {
+          "line": "{crafted}+28% to Fire Resistance",
+          "group": "FireResistance",
+          "tier": 5,
+          "of": 8,
+          "crafted": true
+        }
+      ]
+    },
+    {
+      "build": "winter_orb",
+      "name": "Carrion Claw",
+      "base": "Soldier Gloves",
+      "mods": [
+        {
+          "line": "Adds 3 to 5 Physical Damage to Attacks",
+          "group": "PhysicalDamage",
+          "tier": 3,
+          "of": 4,
+          "crafted": false
+        },
+        {
+          "line": "Adds 6 to 11 Fire Damage to Attacks",
+          "group": "FireDamage",
+          "tier": 4,
+          "of": 6,
+          "crafted": false
+        },
+        {
+          "line": "+33% to Cold Resistance",
+          "group": "ColdResistance",
+          "tier": 4,
+          "of": 8,
+          "crafted": false
+        },
+        {
+          "line": "+39% to Lightning Resistance",
+          "group": "LightningResistance",
+          "tier": 3,
+          "of": 8,
+          "crafted": false
+        },
+        {
+          "line": "{crafted}+58 to maximum Life",
+          "group": "IncreasedLife",
+          "tier": 5,
+          "of": 9,
+          "crafted": true
+        }
+      ]
+    },
+    {
+      "build": "winter_orb",
+      "name": "Sol Star",
+      "base": "Necromancer Circlet",
+      "mods": [
+        {
+          "line": "+25 to Intelligence",
+          "group": "Intelligence",
+          "tier": 7,
+          "of": 10,
+          "crafted": false
+        },
+        {
+          "line": "+120 to maximum Life",
+          "group": "IncreasedLife",
+          "tier": 2,
+          "of": 10,
+          "crafted": false
+        },
+        {
+          "line": "Regenerate 40.6 Life per second",
+          "group": "LifeRegeneration",
+          "tier": 4,
+          "of": 9,
+          "crafted": false
+        },
+        {
+          "line": "+39 to maximum Mana",
+          "group": "IncreasedMana",
+          "tier": 8,
+          "of": 12,
+          "crafted": false
+        },
+        {
+          "line": "{crafted}47% increased Energy Shield",
+          "group": "LocalEnergyShieldPercent",
+          "tier": 5,
+          "of": 7,
+          "crafted": true
+        }
+      ]
+    },
+    {
+      "build": "physical_dot",
+      "name": "Plague Twirl",
+      "base": "Amethyst Ring",
+      "mods": [
+        {
+          "line": "+30 to Dexterity",
+          "group": "Dexterity",
+          "tier": 5,
+          "of": 9,
+          "crafted": false
+        },
+        {
+          "line": "Adds 6 to 12 Physical Damage to Attacks",
+          "group": "PhysicalDamage",
+          "tier": 2,
+          "of": 6,
+          "crafted": false
+        },
+        {
+          "line": "Adds 4 to 41 Lightning Damage to Attacks",
+          "group": "LightningDamage",
+          "tier": 4,
+          "of": 9,
+          "crafted": false
+        },
+        {
+          "line": "+32 to maximum Energy Shield",
+          "group": "EnergyShield",
+          "tier": 3,
+          "of": 11,
+          "crafted": false
+        },
+        {
+          "line": "+25% to Cold Resistance",
+          "group": "ColdResistance",
+          "tier": 5,
+          "of": 8,
+          "crafted": false
+        },
+        {
+          "line": "+20% to Lightning Resistance",
+          "group": "LightningResistance",
+          "tier": 6,
+          "of": 8,
+          "crafted": false
+        }
+      ]
+    },
+    {
+      "build": "physical_dot",
+      "name": "Eagle Salvation",
+      "base": "Conquest Chainmail",
+      "mods": [
+        {
+          "line": "32% reduced Attribute Requirements",
+          "group": "LocalAttributeRequirements",
+          "tier": 1,
+          "of": 2,
+          "crafted": false
+        },
+        {
+          "line": "+114 to Armour",
+          "group": "LocalBaseArmourAndEnergyShield",
+          "tier": 4,
+          "of": 8,
+          "crafted": false
+        },
+        {
+          "line": "64% increased Armour and Energy Shield",
+          "group": "LocalArmourAndEnergyShield",
+          "tier": 5,
+          "of": 8,
+          "crafted": false
+        },
+        {
+          "line": "+40 to maximum Energy Shield",
+          "group": "LocalBaseArmourAndEnergyShield",
+          "tier": 4,
+          "of": 8,
+          "crafted": false
+        },
+        {
+          "line": "+39 to maximum Mana",
+          "group": "IncreasedMana",
+          "tier": 8,
+          "of": 12,
+          "crafted": false
+        },
+        {
+          "line": "+41% to Cold Resistance",
+          "group": "ColdResistance",
+          "tier": 3,
+          "of": 8,
+          "crafted": false
+        },
+        {
+          "line": "+33% to Lightning Resistance",
+          "group": "LightningResistance",
+          "tier": 4,
+          "of": 8,
+          "crafted": false
+        }
+      ]
+    },
+    {
+      "build": "physical_dot",
+      "name": "Grim Goad",
+      "base": "Legion Boots",
+      "mods": [
+        {
+          "line": "30% increased Energy Shield Recharge Rate",
+          "group": "EnergyShieldRegeneration",
+          "tier": 3,
+          "of": 5,
+          "crafted": false
+        },
+        {
+          "line": "+50 to maximum Life",
+          "group": "IncreasedLife",
+          "tier": 6,
+          "of": 9,
+          "crafted": false
+        },
+        {
+          "line": "+31% to Fire Resistance",
+          "group": "FireResistance",
+          "tier": 4,
+          "of": 8,
+          "crafted": false
+        },
+        {
+          "line": "30% increased Movement Speed",
+          "group": "MovementVelocity",
+          "tier": 2,
+          "of": 6,
+          "crafted": false
+        }
+      ]
+    },
+    {
+      "build": "physical_dot",
+      "name": "Skull Bane",
+      "base": "Driftwood Wand",
+      "mods": [
+        {
+          "line": "+12% to Global Critical Strike Multiplier",
+          "group": "CriticalStrikeMultiplier",
+          "tier": 6,
+          "of": 6,
+          "crafted": false
+        },
+        {
+          "line": "+34 to maximum Mana",
+          "group": "IncreasedMana",
+          "tier": 12,
+          "of": 12,
+          "crafted": false
+        },
+        {
+          "line": "+1 to Level of all Physical Spell Skill Gems",
+          "group": "GlobalIncreasePhysicalSpellSkillGemLevel",
+          "tier": 1,
+          "of": 1,
+          "crafted": false
+        },
+        {
+          "line": "{crafted}+19% to Physical Damage over Time Multiplier",
+          "group": "PhysicalDamageOverTimeMultiplier",
+          "tier": 4,
+          "of": 5,
+          "crafted": true
+        }
+      ]
+    },
+    {
+      "build": "physical_dot",
+      "name": "Spirit Ward",
+      "base": "Magistrate Crown",
+      "mods": [
+        {
+          "line": "+127 to maximum Life",
+          "group": "IncreasedLife",
+          "tier": 2,
+          "of": 10,
+          "crafted": false
+        },
+        {
+          "line": "Regenerate 2 Life per second",
+          "group": "LifeRegeneration",
+          "tier": 9,
+          "of": 9,
+          "crafted": false
+        },
+        {
+          "line": "24% increased Rarity of Items found",
+          "group": "ItemFoundRarityIncrease",
+          "tier": 1,
+          "of": 4,
+          "crafted": false
+        },
+        {
+          "line": "+15% to Cold Resistance",
+          "group": "ColdResistance",
+          "tier": 7,
+          "of": 8,
+          "crafted": false
+        },
+        {
+          "line": "+33% to Lightning Resistance",
+          "group": "LightningResistance",
+          "tier": 4,
+          "of": 8,
+          "crafted": false
+        }
+      ]
+    },
+    {
+      "build": "physical_dot",
+      "name": "Oblivion Rock",
+      "base": "Laminated Kite Shield",
+      "mods": [
+        {
+          "line": "64% increased Chance to Block",
+          "group": "LocalIncreasedBlockPercentage",
+          "tier": 3,
+          "of": 7,
+          "crafted": false
+        },
+        {
+          "line": "18% reduced Attribute Requirements",
+          "group": "LocalAttributeRequirements",
+          "tier": 2,
+          "of": 2,
+          "crafted": false
+        },
+        {
+          "line": "Regenerate 5 Life per second",
+          "group": "LifeRegeneration",
+          "tier": 9,
+          "of": 10,
+          "crafted": false
+        },
+        {
+          "line": "+16% to all Elemental Resistances",
+          "group": "AllResistances",
+          "tier": 2,
+          "of": 6,
+          "crafted": false
+        },
+        {
+          "line": "Reflects 18 Physical Damage to Melee Attackers",
+          "group": "AttackerTakesDamageNoRange",
+          "tier": 2,
+          "of": 4,
+          "crafted": false
+        },
+        {
+          "line": "{crafted}+58 to maximum Life",
+          "group": "IncreasedLife",
+          "tier": 7,
+          "of": 11,
+          "crafted": true
+        }
+      ]
+    },
+    {
+      "build": "physical_dot",
+      "name": "Gloom Hold",
+      "base": "Amethyst Ring",
+      "mods": [
+        {
+          "line": "+33 to Strength",
+          "group": "Strength",
+          "tier": 4,
+          "of": 9,
+          "crafted": false
+        },
+        {
+          "line": "+126 to Evasion Rating",
+          "group": "EvasionRating",
+          "tier": 2,
+          "of": 7,
+          "crafted": false
+        },
+        {
+          "line": "+13% to all Elemental Resistances",
+          "group": "AllResistances",
+          "tier": 2,
+          "of": 5,
+          "crafted": false
+        },
+        {
+          "line": "+45% to Fire Resistance",
+          "group": "FireResistance",
+          "tier": 2,
+          "of": 8,
+          "crafted": false
+        },
+        {
+          "line": "{crafted}+43 to maximum Life",
+          "group": "IncreasedLife",
+          "tier": 5,
+          "of": 8,
+          "crafted": true
+        }
+      ]
+    },
+    {
+      "build": "physical_dot",
+      "name": "Cataclysm Lock",
+      "base": "Rustic Sash",
+      "mods": [
+        {
+          "line": "+22 to Strength",
+          "group": "Strength",
+          "tier": 8,
+          "of": 10,
+          "crafted": false
+        },
+        {
+          "line": "+125 to maximum Life",
+          "group": "IncreasedLife",
+          "tier": 2,
+          "of": 10,
+          "crafted": false
+        },
+        {
+          "line": "Regenerate 17.5 Life per second",
+          "group": "LifeRegeneration",
+          "tier": 6,
+          "of": 9,
+          "crafted": false
+        },
+        {
+          "line": "{crafted}+21% to Fire Resistance",
+          "group": "FireResistance",
+          "tier": 6,
+          "of": 8,
+          "crafted": true
+        }
+      ]
+    },
+    {
+      "build": "physical_dot",
+      "name": "Dragon Braid",
+      "base": "Lapis Amulet",
+      "mods": [
+        {
+          "line": "+34 to Intelligence",
+          "group": "Intelligence",
+          "tier": 4,
+          "of": 9,
+          "crafted": false
+        },
+        {
+          "line": "+19% to Damage over Time Multiplier",
+          "group": "GlobalDamageOverTimeMultiplier",
+          "tier": 3,
+          "of": 5,
+          "crafted": false
+        },
+        {
+          "line": "Adds 1 to 5 Lightning Damage to Attacks",
+          "group": "LightningDamage",
+          "tier": 9,
+          "of": 9,
+          "crafted": false
+        },
+        {
+          "line": "58% increased Mana Regeneration Rate",
+          "group": "ManaRegeneration",
+          "tier": 2,
+          "of": 6,
+          "crafted": false
+        },
+        {
+          "line": "{crafted}+45 to maximum Life",
+          "group": "IncreasedLife",
+          "tier": 6,
+          "of": 9,
+          "crafted": true
+        }
+      ]
+    },
+    {
+      "build": "physical_dot",
+      "name": "Vortex Hold",
+      "base": "Soldier Gloves",
+      "mods": [
+        {
+          "line": "Adds 3 to 7 Physical Damage to Attacks",
+          "group": "PhysicalDamage",
+          "tier": 2,
+          "of": 4,
+          "crafted": false
+        },
+        {
+          "line": "+46 to maximum Mana",
+          "group": "IncreasedMana",
+          "tier": 6,
+          "of": 12,
+          "crafted": false
+        },
+        {
+          "line": "+27% to Fire Resistance",
+          "group": "FireResistance",
+          "tier": 5,
+          "of": 8,
+          "crafted": false
+        },
+        {
+          "line": "+25% to Cold Resistance",
+          "group": "ColdResistance",
+          "tier": 5,
+          "of": 8,
+          "crafted": false
+        },
+        {
+          "line": "{crafted}+49 to maximum Life",
+          "group": "IncreasedLife",
+          "tier": 6,
+          "of": 9,
+          "crafted": true
+        }
+      ]
+    },
+    {
+      "build": "cold_dot",
+      "name": "Torment Lash",
+      "base": "Leather Belt",
+      "mods": [
+        {
+          "line": "+22 to maximum Energy Shield",
+          "group": "EnergyShield",
+          "tier": 7,
+          "of": 12,
+          "crafted": false
+        },
+        {
+          "line": "+109 to maximum Life",
+          "group": "IncreasedLife",
+          "tier": 3,
+          "of": 10,
+          "crafted": false
+        },
+        {
+          "line": "Regenerate 47.3 Life per second",
+          "group": "LifeRegeneration",
+          "tier": 4,
+          "of": 9,
+          "crafted": false
+        },
+        {
+          "line": "+30 to maximum Mana",
+          "group": "IncreasedMana",
+          "tier": 8,
+          "of": 11,
+          "crafted": false
+        },
+        {
+          "line": "30% increased Stun Duration on Enemies",
+          "group": "StunDurationIncreasePercent",
+          "tier": 2,
+          "of": 5,
+          "crafted": false
+        },
+        {
+          "line": "{crafted}+19% to Cold Resistance",
+          "group": "ColdResistance",
+          "tier": 6,
+          "of": 8,
+          "crafted": true
+        }
+      ]
+    },
+    {
+      "build": "cold_dot",
+      "name": "Agony Road",
+      "base": "Conjurer Boots",
+      "mods": [
+        {
+          "line": "+122 to maximum Life",
+          "group": "IncreasedLife",
+          "tier": 1,
+          "of": 9,
+          "crafted": false
+        },
+        {
+          "line": "26% increased Rarity of Items found",
+          "group": null,
+          "tier": null,
+          "crafted": false
+        },
+        {
+          "line": "+21% to Fire Resistance",
+          "group": "FireResistance",
+          "tier": 6,
+          "of": 8,
+          "crafted": false
+        },
+        {
+          "line": "30% increased Movement Speed",
+          "group": "MovementVelocity",
+          "tier": 2,
+          "of": 6,
+          "crafted": false
+        },
+        {
+          "line": "{crafted}+25% to Lightning Resistance",
+          "group": "LightningResistance",
+          "tier": 5,
+          "of": 8,
+          "crafted": true
+        }
+      ]
+    },
+    {
+      "build": "cold_dot",
+      "name": "Gloom Nail",
+      "base": "Topaz Ring",
+      "mods": [
+        {
+          "line": "+18 to Dexterity",
+          "group": "Dexterity",
+          "tier": 7,
+          "of": 9,
+          "crafted": false
+        },
+        {
+          "line": "10% increased Lightning Damage",
+          "group": "LightningDamagePercentage",
+          "tier": 4,
+          "of": 4,
+          "crafted": false
+        },
+        {
+          "line": "+61 to Evasion Rating",
+          "group": "EvasionRating",
+          "tier": 4,
+          "of": 7,
+          "crafted": false
+        },
+        {
+          "line": "+22 to maximum Energy Shield",
+          "group": "EnergyShield",
+          "tier": 6,
+          "of": 11,
+          "crafted": false
+        },
+        {
+          "line": "+107 to maximum Life",
+          "group": "IncreasedLife",
+          "tier": 1,
+          "of": 8,
+          "crafted": false
+        },
+        {
+          "line": "{crafted}+26% to Cold Resistance",
+          "group": "ColdResistance",
+          "tier": 5,
+          "of": 8,
+          "crafted": true
+        }
+      ]
+    },
+    {
+      "build": "cold_dot",
+      "name": "Spirit Spire",
+      "base": "Quartz Wand",
+      "mods": [
+        {
+          "line": "22% increased Physical Damage",
+          "group": "LocalIncreasedPhysicalDamagePercentAndAccuracyRating",
+          "tier": 7,
+          "of": 8,
+          "crafted": false
+        },
+        {
+          "line": "Adds 6 to 13 Fire Damage to Spells",
+          "group": "SpellAddedFireDamage",
+          "tier": 8,
+          "of": 9,
+          "crafted": false
+        },
+        {
+          "line": "Gain 6 Mana per Enemy Killed",
+          "group": "ManaGainedFromEnemyDeath",
+          "tier": 6,
+          "of": 6,
+          "crafted": false
+        },
+        {
+          "line": "20% increased Stun Duration on Enemies",
+          "group": null,
+          "tier": null,
+          "crafted": false
+        },
+        {
+          "line": "+38 to Accuracy Rating",
+          "group": "LocalIncreasedPhysicalDamagePercentAndAccuracyRating",
+          "tier": 7,
+          "of": 8,
+          "crafted": false
+        }
+      ]
+    },
+    {
+      "build": "cold_dot",
+      "name": "Hypnotic Ward",
+      "base": "Steel Circlet",
+      "mods": [
+        {
+          "line": "+11 to maximum Energy Shield",
+          "group": "LocalBaseEnergyShieldAndLife",
+          "tier": 2,
+          "of": 3,
+          "crafted": false
+        },
+        {
+          "line": "+100 to maximum Life",
+          "group": "IncreasedLife",
+          "tier": 3,
+          "of": 10,
+          "crafted": false
+        },
+        {
+          "line": "+39% to Fire Resistance",
+          "group": "FireResistance",
+          "tier": 3,
+          "of": 8,
+          "crafted": false
+        },
+        {
+          "line": "+20% to Cold Resistance",
+          "group": "ColdResistance",
+          "tier": 6,
+          "of": 8,
+          "crafted": false
+        },
+        {
+          "line": "+27% to Lightning Resistance",
+          "group": "LightningResistance",
+          "tier": 5,
+          "of": 8,
+          "crafted": false
+        },
+        {
+          "line": "{crafted}+40 to maximum Energy Shield",
+          "group": "LocalEnergyShield",
+          "tier": 2,
+          "of": 8,
+          "crafted": true
+        }
+      ]
+    },
+    {
+      "build": "cold_dot",
+      "name": "Hate Breaker",
+      "base": "Void Sceptre",
+      "mods": [
+        {
+          "line": "19% increased Spell Damage",
+          "group": "WeaponSpellDamage",
+          "tier": 8,
+          "of": 8,
+          "crafted": false
+        },
+        {
+          "line": "103% increased Physical Damage",
+          "group": "LocalPhysicalDamagePercent",
+          "tier": 5,
+          "of": 8,
+          "crafted": false
+        },
+        {
+          "line": "+28% to Cold Damage over Time Multiplier",
+          "group": "ColdDamageOverTimeMultiplier",
+          "tier": 3,
+          "of": 5,
+          "crafted": false
+        },
+        {
+          "line": "12% increased Critical Strike Chance",
+          "group": "LocalCriticalStrikeChance",
+          "tier": 6,
+          "of": 6,
+          "crafted": false
+        },
+        {
+          "line": "+16% to Global Critical Strike Multiplier",
+          "group": "CriticalStrikeMultiplier",
+          "tier": 5,
+          "of": 6,
+          "crafted": false
+        },
+        {
+          "line": "+27 to maximum Mana",
+          "group": "WeaponSpellDamageAndMana",
+          "tier": 5,
+          "of": 7,
+          "crafted": false
+        },
+        {
+          "line": "{crafted}53% increased Spell Damage",
+          "group": "WeaponSpellDamage",
+          "tier": 5,
+          "of": 8,
+          "crafted": true
+        }
+      ]
+    },
+    {
+      "build": "cold_dot",
+      "name": "Doom Wish",
+      "base": "Jingling Spirit Shield",
+      "mods": [
+        {
+          "line": "53% increased Chance to Block",
+          "group": "LocalIncreasedBlockPercentage",
+          "tier": 5,
+          "of": 7,
+          "crafted": false
+        },
+        {
+          "line": "50% increased Cold Damage",
+          "group": "ColdDamageWeaponPrefix",
+          "tier": 5,
+          "of": 8,
+          "crafted": false
+        },
+        {
+          "line": "+8 to maximum Energy Shield",
+          "group": "LocalBaseEnergyShieldAndLife",
+          "tier": 3,
+          "of": 3,
+          "crafted": false
+        },
+        {
+          "line": "+23% to Fire Resistance",
+          "group": "FireResistance",
+          "tier": 6,
+          "of": 8,
+          "crafted": false
+        }
+      ]
+    },
+    {
+      "build": "cold_dot",
+      "name": "Skull Salvation",
+      "base": "Destroyer Regalia",
+      "mods": [
+        {
+          "line": "26% increased Energy Shield",
+          "group": "LocalEnergyShieldAndStunRecoveryPercent",
+          "tier": 4,
+          "of": 6,
+          "crafted": false
+        },
+        {
+          "line": "+68 to maximum Life",
+          "group": "IncreasedLife",
+          "tier": 9,
+          "of": 13,
+          "crafted": false
+        },
+        {
+          "line": "+40 to maximum Mana",
+          "group": "IncreasedMana",
+          "tier": 7,
+          "of": 12,
+          "crafted": false
+        },
+        {
+          "line": "+28% to Fire Resistance",
+          "group": "FireResistance",
+          "tier": 5,
+          "of": 8,
+          "crafted": false
+        },
+        {
+          "line": "+33% to Cold Resistance",
+          "group": "ColdResistance",
+          "tier": 4,
+          "of": 8,
+          "crafted": false
+        },
+        {
+          "line": "10% increased Stun and Block Recovery",
+          "group": "LocalEnergyShieldAndStunRecoveryPercent",
+          "tier": 4,
+          "of": 6,
+          "crafted": false
+        }
+      ]
+    },
+    {
+      "build": "cold_dot",
+      "name": "Soul Talons",
+      "base": "Hydrascale Gauntlets",
+      "mods": [
+        {
+          "line": "+23 to Dexterity",
+          "group": "Dexterity",
+          "tier": 7,
+          "of": 10,
+          "crafted": false
+        },
+        {
+          "line": "Adds 2 to 22 Lightning Damage to Attacks",
+          "group": "LightningDamage",
+          "tier": 4,
+          "of": 6,
+          "crafted": false
+        },
+        {
+          "line": "+19 to Armour",
+          "group": "LocalBaseArmourAndEvasionRating",
+          "tier": 3,
+          "of": 4,
+          "crafted": false
+        },
+        {
+          "line": "+22 to Evasion Rating",
+          "group": "LocalBaseArmourAndEvasionRating",
+          "tier": 3,
+          "of": 4,
+          "crafted": false
+        },
+        {
+          "line": "+89 to maximum Life",
+          "group": "IncreasedLife",
+          "tier": 3,
+          "of": 9,
+          "crafted": false
+        },
+        {
+          "line": "Regenerate 50.3 Life per second",
+          "group": "LifeRegeneration",
+          "tier": 2,
+          "of": 8,
+          "crafted": false
+        },
+        {
+          "line": "+38% to Cold Resistance",
+          "group": "ColdResistance",
+          "tier": 3,
+          "of": 8,
+          "crafted": false
+        }
+      ]
+    },
+    {
+      "build": "cold_dot",
+      "name": "Mind Heart",
+      "base": "Citrine Amulet",
+      "mods": [
+        {
+          "line": "Adds 5 to 9 Physical Damage to Attacks",
+          "group": "PhysicalDamage",
+          "tier": 6,
+          "of": 9,
+          "crafted": false
+        },
+        {
+          "line": "13% increased Global Critical Strike Chance",
+          "group": "CriticalStrikeChance",
+          "tier": 6,
+          "of": 6,
+          "crafted": false
+        },
+        {
+          "line": "+31% to Global Critical Strike Multiplier",
+          "group": "CriticalStrikeMultiplier",
+          "tier": 2,
+          "of": 6,
+          "crafted": false
+        },
+        {
+          "line": "+113 to maximum Life",
+          "group": "IncreasedLife",
+          "tier": 2,
+          "of": 9,
+          "crafted": false
+        },
+        {
+          "line": "{crafted}+13% to Cold and Lightning Resistances",
+          "group": null,
+          "tier": null,
+          "crafted": true
+        }
+      ]
+    },
+    {
+      "build": "cold_dot",
+      "name": "Blight Band",
+      "base": "Sapphire Ring",
+      "mods": [
+        {
+          "line": "+11 to all Attributes",
+          "group": "AllAttributes",
+          "tier": 2,
+          "of": 4,
+          "crafted": false
+        },
+        {
+          "line": "+28 to Strength",
+          "group": "Strength",
+          "tier": 5,
+          "of": 9,
+          "crafted": false
+        },
+        {
+          "line": "Adds 1 to 5 Lightning Damage to Attacks",
+          "group": "LightningDamage",
+          "tier": 9,
+          "of": 9,
+          "crafted": false
+        },
+        {
+          "line": "+108 to maximum Life",
+          "group": "IncreasedLife",
+          "tier": 1,
+          "of": 8,
+          "crafted": false
+        },
+        {
+          "line": "{crafted}+28% to Cold Resistance",
+          "group": "ColdResistance",
+          "tier": 5,
+          "of": 8,
+          "crafted": true
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+var/
+artifacts/
+/runs/
+dist/
+build/
+*.egg-info/
+# raw scraped PoEDB HTML snapshots (97 MB); regenerate with poedb_affix_ingestion.py refresh
+src/junkroan/pob/mod_data/poedb_affix_catalog/snapshots/
+vendor/pob/source/
+
+# the crafting oracle: its OWN nested git repository (docs/research/2026-09-20-crafting-oracle-brainstorm.md; rules in crafting/AGENTS.md)
+/crafting/
+
+# per-machine Claude Code overrides (autocompact etc.), never committed
+.claude/settings.local.json
+
+# run-queue snapshots (git worktrees; scripts/run_queue.py)
+/snapshots/
+
+# agents' drafts live in the session scratchpad, never in the repo (#1033)
+/tmp_*
+.claude/scratch_*
+.claude/tmp*
+/var_*
+/.scratch*

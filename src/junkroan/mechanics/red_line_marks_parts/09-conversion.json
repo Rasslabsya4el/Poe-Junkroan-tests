@@ -1,0 +1,15 @@
+[
+  {
+    "line": "50% of Physical, Cold and Lightning Damage Converted to Fire Damage Deal no Non-Fire Damage",
+    "surfaces": ["keystone"],
+    "sources": ["44941"],
+    "group": "conversion",
+    "kind": "damage_restriction",
+    "boss_lane": [],
+    "optimistic_lane": ["Deal no Non-Fire Damage"],
+    "zero_reason": "",
+    "why": "Avatar of Fire (node 44941): the first sentence is parsed whole by PoB (ModCache 50% conversion); the second, Deal no Non-Fire Damage, is PoB's own DealNo flag set (ModCache line 8403), so the lane carries that sentence alone.",
+    "partial_part": "Deal no Non-Fire Damage",
+    "type": "any"
+  }
+]

@@ -1,0 +1,1100 @@
+{
+ "amanamu-s-gaze": {
+  "loadout": "endgame",
+  "note": "",
+  "system": "Ghastly Eye Jewel",
+  "updated": "2026-09-19T13:39:48.744Z"
+ },
+ "anatomical-knowledge": {
+  "loadout": "never",
+  "note": "",
+  "system": "Cobalt Jewel",
+  "updated": "2026-09-19T13:42:52.028Z"
+ },
+ "ancestral-vision": {
+  "loadout": "endgame",
+  "note": "",
+  "system": "Viridian Jewel",
+  "updated": "2026-09-19T13:18:50.103Z"
+ },
+ "ancient-waystones": {
+  "loadout": "never",
+  "note": "",
+  "system": "Crimson Jewel",
+  "updated": "2026-09-19T13:42:53.059Z"
+ },
+ "apex-mode": {
+  "loadout": "endgame",
+  "note": "",
+  "system": "Cobalt Jewel",
+  "updated": "2026-09-19T13:19:18.196Z"
+ },
+ "apparitions": {
+  "loadout": "never",
+  "note": "",
+  "system": "Viridian Jewel",
+  "updated": "2026-09-19T13:42:59.471Z"
+ },
+ "assassin-s-haste": {
+  "loadout": "never",
+  "note": "",
+  "system": "Cobalt Jewel",
+  "updated": "2026-09-19T13:42:59.820Z"
+ },
+ "atziri-s-reign": {
+  "loadout": "endgame",
+  "note": "",
+  "system": "Crimson Jewel",
+  "updated": "2026-09-19T13:19:26.856Z"
+ },
+ "baleful-dominion": {
+  "loadout": "endgame",
+  "note": "",
+  "system": "Hypnotic Eye Jewel",
+  "updated": "2026-09-19T13:40:17.622Z"
+ },
+ "blood-sacrifice": {
+  "loadout": "never",
+  "note": "",
+  "system": "Crimson Jewel",
+  "updated": "2026-09-19T13:43:00.764Z"
+ },
+ "bloodnotch": {
+  "loadout": "uber",
+  "note": "",
+  "system": "Crimson Jewel",
+  "updated": "2026-09-19T13:19:40.615Z"
+ },
+ "bound-by-destiny": {
+  "loadout": "uber",
+  "note": "Убер: 1 полезное свойство (любое: х2, х4, х6), миррор 2 полезных. Этот айтем настолько меняет билд что возможно под него можно будет генерить отдельный лодаут при необходимости чтобы было к примеру 2 полезных свойства. ",
+  "system": "Prismatic Jewel",
+  "updated": "2026-09-19T13:25:05.669Z"
+ },
+ "brawn": {
+  "loadout": "never",
+  "note": "",
+  "system": "Crimson Jewel",
+  "updated": "2026-09-19T13:43:02.259Z"
+ },
+ "brittle-barrier": {
+  "loadout": "never",
+  "note": "",
+  "system": "Cobalt Jewel",
+  "updated": "2026-09-19T13:43:02.865Z"
+ },
+ "brutal-restraint": {
+  "loadout": "",
+  "note": "Сам тип/база не сильно влияет, они все (таймлесы и новые абисс с такой же механикой джевелы) имеют одинаковую редкость. Влияет то что на джевеле ролится. Я расписывал таймлес джевелы до этого",
+  "system": "Timeless Jewel",
+  "updated": "2026-09-19T13:46:31.492Z"
+ },
+ "brute-force-solution": {
+  "loadout": "endgame",
+  "note": "",
+  "system": "Cobalt Jewel",
+  "updated": "2026-09-19T13:25:22.910Z"
+ },
+ "calamitous-visions": {
+  "loadout": "endgame",
+  "note": "",
+  "system": "Small Cluster Jewel",
+  "updated": "2026-09-19T13:41:14.869Z"
+ },
+ "careful-planning": {
+  "loadout": "endgame",
+  "note": "",
+  "system": "Viridian Jewel",
+  "updated": "2026-09-19T13:25:23.524Z"
+ },
+ "cheap-construction": {
+  "loadout": "never",
+  "note": "",
+  "system": "Viridian Jewel",
+  "updated": "2026-09-19T13:43:03.878Z"
+ },
+ "chill-of-corruption": {
+  "loadout": "endgame",
+  "note": "",
+  "system": "Viridian Jewel",
+  "updated": "2026-09-19T13:25:29.532Z"
+ },
+ "clear-mind": {
+  "loadout": "never",
+  "note": "",
+  "system": "Cobalt Jewel",
+  "updated": "2026-09-19T13:43:04.818Z"
+ },
+ "coated-shrapnel": {
+  "loadout": "never",
+  "note": "",
+  "system": "Crimson Jewel",
+  "updated": "2026-09-19T13:43:08.658Z"
+ },
+ "cold-steel": {
+  "loadout": "never",
+  "note": "",
+  "system": "Viridian Jewel",
+  "updated": "2026-09-19T13:43:09.480Z"
+ },
+ "collateral-damage": {
+  "loadout": "never",
+  "note": "",
+  "system": "Viridian Jewel",
+  "updated": "2026-09-19T13:43:09.966Z"
+ },
+ "combat-focus": {
+  "loadout": "t16",
+  "note": "",
+  "system": "Cobalt Jewel",
+  "updated": "2026-09-19T13:26:55.918Z"
+ },
+ "combustibles": {
+  "loadout": "never",
+  "note": "",
+  "system": "Crimson Jewel",
+  "updated": "2026-09-19T13:43:13.556Z"
+ },
+ "conqueror-s-efficiency": {
+  "loadout": "never",
+  "note": "",
+  "system": "Crimson Jewel",
+  "updated": "2026-09-19T13:43:14.336Z"
+ },
+ "conqueror-s-longevity": {
+  "loadout": "never",
+  "note": "",
+  "system": "Viridian Jewel",
+  "updated": "2026-09-19T13:43:14.714Z"
+ },
+ "conqueror-s-potency": {
+  "loadout": "never",
+  "note": "",
+  "system": "Cobalt Jewel",
+  "updated": "2026-09-19T13:43:15.219Z"
+ },
+ "corrupted-energy": {
+  "loadout": "never",
+  "note": "",
+  "system": "Cobalt Jewel",
+  "updated": "2026-09-19T13:43:15.672Z"
+ },
+ "dead-reckoning": {
+  "loadout": "endgame",
+  "note": "",
+  "system": "Cobalt Jewel",
+  "updated": "2026-09-19T13:27:03.334Z"
+ },
+ "destructive-aspiration": {
+  "loadout": "endgame",
+  "note": "",
+  "system": "Ghastly Eye Jewel",
+  "updated": "2026-09-19T13:40:51.688Z"
+ },
+ "dissolution-of-the-flesh": {
+  "loadout": "endgame",
+  "note": "",
+  "system": "Prismatic Jewel",
+  "updated": "2026-09-19T13:27:12.467Z"
+ },
+ "divine-inferno": {
+  "loadout": "never",
+  "note": "",
+  "system": "Crimson Jewel",
+  "updated": "2026-09-19T13:43:21.156Z"
+ },
+ "efficient-training": {
+  "loadout": "endgame",
+  "note": "",
+  "system": "Crimson Jewel",
+  "updated": "2026-09-19T13:27:34.715Z"
+ },
+ "eldritch-knowledge": {
+  "loadout": "never",
+  "note": "",
+  "system": "Cobalt Jewel",
+  "updated": "2026-09-19T13:43:21.886Z"
+ },
+ "emperor-s-cunning": {
+  "loadout": "uber",
+  "note": "",
+  "system": "Viridian Jewel",
+  "updated": "2026-09-19T13:27:38.174Z"
+ },
+ "emperor-s-mastery": {
+  "loadout": "uber",
+  "note": "",
+  "system": "Prismatic Jewel",
+  "updated": "2026-09-19T13:27:42.288Z"
+ },
+ "emperor-s-might": {
+  "loadout": "uber",
+  "note": "",
+  "system": "Crimson Jewel",
+  "updated": "2026-09-19T13:27:45.447Z"
+ },
+ "emperor-s-wit": {
+  "loadout": "uber",
+  "note": "",
+  "system": "Cobalt Jewel",
+  "updated": "2026-09-19T13:27:58.581Z"
+ },
+ "endless-misery": {
+  "loadout": "never",
+  "note": "",
+  "system": "Cobalt Jewel",
+  "updated": "2026-09-19T13:43:22.533Z"
+ },
+ "energised-armour": {
+  "loadout": "endgame",
+  "note": "",
+  "system": "Crimson Jewel",
+  "updated": "2026-09-19T13:28:09.936Z"
+ },
+ "energy-from-within": {
+  "loadout": "endgame",
+  "note": "",
+  "system": "Cobalt Jewel",
+  "updated": "2026-09-19T13:28:12.400Z"
+ },
+ "extinguishing-grasp": {
+  "loadout": "endgame",
+  "note": "",
+  "system": "Searching Eye Jewel",
+  "updated": "2026-09-19T13:40:18.744Z"
+ },
+ "fertile-mind": {
+  "loadout": "endgame",
+  "note": "",
+  "system": "Cobalt Jewel",
+  "updated": "2026-09-19T13:28:14.315Z"
+ },
+ "festering-vengeance": {
+  "loadout": "endgame",
+  "note": "",
+  "system": "Murderous Eye Jewel",
+  "updated": "2026-09-19T13:40:19.219Z"
+ },
+ "fevered-mind": {
+  "loadout": "endgame",
+  "note": "",
+  "system": "Cobalt Jewel",
+  "updated": "2026-09-19T13:28:17.556Z"
+ },
+ "fight-for-survival": {
+  "loadout": "never",
+  "note": "",
+  "system": "Viridian Jewel",
+  "updated": "2026-09-19T13:43:23.262Z"
+ },
+ "fireborn": {
+  "loadout": "never",
+  "note": "",
+  "system": "Crimson Jewel",
+  "updated": "2026-09-19T13:43:23.588Z"
+ },
+ "firesong": {
+  "loadout": "uber",
+  "note": "",
+  "system": "Crimson Jewel",
+  "updated": "2026-09-19T13:28:23.024Z"
+ },
+ "fluid-motion": {
+  "loadout": "endgame",
+  "note": "",
+  "system": "Viridian Jewel",
+  "updated": "2026-09-19T13:28:27.661Z"
+ },
+ "forbidden-flame": {
+  "loadout": "uber",
+  "note": "",
+  "system": "Crimson Jewel",
+  "updated": "2026-09-19T13:28:31.213Z"
+ },
+ "forbidden-flesh": {
+  "loadout": "uber",
+  "note": "",
+  "system": "Cobalt Jewel",
+  "updated": "2026-09-19T13:28:32.810Z"
+ },
+ "fortified-legion": {
+  "loadout": "never",
+  "note": "",
+  "system": "Cobalt Jewel",
+  "updated": "2026-09-19T13:43:25.497Z"
+ },
+ "fortress-covenant": {
+  "loadout": "endgame",
+  "note": "",
+  "system": "Cobalt Jewel",
+  "updated": "2026-09-19T13:29:14.208Z"
+ },
+ "fragile-bloom": {
+  "loadout": "never",
+  "note": "",
+  "system": "Crimson Jewel",
+  "updated": "2026-09-19T13:43:26.366Z"
+ },
+ "fragility": {
+  "loadout": "endgame",
+  "note": "",
+  "system": "Crimson Jewel",
+  "updated": "2026-09-19T13:29:22.540Z"
+ },
+ "from-dust": {
+  "loadout": "never",
+  "note": "",
+  "system": "Cobalt Jewel",
+  "updated": "2026-09-19T13:43:26.872Z"
+ },
+ "frozen-trail": {
+  "loadout": "never",
+  "note": "",
+  "system": "Cobalt Jewel",
+  "updated": "2026-09-19T13:43:27.303Z"
+ },
+ "grand-spectrum": {
+  "loadout": "uber",
+  "note": "",
+  "system": "Cobalt Jewel",
+  "updated": "2026-09-19T13:29:31.502Z"
+ },
+ "growing-agony": {
+  "loadout": "never",
+  "note": "",
+  "system": "Viridian Jewel",
+  "updated": "2026-09-19T13:43:27.688Z"
+ },
+ "hair-trigger": {
+  "loadout": "never",
+  "note": "",
+  "system": "Viridian Jewel",
+  "updated": "2026-09-19T13:43:28.391Z"
+ },
+ "hazardous-research": {
+  "loadout": "never",
+  "note": "",
+  "system": "Cobalt Jewel",
+  "updated": "2026-09-19T13:43:29.636Z"
+ },
+ "healthy-mind": {
+  "loadout": "endgame",
+  "note": "",
+  "system": "Cobalt Jewel",
+  "updated": "2026-09-19T13:29:33.851Z"
+ },
+ "hidden-potential": {
+  "loadout": "endgame",
+  "note": "",
+  "system": "Viridian Jewel",
+  "updated": "2026-09-19T13:29:38.164Z"
+ },
+ "hotheaded": {
+  "loadout": "never",
+  "note": "",
+  "system": "Viridian Jewel",
+  "updated": "2026-09-19T13:43:30.078Z"
+ },
+ "hungry-abyss": {
+  "loadout": "never",
+  "note": "",
+  "system": "Viridian Jewel",
+  "updated": "2026-09-19T13:43:30.523Z"
+ },
+ "immutable-force": {
+  "loadout": "endgame",
+  "note": "",
+  "system": "Crimson Jewel",
+  "updated": "2026-09-19T13:29:40.230Z"
+ },
+ "impossible-escape": {
+  "loadout": "uber",
+  "note": "",
+  "system": "Viridian Jewel",
+  "updated": "2026-09-19T13:29:41.911Z"
+ },
+ "inertia": {
+  "loadout": "endgame",
+  "note": "",
+  "system": "Crimson Jewel",
+  "updated": "2026-09-19T13:29:45.433Z"
+ },
+ "inevitability": {
+  "loadout": "never",
+  "note": "",
+  "system": "Cobalt Jewel",
+  "updated": "2026-09-19T13:43:30.927Z"
+ },
+ "inspired-learning": {
+  "loadout": "uber",
+  "note": "",
+  "system": "Crimson Jewel",
+  "updated": "2026-09-19T13:29:52.707Z"
+ },
+ "intuitive-leap": {
+  "loadout": "endgame",
+  "note": "",
+  "system": "Viridian Jewel",
+  "updated": "2026-09-19T13:29:57.216Z"
+ },
+ "izaro-s-turmoil": {
+  "loadout": "never",
+  "note": "",
+  "system": "Crimson Jewel",
+  "updated": "2026-09-19T13:43:31.470Z"
+ },
+ "kitava-s-teachings": {
+  "loadout": "endgame",
+  "note": "",
+  "system": "Small Cluster Jewel",
+  "updated": "2026-09-19T13:41:17.152Z"
+ },
+ "kurgal-s-gaze": {
+  "loadout": "endgame",
+  "note": "",
+  "system": "Hypnotic Eye Jewel",
+  "updated": "2026-09-19T13:41:03.431Z"
+ },
+ "lioneye-s-fall": {
+  "loadout": "endgame",
+  "note": "",
+  "system": "Viridian Jewel",
+  "updated": "2026-09-19T13:30:06.017Z"
+ },
+ "lord-of-steel": {
+  "loadout": "never",
+  "note": "",
+  "system": "Viridian Jewel",
+  "updated": "2026-09-19T13:43:32.582Z"
+ },
+ "malicious-intent": {
+  "loadout": "never",
+  "note": "",
+  "system": "Cobalt Jewel",
+  "updated": "2026-09-19T13:43:32.999Z"
+ },
+ "mantra-of-flames": {
+  "loadout": "never",
+  "note": "",
+  "system": "Crimson Jewel",
+  "updated": "2026-09-19T13:43:33.443Z"
+ },
+ "martial-artistry": {
+  "loadout": "never",
+  "note": "",
+  "system": "Crimson Jewel",
+  "updated": "2026-09-19T13:43:33.919Z"
+ },
+ "megalomaniac": {
+  "loadout": "",
+  "note": "Прописывал его отдельно до этого файла",
+  "system": "Medium Cluster Jewel",
+  "updated": "2026-09-19T13:41:42.263Z"
+ },
+ "melding-of-the-flesh": {
+  "loadout": "uber",
+  "note": "",
+  "system": "Cobalt Jewel",
+  "updated": "2026-09-19T13:30:12.670Z"
+ },
+ "might-and-influence": {
+  "loadout": "never",
+  "note": "",
+  "system": "Viridian Jewel",
+  "updated": "2026-09-19T13:43:35.030Z"
+ },
+ "might-in-all-forms": {
+  "loadout": "never",
+  "note": "",
+  "system": "Crimson Jewel",
+  "updated": "2026-09-19T13:43:35.437Z"
+ },
+ "might-of-the-meek": {
+  "loadout": "uber",
+  "note": "",
+  "system": "Crimson Jewel",
+  "updated": "2026-09-19T13:30:17.596Z"
+ },
+ "mutated-growth": {
+  "loadout": "never",
+  "note": "",
+  "system": "Cobalt Jewel",
+  "updated": "2026-09-19T13:43:35.901Z"
+ },
+ "nadir-mode": {
+  "loadout": "endgame",
+  "note": "",
+  "system": "Cobalt Jewel",
+  "updated": "2026-09-19T13:30:24.319Z"
+ },
+ "natural-affinity": {
+  "loadout": "endgame",
+  "note": "",
+  "system": "Small Cluster Jewel",
+  "updated": "2026-09-19T13:41:45.713Z"
+ },
+ "omen-on-the-winds": {
+  "loadout": "never",
+  "note": "",
+  "system": "Viridian Jewel",
+  "updated": "2026-09-19T13:43:36.321Z"
+ },
+ "one-with-nothing": {
+  "loadout": "endgame",
+  "note": "",
+  "system": "Small Cluster Jewel",
+  "updated": "2026-09-19T13:41:47.612Z"
+ },
+ "overwhelming-odds": {
+  "loadout": "never",
+  "note": "",
+  "system": "Crimson Jewel",
+  "updated": "2026-09-19T13:43:37.565Z"
+ },
+ "pacifism": {
+  "loadout": "endgame",
+  "note": "",
+  "system": "Viridian Jewel",
+  "updated": "2026-09-19T13:30:30.895Z"
+ },
+ "pitch-darkness": {
+  "loadout": "never",
+  "note": "",
+  "system": "Viridian Jewel",
+  "updated": "2026-09-19T13:43:37.916Z"
+ },
+ "poacher-s-aim": {
+  "loadout": "never",
+  "note": "",
+  "system": "Viridian Jewel",
+  "updated": "2026-09-19T13:43:38.594Z"
+ },
+ "powerlessness": {
+  "loadout": "endgame",
+  "note": "",
+  "system": "Cobalt Jewel",
+  "updated": "2026-09-19T13:30:32.473Z"
+ },
+ "primordial-eminence": {
+  "loadout": "endgame",
+  "note": "",
+  "system": "Viridian Jewel",
+  "updated": "2026-09-19T13:30:34.745Z"
+ },
+ "primordial-harmony": {
+  "loadout": "endgame",
+  "note": "",
+  "system": "Cobalt Jewel",
+  "updated": "2026-09-19T13:30:37.938Z"
+ },
+ "primordial-might": {
+  "loadout": "endgame",
+  "note": "",
+  "system": "Crimson Jewel",
+  "updated": "2026-09-19T13:30:39.384Z"
+ },
+ "pugilist": {
+  "loadout": "never",
+  "note": "",
+  "system": "Viridian Jewel",
+  "updated": "2026-09-19T13:43:39.108Z"
+ },
+ "pure-talent": {
+  "loadout": "endgame",
+  "note": "",
+  "system": "Viridian Jewel",
+  "updated": "2026-09-19T13:30:43.732Z"
+ },
+ "quickening-covenant": {
+  "loadout": "endgame",
+  "note": "",
+  "system": "Viridian Jewel",
+  "updated": "2026-09-19T13:30:46.126Z"
+ },
+ "rain-of-splinters": {
+  "loadout": "endgame",
+  "note": "",
+  "system": "Crimson Jewel",
+  "updated": "2026-09-19T13:30:51.994Z"
+ },
+ "rapid-expansion": {
+  "loadout": "never",
+  "note": "",
+  "system": "Crimson Jewel",
+  "updated": "2026-09-19T13:43:39.505Z"
+ },
+ "rational-doctrine": {
+  "loadout": "uber",
+  "note": "",
+  "system": "Cobalt Jewel",
+  "updated": "2026-09-19T13:30:53.600Z"
+ },
+ "reckless-defence": {
+  "loadout": "endgame",
+  "note": "",
+  "system": "Cobalt Jewel",
+  "updated": "2026-09-19T13:30:55.344Z"
+ },
+ "reclaimed-malevolence": {
+  "loadout": "endgame",
+  "note": "",
+  "system": "Assembled Eye Jewel",
+  "updated": "2026-09-19T13:41:04.822Z"
+ },
+ "replica-blood-sacrifice": {
+  "loadout": "never",
+  "note": "",
+  "system": "Crimson Jewel",
+  "updated": "2026-09-19T13:43:39.908Z"
+ },
+ "replica-cheap-construction": {
+  "loadout": "never",
+  "note": "",
+  "system": "Viridian Jewel",
+  "updated": "2026-09-19T13:43:41.296Z"
+ },
+ "replica-conqueror-s-efficiency": {
+  "loadout": "never",
+  "note": "",
+  "system": "Crimson Jewel",
+  "updated": "2026-09-19T13:43:41.753Z"
+ },
+ "replica-fragile-bloom": {
+  "loadout": "never",
+  "note": "",
+  "system": "Crimson Jewel",
+  "updated": "2026-09-19T13:43:42.172Z"
+ },
+ "replica-fragility": {
+  "loadout": "endgame",
+  "note": "",
+  "system": "Crimson Jewel",
+  "updated": "2026-09-19T13:31:31.111Z"
+ },
+ "replica-hotheaded": {
+  "loadout": "never",
+  "note": "",
+  "system": "Viridian Jewel",
+  "updated": "2026-09-19T13:43:43.052Z"
+ },
+ "replica-pacifism": {
+  "loadout": "endgame",
+  "note": "",
+  "system": "Viridian Jewel",
+  "updated": "2026-09-19T13:31:30.774Z"
+ },
+ "replica-powerlessness": {
+  "loadout": "endgame",
+  "note": "",
+  "system": "Cobalt Jewel",
+  "updated": "2026-09-19T13:31:30.441Z"
+ },
+ "replica-primordial-might": {
+  "loadout": "endgame",
+  "note": "",
+  "system": "Crimson Jewel",
+  "updated": "2026-09-19T13:31:40.617Z"
+ },
+ "replica-pure-talent": {
+  "loadout": "never",
+  "note": "",
+  "system": "Viridian Jewel",
+  "updated": "2026-09-19T13:43:43.404Z"
+ },
+ "replica-reckless-defence": {
+  "loadout": "endgame",
+  "note": "",
+  "system": "Cobalt Jewel",
+  "updated": "2026-09-19T13:31:47.889Z"
+ },
+ "replica-unstable-payload": {
+  "loadout": "never",
+  "note": "",
+  "system": "Cobalt Jewel",
+  "updated": "2026-09-19T13:43:44.459Z"
+ },
+ "ring-of-blades": {
+  "loadout": "never",
+  "note": "",
+  "system": "Viridian Jewel",
+  "updated": "2026-09-19T13:43:44.868Z"
+ },
+ "rolling-flames": {
+  "loadout": "never",
+  "note": "",
+  "system": "Cobalt Jewel",
+  "updated": "2026-09-19T13:43:45.272Z"
+ },
+ "sacrificial-harvest": {
+  "loadout": "never",
+  "note": "",
+  "system": "Viridian Jewel",
+  "updated": "2026-09-19T13:43:45.828Z"
+ },
+ "seething-fury": {
+  "loadout": "endgame",
+  "note": "",
+  "system": "Viridian Jewel",
+  "updated": "2026-09-19T13:31:51.914Z"
+ },
+ "self-flagellation": {
+  "loadout": "endgame",
+  "note": "",
+  "system": "Viridian Jewel",
+  "updated": "2026-09-19T13:31:53.668Z"
+ },
+ "shattered-chains": {
+  "loadout": "never",
+  "note": "",
+  "system": "Crimson Jewel",
+  "updated": "2026-09-19T13:43:47.146Z"
+ },
+ "soul-s-wick": {
+  "loadout": "never",
+  "note": "",
+  "system": "Cobalt Jewel",
+  "updated": "2026-09-19T13:43:47.496Z"
+ },
+ "spire-of-stone": {
+  "loadout": "never",
+  "note": "",
+  "system": "Crimson Jewel",
+  "updated": "2026-09-19T13:43:48.489Z"
+ },
+ "spirit-guards": {
+  "loadout": "never",
+  "note": "",
+  "system": "Viridian Jewel",
+  "updated": "2026-09-19T13:43:49.685Z"
+ },
+ "spirited-response": {
+  "loadout": "never",
+  "note": "",
+  "system": "Cobalt Jewel",
+  "updated": "2026-09-19T13:43:50.161Z"
+ },
+ "split-personality": {
+  "loadout": "endgame",
+  "note": "Эндгейм: 1 полезное свойство (второе игнор соответственно), уберэндгейм: 2 полезных свойства",
+  "system": "Crimson Jewel",
+  "updated": "2026-09-19T13:32:23.900Z"
+ },
+ "spreading-rot": {
+  "loadout": "never",
+  "note": "",
+  "system": "Cobalt Jewel",
+  "updated": "2026-09-19T13:43:51.303Z"
+ },
+ "static-electricity": {
+  "loadout": "never",
+  "note": "",
+  "system": "Viridian Jewel",
+  "updated": "2026-09-19T13:43:51.826Z"
+ },
+ "steel-spirit": {
+  "loadout": "never",
+  "note": "",
+  "system": "Viridian Jewel",
+  "updated": "2026-09-19T13:43:52.256Z"
+ },
+ "stormshroud": {
+  "loadout": "uber",
+  "note": "",
+  "system": "Viridian Jewel",
+  "updated": "2026-09-19T13:32:33.048Z"
+ },
+ "sublime-vision": {
+  "loadout": "uber",
+  "note": "",
+  "system": "Prismatic Jewel",
+  "updated": "2026-09-19T13:32:42.819Z"
+ },
+ "sudden-ignition": {
+  "loadout": "never",
+  "note": "",
+  "system": "Viridian Jewel",
+  "updated": "2026-09-19T13:43:52.731Z"
+ },
+ "survival-instincts": {
+  "loadout": "never",
+  "note": "",
+  "system": "Viridian Jewel",
+  "updated": "2026-09-19T13:43:54.747Z"
+ },
+ "survival-secrets": {
+  "loadout": "never",
+  "note": "",
+  "system": "Cobalt Jewel",
+  "updated": "2026-09-19T13:43:55.742Z"
+ },
+ "survival-skills": {
+  "loadout": "never",
+  "note": "",
+  "system": "Crimson Jewel",
+  "updated": "2026-09-19T13:43:56.163Z"
+ },
+ "tecrod-s-gaze": {
+  "loadout": "endgame",
+  "note": "",
+  "system": "Murderous Eye Jewel",
+  "updated": "2026-09-19T13:41:05.689Z"
+ },
+ "tempered-flesh": {
+  "loadout": "endgame",
+  "note": "",
+  "system": "Crimson Jewel",
+  "updated": "2026-09-19T13:32:49.984Z"
+ },
+ "tempered-mind": {
+  "loadout": "endgame",
+  "note": "",
+  "system": "Cobalt Jewel",
+  "updated": "2026-09-19T13:32:52.492Z"
+ },
+ "tempered-spirit": {
+  "loadout": "endgame",
+  "note": "",
+  "system": "Viridian Jewel",
+  "updated": "2026-09-19T13:32:53.641Z"
+ },
+ "that-which-was-taken": {
+  "loadout": "never",
+  "note": "",
+  "system": "Crimson Jewel",
+  "updated": "2026-09-19T13:43:56.746Z"
+ },
+ "the-adorned": {
+  "loadout": "uber",
+  "note": "Уберэндгейм: до 70% включительно, миррор: до 100% но должен быть скрипт который вычисляет с какого % перестает идти прирост. Скажем если разница между 97% и 100% чтобы он ставил в поб 97% и я понимал где порог полезности",
+  "system": "Crimson Jewel",
+  "updated": "2026-09-19T13:34:18.377Z"
+ },
+ "the-anima-stone": {
+  "loadout": "endgame",
+  "note": "",
+  "system": "Prismatic Jewel",
+  "updated": "2026-09-19T13:34:27.959Z"
+ },
+ "the-balance-of-terror": {
+  "loadout": "uber",
+  "note": "Уберэндгейм: 1 полезный, миррор: 2 полезных",
+  "system": "Cobalt Jewel",
+  "updated": "2026-09-19T13:34:51.619Z"
+ },
+ "the-blue-dream": {
+  "loadout": "uber",
+  "note": "",
+  "system": "Cobalt Jewel",
+  "updated": "2026-09-19T13:35:10.692Z"
+ },
+ "the-blue-nightmare": {
+  "loadout": "uber",
+  "note": "",
+  "system": "Cobalt Jewel",
+  "updated": "2026-09-19T13:35:26.149Z"
+ },
+ "the-front-line": {
+  "loadout": "endgame",
+  "note": "",
+  "system": "Small Cluster Jewel",
+  "updated": "2026-09-19T13:41:50.009Z"
+ },
+ "the-golden-rule": {
+  "loadout": "endgame",
+  "note": "",
+  "system": "Viridian Jewel",
+  "updated": "2026-09-19T13:35:28.307Z"
+ },
+ "the-green-dream": {
+  "loadout": "uber",
+  "note": "",
+  "system": "Viridian Jewel",
+  "updated": "2026-09-19T13:35:29.920Z"
+ },
+ "the-green-nightmare": {
+  "loadout": "uber",
+  "note": "",
+  "system": "Viridian Jewel",
+  "updated": "2026-09-19T13:35:30.887Z"
+ },
+ "the-interrogation": {
+  "loadout": "endgame",
+  "note": "",
+  "system": "Small Cluster Jewel",
+  "updated": "2026-09-19T13:41:54.174Z"
+ },
+ "the-light-of-meaning": {
+  "loadout": "uber",
+  "note": "",
+  "system": "Prismatic Jewel",
+  "updated": "2026-09-19T13:35:59.017Z"
+ },
+ "the-long-winter": {
+  "loadout": "never",
+  "note": "",
+  "system": "Cobalt Jewel",
+  "updated": "2026-09-19T13:43:57.096Z"
+ },
+ "the-perandus-pact": {
+  "loadout": "never",
+  "note": "",
+  "system": "Prismatic Jewel",
+  "updated": "2026-09-19T13:43:58.689Z"
+ },
+ "the-red-dream": {
+  "loadout": "uber",
+  "note": "",
+  "system": "Crimson Jewel",
+  "updated": "2026-09-19T13:36:01.943Z"
+ },
+ "the-red-nightmare": {
+  "loadout": "uber",
+  "note": "",
+  "system": "Crimson Jewel",
+  "updated": "2026-09-19T13:36:03.180Z"
+ },
+ "the-siege": {
+  "loadout": "endgame",
+  "note": "",
+  "system": "Small Cluster Jewel",
+  "updated": "2026-09-19T13:41:55.873Z"
+ },
+ "the-vigil": {
+  "loadout": "never",
+  "note": "",
+  "system": "Crimson Jewel",
+  "updated": "2026-09-19T13:43:59.105Z"
+ },
+ "thread-of-hope": {
+  "loadout": "endgame",
+  "note": "эндгейм: все ринги кроме массив, уберэндгейм: массив ринг потому что он только с убер сируса падает",
+  "system": "Crimson Jewel",
+  "updated": "2026-09-19T13:37:00.350Z"
+ },
+ "to-dust": {
+  "loadout": "endgame",
+  "note": "",
+  "system": "Cobalt Jewel",
+  "updated": "2026-09-19T13:37:03.047Z"
+ },
+ "transcendent-flesh": {
+  "loadout": "endgame",
+  "note": "",
+  "system": "Crimson Jewel",
+  "updated": "2026-09-19T13:37:07.771Z"
+ },
+ "transcendent-mind": {
+  "loadout": "endgame",
+  "note": "",
+  "system": "Cobalt Jewel",
+  "updated": "2026-09-19T13:37:08.766Z"
+ },
+ "transcendent-spirit": {
+  "loadout": "endgame",
+  "note": "",
+  "system": "Viridian Jewel",
+  "updated": "2026-09-19T13:37:09.267Z"
+ },
+ "ulaman-s-gaze": {
+  "loadout": "endgame",
+  "note": "",
+  "system": "Searching Eye Jewel",
+  "updated": "2026-09-19T13:41:06.105Z"
+ },
+ "unending-hunger": {
+  "loadout": "uber",
+  "note": "",
+  "system": "Cobalt Jewel",
+  "updated": "2026-09-19T13:37:20.390Z"
+ },
+ "unnatural-instinct": {
+  "loadout": "uber",
+  "note": "",
+  "system": "Viridian Jewel",
+  "updated": "2026-09-19T13:37:22.012Z"
+ },
+ "unstable-payload": {
+  "loadout": "never",
+  "note": "",
+  "system": "Cobalt Jewel",
+  "updated": "2026-09-19T13:43:59.866Z"
+ },
+ "vaal-sentencing": {
+  "loadout": "never",
+  "note": "",
+  "system": "Cobalt Jewel",
+  "updated": "2026-09-19T13:44:00.236Z"
+ },
+ "violent-dead": {
+  "loadout": "never",
+  "note": "",
+  "system": "Cobalt Jewel",
+  "updated": "2026-09-19T13:44:00.953Z"
+ },
+ "voices": {
+  "loadout": "",
+  "note": "Прописывал его отдельно до этого файла",
+  "system": "Large Cluster Jewel",
+  "updated": "2026-09-19T13:42:00.459Z"
+ },
+ "volley-fire": {
+  "loadout": "never",
+  "note": "",
+  "system": "Viridian Jewel",
+  "updated": "2026-09-19T13:44:01.330Z"
+ },
+ "warlord-s-reach": {
+  "loadout": "never",
+  "note": "",
+  "system": "Crimson Jewel",
+  "updated": "2026-09-19T13:44:01.727Z"
+ },
+ "warrior-s-tale": {
+  "loadout": "never",
+  "note": "",
+  "system": "Crimson Jewel",
+  "updated": "2026-09-19T13:44:02.782Z"
+ },
+ "watcher-s-eye": {
+  "loadout": "endgame",
+  "note": "Эндгейм: 1 полезное свойство, уберэндгейм: 2 полезных свойства. Айлвл не влияет на моды а только диктует количество модов на нем поэтому с убер и нон убер падают одинаковые по модам",
+  "system": "Prismatic Jewel",
+  "updated": "2026-09-19T13:45:44.330Z"
+ },
+ "weight-of-sin": {
+  "loadout": "never",
+  "note": "",
+  "system": "Viridian Jewel",
+  "updated": "2026-09-19T13:44:03.190Z"
+ },
+ "weight-of-the-empire": {
+  "loadout": "never",
+  "note": "",
+  "system": "Crimson Jewel",
+  "updated": "2026-09-19T13:44:03.787Z"
+ },
+ "wildfire": {
+  "loadout": "never",
+  "note": "",
+  "system": "Crimson Jewel",
+  "updated": "2026-09-19T13:44:04.166Z"
+ },
+ "winter-burial": {
+  "loadout": "never",
+  "note": "",
+  "system": "Crimson Jewel",
+  "updated": "2026-09-19T13:44:04.642Z"
+ },
+ "winter-s-bounty": {
+  "loadout": "never",
+  "note": "Легаси все невер, я не понимаю зачем ты их сюда выгрузил вообще",
+  "system": "Cobalt Jewel",
+  "updated": "2026-09-19T13:44:16.496Z"
+ },
+ "witchbane": {
+  "loadout": "endgame",
+  "note": "",
+  "system": "Cobalt Jewel",
+  "updated": "2026-09-19T13:39:39.965Z"
+ }
+}

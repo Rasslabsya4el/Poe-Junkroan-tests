@@ -1,0 +1,4 @@
+{"updated": "2026-10-11T11:30:00+00:00", "rows": [
+ {"ref": "spark", "rank": 1, "run_dir": "artifacts/benchmark/20261011-0800-snap-done", "metric": "CombinedDPS", "ours": 1234567.5, "audit": "1 errors / 2 warnings", "floors": "missed", "added_at": "2026-10-11T11:30:05+00:00", "note": "read the Total DPS"},
+ {"ref": "bleed_bow", "variant": "no-blood_magic", "metric": "PhysicalMaximumHitTaken", "ours": 7200, "audit": "0 errors / 2 warnings", "floors": "ok", "added_at": "2026-10-11T09:10:00+00:00", "note": "older batch"}
+]}
