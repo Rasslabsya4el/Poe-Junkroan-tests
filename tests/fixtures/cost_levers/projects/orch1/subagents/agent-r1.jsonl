@@ -1,0 +1,2 @@
+{"type": "user", "message": {"role": "user", "content": "Find where the config loads."}, "timestamp": "2026-01-01T01:50:00Z"}
+{"type": "assistant", "message": {"id": "r1_t0", "model": "claude-sonnet-5", "usage": {"input_tokens": 2000, "cache_creation_input_tokens": 0, "cache_read_input_tokens": 0, "output_tokens": 0}, "content": [{"type": "tool_use", "name": "Grep", "input": {"pattern": "x"}}]}, "timestamp": "2026-01-01T01:51:00Z"}

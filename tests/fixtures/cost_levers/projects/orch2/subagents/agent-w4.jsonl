@@ -1,0 +1,2 @@
+{"type": "user", "message": {"role": "user", "content": "Work on #11."}, "timestamp": "2026-01-01T13:05:00Z"}
+{"type": "assistant", "message": {"id": "w4_t0", "model": "claude-sonnet-5", "usage": {"input_tokens": 99999, "cache_creation_input_tokens": 0, "cache_read_input_tokens": 0, "output_tokens": 0}, "content": [{"type": "tool_use", "name": "Edit", "input": {"file_path": "c"}}]}, "timestamp": "2026-01-01T13:06:00Z"}

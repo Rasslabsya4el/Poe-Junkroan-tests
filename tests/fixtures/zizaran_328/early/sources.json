@@ -1,0 +1,84 @@
+{
+  "source": "Zizaran 3.28 Mirage league-starter guides, one early-game loadout per build (scripts/extract_loadout.py)",
+  "league": "3.28 Mirage",
+  "collected": "2026-09-18",
+  "note": "Extracted from tests/fixtures/zizaran_328/<file>: the item set, tree spec, skill set and config set the manifest's early_loadout names, as a single-loadout PoB. Regenerate with `python scripts/extract_loadout.py`.",
+  "builds": [
+    {
+      "slug": "champion_explosive_arrow",
+      "title": "Explosive Arrow Leaguestarter",
+      "level": 69,
+      "class": "Duelist",
+      "ascendancy": "Champion",
+      "main_skill": "Explosive Arrow (Ballista Totem)",
+      "tree_version": "3_27",
+      "pob_url": "https://pobb.in/wqX03V81LO15",
+      "from": {
+        "file": "champion_explosive_arrow.pob.txt",
+        "item_set": "Early Game",
+        "spec": "Level 69 - Merciless Lab",
+        "skill_set": "Level 38+",
+        "config_set": "Default",
+        "linked_by": "inferred",
+        "level_source": "spec title"
+      }
+    },
+    {
+      "slug": "hierophant_kinetic_fusillade",
+      "title": "Kinetic Fusillade Ballista Hierophant Leaguestarter (w/ Palsteron)",
+      "level": 90,
+      "class": "Templar",
+      "ascendancy": "Hierophant",
+      "main_skill": "Kinetic Fusillade (Ballista Totem)",
+      "tree_version": "3_27",
+      "pob_url": "https://pobb.in/MpDjiqpnP2sV",
+      "from": {
+        "file": "hierophant_kinetic_fusillade.pob.txt",
+        "item_set": "EarlyMaps",
+        "spec": "EarlyMaps",
+        "skill_set": "EarlyMaps",
+        "config_set": "Default",
+        "linked_by": "identical titles across all three set types",
+        "level_source": "estimated from 123 allocated nodes"
+      }
+    },
+    {
+      "slug": "hierophant_shock_nova_archmage",
+      "title": "Shock Nova Archmage Hierophant Leaguestarter (ft. Goratha)",
+      "level": 81,
+      "class": "Templar",
+      "ascendancy": "Hierophant",
+      "main_skill": "Shock Nova (Archmage)",
+      "tree_version": "3_27",
+      "pob_url": "https://pobb.in/HSNivp4Merib",
+      "from": {
+        "file": "hierophant_shock_nova_archmage.pob.txt",
+        "item_set": "Early Mapping",
+        "spec": "Early Mapping",
+        "skill_set": "Early Mapping",
+        "config_set": "Default",
+        "linked_by": "identical titles; note his 'Early Game' set here is act 1, not maps",
+        "level_source": "estimated from 114 allocated nodes"
+      }
+    },
+    {
+      "slug": "juggernaut_boneshatter",
+      "title": "Boneshatter of Complex Trauma Juggernaut Leaguestarter",
+      "level": 81,
+      "class": "Marauder",
+      "ascendancy": "Juggernaut",
+      "main_skill": "Boneshatter of Complex Trauma",
+      "tree_version": "3_28",
+      "pob_url": "https://maxroll.gg/poe/pob/6kaoo0ce",
+      "from": {
+        "file": "juggernaut_boneshatter.pob.txt",
+        "item_set": "Early Game {1}",
+        "spec": "Early Game {1}",
+        "skill_set": "Early Game {1}",
+        "config_set": "Default {1,2,3,4,5}",
+        "linked_by": "author marker {1}",
+        "level_source": "estimated from 114 allocated nodes"
+      }
+    }
+  ]
+}

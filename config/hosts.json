@@ -1,0 +1,177 @@
+{
+  "pc": {
+    "ssh": null,
+    "repo_path": "C:\\Coding\\poe-junkroan-v2",
+    "loop_seconds_factor": 1.0,
+    "ram_per_worker_gb": 1.4,
+    "modes": {
+      "normal": {
+        "day": {
+          "hours": [
+            8,
+            25
+          ],
+          "total": 7,
+          "others": 2,
+          "min_free_ram_gb": 8,
+          "merge_suite": 3,
+          "merge_suite_reserve_gb": 3
+        },
+        "night": {
+          "hours": [
+            1,
+            8
+          ],
+          "total": 10,
+          "others": 5,
+          "min_free_ram_gb": 3,
+          "merge_suite": 6,
+          "merge_suite_reserve_gb": 3
+        },
+        "pob_priority": "Normal",
+        "pob_priority_day": "BelowNormal",
+        "strict_reserve": false
+      },
+      "play": {
+        "day": {
+          "hours": [
+            0,
+            24
+          ],
+          "total": 5,
+          "others": 2,
+          "min_free_ram_gb": 8,
+          "merge_suite": 6,
+          "merge_suite_reserve_gb": 3
+        },
+        "pob_priority": "Idle",
+        "strict_reserve": true
+      },
+      "pause": {
+        "day": {
+          "hours": [
+            0,
+            24
+          ],
+          "total": 2,
+          "others": 2,
+          "min_free_ram_gb": 8,
+          "merge_suite": 6,
+          "merge_suite_reserve_gb": 3
+        },
+        "pob_priority": "Idle",
+        "strict_reserve": true,
+        "queue_slots": 0
+      },
+      "off": {
+        "day": {
+          "hours": [
+            0,
+            24
+          ],
+          "total": 0,
+          "others": 0,
+          "min_free_ram_gb": 8,
+          "merge_suite": 6,
+          "merge_suite_reserve_gb": 3
+        },
+        "pob_priority": "Idle",
+        "strict_reserve": true
+      }
+    },
+    "spike": {
+      "ram_free_mb_hard": 8192,
+      "cpu_pct_soft": 95,
+      "window_s": 300
+    }
+  },
+  "laptop": {
+    "ram_per_worker_gb": 1.44,
+    "ssh": "laptop",
+    "repo_path": "C:\\Coding\\poe-junkroan-v2",
+    "daemon_repo_path": "C:\\Coding\\poe-junkroan-v2-daemon",
+    "jobs_log_path": "C:\\Coding\\poe-junkroan-v2\\artifacts\\runs\\jobs.jsonl",
+    "loop_seconds_factor": 1.18,
+    "modes": {
+      "normal": {
+        "day": {
+          "hours": [
+            0,
+            24
+          ],
+          "total": 3,
+          "others": 0,
+          "min_free_ram_gb": 1,
+          "merge_suite": 4,
+          "merge_suite_reserve_gb": 3
+        },
+        "pob_priority": "Normal",
+        "strict_reserve": true
+      },
+      "browser": {
+        "day": {
+          "hours": [
+            0,
+            24
+          ],
+          "total": 2,
+          "others": 0,
+          "min_free_ram_gb": 1,
+          "merge_suite": 4,
+          "merge_suite_reserve_gb": 3
+        },
+        "pob_priority": "Normal",
+        "strict_reserve": true
+      },
+      "off": {
+        "day": {
+          "hours": [
+            0,
+            24
+          ],
+          "total": 0,
+          "others": 0,
+          "min_free_ram_gb": 1,
+          "merge_suite": 4,
+          "merge_suite_reserve_gb": 3
+        },
+        "pob_priority": "Idle",
+        "strict_reserve": true
+      }
+    },
+    "owner_presets": {
+      "note": "measured, #958 2026-10-13: YouTube 1080p (Big Buck Bunny 10:34): CPU p95 1.313 cores, RAM peak 830.1 MB; film not measured: 3 tries in 9.3 min, the site's player (iframe) held a video element with a blob src, readyState 0, videoHeight 0, so no 1080p was ever read; need = larger measurement x 1.25, CPU up to 0.5 core, RAM up to 250 MB",
+      "film": {
+        "need_cpu_cores": 2.0,
+        "need_ram_mb": 1250
+      },
+      "sleep": {
+        "for": "2h",
+        "on_end": "close-browsers",
+        "close_mode": "allow-list",
+        "keep": [
+          "python.exe",
+          "tailscale-ipn.exe",
+          "ThrottleStop.exe",
+          "DefenderSessionHelper.exe",
+          "RAVBg64.exe",
+          "RtkNGUI64.exe"
+        ],
+        "close": [
+          "chrome",
+          "msedge",
+          "firefox",
+          "opera",
+          "brave"
+        ],
+        "need_cpu_cores": 2.0,
+        "need_ram_mb": 1250
+      }
+    },
+    "spike": {
+      "ram_free_mb_hard": 2019,
+      "cpu_pct_soft": 95,
+      "window_s": 300
+    }
+  }
+}

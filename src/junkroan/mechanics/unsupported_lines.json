@@ -1,0 +1,103 @@
+{
+  "schema_version": "1.0.0",
+  "purpose": "How lines PoB cannot parse (red in PoB, named by the audit) are treated. Each entry is a kind of line, matched by pattern, never a build or an item. The consequence is always something PoB does model (a config state, a per-second cost) or an honest zero. Decided with the user 2026-09-14 from the inventory of every red line seen across the 14 references and 16 searches (20 real lines, 3 mechanisms). The enabler lists are what the user recalled, not exhaustive: new leagues add cases, and the audit's inventory of red lines is where new kinds show up.",
+  "kinds": [
+    {
+      "id": "on_kill_generator",
+      "pattern": "chance to gain (a|an|\\d+) (frenzy|power|endurance) charges? on kill|on kill",
+      "consequence": "charge or buff config",
+      "boss_lane": "off",
+      "optimistic_lane": "on",
+      "why": "no kills on a boss, except through an enabler that spawns killable adds (below); outside those, on-kill is a mapping-comfort mechanic. The node is still taken for its other lines. The list is open: new leagues add enablers.",
+      "enablers": [
+        {
+          "item": "Squirming Terror, Unset Ring",
+          "text": "An Enemy Writhing Worm spawns every 2 seconds",
+          "kills_per_second_on_a_boss": 0.5
+        },
+        {
+          "item": "The Writhing Jar, Hallowed Hybrid Flask",
+          "text": "2 Enemy Writhing Worms escape the Flask when used",
+          "kills_per_use": 2,
+          "kills_per_second_on_a_boss": "2 x uses per second, uses/s = the flask's charges per second (PoB outputs FlaskChargeGen / LifeFlaskChargeGen / ManaFlaskChargeGen; a Hybrid flask gets all three parts) / charges per use (the base's chargesUsed x the item's own '% reduced Charges per use' line); config_rules.flask_add_kills_per_second"
+        },
+        {
+          "item": "The Hateful Accuser, Nameless Ring",
+          "text": "Grants level 20 Penance Mark (spawns adds from the marked enemy; slow)",
+          "kills_per_second_on_a_boss": 0,
+          "pob_data": "Data/Skills/other.lua skills[\"PenanceMark\"] constantStats: { \"base_skill_effect_duration\", 3000 }, { \"penance_mark_summon_phantasms_when_hit\", 2 }; statMap SummonPhantasmWhenHit BASE; minion PenanceMarkPhantasm. A count per hit on the marked enemy and a mark duration: no interval, no count per time, so no rate",
+          "why": "still to recognise: PoB's skill data gives no spawn rate; none is typed, the boss lane keeps 0 until the brain decides"
+        }
+      ],
+      "status": "implemented 2026-09-14 (config_rules.charge_rule): on kill counts only through an add-spawning enabler in the build text (Squirming Terror: 1 worm per 2 s); The Writhing Jar implemented (#401, flask outputs of PoB); The Hateful Accuser still to recognise (no rate in PoB data, boss lane 0)"
+    },
+    {
+      "id": "on_block_generator",
+      "pattern": "when you block|on block",
+      "consequence": "charge or buff config",
+      "boss_lane": "off, unless the build uses a retaliation skill (it blocks or it has no damage: full uptime); with Azadi Crest (Lacquered Buckler: lucky and unlucky effects use the best or worst of three rolls) count half the value",
+      "optimistic_lane": "on (a Gladiator with lucky block is built around it)",
+      "why": "block is near-immortal for mapping even at the 75% caps and weak for bossing: many boss abilities are not blockable, and PoB has no boss attack rate.",
+      "status": "implemented 2026-09-14 (config_rules.charge_rule): off on the boss lane unless a retaliation-tagged gem is in the build (then full); with Azadi Crest (its line 'Your Lucky or Unlucky effects use the best or worst from three rolls instead of two', read from the build text) and no retaliation skill the line counts at half value: half of kmax / charge duration per second (implemented #401)",
+      "mapping_lane": "hit about twice per second (user, 2026-09-14); for a mapping objective, later"
+    },
+    {
+      "id": "steal_charges",
+      "pattern": "chance to steal .*charges",
+      "consequence": "none",
+      "boss_lane": "off",
+      "optimistic_lane": "off",
+      "why": "stealing needs the enemy to have charges; bosses do not, and maps would need rolling for charged monsters. Never counts.",
+      "status": "implemented 2026-09-14 (config_rules.charge_rule): never counts"
+    },
+    {
+      "id": "chance_enemy_debuff",
+      "pattern": "\\d+% chance to (aggravate|maim|blind|hinder|intimidate|unnerve) .* on (hit|critical strike)",
+      "consequence": "enemy condition config (conditionEnemyMaimed, conditionEnemyMoving ...)",
+      "boss_lane": "on when the uptime rule holds: 1 - (1 - chance x crit chance if on crit)^(hits per second x debuff duration) >= 0.9 (as ailments, config_rules._applied_probability; aggravation D40)",
+      "optimistic_lane": "on",
+      "status": "aggravation done (D40); charges with a chance on hit / crit done 2026-09-14 (charge_rule; partial counts via override<Kind>Charges; the gain rate ramps in D39; the tree optimizer judges such a node with the toggle on, TreeOptimizer.enabler_hook); maim / blind / hinder on hit or crit by the same uptime rule (_chance_debuff_uptime)"
+    },
+    {
+      "id": "self_cost_on_use",
+      "pattern": "lose \\d+% of (life|energy shield|mana|life and energy shield) when you use a (\\w+) skill",
+      "consequence": "per-second cost into the self-degen rail (D34): loss per second = X% x pool x uses per second of skills the player uses themselves. A triggered skill is not used, and the trigger comes from many sources (Spellslinger, Cast when Damage Taken, Cast on Critical Strike, trigger crafts and uniques, Poet's Pen ...): use PoB's own view of what is triggered (the active skill's trigger flag / triggering source), never a list of trigger names; the skill that does the triggering is the one used.",
+      "boss_lane": "counted",
+      "optimistic_lane": "counted",
+      "why": "Chaos Mastery on a 4-casts-per-second chaos skill is -40% life per second; PoB cannot see it and the mastery must disqualify itself where it should, exactly as Righteous Fire's degen does.",
+      "status": "implemented 2026-09-14 (optimizer/self_cost.py): SelfCostPerSecond, a derived stat in the net-recovery floor; PoB's triggered flag decides what is used"
+    },
+    {
+      "id": "cruelty_effect",
+      "pattern": "\\d+% increased effect of cruelty",
+      "consequence": "PoB's own Cruelty input: overrideCruelty = Cruelty's damage % (from the support at its level, max 40) x (1 + increased effect)",
+      "boss_lane": "counted",
+      "optimistic_lane": "counted",
+      "why": "a translation into PoB's representation (the same class as D40), not an authored weight; the mastery is real DPS. Written as a rule against PoB's value, so a PoB update moves it.",
+      "status": "implemented 2026-10-01 (optimizer/ramp_inputs.py cruelty_excess_mod, #400): overrideCruelty stays at the value the lane holds (PoB clamps it at 40); the excess goes in as one custom mod, Damage MORE with ModFlag.Dot of (1 + v(1+N/100)/100) / (1 + v/100), only with Cruelty Support linked and the line allocated; the audit lists the line as a zero only when that custom mod is absent"
+    },
+    {
+      "id": "first_seconds_only",
+      "pattern": "when you hit them while they are on full life",
+      "consequence": "none",
+      "boss_lane": "zero (Crush lasts 4 s from the first hit; the enemy is on full life once)",
+      "optimistic_lane": "zero",
+      "why": "an effect with a fixed window at the start of a fight has no steady state; counting it needs a fight-length assumption the rails do not have. Named by the audit.",
+      "status": "policy: zero"
+    },
+    {
+      "id": "no_representation",
+      "examples": [
+        "Enemies Cannot Leech Life From you",
+        "Bleeding enemies cannot inflict Bleeding on you",
+        "Ignited enemies cannot Ignite you",
+        "Light Radius is based on Energy Shield instead of Life"
+      ],
+      "consequence": "none",
+      "boss_lane": "zero",
+      "optimistic_lane": "zero",
+      "why": "defensive quality of life outside EHP; the user: unreliable or useless. Named by the audit.",
+      "status": "policy: zero"
+    }
+  ]
+}

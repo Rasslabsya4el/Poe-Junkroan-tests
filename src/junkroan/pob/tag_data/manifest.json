@@ -1,0 +1,125 @@
+{
+  "schema_version": "1.0.0",
+  "corpus_id": "pob_tag_corpus",
+  "source_corpus": {
+    "corpus_id": "pob_game_corpus",
+    "manifest_path": "src/junkroan/pob/corpus_data/manifest.json",
+    "manifest_sha256": "8bf4070d5451e186841e7bb3fa8516ee515569d841f3fbe1d66c90ef21020a6d",
+    "source_lane": {
+      "canonical_path": "vendor/pob/source",
+      "lane_id": "pob_source_lane",
+      "lock_path": "locks/pob.source.lock.json",
+      "observed_commit": "b32759ab0f31a1c8499a0d420cb0f0633d4fe478",
+      "pinned_commit": "b32759ab0f31a1c8499a0d420cb0f0633d4fe478",
+      "pinned_ref": "refs/tags/v2.67.2",
+      "repo": "PathOfBuildingCommunity/PathOfBuilding",
+      "repo_url": "https://github.com/PathOfBuildingCommunity/PathOfBuilding.git",
+      "tree_version": "3_29"
+    }
+  },
+  "families": [
+    {
+      "family": "active_gems",
+      "relative_path": "src/junkroan/pob/tag_data/active_gems.json",
+      "record_count": 558,
+      "derived_from_bundle_path": "src/junkroan/pob/corpus_data/active_gems.json",
+      "derived_from_bundle_sha256": "8a9eba826f70b46749c82221583c75d6502579a8a8a062f8f2764f0830241223",
+      "derived_from_record_count": 558
+    },
+    {
+      "family": "ascendancies",
+      "relative_path": "src/junkroan/pob/tag_data/ascendancies.json",
+      "record_count": 37,
+      "derived_from_bundle_path": "src/junkroan/pob/corpus_data/ascendancies.json",
+      "derived_from_bundle_sha256": "398eeb803b541b8ec5034a2041e35a3094c8f9b0905190fb4a149e7fdf80f5ae",
+      "derived_from_record_count": 37
+    },
+    {
+      "family": "config_surfaces",
+      "relative_path": "src/junkroan/pob/tag_data/config_surfaces.json",
+      "record_count": 578,
+      "derived_from_bundle_path": "src/junkroan/pob/corpus_data/config_surfaces.json",
+      "derived_from_bundle_sha256": "922753db6859e578c151a45a03da0ab0406a6d82a639eb3d726a130a9bbc3d22",
+      "derived_from_record_count": 578
+    },
+    {
+      "family": "items",
+      "relative_path": "src/junkroan/pob/tag_data/items.json",
+      "record_count": 1106,
+      "derived_from_bundle_path": "src/junkroan/pob/corpus_data/items.json",
+      "derived_from_bundle_sha256": "9a966f85bdf8fde0f9cee42a0a9b36a4af2c51c1a2484567479c9817994398ed",
+      "derived_from_record_count": 1106
+    },
+    {
+      "family": "keystones",
+      "relative_path": "src/junkroan/pob/tag_data/keystones.json",
+      "record_count": 57,
+      "derived_from_bundle_path": "src/junkroan/pob/corpus_data/keystones.json",
+      "derived_from_bundle_sha256": "d5c177915bf7662fac1752d6ef7b99a2a1cd65fc871e310a238c151d76abadcb",
+      "derived_from_record_count": 57
+    },
+    {
+      "family": "masteries",
+      "relative_path": "src/junkroan/pob/tag_data/masteries.json",
+      "record_count": 353,
+      "derived_from_bundle_path": "src/junkroan/pob/corpus_data/masteries.json",
+      "derived_from_bundle_sha256": "95ba1af703638ea18041798f61d016041684fd70fb7e795c69e515180415cf36",
+      "derived_from_record_count": 353
+    },
+    {
+      "family": "passives",
+      "relative_path": "src/junkroan/pob/tag_data/passives.json",
+      "record_count": 2421,
+      "derived_from_bundle_path": "src/junkroan/pob/corpus_data/passives.json",
+      "derived_from_bundle_sha256": "e298a15db60857838cbe2b5c1ea331492c1a3c7dff31f2ea571e306147175cc6",
+      "derived_from_record_count": 2421
+    },
+    {
+      "family": "support_gems",
+      "relative_path": "src/junkroan/pob/tag_data/support_gems.json",
+      "record_count": 263,
+      "derived_from_bundle_path": "src/junkroan/pob/corpus_data/support_gems.json",
+      "derived_from_bundle_sha256": "a7b33837a9d8a1033af05268d6c451f1509799daa2326e418cfcb3becb92b1df",
+      "derived_from_record_count": 263
+    }
+  ],
+  "downstream_policy": {
+    "read_root": "src/junkroan/pob/tag_data",
+    "derivation_source_root": "src/junkroan/pob/corpus_data",
+    "consumer_rule": "Downstream agents must read committed tag bundles for ordinary tag-driven lookup instead of reparsing committed game corpus bundles.",
+    "loader_boundary": "junkroan.pob.tag_corpus",
+    "source_lane_authority": "vendor/pob/source",
+    "authority_rule": "Use vendor/pob/source only when updating the accepted game corpus or auditing tag derivation rules."
+  },
+  "field_order": {
+    "manifest": [
+      "schema_version",
+      "corpus_id",
+      "source_corpus",
+      "families",
+      "downstream_policy",
+      "field_order"
+    ],
+    "bundle": [
+      "schema_version",
+      "corpus_id",
+      "family",
+      "record_count",
+      "provenance",
+      "metadata",
+      "records"
+    ],
+    "record": [
+      "source_id",
+      "source_name",
+      "search_tags",
+      "scaling_facets",
+      "supporting_text",
+      "source_context"
+    ],
+    "facet": [
+      "facet",
+      "values"
+    ]
+  }
+}

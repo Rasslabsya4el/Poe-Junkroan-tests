@@ -1,0 +1,1848 @@
+{
+ "recorded_ms": 1791567757413,
+ "directory": "C:\\Coding\\poe-junkroan-v2",
+ "sessions": [
+  {
+   "id": "ses_ede485183ffebh0mvb58LA9dhX",
+   "slug": "proud-moon",
+   "projectID": "a5f54cd5e1eccdcc3ee0dcfa3bb9fad46925be25",
+   "directory": "C:\\Coding\\poe-junkroan-v2",
+   "path": "",
+   "parentID": "ses_ede49118affefbf9eAEvuAmHSq",
+   "summary": {
+    "additions": 0,
+    "deletions": 0,
+    "files": 0
+   },
+   "cost": 0,
+   "tokens": {
+    "input": 420566,
+    "output": 2222,
+    "reasoning": 13146,
+    "cache": {
+     "read": 689664,
+     "write": 0
+    }
+   },
+   "title": "Research queue systems (@general subagent)",
+   "agent": "general",
+   "model": {
+    "id": "gpt-5.6-terra",
+    "providerID": "codex-sale-oai",
+    "variant": "default"
+   },
+   "version": "1.18.31",
+   "time": {
+    "created": 1791567048316,
+    "updated": 1791567675915
+   },
+   "permission": [
+    {
+     "permission": "task",
+     "pattern": "*",
+     "action": "deny"
+    }
+   ]
+  },
+  {
+   "id": "ses_ede485163ffeYSkv411haotwO8",
+   "slug": "stellar-wizard",
+   "projectID": "a5f54cd5e1eccdcc3ee0dcfa3bb9fad46925be25",
+   "directory": "C:\\Coding\\poe-junkroan-v2",
+   "path": "",
+   "parentID": "ses_ede49118affefbf9eAEvuAmHSq",
+   "summary": {
+    "additions": 0,
+    "deletions": 0,
+    "files": 0
+   },
+   "cost": 0,
+   "tokens": {
+    "input": 875557,
+    "output": 2358,
+    "reasoning": 8050,
+    "cache": {
+     "read": 170496,
+     "write": 0
+    }
+   },
+   "title": "Research affected tests (@general subagent)",
+   "agent": "general",
+   "model": {
+    "id": "gpt-5.6-terra",
+    "providerID": "codex-sale-oai",
+    "variant": "default"
+   },
+   "version": "1.18.31",
+   "time": {
+    "created": 1791567048348,
+    "updated": 1791567557903
+   },
+   "permission": [
+    {
+     "permission": "task",
+     "pattern": "*",
+     "action": "deny"
+    }
+   ]
+  },
+  {
+   "id": "ses_ede48514effeDqs7H2736FiLjp",
+   "slug": "quick-garden",
+   "projectID": "a5f54cd5e1eccdcc3ee0dcfa3bb9fad46925be25",
+   "directory": "C:\\Coding\\poe-junkroan-v2",
+   "path": "",
+   "parentID": "ses_ede49118affefbf9eAEvuAmHSq",
+   "summary": {
+    "additions": 0,
+    "deletions": 0,
+    "files": 0
+   },
+   "cost": 0,
+   "tokens": {
+    "input": 192747,
+    "output": 7668,
+    "reasoning": 6678,
+    "cache": {
+     "read": 566784,
+     "write": 0
+    }
+   },
+   "title": "Research postmerge workflows (@general subagent)",
+   "agent": "general",
+   "model": {
+    "id": "gpt-5.6-terra",
+    "providerID": "codex-sale-oai",
+    "variant": "default"
+   },
+   "version": "1.18.31",
+   "time": {
+    "created": 1791567048369,
+    "updated": 1791567458121
+   },
+   "permission": [
+    {
+     "permission": "task",
+     "pattern": "*",
+     "action": "deny"
+    }
+   ]
+  },
+  {
+   "id": "ses_ede48513bffetEWZTbwuClW0DH",
+   "slug": "neon-river",
+   "projectID": "a5f54cd5e1eccdcc3ee0dcfa3bb9fad46925be25",
+   "directory": "C:\\Coding\\poe-junkroan-v2",
+   "path": "",
+   "parentID": "ses_ede49118affefbf9eAEvuAmHSq",
+   "summary": {
+    "additions": 0,
+    "deletions": 0,
+    "files": 0
+   },
+   "cost": 0,
+   "tokens": {
+    "input": 281066,
+    "output": 6157,
+    "reasoning": 5402,
+    "cache": {
+     "read": 395776,
+     "write": 0
+    }
+   },
+   "title": "Research flaky test practices (@general subagent)",
+   "agent": "general",
+   "model": {
+    "id": "gpt-5.6-terra",
+    "providerID": "codex-sale-oai",
+    "variant": "default"
+   },
+   "version": "1.18.31",
+   "time": {
+    "created": 1791567048388,
+    "updated": 1791567456247
+   },
+   "permission": [
+    {
+     "permission": "task",
+     "pattern": "*",
+     "action": "deny"
+    }
+   ]
+  },
+  {
+   "id": "ses_ede49118affefbf9eAEvuAmHSq",
+   "slug": "curious-tiger",
+   "projectID": "a5f54cd5e1eccdcc3ee0dcfa3bb9fad46925be25",
+   "directory": "C:\\Coding\\poe-junkroan-v2",
+   "path": "",
+   "summary": {
+    "additions": 0,
+    "deletions": 0,
+    "files": 0
+   },
+   "cost": 0,
+   "tokens": {
+    "input": 7658,
+    "output": 166,
+    "reasoning": 226,
+    "cache": {
+     "read": 0,
+     "write": 0
+    }
+   },
+   "title": "agentops-research-2026-10-09-merge-pipeline-practices",
+   "agent": "agentops-research",
+   "model": {
+    "id": "gpt-5.6-terra",
+    "providerID": "codex-sale-oai",
+    "variant": "default"
+   },
+   "version": "1.18.31",
+   "time": {
+    "created": 1791566999157,
+    "updated": 1791567019153
+   }
+  }
+ ],
+ "status": {
+  "ses_ede49118affefbf9eAEvuAmHSq": {
+   "type": "busy"
+  },
+  "ses_ede485183ffebh0mvb58LA9dhX": {
+   "type": "busy"
+  },
+  "ses_ede485163ffeYSkv411haotwO8": {
+   "type": "busy"
+  }
+ },
+ "messages": {
+  "ses_ede485183ffebh0mvb58LA9dhX": [
+   {
+    "info": {
+     "role": "assistant",
+     "modelID": "gpt-5.6-terra",
+     "tokens": {
+      "total": 80843,
+      "input": 5420,
+      "output": 29,
+      "reasoning": 130,
+      "cache": {
+       "write": 0,
+       "read": 75264
+      }
+     },
+     "time": {
+      "created": 1791567150189,
+      "completed": 1791567165848
+     }
+    },
+    "parts": [
+     {
+      "type": "tool",
+      "tool": "websearch",
+      "state": {
+       "title": "Exa Web Search: Uber SubmitQueue paper speculative execution failure probability merge queue",
+       "input": {
+        "query": "Uber SubmitQueue paper speculative execution failure probability merge queue"
+       }
+      }
+     }
+    ]
+   },
+   {
+    "info": {
+     "role": "assistant",
+     "modelID": "gpt-5.6-terra",
+     "tokens": {
+      "total": 93370,
+      "input": 11022,
+      "output": 424,
+      "reasoning": 1540,
+      "cache": {
+       "write": 0,
+       "read": 80384
+      }
+     },
+     "time": {
+      "created": 1791567165854,
+      "completed": 1791567261828
+     }
+    },
+    "parts": [
+     {
+      "type": "tool",
+      "tool": "webfetch",
+      "state": {
+       "title": null,
+       "input": {}
+      }
+     },
+     {
+      "type": "tool",
+      "tool": "webfetch",
+      "state": {
+       "title": "https://www.uber.com/ci/en/blog/bypassing-large-diffs-in-submitqueue/ (text/html; charset=utf-8)",
+       "input": {}
+      }
+     },
+     {
+      "type": "tool",
+      "tool": "webfetch",
+      "state": {
+       "title": "https://shopify.engineering/successfully-merging-work-1000-developers (text/html; charset=utf-8)",
+       "input": {}
+      }
+     },
+     {
+      "type": "tool",
+      "tool": "webfetch",
+      "state": {
+       "title": "https://research.google.com/pubs/archive/45861.pdf (application/pdf)",
+       "input": {}
+      }
+     },
+     {
+      "type": "tool",
+      "tool": "webfetch",
+      "state": {
+       "title": "https://research.google/pubs/speculative-testing-at-google-with-transition-prediction/ (text/html; charset=utf-8)",
+       "input": {}
+      }
+     },
+     {
+      "type": "tool",
+      "tool": "webfetch",
+      "state": {
+       "title": "https://www.chromium.org/developers/testing/commit-queue/design/ (text/html; charset=utf-8)",
+       "input": {}
+      }
+     },
+     {
+      "type": "tool",
+      "tool": "webfetch",
+      "state": {
+       "title": "https://chromium.googlesource.com/chromium/src/+/HEAD/docs/infra/cq.md (text/plain; charset=utf-8)",
+       "input": {}
+      }
+     },
+     {
+      "type": "tool",
+      "tool": "webfetch",
+      "state": {
+       "title": "https://zuul-ci.org/docs/zuul/latest/gating.html (text/html)",
+       "input": {}
+      }
+     },
+     {
+      "type": "tool",
+      "tool": "webfetch",
+      "state": {
+       "title": "https://zuul-ci.org/docs/zuul/latest/config/pipeline.html (text/html)",
+       "input": {}
+      }
+     }
+    ]
+   },
+   {
+    "info": {
+     "role": "assistant",
+     "modelID": "gpt-5.6-terra",
+     "tokens": {
+      "total": 179516,
+      "input": 87616,
+      "output": 195,
+      "reasoning": 1081,
+      "cache": {
+       "write": 0,
+       "read": 90624
+      }
+     },
+     "time": {
+      "created": 1791567261833,
+      "completed": 1791567336493
+     }
+    },
+    "parts": [
+     {
+      "type": "tool",
+      "tool": "websearch",
+      "state": {
+       "title": "Exa Web Search: site:research.google/pubs \"Taming Google-Scale Continuous Testing\"",
+       "input": {
+        "query": "site:research.google/pubs \"Taming Google-Scale Continuous Testing\""
+       }
+      }
+     },
+     {
+      "type": "tool",
+      "tool": "websearch",
+      "state": {
+       "title": "Exa Web Search: site:research.google/pubs \"Keeping Master Green at Scale\" SubmitQueue",
+       "input": {
+        "query": "site:research.google/pubs \"Keeping Master Green at Scale\" SubmitQueue"
+       }
+      }
+     },
+     {
+      "type": "tool",
+      "tool": "websearch",
+      "state": {
+       "title": "Exa Web Search: site:bors.tech/documentation \"O(E log N)\" bors",
+       "input": {
+        "query": "site:bors.tech/documentation \"O(E log N)\" bors"
+       }
+      }
+     },
+     {
+      "type": "tool",
+      "tool": "websearch",
+      "state": {
+       "title": null,
+       "input": {
+        "query": "site:docs.github.com \"maxEntriesToBuild\" merge queue"
+       }
+      }
+     },
+     {
+      "type": "tool",
+      "tool": "websearch",
+      "state": {
+       "title": null,
+       "input": {
+        "query": "site:docs.mergify.com \"batch_size\" \"1-128\""
+       }
+      }
+     },
+     {
+      "type": "tool",
+      "tool": "websearch",
+      "state": {
+       "title": null,
+       "input": {
+        "query": "site:zuul-ci.org/docs \"window\" \"worst case\" changes tested one at a time"
+       }
+      }
+     }
+    ]
+   },
+   {
+    "info": {
+     "role": "assistant",
+     "modelID": "gpt-5.6-terra",
+     "tokens": {
+      "total": 184291,
+      "input": 5474,
+      "output": 361,
+      "reasoning": 792,
+      "cache": {
+       "write": 0,
+       "read": 177664
+      }
+     },
+     "time": {
+      "created": 1791567336500,
+      "completed": 1791567407823
+     }
+    },
+    "parts": [
+     {
+      "type": "tool",
+      "tool": "webfetch",
+      "state": {
+       "title": "https://docs.github.com/v4/enum/mergestatestatus (text/markdown; charset=utf-8)",
+       "input": {}
+      }
+     },
+     {
+      "type": "tool",
+      "tool": "webfetch",
+      "state": {
+       "title": "https://research.google/pubs/taming-google-scale-continuous-testing/ (text/html; charset=utf-8)",
+       "input": {}
+      }
+     },
+     {
+      "type": "tool",
+      "tool": "webfetch",
+      "state": {
+       "title": "https://testing.googleblog.com/2018/09/efficacy-presubmit.html (text/html; charset=UTF-8)",
+       "input": {}
+      }
+     },
+     {
+      "type": "tool",
+      "tool": "webfetch",
+      "state": {
+       "title": null,
+       "input": {}
+      }
+     },
+     {
+      "type": "tool",
+      "tool": "webfetch",
+      "state": {
+       "title": null,
+       "input": {}
+      }
+     },
+     {
+      "type": "tool",
+      "tool": "webfetch",
+      "state": {
+       "title": "https://shopify.engineering/introducing-the-merge-queue (text/html; charset=utf-8)",
+       "input": {}
+      }
+     },
+     {
+      "type": "tool",
+      "tool": "webfetch",
+      "state": {
+       "title": "https://github.com/Shopify/shipit-engine (text/html; charset=utf-8)",
+       "input": {}
+      }
+     },
+     {
+      "type": "tool",
+      "tool": "webfetch",
+      "state": {
+       "title": "https://bors.tech/ (text/html)",
+       "input": {}
+      }
+     }
+    ]
+   },
+   {
+    "info": {
+     "role": "assistant",
+     "modelID": "gpt-5.6-terra",
+     "tokens": {
+      "total": 240621,
+      "input": 231105,
+      "output": 268,
+      "reasoning": 9248,
+      "cache": {
+       "write": 0,
+       "read": 0
+      }
+     },
+     "time": {
+      "created": 1791567407830,
+      "completed": 1791567675877
+     }
+    },
+    "parts": [
+     {
+      "type": "tool",
+      "tool": "todowrite",
+      "state": {
+       "title": "0 todos",
+       "input": {}
+      }
+     }
+    ]
+   },
+   {
+    "info": {
+     "role": "assistant",
+     "modelID": "gpt-5.6-terra",
+     "tokens": {
+      "input": 0,
+      "output": 0,
+      "reasoning": 0,
+      "cache": {
+       "read": 0,
+       "write": 0
+      }
+     },
+     "time": {
+      "created": 1791567675892
+     }
+    },
+    "parts": []
+   }
+  ],
+  "ses_ede485163ffeYSkv411haotwO8": [
+   {
+    "info": {
+     "role": "assistant",
+     "modelID": "gpt-5.6-terra",
+     "tokens": {
+      "total": 87365,
+      "input": 86871,
+      "output": 254,
+      "reasoning": 240,
+      "cache": {
+       "write": 0,
+       "read": 0
+      }
+     },
+     "time": {
+      "created": 1791567215068,
+      "completed": 1791567253721
+     }
+    },
+    "parts": [
+     {
+      "type": "tool",
+      "tool": "websearch",
+      "state": {
+       "title": "Exa Web Search: site:github.com/tarpas/pytest-testmon/issues data files config dynamic imports missed tests",
+       "input": {
+        "query": "site:github.com/tarpas/pytest-testmon/issues data files config dynamic imports missed tests"
+       }
+      }
+     },
+     {
+      "type": "tool",
+      "tool": "websearch",
+      "state": {
+       "title": "Exa Web Search: site:testmon.org hidden dependencies data files config imports testmon",
+       "input": {
+        "query": "site:testmon.org hidden dependencies data files config imports testmon"
+       }
+      }
+     },
+     {
+      "type": "tool",
+      "tool": "websearch",
+      "state": {
+       "title": "Exa Web Search: site:coverage.readthedocs.io coverage.py things that cause trouble dynamic code import data files",
+       "input": {
+        "query": "site:coverage.readthedocs.io coverage.py things that cause trouble dynamic code import data files"
+       }
+      }
+     },
+     {
+      "type": "tool",
+      "tool": "websearch",
+      "state": {
+       "title": null,
+       "input": {
+        "query": "site:github.com/tarpas/pytest-testmon issues config file testmon"
+       }
+      }
+     },
+     {
+      "type": "tool",
+      "tool": "websearch",
+      "state": {
+       "title": null,
+       "input": {
+        "query": "site:github.com/tarpas/pytest-testmon issues dynamic import testmon"
+       }
+      }
+     }
+    ]
+   },
+   {
+    "info": {
+     "role": "assistant",
+     "modelID": "gpt-5.6-terra",
+     "tokens": {
+      "total": 104410,
+      "input": 101806,
+      "output": 454,
+      "reasoning": 2150,
+      "cache": {
+       "write": 0,
+       "read": 0
+      }
+     },
+     "time": {
+      "created": 1791567253726,
+      "completed": 1791567329638
+     }
+    },
+    "parts": [
+     {
+      "type": "tool",
+      "tool": "webfetch",
+      "state": {
+       "title": "https://arxiv.org/html/1810.05286v2 (text/html; charset=utf-8)",
+       "input": {}
+      }
+     },
+     {
+      "type": "tool",
+      "tool": "webfetch",
+      "state": {
+       "title": null,
+       "input": {}
+      }
+     },
+     {
+      "type": "tool",
+      "tool": "webfetch",
+      "state": {
+       "title": "https://engineering.fb.com/2018/11/21/developer-tools/predictive-test-selection/ (text/html; charset=UTF-8)",
+       "input": {}
+      }
+     },
+     {
+      "type": "tool",
+      "tool": "webfetch",
+      "state": {
+       "title": "https://research.google.com/pubs/archive/45861.pdf (application/pdf)",
+       "input": {}
+      }
+     },
+     {
+      "type": "tool",
+      "tool": "webfetch",
+      "state": {
+       "title": "https://mpapad.github.io/publications/pdfs/ICSE-SEIP2019.pdf (application/pdf)",
+       "input": {}
+      }
+     },
+     {
+      "type": "tool",
+      "tool": "webfetch",
+      "state": {
+       "title": "https://users.ece.utexas.edu/~gligoric/papers/GligoricETAL15Ekstazi.pdf (application/pdf)",
+       "input": {}
+      }
+     },
+     {
+      "type": "tool",
+      "tool": "webfetch",
+      "state": {
+       "title": "https://testmon.org/ (text/html; charset=utf-8)",
+       "input": {}
+      }
+     },
+     {
+      "type": "tool",
+      "tool": "webfetch",
+      "state": {
+       "title": "https://github.com/tarpas/pytest-testmon/issues/178 (text/html; charset=utf-8)",
+       "input": {}
+      }
+     },
+     {
+      "type": "tool",
+      "tool": "webfetch",
+      "state": {
+       "title": "https://github.com/tarpas/pytest-testmon/issues/204 (text/html; charset=utf-8)",
+       "input": {}
+      }
+     },
+     {
+      "type": "tool",
+      "tool": "webfetch",
+      "state": {
+       "title": "https://coverage.readthedocs.io/en/latest/trouble.html (text/markdown; charset=utf-8)",
+       "input": {}
+      }
+     }
+    ]
+   },
+   {
+    "info": {
+     "role": "assistant",
+     "modelID": "gpt-5.6-terra",
+     "tokens": {
+      "total": 197514,
+      "input": 109312,
+      "output": 39,
+      "reasoning": 1635,
+      "cache": {
+       "write": 0,
+       "read": 86528
+      }
+     },
+     "time": {
+      "created": 1791567329648,
+      "completed": 1791567407103
+     }
+    },
+    "parts": [
+     {
+      "type": "tool",
+      "tool": "websearch",
+      "state": {
+       "title": "Exa Web Search: Memon Gao Nguyen Dhanda Nickell Taming Google-Scale Continuous Testing authors 2017 TAP",
+       "input": {
+        "query": "Memon Gao Nguyen Dhanda Nickell Taming Google-Scale Continuous Testing authors 2017 TAP"
+       }
+      }
+     }
+    ]
+   },
+   {
+    "info": {
+     "role": "assistant",
+     "modelID": "gpt-5.6-terra",
+     "tokens": {
+      "total": 198804,
+      "input": 197454,
+      "output": 385,
+      "reasoning": 965,
+      "cache": {
+       "write": 0,
+       "read": 0
+      }
+     },
+     "time": {
+      "created": 1791567407111,
+      "completed": 1791567459098
+     }
+    },
+    "parts": [
+     {
+      "type": "tool",
+      "tool": "webfetch",
+      "state": {
+       "title": "https://api.github.com/repos/tarpas/pytest-testmon (application/json; charset=utf-8)",
+       "input": {}
+      }
+     },
+     {
+      "type": "tool",
+      "tool": "webfetch",
+      "state": {
+       "title": "https://api.github.com/repos/anapaulagomes/pytest-picked (application/json; charset=utf-8)",
+       "input": {}
+      }
+     },
+     {
+      "type": "tool",
+      "tool": "webfetch",
+      "state": {
+       "title": "https://research.google/pubs/taming-google-scale-continuous-testing/ (text/html; charset=utf-8)",
+       "input": {}
+      }
+     },
+     {
+      "type": "tool",
+      "tool": "webfetch",
+      "state": {
+       "title": "https://bazel.build/query/language (text/markdown; charset=utf-8)",
+       "input": {}
+      }
+     },
+     {
+      "type": "tool",
+      "tool": "webfetch",
+      "state": {
+       "title": "https://www.pantsbuild.org/stable/docs/using-pants/project-introspection (text/html; charset=utf-8)",
+       "input": {}
+      }
+     },
+     {
+      "type": "tool",
+      "tool": "webfetch",
+      "state": {
+       "title": "https://buck.build/command/test.html (text/html; charset=utf-8)",
+       "input": {}
+      }
+     },
+     {
+      "type": "tool",
+      "tool": "webfetch",
+      "state": {
+       "title": "https://github.com/tarpas/pytest-testmon/issues/191 (text/html; charset=utf-8)",
+       "input": {}
+      }
+     },
+     {
+      "type": "tool",
+      "tool": "webfetch",
+      "state": {
+       "title": "https://testmon.org/blog/hidden-test-dependencies/ (text/html; charset=utf-8)",
+       "input": {}
+      }
+     },
+     {
+      "type": "tool",
+      "tool": "webfetch",
+      "state": {
+       "title": "https://coverage.readthedocs.io/en/latest/howitworks.html (text/markdown; charset=utf-8)",
+       "input": {}
+      }
+     }
+    ]
+   },
+   {
+    "info": {
+     "role": "assistant",
+     "modelID": "gpt-5.6-terra",
+     "tokens": {
+      "total": 234959,
+      "input": 233193,
+      "output": 34,
+      "reasoning": 1732,
+      "cache": {
+       "write": 0,
+       "read": 0
+      }
+     },
+     "time": {
+      "created": 1791567459105,
+      "completed": 1791567557876
+     }
+    },
+    "parts": [
+     {
+      "type": "tool",
+      "tool": "websearch",
+      "state": {
+       "title": "Exa Web Search: \"Assessing Transition-based Test Selection Algorithms at Google\" authors 2019",
+       "input": {
+        "query": "\"Assessing Transition-based Test Selection Algorithms at Google\" authors 2019"
+       }
+      }
+     }
+    ]
+   },
+   {
+    "info": {
+     "role": "assistant",
+     "modelID": "gpt-5.6-terra",
+     "tokens": {
+      "input": 0,
+      "output": 0,
+      "reasoning": 0,
+      "cache": {
+       "read": 0,
+       "write": 0
+      }
+     },
+     "time": {
+      "created": 1791567557885
+     }
+    },
+    "parts": []
+   }
+  ],
+  "ses_ede48514effeDqs7H2736FiLjp": [
+   {
+    "info": {
+     "role": "assistant",
+     "modelID": "gpt-5.6-terra",
+     "tokens": {
+      "total": 53148,
+      "input": 1021,
+      "output": 415,
+      "reasoning": 0,
+      "cache": {
+       "write": 0,
+       "read": 51712
+      }
+     },
+     "time": {
+      "created": 1791567105076,
+      "completed": 1791567120714
+     }
+    },
+    "parts": [
+     {
+      "type": "tool",
+      "tool": "websearch",
+      "state": {
+       "title": "Exa Web Search: Chromium automatic reverter sheriff source code gitiles",
+       "input": {
+        "query": "Chromium automatic reverter sheriff source code gitiles"
+       }
+      }
+     },
+     {
+      "type": "tool",
+      "tool": "websearch",
+      "state": {
+       "title": "Exa Web Search: site:chromium.googlesource.com \"automatic revert\"",
+       "input": {
+        "query": "site:chromium.googlesource.com \"automatic revert\""
+       }
+      }
+     },
+     {
+      "type": "tool",
+      "tool": "websearch",
+      "state": {
+       "title": "Exa Web Search: site:chromium.org/developers \"revert\" \"tree\" \"sheriff\"",
+       "input": {
+        "query": "site:chromium.org/developers \"revert\" \"tree\" \"sheriff\""
+       }
+      }
+     },
+     {
+      "type": "tool",
+      "tool": "websearch",
+      "state": {
+       "title": "Exa Web Search: site:chromium.googlesource.com/infra/luci/luci-go culprit find test regression \"revert\"",
+       "input": {
+        "query": "site:chromium.googlesource.com/infra/luci/luci-go culprit find test regression \"revert\""
+       }
+      }
+     },
+     {
+      "type": "tool",
+      "tool": "websearch",
+      "state": {
+       "title": null,
+       "input": {
+        "query": "Meta Facebook Predictive Test Selection source paper 2018 red build post submit culprit"
+       }
+      }
+     },
+     {
+      "type": "tool",
+      "tool": "websearch",
+      "state": {
+       "title": null,
+       "input": {
+        "query": "site:engineering.fb.com \"Predictive Test Selection\""
+       }
+      }
+     },
+     {
+      "type": "tool",
+      "tool": "websearch",
+      "state": {
+       "title": null,
+       "input": {
+        "query": "site:github.com/facebook \"Predictive Test Selection\" 1810.05286"
+       }
+      }
+     },
+     {
+      "type": "tool",
+      "tool": "websearch",
+      "state": {
+       "title": null,
+       "input": {
+        "query": "site:docs.github.com merge queue CI failed rollback revert automatically"
+       }
+      }
+     }
+    ]
+   },
+   {
+    "info": {
+     "role": "assistant",
+     "modelID": "gpt-5.6-terra",
+     "tokens": {
+      "total": 65728,
+      "input": 13493,
+      "output": 364,
+      "reasoning": 159,
+      "cache": {
+       "write": 0,
+       "read": 51712
+      }
+     },
+     "time": {
+      "created": 1791567120717,
+      "completed": 1791567140904
+     }
+    },
+    "parts": [
+     {
+      "type": "tool",
+      "tool": "webfetch",
+      "state": {
+       "title": "https://arxiv.org/abs/1810.05286 (text/html; charset=utf-8)",
+       "input": {}
+      }
+     },
+     {
+      "type": "tool",
+      "tool": "webfetch",
+      "state": {
+       "title": "https://chromium.googlesource.com/chromium/src/+show/HEAD/docs/sheriff.md (text/plain; charset=utf-8)",
+       "input": {}
+      }
+     },
+     {
+      "type": "tool",
+      "tool": "webfetch",
+      "state": {
+       "title": "https://chromium.googlesource.com/infra/luci/luci-go/+/HEAD/bisection/culpritaction/revertculprit (text/plain; charset=utf-8)",
+       "input": {}
+      }
+     },
+     {
+      "type": "tool",
+      "tool": "webfetch",
+      "state": {
+       "title": "https://chromium.googlesource.com/infra/luci/luci-go/+/HEAD/bisection/culpritverification (text/plain; charset=utf-8)",
+       "input": {}
+      }
+     },
+     {
+      "type": "tool",
+      "tool": "webfetch",
+      "state": {
+       "title": "https://www.chromium.org/developers/testing/chromium-build-infrastructure/tour-of-the-chromium-buildbot/ (text/html; charset=utf-8)",
+       "input": {}
+      }
+     },
+     {
+      "type": "tool",
+      "tool": "webfetch",
+      "state": {
+       "title": "https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/configuring-pull-request-merges/managing-a-merge-queue (text/markdown; charset=utf-8)",
+       "input": {}
+      }
+     },
+     {
+      "type": "tool",
+      "tool": "webfetch",
+      "state": {
+       "title": "https://github.com/facebook/pyre2 (text/html; charset=utf-8)",
+       "input": {}
+      }
+     },
+     {
+      "type": "tool",
+      "tool": "webfetch",
+      "state": {
+       "title": "https://research.google/pubs/regression-test-selection-at-scale-2/ (text/html; charset=utf-8)",
+       "input": {}
+      }
+     }
+    ]
+   },
+   {
+    "info": {
+     "role": "assistant",
+     "modelID": "gpt-5.6-terra",
+     "tokens": {
+      "total": 83740,
+      "input": 18248,
+      "output": 397,
+      "reasoning": 71,
+      "cache": {
+       "write": 0,
+       "read": 65024
+      }
+     },
+     "time": {
+      "created": 1791567140908,
+      "completed": 1791567154525
+     }
+    },
+    "parts": [
+     {
+      "type": "tool",
+      "tool": "websearch",
+      "state": {
+       "title": "Exa Web Search: \"main branch\" \"red rate\" continuous integration engineering blog",
+       "input": {
+        "query": "\"main branch\" \"red rate\" continuous integration engineering blog"
+       }
+      }
+     },
+     {
+      "type": "tool",
+      "tool": "websearch",
+      "state": {
+       "title": "Exa Web Search: \"master\" \"red rate\" CI engineering blog",
+       "input": {
+        "query": "\"master\" \"red rate\" CI engineering blog"
+       }
+      }
+     },
+     {
+      "type": "tool",
+      "tool": "websearch",
+      "state": {
+       "title": "Exa Web Search: \"trunk\" \"red rate\" continuous integration",
+       "input": {
+        "query": "\"trunk\" \"red rate\" continuous integration"
+       }
+      }
+     },
+     {
+      "type": "tool",
+      "tool": "websearch",
+      "state": {
+       "title": null,
+       "input": {
+        "query": "\"percentage\" \"failing\" \"main branch\" test selection post merge engineering"
+       }
+      }
+     },
+     {
+      "type": "tool",
+      "tool": "websearch",
+      "state": {
+       "title": null,
+       "input": {
+        "query": "site:dropbox.tech \"main\" \"test\" \"revert\" CI"
+       }
+      }
+     },
+     {
+      "type": "tool",
+      "tool": "websearch",
+      "state": {
+       "title": null,
+       "input": {
+        "query": "site:slack.engineering \"main\" \"revert\" CI tests"
+       }
+      }
+     },
+     {
+      "type": "tool",
+      "tool": "websearch",
+      "state": {
+       "title": null,
+       "input": {
+        "query": "site:netflixtechblog.com automated revert CI tests main branch"
+       }
+      }
+     },
+     {
+      "type": "tool",
+      "tool": "websearch",
+      "state": {
+       "title": null,
+       "input": {
+        "query": "site:uber.com/blog automatic revert CI broken build culprit"
+       }
+      }
+     }
+    ]
+   },
+   {
+    "info": {
+     "role": "assistant",
+     "modelID": "gpt-5.6-terra",
+     "tokens": {
+      "total": 103144,
+      "input": 19488,
+      "output": 479,
+      "reasoning": 745,
+      "cache": {
+       "write": 0,
+       "read": 82432
+      }
+     },
+     "time": {
+      "created": 1791567154529,
+      "completed": 1791567197899
+     }
+    },
+    "parts": [
+     {
+      "type": "tool",
+      "tool": "webfetch",
+      "state": {
+       "title": "https://chromium.googlesource.com/infra/luci/luci-go/+show/HEAD/bisection/culpritaction/revertculprit/revertculprit.go (text/plain; charset=utf-8)",
+       "input": {}
+      }
+     },
+     {
+      "type": "tool",
+      "tool": "webfetch",
+      "state": {
+       "title": "https://chromium.googlesource.com/infra/luci/luci-go/+show/HEAD/bisection/culpritaction/revertculprit/createrevert.go (text/plain; charset=utf-8)",
+       "input": {}
+      }
+     },
+     {
+      "type": "tool",
+      "tool": "webfetch",
+      "state": {
+       "title": "https://chromium.googlesource.com/infra/luci/luci-go/+show/HEAD/bisection/culpritverification/verify_culprit.go (text/plain; charset=utf-8)",
+       "input": {}
+      }
+     },
+     {
+      "type": "tool",
+      "tool": "webfetch",
+      "state": {
+       "title": "https://chromium.googlesource.com/chromium/src/+show/HEAD/docs/gardener.md (text/plain; charset=utf-8)",
+       "input": {}
+      }
+     },
+     {
+      "type": "tool",
+      "tool": "webfetch",
+      "state": {
+       "title": "https://chromium.googlesource.com/playground/chromium-org-site/+/refs/heads/main/developers/tree-sheriffs/index.md (text/plain; charset=utf-8)",
+       "input": {}
+      }
+     },
+     {
+      "type": "tool",
+      "tool": "webfetch",
+      "state": {
+       "title": "https://chromium.googlesource.com/external/github.com/flutter/flutter/+/refs/heads/master/docs/infra/Flutter-Framework-Gardener-Rotation.md (text/plain; charset=utf-8)",
+       "input": {}
+      }
+     },
+     {
+      "type": "tool",
+      "tool": "webfetch",
+      "state": {
+       "title": "https://shopify.engineering/unreasonable-effectiveness-test-retries-android-monorepo-case-study (text/html; charset=utf-8)",
+       "input": {}
+      }
+     },
+     {
+      "type": "tool",
+      "tool": "webfetch",
+      "state": {
+       "title": "https://shopify.engineering/automatic-deployment-at-shopify (text/html; charset=utf-8)",
+       "input": {}
+      }
+     }
+    ]
+   },
+   {
+    "info": {
+     "role": "assistant",
+     "modelID": "gpt-5.6-terra",
+     "tokens": {
+      "total": 192378,
+      "input": 86124,
+      "output": 94,
+      "reasoning": 5296,
+      "cache": {
+       "write": 0,
+       "read": 100864
+      }
+     },
+     "time": {
+      "created": 1791567197909,
+      "completed": 1791567355655
+     }
+    },
+    "parts": [
+     {
+      "type": "tool",
+      "tool": "todowrite",
+      "state": {
+       "title": "0 todos",
+       "input": {}
+      }
+     }
+    ]
+   },
+   {
+    "info": {
+     "role": "assistant",
+     "modelID": "gpt-5.6-terra",
+     "tokens": {
+      "total": 192384,
+      "input": 565,
+      "output": 4939,
+      "reasoning": 0,
+      "cache": {
+       "write": 0,
+       "read": 186880
+      }
+     },
+     "time": {
+      "created": 1791567355659,
+      "completed": 1791567458073
+     }
+    },
+    "parts": []
+   }
+  ],
+  "ses_ede48513bffetEWZTbwuClW0DH": [
+   {
+    "info": {
+     "role": "assistant",
+     "modelID": "gpt-5.6-terra",
+     "tokens": {
+      "total": 39911,
+      "input": 17141,
+      "output": 395,
+      "reasoning": 359,
+      "cache": {
+       "write": 0,
+       "read": 22016
+      }
+     },
+     "time": {
+      "created": 1791567091160,
+      "completed": 1791567126320
+     }
+    },
+    "parts": [
+     {
+      "type": "tool",
+      "tool": "webfetch",
+      "state": {
+       "title": "https://testing.googleblog.com/2016/05/flaky-tests-at-google-and-how-we.html (text/html; charset=UTF-8)",
+       "input": {}
+      }
+     },
+     {
+      "type": "tool",
+      "tool": "webfetch",
+      "state": {
+       "title": "https://testing.googleblog.com/2017/04/where-do-our-flaky-tests-come-from.html (text/html; charset=UTF-8)",
+       "input": {}
+      }
+     },
+     {
+      "type": "tool",
+      "tool": "webfetch",
+      "state": {
+       "title": "https://engineering.fb.com/2020/12/10/developer-tools/probabilistic-flakiness/ (text/html; charset=UTF-8)",
+       "input": {}
+      }
+     },
+     {
+      "type": "tool",
+      "tool": "webfetch",
+      "state": {
+       "title": "https://engineering.fb.com/2018/11/21/developer-tools/predictive-test-selection/ (text/html; charset=UTF-8)",
+       "input": {}
+      }
+     },
+     {
+      "type": "tool",
+      "tool": "webfetch",
+      "state": {
+       "title": "https://engineering.atspotify.com/2019/11/test-flakiness-methods-for-identifying-and-dealing-with-flaky-tests (text/html; charset=utf-8)",
+       "input": {}
+      }
+     },
+     {
+      "type": "tool",
+      "tool": "webfetch",
+      "state": {
+       "title": "https://github.blog/engineering/engineering-principles/reducing-flaky-builds-by-18x/ (text/html; charset=UTF-8)",
+       "input": {}
+      }
+     },
+     {
+      "type": "tool",
+      "tool": "webfetch",
+      "state": {
+       "title": "https://shopify.engineering/unreasonable-effectiveness-test-retries-android-monorepo-case-study (text/html; charset=utf-8)",
+       "input": {}
+      }
+     }
+    ]
+   },
+   {
+    "info": {
+     "role": "assistant",
+     "modelID": "gpt-5.6-terra",
+     "tokens": {
+      "total": 96684,
+      "input": 57728,
+      "output": 231,
+      "reasoning": 325,
+      "cache": {
+       "write": 0,
+       "read": 38400
+      }
+     },
+     "time": {
+      "created": 1791567126326,
+      "completed": 1791567157690
+     }
+    },
+    "parts": [
+     {
+      "type": "tool",
+      "tool": "websearch",
+      "state": {
+       "title": "Exa Web Search: site:engineering.atspotify.com \"Master Guardian\" flaky tests",
+       "input": {
+        "query": "site:engineering.atspotify.com \"Master Guardian\" flaky tests"
+       }
+      }
+     },
+     {
+      "type": "tool",
+      "tool": "websearch",
+      "state": {
+       "title": "Exa Web Search: site:github.com/spotify \"Flakybot\" tests",
+       "input": {
+        "query": "site:github.com/spotify \"Flakybot\" tests"
+       }
+      }
+     },
+     {
+      "type": "tool",
+      "tool": "websearch",
+      "state": {
+       "title": "Exa Web Search: site:engineering.atspotify.com flaky test percentage threshold retry",
+       "input": {
+        "query": "site:engineering.atspotify.com flaky test percentage threshold retry"
+       }
+      }
+     },
+     {
+      "type": "tool",
+      "tool": "websearch",
+      "state": {
+       "title": null,
+       "input": {
+        "query": "site:research.facebook.com probabilistic flakiness score PFS paper retry window"
+       }
+      }
+     },
+     {
+      "type": "tool",
+      "tool": "websearch",
+      "state": {
+       "title": null,
+       "input": {
+        "query": "Meta probabilistic flakiness score source code PFS GitHub"
+       }
+      }
+     },
+     {
+      "type": "tool",
+      "tool": "websearch",
+      "state": {
+       "title": null,
+       "input": {
+        "query": "site:research.google flaky tests quarantine threshold Google test results flakiness score"
+       }
+      }
+     },
+     {
+      "type": "tool",
+      "tool": "websearch",
+      "state": {
+       "title": null,
+       "input": {
+        "query": "site:github.com/google flaky test quarantine flakiness threshold"
+       }
+      }
+     },
+     {
+      "type": "tool",
+      "tool": "websearch",
+      "state": {
+       "title": null,
+       "input": {
+        "query": "site:github.com/google \"flaky\" \"quarantine\" test"
+       }
+      }
+     }
+    ]
+   },
+   {
+    "info": {
+     "role": "assistant",
+     "modelID": "gpt-5.6-terra",
+     "tokens": {
+      "total": 107867,
+      "input": 11485,
+      "output": 231,
+      "reasoning": 407,
+      "cache": {
+       "write": 0,
+       "read": 95744
+      }
+     },
+     "time": {
+      "created": 1791567157694,
+      "completed": 1791567193019
+     }
+    },
+    "parts": [
+     {
+      "type": "tool",
+      "tool": "websearch",
+      "state": {
+       "title": "Exa Web Search: \"Probabilistic Flakiness Score\" paper Facebook Meta",
+       "input": {
+        "query": "\"Probabilistic Flakiness Score\" paper Facebook Meta"
+       }
+      }
+     },
+     {
+      "type": "tool",
+      "tool": "websearch",
+      "state": {
+       "title": "Exa Web Search: \"How do you test your tests\" probabilistic flakiness score paper",
+       "input": {
+        "query": "\"How do you test your tests\" probabilistic flakiness score paper"
+       }
+      }
+     },
+     {
+      "type": "tool",
+      "tool": "websearch",
+      "state": {
+       "title": null,
+       "input": {
+        "query": "site:arxiv.org Facebook probabilistic flakiness tests"
+       }
+      }
+     },
+     {
+      "type": "tool",
+      "tool": "websearch",
+      "state": {
+       "title": "Exa Web Search: site:github.com/facebook flaky tests PFS probabilistic flakiness score",
+       "input": {
+        "query": "site:github.com/facebook flaky tests PFS probabilistic flakiness score"
+       }
+      }
+     },
+     {
+      "type": "tool",
+      "tool": "websearch",
+      "state": {
+       "title": null,
+       "input": {
+        "query": "site:github.blog \"impact score\" flaky threshold GitHub"
+       }
+      }
+     },
+     {
+      "type": "tool",
+      "tool": "websearch",
+      "state": {
+       "title": null,
+       "input": {
+        "query": "site:github.blog flaky tests quarantine unquarantine GitHub internal CI"
+       }
+      }
+     },
+     {
+      "type": "tool",
+      "tool": "websearch",
+      "state": {
+       "title": null,
+       "input": {
+        "query": "site:github.com/github flaky test CI source repository"
+       }
+      }
+     },
+     {
+      "type": "tool",
+      "tool": "websearch",
+      "state": {
+       "title": null,
+       "input": {
+        "query": "site:github.com/spotify testing flaky test Odeneye Flakybot"
+       }
+      }
+     }
+    ]
+   },
+   {
+    "info": {
+     "role": "assistant",
+     "modelID": "gpt-5.6-terra",
+     "tokens": {
+      "total": 122683,
+      "input": 15035,
+      "output": 233,
+      "reasoning": 407,
+      "cache": {
+       "write": 0,
+       "read": 107008
+      }
+     },
+     "time": {
+      "created": 1791567193024,
+      "completed": 1791567237239
+     }
+    },
+    "parts": [
+     {
+      "type": "tool",
+      "tool": "webfetch",
+      "state": {
+       "title": "https://engineering.atspotify.com/2020/08/how-we-improved-developer-productivity-for-our-devops-teams (text/html; charset=utf-8)",
+       "input": {}
+      }
+     },
+     {
+      "type": "tool",
+      "tool": "webfetch",
+      "state": {
+       "title": "https://drive.google.com/file/d/1D39rLYwfhptjk9ZdTHVmLG7cAf1eMP3Q/view?usp=sharing (text/html; charset=utf-8)",
+       "input": {}
+      }
+     },
+     {
+      "type": "tool",
+      "tool": "webfetch",
+      "state": {
+       "title": "https://github.com/spotify/git-test (text/html; charset=utf-8)",
+       "input": {}
+      }
+     },
+     {
+      "type": "tool",
+      "tool": "webfetch",
+      "state": {
+       "title": "https://github.com/spotify/git-test/blob/master/git-test.1 (text/html; charset=utf-8)",
+       "input": {}
+      }
+     },
+     {
+      "type": "tool",
+      "tool": "webfetch",
+      "state": {
+       "title": "https://github.blog/engineering/engineering-principles/reducing-flaky-builds-by-18x/ (text/html; charset=UTF-8)",
+       "input": {}
+      }
+     }
+    ]
+   },
+   {
+    "info": {
+     "role": "assistant",
+     "modelID": "gpt-5.6-terra",
+     "tokens": {
+      "total": 142532,
+      "input": 17235,
+      "output": 219,
+      "reasoning": 3734,
+      "cache": {
+       "write": 0,
+       "read": 121344
+      }
+     },
+     "time": {
+      "created": 1791567237243,
+      "completed": 1791567421864
+     }
+    },
+    "parts": [
+     {
+      "type": "tool",
+      "tool": "todowrite",
+      "state": {
+       "title": "0 todos",
+       "input": {}
+      }
+     }
+    ]
+   },
+   {
+    "info": {
+     "role": "assistant",
+     "modelID": "gpt-5.6-terra",
+     "tokens": {
+      "total": 143464,
+      "input": 139141,
+      "output": 4323,
+      "reasoning": 0,
+      "cache": {
+       "write": 0,
+       "read": 0
+      }
+     },
+     "time": {
+      "created": 1791567421869,
+      "completed": 1791567456214
+     }
+    },
+    "parts": []
+   }
+  ],
+  "ses_ede49118affefbf9eAEvuAmHSq": [
+   {
+    "info": {
+     "role": "user",
+     "modelID": null,
+     "tokens": null,
+     "time": {
+      "created": 1791566999229
+     }
+    },
+    "parts": []
+   },
+   {
+    "info": {
+     "role": "assistant",
+     "modelID": "gpt-5.6-terra",
+     "tokens": {
+      "total": 8050,
+      "input": 7658,
+      "output": 166,
+      "reasoning": 226,
+      "cache": {
+       "read": 0,
+       "write": 0
+      }
+     },
+     "time": {
+      "created": 1791566999284,
+      "completed": 1791567019148
+     }
+    },
+    "parts": [
+     {
+      "type": "tool",
+      "tool": "todowrite",
+      "state": {
+       "title": "5 todos",
+       "input": {}
+      }
+     }
+    ]
+   },
+   {
+    "info": {
+     "role": "assistant",
+     "modelID": "gpt-5.6-terra",
+     "tokens": {
+      "input": 0,
+      "output": 0,
+      "reasoning": 0,
+      "cache": {
+       "read": 0,
+       "write": 0
+      }
+     },
+     "time": {
+      "created": 1791567019151
+     }
+    },
+    "parts": [
+     {
+      "type": "tool",
+      "tool": "task",
+      "state": {
+       "title": "Research queue systems",
+       "input": {
+        "description": "Research queue systems"
+       }
+      }
+     },
+     {
+      "type": "tool",
+      "tool": "task",
+      "state": {
+       "title": "Research affected tests",
+       "input": {
+        "description": "Research affected tests"
+       }
+      }
+     },
+     {
+      "type": "tool",
+      "tool": "task",
+      "state": {
+       "title": "Research postmerge workflows",
+       "input": {
+        "description": "Research postmerge workflows"
+       }
+      }
+     },
+     {
+      "type": "tool",
+      "tool": "task",
+      "state": {
+       "title": "Research flaky test practices",
+       "input": {
+        "description": "Research flaky test practices"
+       }
+      }
+     }
+    ]
+   }
+  ]
+ }
+}

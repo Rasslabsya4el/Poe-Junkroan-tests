@@ -1,0 +1,14 @@
+{
+  "schema_version": "1.0.0",
+  "purpose": "Gems whose use pays a share of one of the player's pools, which PoB has the number for and counts as no cost at all: it is neither in the skill's Cost nor in any degen, so nothing in PoB's output says the build is paying it. optimizer/self_cost.py turns each entry into SelfCostPerSecond = fraction x pool x the main skill's uses per second (PoB's Speed), which is in the rails' idle-recovery relation. A gem enters this file only with the PoB data file and stat id that carry the number; the fraction is read there, never from memory.",
+  "gems": [
+    {
+      "name": "Sacrifice",
+      "pool": "LifeUnreserved",
+      "fraction_per_use": 0.2,
+      "pob_stat": "support_sacrifice_sacrifice_%_of_current_life",
+      "source": "PoB v2.67.2 Data/Skills/sup_int.lua, skills[\"SupportSacrifice\"]: the stat is 20 at every gem level, and its statMap turns the sacrificed life into Multiplier:SacrificePercent, which feeds ChaosMin/ChaosMax only. The pool is the mod's own: PercentStat stat = LifeUnreserved.",
+      "note": "From the user's reading of poison_spark s1 (2026-09-18): ours took Spark + Sacrifice + Cruelty + Unbound Ailments + Spell Echo where the author had Faster Projectiles + Efficacy, because the support was pure damage in PoB's numbers. At 5.35 casts per second it pays 20% of the life pool per cast."
+    }
+  ]
+}

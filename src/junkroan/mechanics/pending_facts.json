@@ -1,0 +1,210 @@
+{
+  "schema_version": "1.0.0",
+  "purpose": "Facts PoB cannot compute that research found and the user has not approved yet (D62, 2026-09-18). Each record names its hook or it is not stored. `status` is the only field the user edits: \"pending\" -> the hook touches the optimistic lane only and the build reports \"would move the conservative number by X%\"; \"approved\" -> the hook is binding in both lanes; \"disputed\" -> the hook is off and the disagreement goes to the user's table (docs/research/2026-09-18-pending-facts-table.md). Every number here is quoted from a report under docs/research/ with its source; nothing is typed from memory. A PoB bump re-verifies `pob_check`.",
+  "facts": [
+    {
+      "id": "trauma.self_hit_per_stack_gained",
+      "fact": "Trauma is a self-hit, not a degeneration: each supported attack hit that gains a Trauma stack deals the player physical damage equal to the per-stack value times the Trauma stacks now held. PoB carries the per-stack number in the gem's own level data (`trauma_strike_self_damage_per_trauma`, effectiveness-interpolated like a damage stat) but maps it to no modifier, so the damage appears in no PoB stat: not in the skill's Cost, not in NetLifeRegen, not in any degen.",
+      "value": 146,
+      "unit": "physical damage per Trauma stack, taken once per supported attack hit, at Trauma Support level 20",
+      "params": {
+        "duration_seconds": 6.9,
+        "pob_stat": "trauma_strike_self_damage_per_trauma",
+        "pob_flag": "HasTrauma"
+      },
+      "pob_check": "PoB v2.67.2 Data/Skills/sup_str.lua, skills[\"SupportTrauma\"]: stat 1 of the level rows, statInterpolation 3, baseEffectiveness 0.079999998211861, incrementalEffectiveness 0.061999998986721; level 20 (levelRequirement 70) interpolates to 146, the number the report quotes, and the statMap has no entry for it. Boneshatter (act_str.lua, SkillType.InnateTrauma) carries the same stat with the same absent mapping.",
+      "sources": [
+        "https://poedb.tw/us/Trauma_Support",
+        "docs/research/2026-09-18-game-knowledge.md section 8: \"At gem level 20 this is 146 physical damage per stack gained, Trauma lasts 6.9 seconds\"",
+        "https://www.reddit.com/r/PathOfExileBuilds/comments/1679wra/trying_to_sustain_30_trauma_stacks/",
+        "docs/research/2026-09-18-reddit-practice.md section 7: players sustain Trauma through very high physical mitigation plus recovery; 25-60 stacks in ordinary builds",
+        "docs/readings/2026-09-18-frozen-campaigns-part1.md, static_strike s3 (the user): \"PoB apparently does not count the trauma damage from the support/skill in total degen. You take 752 physical damage per attack.\""
+      ],
+      "confidence": "high",
+      "status": "pending",
+      "plug_in": "optimizer/self_cost.py: a per-use cost in `SelfCostPerSecond`, which is the idle-recovery relation of the rails (D63.3). Approved it makes the objective's floor price Trauma; pending it is computed and reported only, because a cost has no optimistic lane to live in (the optimistic lane is the generous one, and an optimistic number below the conservative one is an audit error).",
+      "moves": [
+        "static_strike (our s3 took Trauma Support)",
+        "any Boneshatter build (innate Trauma)"
+      ],
+      "added": "2026-09-18"
+    },
+    {
+      "id": "perforate.max_overlap_on_boss",
+      "fact": "No more than about three Blood Stance spikes catch one boss-sized target, however many the gem creates: the spikes burst in sequence over an area, and the practical count players report is one or two, three when positioning and area of effect are favourable. PoB's own input is capped only by the gem's spike count (7 at the rails' gem level), which is what our optimistic lane was holding.",
+      "value": 3,
+      "unit": "overlapping Blood Stance spikes on one boss-sized target (the practical maximum)",
+      "params": {},
+      "pob_check": "PoB v2.67.2 ConfigOptions.lua `perforateSpikeOverlap` is capped by the skill's own `blood_spears_base_number_of_spears` only; PoB has no view of how many spikes reach one target.",
+      "sources": [
+        "https://www.reddit.com/r/pathofexile/comments/byfzo2/perforate_blood_stance_does_no_significant_more_damage/",
+        "https://www.reddit.com/r/pathofexile/comments/lifsnq/how_does_perforate_work_in_pob/",
+        "docs/research/2026-09-18-reddit-practice.md section 5: \"usually 1-2 hit a small boss, ~3 needed to overcome Blood Stance's 65% less damage, optimistic 3+\"",
+        "docs/research/2026-09-18-game-knowledge-2.md section 1: a threefold result is \"plausibly an overlap input of 3 versus 1\""
+      ],
+      "confidence": "medium",
+      "status": "pending",
+      "plug_in": "optimizer/ramp_inputs.perforate_spike_overlap: a ceiling on the optimistic lane's overlap (it held every spike the gem creates). The conservative lane keeps mechanics/notes.json `perforate.overlapping_spikes_on_one_target` = 1 and is untouched either way, so approving this fact cannot move the conservative number.",
+      "moves": [
+        "bleed_perforate (optimistic lane only)"
+      ],
+      "added": "2026-09-18"
+    },
+    {
+      "id": "volatile_dead.orbs_with_regular_spell_cascade",
+      "fact": "How many Volatile Dead orbs one cast with a regular Spell Cascade puts on a boss. The sources do not agree: from the gem data, regular Cascade makes three areas and Volatile Dead consumes up to three corpses per area, so nine needs three corpses standing in each of the three areas and one five-corpse Desecrate cannot guarantee it (six is the defensible floor, six to eight the practical range); Reddit's PoB convention is nine when Volatile Dead has the corpses to itself, seven when Detonate Dead competes for them.",
+      "value": 9,
+      "range": [
+        6,
+        9
+      ],
+      "unit": "orbs per cast on a boss",
+      "disagreement": "resolved: PoEDB-derived mechanics (docs/research/2026-09-18-game-knowledge.md section 1, confidence medium/low) say 6, with 9 not guaranteed by one Desecrate; Reddit practice (docs/research/2026-09-18-reddit-practice.md section 1, confidence high) says 9 is the convention. The user's own verdicts differ between the two amendments of D62 (6, then 9). Our code computes 9 today, from PoB's own cascade areas and corpses-per-cast.",
+      "params": {
+        "code_today": 9
+      },
+      "sources": [
+        "https://poedb.tw/us/Volatile_Dead",
+        "https://poedb.tw/us/Spell_Cascade_Support",
+        "https://www.reddit.com/r/PathOfExileBuilds/comments/i2gafm/vd_dd_spellslinger_dps_in_pob/",
+        "https://www.reddit.com/r/PathOfExileBuilds/comments/ho5chk/awakened_spell_cascade_with_volatile_dead_spellslinger/"
+      ],
+      "confidence": "high",
+      "status": "approved",
+      "plug_in": "search/skeleton.instance_counts (the corpse-fed instance count PoB multiplies FullDPS by). Off while disputed: the count stays what PoB's own data gives.",
+      "moves": [
+        "archmage_volatile_dead",
+        "vd_spellslinger"
+      ],
+      "added": "2026-09-18",
+      "condition": "Volatile Dead is the only corpse consumer in the build (no Detonate Dead sharing the Desecrate pool of 10); with DD sharing, 7 VD + 3 DD",
+      "resolution": "the user, 2026-09-18 18:05, from the Reddit thread's own words: 'you'll only have 9 VDs per cast' when running VD alone, '3 DD + 7 VD, or 9 VD + 1 DD' when DD competes; our builds carry no DD. The PoEDB-only figure of 6 was arithmetic from a failed-standard report, not a source."
+    },
+    {
+      "id": "pyroclast_mine.hits_per_mine_on_boss",
+      "fact": "How many of a Pyroclast mine's mortar projectiles overlap one boss on top of its own detonation nova. One detailed player calculation gets 2.34 projectile overlaps plus the nova, about 3.34 hits per mine; other players report two to four and warn that it moves with area of effect, boss size and placement. The gem data gives only the projectile count per mine in a detonation sequence (3 + floor((n-1)/3)) and nothing about how many reach one target.",
+      "value": 3.34,
+      "range": [
+        2.0,
+        4.0
+      ],
+      "unit": "hits on one boss per mine (projectile overlaps plus the nova)",
+      "disagreement": "docs/research/2026-09-18-game-knowledge.md section 7 answers \"not found\" for any overlap count and refuses an invented one; docs/research/2026-09-18-reddit-practice.md section 2 gives 3.34 from a single 2024 post, confidence medium, with a reported range of 2-4. D62 amendment 2 records it as \"pending generality\".",
+      "params": {
+        "projectiles_per_mine_n": "3 + floor((n - 1) / 3)"
+      },
+      "sources": [
+        "https://poedb.tw/us/Pyroclast_Mine",
+        "https://www.reddit.com/r/PathOfExileBuilds/comments/1gy8ko1/next_upgrades_on_my_homebrew_pyroclast_mines_ascendant/",
+        "https://www.reddit.com/r/PathOfExileBuilds/comments/15qpdsq/how_does_aoe_affect_pyroclast_projs_overlap/"
+      ],
+      "confidence": "low",
+      "status": "disputed",
+      "plug_in": "none today: PoB has no overlap input for Pyroclast Mine (`perforateSpikeOverlap`, `toxicRainPodOverlap`, `ShrapnelBallistaProjectileOverlap`, `stormRainBeamOverlap` are the only overlap inputs PoB carries). A number would have to enter as a skill-part multiplier, which is a separate decision.",
+      "moves": [
+        "pyroclast_mine"
+      ],
+      "added": "2026-09-18"
+    },
+    {
+      "id": "shrapnel_ballista.shotgunning_projectiles_on_boss",
+      "fact": "How many Shrapnel Ballista projectiles shotgun one boss, which is PoB's `ShrapnelBallistaProjectileOverlap` input. The sources do not even agree that the Arrow Nova setup behind the high numbers is legal.",
+      "value": null,
+      "range": [
+        1,
+        14
+      ],
+      "unit": "projectiles hitting one target per totem attack",
+      "disagreement": "docs/research/2026-09-18-game-knowledge-2.md section 7 says Arrow Nova cannot support Shrapnel Ballista at all (it excludes minion-creating skills), confidence high; docs/research/2026-09-18-reddit-practice.md section 4 says players do use it and report anywhere from 1-2 reliable hits on a small or moving target to 8-14 projectiles per totem on a stationary one, confidence high. PoB's own support-legality readback is the arbiter of the legality half and is already what the search uses.",
+      "params": {},
+      "sources": [
+        "https://poedb.tw/us/Arrow_Nova_Support",
+        "https://poedb.tw/us/Shrapnel_Ballista",
+        "https://www.reddit.com/r/pathofexile/comments/ecb217/is_anyone_using_arrow_nova_support/",
+        "https://www.reddit.com/r/PathOfExileBuilds/comments/176u61w/deadeye_la_shrapnel_ballista_dps_100_test/"
+      ],
+      "confidence": "low",
+      "status": "disputed",
+      "plug_in": "optimizer/ramp_inputs (a rule for `ShrapnelBallistaProjectileOverlap`, which has none today and so keeps PoB's default). Off while disputed.",
+      "moves": [
+        "impale_ballista"
+      ],
+      "added": "2026-09-18"
+    },
+    {
+      "id": "shock.enemy_ailment_threshold",
+      "fact": "The ailment threshold a lightning hit is measured against for shock magnitude, in the formula magnitude = 0.5 x (hit / threshold)^0.4 clamped to the 5% minimum and 50% maximum. The formula is sourced; the pinnacle and uber numbers commonly quoted (25,000,000 and 70,000,000) have no primary page behind them in this research pass.",
+      "value": null,
+      "range": [
+        25000000,
+        70000000
+      ],
+      "unit": "ailment threshold of the boss (pinnacle, uber)",
+      "disagreement": "docs/research/2026-09-18-game-knowledge.md section 3 marks the thresholds \"low-confidence pending an in-game/PoB corpus confirmation\" and could retrieve no primary page. PoB does not need them: it carries its own `monsterAilmentThresholdTable`, so a threshold typed here would compete with a number PoB computes -- which principle 4 forbids. PoB does not apply the shock a build's own hits earn: `val.effect` only fills the breakdown (CalcOffence.lua:5230, 5323), ShockVal is written only by the config's `conditionShockEffect` (ConfigOptions.lua:1921) and by guaranteed sources (CalcPerform.lua:3500-3540). The optimizer therefore types that effect from PoB's own hit numbers and PoB's threshold (`config_rules.own_hit_ailments`, #702).",
+      "params": {
+        "formula": "0.5 * (hit / threshold) ^ 0.4",
+        "min_effect_percent": 5,
+        "max_effect_percent": 50
+      },
+      "pob_check": "PoB v2.67.2 CalcOffence.lua:5210-5225 computes it: `enemyThreshold = monsterAilmentThresholdTable[enemyLevel] x 7.68 (boss) x the map multipliers`, and the ailment effect is `50 x (damage / enemyThreshold) ^ 0.4 x effectMod` -- the research's formula with PoB's own threshold. Nothing here to add.",
+      "sources": [
+        "https://poedb.tw/us/Shock",
+        "docs/research/2026-09-18-game-knowledge.md section 3"
+      ],
+      "confidence": "low",
+      "status": "disputed",
+      "plug_in": "none wanted: the threshold is read from PoB; `config_rules.own_hit_ailments` (#702) types the shock a build's own hits earn. Recorded so the question is not asked again.",
+      "moves": [
+        "static_strike",
+        "shockwave_cyclone",
+        "hierophant_shock_nova_archmage"
+      ],
+      "added": "2026-09-18"
+    },
+    {
+      "id": "enemy_hits_per_second",
+      "fact": "The rate at which a boss hits the player, required to turn 'when you are Hit' charge sources into a charge rate. PoB records that the player has been hit but does not calculate the enemy's hits per second.",
+      "value": null,
+      "unit": "enemy hits per second against the player",
+      "params": {},
+      "pob_check": "PoB v2.67.2 exposes conditionBeenHitRecently but no output for an enemy attack or hit rate; its player Speed and HitSpeed describe the build's own actions, not incoming hits.",
+      "sources": [
+        "https://pobb.in/uKL64yR_gshv (Zizaran 3.27 Bleed Boneshatter Juggernaut League Starter)",
+        "https://maxroll.gg/poe/pob/tcjqpe0t (Zizaran 3.29 Boneshatter Juggernaut League Starter)"
+      ],
+      "confidence": "unknown",
+      "status": "pending",
+      "plug_in": "optimizer/config_rules.py: charge_rule classifies 'when you are Hit' and leaves it at zero in the conservative lane until this fact has an approved sourced value; the optimistic-lane hook is the same rate calculation once the fact supplies it.",
+      "moves": [
+        "z327_juggernaut_boneshatter",
+        "z329_juggernaut_boneshatter"
+      ],
+      "added": "2026-09-19"
+    },
+    {
+      "id": "mortar_spectre_volley_overlap",
+      "fact": "Overlapping mortar explosion areas each damage the target, while direct hits of simultaneously created projectiles never do. Greater Volley Support fires its projectiles in parallel lanes. No source measures how many lanes land on one boss hitbox, and every community model assumes all of them. Approved by the owner on 2026-10-16 (#1143): \"оверлапы надо считать также как в зиз билд референсе то есть у автора. Если стоит у тебя колво хитов 5 значит и нам ставить 5\", so a mortar spectre under Greater Volley Support counts 5 hits and under Volley Support 3, on both lanes.",
+      "value": 5,
+      "unit": "x spectre count (projectiles of the link landing on one boss target)",
+      "params": {
+        "volley_support": 3,
+        "greater_volley_support": 5
+      },
+      "pob_check": "PoB multiplies a spectre's FullDPS by its `count` and has no view of projectile overlap.",
+      "sources": [
+        "docs/research/2026-10-04-greater-volley-mortar-overlap.md",
+        "https://www.pathofexile.com/forum/view-thread/3117972",
+        "https://www.pathofexile.com/forum/view-thread/3583292",
+        "https://www.pathofexile.com/forum/view-thread/2934377",
+        "https://www.pathofexile.com/forum/view-thread/1304441"
+      ],
+      "confidence": "medium",
+      "status": "approved",
+      "plug_in": "optimizer/spectre_overlap (#542, #1143): the delivered build is read on both lanes at the mortar spectre's derived Raise Spectre count x the link's projectile count (5 Greater Volley, 3 Volley; a non-mortar spectre or no Volley: 1), as the reference author counts it (owner's word 2026-10-16); the optimizer's picks are untouched",
+      "moves": [
+        "necromancer_raise_spectre (both lanes)"
+      ],
+      "added": "2026-10-04"
+    }
+  ]
+}
