@@ -1,0 +1,3 @@
+{"type":"summary"}
+{"type":"assistant","message":{"content":[{"type":"text","text":"Reading the collector now."},{"type":"tool_use","name":"Read","input":{"file_path":"C:/x/collect.py"}},{"type":"tool_use","name":"Bash","input":{"command":"pytest -q","description":"run the tests"}}]}}
+{"type":"user","message":{"content":"ok"}}

@@ -1,0 +1,1395 @@
+{
+  "reference": [
+    {
+      "name": "Loath Roar",
+      "base": "Karui Sceptre",
+      "mods": 5,
+      "cost": 26.500488145544104,
+      "cost_per_mod": 5.300097629108821,
+      "tiers": [
+        4,
+        7,
+        6,
+        2,
+        2
+      ]
+    },
+    {
+      "name": "Tempest Crusher",
+      "base": "Blood Sceptre",
+      "mods": 2,
+      "cost": 8.86003783533896,
+      "cost_per_mod": 4.43001891766948,
+      "tiers": [
+        5,
+        3
+      ]
+    },
+    {
+      "name": "Glyph Claw",
+      "base": "Vaal Gauntlets",
+      "mods": 5,
+      "cost": 22.679403659310456,
+      "cost_per_mod": 4.5358807318620915,
+      "tiers": [
+        2,
+        2,
+        4,
+        3,
+        3
+      ]
+    },
+    {
+      "name": "Kraken Knot",
+      "base": "Two-Stone Ring",
+      "mods": 3,
+      "cost": 13.971712617985974,
+      "cost_per_mod": 4.657237539328658,
+      "tiers": [
+        4,
+        2,
+        8
+      ]
+    },
+    {
+      "name": "Dread Slippers",
+      "base": "Goliath Greaves",
+      "mods": 6,
+      "cost": 25.472702085837703,
+      "cost_per_mod": 4.2454503476396175,
+      "tiers": [
+        1,
+        5,
+        1,
+        4,
+        2,
+        1
+      ]
+    },
+    {
+      "name": "Hate Visage",
+      "base": "Necromancer Circlet",
+      "mods": 5,
+      "cost": 22.02617618401574,
+      "cost_per_mod": 4.405235236803148,
+      "tiers": [
+        5,
+        4,
+        5,
+        6,
+        2
+      ]
+    },
+    {
+      "name": "Empyrean Grip",
+      "base": "Two-Stone Ring",
+      "mods": 3,
+      "cost": 13.318070776061536,
+      "cost_per_mod": 4.439356925353845,
+      "tiers": [
+        2,
+        2,
+        11
+      ]
+    },
+    {
+      "name": "Doom Trap",
+      "base": "Rustic Sash",
+      "mods": 6,
+      "cost": 26.380650507922283,
+      "cost_per_mod": 4.396775084653714,
+      "tiers": [
+        4,
+        4,
+        2,
+        5,
+        2,
+        2
+      ]
+    },
+    {
+      "name": "Gale Shroud",
+      "base": "Savant's Robe",
+      "mods": 5,
+      "cost": 21.726235122323605,
+      "cost_per_mod": 4.3452470244647206,
+      "tiers": [
+        5,
+        3,
+        5,
+        9,
+        2
+      ]
+    },
+    {
+      "name": "Carrion Shelter",
+      "base": "Samnite Helmet",
+      "mods": 6,
+      "cost": 25.290584170302584,
+      "cost_per_mod": 4.215097361717097,
+      "tiers": [
+        2,
+        1,
+        4,
+        3,
+        3,
+        1
+      ]
+    },
+    {
+      "name": "Behemoth Vise",
+      "base": "Shagreen Gloves",
+      "mods": 6,
+      "cost": 26.504866752545084,
+      "cost_per_mod": 4.417477792090847,
+      "tiers": [
+        1,
+        3,
+        1,
+        7,
+        4,
+        4
+      ]
+    },
+    {
+      "name": "Pain Shackle",
+      "base": "Rustic Sash",
+      "mods": 5,
+      "cost": 21.937999251431968,
+      "cost_per_mod": 4.387599850286394,
+      "tiers": [
+        9,
+        3,
+        5,
+        2,
+        2
+      ]
+    },
+    {
+      "name": "Plague March",
+      "base": "Hydrascale Boots",
+      "mods": 4,
+      "cost": 16.489823831080958,
+      "cost_per_mod": 4.1224559577702395,
+      "tiers": [
+        7,
+        1,
+        2,
+        1
+      ]
+    },
+    {
+      "name": "Sorrow Coil",
+      "base": "Two-Stone Ring",
+      "mods": 5,
+      "cost": 23.429053683006913,
+      "cost_per_mod": 4.685810736601383,
+      "tiers": [
+        6,
+        9,
+        1,
+        2,
+        5
+      ]
+    },
+    {
+      "name": "Mind Collar",
+      "base": "Agate Amulet",
+      "mods": 4,
+      "cost": 19.12105482985458,
+      "cost_per_mod": 4.780263707463645,
+      "tiers": [
+        5,
+        2,
+        6,
+        4
+      ]
+    },
+    {
+      "name": "Brood Knot",
+      "base": "Topaz Ring",
+      "mods": 4,
+      "cost": 17.89566419427939,
+      "cost_per_mod": 4.473916048569848,
+      "tiers": [
+        5,
+        1,
+        7,
+        3
+      ]
+    },
+    {
+      "name": "Morbid Impaler",
+      "base": "Pecoraro",
+      "mods": 4,
+      "cost": 17.047605061233945,
+      "cost_per_mod": 4.261901265308486,
+      "tiers": [
+        4,
+        5,
+        2,
+        2
+      ]
+    },
+    {
+      "name": "Dire Thirst",
+      "base": "Fancy Foil",
+      "mods": 5,
+      "cost": 21.36492649421315,
+      "cost_per_mod": 4.27298529884263,
+      "tiers": [
+        2,
+        7,
+        3,
+        7,
+        3
+      ]
+    },
+    {
+      "name": "Behemoth Whorl",
+      "base": "Two-Stone Ring",
+      "mods": 6,
+      "cost": 27.536643471979037,
+      "cost_per_mod": 4.589440578663173,
+      "tiers": [
+        3,
+        2,
+        8,
+        3,
+        3,
+        5
+      ]
+    },
+    {
+      "name": "Mind Breaker",
+      "base": "Carnal Sceptre",
+      "mods": 4,
+      "cost": 21.607969532423773,
+      "cost_per_mod": 5.401992383105943,
+      "tiers": [
+        3,
+        9,
+        7,
+        3
+      ]
+    },
+    {
+      "name": "Horror Gorget",
+      "base": "Citrine Amulet",
+      "mods": 3,
+      "cost": 14.513886641203815,
+      "cost_per_mod": 4.837962213734605,
+      "tiers": [
+        4,
+        8,
+        3
+      ]
+    },
+    {
+      "name": "Hypnotic Crest",
+      "base": "Steel Circlet",
+      "mods": 5,
+      "cost": 21.340890315617752,
+      "cost_per_mod": 4.268178063123551,
+      "tiers": [
+        4,
+        1,
+        3,
+        4,
+        3
+      ]
+    },
+    {
+      "name": "Blight Trail",
+      "base": "Samite Slippers",
+      "mods": 4,
+      "cost": 17.104695914981228,
+      "cost_per_mod": 4.276173978745307,
+      "tiers": [
+        3,
+        4,
+        6,
+        3
+      ]
+    },
+    {
+      "name": "Carrion Salvation",
+      "base": "Elegant Ringmail",
+      "mods": 3,
+      "cost": 13.872145850625195,
+      "cost_per_mod": 4.624048616875065,
+      "tiers": [
+        8,
+        5,
+        3
+      ]
+    },
+    {
+      "name": "Skull Blow",
+      "base": "Carnal Sceptre",
+      "mods": 4,
+      "cost": 20.369870537043546,
+      "cost_per_mod": 5.0924676342608866,
+      "tiers": [
+        4,
+        3,
+        9,
+        2
+      ]
+    },
+    {
+      "name": "Gloom Thread",
+      "base": "Heavy Belt",
+      "mods": 4,
+      "cost": 17.12500221824156,
+      "cost_per_mod": 4.28125055456039,
+      "tiers": [
+        2,
+        4,
+        11,
+        4
+      ]
+    },
+    {
+      "name": "Miracle Finger",
+      "base": "Topaz Ring",
+      "mods": 3,
+      "cost": 13.748569066671763,
+      "cost_per_mod": 4.582856355557254,
+      "tiers": [
+        5,
+        2,
+        3
+      ]
+    },
+    {
+      "name": "Death Medallion",
+      "base": "Onyx Amulet",
+      "mods": 4,
+      "cost": 20.325027634180515,
+      "cost_per_mod": 5.081256908545129,
+      "tiers": [
+        3,
+        2,
+        7,
+        2
+      ]
+    },
+    {
+      "name": "Brood Roar",
+      "base": "Platinum Sceptre",
+      "mods": 5,
+      "cost": 28.226024110386398,
+      "cost_per_mod": 5.64520482207728,
+      "tiers": [
+        7,
+        3,
+        4,
+        8,
+        1
+      ]
+    },
+    {
+      "name": "Havoc Slippers",
+      "base": "Serpentscale Boots",
+      "mods": 5,
+      "cost": 19.59748081729526,
+      "cost_per_mod": 3.919496163459052,
+      "tiers": [
+        2,
+        2,
+        3,
+        5,
+        3
+      ]
+    },
+    {
+      "name": "Sorrow Lash",
+      "base": "Heavy Belt",
+      "mods": 4,
+      "cost": 17.49534799494165,
+      "cost_per_mod": 4.373836998735412,
+      "tiers": [
+        6,
+        3,
+        3,
+        3
+      ]
+    },
+    {
+      "name": "Brimstone Star",
+      "base": "Thorium Spirit Shield",
+      "mods": 6,
+      "cost": 28.308002383495456,
+      "cost_per_mod": 4.718000397249242,
+      "tiers": [
+        5,
+        1,
+        3,
+        4,
+        3,
+        5
+      ]
+    },
+    {
+      "name": "Gale Knot",
+      "base": "Two-Stone Ring",
+      "mods": 6,
+      "cost": 28.22979065253898,
+      "cost_per_mod": 4.704965108756497,
+      "tiers": [
+        1,
+        4,
+        7,
+        8,
+        2,
+        4
+      ]
+    },
+    {
+      "name": "Onslaught Coat",
+      "base": "Necromancer Silks",
+      "mods": 4,
+      "cost": 17.65464754722412,
+      "cost_per_mod": 4.41366188680603,
+      "tiers": [
+        2,
+        2,
+        7,
+        3
+      ]
+    },
+    {
+      "name": "Horror Coil",
+      "base": "Sapphire Ring",
+      "mods": 5,
+      "cost": 22.919544715125667,
+      "cost_per_mod": 4.583908943025134,
+      "tiers": [
+        3,
+        3,
+        2,
+        1,
+        3
+      ]
+    },
+    {
+      "name": "Grim Nails",
+      "base": "Wyrmscale Gauntlets",
+      "mods": 6,
+      "cost": 26.55431828679255,
+      "cost_per_mod": 4.4257197144654254,
+      "tiers": [
+        7,
+        4,
+        4,
+        1,
+        6,
+        4
+      ]
+    },
+    {
+      "name": "Honour Eye",
+      "base": "Two-Stone Ring",
+      "mods": 4,
+      "cost": 18.54930603620383,
+      "cost_per_mod": 4.637326509050958,
+      "tiers": [
+        2,
+        6,
+        4,
+        4
+      ]
+    },
+    {
+      "name": "Storm Harness",
+      "base": "Leather Belt",
+      "mods": 3,
+      "cost": 12.682350961751242,
+      "cost_per_mod": 4.227450320583747,
+      "tiers": [
+        8,
+        2,
+        11
+      ]
+    },
+    {
+      "name": "Honour Loop",
+      "base": "Topaz Ring",
+      "mods": 4,
+      "cost": 18.118807745593603,
+      "cost_per_mod": 4.529701936398401,
+      "tiers": [
+        6,
+        1,
+        3,
+        13
+      ]
+    },
+    {
+      "name": "Miracle Paw",
+      "base": "Legion Gloves",
+      "mods": 6,
+      "cost": 27.990773983683603,
+      "cost_per_mod": 4.6651289972806005,
+      "tiers": [
+        2,
+        2,
+        2,
+        4,
+        5,
+        5
+      ]
+    },
+    {
+      "name": "Death Peak",
+      "base": "Lunaris Circlet",
+      "mods": 3,
+      "cost": 13.352762884089042,
+      "cost_per_mod": 4.450920961363014,
+      "tiers": [
+        9,
+        4,
+        7
+      ]
+    },
+    {
+      "name": "Spirit Gnarl",
+      "base": "Void Sceptre",
+      "mods": 4,
+      "cost": 20.575580748141427,
+      "cost_per_mod": 5.143895187035357,
+      "tiers": [
+        4,
+        7,
+        5,
+        1
+      ]
+    },
+    {
+      "name": "Viper Locket",
+      "base": "Amber Amulet",
+      "mods": 5,
+      "cost": 24.420605093756866,
+      "cost_per_mod": 4.884121018751373,
+      "tiers": [
+        2,
+        1,
+        12,
+        2,
+        5
+      ]
+    },
+    {
+      "name": "Torment Urge",
+      "base": "Conjurer Boots",
+      "mods": 6,
+      "cost": 25.657043872471842,
+      "cost_per_mod": 4.276173978745307,
+      "tiers": [
+        8,
+        11,
+        1,
+        4,
+        5,
+        3
+      ]
+    },
+    {
+      "name": "Horror Coat",
+      "base": "Vaal Regalia",
+      "mods": 4,
+      "cost": 17.214277318057693,
+      "cost_per_mod": 4.303569329514423,
+      "tiers": [
+        6,
+        6,
+        5,
+        2
+      ]
+    },
+    {
+      "name": "Beast Breaker",
+      "base": "Vaal Sceptre",
+      "mods": 4,
+      "cost": 20.12929364551301,
+      "cost_per_mod": 5.032323411378252,
+      "tiers": [
+        2,
+        8,
+        4,
+        4
+      ]
+    },
+    {
+      "name": "Spirit Tether",
+      "base": "Heavy Belt",
+      "mods": 5,
+      "cost": 22.260800655291817,
+      "cost_per_mod": 4.452160131058363,
+      "tiers": [
+        10,
+        2,
+        8,
+        6,
+        6
+      ]
+    },
+    {
+      "name": "Behemoth Coil",
+      "base": "Two-Stone Ring",
+      "mods": 4,
+      "cost": 17.935169532914898,
+      "cost_per_mod": 4.4837923832287245,
+      "tiers": [
+        8,
+        2,
+        5,
+        3
+      ]
+    },
+    {
+      "name": "Demon Crown",
+      "base": "Ursine Pelt",
+      "mods": 4,
+      "cost": 17.949407802019213,
+      "cost_per_mod": 4.487351950504803,
+      "tiers": [
+        2,
+        2,
+        3,
+        2
+      ]
+    },
+    {
+      "name": "Horror Shell",
+      "base": "Sentinel Jacket",
+      "mods": 4,
+      "cost": 17.689600825030894,
+      "cost_per_mod": 4.4224002062577235,
+      "tiers": [
+        6,
+        3,
+        7,
+        4
+      ]
+    },
+    {
+      "name": "Torment Hoof",
+      "base": "Eelskin Boots",
+      "mods": 4,
+      "cost": 17.772406882417584,
+      "cost_per_mod": 4.443101720604396,
+      "tiers": [
+        2,
+        3,
+        6,
+        5
+      ]
+    },
+    {
+      "name": "Viper Loop",
+      "base": "Two-Stone Ring",
+      "mods": 6,
+      "cost": 27.536643471979037,
+      "cost_per_mod": 4.589440578663173,
+      "tiers": [
+        8,
+        3,
+        4,
+        3,
+        5,
+        4
+      ]
+    },
+    {
+      "name": "Rune Rock",
+      "base": "Crusader Buckler",
+      "mods": 5,
+      "cost": 22.15189516844201,
+      "cost_per_mod": 4.430379033688402,
+      "tiers": [
+        3,
+        2,
+        2,
+        7,
+        1
+      ]
+    },
+    {
+      "name": "Pain Clutches",
+      "base": "Hydrascale Gauntlets",
+      "mods": 5,
+      "cost": 22.49043293205516,
+      "cost_per_mod": 4.498086586411032,
+      "tiers": [
+        2,
+        2,
+        6,
+        3,
+        1
+      ]
+    },
+    {
+      "name": "Carrion Harness",
+      "base": "Heavy Belt",
+      "mods": 4,
+      "cost": 16.802200814381706,
+      "cost_per_mod": 4.2005502035954265,
+      "tiers": [
+        8,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "name": "Dusk Rosary",
+      "base": "Amber Amulet",
+      "mods": 4,
+      "cost": 19.46724586748034,
+      "cost_per_mod": 4.866811466870085,
+      "tiers": [
+        5,
+        4,
+        1,
+        3
+      ]
+    },
+    {
+      "name": "Bramble Crest",
+      "base": "Ursine Pelt",
+      "mods": 4,
+      "cost": 16.86038944686839,
+      "cost_per_mod": 4.215097361717097,
+      "tiers": [
+        3,
+        3,
+        1,
+        5
+      ]
+    },
+    {
+      "name": "Kraken Nails",
+      "base": "Shagreen Gloves",
+      "mods": 4,
+      "cost": 17.525348083591552,
+      "cost_per_mod": 4.381337020897888,
+      "tiers": [
+        1,
+        3,
+        3,
+        5
+      ]
+    },
+    {
+      "name": "Armageddon Scratch",
+      "base": "Cutlass",
+      "mods": 4,
+      "cost": 20.653895198694624,
+      "cost_per_mod": 5.163473799673656,
+      "tiers": [
+        4,
+        5,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "Ghoul Turn",
+      "base": "Two-Stone Ring",
+      "mods": 3,
+      "cost": 13.748569066671763,
+      "cost_per_mod": 4.582856355557254,
+      "tiers": [
+        6,
+        2,
+        7
+      ]
+    },
+    {
+      "name": "Corruption Eye",
+      "base": "Two-Stone Ring",
+      "mods": 6,
+      "cost": 26.84349629141909,
+      "cost_per_mod": 4.473916048569849,
+      "tiers": [
+        4,
+        7,
+        4,
+        6,
+        5,
+        7
+      ]
+    },
+    {
+      "name": "Hate Keep",
+      "base": "General's Brigandine",
+      "mods": 5,
+      "cost": 21.36827209199751,
+      "cost_per_mod": 4.273654418399502,
+      "tiers": [
+        3,
+        3,
+        4,
+        3,
+        5
+      ]
+    },
+    {
+      "name": "Glyph Spark",
+      "base": "Dragonscale Boots",
+      "mods": 4,
+      "cost": 16.489823831080958,
+      "cost_per_mod": 4.1224559577702395,
+      "tiers": [
+        6,
+        6,
+        2,
+        2
+      ]
+    },
+    {
+      "name": "Wrath Skewer",
+      "base": "Corsair Sword",
+      "mods": 6,
+      "cost": 27.800914560193682,
+      "cost_per_mod": 4.63348576003228,
+      "tiers": [
+        2,
+        6,
+        5,
+        1,
+        2,
+        1
+      ]
+    },
+    {
+      "name": "Apocalypse Whorl",
+      "base": "Amethyst Ring",
+      "mods": 4,
+      "cost": 19.89609505868821,
+      "cost_per_mod": 4.974023764672053,
+      "tiers": [
+        2,
+        2,
+        5,
+        3
+      ]
+    },
+    {
+      "name": "Demon Locket",
+      "base": "Jade Amulet",
+      "mods": 4,
+      "cost": 19.69038941879455,
+      "cost_per_mod": 4.922597354698637,
+      "tiers": [
+        1,
+        5,
+        7,
+        5
+      ]
+    },
+    {
+      "name": "Maelstrom Whorl",
+      "base": "Amethyst Ring",
+      "mods": 4,
+      "cost": 19.242453216763778,
+      "cost_per_mod": 4.8106133041909445,
+      "tiers": [
+        5,
+        5,
+        3,
+        2
+      ]
+    },
+    {
+      "name": "Plague Branch",
+      "base": "Opal Wand",
+      "mods": 6,
+      "cost": 28.966446878013187,
+      "cost_per_mod": 4.827741146335531,
+      "tiers": [
+        3,
+        6,
+        4,
+        5,
+        6,
+        2
+      ]
+    },
+    {
+      "name": "Mind Emblem",
+      "base": "Harmonic Spirit Shield",
+      "mods": 4,
+      "cost": 17.841889522605445,
+      "cost_per_mod": 4.460472380651361,
+      "tiers": [
+        8,
+        2,
+        2,
+        6
+      ]
+    },
+    {
+      "name": "Damnation Suit",
+      "base": "Savant's Robe",
+      "mods": 6,
+      "cost": 26.238192926589516,
+      "cost_per_mod": 4.373032154431586,
+      "tiers": [
+        5,
+        6,
+        3,
+        3,
+        4,
+        2
+      ]
+    },
+    {
+      "name": "Carrion Road",
+      "base": "Samite Slippers",
+      "mods": 4,
+      "cost": 16.774095685837235,
+      "cost_per_mod": 4.193523921459309,
+      "tiers": [
+        3,
+        7,
+        6,
+        2
+      ]
+    },
+    {
+      "name": "Carrion Claw",
+      "base": "Soldier Gloves",
+      "mods": 4,
+      "cost": 18.429466928935753,
+      "cost_per_mod": 4.607366732233938,
+      "tiers": [
+        3,
+        4,
+        4,
+        3
+      ]
+    },
+    {
+      "name": "Sol Star",
+      "base": "Necromancer Circlet",
+      "mods": 4,
+      "cost": 17.346826599853397,
+      "cost_per_mod": 4.336706649963349,
+      "tiers": [
+        7,
+        2,
+        4,
+        8
+      ]
+    },
+    {
+      "name": "Plague Twirl",
+      "base": "Amethyst Ring",
+      "mods": 6,
+      "cost": 27.536643471979033,
+      "cost_per_mod": 4.589440578663172,
+      "tiers": [
+        5,
+        2,
+        4,
+        3,
+        5,
+        6
+      ]
+    },
+    {
+      "name": "Eagle Salvation",
+      "base": "Conquest Chainmail",
+      "mods": 7,
+      "cost": 30.337971244033973,
+      "cost_per_mod": 4.333995892004853,
+      "tiers": [
+        1,
+        4,
+        5,
+        4,
+        8,
+        3,
+        4
+      ]
+    },
+    {
+      "name": "Grim Goad",
+      "base": "Legion Boots",
+      "mods": 4,
+      "cost": 17.70069427947348,
+      "cost_per_mod": 4.42517356986837,
+      "tiers": [
+        3,
+        6,
+        4,
+        2
+      ]
+    },
+    {
+      "name": "Skull Bane",
+      "base": "Driftwood Wand",
+      "mods": 3,
+      "cost": 15.052940580600778,
+      "cost_per_mod": 5.0176468602002595,
+      "tiers": [
+        6,
+        12,
+        1
+      ]
+    },
+    {
+      "name": "Spirit Ward",
+      "base": "Magistrate Crown",
+      "mods": 5,
+      "cost": 22.84704001998925,
+      "cost_per_mod": 4.56940800399785,
+      "tiers": [
+        2,
+        9,
+        1,
+        7,
+        4
+      ]
+    },
+    {
+      "name": "Oblivion Rock",
+      "base": "Laminated Kite Shield",
+      "mods": 5,
+      "cost": 23.005660644129776,
+      "cost_per_mod": 4.601132128825955,
+      "tiers": [
+        3,
+        2,
+        9,
+        2,
+        2
+      ]
+    },
+    {
+      "name": "Gloom Hold",
+      "base": "Amethyst Ring",
+      "mods": 4,
+      "cost": 18.54930603620383,
+      "cost_per_mod": 4.637326509050958,
+      "tiers": [
+        4,
+        2,
+        2,
+        2
+      ]
+    },
+    {
+      "name": "Cataclysm Lock",
+      "base": "Rustic Sash",
+      "mods": 3,
+      "cost": 13.005152365611096,
+      "cost_per_mod": 4.335050788537032,
+      "tiers": [
+        8,
+        2,
+        6
+      ]
+    },
+    {
+      "name": "Dragon Braid",
+      "base": "Lapis Amulet",
+      "mods": 4,
+      "cost": 21.36436585236622,
+      "cost_per_mod": 5.341091463091555,
+      "tiers": [
+        4,
+        3,
+        9,
+        2
+      ]
+    },
+    {
+      "name": "Vortex Hold",
+      "base": "Soldier Gloves",
+      "mods": 4,
+      "cost": 17.736319748375806,
+      "cost_per_mod": 4.434079937093951,
+      "tiers": [
+        2,
+        6,
+        5,
+        5
+      ]
+    },
+    {
+      "name": "Torment Lash",
+      "base": "Leather Belt",
+      "mods": 5,
+      "cost": 21.24485207087202,
+      "cost_per_mod": 4.248970414174404,
+      "tiers": [
+        7,
+        3,
+        4,
+        8,
+        2
+      ]
+    },
+    {
+      "name": "Agony Road",
+      "base": "Conjurer Boots",
+      "mods": 3,
+      "cost": 12.663221821663925,
+      "cost_per_mod": 4.221073940554642,
+      "tiers": [
+        1,
+        6,
+        2
+      ]
+    },
+    {
+      "name": "Gloom Nail",
+      "base": "Topaz Ring",
+      "mods": 5,
+      "cost": 22.735906502446966,
+      "cost_per_mod": 4.5471813004893935,
+      "tiers": [
+        7,
+        4,
+        4,
+        6,
+        1
+      ]
+    },
+    {
+      "name": "Spirit Spire",
+      "base": "Quartz Wand",
+      "mods": 4,
+      "cost": 20.228932108570522,
+      "cost_per_mod": 5.0572330271426305,
+      "tiers": [
+        7,
+        8,
+        6,
+        7
+      ]
+    },
+    {
+      "name": "Hypnotic Ward",
+      "base": "Steel Circlet",
+      "mods": 5,
+      "cost": 22.02617618401574,
+      "cost_per_mod": 4.405235236803148,
+      "tiers": [
+        2,
+        3,
+        3,
+        6,
+        5
+      ]
+    },
+    {
+      "name": "Hate Breaker",
+      "base": "Void Sceptre",
+      "mods": 6,
+      "cost": 31.225693069460252,
+      "cost_per_mod": 5.204282178243376,
+      "tiers": [
+        8,
+        5,
+        3,
+        6,
+        5,
+        5
+      ]
+    },
+    {
+      "name": "Doom Wish",
+      "base": "Jingling Spirit Shield",
+      "mods": 4,
+      "cost": 19.633648991833496,
+      "cost_per_mod": 4.908412247958374,
+      "tiers": [
+        5,
+        5,
+        3,
+        6
+      ]
+    },
+    {
+      "name": "Skull Salvation",
+      "base": "Destroyer Regalia",
+      "mods": 6,
+      "cost": 25.96034162692086,
+      "cost_per_mod": 4.32672360448681,
+      "tiers": [
+        4,
+        9,
+        7,
+        5,
+        4,
+        4
+      ]
+    },
+    {
+      "name": "Soul Talons",
+      "base": "Hydrascale Gauntlets",
+      "mods": 7,
+      "cost": 30.618203641529945,
+      "cost_per_mod": 4.374029091647135,
+      "tiers": [
+        7,
+        4,
+        3,
+        3,
+        3,
+        2,
+        3
+      ]
+    },
+    {
+      "name": "Mind Heart",
+      "base": "Citrine Amulet",
+      "mods": 4,
+      "cost": 19.12105482985458,
+      "cost_per_mod": 4.780263707463645,
+      "tiers": [
+        6,
+        6,
+        2,
+        2
+      ]
+    },
+    {
+      "name": "Blight Band",
+      "base": "Sapphire Ring",
+      "mods": 4,
+      "cost": 19.505102106713494,
+      "cost_per_mod": 4.8762755266783735,
+      "tiers": [
+        2,
+        5,
+        9,
+        1
+      ]
+    }
+  ],
+  "filler": [
+    {
+      "name": "Crafted Item",
+      "base": "Savant's Robe",
+      "mods": 6,
+      "cost": 26.238192926589512,
+      "cost_per_mod": 4.373032154431585,
+      "tiers": [
+        2,
+        4,
+        2,
+        3,
+        3,
+        3
+      ]
+    },
+    {
+      "name": "Crafted Item",
+      "base": "Necromancer Circlet",
+      "mods": 5,
+      "cost": 22.02617618401574,
+      "cost_per_mod": 4.405235236803148,
+      "tiers": [
+        2,
+        3,
+        3,
+        3,
+        3
+      ]
+    },
+    {
+      "name": "Crafted Item",
+      "base": "Vaal Gauntlets",
+      "mods": 5,
+      "cost": 23.372550839870403,
+      "cost_per_mod": 4.674510167974081,
+      "tiers": [
+        2,
+        3,
+        3,
+        3,
+        2
+      ]
+    },
+    {
+      "name": "Crafted Item",
+      "base": "Goliath Greaves",
+      "mods": 3,
+      "cost": 14.119390149464552,
+      "cost_per_mod": 4.70646338315485,
+      "tiers": [
+        3,
+        2,
+        2
+      ]
+    },
+    {
+      "name": "Crafted Item",
+      "base": "Rustic Sash",
+      "mods": 2,
+      "cost": 9.80159324485479,
+      "cost_per_mod": 4.900796622427395,
+      "tiers": [
+        2,
+        1
+      ]
+    },
+    {
+      "name": "Crafted Item",
+      "base": "Two-Stone Ring",
+      "mods": 2,
+      "cost": 10.517764670938288,
+      "cost_per_mod": 5.258882335469144,
+      "tiers": [
+        2,
+        1
+      ]
+    },
+    {
+      "name": "Crafted Item",
+      "base": "Two-Stone Ring",
+      "mods": 2,
+      "cost": 10.517764670938288,
+      "cost_per_mod": 5.258882335469144,
+      "tiers": [
+        2,
+        1
+      ]
+    },
+    {
+      "name": "Crafted Item",
+      "base": "Karui Sceptre",
+      "mods": 5,
+      "cost": 30.682759883207698,
+      "cost_per_mod": 6.13655197664154,
+      "tiers": [
+        2,
+        2,
+        3,
+        3,
+        1
+      ]
+    },
+    {
+      "name": "Crafted Item",
+      "base": "Blood Sceptre",
+      "mods": 6,
+      "cost": 32.37309552229779,
+      "cost_per_mod": 5.395515920382965,
+      "tiers": [
+        1,
+        3,
+        2,
+        2,
+        3,
+        3
+      ]
+    }
+  ]
+}

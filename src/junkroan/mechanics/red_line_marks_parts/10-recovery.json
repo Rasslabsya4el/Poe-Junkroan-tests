@@ -1,0 +1,719 @@
+[
+  {
+    "line": "1.5% of Physical Damage prevented from Hits in the past 10 seconds is Regenerated as Life per second",
+    "surfaces": [
+      "ascendancy"
+    ],
+    "sources": [
+      "17988"
+    ],
+    "group": "recovery",
+    "kind": "already_parsed",
+    "boss_lane": [],
+    "optimistic_lane": [],
+    "zero_reason": "no_representation: PoB already counts the whole line (PhysicalDamageMitigatedLifePseudoRecoup), nothing to add",
+    "why": "PoB's ModParser.lua:4727 parses the whole line (ModCache row, no extra text) and CalcDefence.lua:1455 uses it; the line is red only because the node text carries a line break",
+    "partial_part": "none left: ModCache parses the whole line once its line break is joined"
+  },
+  {
+    "line": "10% chance for Energy Shield Recharge to start when you Link to a target",
+    "surfaces": [
+      "notable"
+    ],
+    "sources": [
+      "60781"
+    ],
+    "group": "recovery",
+    "kind": "no_representation",
+    "boss_lane": [],
+    "optimistic_lane": [],
+    "zero_reason": "no_representation: no PoB number for a chance to start Energy Shield Recharge on Link",
+    "why": "PoB has no event that starts Energy Shield Recharge and no Link rate; its parse only adds a stray EnergyShield BASE 10",
+    "partial_part": "chance for Energy Shield Recharge to start when you Link to a target"
+  },
+  {
+    "line": "10% of Damage taken from Stunning Hits is Recovered as Life",
+    "surfaces": [
+      "notable"
+    ],
+    "sources": [
+      "14001"
+    ],
+    "group": "recovery",
+    "kind": "no_representation",
+    "boss_lane": [],
+    "optimistic_lane": [],
+    "zero_reason": "no_representation: PoB has no share of damage taken from Stunning Hits",
+    "why": "PoB has no count of hits that stun; counting all damage taken would be the cap, not a rate",
+    "partial_part": "from Stunning Hits is Recovered as Life"
+  },
+  {
+    "line": "100% of Life Recovery from Flasks is applied to nearby Allies instead of You",
+    "surfaces": [
+      "unique"
+    ],
+    "sources": [
+      "The Druggery, Cloth Belt"
+    ],
+    "group": "recovery",
+    "kind": "flask_recovery_to_allies",
+    "boss_lane": [],
+    "optimistic_lane": [
+      "100% reduced Life Recovery from Flasks"
+    ],
+    "zero_reason": "",
+    "why": "The player gets no flask Life Recovery (it goes to allies); PoB's own parse is a stray FlaskLifeRecovery BASE 100; the drawback is on the optimistic lane only because a new kind has an empty boss lane",
+    "partial_part": "is applied to nearby Allies instead of You",
+    "type": "any", "stand_blind": {"reason_kind": "flag-only", "why": "Life Recovery from Flasks applied to nearby Allies instead of You: an Allies scope, no ally on the stands"}
+  },
+  {
+    "line": "20% increased Maximum total Life Recovery per second from Leech if you've dealt a Critical Strike recently",
+    "surfaces": [
+      "notable"
+    ],
+    "sources": [
+      "41169"
+    ],
+    "group": "recovery",
+    "kind": "already_parsed",
+    "boss_lane": [],
+    "optimistic_lane": [],
+    "zero_reason": "no_representation: PoB already counts the whole line, nothing to add",
+    "why": "PoB parses the whole line (MaxLifeLeechRate INC with Condition CritRecently, ModCache row without extra text); the config decides the condition",
+    "partial_part": "none left: ModCache parses the whole line once its line break is joined"
+  },
+  {
+    "line": "20% of Overkill Damage is Leeched as Life",
+    "surfaces": [
+      "ascendancy"
+    ],
+    "sources": [
+      "34484"
+    ],
+    "group": "recovery",
+    "kind": "no_representation",
+    "boss_lane": [],
+    "optimistic_lane": [],
+    "zero_reason": "no_representation: PoB has no overkill damage; on_kill gives 0 on the boss lane",
+    "why": "overkill damage has no PoB number (it exists only on a kill, on_kill: 0 on the boss lane); PoB's parse adds a stray DamageLifeLeech 20",
+    "partial_part": "Overkill (only the damage beyond the enemy's life is leeched)"
+  },
+  {
+    "line": "25% of Damage taken Recouped as Life if Leech was removed by Filling Unreserved Life Recently",
+    "surfaces": [
+      "mastery"
+    ],
+    "sources": [
+      "16141",
+      "25446",
+      "28862",
+      "35859",
+      "40383",
+      "43495",
+      "55230",
+      "6384",
+      "7488"
+    ],
+    "group": "recovery",
+    "kind": "uptime_dependent",
+    "boss_lane": [],
+    "optimistic_lane": [],
+    "zero_reason": "uptime_dependent: PoB already counts the 25% at full uptime (optimistic), boss lane empty",
+    "why": "PoB parses the recoup unconditionally (LifeRecoup 25) and drops the condition: that is already full uptime, so the optimistic lane adds nothing; the boss lane stays empty by the uptime_dependent verdict",
+    "partial_part": "if Leech was removed by Filling Unreserved Life Recently"
+  },
+  {
+    "line": "30% chance for Energy Shield Recharge to start when you Block",
+    "surfaces": [
+      "ascendancy"
+    ],
+    "sources": [
+      "17386"
+    ],
+    "group": "recovery",
+    "kind": "on_block_generator",
+    "boss_lane": [],
+    "optimistic_lane": [],
+    "zero_reason": "no_representation: on_block_generator, no PoB event for a recharge start",
+    "why": "block is no rate in PoB and a recharge start is no PoB event; on_block_generator boss lane is off, and its optimistic 'on' has no PoB line for it",
+    "partial_part": "chance for Energy Shield Recharge to start when you Block"
+  },
+  {
+    "line": "50% chance for Energy Shield Recharge to start when you Suppress Spell Damage",
+    "surfaces": [
+      "ascendancy"
+    ],
+    "sources": [
+      "41891"
+    ],
+    "group": "recovery",
+    "kind": "no_representation",
+    "boss_lane": [],
+    "optimistic_lane": [],
+    "zero_reason": "no_representation: no PoB number for a recharge start on Suppress",
+    "why": "suppress is no rate in PoB and a recharge start is no PoB event",
+    "partial_part": "chance for Energy Shield Recharge to start when you Suppress Spell Damage"
+  },
+  {
+    "line": "50% less Life Regeneration Rate 50% less maximum Total Life Recovery per Second from Leech Energy Shield Recharge instead applies to Life",
+    "surfaces": [
+      "keystone"
+    ],
+    "sources": [
+      "21650"
+    ],
+    "group": "recovery",
+    "kind": "already_parsed",
+    "boss_lane": [],
+    "optimistic_lane": [],
+    "zero_reason": "no_representation: PoB already counts all three lines, nothing to add",
+    "why": "the keystone's three lines joined; each parses alone (ModParser.lua:176 Life regen rate, :567 MaxLifeLeechRate, :2248 EnergyShieldRechargeAppliesToLife) and CalcDefence.lua:1325 uses the last",
+    "partial_part": "none left: the three lines of the keystone parse one by one"
+  },
+  {
+    "line": "Arcane Surge also grants 20% of Damage taken Recouped as Mana to you",
+    "surfaces": [
+      "ascendancy"
+    ],
+    "sources": [
+      "14588"
+    ],
+    "group": "recovery",
+    "kind": "uptime_dependent",
+    "boss_lane": [],
+    "optimistic_lane": [
+      "20% of Damage taken Recouped as Mana"
+    ],
+    "zero_reason": "",
+    "why": "Arcane Surge is a buff for a duration: full uptime on the optimistic lane, boss lane empty (uptime rule parked, #965); the line is ManaRecoup as in ModParser.lua:437",
+    "partial_part": "",
+    "type": "any", "stand_blind": {"reason_kind": "mechanic-absent", "why": "no stand casts Arcane Surge, so the 20% of Damage taken Recouped as Mana has no Arcane Surge to act on"}
+  },
+  {
+    "line": "Consecrated Ground you create causes Life Regeneration to also Recover Energy Shield for you and Allies",
+    "surfaces": [
+      "ascendancy"
+    ],
+    "sources": [
+      "32816"
+    ],
+    "group": "recovery",
+    "kind": "consecrated_ground_regen",
+    "boss_lane": [],
+    "optimistic_lane": [
+      "Regenerate {formula} Energy Shield per second"
+    ],
+    "zero_reason": "",
+    "why": "PoB parses the flag LifeRegenerationRecoversEnergyShield but no Calc file reads it; Energy Shield regeneration equal to the build's Life regeneration is the equivalent (Energy Shield regen may not move any of the seven stand outputs)",
+    "partial_part": "",
+    "type": "any",
+    "formula": "LifeRegen", "stand_blind": {"reason_kind": "flag-only", "why": "Consecrated Ground Life regen also recovers Energy Shield for Allies: an Energy Shield regen scope, no Consecrated Ground on the stands"}
+  },
+  {
+    "line": "Every 3 seconds, Consume a nearby Corpse to Recover 10% of Life",
+    "surfaces": [
+      "mastery"
+    ],
+    "sources": [
+      "10141",
+      "10414",
+      "24481",
+      "27193",
+      "27235",
+      "53517",
+      "61529"
+    ],
+    "group": "recovery",
+    "kind": "on_kill_generator",
+    "boss_lane": [],
+    "optimistic_lane": [
+      "Regenerate 3.33% of Life per second"
+    ],
+    "zero_reason": "",
+    "why": "a corpse comes from a kill: boss lane 0, optimistic counted; 10% of Life every 3 s is 3.33% of Life per second (ModParser.lua:110)",
+    "partial_part": "",
+    "type": "any"
+  },
+  {
+    "line": "Every 4 seconds, Recover 1 Life for every 0.1 Life Recovery per second from Regeneration",
+    "surfaces": [
+      "mastery"
+    ],
+    "sources": [
+      "10141",
+      "10414",
+      "24481",
+      "27193",
+      "27235",
+      "53517",
+      "61529"
+    ],
+    "group": "recovery",
+    "kind": "periodic_recovery",
+    "boss_lane": [],
+    "optimistic_lane": [
+      "Regenerate {formula} Life per second"
+    ],
+    "zero_reason": "",
+    "why": "1 Life per 0.1 Life Regeneration per second every 4 s = 10 x LifeRegen / 4 = 2.5 x LifeRegen Life per second; a timer line without conditions, a new kind so boss lane empty",
+    "partial_part": "",
+    "type": "any",
+    "formula": "2.5 * LifeRegen"
+  },
+  {
+    "line": "Every second, Consume a nearby Corpse to Recover 5% of Life and Mana 10% more Damage taken if you haven't Consumed a Corpse Recently",
+    "surfaces": [
+      "keystone"
+    ],
+    "sources": [
+      "12953"
+    ],
+    "group": "recovery",
+    "kind": "on_kill_generator",
+    "boss_lane": [],
+    "optimistic_lane": [
+      "Regenerate 5% of Life per second"
+    ],
+    "zero_reason": "",
+    "why": "a corpse comes from a kill: boss lane 0, optimistic counted; the '10% more Damage taken if you haven't Consumed a Corpse Recently' half already parses alone (ModCache, Condition ConsumedCorpseRecently); the Mana half is left out (mana on kill never counts as sustain)",
+    "partial_part": "",
+    "type": "any"
+  },
+  {
+    "line": "For each nearby corpse, you and nearby Allies Regenerate 5 Mana per second, up to 50 per second",
+    "surfaces": [
+      "ascendancy"
+    ],
+    "sources": [
+      "3554"
+    ],
+    "group": "recovery",
+    "kind": "already_parsed",
+    "boss_lane": [],
+    "optimistic_lane": [],
+    "zero_reason": "no_representation: PoB already counts the whole line, nothing to add",
+    "why": "PoB parses the whole line (ModParser.lua:2930, ExtraAura ManaRegen with the NearbyCorpse multiplier, ModCache row without extra text)",
+    "partial_part": ""
+  },
+  {
+    "line": "Gain 100 Life when you lose an Endurance Charge",
+    "surfaces": [
+      "unique"
+    ],
+    "sources": [
+      "Kingsguard, Conquest Chainmail"
+    ],
+    "group": "recovery",
+    "kind": "no_representation",
+    "boss_lane": [],
+    "optimistic_lane": [],
+    "zero_reason": "no_representation: no PoB number for Endurance Charge losses",
+    "why": "no rate of Endurance Charge loss in PoB; its parse adds a stray Life BASE 100 (maximum Life)",
+    "partial_part": "when you lose an Endurance Charge"
+  },
+  {
+    "line": "If your Mercenary's Life is lower than your own, 40% of Damage they take is Recouped as Life",
+    "surfaces": [
+      "ascendancy"
+    ],
+    "sources": [
+      "1564"
+    ],
+    "group": "recovery",
+    "kind": "no_representation",
+    "boss_lane": [],
+    "optimistic_lane": [],
+    "zero_reason": "no_representation: PoB has no Mercenary",
+    "why": "a Mercenary ally's life and damage taken have no PoB number",
+    "partial_part": ""
+  },
+  {
+    "line": "Increases and Reductions to Armour also apply to Energy Shield Recharge Rate at 20% of their value",
+    "surfaces": [
+      "mastery"
+    ],
+    "sources": [
+      "30393",
+      "37641"
+    ],
+    "group": "recovery",
+    "kind": "already_parsed",
+    "boss_lane": [],
+    "optimistic_lane": [],
+    "zero_reason": "no_representation: PoB already counts the whole line, nothing to add",
+    "why": "PoB parses the whole line (ModParser.lua:3447, ArmourAppliesToEnergyShieldRecharge) and CalcDefence.lua:774 uses it",
+    "partial_part": ""
+  },
+  {
+    "line": "Mana Recovery occurs instantly at the end of Effect",
+    "surfaces": [
+      "flask"
+    ],
+    "sources": [
+      "FlaskManaRecoveryAtEnd1_"
+    ],
+    "group": "recovery",
+    "kind": "no_representation",
+    "boss_lane": [],
+    "optimistic_lane": [],
+    "zero_reason": "mana_sustain: a mana flask below full uptime never counts, and no PoB line for the delay",
+    "why": "a mana flask line: a mana flask below 100% uptime never counts as sustain",
+    "partial_part": ""
+  },
+  {
+    "line": "Nearby allies Recover 1% of your Maximum Life when you Die",
+    "surfaces": [
+      "unique"
+    ],
+    "sources": [
+      "Maligaro's Lens, Compound Spiked Shield"
+    ],
+    "group": "recovery",
+    "kind": "no_representation",
+    "boss_lane": [],
+    "optimistic_lane": [],
+    "zero_reason": "no_representation: allies' recovery, PoB has no ally",
+    "why": "allies recover Life when the player dies: no value to the player's build in PoB",
+    "partial_part": ""
+  },
+  {
+    "line": "Nearby allies Recover 2% of your Maximum Life when you Die",
+    "surfaces": [
+      "unique"
+    ],
+    "sources": [
+      "Maligaro's Lens, Compound Spiked Shield"
+    ],
+    "group": "recovery",
+    "kind": "no_representation",
+    "boss_lane": [],
+    "optimistic_lane": [],
+    "zero_reason": "no_representation: allies' recovery, PoB has no ally",
+    "why": "allies recover Life when the player dies: no value to the player's build in PoB",
+    "partial_part": ""
+  },
+  {
+    "line": "Recover 1% of Life when you Curse a Non-Cursed Enemy",
+    "surfaces": [
+      "mastery"
+    ],
+    "sources": [
+      "22959",
+      "23796",
+      "50540",
+      "61785",
+      "62506",
+      "6570"
+    ],
+    "group": "recovery",
+    "kind": "first_seconds_only",
+    "boss_lane": [],
+    "optimistic_lane": [],
+    "zero_reason": "first_seconds_only: only the first curse of the fight, PoB has no curse-cast rate",
+    "why": "a boss is cursed once at the start of the fight; PoB has no curse-cast rate for packs",
+    "partial_part": ""
+  },
+  {
+    "line": "Recover 1% of Mana when you Curse a Non-Cursed Enemy",
+    "surfaces": [
+      "mastery"
+    ],
+    "sources": [
+      "22959",
+      "23796",
+      "50540",
+      "61785",
+      "62506",
+      "6570"
+    ],
+    "group": "recovery",
+    "kind": "first_seconds_only",
+    "boss_lane": [],
+    "optimistic_lane": [],
+    "zero_reason": "first_seconds_only: only the first curse of the fight; mana_sustain",
+    "why": "a boss is cursed once at the start of the fight; mana on an event never counts as sustain",
+    "partial_part": ""
+  },
+  {
+    "line": "Recover 10% of Mana when a Brand expires while Attached",
+    "surfaces": [
+      "mastery"
+    ],
+    "sources": [
+      "21143",
+      "40439",
+      "61343"
+    ],
+    "group": "recovery",
+    "kind": "no_representation",
+    "boss_lane": [],
+    "optimistic_lane": [],
+    "zero_reason": "mana_sustain: mana on an event never counts, PoB has no Brand expiry rate",
+    "why": "no Brand expiry rate in PoB; mana on an event never counts as sustain",
+    "partial_part": ""
+  },
+  {
+    "line": "Recover 100 Life for each Fortification lost",
+    "surfaces": [
+      "mastery"
+    ],
+    "sources": [
+      "51974",
+      "59335"
+    ],
+    "group": "recovery",
+    "kind": "no_representation",
+    "boss_lane": [],
+    "optimistic_lane": [],
+    "zero_reason": "no_representation: no PoB number for Fortification lost",
+    "why": "no Fortification loss rate in PoB (needs hits taken per second)",
+    "partial_part": ""
+  },
+  {
+    "line": "Recover 15% of Mana when you activate a Tincture",
+    "surfaces": [
+      "notable"
+    ],
+    "sources": [
+      "52030"
+    ],
+    "group": "recovery",
+    "kind": "no_representation",
+    "boss_lane": [],
+    "optimistic_lane": [],
+    "zero_reason": "mana_sustain: mana on an event never counts; cooldown-limited",
+    "why": "a Tincture has a cooldown and no PoB use rate; mana on an event never counts as sustain",
+    "partial_part": ""
+  },
+  {
+    "line": "Recover 2% of Life when you Ignite a non-Ignited Enemy",
+    "surfaces": [
+      "notable"
+    ],
+    "sources": [
+      "22133"
+    ],
+    "group": "recovery",
+    "kind": "first_seconds_only",
+    "boss_lane": [],
+    "optimistic_lane": [],
+    "zero_reason": "first_seconds_only: only the first ignite of the fight, PoB has no fresh-ignite rate",
+    "why": "a boss is ignited once and kept ignited: the first ignite only; no PoB rate for fresh ignites",
+    "partial_part": ""
+  },
+  {
+    "line": "Recover 24% of Mana and Energy Shield when you Focus",
+    "surfaces": [
+      "gear_affix"
+    ],
+    "sources": [
+      "ModMaster#587"
+    ],
+    "group": "recovery",
+    "kind": "no_representation",
+    "boss_lane": [],
+    "optimistic_lane": [],
+    "zero_reason": "mana_sustain: mana on an event never counts; no PoB Focus rate",
+    "why": "no Focus activation rate in PoB; mana on an event never counts as sustain",
+    "partial_part": ""
+  },
+  {
+    "line": "Recover 25% of Life when you gain Adrenaline",
+    "surfaces": [
+      "ascendancy"
+    ],
+    "sources": [
+      "27604"
+    ],
+    "group": "recovery",
+    "kind": "no_representation",
+    "boss_lane": [],
+    "optimistic_lane": [],
+    "zero_reason": "no_representation: no PoB number for gaining Adrenaline",
+    "why": "no rate of gaining Adrenaline in PoB",
+    "partial_part": ""
+  },
+  {
+    "line": "Recover 27% of Mana and Energy Shield when you Focus",
+    "surfaces": [
+      "gear_affix"
+    ],
+    "sources": [
+      "ModMaster#588"
+    ],
+    "group": "recovery",
+    "kind": "no_representation",
+    "boss_lane": [],
+    "optimistic_lane": [],
+    "zero_reason": "mana_sustain: mana on an event never counts; no PoB Focus rate",
+    "why": "no Focus activation rate in PoB; mana on an event never counts as sustain",
+    "partial_part": ""
+  },
+  {
+    "line": "Recover 3% of Life per 5 Valour consumed to place a Banner",
+    "surfaces": [
+      "mastery"
+    ],
+    "sources": [
+      "32242",
+      "35321",
+      "43307",
+      "55281"
+    ],
+    "group": "recovery",
+    "kind": "no_representation",
+    "boss_lane": [],
+    "optimistic_lane": [],
+    "zero_reason": "no_representation: no PoB number for placing a Banner",
+    "why": "no Banner placement rate in PoB",
+    "partial_part": ""
+  },
+  {
+    "line": "Recover 5% of Energy Shield over 1 second when you take Physical Damage from an Enemy Hit",
+    "surfaces": [
+      "mastery"
+    ],
+    "sources": [
+      "30393",
+      "37641"
+    ],
+    "group": "recovery",
+    "kind": "no_representation",
+    "boss_lane": [],
+    "optimistic_lane": [],
+    "zero_reason": "no_representation: PoB has no enemy hit rate",
+    "why": "no rate of Physical hits taken in PoB",
+    "partial_part": ""
+  },
+  {
+    "line": "Regenerate 5% of Energy Shield over 1 second when Stunned",
+    "surfaces": [
+      "notable"
+    ],
+    "sources": [
+      "45657"
+    ],
+    "group": "recovery",
+    "kind": "no_representation",
+    "boss_lane": [],
+    "optimistic_lane": [],
+    "zero_reason": "no_representation: PoB has no rate of being Stunned",
+    "why": "no stun rate in PoB; 5% per second would be the cap",
+    "partial_part": ""
+  },
+  {
+    "line": "Regenerate 5% of Life over 1 second when Stunned",
+    "surfaces": [
+      "notable"
+    ],
+    "sources": [
+      "45657"
+    ],
+    "group": "recovery",
+    "kind": "no_representation",
+    "boss_lane": [],
+    "optimistic_lane": [],
+    "zero_reason": "no_representation: PoB has no rate of being Stunned",
+    "why": "no stun rate in PoB; 5% per second would be the cap",
+    "partial_part": ""
+  },
+  {
+    "line": "Removed life is Regenerated as Energy Shield over 2 seconds",
+    "surfaces": [
+      "unique"
+    ],
+    "sources": [
+      "Coruscating Elixir, Ruby Flask"
+    ],
+    "group": "recovery",
+    "kind": "no_representation",
+    "boss_lane": [],
+    "optimistic_lane": [],
+    "zero_reason": "no_representation: PoB has no Life removed by a flask",
+    "why": "it offsets the flask's own Life cost, which PoB does not count as a cost either",
+    "partial_part": ""
+  },
+  {
+    "line": "Removes 15% of Mana Recovered from Life when used",
+    "surfaces": [
+      "flask"
+    ],
+    "sources": [
+      "FlaskExtraManaCostsLife1",
+      "FlaskExtraManaCostsLife2",
+      "FlaskExtraManaCostsLife3_",
+      "FlaskExtraManaCostsLife4"
+    ],
+    "group": "recovery",
+    "kind": "no_representation",
+    "boss_lane": [],
+    "optimistic_lane": [],
+    "zero_reason": "mana_sustain: mana flask below full uptime never counts; no PoB number for the cost",
+    "why": "a Life cost per use of a mana flask: a mana flask below 100% uptime never counts as sustain, and PoB has no use rate",
+    "partial_part": "Mana Recovered from Life when used (the Life removed per use)"
+  },
+  {
+    "line": "Spend Energy Shield before Mana for Skill Mana Costs Energy Shield protects Mana instead of Life 50% less Energy Shield Recharge Rate",
+    "surfaces": [
+      "keystone"
+    ],
+    "sources": [
+      "56075"
+    ],
+    "group": "recovery",
+    "kind": "already_parsed",
+    "boss_lane": [],
+    "optimistic_lane": [],
+    "zero_reason": "no_representation: PoB already counts the parsed lines; paying skill mana costs from Energy Shield has no PoB line",
+    "why": "PoB parses the keystone's lines one by one (ModParser.lua:2310 empty, :2312 EnergyShieldProtectsMana, 50% less Energy Shield Recharge Rate); skill mana costs paid from Energy Shield are not in PoB",
+    "partial_part": ""
+  },
+  {
+    "line": "Vaal Skills have 20% chance to regain consumed Souls when used",
+    "surfaces": [
+      "ascendancy"
+    ],
+    "sources": [
+      "49785"
+    ],
+    "group": "recovery",
+    "kind": "no_representation",
+    "boss_lane": [],
+    "optimistic_lane": [],
+    "zero_reason": "no_representation: PoB has no Souls",
+    "why": "PoB has no Souls to regain",
+    "partial_part": ""
+  },
+  {
+    "line": "When you leave your Banner's Area, recover 30% of the Valour consumed for that Banner",
+    "surfaces": [
+      "ascendancy"
+    ],
+    "sources": [
+      "11412"
+    ],
+    "group": "recovery",
+    "kind": "no_representation",
+    "boss_lane": [],
+    "optimistic_lane": [],
+    "zero_reason": "no_representation: PoB has no Valour refund",
+    "why": "Valour refunds have no PoB number",
+    "partial_part": ""
+  },
+  {
+    "line": "When you take a Savage Hit, lose Baryatic Tension to recover that much Life, up to maximum",
+    "surfaces": [
+      "ascendancy"
+    ],
+    "sources": [
+      "12860"
+    ],
+    "group": "recovery",
+    "kind": "no_representation",
+    "boss_lane": [],
+    "optimistic_lane": [],
+    "zero_reason": "no_representation: PoB has no Savage Hit",
+    "why": "no Savage Hit or Baryatic Tension in PoB",
+    "partial_part": ""
+  }
+]

@@ -1,0 +1,99 @@
+{
+  "excluded": "MoMUnreservedShare, ElementalOverloadUptime, RampBudget >= RampStages, NetLifeRegen+NetEnergyShieldRegen+SelfCostPerSecond >= 0*Life, ManaCostPool >= ManaCost and EnergyShieldRegenRecovery+EnergyShieldLeechGainRate+EnergyShieldRecoup+EnergyShieldRechargeForCosts >= 0.85*ESPerSecondCost are left out: they read stats the pipeline derives in Python (optimizer/ramp.py, self_cost.py, castability.py, keystone_floors.py), not stats PoB outputs",
+  "floors": {
+    "ColdMaximumHitTaken": 5854.85,
+    "EffectiveMovementSpeedMod": 1.164,
+    "FireMaximumHitTaken": 4666.4,
+    "Life": 3840.0,
+    "LightningMaximumHitTaken": 4666.4,
+    "PhysicalMaximumHitTaken": 6733.6,
+    "TotalEHP": 9485.37
+  },
+  "maximize": "CombinedDPS",
+  "note": "the delivered build of one benchmark row; its recorded final violation is 0.1924 and its only audit floor finding is EffectiveMovementSpeedMod = 0.940 < 1.164",
+  "relations": [
+    [
+      "FireResist",
+      "FireResistMax",
+      1.0
+    ],
+    [
+      "ColdResist",
+      "ColdResistMax",
+      1.0
+    ],
+    [
+      "LightningResist",
+      "LightningResistMax",
+      1.0
+    ],
+    [
+      "Str",
+      "ReqStr",
+      1.0
+    ],
+    [
+      "Dex",
+      "ReqDex",
+      1.0
+    ],
+    [
+      "Int",
+      "ReqInt",
+      1.0
+    ],
+    [
+      "LifeUnreserved",
+      "LifeCost",
+      1.0
+    ],
+    [
+      "ManaRegenRecovery+ManaLeechGainRate+ManaRecoup",
+      "ManaPerSecondCost",
+      0.85
+    ],
+    [
+      "LifeRegenRecovery+LifeLeechGainRate+LifeRecoup",
+      "LifePerSecondCost",
+      0.85
+    ]
+  ],
+  "source": "artifacts/benchmark/20260926-0200-ziz-main3-s4/z327_assassin_poison_spark-s6.pob.txt",
+  "stats": {
+    "ColdMaximumHitTaken": 22399.0,
+    "ColdResist": 75.0,
+    "ColdResistMax": 75.0,
+    "CombinedDPS": 53303.935448953,
+    "Dex": 255.0,
+    "ESPerSecondCost": 156.97142857143,
+    "EffectiveMovementSpeedMod": 0.94,
+    "EnergyShieldLeechGainRate": 0.0,
+    "EnergyShieldRecoup": 0.0,
+    "EnergyShieldRegenRecovery": 0.0,
+    "FireMaximumHitTaken": 22399.0,
+    "FireResist": 75.0,
+    "FireResistMax": 75.0,
+    "Int": 364.0,
+    "Life": 5080.0,
+    "LifeCost": 0.0,
+    "LifeLeechGainRate": 0.0,
+    "LifePerSecondCost": 0.0,
+    "LifeRecoup": 0.0,
+    "LifeRegenRecovery": 0.0,
+    "LifeUnreserved": 5080.0,
+    "LightningMaximumHitTaken": 22399.0,
+    "LightningResist": 75.0,
+    "LightningResistMax": 75.0,
+    "ManaCost": 0.0,
+    "ManaLeechGainRate": 0.0,
+    "ManaPerSecondCost": 0.0,
+    "ManaRecoup": 0.0,
+    "ManaRegenRecovery": 17.3,
+    "PhysicalMaximumHitTaken": 6761.0,
+    "ReqDex": 146.0,
+    "ReqInt": 159.0,
+    "ReqStr": 142.0,
+    "Str": 190.0,
+    "TotalEHP": 21635.136978688
+  }
+}

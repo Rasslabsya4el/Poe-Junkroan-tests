@@ -1,0 +1,401 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://poe-build-research.local/schemas/pob/pob.headless-node-power-report.schema.json",
+  "title": "PoB headless native node-power report",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "record_kind",
+    "status",
+    "report_id",
+    "source_kind",
+    "supported_path",
+    "active_config_set_id",
+    "metric_lane",
+    "selected_metric",
+    "max_depth",
+    "max_rows",
+    "row_count",
+    "raw_report_row_count",
+    "truncated",
+    "rows",
+    "source_refs",
+    "limitations",
+    "unavailable_metrics",
+    "boundary"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "1.0.0"
+    },
+    "record_kind": {
+      "type": "string",
+      "const": "pob_headless_node_power_report"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "accepted",
+        "unavailable"
+      ]
+    },
+    "failure_state": {
+      "type": "string",
+      "minLength": 1
+    },
+    "report_id": {
+      "$ref": "#/$defs/non_empty_string"
+    },
+    "source_kind": {
+      "type": "string",
+      "const": "pob_native_node_power_report"
+    },
+    "supported_path": {
+      "type": "string",
+      "const": "pob_native_node_power_report_hint_v1"
+    },
+    "active_config_set_id": {
+      "$ref": "#/$defs/non_empty_string"
+    },
+    "metric_lane": {
+      "type": "string",
+      "enum": [
+        "baseline",
+        "conditional",
+        "active"
+      ]
+    },
+    "selected_metric": {
+      "$ref": "#/$defs/selected_metric"
+    },
+    "max_depth": {
+      "$ref": "#/$defs/nullable_integer"
+    },
+    "max_rows": {
+      "$ref": "#/$defs/nullable_integer"
+    },
+    "row_count": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "raw_report_row_count": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "truncated": {
+      "type": "boolean"
+    },
+    "rows": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/row"
+      }
+    },
+    "source_refs": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/proof_ref"
+      }
+    },
+    "limitations": {
+      "$ref": "#/$defs/string_array"
+    },
+    "unavailable_metrics": {
+      "$ref": "#/$defs/string_array"
+    },
+    "boundary": {
+      "$ref": "#/$defs/boundary"
+    }
+  },
+  "$defs": {
+    "non_empty_string": {
+      "type": "string",
+      "minLength": 1
+    },
+    "nullable_string": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "nullable_integer": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "nullable_number": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "string_array": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/non_empty_string"
+      }
+    },
+    "selected_metric": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "stat",
+        "label",
+        "metric_family",
+        "display_format",
+        "lower_is_better",
+        "percent_scaling"
+      ],
+      "properties": {
+        "stat": {
+          "$ref": "#/$defs/non_empty_string"
+        },
+        "label": {
+          "$ref": "#/$defs/non_empty_string"
+        },
+        "metric_family": {
+          "$ref": "#/$defs/non_empty_string"
+        },
+        "display_format": {
+          "$ref": "#/$defs/nullable_string"
+        },
+        "lower_is_better": {
+          "type": "boolean"
+        },
+        "percent_scaling": {
+          "type": "boolean"
+        }
+      }
+    },
+    "row": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "row_id",
+        "row_index",
+        "source_id",
+        "node_id",
+        "node_name",
+        "name",
+        "target_kind",
+        "metric_lane",
+        "metric_name",
+        "metric_label",
+        "metric_family",
+        "node_power_score",
+        "power",
+        "powerStr",
+        "path_power_score",
+        "pathPower",
+        "pathPowerStr",
+        "path_dist",
+        "pathDist",
+        "point_cost",
+        "value_per_point",
+        "allocated",
+        "source_locator",
+        "source_context",
+        "display_stat",
+        "stats_or_supporting_text",
+        "metric_tags",
+        "facets",
+        "matched_branch_axes"
+      ],
+      "properties": {
+        "row_id": {
+          "$ref": "#/$defs/non_empty_string"
+        },
+        "row_index": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "source_id": {
+          "$ref": "#/$defs/non_empty_string"
+        },
+        "node_id": {
+          "type": "integer"
+        },
+        "node_name": {
+          "$ref": "#/$defs/non_empty_string"
+        },
+        "name": {
+          "$ref": "#/$defs/non_empty_string"
+        },
+        "target_kind": {
+          "$ref": "#/$defs/non_empty_string"
+        },
+        "metric_lane": {
+          "$ref": "#/$defs/non_empty_string"
+        },
+        "metric_name": {
+          "$ref": "#/$defs/non_empty_string"
+        },
+        "metric_label": {
+          "$ref": "#/$defs/non_empty_string"
+        },
+        "metric_family": {
+          "$ref": "#/$defs/non_empty_string"
+        },
+        "node_power_score": {
+          "type": "number"
+        },
+        "power": {
+          "type": "number"
+        },
+        "powerStr": {
+          "$ref": "#/$defs/nullable_string"
+        },
+        "path_power_score": {
+          "$ref": "#/$defs/nullable_number"
+        },
+        "pathPower": {
+          "$ref": "#/$defs/nullable_number"
+        },
+        "pathPowerStr": {
+          "$ref": "#/$defs/nullable_string"
+        },
+        "path_dist": {
+          "$ref": "#/$defs/path_dist"
+        },
+        "pathDist": {
+          "$ref": "#/$defs/path_dist"
+        },
+        "point_cost": {
+          "$ref": "#/$defs/nullable_integer"
+        },
+        "value_per_point": {
+          "$ref": "#/$defs/nullable_number"
+        },
+        "allocated": {
+          "type": "boolean"
+        },
+        "source_locator": {
+          "$ref": "#/$defs/non_empty_string"
+        },
+        "source_context": {
+          "type": "object",
+          "additionalProperties": true
+        },
+        "display_stat": {
+          "$ref": "#/$defs/display_stat"
+        },
+        "stats_or_supporting_text": {
+          "$ref": "#/$defs/string_array"
+        },
+        "metric_tags": {
+          "$ref": "#/$defs/string_array"
+        },
+        "facets": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": true
+          }
+        },
+        "matched_branch_axes": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": true
+          }
+        }
+      }
+    },
+    "path_dist": {
+      "type": [
+        "integer",
+        "string",
+        "null"
+      ]
+    },
+    "display_stat": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "stat",
+        "label",
+        "lower_is_better",
+        "percent_scaling"
+      ],
+      "properties": {
+        "stat": {
+          "$ref": "#/$defs/non_empty_string"
+        },
+        "label": {
+          "$ref": "#/$defs/non_empty_string"
+        },
+        "lower_is_better": {
+          "type": "boolean"
+        },
+        "percent_scaling": {
+          "type": "boolean"
+        }
+      }
+    },
+    "proof_ref": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "ref_id",
+        "ref_kind",
+        "locator",
+        "json_pointer",
+        "summary"
+      ],
+      "properties": {
+        "ref_id": {
+          "$ref": "#/$defs/non_empty_string"
+        },
+        "ref_kind": {
+          "$ref": "#/$defs/non_empty_string"
+        },
+        "locator": {
+          "$ref": "#/$defs/non_empty_string"
+        },
+        "json_pointer": {
+          "$ref": "#/$defs/non_empty_string"
+        },
+        "summary": {
+          "$ref": "#/$defs/non_empty_string"
+        }
+      }
+    },
+    "boundary": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "final_build_authority",
+        "final_tree_authority",
+        "passive_budget_authority",
+        "node_power_calculator_authority",
+        "publication_artifact_emitted"
+      ],
+      "properties": {
+        "final_build_authority": {
+          "type": "boolean",
+          "const": false
+        },
+        "final_tree_authority": {
+          "type": "boolean",
+          "const": false
+        },
+        "passive_budget_authority": {
+          "type": "boolean",
+          "const": false
+        },
+        "node_power_calculator_authority": {
+          "type": "boolean",
+          "const": false
+        },
+        "publication_artifact_emitted": {
+          "type": "boolean",
+          "const": false
+        }
+      }
+    }
+  }
+}

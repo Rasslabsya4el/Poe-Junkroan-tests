@@ -1,0 +1,325 @@
+{
+  "source": "Zizaran 3.28 Mirage league-starter build guides",
+  "league": "3.28 Mirage",
+  "collected": "2026-09-18",
+  "tree_versions": [
+    "3_27",
+    "3_28"
+  ],
+  "note": "Import codes fetched verbatim from pobb.in/<id>/raw, from pobb.in user paths (pobb.in/u/<user>/<slug>/raw) and from the Maxroll planner API (https://planners.maxroll.gg/profiles/poe/<id>, field data.pobCode). PoB tree_versions record the passive-tree data version the code actually targets; it lags the league when a patch shipped no tree change. '{n}' in a title is the author's own marker linking an item set / tree spec / skill set.",
+  "excluded": [
+    {
+      "title": "Summoner Necromancer (Poison Ranged Animate Weapon) ft. Helmbreaker",
+      "pob_url": [
+        "https://maxroll.gg/poe/pob/gm7x80au",
+        "https://maxroll.gg/poe/pob/5ny70a8p",
+        "https://maxroll.gg/poe/pob/8r1afp0g",
+        "https://maxroll.gg/poe/pob/54yj0yga"
+      ],
+      "youtube_url": "https://www.youtube.com/watch?v=_uWHZVHhY6A",
+      "reason": "Every Maxroll pob id in this video's description was re-saved in place for 3.29 (profile dates 2026-08-16 / 2026-08-30) and now decodes with treeVersion 3_29. The 3.28 code is not recoverable from these links; nothing saved."
+    }
+  ],
+  "builds": [
+    {
+      "slug": "champion_explosive_arrow",
+      "file": "champion_explosive_arrow.pob.txt",
+      "title": "Explosive Arrow Leaguestarter",
+      "class": "Duelist",
+      "ascendancy": "Champion",
+      "ascendancy_in_pob": "Champion",
+      "main_skill": "Explosive Arrow (Ballista Totem)",
+      "league": "3.28 Mirage",
+      "maxroll_url": "https://maxroll.gg/poe/build-guides/explosive-arrow-ballista-champion-league-starter",
+      "pob_url": "https://pobb.in/wqX03V81LO15",
+      "youtube_url": "https://www.youtube.com/watch?v=VNrQ01QjNGE",
+      "fetched": "2026-09-18",
+      "pob_build_level": 98,
+      "tree_versions": [
+        "3_27"
+      ],
+      "loadouts": {
+        "item_sets": [
+          "Splitting Steel Leveling",
+          "Useful leveling uniques",
+          "Early Game",
+          "Midgame",
+          "Endgame",
+          "Endgame - Replica Dragonfang"
+        ],
+        "specs": [
+          "Level 13",
+          "Level 32 - Normal Lab",
+          "Level 57 - Cruel Lab",
+          "Level 69 - Merciless Lab",
+          "Level 87 - Uber Lab (pre-annoint)",
+          "----ENDGAME----",
+          "Endgame",
+          "Endgame - Unnatural Instinct",
+          "Endgame - Unnatural Instinct + Cluster",
+          "Endgame - Replica Dragonfang"
+        ],
+        "skill_sets": [
+          "Level 1-12",
+          "Level 12-28",
+          "Level 28-38",
+          "Level 38+",
+          "Endgame",
+          "Endgame - Replica Dragonfang"
+        ]
+      },
+      "early_loadout": {
+        "item_set": "Early Game",
+        "spec": "Level 69 - Merciless Lab",
+        "skill_set": "Level 38+",
+        "level": 69,
+        "level_source": "spec title",
+        "linked_by": "inferred",
+        "spec_allocated_nodes": 99,
+        "gear_slots": {
+          "Belt": "RARE",
+          "Weapon 1": "RARE",
+          "Amulet": "RARE",
+          "Helmet": "RARE",
+          "Weapon 2": "RARE",
+          "Body Armour": "RARE",
+          "Ring 2": "RARE",
+          "Ring 1": "RARE",
+          "Boots": "RARE",
+          "Gloves": "RARE"
+        },
+        "uniques": {},
+        "flask_count": 5
+      }
+    },
+    {
+      "slug": "hierophant_kinetic_fusillade",
+      "file": "hierophant_kinetic_fusillade.pob.txt",
+      "title": "Kinetic Fusillade Ballista Hierophant Leaguestarter (w/ Palsteron)",
+      "class": "Templar",
+      "ascendancy": "Hierophant",
+      "ascendancy_in_pob": "Hierophant",
+      "main_skill": "Kinetic Fusillade (Ballista Totem)",
+      "league": "3.28 Mirage",
+      "maxroll_url": "https://maxroll.gg/poe/build-guides/kinetic-fusillade-ballista-hierophant-league-starter",
+      "pob_url": "https://pobb.in/MpDjiqpnP2sV",
+      "youtube_url": "https://www.youtube.com/watch?v=1sbXGxCGw9Y",
+      "fetched": "2026-09-18",
+      "pob_build_level": 94,
+      "tree_versions": [
+        "3_27"
+      ],
+      "loadouts": {
+        "item_sets": [
+          "A1",
+          "A3",
+          "EarlyMaps",
+          "BeforeAegis",
+          "AegisRespec",
+          "A4AfterRespec",
+          "Aspirational"
+        ],
+        "specs": [
+          "A1",
+          "A2",
+          "A3",
+          "A4BeforeRespec",
+          "A4AfterRespec",
+          "A5",
+          "A6",
+          "A7",
+          "A8",
+          "A9",
+          "A10",
+          "A10CritRespec",
+          "EarlyMaps",
+          "BeforeAegis",
+          "AegisRespec",
+          "Aspirational"
+        ],
+        "skill_sets": [
+          "A1",
+          "A3",
+          "A4AfterRespec",
+          "EarlyMaps",
+          "BeforeAegis",
+          "AegisRespec",
+          "Aspirational"
+        ]
+      },
+      "early_loadout": {
+        "item_set": "EarlyMaps",
+        "spec": "EarlyMaps",
+        "skill_set": "EarlyMaps",
+        "level": 90,
+        "level_source": "estimated from 123 allocated nodes",
+        "linked_by": "identical titles across all three set types",
+        "spec_allocated_nodes": 123,
+        "gear_slots": {
+          "Amulet": "RARE",
+          "Helmet": "RARE",
+          "Weapon 2": "RARE",
+          "Body Armour": "RARE",
+          "Gloves": "UNIQUE",
+          "Boots": "RARE",
+          "Ring 1": "RARE",
+          "Ring 2": "RARE",
+          "Weapon 1": "RARE",
+          "Belt": "RARE"
+        },
+        "uniques": {
+          "Gloves": "Doedre's Tenure"
+        },
+        "flask_count": 5
+      }
+    },
+    {
+      "slug": "hierophant_shock_nova_archmage",
+      "file": "hierophant_shock_nova_archmage.pob.txt",
+      "title": "Shock Nova Archmage Hierophant Leaguestarter (ft. Goratha)",
+      "class": "Templar",
+      "ascendancy": "Hierophant",
+      "ascendancy_in_pob": "Hierophant",
+      "main_skill": "Shock Nova (Archmage)",
+      "league": "3.28 Mirage",
+      "maxroll_url": null,
+      "pob_url": "https://pobb.in/HSNivp4Merib",
+      "youtube_url": "https://www.youtube.com/watch?v=UzdZpUlR7Ss",
+      "fetched": "2026-09-18",
+      "pob_build_level": 100,
+      "tree_versions": [
+        "3_27"
+      ],
+      "loadouts": {
+        "item_sets": [
+          "Early Game",
+          "Act 5",
+          "Act 10",
+          "Early Mapping",
+          "Red Maps/VoidStones",
+          "Red Maps/VoidStones EV/SUPPRESS",
+          "End Game Super Tanky Setup"
+        ],
+        "specs": [
+          "Early Game",
+          "Act 5",
+          "Act 8",
+          "Act 10",
+          "Early Mapping",
+          "Red Maps/VoidStones",
+          "Red Maps/VoidStones EV/SUPPRESS",
+          "End Game Super Tanky Setup"
+        ],
+        "skill_sets": [
+          "Early Game",
+          "Act 5",
+          "Act 10",
+          "Early Mapping",
+          "Red Maps/VoidStones",
+          "Red Maps/VoidStones EV/SUPPRESS",
+          "End Game Super Tanky Setup"
+        ]
+      },
+      "early_loadout": {
+        "item_set": "Early Mapping",
+        "spec": "Early Mapping",
+        "skill_set": "Early Mapping",
+        "level": 81,
+        "level_source": "estimated from 114 allocated nodes",
+        "linked_by": "identical titles; note his 'Early Game' set here is act 1, not maps",
+        "spec_allocated_nodes": 114,
+        "gear_slots": {
+          "Belt": "RARE",
+          "Weapon 1": "RARE",
+          "Amulet": "RARE",
+          "Helmet": "UNIQUE",
+          "Weapon 2": "RARE",
+          "Body Armour": "RARE",
+          "Gloves": "RARE",
+          "Boots": "RARE",
+          "Ring 1": "UNIQUE",
+          "Ring 2": "UNIQUE"
+        },
+        "uniques": {
+          "Helmet": "Mindspiral",
+          "Ring 1": "Foulborn Kikazaru",
+          "Ring 2": "Valako's Sign"
+        },
+        "flask_count": 3
+      }
+    },
+    {
+      "slug": "juggernaut_boneshatter",
+      "file": "juggernaut_boneshatter.pob.txt",
+      "title": "Boneshatter of Complex Trauma Juggernaut Leaguestarter",
+      "class": "Marauder",
+      "ascendancy": "Juggernaut",
+      "ascendancy_in_pob": "Juggernaut",
+      "main_skill": "Boneshatter of Complex Trauma",
+      "league": "3.28 Mirage",
+      "maxroll_url": "https://maxroll.gg/poe/build-guides/boneshatter-juggernaut-league-starter",
+      "pob_url": "https://maxroll.gg/poe/pob/6kaoo0ce",
+      "youtube_url": "https://www.youtube.com/watch?v=D79KG-lJoWU",
+      "fetched": "2026-09-18",
+      "pob_build_level": 99,
+      "tree_versions": [
+        "3_28"
+      ],
+      "loadouts": {
+        "item_sets": [
+          "^4Early Game {1}",
+          "^4Midgame {2}",
+          "^4Endgame {3,4,5}"
+        ],
+        "specs": [
+          "^2Level 12",
+          "^2Level 22",
+          "^2Level 32 - Normal Lab",
+          "^2Level 44",
+          "^2Level 54 - Cruel Lab",
+          "^2Level 60",
+          "^2Level 67 - Merc Lab & Respec",
+          "^4Early Game {1}",
+          "^4Midgame {2}",
+          "^4Endgame {3}",
+          "^4Endgame - Corrupted Soul {4}",
+          "^4Endgame - Delirious Bloodline {5}"
+        ],
+        "skill_sets": [
+          "^2Level 1 - 4",
+          "^2Level 4 - 12",
+          "^2Level 12 - 16",
+          "^2Level 16 - 24",
+          "^2Level 24 - 38",
+          "^2Level 38 - Maps",
+          "^4Early Game {1}",
+          "^4Endgame {2,3,4,5,6}"
+        ]
+      },
+      "early_loadout": {
+        "item_set": "^4Early Game {1}",
+        "spec": "^4Early Game {1}",
+        "skill_set": "^4Early Game {1}",
+        "level": 81,
+        "level_source": "estimated from 114 allocated nodes",
+        "linked_by": "author marker {1}",
+        "spec_allocated_nodes": 114,
+        "gear_slots": {
+          "Weapon 1": "RARE",
+          "Amulet": "RARE",
+          "Helmet": "RARE",
+          "Body Armour": "RARE",
+          "Gloves": "RARE",
+          "Boots": "RARE",
+          "Ring 1": "UNIQUE",
+          "Ring 2": "RARE",
+          "Belt": "RARE"
+        },
+        "uniques": {
+          "Ring 1": "Kaom's Sign"
+        },
+        "flask_count": 5
+      }
+    }
+  ]
+}

@@ -1,0 +1,1132 @@
+{
+ "version": 1,
+ "updated": "2026-09-19",
+ "about": "Правила по лодаутам: с какого лодаута система может использовать каждую систему игры и в каком объёме. Пустая ячейка наследует предыдущий лодаут. Источник правил — пользователь (матрица 19.09 и правки в чате); ячейки с пометкой «предположение» вписал лид, их нужно подтвердить.",
+ "loadouts": [
+  {
+   "id": "day1",
+   "name": "Day-1",
+   "sub": "карты до T10",
+   "level": "75-80",
+   "floors": {
+    "title": "Полы Day-1 (floors): значения из src/junkroan/optimizer/rails_default.json, переписаны вручную",
+    "lines": [
+     "Life >= 4500",
+     "PhysicalMaximumHitTaken >= 4700",
+     "FireMaximumHitTaken >= 14800",
+     "ColdMaximumHitTaken >= 14600",
+     "LightningMaximumHitTaken >= 16000",
+     "FireResist, ColdResist, LightningResist each >= 65",
+     "FireResist, ColdResist, LightningResist goal 75",
+     "ChaosResist: no floor",
+     "EffectiveMovementSpeedMod >= 1.2",
+     "MoMCastsAfterMaxHit >= 3",
+     "MoMHitFraction >= 0.8",
+     "sustain (recovery_over_cost) >= 0.85",
+     "self-degen (idle_recovery_over_life) >= 0.0"
+    ],
+    "objective": "CombinedDPS: цель оптимизации (objective), не пол; цель 375000 (targets.CombinedDPS в rails_default.json)"
+   }
+  },
+  {
+   "id": "t16",
+   "name": "T16",
+   "sub": "красные карты",
+   "level": "90-95"
+  },
+  {
+   "id": "endgame",
+   "name": "Endgame",
+   "sub": "боссы, босс-дроп",
+   "level": "95-100"
+  },
+  {
+   "id": "uber",
+   "name": "Uber-endgame",
+   "sub": "убер-боссы, T0",
+   "level": "97-100"
+  },
+  {
+   "id": "uber_plus",
+   "name": "Uber-endgame+",
+   "sub": "экстендер: +1 редкое свойство",
+   "level": "97-100"
+  },
+  {
+   "id": "mirror",
+   "name": "Mirror",
+   "sub": "без ограничений бюджета",
+   "level": "100"
+  }
+ ],
+ "categories": [
+  {
+   "id": "general",
+   "name": "Общие правила"
+  },
+  {
+   "id": "character",
+   "name": "Персонаж"
+  },
+  {
+   "id": "tree",
+   "name": "Дерево пассивок"
+  },
+  {
+   "id": "gems",
+   "name": "Гемы и сокеты"
+  },
+  {
+   "id": "items",
+   "name": "Предметы: базы, редкие, крафт"
+  },
+  {
+   "id": "uniques",
+   "name": "Уники"
+  },
+  {
+   "id": "jewels",
+   "name": "Джевелы: общие правила"
+  },
+  {
+   "id": "unique_jewels",
+   "name": "Уник-джевелы по одному"
+  },
+  {
+   "id": "other_gear",
+   "name": "Фласки, тинктуры, прочее"
+  },
+  {
+   "id": "config",
+   "name": "Конфиг и окружение"
+  },
+  {
+   "id": "never",
+   "name": "Нет в игре / не используем"
+  }
+ ],
+ "entries": [
+  {
+   "id": "g-inherit",
+   "category": "general",
+   "scope": "broad",
+   "status": "base",
+   "title": "Лодаут = самый ранний этап, с которого система разрешена",
+   "rules": {
+    "day1": "каждый следующий лодаут наследует всё, что разрешено в предыдущем"
+   },
+   "explain": "Лестница: Day-1 (T10) -> T16 -> Endgame -> Uber-endgame -> Uber-endgame+ -> Mirror. Лодаут — это пакет рейлов: бюджетные ручки, шаблоны гира, выключатели систем, цель. Пока считаем только боссинг; маппинг позже как набор порогов комфорта, а не второе число DPS.",
+   "source": "чат 19.09"
+  },
+  {
+   "id": "g-useful-n",
+   "category": "general",
+   "scope": "broad",
+   "status": "base",
+   "title": "Что значит «N полезных свойств»",
+   "rules": {
+    "day1": "засчитываем ровно N полезных строк; остальные полезные строки игнорируем (ноль); негативные строки не игнорируем никогда"
+   },
+   "explain": "Пример пользователя: у предмета две строки, каждая роллится от минуса до плюса. «+10 хп / +20 мана» при правиле «1 полезное» проходит (хп засчитано, мана проигнорирована). «+10 хп / -20 мана» не проходит: негатив нельзя списать как «вторую, проигнорированную» строку. Для системы: строка вне N засчитанных моделируется нулём, если она полезная или может роллиться неотрицательной, и своим реальным значением, если это недостаток.",
+   "source": "чат 19.09, 4-й проход"
+  },
+  {
+   "id": "g-uber-plus",
+   "category": "general",
+   "scope": "broad",
+   "status": "open",
+   "title": "Uber-endgame+: экстендер между Uber-endgame и Mirror",
+   "rules": {
+    "uber_plus": "то же, что Uber-endgame, плюс одно «лишнее» редкое свойство там, где оно полностью меняет билд и цену"
+   },
+   "assumed": [
+    "uber_plus"
+   ],
+   "explain": "Пользователь: «экстендер uber-endgame лодаута для случаев, где, к примеру, правило +1 стат у джевела может полностью менять билд и его стоимость / трудность экваера». Пока ячейки этого лодаута пустые (наследуют Uber-endgame), кроме мест, где пользователь уже намекал на промежуточную ступень: Bound by Destiny, таймлесы, Voices.",
+   "question": "Название лодаута рабочее. Какие записи, кроме отдельных уник-джевелов, должны отличаться в нём от Uber-endgame (джевелы 3 -> 4 мода? eldritch T2?)",
+   "source": "чат 19.09",
+   "user_note": "Ответ на вопрос - я в каждом пункте в этой странице распишу то что нуждается в уберэндгейм+ лодауте"
+  },
+  {
+   "id": "g-rarity",
+   "category": "general",
+   "scope": "broad",
+   "status": "rule",
+   "title": "Редкость открытого мода на редком предмете",
+   "rules": {
+    "day1": "доля мода в пуле < 0.2% — не берём вообще; < 1% — стоит двух строк шаблона"
+   },
+   "explain": "«+1 ко всем спелл-гемам» (0.07% пула префиксов на Void Sceptre ilvl 76) — не берём; «+1 к огненным / холодным / молниевым спелл-гемам» (0.37%) — занимает две строки. Фиксированные строки лайфа и реза не вытесняются. Для лодаутов выше Day-1 — решается вместе с эндгейм-итемизацией.",
+   "machine": {
+    "open_mod_never_below_share": 0.002,
+    "open_mod_two_lines_below_share": 0.01
+   },
+   "source": "чат 19.09 (D79)",
+   "user_note": "Это отдельная тема, пока в беклог. Могу лишь сказать что Миррор тир должен иметь рарки с 6 перфект модами (необязательно т1, но 6 мост ипмактфул)"
+  },
+  {
+   "id": "c-level",
+   "category": "character",
+   "scope": "broad",
+   "status": "rule",
+   "title": "Уровень персонажа и квестовые поинты",
+   "title_en": "Character level and quest passive points",
+   "rules": {
+    "day1": "75-80",
+    "t16": "90-95",
+    "endgame": "95-100",
+    "uber": "97-100",
+    "mirror": "100",
+    "uber_plus": "99-100"
+   },
+   "explain": "Квесты всегда на максимум, бандиты — kill all. Диапазон, а не точка: система должна закончить дерево на эффективной точке, а не брать два бессмысленных малых нода ради ровного числа.",
+   "machine": {
+    "level": {
+     "day1": [
+      75,
+      80
+     ],
+     "t16": [
+      90,
+      95
+     ],
+     "endgame": [
+      95,
+      100
+     ],
+     "uber": [
+      97,
+      100
+     ],
+     "uber_plus": [
+      97,
+      100
+     ],
+     "mirror": [
+      100,
+      100
+     ]
+    }
+   },
+   "source": "матрица 19.09; uber — 3-й проход"
+  },
+  {
+   "id": "c-class",
+   "category": "character",
+   "scope": "broad",
+   "status": "base",
+   "title": "Класс и стартовая точка",
+   "title_en": "Character class and class start",
+   "rules": {
+    "day1": "определяется скелетом, по лодаутам не меняется"
+   },
+   "explain": "Исключение — Сционка: её сабкласс может давать вторую стартовую точку; это должно работать корректно с Day-1.",
+   "source": "матрица 19.09"
+  },
+  {
+   "id": "c-ascendancy",
+   "category": "character",
+   "scope": "broad",
+   "status": "rule",
+   "title": "Асенденси и альтернативные асенденси",
+   "title_en": "Ascendancy and alternate ascendancy",
+   "rules": {
+    "day1": "основные асенденси",
+    "t16": "как дей 1",
+    "endgame": "+ альтрнативные асенденси"
+   },
+   "source": "матрица 19.09"
+  },
+  {
+   "id": "c-bandits",
+   "category": "character",
+   "scope": "broad",
+   "status": "base",
+   "title": "Бандиты",
+   "title_en": "Bandit quest choice",
+   "rules": {
+    "day1": "kill all"
+   },
+   "machine": {
+    "bandit": {
+     "day1": "None"
+    }
+   },
+   "source": "матрица 19.09",
+   "user_note": "Я крайне сомневаюсь, но что если какие - то бандит эффекты выгоднее поинта даже в эндгейме, а мы их вот так убираем хардкодом? Надо будет это проверить в будущем когда будут готовы лодауты и заревизитить решение по бандитам. Необязательно ждать пока дойдем до миррор лодаута, достаточно закрыть эндгейм. В беклог"
+  },
+  {
+   "id": "c-pantheon",
+   "category": "character",
+   "scope": "broad",
+   "status": "settled",
+   "title": "Пантеон",
+   "title_en": "Pantheon major/minor gods",
+   "rules": {
+    "day1": "нет",
+    "t16": "все силы и апгрейды"
+   },
+   "explain": "Ресёрч сделан (вики, 3.25-3.29): карта каждого апгрейда — данные текущей лиги, тиры прыгают (Yugul: T15 / T1 / - / T4 / T7). В 3.29 выше T10 лежат: Arakaali 3 (Arid Lake T11), Lunaris 3 (Beach T13), Ralakesh (Fields T14), Ryslatha (Infested Valley T15), Solaris 3 (Volcano T11), Brine King 3 (Mineral Pools T12). Нужен Divine Vessel. Таблица: docs/rulebook/2026-09-19-bench-and-pantheon-unlocks.md.",
+   "user_note": "интересно было бы чтобы ты спарсил с каких мап/тиров открываются определенные пантеоны... ггг вроде каждую лигу при смене мап в атласе балансят чтобы было примерно в одинаковых тирах. Но не уверен, это надо проводить ресерч между несколькими лигами (5 пускай)\nПосмотрел на ресерч, не думал что так сильно прыгают тиры. Пускай тогда у нас любые пантеоны будут только с т16",
+   "source": "матрица 19.09; ресёрч вики 19.09"
+  },
+  {
+   "id": "t-nodes",
+   "category": "tree",
+   "scope": "broad",
+   "status": "base",
+   "title": "Обычные ноды, нотаблы, кистоуны, мастери",
+   "title_en": "Ordinary passive nodes, notables, keystones, masteries",
+   "rules": {
+    "day1": "без ограничений по лодауту"
+   },
+   "explain": "Одно ограничение Day-1 из шаблонов гира: дерево может взять не больше ОДНОГО нода +30 к атрибуту ради требований; остальное — с гира.",
+   "machine": {
+    "attribute_plus30_nodes_max": {
+     "day1": 1
+    }
+   },
+   "source": "матрица 19.09; D79"
+  },
+  {
+   "id": "t-anoint",
+   "category": "tree",
+   "scope": "broad",
+   "status": "rule",
+   "title": "Аноинты (масла)",
+   "title_en": "Anointments and oil allocation",
+   "rules": {
+    "day1": "масла до Black включительно (дроп-уровень 1-68): 208 нотаблов",
+    "t16": "+ Opalescent, Silver: ещё 143 нотабла",
+    "endgame": "+ Golden (исключение: редкость) и Prismatic: ещё 121"
+   },
+   "machine": {
+    "oil_max": {
+     "day1": "Black",
+     "t16": "Silver",
+     "endgame": "Prismatic"
+    }
+   },
+   "explain": "Рецепты — из данных дерева PoB (472), дроп-уровни масел — вики; они не меняются годами, перепроверять каждую лигу не нужно. Подробно: docs/rulebook/2026-09-19-anoint-oils.md.",
+   "source": "матрица 19.09; чат (Golden с эндгейма как исключение)"
+  },
+  {
+   "id": "t-tattoos",
+   "category": "tree",
+   "scope": "broad",
+   "status": "rule",
+   "title": "Тату",
+   "title_en": "Tattoos",
+   "rules": {
+    "t16": "тату 3-го тира и ниже",
+    "endgame": "2-го тира и ниже",
+    "uber": "любые"
+   },
+   "explain": "Тиры — из статьи вики о тату (тесты игроков, могут меняться) -> обновлять раз в лигу (docs/DATA_FRESHNESS.md). Данных в системе пока нет.",
+   "source": "чат 19.09, 2-й проход"
+  },
+  {
+   "id": "t-cluster",
+   "category": "tree",
+   "scope": "broad",
+   "status": "rule",
+   "title": "Кластерные джевелы (редкие)",
+   "title_en": "Cluster jewels",
+   "rules": {
+    "day1": "нет",
+    "t16": "large / medium, не меньше 12 / 6 пассивок",
+    "endgame": "все типы, любое число пассивок"
+   },
+   "machine": {
+    "sizes": {
+     "day1": [],
+     "t16": ["large", "medium"],
+     "endgame": "all"
+    },
+    "passives": {
+     "large": {
+      "day1": 0,
+      "t16": 12,
+      "endgame": null
+     },
+     "medium": {
+      "day1": 0,
+      "t16": 6,
+      "endgame": null
+     }
+    }
+   },
+   "explain": "ilvl баз — из общего рейла баз. Уник-кластеры (Megalomaniac, Voices) — отдельными записями в уник-джевелах.",
+   "source": "матрица 19.09"
+  },
+  {
+   "id": "t-timeless",
+   "category": "tree",
+   "scope": "broad",
+   "status": "open",
+   "title": "Timeless-джевелы (и новые abyss-джевелы 3.29 с той же механикой)",
+   "title_en": "Timeless jewels",
+   "rules": {
+    "t16": "берём только ради кистоуна; изменившиеся в радиусе ноды не засчитываем",
+    "endgame": "кистоун + 3 нотабла + 5 малых в радиусе",
+    "uber": "промежуточная доля между Endgame и Mirror — не задана",
+    "mirror": "кистоун + 80% нотаблов и малых в радиусе"
+   },
+   "assumed": [
+    "uber"
+   ],
+   "explain": "Кистоун не всегда обязателен. Тип / база джевела на редкость не влияют — влияет то, что на нём нароллилось. Сиды расшифрованы (есть git-репо декодера): нужна модель вероятности выбранного таймлеса, чтобы система понимала, засчитывать его или нет (чистый кистоун — вероятность 100%). Пользователь: цифры от Endgame и выше «чисто из головы, возможно слишком сильные — потенциальная уязвимость».",
+   "question": "Поднять в момент старта Endgame-лодаута: числа, модель вероятности, декодер сидов; доля для Uber-endgame и Uber-endgame+.",
+   "source": "матрица 19.09; чат 2-й и 3-й проходы; форма джевелов"
+  },
+  {
+   "id": "gm-active",
+   "category": "gems",
+   "scope": "broad",
+   "status": "base",
+   "title": "Активные скилл-гемы",
+   "title_en": "Active skill gems",
+   "rules": {
+    "day1": "без ограничений по лодауту"
+   },
+   "source": "матрица 19.09"
+  },
+  {
+   "id": "gm-links",
+   "category": "gems",
+   "scope": "broad",
+   "status": "rule",
+   "title": "Саппорты и состав линков",
+   "title_en": "Support gems and link composition",
+   "rules": {
+    "day1": "4-сокетные предметы — 4L; 5+-сокетные — 5L (если таких два, то один 5L, второй 4L)",
+    "t16": "один 6L",
+    "endgame": "6L сколько угодно",
+    "uber": "exceptional supports",
+    "uber_plus": "Awakened exceptional supports"
+   },
+   "source": "матрица 19.09"
+  },
+  {
+   "id": "gm-level",
+   "category": "gems",
+   "scope": "broad",
+   "status": "rule",
+   "title": "Уровень и качество гемов",
+   "title_en": "Gem level and gem quality",
+   "rules": {
+    "day1": "18/0 гемы",
+    "t16": "2 20/20 гемов макс, остальные 20/0",
+    "endgame": "21/0 ИЛИ 20/20",
+    "uber": "21/20 ИЛИ 20/23 — «это всегда выбор»",
+    "mirror": "все гемы могут быть 21/23",
+    "uber_plus": "3 самых влияющих гема могут быть 21/23"
+   },
+   "explain": "Для гемов с максимальным уровнем ниже 20 — «+1 уровень», а не 21. До D23 гемы 20/20 завышали результат до 70%: сравнивать билды можно только на равных уровнях гемов.",
+   "machine": {
+    "gem_level": {
+     "day1": 18,
+     "t16": 20
+    },
+    "gem_quality": {
+     "day1": 0
+    }
+   },
+   "source": "матрица 19.09; 2-й проход"
+  },
+  {
+   "id": "gm-vaal",
+   "category": "gems",
+   "scope": "broad",
+   "status": "rule",
+   "title": "Vaal-версии гемов",
+   "title_en": "Vaal skill-gem variant",
+   "rules": {
+    "day1": "18/0",
+    "t16": "20/0",
+    "endgame": "20/20",
+    "mirror": "21/20 или 20/23"
+   },
+   "machine": {
+    "vaal_gem": {
+     "day1": {"level": 18, "quality": 0},
+     "t16": {"level": 20, "quality": 0},
+     "endgame": {"level": 20, "quality": 20},
+     "mirror": [{"level": 21, "quality": 20}, {"level": 20, "quality": 23}]
+    }
+   },
+   "source": "матрица 19.09"
+  },
+  {
+   "id": "gm-transfigured",
+   "category": "gems",
+   "scope": "broad",
+   "status": "rule",
+   "title": "Трансфигурированные гемы",
+   "title_en": "Transfigured skill-gem variant",
+   "rules": {
+    "day1": "разрешены; уровень / качество — как у Vaal-версий"
+   },
+   "machine": {
+    "transfigured_gem": {
+     "day1": {"level": 18, "quality": 0}
+    }
+   },
+   "explain": "Оба вида гемов сложно добываются, поэтому лестница уровней и качества общая с Vaal.",
+   "source": "матрица 19.09"
+  },
+  {
+   "id": "gm-awakened",
+   "category": "gems",
+   "scope": "broad",
+   "status": "rule",
+   "title": "Awakened и другие исключительные саппорты",
+   "title_en": "Awakened and other exceptional supports",
+   "rules": {
+    "endgame": "разрешены; уровень / качество — как у Vaal-версий, относительно их собственного максимума"
+   },
+   "explain": "У awakened / greater и т. п. максимальный уровень обычно не 20.",
+   "source": "матрица 19.09"
+  },
+  {
+   "id": "gm-sockets",
+   "category": "gems",
+   "scope": "broad",
+   "status": "rule",
+   "title": "Цвета сокетов (3.29: цветной сокет = +10% качества гема)",
+   "title_en": "Item sockets, links, and socket colours",
+   "rules": {
+    "day1": "2 цветных сокета",
+    "t16": "4",
+    "endgame": "8",
+    "mirror": "сколько угодно"
+   },
+   "machine": {
+    "coloured_max": {
+     "day1": 2,
+     "t16": 4,
+     "endgame": 8,
+     "mirror": null
+    }
+   },
+   "explain": "С 3.29 сокеты по умолчанию белые и принимают любой гем, а цвет даёт +10% качества. Число сокетов и линков — в записи о линках.",
+   "source": "матрица 19.09"
+  },
+  {
+   "id": "i-bases",
+   "category": "items",
+   "scope": "broad",
+   "status": "settled",
+   "title": "Базы предметов и item level",
+   "title_en": "Item bases and ordinary implicits",
+   "rules": {
+    "day1": "базы до 70; ilvl: loot gear 70, template (wishlist) gear 72, оружие 76",
+    "t16": "до 83",
+    "endgame": "86+"
+   },
+   "machine": {
+    "item_level_max": {
+     "day1": 70,
+     "t16": 83
+    },
+    "template_item_level": {
+     "day1": 72
+    },
+    "weapon_item_level": {
+     "day1": 76
+    },
+    "base_level_max": {
+     "day1": 70
+    }
+   },
+   "source": "матрица 19.09"
+  },
+  {
+   "id": "i-day1-templates",
+   "category": "items",
+   "scope": "broad",
+   "status": "rule",
+   "title": "Редкие предметы Day-1: шаблоны",
+   "title_en": "Day-1 gear templates (D79)",
+   "rules": {
+    "day1": "броня и бижутерия: лайф + рез T3 + одна открытая строка или бенч-крафт; ботинки: лайф + рез + скорость бега; оружие: 3 строки (открытая, открытая, открытая-или-крафт)",
+    "t16": "не задано — обсуждается при старте лодаута"
+   },
+   "assumed": [
+    "t16"
+   ],
+   "explain": "Лайф — медианные тиры с побов Туада по слотам (нагрудник T6, шлем T3, перчатки T2, ботинки T2, пояс T3, амулет T3, кольцо T2, щит / колчан T3). Рез T3 (36-41%) на каждом слоте; до ДВУХ предметов могут нести одну дополнительную строку реза T3 — только если иначе билд не капается. На лайф-билдах лайф на всех предметах, где он возможен, без исключений; для ES — аналогично. Гир должен подсвечивать, что игроку крафтить / покупать (shopping list), и считаться быстрее 3 минут на билд. Шаблоны — данные: src/junkroan/mechanics/day1_gear_templates.json.",
+   "question": "Эндгейм-итемизация (рекомбинаторы, тройной T1, эффективные пути крафта) — отдельный разговор до рейлов; шаблоны Day-1 не переносятся сменой тиров.",
+   "source": "чат 19.09 (D79 и поправка)"
+  },
+  {
+   "id": "i-rare-mods",
+   "category": "items",
+   "scope": "broad",
+   "status": "base",
+   "title": "Обычные моды редких предметов и их тиры",
+   "title_en": "Regular rare explicit modifiers and tiers",
+   "rules": {
+    "day1": "считает система от рейлов уровня / ilvl"
+   },
+   "source": "матрица 19.09"
+  },
+  {
+   "id": "i-quality",
+   "category": "items",
+   "scope": "broad",
+   "status": "rule",
+   "title": "Качество предметов и катализаторы",
+   "title_en": "Item quality and jewellery catalysts",
+   "rules": {
+    "endgame": "катализаторы до 20%",
+    "mirror": "качество предметов 27%",
+    "t16": "качество предметов 20%"
+   },
+   "source": "матрица 19.09"
+  },
+  {
+   "id": "i-bench",
+   "category": "items",
+   "scope": "broad",
+   "status": "settled",
+   "title": "Бенч-крафты",
+   "title_en": "Crafting-bench modifiers",
+   "rules": {
+    "day1": "рецепты из актов, лабиринта и карт <= T10 текущей лиги; крафты за Exalted Orb — нет (только с T16)",
+    "t16": "рецепты со всех обычных карт, крафты за любого кол-во экзальтов только начиная отсюда",
+    "endgame": "мета-крафты с уник-карт (мультимод, prefixes / suffixes cannot be changed, cannot roll attack / caster)"
+   },
+   "explain": "Ресёрч сделан (вики, Cargo-таблицы): 829 опций — 79 открыты сразу, 187 в актах, 18 в лабиринте, 422 на картах T1-10 и 123 на картах T11-16 (3.29). Тир карты рецепта НЕ стабилен: из 82 карт с рецептами 49 за пять лиг побывали по обе стороны линии T10, только 10 всегда оставались <= T10 -> это данные лиги, обновляются каждую лигу. В 3.29 выше T10 лежат, например: скорость атаки / каста 3 ранга (Residence T13), spell damage 4 ранга (Malformation T12), phys damage 4 ранга (Foundry T11), миньонские крафты на оружии (Orchard T11), +1 min charges (T12), крит 3 ранга (Belfry T14). Плоский лайф 5 ранга — Sulphur Vents T7 (в 3.27 был T15). С 3.26 veiled-крафты — тоже рецепты на картах. Таблица: docs/rulebook/2026-09-19-bench-and-pantheon-unlocks.md. В системе с 19.09 (D81): рейл gear.bench.max_map_tier = 10 для Day-1; замер по кампании new18-rules: 21 из 342 крафтов (6%) были рецептами с карт T11-16 — теперь запрещены; крафтов за Exalted / Divine система не брала ни разу (0 из 342).",
+   "user_note": "какие то открываются в актах, а какие то на мапах... Было бы очень круто если система это учитывала. Что касается бенчкрафтов с уник мап (мультимод, преф/суф кеннот би чендж и тд) - это эндгейм",
+   "source": "матрица 19.09; ресёрч вики 19.09",
+   "machine": {
+    "bench_max_map_tier": {
+     "day1": 10,
+     "t16": 16
+    }
+   }
+  },
+  {
+   "id": "i-essence",
+   "category": "items",
+   "scope": "broad",
+   "status": "rule",
+   "title": "Эссенции",
+   "title_en": "Essence-forced modifiers",
+   "rules": {
+    "t16": "все, кроме высшего тира",
+    "endgame": "высший тир (на вики: T8 Deafening) и Delirium / Hysteria / Insanity / Horror"
+   },
+   "source": "матрица 19.09"
+  },
+  {
+   "id": "i-veiled",
+   "category": "items",
+   "scope": "broad",
+   "status": "rule",
+   "title": "Veiled-моды",
+   "title_en": "Veiled modifiers",
+   "rules": {
+    "t16": "разрешены"
+   },
+   "explain": "С 3.26 veiled-крафты открываются объектами-рецептами на картах (вики), так что часть из них регулируется записью о бенч-крафтах.",
+   "source": "матрица 19.09"
+  },
+  {
+   "id": "i-fractured",
+   "category": "items",
+   "scope": "broad",
+   "status": "rule",
+   "title": "Fractured-мод",
+   "title_en": "Fractured explicit modifier",
+   "rules": {
+    "endgame": "разрешён"
+   },
+   "source": "матрица 19.09"
+  },
+  {
+   "id": "i-influence",
+   "category": "items",
+   "scope": "broad",
+   "status": "rule",
+   "title": "Influence-моды",
+   "title_en": "Influence modifier pools",
+   "rules": {
+    "endgame": "одна инфлюенса",
+    "uber": "две инфлюенсы на предмете (Awakener's Orb)"
+   },
+   "source": "матрица 19.09; 3-й проход"
+  },
+  {
+   "id": "i-heist-bases",
+   "category": "items",
+   "scope": "narrow",
+   "status": "rule",
+   "title": "Базы только из Heist (Helical Ring, Focused Amulet и т. п.)",
+   "title_en": "Heist-only bases",
+   "rules": {
+    "uber": "разрешены"
+   },
+   "source": "чат 19.09, 3-й проход"
+  },
+  {
+   "id": "i-eldritch",
+   "category": "items",
+   "scope": "broad",
+   "status": "open",
+   "title": "Eldritch-имплиситы (6 тиров)",
+   "title_en": "Eldritch implicits",
+   "rules": {
+    "t16": "T6 (нижний)",
+    "endgame": "T6-T4",
+    "uber": "до T3",
+    "mirror": "остальные; на одном предмете максимум один T1 и один T2"
+   },
+   "question": "T2 на Uber-endgame (или на Uber-endgame+) — открыто.",
+   "source": "матрица 19.09; 2-й проход"
+  },
+  {
+   "id": "i-delve",
+   "category": "items",
+   "scope": "broad",
+   "status": "rule",
+   "title": "Delve-моды",
+   "title_en": "Delve modifiers",
+   "rules": {
+    "endgame": "разрешены"
+   },
+   "source": "матрица 19.09"
+  },
+  {
+   "id": "i-beast",
+   "category": "items",
+   "scope": "broad",
+   "status": "rule",
+   "title": "Beastcraft-моды",
+   "title_en": "Beastcraft modifiers",
+   "rules": {
+    "endgame": "разрешены"
+   },
+   "source": "матрица 19.09"
+  },
+  {
+   "id": "i-corruption",
+   "category": "items",
+   "scope": "broad",
+   "status": "rule",
+   "title": "Corruption-имплиситы",
+   "title_en": "Corruption implicits",
+   "rules": {
+    "endgame": "только на magic-предметах (1 префикс + 1 суффикс + corruption) — для механик вроде The Adorned, на любом слоте",
+    "mirror": "на любых предметах; джевел: 3 мода + corruption"
+   },
+   "source": "матрица 19.09; 2-й проход"
+  },
+  {
+   "id": "i-synth",
+   "category": "items",
+   "scope": "broad",
+   "status": "rule",
+   "title": "Synthesised-имплиситы",
+   "title_en": "Synthesised implicits",
+   "rules": {
+    "endgame": "только synthesised-уники с боссов Synthesis (по правилам уников)",
+    "mirror": "не-уник synthesised-предмет"
+   },
+   "explain": "Проверено на вики: из игры не убраны. «Currently, synthesised items can only be found as unique item drops from Synthesis bosses»; не-уник получается только порчей такого уника.",
+   "user_note": "По моему их убрали из игры. Но если нет то миррор",
+   "source": "матрица 19.09; проверка вики 19.09"
+  },
+  {
+   "id": "i-talismans",
+   "category": "items",
+   "scope": "narrow",
+   "status": "rule",
+   "title": "Редкие талисманы",
+   "title_en": "Rare talismans",
+   "rules": {
+    "t16": "требование уровня 1",
+    "endgame": "требование уровня 1-28",
+    "uber": "36+"
+   },
+   "explain": "Деление по требованию уровня талисмана (вики). Данных в системе пока нет.",
+   "source": "чат 19.09, 3-й проход"
+  },
+  {
+   "id": "u-tiers",
+   "category": "uniques",
+   "scope": "broad",
+   "status": "settled",
+   "title": "Уники: тиры редкости и источник дропа",
+   "title_en": "Unique items and availability source class",
+   "rules": {
+    "day1": "T5",
+    "t16": "до T4",
+    "endgame": "до T1 включительно; + босс-дроп",
+    "uber": "до T0; + дроп только с убер-боссов; класс Mageblood / Headhunter, vestigial уники не выше т3 и энчант от вестиджл уника не выше т3",
+    "mirror": "T0, vestigial уники любого тира и энчант от вестиджл уника любого тира",
+    "uber_plus": "vestigial уники не выше т2 и энчант от вестиджл уника не выше т2"
+   },
+   "explain": "Тиры — вики (drop-rate tier), обновляются раз в лигу. Требование уровня уника <= 70 на Day-1. Пользователь надеется, что с шаблонами гира система реже будет брать уник без резов / лайфа: уник должен сравниваться с шаблонной редкой вещью, с пересчётом резов по всему сету.",
+   "source": "матрица 19.09; 2-й проход",
+   "user_note": "https://www.poewiki.net/wiki/Vestigial_unique_item, но поб пока что вроде не показывает вестиджл версии уников. У каждого уника есть пул модов которые можно завестиджилить (перенести на другой уник в качестве имплисита с изменением эффекта аффикса, в этой статье описаны все моды переноса). Будет круто если система сможет находить неочевидные сильные вестидж уники которые не редкие, скажем т5/т4 или типо того. Но это супер комплексия, ты количество уников возводишь в квадрат как я понимаю для расчета. Также здесь надо разобрать все остальные механики обтейна уников помимо боссдроп и глобал дроп. К примеру рецепт онли уники надо в частном порядке обсуждать, там все зависит от редкости айтемов в рецепте. "
+  },
+  {
+   "id": "u-foulborn",
+   "category": "uniques",
+   "scope": "broad",
+   "status": "rule",
+   "title": "Foulborn / мутировавшие моды уников",
+   "title_en": "Foulborn / mutated unique modifiers",
+   "rules": {
+    "t16": "разрешены"
+   },
+   "source": "матрица 19.09"
+  },
+  {
+   "id": "j-regular",
+   "category": "jewels",
+   "scope": "broad",
+   "status": "rule",
+   "title": "Обычные редкие джевелы",
+   "title_en": "Regular jewels",
+   "rules": {
+    "day1": "2 джевела по 1 полезному моду",
+    "t16": "сколько угодно джевелов по 1 моду",
+    "endgame": "по 2 мода",
+    "uber": "по 3 мода",
+    "mirror": "4 мода или 3 мода + corruption-имплисит"
+   },
+   "explain": "«Моды» здесь — полезные свойства в смысле общего правила «N полезных свойств».",
+   "machine": {
+    "useful_mods": {
+     "day1": 1,
+     "t16": 1,
+     "endgame": 2,
+     "uber": 3,
+     "mirror": 4
+    },
+    "count_max": {
+     "day1": 2
+    }
+   },
+   "source": "матрица 19.09; 2-й проход"
+  },
+  {
+   "id": "j-abyss",
+   "category": "jewels",
+   "scope": "broad",
+   "status": "rule",
+   "title": "Abyss-джевелы",
+   "title_en": "Abyss jewels",
+   "rules": {
+    "t16": "как обычные джевелы (1 мод)",
+    "endgame": "2 мода",
+    "uber": "3 мода",
+    "mirror": "4 мода или 3 + corruption"
+   },
+   "source": "матрица 19.09"
+  },
+  {
+   "id": "j-forbidden",
+   "category": "jewels",
+   "scope": "narrow",
+   "status": "rule",
+   "title": "Forbidden Flame / Forbidden Flesh",
+   "title_en": "Forbidden jewels",
+   "rules": {
+    "uber": "разрешены"
+   },
+   "explain": "Босс-дроп, не убер («если не ошибаюсь»), но относятся к Uber-endgame.",
+   "source": "чат 19.09, 3-й проход"
+  },
+  {
+   "id": "o-flasks",
+   "category": "other_gear",
+   "scope": "broad",
+   "status": "rule",
+   "title": "Фласки: базы, моды, энчанты",
+   "title_en": "Flask bases, modifiers, and flask enchantments",
+   "rules": {
+    "day1": "базы и моды по общему рейлу ilvl",
+    "endgame": "+ энчанты и качество"
+   },
+   "machine": {
+    "item_level_max": {
+     "day1": 70
+    },
+    "base_level_max": {
+     "day1": 70
+    }
+   },
+   "source": "матрица 19.09"
+  },
+  {
+   "id": "o-tinctures",
+   "category": "other_gear",
+   "scope": "broad",
+   "status": "rule",
+   "title": "Тинктуры",
+   "title_en": "Tinctures",
+   "rules": {
+    "day1": "разрешены",
+    "endgame": "+ качество"
+   },
+   "machine": {
+    "tinctures": {
+     "day1": true
+    }
+   },
+   "source": "матрица 19.09"
+  },
+  {
+   "id": "o-runegrafts",
+   "category": "other_gear",
+   "scope": "broad",
+   "status": "rule",
+   "title": "Рунеграфты",
+   "title_en": "Runegrafts",
+   "rules": {
+    "endgame": "T6 и T5",
+    "uber": "T4, T3, T2",
+    "mirror": "T1 и выше"
+   },
+   "explain": "«Never» в форме было ошибкой (спутаны с Grafts лиги Keepers). Тиры — со страницы вики Runegraft (массовые отчёты игроков) -> обновлять раз в лигу. Данных в системе пока нет.",
+   "source": "чат 19.09, 3-й проход"
+  },
+  {
+   "id": "o-magic",
+   "category": "other_gear",
+   "scope": "narrow",
+   "status": "rule",
+   "title": "Magic-предметы (для механик вроде The Adorned)",
+   "title_en": "Magic items",
+   "rules": {
+    "endgame": "1 префикс + 1 суффикс + corruption-имплисит, на любом слоте"
+   },
+   "source": "чат 19.09, 2-й проход"
+  },
+  {
+   "id": "o-minions",
+   "category": "other_gear",
+   "scope": "broad",
+   "status": "open",
+   "title": "Миньоны: тип, скилл, выбор спектров",
+   "title_en": "Minion type, minion skill, and spectre choice",
+   "rules": {
+    "day1": "тип и скилл считаются системой, не рейл лодаута"
+   },
+   "explain": "Моды экипировки для миньонов — тоже не рейл, а работа подборщика гира.",
+   "question": "Спектры — отдельная большая задача (парсить poedb, считать цифры спектров, понимать, когда какой доступен). Поднять при старте Endgame-лодаута.",
+   "source": "матрица 19.09"
+  },
+  {
+   "id": "cf-state",
+   "category": "config",
+   "scope": "broad",
+   "status": "base",
+   "title": "Боевое состояние и состояние врага (конфиг PoB)",
+   "title_en": "Configurable combat state and enemy state",
+   "rules": {
+    "day1": "одинаково во всех лодаутах: консервативная полоса требует доказательства"
+   },
+   "explain": "Вердикты пользователя: заряды / бафы «on kill», «on block» не считаются против босса; аилменты — внутри рамп-бюджета 2.5 с; хиты тотемов / ловушек / мин — не хиты игрока; баф, который снимается использованием скилла (Withering Step, Phase Run), в бою не держится. Отдельная метрика «pinnacle boss ramp» 10 с (утверждено, #27) — только в отчёте.",
+   "source": "матрица 19.09; DECISIONS D74-D80"
+  },
+  {
+   "id": "cf-map-mods",
+   "category": "config",
+   "scope": "broad",
+   "status": "backlog",
+   "title": "Моды карт / окружения",
+   "title_en": "Area/map modifiers",
+   "rules": {},
+   "explain": "Бэклог, quality of life для билдов: резы под T16 ele weakness + exposure, аккураси с учётом «less aura effect» или «monsters have more evasion». Возможно, отдельный лодаут. Пока не трогаем.",
+   "source": "матрица 19.09"
+  },
+  {
+   "id": "n-charms",
+   "category": "never",
+   "scope": "broad",
+   "status": "never",
+   "title": "Charms",
+   "rules": {},
+   "explain": "Вики: предмет из Affliction-энкаунтеров, нужен асенденси Wildwood Primalist — лиг-специфик.",
+   "source": "матрица 19.09; вики"
+  },
+  {
+   "id": "n-crucible",
+   "category": "never",
+   "scope": "broad",
+   "status": "never",
+   "title": "Crucible: дерево на оружии",
+   "rules": {},
+   "explain": "Вики: появляется на предметах из Crucible Forge — лиг-специфик.",
+   "source": "матрица 19.09; вики"
+  },
+  {
+   "id": "n-grafts",
+   "category": "never",
+   "scope": "broad",
+   "status": "never",
+   "title": "Grafts",
+   "rules": {},
+   "explain": "Вики: «Grafts were items exclusive to Keepers league». Не путать с рунеграфтами.",
+   "source": "матрица 19.09; вики"
+  },
+  {
+   "id": "n-scourge",
+   "category": "never",
+   "scope": "broad",
+   "status": "never",
+   "title": "Scourge-моды",
+   "rules": {},
+   "explain": "Вики: создавались Blood Crucible лиги Scourge.",
+   "source": "матрица 19.09; вики"
+  },
+  {
+   "id": "n-necropolis",
+   "category": "never",
+   "scope": "broad",
+   "status": "never",
+   "title": "Necropolis-крафт",
+   "rules": {},
+   "explain": "Лиг-специфик; страницы модов на вики в этом проходе не нашлось.",
+   "source": "матрица 19.09"
+  },
+  {
+   "id": "n-enchants",
+   "category": "never",
+   "scope": "broad",
+   "status": "never",
+   "title": "Энчанты предметов (лабиринт)",
+   "title_en": "Item enchantments",
+   "rules": {},
+   "source": "матрица 19.09"
+  },
+  {
+   "id": "n-legacy-jewels",
+   "category": "never",
+   "scope": "broad",
+   "status": "never",
+   "title": "Legacy-уники (в т. ч. 84 legacy уник-джевела)",
+   "rules": {},
+   "explain": "Пользователь: «Легаси все невер». В списке уник-джевелов ниже их нет.",
+   "source": "форма джевелов 19.09"
+  }
+ ],
+ "jewel_overrides": {
+  "jewel-bound-by-destiny": {
+   "status": "rule",
+   "rules": {
+    "uber": "1 полезное свойство (любое: x2, x4, x6)",
+    "uber_plus": "2 полезных свойства",
+    "mirror": "2 полезных свойства"
+   },
+   "assumed": [
+    "uber_plus"
+   ]
+  },
+  "jewel-split-personality": {
+   "rules": {
+    "endgame": "1 полезное свойство (второе игнорируем)",
+    "uber": "2 полезных свойства"
+   }
+  },
+  "jewel-the-adorned": {
+   "rules": {
+    "uber": "до 70% включительно",
+    "mirror": "до 100%, но скрипт ищет порог, после которого прироста нет (если 97% = 100%, ставим 97%)"
+   }
+  },
+  "jewel-the-balance-of-terror": {
+   "rules": {
+    "uber": "1 полезное свойство",
+    "mirror": "2 полезных"
+   }
+  },
+  "jewel-thread-of-hope": {
+   "rules": {
+    "endgame": "все кольца, кроме Massive",
+    "uber": "Massive (падает только с убер-Сируса)"
+   }
+  },
+  "jewel-watcher-s-eye": {
+   "rules": {
+    "endgame": "1 полезное свойство",
+    "uber": "2 полезных свойства"
+   }
+  },
+  "jewel-megalomaniac": {
+   "status": "rule",
+   "rules": {
+    "endgame": "1 полезный нотабл",
+    "uber": "2",
+    "mirror": "3"
+   }
+  },
+  "jewel-voices": {
+   "status": "rule",
+   "rules": {
+    "endgame": "7 пассивок",
+    "uber": "5 и 3 пассивки",
+    "mirror": "1 пассивка"
+   }
+  },
+  "jewel-brutal-restraint": {
+   "status": "rule",
+   "see": "t-timeless",
+   "rules": {
+    "t16": "только ради кистоуна",
+    "endgame": "кистоун + 3 нотабла + 5 малых",
+    "mirror": "кистоун + 80% радиуса"
+   }
+  },
+  "jewel-elegant-hubris": {
+   "status": "rule",
+   "see": "t-timeless",
+   "rules": {
+    "t16": "только ради кистоуна",
+    "endgame": "кистоун + 3 нотабла + 5 малых",
+    "mirror": "кистоун + 80% радиуса"
+   }
+  },
+  "jewel-glorious-vanity": {
+   "status": "rule",
+   "see": "t-timeless",
+   "rules": {
+    "t16": "только ради кистоуна",
+    "endgame": "кистоун + 3 нотабла + 5 малых",
+    "mirror": "кистоун + 80% радиуса"
+   }
+  },
+  "jewel-heroic-tragedy": {
+   "status": "rule",
+   "see": "t-timeless",
+   "rules": {
+    "t16": "только ради кистоуна",
+    "endgame": "кистоун + 3 нотабла + 5 малых",
+    "mirror": "кистоун + 80% радиуса"
+   }
+  },
+  "jewel-lethal-pride": {
+   "status": "rule",
+   "see": "t-timeless",
+   "rules": {
+    "t16": "только ради кистоуна",
+    "endgame": "кистоун + 3 нотабла + 5 малых",
+    "mirror": "кистоун + 80% радиуса"
+   }
+  },
+  "jewel-militant-faith": {
+   "status": "rule",
+   "see": "t-timeless",
+   "rules": {
+    "t16": "только ради кистоуна",
+    "endgame": "кистоун + 3 нотабла + 5 малых",
+    "mirror": "кистоун + 80% радиуса"
+   }
+  }
+ }
+}

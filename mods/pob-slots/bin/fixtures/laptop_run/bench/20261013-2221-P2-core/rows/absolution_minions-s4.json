@@ -1,0 +1,16 @@
+{
+ "ok": true,
+ "slug": "absolution_minions",
+ "seed": 4,
+ "seconds": 8708.137233000016,
+ "stat": "FullDPS",
+ "ours": 635470.77370505,
+ "author_raw": 609972.68612004,
+ "author_lane": 606670.95182905,
+ "author_life": 4559,
+ "author_ehp": 21482.837916925,
+ "author_maxhit": 5534.0,
+ "ours_life": 5846,
+ "ours_ehp": 21517.451390734,
+ "ours_maxhit": 5846.0
+}

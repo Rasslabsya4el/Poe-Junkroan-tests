@@ -1,0 +1,11 @@
+{
+ "ok": true,
+ "seed": 2,
+ "value": 118824.5195874,
+ "final": {
+  "Life": 4510
+ },
+ "stem": "02 marauder_chieftain_no_resolute_technique_imperial_staff",
+ "summary": "  pinnacle boss ramp (10 s): TotalDotDPS 118825",
+ "explanation": "| Leaf | Removing it: TotalDotDPS | Life |"
+}
