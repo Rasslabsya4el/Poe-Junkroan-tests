@@ -1,0 +1,67 @@
+[
+ {
+  "line": "Removes 10% of Life Recovered from Mana when used",
+  "surfaces": [
+   "flask"
+  ],
+  "sources": [
+   "FlaskExtraLifeCostsMana1",
+   "FlaskExtraLifeCostsMana2",
+   "FlaskExtraLifeCostsMana3",
+   "FlaskExtraLifeCostsMana4"
+  ],
+  "group": "self_cost",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "self_cost_on_use: the cost is Mana paid per flask use (10% of the Life the flask recovers); PoB has no phrase for it and Mana cost per use moves none of the 7 outputs, so it belongs to the self-cost rail",
+  "partial_part": "Removes 10% of Life Recovered from Mana when used",
+  "kind": "self_cost_on_use",
+  "why": "a flask cost in Mana per use is a per-second self-cost (flask uses per second x 10% of Life recovered), read by the self-cost rail not by a PoB output"
+ },
+ {
+  "line": "Removes all Energy Shield While not on Full Life, Sacrifice 20% of Mana per Second to Recover that much Life",
+  "surfaces": [
+   "keystone"
+  ],
+  "sources": [
+   "19732"
+  ],
+  "group": "self_cost",
+  "boss_lane": [
+   "Removes all Energy Shield",
+   "While not on Full Life, Sacrifice 20% of Mana per Second to Recover that much Life"
+  ],
+  "optimistic_lane": [
+   "Removes all Energy Shield",
+   "While not on Full Life, Sacrifice 20% of Mana per Second to Recover that much Life"
+  ],
+  "zero_reason": "",
+  "partial_part": "",
+  "kind": "self_cost_on_use",
+  "type": "any",
+  "why": "PoB's ModParser holds both halves as separate patterns (removes all energy shield; sacrifice N% of mana per second to recover that much life), the comma joins them into one unparsed text"
+ },
+ {
+  "line": "You have Sacrifice of Blood if at least 8 Corrupted Items are Equipped",
+  "surfaces": [
+   "ascendancy"
+  ],
+  "sources": [
+   "61092"
+  ],
+  "group": "self_cost",
+  "boss_lane": [
+   "Removes all Energy Shield",
+   "While not on Full Life, Sacrifice 20% of Mana per Second to Recover that much Life"
+  ],
+  "optimistic_lane": [
+   "Removes all Energy Shield",
+   "While not on Full Life, Sacrifice 20% of Mana per Second to Recover that much Life"
+  ],
+  "zero_reason": "",
+  "partial_part": "",
+  "kind": "self_cost_on_use",
+  "type": "any",
+  "why": "the line grants the same Sacrifice of Blood effect as the keystone text once 8 corrupted items are equipped; a build that holds the line pays the effect, so the two parsed halves count"
+ }
+]

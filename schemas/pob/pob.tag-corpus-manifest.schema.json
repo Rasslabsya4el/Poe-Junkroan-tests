@@ -1,0 +1,260 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/schemas/pob/pob.tag-corpus-manifest.schema.json",
+  "title": "PoB tag corpus manifest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "corpus_id",
+    "source_corpus",
+    "families",
+    "downstream_policy",
+    "field_order"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "1.0.0"
+    },
+    "corpus_id": {
+      "type": "string",
+      "const": "pob_tag_corpus"
+    },
+    "source_corpus": {
+      "$ref": "#/$defs/source_corpus"
+    },
+    "families": {
+      "type": "array",
+      "minItems": 8,
+      "items": {
+        "$ref": "#/$defs/family_summary"
+      }
+    },
+    "downstream_policy": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "read_root",
+        "derivation_source_root",
+        "consumer_rule",
+        "loader_boundary",
+        "source_lane_authority",
+        "authority_rule"
+      ],
+      "properties": {
+        "read_root": {
+          "type": "string",
+          "const": "src/poe_build_research/pob/tag_data"
+        },
+        "derivation_source_root": {
+          "type": "string",
+          "const": "src/poe_build_research/pob/corpus_data"
+        },
+        "consumer_rule": {
+          "type": "string",
+          "minLength": 1
+        },
+        "loader_boundary": {
+          "type": "string",
+          "const": "poe_build_research.pob.tag_corpus"
+        },
+        "source_lane_authority": {
+          "type": "string",
+          "const": "vendor/pob/source"
+        },
+        "authority_rule": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "field_order": {
+      "$ref": "#/$defs/field_order"
+    }
+  },
+  "$defs": {
+    "sha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "source_lane": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "lane_id",
+        "canonical_path",
+        "lock_path",
+        "repo",
+        "repo_url",
+        "pinned_ref",
+        "pinned_commit",
+        "observed_commit",
+        "tree_version"
+      ],
+      "properties": {
+        "lane_id": {
+          "type": "string",
+          "const": "pob_source_lane"
+        },
+        "canonical_path": {
+          "type": "string",
+          "const": "vendor/pob/source"
+        },
+        "lock_path": {
+          "type": "string",
+          "const": "locks/pob.source.lock.json"
+        },
+        "repo": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+$"
+        },
+        "repo_url": {
+          "type": "string",
+          "format": "uri",
+          "pattern": "^https://github\\.com/[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+\\.git$"
+        },
+        "pinned_ref": {
+          "type": "string",
+          "pattern": "^refs/tags/v.+$"
+        },
+        "pinned_commit": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{40}$"
+        },
+        "observed_commit": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{40}$"
+        },
+        "tree_version": {
+          "type": "string",
+          "pattern": "^\\d+_\\d+(?:_[a-z]+(?:_[a-z]+)?)?$"
+        }
+      }
+    },
+    "source_corpus": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "corpus_id",
+        "manifest_path",
+        "manifest_sha256",
+        "source_lane"
+      ],
+      "properties": {
+        "corpus_id": {
+          "type": "string",
+          "const": "pob_game_corpus"
+        },
+        "manifest_path": {
+          "type": "string",
+          "const": "src/poe_build_research/pob/corpus_data/manifest.json"
+        },
+        "manifest_sha256": {
+          "$ref": "#/$defs/sha256"
+        },
+        "source_lane": {
+          "$ref": "#/$defs/source_lane"
+        }
+      }
+    },
+    "family": {
+      "type": "string",
+      "enum": [
+        "items",
+        "active_gems",
+        "support_gems",
+        "passives",
+        "masteries",
+        "ascendancies",
+        "keystones",
+        "config_surfaces"
+      ]
+    },
+    "family_summary": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "family",
+        "relative_path",
+        "record_count",
+        "derived_from_bundle_path",
+        "derived_from_bundle_sha256",
+        "derived_from_record_count"
+      ],
+      "properties": {
+        "family": {
+          "$ref": "#/$defs/family"
+        },
+        "relative_path": {
+          "type": "string",
+          "pattern": "^src/poe_build_research/pob/tag_data/[A-Za-z0-9_.-]+\\.json$"
+        },
+        "record_count": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "derived_from_bundle_path": {
+          "type": "string",
+          "pattern": "^src/poe_build_research/pob/corpus_data/[A-Za-z0-9_.-]+\\.json$"
+        },
+        "derived_from_bundle_sha256": {
+          "$ref": "#/$defs/sha256"
+        },
+        "derived_from_record_count": {
+          "type": "integer",
+          "minimum": 1
+        }
+      }
+    },
+    "field_order": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "manifest",
+        "bundle",
+        "record",
+        "facet"
+      ],
+      "properties": {
+        "manifest": {
+          "const": [
+            "schema_version",
+            "corpus_id",
+            "source_corpus",
+            "families",
+            "downstream_policy",
+            "field_order"
+          ]
+        },
+        "bundle": {
+          "const": [
+            "schema_version",
+            "corpus_id",
+            "family",
+            "record_count",
+            "provenance",
+            "metadata",
+            "records"
+          ]
+        },
+        "record": {
+          "const": [
+            "source_id",
+            "source_name",
+            "search_tags",
+            "scaling_facets",
+            "supporting_text",
+            "source_context"
+          ]
+        },
+        "facet": {
+          "const": [
+            "facet",
+            "values"
+          ]
+        }
+      }
+    }
+  }
+}

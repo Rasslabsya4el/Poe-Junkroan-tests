@@ -1,0 +1,892 @@
+[
+  {
+    "line": "Call of Steel has +4 to maximum Steel Shards",
+    "surfaces": [
+      "mastery"
+    ],
+    "sources": [
+      "31400",
+      "47059",
+      "48982",
+      "49677",
+      "52074"
+    ],
+    "group": "other",
+    "kind": "steel_shards",
+    "boss_lane": [],
+    "optimistic_lane": [],
+    "zero_reason": "no_representation: a resource cap, no PoB stat (ConfigOptions.lua:652 counts consumed Steel Shards, not a maximum)",
+    "why": "+4 maximum Steel Shards is a cap on a Call of Steel resource; PoB has no stat for the cap",
+    "partial_part": ""
+  },
+  {
+    "line": "Can Allocate Passives from the Duelist's starting point",
+    "surfaces": [
+      "ascendancy"
+    ],
+    "sources": [
+      "63357"
+    ],
+    "group": "other",
+    "kind": "tree_access_rule",
+    "boss_lane": [],
+    "optimistic_lane": [],
+    "zero_reason": "no_representation: a passive-tree access rule, not a stat; the tree optimizer decides the nodes",
+    "why": "allocation from another class start point changes the tree's reach, not a number on a lane",
+    "partial_part": ""
+  },
+  {
+    "line": "Can Allocate Passives from the Marauder's starting point",
+    "surfaces": [
+      "ascendancy"
+    ],
+    "sources": [
+      "24755"
+    ],
+    "group": "other",
+    "kind": "tree_access_rule",
+    "boss_lane": [],
+    "optimistic_lane": [],
+    "zero_reason": "no_representation: a passive-tree access rule, not a stat; the tree optimizer decides the nodes",
+    "why": "allocation from another class start point changes the tree's reach, not a number on a lane",
+    "partial_part": ""
+  },
+  {
+    "line": "Can Allocate Passives from the Ranger's starting point",
+    "surfaces": [
+      "ascendancy"
+    ],
+    "sources": [
+      "7618"
+    ],
+    "group": "other",
+    "kind": "tree_access_rule",
+    "boss_lane": [],
+    "optimistic_lane": [],
+    "zero_reason": "no_representation: a passive-tree access rule, not a stat; the tree optimizer decides the nodes",
+    "why": "allocation from another class start point changes the tree's reach, not a number on a lane",
+    "partial_part": ""
+  },
+  {
+    "line": "Can Allocate Passives from the Shadow's starting point",
+    "surfaces": [
+      "ascendancy"
+    ],
+    "sources": [
+      "53992"
+    ],
+    "group": "other",
+    "kind": "tree_access_rule",
+    "boss_lane": [],
+    "optimistic_lane": [],
+    "zero_reason": "no_representation: a passive-tree access rule, not a stat; the tree optimizer decides the nodes",
+    "why": "allocation from another class start point changes the tree's reach, not a number on a lane",
+    "partial_part": ""
+  },
+  {
+    "line": "Can Allocate Passives from the Templar's starting point",
+    "surfaces": [
+      "ascendancy"
+    ],
+    "sources": [
+      "54877"
+    ],
+    "group": "other",
+    "kind": "tree_access_rule",
+    "boss_lane": [],
+    "optimistic_lane": [],
+    "zero_reason": "no_representation: a passive-tree access rule, not a stat; the tree optimizer decides the nodes",
+    "why": "allocation from another class start point changes the tree's reach, not a number on a lane",
+    "partial_part": ""
+  },
+  {
+    "line": "Can Allocate Passives from the Witch's starting point",
+    "surfaces": [
+      "ascendancy"
+    ],
+    "sources": [
+      "56722"
+    ],
+    "group": "other",
+    "kind": "tree_access_rule",
+    "boss_lane": [],
+    "optimistic_lane": [],
+    "zero_reason": "no_representation: a passive-tree access rule, not a stat; the tree optimizer decides the nodes",
+    "why": "allocation from another class start point changes the tree's reach, not a number on a lane",
+    "partial_part": ""
+  },
+  {
+    "line": "Cost every third time you Pay it",
+    "surfaces": [
+      "unique"
+    ],
+    "sources": [
+      "Tawhanuku's Timing, Moonstone Ring"
+    ],
+    "group": "other",
+    "kind": "every_nth_use_cost",
+    "boss_lane": [],
+    "optimistic_lane": [],
+    "zero_reason": "no_representation: a 1-in-3 cost rule on Pay has no ModParser phrase; PoB's cost lines are per use",
+    "why": "a cost waived on every third use needs a use counter PoB does not have",
+    "partial_part": ""
+  },
+  {
+    "line": "Damage to Surrounding Targets",
+    "surfaces": [
+      "unique"
+    ],
+    "sources": [
+      "Mark of the Red Covenant, Tribal Circlet"
+    ],
+    "group": "other",
+    "kind": "splash_to_surrounding_targets",
+    "boss_lane": [],
+    "optimistic_lane": [],
+    "zero_reason": "no_representation: no ModParser phrase for splash to surrounding targets (ModParser.lua:2307 covers minion explosions only)",
+    "why": "the Marked enemy's splash damage has no PoB line to carry it",
+    "partial_part": ""
+  },
+  {
+    "line": "Deals 50 Chaos Damage per second to nearby Enemies",
+    "surfaces": [
+      "unique"
+    ],
+    "sources": [
+      "Faminebind, Rustic Sash"
+    ],
+    "group": "other",
+    "kind": "nearby_damage_per_second",
+    "boss_lane": [],
+    "optimistic_lane": [],
+    "zero_reason": "no_representation: no ModParser phrase for a per-second damage aura on nearby enemies",
+    "why": "the boss lane stays empty until a phrase is found for the aura's own damage per second",
+    "partial_part": ""
+  },
+  {
+    "line": "Desecrate and Unearth have +2 to Maximum number of corpses allowed",
+    "surfaces": [
+      "notable"
+    ],
+    "sources": [
+      "25439"
+    ],
+    "group": "other",
+    "kind": "corpse_supply",
+    "boss_lane": [],
+    "optimistic_lane": [],
+    "zero_reason": "no_representation: PoB has no corpse-count stat (nearby-corpse multipliers only, ModParser.lua:1310); corpse supply is a mechanics fact",
+    "why": "a corpse cap on Desecrate and Unearth is supply, not a PoB number",
+    "partial_part": ""
+  },
+  {
+    "line": "Elusive has 50% chance to be removed from you at 100% effect",
+    "surfaces": [
+      "ascendancy"
+    ],
+    "sources": [
+      "32216"
+    ],
+    "group": "other",
+    "kind": "uptime_dependent",
+    "boss_lane": [],
+    "optimistic_lane": [],
+    "zero_reason": "uptime_dependent: a removal chance only shortens the Elusive uptime; full uptime adds nothing PoB does not already count (ModParser.lua:1708)",
+    "why": "the removal is a downside of an uptime, parked by #965",
+    "partial_part": ""
+  },
+  {
+    "line": "Enemies display their Monster Category",
+    "surfaces": [
+      "ascendancy"
+    ],
+    "sources": [
+      "58281"
+    ],
+    "group": "other",
+    "kind": "no_representation",
+    "boss_lane": [],
+    "optimistic_lane": [],
+    "zero_reason": "no_representation: display only, no number",
+    "why": "a display rule outside every PoB output",
+    "partial_part": ""
+  },
+  {
+    "line": "Equip a Wildwood Rucksack which has 20 Inventory Slots",
+    "surfaces": [
+      "ascendancy"
+    ],
+    "sources": [
+      "63623"
+    ],
+    "group": "other",
+    "kind": "no_representation",
+    "boss_lane": [],
+    "optimistic_lane": [],
+    "zero_reason": "no_representation: inventory slots, no number",
+    "why": "inventory space is outside every PoB output",
+    "partial_part": ""
+  },
+  {
+    "line": "Every 10 seconds, gain 30% of Physical Damage as Extra Fire Damage for 4 seconds",
+    "surfaces": [
+      "notable"
+    ],
+    "sources": [
+      "5430"
+    ],
+    "group": "other",
+    "kind": "uptime_dependent",
+    "boss_lane": [],
+    "optimistic_lane": [
+      "Gain 30% of Physical Damage as Extra Fire Damage"
+    ],
+    "zero_reason": "",
+    "why": "4 s of gain every 10 s; optimistic lane at full uptime (#965); ModParser.lua:2600 is the Ngamahu's Flames unique only, the generic phrase is from the as-extra table at ModParser.lua:5905 (unsure)",
+    "partial_part": "",
+    "type": "any"
+  },
+  {
+    "line": "Extra gore",
+    "surfaces": [
+      "unique"
+    ],
+    "sources": [
+      "Bloodplay, Stiletto",
+      "Carnage Heart, Onyx Amulet"
+    ],
+    "group": "other",
+    "kind": "no_representation",
+    "boss_lane": [],
+    "optimistic_lane": [],
+    "zero_reason": "no_representation: a cosmetic affix, no number",
+    "why": "gore is an effect with no PoB output",
+    "partial_part": ""
+  },
+  {
+    "line": "Gain Adrenaline for 20 seconds when you reach Low Life",
+    "surfaces": [
+      "ascendancy"
+    ],
+    "sources": [
+      "27604"
+    ],
+    "group": "other",
+    "kind": "uptime_dependent",
+    "boss_lane": [],
+    "optimistic_lane": [
+      "100% increased Damage",
+      "25% increased Attack Speed",
+      "25% increased Cast Speed",
+      "25% increased Movement Speed",
+      "10% additional Physical Damage Reduction"
+    ],
+    "zero_reason": "",
+    "why": "Adrenaline buff at full uptime: the five lines are the effects PoB's own config check 'Do you have Adrenaline?' turns on (ConfigOptions.lua:1037-1038, CalcPerform.lua:740-746); PoB does not parse 'while you have Adrenaline', so the lines carry no condition",
+    "partial_part": "Gain Adrenaline for 20 seconds when you reach Low Life",
+    "type": "any"
+  },
+  {
+    "line": "Gain Adrenaline for 3 seconds when Ward Breaks",
+    "surfaces": [
+      "unique"
+    ],
+    "sources": [
+      "Olroth's Charge, Runic Sollerets"
+    ],
+    "group": "other",
+    "kind": "uptime_dependent",
+    "boss_lane": [],
+    "optimistic_lane": [
+      "100% increased Damage",
+      "25% increased Attack Speed",
+      "25% increased Cast Speed",
+      "25% increased Movement Speed",
+      "10% additional Physical Damage Reduction"
+    ],
+    "zero_reason": "",
+    "why": "Adrenaline buff at full uptime: the same five lines as PoB's config check 'Do you have Adrenaline?' (ConfigOptions.lua:1037-1038), without the 'while you have Adrenaline' clause PoB does not parse; the ward-break trigger is the uptime (#965)",
+    "partial_part": "Gain Adrenaline for 3 seconds when Ward Breaks",
+    "type": "any"
+  },
+  {
+    "line": "Grants Call of Steel",
+    "surfaces": [
+      "unique"
+    ],
+    "sources": [
+      "Steelworm, Broadhead Arrow Quiver"
+    ],
+    "group": "other",
+    "kind": "steel_shards",
+    "boss_lane": [],
+    "optimistic_lane": [],
+    "zero_reason": "no_representation: a skill grant on Call of Steel, no stat (ConfigOptions.lua:651-656 covers Steel skills only)",
+    "why": "a granted skill with its own shard use is not a PoB line",
+    "partial_part": ""
+  },
+  {
+    "line": "Grants Immunity to Hinder for 10 seconds if used while Hindered",
+    "surfaces": [
+      "flask"
+    ],
+    "sources": [
+      "LocalFlaskImmuneToMaimAndHinder2"
+    ],
+    "group": "other",
+    "kind": "no_representation",
+    "boss_lane": [],
+    "optimistic_lane": [],
+    "zero_reason": "no_representation: immunity to Hinder is defence outside EHP",
+    "why": "no damage or EHP number",
+    "partial_part": ""
+  },
+  {
+    "line": "Grants Immunity to Hinder for 13 seconds if used while Hindered",
+    "surfaces": [
+      "flask"
+    ],
+    "sources": [
+      "LocalFlaskImmuneToMaimAndHinder3"
+    ],
+    "group": "other",
+    "kind": "no_representation",
+    "boss_lane": [],
+    "optimistic_lane": [],
+    "zero_reason": "no_representation: immunity to Hinder is defence outside EHP",
+    "why": "no damage or EHP number",
+    "partial_part": ""
+  },
+  {
+    "line": "Grants Immunity to Hinder for 7 seconds if used while Hindered",
+    "surfaces": [
+      "flask"
+    ],
+    "sources": [
+      "LocalFlaskImmuneToMaimAndHinder1"
+    ],
+    "group": "other",
+    "kind": "no_representation",
+    "boss_lane": [],
+    "optimistic_lane": [],
+    "zero_reason": "no_representation: immunity to Hinder is defence outside EHP",
+    "why": "no damage or EHP number",
+    "partial_part": ""
+  },
+  {
+    "line": "Grants maximum Energy Shield equal to 10% of your Reserved Mana to you and nearby Allies",
+    "surfaces": [
+      "ascendancy"
+    ],
+    "sources": [
+      "42264"
+    ],
+    "group": "other",
+    "kind": "reserved_mana_aura_grant",
+    "boss_lane": [],
+    "optimistic_lane": [
+      "Grants maximum Energy Shield equal to 10% of your Reserved Mana to you and nearby allies"
+    ],
+    "zero_reason": "",
+    "why": "PoB phrase at ModParser.lua:2865; this line was red in #1119, so the parse check decides; boss lane empty as a new kind",
+    "partial_part": "",
+    "type": "any"
+  },
+  {
+    "line": "Karui Stone Hook",
+    "surfaces": [
+      "gear_affix"
+    ],
+    "sources": [
+      "FishingHookType"
+    ],
+    "group": "other",
+    "kind": "no_representation",
+    "boss_lane": [],
+    "optimistic_lane": [],
+    "zero_reason": "no_representation: an item base name, no stat",
+    "why": "a fishing item name",
+    "partial_part": ""
+  },
+  {
+    "line": "LevelReq: 10",
+    "surfaces": [
+      "unique"
+    ],
+    "sources": [
+      "Asphyxia's Wrath, Feathered Arrow Quiver"
+    ],
+    "group": "other",
+    "kind": "no_representation",
+    "boss_lane": [],
+    "optimistic_lane": [],
+    "zero_reason": "no_representation: a requirement, no stat",
+    "why": "a level requirement is not a PoB output",
+    "partial_part": ""
+  },
+  {
+    "line": "LevelReq: 22",
+    "surfaces": [
+      "unique"
+    ],
+    "sources": [
+      "Blackgleam, Blazing Arrow Quiver"
+    ],
+    "group": "other",
+    "kind": "no_representation",
+    "boss_lane": [],
+    "optimistic_lane": [],
+    "zero_reason": "no_representation: a requirement, no stat",
+    "why": "a level requirement is not a PoB output",
+    "partial_part": ""
+  },
+  {
+    "line": "LevelReq: 45",
+    "surfaces": [
+      "unique"
+    ],
+    "sources": [
+      "Blackgleam, Blazing Arrow Quiver"
+    ],
+    "group": "other",
+    "kind": "no_representation",
+    "boss_lane": [],
+    "optimistic_lane": [],
+    "zero_reason": "no_representation: a requirement, no stat",
+    "why": "a level requirement is not a PoB output",
+    "partial_part": ""
+  },
+  {
+    "line": "Light Radius is based on Energy Shield instead of Life",
+    "surfaces": [
+      "gear_affix",
+      "mastery"
+    ],
+    "sources": [
+      "10729",
+      "18240",
+      "27307",
+      "3471",
+      "6338",
+      "857",
+      "ModMaster#249"
+    ],
+    "group": "other",
+    "kind": "no_representation",
+    "boss_lane": [],
+    "optimistic_lane": [],
+    "zero_reason": "no_representation: a defence-side quality of life, the JSON's own example",
+    "why": "light radius is not a PoB output",
+    "partial_part": ""
+  },
+  {
+    "line": "Links take twice as long to break",
+    "surfaces": [
+      "mastery"
+    ],
+    "sources": [
+      "12244",
+      "24334",
+      "48144",
+      "9213"
+    ],
+    "group": "other",
+    "kind": "no_representation",
+    "boss_lane": [],
+    "optimistic_lane": [],
+    "zero_reason": "no_representation: link break time, no PoB stat",
+    "why": "no PoB line for how long links last",
+    "partial_part": ""
+  },
+  {
+    "line": "Lose all Defiance when you reach 10 Defiance",
+    "surfaces": [
+      "ascendancy"
+    ],
+    "sources": [
+      "9271"
+    ],
+    "group": "other",
+    "kind": "defiance_reset",
+    "boss_lane": [],
+    "optimistic_lane": [],
+    "zero_reason": "ramp_window: Defiance is a stack count counted at the ramp window (ModParser.lua:1930, ConfigOptions.lua:1059); this line only resets the stacks at 10",
+    "why": "a reset rule on a ramp, with no separate PoB line",
+    "partial_part": ""
+  },
+  {
+    "line": "Maximum Baryatic Tension is equal to 30% of maximum Life",
+    "surfaces": [
+      "ascendancy"
+    ],
+    "sources": [
+      "12860"
+    ],
+    "group": "other",
+    "kind": "baryatic_tension_pool",
+    "boss_lane": [],
+    "optimistic_lane": [],
+    "zero_reason": "no_representation: a resource pool with no ModParser phrase",
+    "why": "PoB does not model Baryatic Tension",
+    "partial_part": ""
+  },
+  {
+    "line": "Mercury Footprints",
+    "surfaces": [
+      "unique"
+    ],
+    "sources": [
+      "Devoto's Devotion, Nightmare Bascinet"
+    ],
+    "group": "other",
+    "kind": "no_representation",
+    "boss_lane": [],
+    "optimistic_lane": [],
+    "zero_reason": "no_representation: cosmetic footprints",
+    "why": "a cosmetic effect",
+    "partial_part": ""
+  },
+  {
+    "line": "Mines Hinder Enemies near them for 2 seconds when they Land",
+    "surfaces": [
+      "ascendancy"
+    ],
+    "sources": [
+      "39834"
+    ],
+    "group": "other",
+    "kind": "uptime_dependent",
+    "boss_lane": [],
+    "optimistic_lane": [],
+    "zero_reason": "uptime_dependent: a 2 s hinder after each mine lands is a duration uptime with no landing rate; parked #965",
+    "why": "no lane line without the landing rate",
+    "partial_part": ""
+  },
+  {
+    "line": "Mirage Archers are not attached to you",
+    "surfaces": [
+      "ascendancy"
+    ],
+    "sources": [
+      "2872"
+    ],
+    "group": "other",
+    "kind": "no_representation",
+    "boss_lane": [],
+    "optimistic_lane": [],
+    "zero_reason": "no_representation: a placement rule of a minion, no number",
+    "why": "no stat for attachment",
+    "partial_part": ""
+  },
+  {
+    "line": "Rare and Unique Enemies within 120 metres have Minimap Icons",
+    "surfaces": [
+      "ascendancy"
+    ],
+    "sources": [
+      "29212"
+    ],
+    "group": "other",
+    "kind": "no_representation",
+    "boss_lane": [],
+    "optimistic_lane": [],
+    "zero_reason": "no_representation: minimap display only",
+    "why": "a display rule",
+    "partial_part": ""
+  },
+  {
+    "line": "Removes all Burning when used",
+    "surfaces": [
+      "flask"
+    ],
+    "sources": [
+      "FlaskIgniteImmunity1",
+      "FlaskIgniteImmunity2_",
+      "FlaskIgniteImmunity3_"
+    ],
+    "group": "other",
+    "kind": "no_representation",
+    "boss_lane": [],
+    "optimistic_lane": [],
+    "zero_reason": "no_representation: flask ignite immunity outside EHP",
+    "why": "no damage or EHP number",
+    "partial_part": ""
+  },
+  {
+    "line": "Rhoa Feather Lure",
+    "surfaces": [
+      "gear_affix"
+    ],
+    "sources": [
+      "FishingLureType"
+    ],
+    "group": "other",
+    "kind": "no_representation",
+    "boss_lane": [],
+    "optimistic_lane": [],
+    "zero_reason": "no_representation: an item base name, no stat",
+    "why": "a fishing item name",
+    "partial_part": ""
+  },
+  {
+    "line": "Tincture Effects Linger on you for 0.5 seconds per Mana Burn on you when the Tincture was deactivated, up to a maximum of 6 seconds",
+    "surfaces": [
+      "ascendancy"
+    ],
+    "sources": [
+      "40104"
+    ],
+    "group": "other",
+    "kind": "uptime_dependent",
+    "boss_lane": [],
+    "optimistic_lane": [],
+    "zero_reason": "uptime_dependent: the linger extends the Tincture's own duration; full uptime is what PoB's flask uptime reads (D115)",
+    "why": "nothing more to add at full uptime",
+    "partial_part": ""
+  },
+  {
+    "line": "Warcries Knock Back and Interrupt Enemies in a smaller Area",
+    "surfaces": [
+      "unique"
+    ],
+    "sources": [
+      "Debeon's Dirge, Despot Axe"
+    ],
+    "group": "other",
+    "kind": "no_representation",
+    "boss_lane": [],
+    "optimistic_lane": [],
+    "zero_reason": "no_representation: knock back and interrupt, no stat",
+    "why": "no PoB line for a knock back",
+    "partial_part": ""
+  },
+  {
+    "line": "You and Allies near your Banner have +1% to Damage over Time Multiplier per",
+    "surfaces": [
+      "gear_affix"
+    ],
+    "sources": [
+      "DeepwaterSwordBanners"
+    ],
+    "group": "other",
+    "kind": "no_representation",
+    "boss_lane": [],
+    "optimistic_lane": [],
+    "zero_reason": "no_representation: the item text ends at 'per' with no tail, so no PoB line can be written",
+    "why": "the per-what part is missing from the text (unsure)",
+    "partial_part": ""
+  },
+  {
+    "line": "You and nearby Allies deal 6 to 12 added Physical Damage for each Impale on Enemy",
+    "surfaces": [
+      "ascendancy"
+    ],
+    "sources": [
+      "13374"
+    ],
+    "group": "other",
+    "kind": "impale_stacks",
+    "boss_lane": [],
+    "optimistic_lane": [],
+    "zero_reason": "ramp_window: impale stacks are applied stacks counted at the ramp window; PoB's enemy impale count defaults to the maximum (ConfigOptions.lua:1640), so no lane line is written at the cap",
+    "why": "stacks at the cap are not a ramp value",
+    "partial_part": "You and nearby Allies deal 6 to 12 added Physical Damage for each Impale on Enemy"
+  },
+  {
+    "line": "You can hire a Mercenary permanently",
+    "surfaces": [
+      "ascendancy"
+    ],
+    "sources": [
+      "46479"
+    ],
+    "group": "other",
+    "kind": "mercenary_companion",
+    "boss_lane": [],
+    "optimistic_lane": [],
+    "zero_reason": "no_representation: a companion rule, no stat",
+    "why": "a hire rule is not a PoB output",
+    "partial_part": ""
+  },
+  {
+    "line": "Your Mark Transfers to another Enemy when Marked Enemy dies",
+    "surfaces": [
+      "ascendancy",
+      "mastery"
+    ],
+    "sources": [
+      "32657",
+      "5443",
+      "56865",
+      "58563",
+      "62759"
+    ],
+    "group": "other",
+    "kind": "mark_transfer_on_death",
+    "boss_lane": [],
+    "optimistic_lane": [],
+    "zero_reason": "on_kill: the transfer happens when the marked enemy dies, an on-kill effect a boss does not give; no ModParser phrase for the transfer",
+    "why": "no PoB line for the transfer",
+    "partial_part": ""
+  },
+  {
+    "line": "Your Mercenary can equip Unique Amulets",
+    "surfaces": [
+      "ascendancy"
+    ],
+    "sources": [
+      "32669"
+    ],
+    "group": "other",
+    "kind": "mercenary_companion",
+    "boss_lane": [],
+    "optimistic_lane": [],
+    "zero_reason": "no_representation: a companion's equip rule, no stat",
+    "why": "not a PoB output",
+    "partial_part": ""
+  },
+  {
+    "line": "Your Mercenary can equip Unique Belts",
+    "surfaces": [
+      "ascendancy"
+    ],
+    "sources": [
+      "1977"
+    ],
+    "group": "other",
+    "kind": "mercenary_companion",
+    "boss_lane": [],
+    "optimistic_lane": [],
+    "zero_reason": "no_representation: a companion's equip rule, no stat",
+    "why": "not a PoB output",
+    "partial_part": ""
+  },
+  {
+    "line": "Your Mercenary can equip Unique Boots",
+    "surfaces": [
+      "ascendancy"
+    ],
+    "sources": [
+      "19993"
+    ],
+    "group": "other",
+    "kind": "mercenary_companion",
+    "boss_lane": [],
+    "optimistic_lane": [],
+    "zero_reason": "no_representation: a companion's equip rule, no stat",
+    "why": "not a PoB output",
+    "partial_part": ""
+  },
+  {
+    "line": "Your Mercenary can equip Unique Gloves",
+    "surfaces": [
+      "ascendancy"
+    ],
+    "sources": [
+      "52633"
+    ],
+    "group": "other",
+    "kind": "mercenary_companion",
+    "boss_lane": [],
+    "optimistic_lane": [],
+    "zero_reason": "no_representation: a companion's equip rule, no stat",
+    "why": "not a PoB output",
+    "partial_part": ""
+  },
+  {
+    "line": "Your Mercenary can equip Unique Helmets",
+    "surfaces": [
+      "ascendancy"
+    ],
+    "sources": [
+      "32095"
+    ],
+    "group": "other",
+    "kind": "mercenary_companion",
+    "boss_lane": [],
+    "optimistic_lane": [],
+    "zero_reason": "no_representation: a companion's equip rule, no stat",
+    "why": "not a PoB output",
+    "partial_part": ""
+  },
+  {
+    "line": "Your Mercenary can equip Unique Rings",
+    "surfaces": [
+      "ascendancy"
+    ],
+    "sources": [
+      "43645"
+    ],
+    "group": "other",
+    "kind": "mercenary_companion",
+    "boss_lane": [],
+    "optimistic_lane": [],
+    "zero_reason": "no_representation: a companion's equip rule, no stat",
+    "why": "not a PoB output",
+    "partial_part": ""
+  },
+  {
+    "line": "Your Mercenary can equip Unique Weapons, Shields and Quivers",
+    "surfaces": [
+      "ascendancy"
+    ],
+    "sources": [
+      "25944"
+    ],
+    "group": "other",
+    "kind": "mercenary_companion",
+    "boss_lane": [],
+    "optimistic_lane": [],
+    "zero_reason": "no_representation: a companion's equip rule, no stat",
+    "why": "not a PoB output",
+    "partial_part": ""
+  },
+  {
+    "line": "Your Warcries attempt to shake extra items from Corpses",
+    "surfaces": [
+      "ascendancy"
+    ],
+    "sources": [
+      "34229"
+    ],
+    "group": "other",
+    "kind": "no_representation",
+    "boss_lane": [],
+    "optimistic_lane": [],
+    "zero_reason": "no_representation: loot from corpses, no number",
+    "why": "not a PoB output",
+    "partial_part": ""
+  },
+  {
+    "line": "Your Warcries open Chests",
+    "surfaces": [
+      "ascendancy"
+    ],
+    "sources": [
+      "34229"
+    ],
+    "group": "other",
+    "kind": "no_representation",
+    "boss_lane": [],
+    "optimistic_lane": [],
+    "zero_reason": "no_representation: chests, no number",
+    "why": "not a PoB output",
+    "partial_part": ""
+  },
+  {
+    "line": "you consume a total of 8 Steel Shards",
+    "surfaces": [
+      "unique"
+    ],
+    "sources": [
+      "Steelworm, Broadhead Arrow Quiver"
+    ],
+    "group": "other",
+    "kind": "steel_shards",
+    "boss_lane": [],
+    "optimistic_lane": [],
+    "zero_reason": "no_representation: a shard count on a Steel skill; PoB counts shards only through the config (ConfigOptions.lua:652)",
+    "why": "a consumed count with no stat line",
+    "partial_part": ""
+  }
+]

@@ -1,0 +1,1081 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/schemas/pob/pob.tag-corpus-bundle.schema.json",
+  "title": "PoB tag corpus family bundle",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "corpus_id",
+    "family",
+    "record_count",
+    "provenance",
+    "metadata",
+    "records"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "1.0.0"
+    },
+    "corpus_id": {
+      "type": "string",
+      "const": "pob_tag_corpus"
+    },
+    "family": {
+      "$ref": "#/$defs/family"
+    },
+    "record_count": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "provenance": {
+      "$ref": "#/$defs/provenance"
+    },
+    "metadata": {
+      "$ref": "#/$defs/metadata"
+    },
+    "records": {
+      "type": "array",
+      "minItems": 1
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "family": {
+            "const": "items"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "provenance": {
+            "properties": {
+              "derived_from_family": {
+                "const": "items"
+              }
+            }
+          },
+          "records": {
+            "items": {
+              "$ref": "#/$defs/item_record"
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "family": {
+            "enum": [
+              "active_gems",
+              "support_gems"
+            ]
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "records": {
+            "items": {
+              "$ref": "#/$defs/gem_record"
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "family": {
+            "enum": [
+              "passives",
+              "keystones"
+            ]
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "records": {
+            "items": {
+              "$ref": "#/$defs/tree_node_record"
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "family": {
+            "const": "masteries"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "records": {
+            "items": {
+              "$ref": "#/$defs/mastery_record"
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "family": {
+            "const": "ascendancies"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "records": {
+            "items": {
+              "$ref": "#/$defs/ascendancy_record"
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "family": {
+            "const": "config_surfaces"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "records": {
+            "items": {
+              "$ref": "#/$defs/config_record"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "$defs": {
+    "sha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "tag_token": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:_[a-z0-9]+)*$"
+    },
+    "family": {
+      "type": "string",
+      "enum": [
+        "items",
+        "active_gems",
+        "support_gems",
+        "passives",
+        "masteries",
+        "ascendancies",
+        "keystones",
+        "config_surfaces"
+      ]
+    },
+    "facet_name": {
+      "type": "string",
+      "enum": [
+        "item_slot",
+        "item_class",
+        "item_kind",
+        "influence",
+        "gem_role",
+        "node_kind",
+        "class",
+        "config_section",
+        "config_control_type",
+        "config_scope",
+        "config_predicate",
+        "attribute",
+        "damage_type",
+        "mechanic",
+        "weapon",
+        "resource",
+        "defence",
+        "charge",
+        "ailment",
+        "scaling_stat"
+      ]
+    },
+    "facet": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "facet",
+        "values"
+      ],
+      "properties": {
+        "facet": {
+          "$ref": "#/$defs/facet_name"
+        },
+        "values": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "$ref": "#/$defs/tag_token"
+          }
+        }
+      }
+    },
+    "source_lane": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "lane_id",
+        "canonical_path",
+        "lock_path",
+        "repo",
+        "repo_url",
+        "pinned_ref",
+        "pinned_commit",
+        "observed_commit",
+        "tree_version"
+      ],
+      "properties": {
+        "lane_id": {
+          "type": "string",
+          "const": "pob_source_lane"
+        },
+        "canonical_path": {
+          "type": "string",
+          "const": "vendor/pob/source"
+        },
+        "lock_path": {
+          "type": "string",
+          "const": "locks/pob.source.lock.json"
+        },
+        "repo": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+$"
+        },
+        "repo_url": {
+          "type": "string",
+          "format": "uri",
+          "pattern": "^https://github\\.com/[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+\\.git$"
+        },
+        "pinned_ref": {
+          "type": "string",
+          "pattern": "^refs/tags/v.+$"
+        },
+        "pinned_commit": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{40}$"
+        },
+        "observed_commit": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{40}$"
+        },
+        "tree_version": {
+          "type": "string",
+          "pattern": "^\\d+_\\d+(?:_[a-z]+(?:_[a-z]+)?)?$"
+        }
+      }
+    },
+    "provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "derived_from_corpus_id",
+        "derived_from_manifest_path",
+        "derived_from_manifest_sha256",
+        "derived_from_family",
+        "derived_from_bundle_path",
+        "derived_from_bundle_sha256",
+        "source_lane"
+      ],
+      "properties": {
+        "derived_from_corpus_id": {
+          "type": "string",
+          "const": "pob_game_corpus"
+        },
+        "derived_from_manifest_path": {
+          "type": "string",
+          "const": "src/poe_build_research/pob/corpus_data/manifest.json"
+        },
+        "derived_from_manifest_sha256": {
+          "$ref": "#/$defs/sha256"
+        },
+        "derived_from_family": {
+          "$ref": "#/$defs/family"
+        },
+        "derived_from_bundle_path": {
+          "type": "string",
+          "pattern": "^src/poe_build_research/pob/corpus_data/[A-Za-z0-9_.-]+\\.json$"
+        },
+        "derived_from_bundle_sha256": {
+          "$ref": "#/$defs/sha256"
+        },
+        "source_lane": {
+          "$ref": "#/$defs/source_lane"
+        }
+      }
+    },
+    "facet_coverage": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "facet",
+        "record_count",
+        "values"
+      ],
+      "properties": {
+        "facet": {
+          "$ref": "#/$defs/facet_name"
+        },
+        "record_count": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "values": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "$ref": "#/$defs/tag_token"
+          }
+        }
+      }
+    },
+    "metadata": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "record_field_order",
+        "facet_field_order",
+        "facet_coverage"
+      ],
+      "properties": {
+        "record_field_order": {
+          "const": [
+            "source_id",
+            "source_name",
+            "search_tags",
+            "scaling_facets",
+            "supporting_text",
+            "source_context"
+          ]
+        },
+        "facet_field_order": {
+          "const": [
+            "facet",
+            "values"
+          ]
+        },
+        "facet_coverage": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/facet_coverage"
+          }
+        }
+      }
+    },
+    "record_common": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "source_id",
+        "source_name",
+        "search_tags",
+        "scaling_facets",
+        "supporting_text",
+        "source_context"
+      ],
+      "properties": {
+        "source_id": {
+          "type": "string",
+          "pattern": "^[a-z_]+:[a-z0-9_]+$"
+        },
+        "source_name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "search_tags": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "$ref": "#/$defs/tag_token"
+          }
+        },
+        "scaling_facets": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/facet"
+          }
+        },
+        "supporting_text": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "source_context": {
+          "type": "object"
+        }
+      }
+    },
+    "requirements": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "level": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "strength": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "dexterity": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "intelligence": {
+          "type": "integer",
+          "minimum": 0
+        }
+      }
+    },
+    "required_attributes": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "dexterity",
+        "intelligence",
+        "strength"
+      ],
+      "properties": {
+        "dexterity": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "intelligence": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "strength": {
+          "type": "integer",
+          "minimum": 0
+        }
+      }
+    },
+    "item_context": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "slot_family",
+        "item_kind",
+        "type",
+        "sub_type",
+        "requirements",
+        "raw_tags",
+        "source_file",
+        "implicit_text",
+        "implicit_mod_types",
+        "influence_tags"
+      ],
+      "properties": {
+        "slot_family": {
+          "$ref": "#/$defs/tag_token"
+        },
+        "item_kind": {
+          "$ref": "#/$defs/tag_token"
+        },
+        "type": {
+          "type": "string",
+          "minLength": 1
+        },
+        "sub_type": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "requirements": {
+          "$ref": "#/$defs/requirements"
+        },
+        "raw_tags": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "$ref": "#/$defs/tag_token"
+          }
+        },
+        "source_file": {
+          "type": "string",
+          "pattern": "^vendor/pob/source/src/Data/Bases/.+\\.lua$"
+        },
+        "implicit_text": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "implicit_mod_types": {
+          "type": "array",
+          "items": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        "influence_tags": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "$ref": "#/$defs/tag_token"
+          }
+        }
+      }
+    },
+    "item_record": {
+      "allOf": [
+        {
+          "$ref": "#/$defs/record_common"
+        },
+        {
+          "properties": {
+            "source_context": {
+              "$ref": "#/$defs/item_context"
+            }
+          }
+        }
+      ]
+    },
+    "gem_context": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "base_type_name",
+        "variant_id",
+        "record_id",
+        "game_id",
+        "granted_effect_id",
+        "secondary_granted_effect_id",
+        "required_attributes",
+        "natural_max_level",
+        "tag_keys",
+        "is_vaal_gem",
+        "grants_active_skill"
+      ],
+      "properties": {
+        "base_type_name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "variant_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "record_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "game_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "granted_effect_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "secondary_granted_effect_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "required_attributes": {
+          "$ref": "#/$defs/required_attributes"
+        },
+        "natural_max_level": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "tag_keys": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "$ref": "#/$defs/tag_token"
+          }
+        },
+        "is_vaal_gem": {
+          "type": "boolean"
+        },
+        "grants_active_skill": {
+          "type": "boolean"
+        }
+      }
+    },
+    "gem_record": {
+      "allOf": [
+        {
+          "$ref": "#/$defs/record_common"
+        },
+        {
+          "properties": {
+            "source_context": {
+              "$ref": "#/$defs/gem_context"
+            }
+          }
+        }
+      ]
+    },
+    "tree_node_context": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "node_id",
+        "skill_id",
+        "stats",
+        "reminder_text",
+        "recipe",
+        "is_notable",
+        "is_keystone",
+        "is_mastery",
+        "is_blighted",
+        "is_proxy",
+        "is_ascendancy_start",
+        "class_start_index",
+        "ascendancy_name"
+      ],
+      "properties": {
+        "node_id": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "skill_id": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "stats": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "reminder_text": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "recipe": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "is_notable": {
+          "type": "boolean"
+        },
+        "is_keystone": {
+          "type": "boolean"
+        },
+        "is_mastery": {
+          "type": "boolean"
+        },
+        "is_blighted": {
+          "type": "boolean"
+        },
+        "is_proxy": {
+          "type": "boolean"
+        },
+        "is_ascendancy_start": {
+          "type": "boolean"
+        },
+        "class_start_index": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "ascendancy_name": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "tree_node_record": {
+      "allOf": [
+        {
+          "$ref": "#/$defs/record_common"
+        },
+        {
+          "properties": {
+            "source_context": {
+              "$ref": "#/$defs/tree_node_context"
+            }
+          }
+        }
+      ]
+    },
+    "mastery_effect": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "effect_id",
+        "stats",
+        "reminder_text"
+      ],
+      "properties": {
+        "effect_id": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "stats": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "reminder_text": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    },
+    "mastery_context": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "node_id",
+        "skill_id",
+        "stats",
+        "reminder_text",
+        "recipe",
+        "is_notable",
+        "is_keystone",
+        "is_mastery",
+        "is_blighted",
+        "is_proxy",
+        "is_ascendancy_start",
+        "class_start_index",
+        "ascendancy_name",
+        "mastery_effects"
+      ],
+      "properties": {
+        "node_id": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "skill_id": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "stats": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "reminder_text": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "recipe": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "is_notable": {
+          "type": "boolean"
+        },
+        "is_keystone": {
+          "type": "boolean"
+        },
+        "is_mastery": {
+          "type": "boolean"
+        },
+        "is_blighted": {
+          "type": "boolean"
+        },
+        "is_proxy": {
+          "type": "boolean"
+        },
+        "is_ascendancy_start": {
+          "type": "boolean"
+        },
+        "class_start_index": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "ascendancy_name": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "mastery_effects": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/mastery_effect"
+          }
+        }
+      }
+    },
+    "mastery_record": {
+      "allOf": [
+        {
+          "$ref": "#/$defs/record_common"
+        },
+        {
+          "properties": {
+            "source_context": {
+              "$ref": "#/$defs/mastery_context"
+            }
+          }
+        }
+      ]
+    },
+    "ascendancy_context": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "ascendancy_id",
+        "class_name",
+        "source_kind",
+        "node_count",
+        "start_node_ids",
+        "node_names",
+        "stat_excerpt",
+        "flavour_text"
+      ],
+      "properties": {
+        "ascendancy_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "class_name": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "source_kind": {
+          "type": "string",
+          "minLength": 1
+        },
+        "node_count": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "start_node_ids": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "integer",
+            "minimum": 0
+          }
+        },
+        "node_names": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "stat_excerpt": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "flavour_text": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    },
+    "ascendancy_record": {
+      "allOf": [
+        {
+          "$ref": "#/$defs/record_common"
+        },
+        {
+          "properties": {
+            "source_context": {
+              "$ref": "#/$defs/ascendancy_context"
+            }
+          }
+        }
+      ]
+    },
+    "list_value": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "label",
+        "value"
+      ],
+      "properties": {
+        "label": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "value": {
+          "type": [
+            "string",
+            "number",
+            "boolean",
+            "null"
+          ]
+        }
+      }
+    },
+    "config_context": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "var",
+        "label",
+        "section",
+        "type",
+        "predicates",
+        "list_values",
+        "tooltip_text",
+        "include_transfigured",
+        "has_apply_function",
+        "has_tooltip_function",
+        "column",
+        "order",
+        "default_index",
+        "default_placeholder",
+        "list_source"
+      ],
+      "properties": {
+        "var": {
+          "type": "string",
+          "minLength": 1
+        },
+        "label": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "section": {
+          "type": "string",
+          "minLength": 1
+        },
+        "type": {
+          "type": "string",
+          "minLength": 1
+        },
+        "predicates": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "$ref": "#/$defs/tag_token"
+          }
+        },
+        "list_values": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/list_value"
+          }
+        },
+        "tooltip_text": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "include_transfigured": {
+          "type": "boolean"
+        },
+        "has_apply_function": {
+          "type": "boolean"
+        },
+        "has_tooltip_function": {
+          "type": "boolean"
+        },
+        "column": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "order": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "default_index": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "default_placeholder": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "list_source": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "config_record": {
+      "allOf": [
+        {
+          "$ref": "#/$defs/record_common"
+        },
+        {
+          "properties": {
+            "source_context": {
+              "$ref": "#/$defs/config_context"
+            }
+          }
+        }
+      ]
+    }
+  }
+}

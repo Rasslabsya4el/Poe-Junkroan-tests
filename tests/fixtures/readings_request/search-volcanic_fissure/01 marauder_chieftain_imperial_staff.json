@@ -1,0 +1,11 @@
+{
+ "ok": true,
+ "seed": 2,
+ "value": 216281.68154373,
+ "final": {
+  "Life": 4513
+ },
+ "stem": "01 marauder_chieftain_imperial_staff",
+ "summary": "  pinnacle boss ramp (10 s): TotalDotDPS 216282",
+ "explanation": "| Leaf | Removing it: TotalDotDPS | Life |"
+}

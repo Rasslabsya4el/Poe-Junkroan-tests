@@ -1,0 +1,9 @@
+author tree 3_29 -> 3_29: 107 nodes, 0 lost
+author row replayed from the memo of this run (bleed_bow-flasks-uptime-100.json)
+author gems normalized to the rails: level 18/0 -> 18/0 on 10 gems
+author raw 633,708 CombinedDPS; under our lane 642,120 (choices {}); objective maximize CombinedDPS subject to Life >= 4776, EffectiveMovementSpeedMod >= 1.164, MoMCastsAfterMaxHit >= 3, HitChance >= 95, ElementalOverloadUptime >= 0.9, TotalEHP >= 12649.5, PhysicalMaximumHitTaken >= 5610.7, FireMaximumHitTaken >= 18992.4, ColdMaximumHitTaken >= 18232.4, LightningMaximumHitTaken >= 19818, RampBudget >= RampStages, FireResist >= FireResistMax, ColdResist >= ColdResistMax, LightningResist >= LightningResistMax, Str >= ReqStr, Dex >= ReqDex, Int >= ReqInt, ManaUnreserved >= ManaOverReserved, ManaCostPool >= ManaCost, LifeUnreserved >= LifeCost, NetLifeRegen+NetEnergyShieldRegen+SelfCostPerSecond >= 0*Life, ManaRegenRecovery+ManaLeechGainRate+ManaRecoup >= 0.85*ManaSustainPerSecondCost, LifeRegenRecovery+LifeLeechGainRate+LifeRecoup >= 0.85*LifeSustainPerSecondCost, EnergyShieldRegenRecovery+EnergyShieldLeechGainRate+EnergyShieldRecoup+EnergyShieldRechargeForCosts >= 0.85*ESSustainPerSecondCost
+pantheon_major: 'TheBrineKing' -> 'None' (rails)
+pantheon_minor: 'Ryslatha' -> 'None' (rails)
+step start: skeleton applied
+  skeleton applied                 4.6 s  value        3,201  viol 5.708  ramp 0.7 s/2.5 s   minions {'Herald of Purity': 4} minion skills {'Herald of Purity': 1}
+step start: confi

@@ -1,0 +1,8 @@
+{"raw": [{"session_id": "a1b2c3d4-0000-0000-0000-000000000001", "kind": "background", "state": "running"},
+         {"session_id": "e5f6a7b8-0000-0000-0000-000000000002", "kind": "interactive", "state": "idle"},
+         {"session_id": "dead", "kind": "background", "state": "done"}],
+ "rows": [
+  {"session_id": "a1b2c3d4-0000-0000-0000-000000000001", "name": "orch Poe-Junkroan #796", "kind": "background", "status": "busy", "issue": {"number": 796}, "model": "Sonnet 5.5", "context": 90000, "age_human": "40 min",
+   "last_actions": [{"summary": "ran pytest"}], "held_issues": [{"number": 801, "subagents": [{"agent_id": "w9", "task": "worker #801", "agent_type": "worker", "issue": 801, "model": "Sonnet 5.5", "context": 20000, "duration_human": "3 min", "running": false}]}],
+   "subagents": [{"agent_id": "w1", "task": "worker #796", "agent_type": "worker", "issue": 796, "model": "Sonnet 5.5", "context": 50000, "duration_human": "10 min", "running": true}]},
+  {"session_id": "e5f6a7b8-0000-0000-0000-000000000002", "name": "Brain: PoB", "kind": "interactive", "status": "idle", "issue": null, "model": "Fable 5.1", "context": 150000, "age_human": "2 h 5 min", "last_actions": [], "subagents": []}]}
