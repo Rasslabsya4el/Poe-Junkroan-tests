@@ -1,0 +1,8 @@
+{
+ "anomaly_taken": "cd 'C:\\Coding\\poe-junkroan-v2-daemon'; python scripts\\runs.py anomaly-taken 'stuck:o''brien'",
+ "apply_mode": "$path = 'C:\\Coding\\poe-junkroan-v2\\var\\machine_budget.json'; $bytes = [Convert]::FromBase64String('ewogImRheSI6IHsKICAiaG91cnMiOiBbCiAgIDAsCiAgIDI0CiAgXSwKICAibWluX2ZyZWVfcmFtX2diIjogNCwKICAib3RoZXJzIjogMSwKICAidG90YWwiOiAzCiB9LAogInN0cmljdF9yZXNlcnZlIjogZmFsc2UKfQo='); [IO.File]::WriteAllBytes($path, $bytes); $check = [IO.File]::ReadAllBytes($path); if ($check[0] -eq 239 -and $check[1] -eq 187 -and $check[2] -eq 191) { Write-Error 'BOM written'; exit 1 }; Get-CimInstance Win32_Process | Where-Object { $_.CommandLine -match 'headless_runtime_worker' } | ForEach-Object { try { (Get-Process -Id $_.ProcessId).PriorityClass = 'Normal' } catch {} }; Write-Output 'OK'",
+ "daemon_stop": "$env:JUNKROAN_HOST = 'laptop'; cd 'C:\\Coding\\poe-junkroan-v2-daemon'; & 'python' 'scripts/runs.py' 'stop' 'j-20261014-001' '--local' '--reason' 'it''s stuck'",
+ "mark_posted": "cd 'C:\\Coding\\poe-junkroan-v2-daemon'; python scripts\\runs.py mark-posted 'j-20261014-001'",
+ "rebalance_move": "$env:JUNKROAN_HOST = 'laptop'; $env:PYTHONPATH = 'src'; cd 'C:\\Coding\\poe-junkroan-v2-daemon'; python -c \"import base64,json,sys; from junkroan.runs.store import Store; d=json.loads(base64.b64decode(sys.argv[1])); print(Store().submit(**d).id)\" 'eyJob3N0IjogImxhcHRvcCIsICJwcmlvcml0eSI6ICJQMiIsICJ0YWciOiAidDEiLCAiY21kIjogInB5dGhvbiB4LnB5IC0tYSAnYiciLCAiaXNzdWUiOiA1LCAic3VibWl0dGVyIjogIiIsICJwaW4iOiBudWxsLCAicmVzdW1hYmxlIjogZmFsc2UsICJ3b3JrZXJzIjogMSwgImFmdGVyIjogW10sICJqb2JfY2xhc3MiOiAicnVuIiwgIm1vdmVkX2Zyb20iOiAicGMifQ=='",
+ "run_issue": "cd 'C:\\Coding\\poe-junkroan-v2-daemon'; python scripts\\runs.py mark-run-issue 'j-20261014-001' 42"
+}

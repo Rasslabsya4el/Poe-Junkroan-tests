@@ -1,0 +1,227 @@
+{
+ "j-20260927-1526-72cb": {
+  "kind": "bench",
+  "id": "j-20260927-1526-72cb",
+  "tag": "fix171-after-tpl",
+  "cmd": "python scripts/benchmark.py z329_elementalist_winter_orb z326_elementalist_wave_of_conviction poison_spark soulrend_chaos_dot summon_raging_spirits hit_penance_brand stormbrand --seed 4 --loop --loop-seconds 5400 --no-variants --gear wishlist --workers 5 --tag fix171-after-tpl",
+  "start_ts": "2026-09-27T17:34:56.772770+00:00",
+  "end_ts": "2026-09-27T19:55:43.430286+00:00",
+  "workers": 5,
+  "argv": [],
+  "args": {
+   "slugs": [
+    "z329_elementalist_winter_orb",
+    "z326_elementalist_wave_of_conviction",
+    "poison_spark",
+    "soulrend_chaos_dot",
+    "summon_raging_spirits",
+    "hit_penance_brand",
+    "stormbrand"
+   ],
+   "seeds": 1,
+   "seed": 4,
+   "loop_seconds": 5400.0,
+   "no_variants": true,
+   "gear": "wishlist",
+   "construction": "classic",
+   "construction_only": false,
+   "stat": null,
+   "ablate": null,
+   "tree_depth": 6,
+   "tree_trials": 300,
+   "cluster_candidates": false,
+   "skip_inert": false,
+   "fulldps_shortcut": false,
+   "fixed_point_check": true
+  },
+  "planned": [],
+  "rows": [
+   {
+    "stem": "hit_penance_brand-s4",
+    "slug": "hit_penance_brand",
+    "seed": 4,
+    "ok": true,
+    "seconds": 3692.015861000167,
+    "end": 1790537046.8978064
+   },
+   {
+    "stem": "poison_spark-s4",
+    "slug": "poison_spark",
+    "seed": 4,
+    "ok": true,
+    "seconds": 4891.9431920999195,
+    "end": 1790535389.8617294
+   },
+   {
+    "stem": "soulrend_chaos_dot-s4",
+    "slug": "soulrend_chaos_dot",
+    "seed": 4,
+    "ok": true,
+    "seconds": 5449.797779300017,
+    "end": 1790535947.7104585
+   },
+   {
+    "stem": "stormbrand-s4",
+    "slug": "stormbrand",
+    "seed": 4,
+    "ok": true,
+    "seconds": 4075.9457125999033,
+    "end": 1790538934.965218
+   },
+   {
+    "stem": "summon_raging_spirits-s4",
+    "slug": "summon_raging_spirits",
+    "seed": 4,
+    "ok": true,
+    "seconds": 6362.631645699963,
+    "end": 1790536860.5464838
+   },
+   {
+    "stem": "z326_elementalist_wave_of_conviction-s4",
+    "slug": "z326_elementalist_wave_of_conviction",
+    "seed": 4,
+    "ok": true,
+    "seconds": 2856.959379900014,
+    "end": 1790533354.8955765
+   },
+   {
+    "stem": "z329_elementalist_winter_orb-s4",
+    "slug": "z329_elementalist_winter_orb",
+    "seed": 4,
+    "ok": true,
+    "seconds": 4361.106607099995,
+    "end": 1790534859.0231242
+   }
+  ]
+ },
+ "j-20261006-2240-9479": {
+  "kind": "replay",
+  "id": "j-20261006-2240-9479",
+  "tag": "P1-#569",
+  "cmd": "python scripts/replay_bench.py --builds artifacts/benchmark/20260926-1357-tpl-byvalue-smoke-s4/*-s4.pob.txt --move loop --seed 1 --workers 2 --tag b569-loop-head --against loop-base-412911f",
+  "start_ts": "2026-10-06T22:10:07.489310+00:00",
+  "end_ts": "2026-10-06T23:06:18.021480+00:00",
+  "workers": 2,
+  "argv": [
+   "python",
+   "scripts/replay_bench.py",
+   "--builds",
+   "artifacts/benchmark/20260926-1357-tpl-byvalue-smoke-s4/*-s4.pob.txt",
+   "--move",
+   "loop",
+   "--seed",
+   "1",
+   "--workers",
+   "2",
+   "--tag",
+   "b569-loop-head",
+   "--against",
+   "loop-base-412911f"
+  ],
+  "lines": [
+   "  burning_arrow_snipe            1,288,274 -> 1,420,340 +10.25% 20 min",
+   "  cold_dot                       285,950 -> 283,237 -0.95% 11 min",
+   "  bleed_bow                      760,933 -> 754,039 -0.91% 38 min",
+   "  stormbrand                     2,588,214 -> 2,521,560 -2.58% 7.2 min",
+   "  summon_raging_spirits          1,328,469 -> 1,260,175 -5.14% 8.5 min",
+   "  impale_ballista                609,566 -> 599,238 -1.69% 23 min"
+  ],
+  "against": [
+   {
+    "reference": "bleed_bow",
+    "seconds": 2145.5938663999987,
+    "ok": true
+   },
+   {
+    "reference": "burning_arrow_snipe",
+    "seconds": 1069.6151391000021,
+    "ok": true
+   },
+   {
+    "reference": "cold_dot",
+    "seconds": 672.7202802000102,
+    "ok": true
+   },
+   {
+    "reference": "impale_ballista",
+    "seconds": 1571.6574835999927,
+    "ok": true
+   },
+   {
+    "reference": "stormbrand",
+    "seconds": 547.1254622999986,
+    "ok": true
+   },
+   {
+    "reference": "summon_raging_spirits",
+    "seconds": 559.6456004000065,
+    "ok": true
+   }
+  ]
+ },
+ "j-20261007-0151-e422": {
+  "kind": "replay",
+  "id": "j-20261007-0151-e422",
+  "tag": "P1-#553-3",
+  "cmd": "python scripts/replay_bench.py --builds artifacts/benchmark/20260926-1357-tpl-byvalue-smoke-s4/*-s4.pob.txt --move loop --seed 1 --workers 1 --tag b553-loop-head2 --against loop-base-412911f",
+  "start_ts": "2026-10-06T23:51:36.288667+00:00",
+  "end_ts": "2026-10-07T01:37:25.710569+00:00",
+  "workers": 1,
+  "argv": [
+   "python",
+   "scripts/replay_bench.py",
+   "--builds",
+   "artifacts/benchmark/20260926-1357-tpl-byvalue-smoke-s4/*-s4.pob.txt",
+   "--move",
+   "loop",
+   "--seed",
+   "1",
+   "--workers",
+   "1",
+   "--tag",
+   "b553-loop-head2",
+   "--against",
+   "loop-base-412911f"
+  ],
+  "lines": [
+   "  bleed_bow                      760,933 -> 895,878 +17.73% 26 min",
+   "  burning_arrow_snipe            1,288,274 -> 1,420,340 +10.25% 25 min",
+   "  cold_dot                       285,950 -> 283,237 -0.95% 16 min",
+   "  impale_ballista                609,566 -> 599,238 -1.69% 23 min",
+   "  stormbrand                     2,588,214 -> 2,521,560 -2.58% 6.6 min",
+   "  summon_raging_spirits          1,328,469 -> 1,260,175 -5.14% 6.1 min"
+  ],
+  "against": [
+   {
+    "reference": "bleed_bow",
+    "seconds": 2145.5938663999987,
+    "ok": true
+   },
+   {
+    "reference": "burning_arrow_snipe",
+    "seconds": 1069.6151391000021,
+    "ok": true
+   },
+   {
+    "reference": "cold_dot",
+    "seconds": 672.7202802000102,
+    "ok": true
+   },
+   {
+    "reference": "impale_ballista",
+    "seconds": 1571.6574835999927,
+    "ok": true
+   },
+   {
+    "reference": "stormbrand",
+    "seconds": 547.1254622999986,
+    "ok": true
+   },
+   {
+    "reference": "summon_raging_spirits",
+    "seconds": 559.6456004000065,
+    "ok": true
+   }
+  ]
+ }
+}

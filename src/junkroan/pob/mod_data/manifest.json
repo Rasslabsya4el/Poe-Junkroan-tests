@@ -1,0 +1,85 @@
+{
+  "corpus_id": "pob_mod_corpus",
+  "downstream_policy": {
+    "consumer_rule": "Downstream agents must read committed mod-family bundles instead of deriving families ad hoc from the game corpus.",
+    "non_goals": [
+      "No build ranking.",
+      "No craft advice.",
+      "No DPS valuation.",
+      "No item delta calculation.",
+      "No shopping advice."
+    ],
+    "read_root": "src/junkroan/pob/mod_data",
+    "runtime_authority": "src/junkroan/pob/corpus_data"
+  },
+  "families": [
+    {
+      "family": "mod_families",
+      "member_count": 4807,
+      "record_count": 1797,
+      "relative_path": "src/junkroan/pob/mod_data/mod_families.json",
+      "source_families": [
+        "items",
+        "passives",
+        "keystones",
+        "masteries"
+      ]
+    },
+    {
+      "family": "stat_families",
+      "member_count": 6718,
+      "record_count": 1614,
+      "relative_path": "src/junkroan/pob/mod_data/stat_families.json",
+      "source_families": [
+        "items",
+        "passives",
+        "keystones",
+        "masteries"
+      ]
+    }
+  ],
+  "schema_version": "1.0.0",
+  "source_game_corpus": {
+    "bundle_inputs": [
+      {
+        "family": "items",
+        "record_count": 1106,
+        "relative_path": "src/junkroan/pob/corpus_data/items.json",
+        "sha256": "9a966f85bdf8fde0f9cee42a0a9b36a4af2c51c1a2484567479c9817994398ed"
+      },
+      {
+        "family": "passives",
+        "record_count": 2421,
+        "relative_path": "src/junkroan/pob/corpus_data/passives.json",
+        "sha256": "e298a15db60857838cbe2b5c1ea331492c1a3c7dff31f2ea571e306147175cc6"
+      },
+      {
+        "family": "keystones",
+        "record_count": 57,
+        "relative_path": "src/junkroan/pob/corpus_data/keystones.json",
+        "sha256": "d5c177915bf7662fac1752d6ef7b99a2a1cd65fc871e310a238c151d76abadcb"
+      },
+      {
+        "family": "masteries",
+        "record_count": 353,
+        "relative_path": "src/junkroan/pob/corpus_data/masteries.json",
+        "sha256": "95ba1af703638ea18041798f61d016041684fd70fb7e795c69e515180415cf36"
+      }
+    ],
+    "corpus_id": "pob_game_corpus",
+    "manifest_path": "src/junkroan/pob/corpus_data/manifest.json",
+    "manifest_sha256": "8bf4070d5451e186841e7bb3fa8516ee515569d841f3fbe1d66c90ef21020a6d",
+    "schema_version": "1.0.0",
+    "source_lane": {
+      "canonical_path": "vendor/pob/source",
+      "lane_id": "pob_source_lane",
+      "lock_path": "locks/pob.source.lock.json",
+      "observed_commit": "b32759ab0f31a1c8499a0d420cb0f0633d4fe478",
+      "pinned_commit": "b32759ab0f31a1c8499a0d420cb0f0633d4fe478",
+      "pinned_ref": "refs/tags/v2.67.2",
+      "repo": "PathOfBuildingCommunity/PathOfBuilding",
+      "repo_url": "https://github.com/PathOfBuildingCommunity/PathOfBuilding.git",
+      "tree_version": "3_29"
+    }
+  }
+}

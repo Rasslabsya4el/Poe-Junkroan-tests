@@ -1,0 +1,312 @@
+{
+  "source": "Zizaran 3.29 (Curse of the Allflame) league-starter build guides",
+  "league": "3.29 Curse of the Allflame",
+  "collected": "2026-09-18",
+  "tree_versions": [
+    "3_28",
+    "3_29"
+  ],
+  "note": "Import codes fetched verbatim from pobb.in/<id>/raw and from the Maxroll planner API (https://planners.maxroll.gg/profiles/poe/<id>, field data.pobCode). PoB codes are hand-written by the author with several loadouts per stage; '{n}' in a title is the author's own marker linking an item set / tree spec / skill set.",
+  "excluded": [
+    {
+      "title": "Luminary Mercenary Support Build Guide",
+      "youtube_url": "https://www.youtube.com/watch?v=vq-ui0FGZxE",
+      "pob_url": "https://pobb.in/AwKOubsBxjUi",
+      "reason": "Build for the new 3.29 Luminary / Mercenary system. The PoB decodes with className=\"Scion\" ascendClassName=\"None\" (no ascendancy at all) and its tree specs / item sets are built around Mercenary gear; out of scope per the task."
+    }
+  ],
+  "builds": [
+    {
+      "slug": "gladiator_earthquake",
+      "file": "gladiator_earthquake.pob.txt",
+      "title": "Earthquake Gladiator League Starter",
+      "class": "Duelist",
+      "ascendancy": "Gladiator",
+      "main_skill": "Earthquake",
+      "maxroll_url": "https://maxroll.gg/poe/build-guides/earthquake-gladiator-league-starter",
+      "pob_url": "https://pobb.in/CQjwpiUqHfs1",
+      "youtube_url": "https://www.youtube.com/watch?v=izLrG4YH3aE",
+      "fetched": "2026-09-18",
+      "pob_build_level": 98,
+      "loadouts": {
+        "item_sets": [
+          "Level 13 example",
+          "Early Game",
+          "Midgame {1}",
+          "Endgame {2,4}",
+          "Endgame - suppress {3}",
+          "Minmax"
+        ],
+        "specs": [
+          "^2LEVELING",
+          "Level 12",
+          "Level 23",
+          "Level 33 - Normal Lab",
+          "Level 42",
+          "Level 52 - Cruel Lab",
+          "Level 68 - Merc Lab (Swap to 1H)",
+          "^2MAPS",
+          "Midgame - Uber Lab {1}",
+          "Endgame {2}",
+          "Endgame - Suppress {3}",
+          "Endgame - Cluster Setup {4}"
+        ],
+        "skill_sets": [
+          "Level 1 - 12",
+          "Level 12 - 18",
+          "Level 18 - 31",
+          "Level 31 - 38",
+          "Level 38 - Maps",
+          "Maps {1,2,3}",
+          "(Uber) Bossing",
+          "Exceptional Gems and stuff {4}"
+        ]
+      },
+      "early_loadout": {
+        "item_set": "Early Game",
+        "spec": "Level 68 - Merc Lab (Swap to 1H)",
+        "skill_set": "Maps {1,2,3}",
+        "level": 68,
+        "level_source": "spec title",
+        "linked_by": "inferred (no {n} marker on this item set)",
+        "spec_allocated_nodes": 99
+      },
+      "tree_versions": [
+        "3_28"
+      ],
+      "league": "3.29 Curse of the Allflame"
+    },
+    {
+      "slug": "champion_explosive_arrow",
+      "file": "champion_explosive_arrow.pob.txt",
+      "title": "Explosive Arrow Ballista Champion League Starter",
+      "class": "Duelist",
+      "ascendancy": "Champion",
+      "main_skill": "Explosive Arrow (Ballista Totem)",
+      "maxroll_url": "https://maxroll.gg/poe/build-guides/explosive-arrow-ballista-champion-league-starter",
+      "pob_url": "https://pobb.in/SS4brAQOXXM9",
+      "youtube_url": "https://www.youtube.com/watch?v=bD7Bt0UmVlo",
+      "fetched": "2026-09-18",
+      "pob_build_level": 99,
+      "loadouts": {
+        "item_sets": [
+          "Splitting Steel Leveling",
+          "Useful leveling uniques",
+          "Early Game",
+          "Midgame",
+          "Endgame",
+          "Endgame - Replica Dragonfang"
+        ],
+        "specs": [
+          "Level 13",
+          "Level 32 - Normal Lab",
+          "Level 57 - Cruel Lab",
+          "Level 69 - Merciless Lab",
+          "Level 87 - Uber Lab (pre-annoint)",
+          "----ENDGAME----",
+          "Endgame",
+          "Endgame - Unnatural Instinct",
+          "Endgame - Unnatural Instinct + Cluster",
+          "Endgame - Replica Dragonfang"
+        ],
+        "skill_sets": [
+          "Level 1-12",
+          "Level 12-28",
+          "Level 28-38",
+          "Level 38+",
+          "Endgame",
+          "Endgame - Replica Dragonfang"
+        ]
+      },
+      "early_loadout": {
+        "item_set": "Early Game",
+        "spec": "Level 69 - Merciless Lab",
+        "skill_set": "Level 38+",
+        "level": 69,
+        "level_source": "spec title",
+        "linked_by": "inferred (no {n} markers anywhere in this build)",
+        "spec_allocated_nodes": 99
+      },
+      "tree_versions": [
+        "3_28"
+      ],
+      "league": "3.29 Curse of the Allflame"
+    },
+    {
+      "slug": "juggernaut_boneshatter",
+      "file": "juggernaut_boneshatter.pob.txt",
+      "title": "Boneshatter Juggernaut League Starter",
+      "class": "Marauder",
+      "ascendancy": "Juggernaut",
+      "main_skill": "Boneshatter of Complex Trauma",
+      "maxroll_url": "https://maxroll.gg/poe/build-guides/boneshatter-juggernaut-league-starter",
+      "pob_url": "https://maxroll.gg/poe/pob/tcjqpe0t",
+      "youtube_url": "https://www.youtube.com/watch?v=ThANqlWYJ98",
+      "fetched": "2026-09-18",
+      "pob_build_level": 99,
+      "loadouts": {
+        "item_sets": [
+          "^4Early Game {1}",
+          "^4Midgame {2}",
+          "^4Endgame {3,4,5}"
+        ],
+        "specs": [
+          "^2Level 12",
+          "^2Level 22",
+          "^2Level 32 - Normal Lab",
+          "^2Level 44",
+          "^2Level 54 - Cruel Lab",
+          "^2Level 60",
+          "^2Level 67 - Merc Lab & Respec",
+          "^4Early Game {1}",
+          "^4Midgame {2}",
+          "^4Endgame {3}",
+          "^4Endgame - Corrupted Soul {4}",
+          "^4Endgame - Delirious Bloodline {5}"
+        ],
+        "skill_sets": [
+          "^2Level 1 - 4",
+          "^2Level 4 - 12",
+          "^2Level 12 - 16",
+          "^2Level 16 - 24",
+          "^2Level 24 - 38",
+          "^2Level 38 - Maps",
+          "^4Early Game {1}",
+          "^4Endgame {2,3,4,5,6}"
+        ]
+      },
+      "early_loadout": {
+        "item_set": "^4Early Game {1}",
+        "spec": "^4Early Game {1}",
+        "skill_set": "^4Early Game {1}",
+        "level": 81,
+        "level_source": "estimated from 114 allocated nodes",
+        "linked_by": "author marker {1}",
+        "spec_allocated_nodes": 114
+      },
+      "tree_versions": [
+        "3_28"
+      ],
+      "league": "3.29 Curse of the Allflame"
+    },
+    {
+      "slug": "elementalist_winter_orb",
+      "file": "elementalist_winter_orb.pob.txt",
+      "title": "Winter Orb Elementalist League Starter",
+      "class": "Witch",
+      "ascendancy": "Elementalist",
+      "main_skill": "Winter Orb",
+      "maxroll_url": null,
+      "pob_url": "https://maxroll.gg/poe/pob/p9jndn0t",
+      "youtube_url": "https://www.youtube.com/watch?v=OZypCJ-5Bog",
+      "fetched": "2026-09-18",
+      "pob_build_level": 100,
+      "loadouts": {
+        "item_sets": [
+          "Early Game {4}",
+          "Midgame {3}",
+          "Endgame {1,2}"
+        ],
+        "specs": [
+          "^2~~~ LEVELING ~~~",
+          "Level 12",
+          "Level 22",
+          "Level 31 - Worb + Normal Lab",
+          "Level 40",
+          "Level 55 - Cruel Lab",
+          "Level 67 - Merc Lab",
+          "Level 80 - Uber Lab {4}",
+          "^2~~~ ENDGAME ~~~",
+          "Midgame {3}",
+          "Endgame - No Cluster {2}",
+          "Endgame - Cluster {1}"
+        ],
+        "skill_sets": [
+          "^2~~~ LEVELING ~~~",
+          "Level 1 - 4",
+          "Level 4 - 8",
+          "Level 8 - 16",
+          "Level 16 - 28",
+          "Level 28 - 34",
+          "Level 34 - 38",
+          "Level 38 - Maps",
+          "^2~~~ MAPS ~~~",
+          "Early Game {4}",
+          "Midgame {3}",
+          "Endgame {1,2}"
+        ]
+      },
+      "early_loadout": {
+        "item_set": "Early Game {4}",
+        "spec": "Level 80 - Uber Lab {4}",
+        "skill_set": "Early Game {4}",
+        "level": 80,
+        "level_source": "spec title",
+        "linked_by": "author marker {4}",
+        "spec_allocated_nodes": 113
+      },
+      "tree_versions": [
+        "3_28"
+      ],
+      "league": "3.29 Curse of the Allflame"
+    },
+    {
+      "slug": "occultist_essence_drain",
+      "file": "occultist_essence_drain.pob.txt",
+      "title": "Essence Drain / Contagion Occultist League Starter (Goratha, featured by Zizaran)",
+      "class": "Witch",
+      "ascendancy": "Occultist",
+      "main_skill": "Essence Drain (+ Contagion / Bane)",
+      "maxroll_url": "https://maxroll.gg/poe/planner/f9mek30t",
+      "pob_url": "https://maxroll.gg/poe/pob/m5ui4t0x",
+      "youtube_url": "https://www.youtube.com/watch?v=0YnVnhYCzy8",
+      "fetched": "2026-09-18",
+      "pob_build_level": 100,
+      "loadouts": {
+        "item_sets": [
+          "Level 1-12",
+          "Level 12-28",
+          "Slinger 28+",
+          "Early Cane of Unravelling",
+          "CI Cane of Unravelling",
+          "Wands",
+          "Big Staff",
+          "ALTERNATIVE SETUP"
+        ],
+        "specs": [
+          "Level 1-12",
+          "Level 12-28",
+          "Slinger 28+",
+          "Early Cane of Unravelling",
+          "CI Cane of Unravelling",
+          "Wands",
+          "Big Staff",
+          "ALTERNATIVE SETUP"
+        ],
+        "skill_sets": [
+          "Level 1-12",
+          "Level 12-28",
+          "Slinger 28+",
+          "Early Cane of Unravelling",
+          "CI Cane of Unravelling",
+          "Wands",
+          "Big Staff",
+          "ALTERNATIVE SETUP"
+        ]
+      },
+      "early_loadout": {
+        "item_set": "Slinger 28+",
+        "spec": "Slinger 28+",
+        "skill_set": "Slinger 28+",
+        "level": 68,
+        "level_source": "estimated from 99 allocated nodes",
+        "linked_by": "identical titles across all three set types",
+        "spec_allocated_nodes": 99
+      },
+      "tree_versions": [
+        "3_29"
+      ],
+      "league": "3.29 Curse of the Allflame"
+    }
+  ]
+}

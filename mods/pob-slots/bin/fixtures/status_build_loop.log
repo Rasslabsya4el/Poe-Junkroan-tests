@@ -1,0 +1,153 @@
+author tree 3_28 -> 3_29: 104 nodes, 0 lost
+author gems normalized to the rails: level 18/0 -> 18/0 on 8 gems
+author raw 863,891 CombinedDPS; under our lane 363,065 (choices {'bloodSandStance': 'SAND'}); objective maximize CombinedDPS subject to Life >= 3745, EffectiveMovementSpeedMod >= 1.164, MoMCastsAfterMaxHit >= 3, HitChance >= 95, ElementalOverloadUptime >= 0.9, TotalEHP >= 13117.4, PhysicalMaximumHitTaken >= 5256.35, FireMaximumHitTaken >= 11898.8, ColdMaximumHitTaken >= 15723.4, LightningMaximumHitTaken >= 15723.4, RampBudget >= RampStages, FireResist >= FireResistMax, ColdResist >= ColdResistMax, LightningResist >= LightningResistMax, Str >= ReqStr, Dex >= ReqDex, Int >= ReqInt, ManaUnreserved >= ManaOverReserved, ManaCostPool >= ManaCost, LifeUnreserved >= LifeCost, NetLifeRegen+NetEnergyShieldRegen+SelfCostPerSecond >= 0*Life, ManaRegenRecovery+ManaLeechGainRate+ManaRecoup >= 0.85*ManaSustainPerSecondCost, LifeRegenRecovery+LifeLeechGainRate+LifeRecoup >= 0.85*LifeSustainPerSecondCost, EnergyShieldRegenRecovery+EnergyShieldLeechGainRate+EnergyShieldRecoup+EnergyShieldRechargeForCosts >= 0.85*ESSustainPerSecondCost
+pantheon_major: 'TheBrineKing' -> 'None' (rails)
+pantheon_minor: 'Ralakesh' -> 'None' (rails)
+step start: skeleton applied
+  skeleton applied                   3 s  value       18,523  viol 6.353  ramp 3.6 s/3.5 s  
+step start: config (conservative lane)
+  config (conservative lane)       3.6 s  value       14,525  viol 6.057  ramp 1.1 s/3.2 s  2 inputs on  [-21.6% vs skeleton applied]
+step skipped: rig gear
+step skipped: rig tree
+step skipped: gear pass 1 (rig tree)
+step start: gear pass 1 (empty tree)
+  gear pass 1 (empty tree)       4.5 min  value       16,893  viol 3.349  ramp 1.5 s/3.3 s    [+16.3% vs config (conservative lane)]
+step skipped: config re-derived (after gear pass 1)
+step skipped: flat-reservation aura levels
+step skipped: supports re-picked (no number)
+step skipped: tree seed toward <stat>
+step start: tree greedy
+  tree greedy                    3.3 min  value      320,707  viol 0.479  ramp 1.8 s/3.7 s  budget spent  [+1798.5% vs gear pass 1 (empty tree)]
+step start: gear pass 2 (with tree)
+  gear pass 2 (with tree)        8.8 min  value      278,927  viol 0.067  ramp 1.8 s/3.8 s    [-13.0% vs tree greedy]
+step start: tree rebuilt on gear
+  tree rebuilt on gear            49 min  value      287,135  viol 0.000  ramp 1.8 s/3.7 s  278,927 (viol 0.067) -> 287,135 (viol 0.000) kept [sum 287,135 (viol 0.000); cover 230,829 (viol 0.000) | rebuild before: construction 278,927 (viol 0.067: NetLifeRegen+NetEnergyShieldRegen+SelfCostPerSecond>=Life 0.0224, Life 0.0216, Str>=ReqStr 0.0164, Int>=ReqInt 0.00685) | delivered 278,927 (viol 0.067: NetLifeRegen+NetEnergyShieldRegen+SelfCostPerSecond>=Life 0.0224, Life 0.0216, Str>=ReqStr 0.0164, Int>=ReqInt 0.00685) | rebuild sum: construction 248,399 (viol 0.000) | delivered 287,135 (viol 0.000) | rebuild cover: construction 235,105 (viol 0.000) | delivered 230,829 (viol 0.000)]  [+2.9% vs gear pass 2 (with tree)]
+step start: anoint
+  anoint                            34 s  value      308,011  viol 0.000  ramp 1.8 s/3.7 s  anoint: Acrimony, score 287,135 -> 308,011, 201 measured, 34 s  [+7.3% vs tree rebuilt on gear]
+step start: flasks
+  flasks                         9.8 min  value      308,011  viol 0.000  ramp 1.8 s/3.7 s  flask: Flask 1 'Scholar's Divine Life Flask of Quashing' (input), score 308011 -> 308011, 79 measured, 31 s; flask: Flask 2 'Scholar's Ruby Flask of the Kaleidoscope' (input), score 308011 -> 308011, 243 measured, 3.6 min; flask: Flask 3 'Insightful Poisonberry Tincture of Dispersion' (input), score 308011 -> 308011, 243 measured, 1.5 min; flask: Flask 4 'Alarmed Divine Life Flask of Alleviation' (input), score 308011 -> 308011, 243 measured, 2.5 min; flask: Flask 5 'Thickened Divine Life Flask of Entropy' (input), score 308011 -> 308011, 243 measured, 1.5 min; 308,011 -> 308,011; 1051 measured  [+0.0% vs anoint]
+step skipped: clusters
+step start: jewels
+  jewels                          10 min  value      310,113  viol 0.000  ramp 1.9 s/3.8 s  socket 28475 '+7% to Chaos Damage over Time Multiplier'; 1628 measured  [+0.7% vs flasks]
+step skipped: supports re-picked
+step skipped: utility links
+step skipped: tree refine
+step start: loop opening
+step start: loop pass 1
+loop pass 1 move refine
+loop pass 1 tree refine: 270,361 (viol 0.000) vs 315,702 (viol 0.000), reverted (48s)
+loop pass 1 move swaps
+loop pass 1 tree path swaps: 315,702 (viol 0.000) -> 327,567 (viol 0.000) kept (375s)
+loop pass 1 move gear
+loop pass 1 Weapon 1: 327,567 (viol 0.000) -> 406,363 (viol 0.000) kept (22s)
+loop pass 1 move gear
+loop pass 1 Weapon 2 after repair viol 0.021 -> 0.000: 399,518 (viol 0.000) vs 406,363 (viol 0.000), reverted (51s)
+loop pass 1 move gear
+loop pass 1 Body Armour after repair viol 0.064 -> 0.000: 315,085 (viol 0.000) vs 406,363 (viol 0.000), reverted (55s)
+loop pass 1 move gear
+loop pass 1 Helmet: 406,363 (viol 0.000) vs 406,363 (viol 0.000), reverted (15s)
+loop pass 1 move gear
+loop pass 1 Gloves after repair viol 0.029 -> 0.000: 337,713 (viol 0.000) vs 406,363 (viol 0.000), reverted (44s)
+loop pass 1 move gear
+loop pass 1 Boots: incumbent kept (6s)
+loop pass 1 move gear
+loop pass 1 Belt after repair viol 0.897 -> 0.000: 384,863 (viol 0.000) vs 406,363 (viol 0.000), reverted (64s)
+loop pass 1 move gear
+loop pass 1 Amulet: 406,363 (viol 0.000) -> 429,200 (viol 0.000) kept (17s)
+loop pass 1 move gear
+loop pass 1 Ring 1 after repair viol 0.241 -> 0.000: 359,488 (viol 0.000) vs 429,200 (viol 0.000), reverted (44s)
+loop pass 1 move gear
+loop pass 1 Ring 2 after repair viol 0.041 -> 0.000: 351,469 (viol 0.000) vs 429,200 (viol 0.000), reverted (55s)
+loop pass 1 move weapon-base
+loop pass 1 move weapon-base
+loop pass 1 move picks
+loop pass 1 picks: 1 kept, 429,200 -> 448,666 (332s)
+loop pass 1 move lanes
+loop pass 1 lanes: choices {'bloodSandStance': 'SAND'}, 448,666 -> 448,666 (viol 0.000, 17s)
+  loop pass 1                     20 min  value      448,666  viol 0.000  ramp 1.8 s/3.8 s  swaps +3.8%; Weapon 1 +24.1%; Amulet +5.6%; picks: support Void Manipulation -> Cruelty (+4.5%)  [+44.7% vs jewels]
+step start: loop pass 2
+loop pass 2 move refine
+loop pass 2 tree refine: 448,666 (viol 0.000) vs 448,666 (viol 0.000), reverted (34s)
+loop pass 2 move swaps
+loop pass 2 tree path swaps: 448,666 (viol 0.000) vs 448,666 (viol 0.000), reverted (181s)
+loop pass 2 move gear
+loop pass 2 Weapon 1: incumbent kept (9s)
+loop pass 2 move gear
+loop pass 2 Weapon 2 after repair viol 0.011 -> 0.000: 436,133 (viol 0.000) vs 448,666 (viol 0.000), reverted (51s)
+loop pass 2 move gear
+loop pass 2 Body Armour after repair viol 0.066 -> 0.000: 347,650 (viol 0.000) vs 448,666 (viol 0.000), reverted (57s)
+loop pass 2 move gear
+loop pass 2 Helmet after repair viol 0.006 -> 0.000: 444,394 (viol 0.000) vs 448,666 (viol 0.000), reverted (56s)
+loop pass 2 move gear
+loop pass 2 Gloves after repair viol 0.335 -> 0.000: 346,980 (viol 0.000) vs 448,666 (viol 0.000), reverted (56s)
+loop pass 2 move gear
+loop pass 2 Boots: 448,666 (viol 0.000) vs 448,666 (viol 0.000), reverted (13s)
+loop pass 2 move gear
+loop pass 2 Belt after repair viol 0.948 -> 0.000: 329,101 (viol 0.000) vs 448,666 (viol 0.000), reverted (80s)
+loop pass 2 move gear
+loop pass 2 Amulet: incumbent kept (8s)
+loop pass 2 move gear
+loop pass 2 Ring 1 after repair viol 0.216 -> 0.000: 374,645 (viol 0.000) vs 448,666 (viol 0.000), reverted (43s)
+loop pass 2 move gear
+loop pass 2 Ring 2 after repair viol 0.038 -> 0.000: 367,021 (viol 0.000) vs 448,666 (viol 0.000), reverted (58s)
+loop pass 2 move weapon-base
+loop pass 2 move weapon-base
+loop pass 2 move picks
+loop pass 2 picks: 0 kept, 448,666 -> 448,666 (351s)
+loop pass 2 move lanes
+loop pass 2 move kick-tree
+loop pass 2 kick tree (draw 1 of 3): no change, skipped (139s)
+loop pass 2 kick tree (draw 2 of 3): no change, skipped (633s)
+loop pass 2 kick tree (draw 3 of 3): 362,508 (viol 0.000) vs 448,666 (viol 0.000), reverted (128s)
+loop pass 2 move kick-joint
+loop pass 2 kick joint (draw 1 of 4) ['Weapon 2', 'Ring 1'] + 16 tree points: 399,781 (viol 0.000) vs 448,666 (viol 0.000), reverted (197s)
+loop pass 2 kick joint (draw 2 of 4) ['Ring 1', 'Gloves'] + 17 tree points: 192,576 (viol 0.007) vs 448,666 (viol 0.000), reverted (507s)
+loop pass 2 kick joint (draw 3 of 4) ['Weapon 2', 'Ring 1'] + 16 tree points: 243,207 (viol 0.000) vs 448,666 (viol 0.000), reverted (1025s)
+loop pass 2 kick joint (draw 4 of 4) ['Weapon 2', 'Ring 1'] + 17 tree points: 436,488 (viol 0.000) vs 448,666 (viol 0.000), reverted (548s)
+  loop pass 2                     71 min  value      448,666  viol 0.000  ramp 1.8 s/3.8 s  no change  [+0.0% vs loop pass 1]
+step start: anoint re-pick
+  anoint re-pick                   2.1 s  value      448,666  viol 0.000  ramp 1.8 s/3.8 s  anoint re-pick: kept Acrimony, score 448,666 -> 448,666, 8 measured, 1.7 s  [+0.0% vs loop pass 2]
+jewels: dropped [28475] (socket no longer allocated)
+step start: config (final lanes)
+final entry: 448,666 (viol 0.000), sockets {'Weapon 1': 'W W W', 'Amulet': None, 'Helmet': 'W-W-W-W', 'Weapon 2': 'W W W', 'Belt': None, 'Ring 2': None, 'Ring 1': None, 'Boots': 'W-W-W-W', 'Gloves': 'W-W-W-B', 'Body Armour': 'W-B-W-W-W'}
+final lanes tuned (choices, identity): 448,666 (viol 0.000)
+  config (final lanes)              30 s  value      448,666  viol 0.000  ramp 1.8 s/3.8 s  3 conservative / 29 optimistic; choices {'bloodSandStance': 'SAND', 'pantheon_major': 'None', 'pantheon_minor': 'None'}  [+0.0% vs anoint re-pick]
+step start: fixed point check
+fixed point check move refine
+fixed point check tree refine: 448,666 (viol 0.000) vs 448,666 (viol 0.000), reverted (39s)
+fixed point check move swaps
+fixed point check tree path swaps: 448,666 (viol 0.000) vs 448,666 (viol 0.000), reverted (232s)
+fixed point check move gear
+fixed point check Weapon 1: incumbent kept (13s)
+fixed point check move gear
+fixed point check Weapon 2 after repair viol 0.011 -> 0.000: 436,133 (viol 0.000) vs 448,666 (viol 0.000), reverted (60s)
+fixed point check move gear
+fixed point check Body Armour after repair viol 0.066 -> 0.000: 347,650 (viol 0.000) vs 448,666 (viol 0.000), reverted (66s)
+fixed point check move gear
+fixed point check Helmet after repair viol 0.006 -> 0.000: 444,394 (viol 0.000) vs 448,666 (viol 0.000), reverted (60s)
+fixed point check move gear
+fixed point check Gloves after repair viol 0.335 -> 0.000: 346,980 (viol 0.000) vs 448,666 (viol 0.000), reverted (62s)
+fixed point check move gear
+fixed point check Boots: 448,666 (viol 0.000) vs 448,666 (viol 0.000), reverted (14s)
+fixed point check move gear
+fixed point check Belt after repair viol 0.948 -> 0.000: 329,101 (viol 0.000) vs 448,666 (viol 0.000), reverted (94s)
+fixed point check move gear
+fixed point check Amulet: incumbent kept (9s)
+fixed point check move gear
+fixed point check Ring 1 after repair viol 0.216 -> 0.000: 374,645 (viol 0.000) vs 448,666 (viol 0.000), reverted (55s)
+fixed point check move gear
+fixed point check Ring 2 after repair viol 0.038 -> 0.000: 367,021 (viol 0.000) vs 448,666 (viol 0.000), reverted (81s)
+fixed point check move weapon-base
+fixed point check move weapon-base
+fixed point check move picks
+fixed point check picks: 0 kept, 448,666 -> 448,666 (689s)
+  fixed point check               25 min  value      448,666  viol 0.000  ramp 1.8 s/3.8 s  no change  [+0.0% vs config (final lanes)]
+fixed point check: 0 moves kept
+final feasibility: ok
+keystones: none
+  Weapon 1: Legion Sword (40% increased Global Accuracy Rating): objective_line T3 T3/8 (135-154)% increased Physical Damage, delta 88,238; objective_line {crafted} Adds 15 to 28 Physical Damage, delta 42,477.
+  Boots: Sorcerer Boots: life T2 T2/9 +(100-114) to maximum Life; resistance_fixed T3 T3/8 +(36-41)% to Fire Resistance; movement T2 T2/6 30% increased Movement Speed.
+  Belt: Heavy Belt (+(25-35) to Strength): life T3 T3/10 +(100-114) to maximum Life; resistance_fixed T3 T3/8 +(36-41)% to Fire Resistance; resistance_fixed T3 T3/8 +(36-41)% to Cold Resistance; attribute {crafted} +18 to Strength and Intelligence, delta 297.
+  Amulet: Onyx Amulet (+(10-16) to all Attributes): life T3 T3/9 +(85-99) to maximum Life; resistance_fixed T3 T3/8 +(36-41)% to Lightning Resistance; extra resistance line T3 T3/8 +(36-41)% to Fire Resistance; objective_line {crafted} Adds 13 to 25 Chaos Damage to Attacks, delta 23,446.
+  Ring 1: Two-Stone Ring (+(12-16)% to Fire and Cold Resistances): life T2 T2/8 +(85-99) to maximum Life; resistance_fixed T3 T3/8 +(36-41)% to Lightning Resistance; objective_line {crafted} +33 to maximum Mana / 5% of Damage taken Recouped as Mana, delta 0.
+  Ring 2: Coral Ring (+(20-30) to maximum Life): resistance_craft {crafted} +12% to Lightning and Chaos Resistances, delta 0; life T2 T2/8 +(85-99) to maximum Life, delta -1,676; objective_line T3 T3/5 +(166-250) to Accuracy Rating, delta 992.

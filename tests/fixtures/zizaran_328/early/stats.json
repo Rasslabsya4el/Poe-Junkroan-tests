@@ -1,0 +1,203 @@
+[
+  {
+    "slug": "champion_explosive_arrow",
+    "level": 69,
+    "class": "Duelist/Champion",
+    "Life": 3807,
+    "EnergyShield": 0,
+    "Mana": 510,
+    "TotalEHP": 15193.593232052,
+    "FullDPS": 0,
+    "CombinedDPS": 368588.9907,
+    "TotalDPS": 368588.9907,
+    "TotalDotDPS": 399902.56389782,
+    "FireResist": 75,
+    "ColdResist": 75,
+    "LightningResist": 75,
+    "ChaosResist": -22,
+    "Armour": 8667,
+    "Evasion": 3423,
+    "SpellSuppressionChance": 0,
+    "BlockChance": 0,
+    "EffectiveSpellSuppressionChance": 0,
+    "Str": 161,
+    "Dex": 213,
+    "Int": 124,
+    "Speed": 2.2733,
+    "HitChance": 100,
+    "CritChance": 5,
+    "tree": {
+      "tree_version": "3_27",
+      "allocated_nodes": 99
+    },
+    "items": {
+      "equipped": 14,
+      "uniques": 0,
+      "rares": 9,
+      "rare_explicit_counts": [
+        4,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        2,
+        3
+      ],
+      "unique_names": []
+    }
+  },
+  {
+    "slug": "hierophant_kinetic_fusillade",
+    "level": 90,
+    "class": "Templar/Hierophant",
+    "Life": 3899,
+    "EnergyShield": 219,
+    "Mana": 946,
+    "TotalEHP": 34240.228920222,
+    "FullDPS": 2131955.9519749,
+    "CombinedDPS": 428724.09581109,
+    "TotalDPS": 425807.96404095,
+    "TotalDotDPS": 2916.1317701406,
+    "FireResist": 75,
+    "ColdResist": 75,
+    "LightningResist": 48,
+    "ChaosResist": 36,
+    "Armour": 20592,
+    "Evasion": 22,
+    "SpellSuppressionChance": 10,
+    "BlockChance": 47,
+    "EffectiveSpellSuppressionChance": 10,
+    "Str": 202,
+    "Dex": 113,
+    "Int": 265,
+    "Speed": 2.04,
+    "HitChance": 98,
+    "CritChance": 92.50416,
+    "tree": {
+      "tree_version": "3_27",
+      "allocated_nodes": 123
+    },
+    "items": {
+      "equipped": 15,
+      "uniques": 1,
+      "rares": 9,
+      "rare_explicit_counts": [
+        3,
+        4,
+        4,
+        5,
+        5,
+        4,
+        4,
+        4,
+        2
+      ],
+      "unique_names": [
+        "Velvet Gloves"
+      ]
+    }
+  },
+  {
+    "slug": "hierophant_shock_nova_archmage",
+    "level": 81,
+    "class": "Templar/Hierophant",
+    "Life": 3403,
+    "EnergyShield": 3582,
+    "Mana": 6745,
+    "TotalEHP": 51515.194810458,
+    "FullDPS": 2077941.9571687,
+    "CombinedDPS": 1039023.7196687,
+    "TotalDPS": 1038918.2375,
+    "TotalDotDPS": 105.4821686747,
+    "FireResist": 9,
+    "ColdResist": 22,
+    "LightningResist": 76,
+    "ChaosResist": -19,
+    "Armour": 2780,
+    "Evasion": 17,
+    "SpellSuppressionChance": 0,
+    "BlockChance": 59,
+    "EffectiveSpellSuppressionChance": 0,
+    "Str": 175,
+    "Dex": 77,
+    "Int": 376,
+    "Speed": 5.6666666666667,
+    "HitChance": 100,
+    "CritChance": 20.4,
+    "tree": {
+      "tree_version": "3_27",
+      "allocated_nodes": 114
+    },
+    "items": {
+      "equipped": 13,
+      "uniques": 3,
+      "rares": 7,
+      "rare_explicit_counts": [
+        6,
+        4,
+        3,
+        3,
+        5,
+        3,
+        3
+      ],
+      "unique_names": [
+        "Aventail Helmet",
+        "Topaz Ring",
+        "Topaz Ring"
+      ]
+    }
+  },
+  {
+    "slug": "juggernaut_boneshatter",
+    "level": 81,
+    "class": "Marauder/Juggernaut",
+    "Life": 4527,
+    "EnergyShield": 0,
+    "Mana": 559,
+    "TotalEHP": 21324.616666234,
+    "FullDPS": 0,
+    "CombinedDPS": 2455335.524509,
+    "TotalDPS": 326568.3967791,
+    "TotalDotDPS": 2128767.1277299,
+    "FireResist": 79,
+    "ColdResist": 78,
+    "LightningResist": 79,
+    "ChaosResist": -37,
+    "Armour": 8141,
+    "Evasion": 28,
+    "SpellSuppressionChance": 0,
+    "BlockChance": 0,
+    "EffectiveSpellSuppressionChance": 0,
+    "Str": 297,
+    "Dex": 128,
+    "Int": 78,
+    "Speed": 1.8105,
+    "HitChance": 100,
+    "CritChance": 0,
+    "tree": {
+      "tree_version": "3_28",
+      "allocated_nodes": 114
+    },
+    "items": {
+      "equipped": 14,
+      "uniques": 1,
+      "rares": 8,
+      "rare_explicit_counts": [
+        3,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3,
+        3
+      ],
+      "unique_names": [
+        "Coral Ring"
+      ]
+    }
+  }
+]

@@ -1,0 +1,21 @@
+{
+  "schema_version": "1.0.0",
+  "effects": {
+    "WitheringStep": {
+      "name": "Withering Step",
+      "config_inputs": ["buffElusive", "buffPhasing"],
+      "disable_gem": false,
+      "conservative_reason": "Withering Step's buffs end when any skill is used (wiki)",
+      "quote": "Using any skill ends Withering Step's effects and removes all buffs, except the debuff on enemies.",
+      "source": "https://www.poewiki.net/wiki/Withering_Step"
+    },
+    "PhaseRun": {
+      "name": "Phase Run",
+      "config_inputs": ["buffPhasing"],
+      "disable_gem": true,
+      "conservative_reason": "Phase Run's primary buff is replaced when any skill is used (wiki)",
+      "quote": "Using any skill while Phase Run is active will replace the primary buff.",
+      "source": "https://www.poewiki.net/wiki/Phase_Run"
+    }
+  }
+}

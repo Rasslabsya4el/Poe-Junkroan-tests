@@ -1,0 +1,589 @@
+{
+  "source": "Zizaran 3.26 Secrets of the Atlas league-starter build guides",
+  "league": "3.26 Secrets of the Atlas",
+  "collected": "2026-09-18",
+  "tree_versions": [
+    "3_26"
+  ],
+  "note": "Import codes fetched verbatim from pobb.in/<id>/raw, from pobb.in user paths (pobb.in/u/<user>/<slug>/raw) and from the Maxroll planner API (https://planners.maxroll.gg/profiles/poe/<id>, field data.pobCode). PoB tree_versions record the passive-tree data version the code actually targets; it lags the league when a patch shipped no tree change. '{n}' in a title is the author's own marker linking an item set / tree spec / skill set.",
+  "excluded": [],
+  "builds": [
+    {
+      "slug": "trickster_blight_of_contagion",
+      "file": "trickster_blight_of_contagion.pob.txt",
+      "title": "Blight of Contagion Trickster Leaguestarter",
+      "class": "Shadow",
+      "ascendancy": "Trickster",
+      "ascendancy_in_pob": "Trickster",
+      "main_skill": "Blight of Contagion",
+      "league": "3.26 Secrets of the Atlas",
+      "maxroll_url": null,
+      "pob_url": "https://pobb.in/9gj8clsJ9fIG",
+      "youtube_url": "https://www.youtube.com/watch?v=W9i9i4NZkNA",
+      "fetched": "2026-09-18",
+      "pob_build_level": 95,
+      "tree_versions": [
+        "3_26"
+      ],
+      "loadouts": {
+        "item_sets": [
+          "1-12 (Venom gyre)",
+          "Leveling",
+          "Maps {2}",
+          "Minmax {3}"
+        ],
+        "specs": [
+          "16 Points",
+          "36 Points + Normal Lab",
+          "62 Points + Cruel lab",
+          "87 Points + Merc Lab",
+          "101 Points + Uber Lab",
+          "118 No Cluster",
+          "Maps {2}",
+          "Minmax {3}"
+        ],
+        "skill_sets": [
+          "1-12 (Venom Gyre - Recommended)",
+          "1-12 (Blight)",
+          "12-31",
+          "31-Maps",
+          "Maps {2}",
+          "Minmax {3}"
+        ]
+      },
+      "early_loadout": {
+        "item_set": "Maps {2}",
+        "spec": "Maps {2}",
+        "skill_set": "Maps {2}",
+        "level": 97,
+        "level_source": "estimated from 130 allocated nodes",
+        "linked_by": "author marker {2}; build has no separate early-maps gear set",
+        "spec_allocated_nodes": 130,
+        "gear_slots": {
+          "Gloves": "RARE",
+          "Weapon 1": "RARE",
+          "Helmet": "RARE",
+          "Belt": "RARE",
+          "Amulet": "RARE",
+          "Belt Abyssal Socket 1": "RARE",
+          "Weapon 2": "RARE",
+          "Ring 2": "RARE",
+          "Body Armour": "RARE",
+          "Ring 1": "RARE",
+          "Boots": "RARE"
+        },
+        "uniques": {},
+        "flask_count": 5
+      }
+    },
+    {
+      "slug": "chieftain_righteous_fire",
+      "file": "chieftain_righteous_fire.pob.txt",
+      "title": "Righteous Fire Chieftain Leaguestarter (w/ Pohx)",
+      "class": "Marauder",
+      "ascendancy": "Chieftain",
+      "ascendancy_in_pob": "None",
+      "main_skill": "Righteous Fire",
+      "league": "3.26 Secrets of the Atlas",
+      "maxroll_url": null,
+      "pob_url": "https://pobb.in/PVpmRbFdxceP",
+      "youtube_url": "https://www.youtube.com/watch?v=K2u4NQpixKM",
+      "fetched": "2026-09-18",
+      "pob_build_level": 20,
+      "tree_versions": [
+        "3_26"
+      ],
+      "loadouts": {
+        "item_sets": [
+          "^4Level 1-20 {1}",
+          "^6Level 21-40 {2}",
+          "^2Level 41-60 {3}",
+          "^8Level 61-80 {4}",
+          "Level 80-90 {5}",
+          "Level 90 Going Block Based {6,7}",
+          "Lvl 90 Setting up Archdemon Crown {8}",
+          "Lvl 90+ Annihilation Approach {9}",
+          "Lvl 90 Cogwork + Kalandra {10}"
+        ],
+        "specs": [
+          "Lvl 01-20 {1}",
+          "Lvl 21-40 {2}",
+          "Lvl 41-60  {3}",
+          "Lvl 61-80 {4}",
+          "Lvl 81-90 {5}",
+          "Lvl 90 ^2Going Block Based ^7{6}",
+          "Lvl 90 ^2^2^1Fan the Flames ^7Cluster {7}",
+          "Lvl 95+ Small Cluster For ^6Malevolence^7 {8}",
+          "Lvl 95+ Optimizing Build {9}",
+          "Lvl 95+ 25% Increased Effect Small Cluster  {10}"
+        ],
+        "skill_sets": [
+          "^4Level 1-20 {1}",
+          "^4Level 21-40 {2}",
+          "^4Level 41-60 {3}",
+          "^4Level 61-80 {4,5}",
+          "^4Level 90 Block Based {6,7}",
+          "^4Level 90+ Setting up Malevolence {8}",
+          "^4Level 95+  {9}",
+          "^4Level 95+ Adding Unbound Ailment {10}"
+        ]
+      },
+      "early_loadout": {
+        "item_set": "^8Level 61-80 {4}",
+        "spec": "Lvl 61-80 {4}",
+        "skill_set": "^4Level 61-80 {4,5}",
+        "level": 80,
+        "level_source": "item-set title",
+        "linked_by": "author marker {4}",
+        "spec_allocated_nodes": 110,
+        "gear_slots": {
+          "Gloves": "RARE",
+          "Weapon 1": "RARE",
+          "Helmet": "RARE",
+          "Belt": "RARE",
+          "Amulet": "RARE",
+          "Weapon 2": "RARE",
+          "Ring 2": "RARE",
+          "Body Armour": "RARE",
+          "Ring 1": "RARE",
+          "Boots": "RARE"
+        },
+        "uniques": {},
+        "flask_count": 5
+      }
+    },
+    {
+      "slug": "berserker_volcanic_fissure",
+      "file": "berserker_volcanic_fissure.pob.txt",
+      "title": "Earthshatter / Volcanic Fissure Berserker Leaguestarter (w/ imExile)",
+      "class": "Marauder",
+      "ascendancy": "Berserker",
+      "ascendancy_in_pob": "Berserker",
+      "main_skill": "Volcanic Fissure of Snaking",
+      "league": "3.26 Secrets of the Atlas",
+      "maxroll_url": null,
+      "pob_url": "https://pobb.in/CqSGDrZ5a436",
+      "youtube_url": "https://www.youtube.com/watch?v=Apb4AbrLPM4",
+      "fetched": "2026-09-18",
+      "pob_build_level": 97,
+      "tree_versions": [
+        "3_26"
+      ],
+      "loadouts": {
+        "item_sets": [
+          "fresh maps",
+          "midgame",
+          "endgame",
+          "---------------------------------------------------------------------------------------------",
+          "fissure midgame",
+          "Fissure Endgame"
+        ],
+        "specs": [
+          "1-19",
+          "norm lab",
+          "cruel lab(swap starting points",
+          "maps",
+          "lvl92+",
+          "pre-cluster",
+          "cluster ****no timeless jewel till echoes helmet****",
+          "------------------------------------------------------------------------",
+          "Fissure lvl92+",
+          "Fissure cluster"
+        ],
+        "skill_sets": [
+          "1-12",
+          "12-38",
+          "act6-maps",
+          "fresh maps",
+          "Endgame links",
+          "-------------------------------------",
+          "Fissure fresh maps",
+          "Fissure Endgame"
+        ]
+      },
+      "early_loadout": {
+        "item_set": "fresh maps",
+        "spec": "maps",
+        "skill_set": "fresh maps",
+        "level": 64,
+        "level_source": "estimated from 97 allocated nodes",
+        "linked_by": "inferred",
+        "spec_allocated_nodes": 97,
+        "gear_slots": {
+          "Gloves": "RARE",
+          "Weapon 1": "RARE",
+          "Helmet": "RARE",
+          "Belt": "RARE",
+          "Amulet": "UNIQUE",
+          "Belt Abyssal Socket 1": "RARE",
+          "Ring 2": "RARE",
+          "Body Armour": "RARE",
+          "Ring 1": "MAGIC",
+          "Boots": "RARE"
+        },
+        "uniques": {
+          "Amulet": "Carnage Heart"
+        },
+        "flask_count": 5
+      }
+    },
+    {
+      "slug": "necromancer_zombie_army_early",
+      "file": "necromancer_zombie_army_early.pob.txt",
+      "title": "Zoo Necromancer Leaguestarter, leveling + early/mid PoB (w/ Helm Breaker)",
+      "class": "Witch",
+      "ascendancy": "Necromancer",
+      "ascendancy_in_pob": "Necromancer",
+      "main_skill": "Raise Zombie (minion army)",
+      "league": "3.26 Secrets of the Atlas",
+      "maxroll_url": "https://maxroll.gg/poe/build-guides/chaos-minion-army-necromancer-league-starter",
+      "pob_url": "https://pobb.in/9K7UH_2lKkI2",
+      "youtube_url": "https://www.youtube.com/watch?v=RLcDuszpBZ8",
+      "fetched": "2026-09-18",
+      "pob_build_level": 92,
+      "tree_versions": [
+        "3_26"
+      ],
+      "loadouts": {
+        "item_sets": [
+          "^2Early 6L Rare {1}",
+          "^2Early 6L ^5No Svalinn {2}",
+          "^2Early 6L ^5Svalinn {3}",
+          "^4^4Early 6L Hungry loop & Upgrades {4}",
+          "^1Mid 6L Covenant {5}",
+          "^1Mid 6L Amanamu & No Svalinn{8}",
+          "^1Mid 6L Covenant Amanamu {6}",
+          "^1Mid 6L Amanamu & Good spell supp {7}",
+          "^5Pre-Early Animate Guardian Gear",
+          "^5Early Animate Guardian Gear",
+          "^5Mid Animate Guardian Gear double curse",
+          "empty"
+        ],
+        "specs": [
+          "^1Mid lvl 96 Amanamu outdated",
+          "^2Early lvl 92 ^5Svalinn outdated",
+          "^1Mid lvl 96 Amanamu & Good Spell supp gear {7}",
+          "^1Mid Amanamu {8}",
+          "^1Mid lvl 96 {5}",
+          "^4^4^4Early Upgrades lvl 95 Hungry loop {4}",
+          "^2Early lvl 92 ^5DA Anoint {2}",
+          "^1Hardcore LvLing Tree lvl 92",
+          "^2LvLing Tree lvl 92 {1}^2^1",
+          "^2LvLing Tree lvl 83 (respec x11 !minion def mastery)",
+          "^2LvLing Tree lvl 70",
+          "^2LvLing Tree lvl 60",
+          "^2LvLing Tree lvl 48",
+          "^2LvLing Tree lvl 36",
+          "^2LvLing Tree lvl 24",
+          "^2LvLing Tree lvl 12"
+        ],
+        "skill_sets": [
+          "^6Act 1",
+          "^6Act 2",
+          "^6Act 3",
+          "^6Act 4-10",
+          "^6^5Lvl70 after 3rd lab",
+          "^2Early Rare 6 link {1}",
+          "^2Early ^5No Svalinn {2}",
+          "^2Early ^5Svalinn {3}",
+          "^4^4Early Hungry loop & Upgrades {4}",
+          "^1Mid {5}",
+          "^1Mid Amanamu & No Svalinn{8}",
+          "^1Mid Amanamu {6}",
+          "^1Mid Amanamu & Good spell supp gear {7}"
+        ]
+      },
+      "early_loadout": {
+        "item_set": "^2Early 6L Rare {1}",
+        "spec": "^2LvLing Tree lvl 92 {1}^2^1",
+        "skill_set": "^2Early Rare 6 link {1}",
+        "level": 92,
+        "level_source": "spec title",
+        "linked_by": "author marker {1}",
+        "spec_allocated_nodes": 125,
+        "gear_slots": {
+          "Gloves": "RARE",
+          "Weapon 1": "RARE",
+          "Belt Abyssal Socket 2": "RARE",
+          "Helmet": "RARE",
+          "Belt": "UNIQUE",
+          "Amulet": "RARE",
+          "Belt Abyssal Socket 1": "RARE",
+          "Weapon 2": "RARE",
+          "Ring 2": "RARE",
+          "Body Armour": "RARE",
+          "Ring 1": "RARE",
+          "Boots": "UNIQUE"
+        },
+        "uniques": {
+          "Belt": "Darkness Enthroned",
+          "Boots": "Bones of Ullr"
+        },
+        "flask_count": 5
+      }
+    },
+    {
+      "slug": "necromancer_zombie_army_late",
+      "file": "necromancer_zombie_army_late.pob.txt",
+      "title": "Zoo Necromancer Leaguestarter, late-game companion PoB (w/ Helm Breaker)",
+      "class": "Witch",
+      "ascendancy": "Necromancer",
+      "ascendancy_in_pob": "Necromancer",
+      "main_skill": "Raise Zombie (minion army)",
+      "league": "3.26 Secrets of the Atlas",
+      "maxroll_url": "https://maxroll.gg/poe/build-guides/chaos-minion-army-necromancer-league-starter",
+      "pob_url": "https://pobb.in/61H39KuHt15l",
+      "youtube_url": "https://www.youtube.com/watch?v=RLcDuszpBZ8",
+      "fetched": "2026-09-18",
+      "pob_build_level": 98,
+      "tree_versions": [
+        "3_26"
+      ],
+      "loadouts": {
+        "item_sets": [
+          "^1^4^1Late Convoking {1}",
+          "^1^4^1Late Convening {2}",
+          "^5Late AG double curse (Enfeeble)",
+          "^1^4^1Late No Svalinn Convening {3}",
+          "^1^4^1Late No Svalinn Covoking {4}"
+        ],
+        "specs": [
+          "^1Late Svalinn 183 int wand {2}",
+          "^1Late Svalinn 242 int wand {1}",
+          "^1Late No Svalinn 183 int wand {3}",
+          "^1Late No Svalinn 242 int wand {4}"
+        ],
+        "skill_sets": [
+          "^1^4^1Late {1}",
+          "^1^4^1Late {2}",
+          "^1^4^1Late {3}",
+          "^1^4^1Late {4}"
+        ]
+      },
+      "early_loadout": null
+    },
+    {
+      "slug": "elementalist_lightning_conduit",
+      "file": "elementalist_lightning_conduit.pob.txt",
+      "title": "Lightning Conduit Elementalist Leaguestarter",
+      "class": "Witch",
+      "ascendancy": "Elementalist",
+      "ascendancy_in_pob": "Elementalist",
+      "main_skill": "Lightning Conduit",
+      "league": "3.26 Secrets of the Atlas",
+      "maxroll_url": null,
+      "pob_url": "https://pobb.in/u/zizaran%236796/lc-elementalist",
+      "youtube_url": "https://www.youtube.com/watch?v=w3dybIb6rIQ",
+      "fetched": "2026-09-18",
+      "pob_build_level": 98,
+      "tree_versions": [
+        "3_26"
+      ],
+      "loadouts": {
+        "item_sets": [
+          "Early Game {4}",
+          "Midgame {3}",
+          "Endgame {1}",
+          "Endgame - Inpulsa {2}"
+        ],
+        "specs": [
+          "^2LEVELING:",
+          "Level 12",
+          "Level 24",
+          "Level 31 - Normal Lab",
+          "Level 45",
+          "Level 55 - Cruel Lab",
+          "Level 69 - Merc Lab",
+          "^1MAPS:",
+          "Early Game {4}",
+          "Midgame {3}",
+          "Endgame {1}",
+          "Endgame - Inpulsa {2}"
+        ],
+        "skill_sets": [
+          "^2LEVELING:",
+          "Level 1 - 10",
+          "Level 10 - 16",
+          "Level 16 - 24",
+          "Level 24 - 28 (+lab)",
+          "Level 28 - 38",
+          "Level 38 - Cruel Lab",
+          "Cruel Lab - Maps",
+          "^1MAPS:",
+          "Early Game {4}",
+          "Endgame {1,2,3}",
+          "Endgame - Awakened Gems"
+        ]
+      },
+      "early_loadout": {
+        "item_set": "Early Game {4}",
+        "spec": "Early Game {4}",
+        "skill_set": "Early Game {4}",
+        "level": 85,
+        "level_source": "estimated from 118 allocated nodes",
+        "linked_by": "author marker {4}",
+        "spec_allocated_nodes": 118,
+        "gear_slots": {
+          "Gloves": "RARE",
+          "Weapon 1": "RARE",
+          "Helmet": "RARE",
+          "Belt": "RARE",
+          "Amulet": "RARE",
+          "Weapon 2": "RARE",
+          "Ring 2": "RARE",
+          "Body Armour": "RARE",
+          "Ring 1": "UNIQUE",
+          "Boots": "RARE"
+        },
+        "uniques": {
+          "Ring 1": "Berek's Grip"
+        },
+        "flask_count": 5
+      }
+    },
+    {
+      "slug": "elementalist_wave_of_conviction",
+      "file": "elementalist_wave_of_conviction.pob.txt",
+      "title": "Wave of Conviction Ignite Elementalist Leaguestarter",
+      "class": "Witch",
+      "ascendancy": "Elementalist",
+      "ascendancy_in_pob": "Elementalist",
+      "main_skill": "Wave of Conviction",
+      "league": "3.26 Secrets of the Atlas",
+      "maxroll_url": "https://maxroll.gg/poe/build-guides/wave-of-conviction-elementalist-league-starter",
+      "pob_url": "https://pobb.in/u/zizaran%236796/woc-elementalist",
+      "youtube_url": "https://www.youtube.com/watch?v=mgHlvAyG5mA",
+      "fetched": "2026-09-18",
+      "pob_build_level": 97,
+      "tree_versions": [
+        "3_26"
+      ],
+      "loadouts": {
+        "item_sets": [
+          "Early Game",
+          "Midgame",
+          "Endgame",
+          "Endgame - Clearing"
+        ],
+        "specs": [
+          "^2----- LEVELING -----",
+          "Level 12",
+          "Level 22",
+          "Level 32 - Normal Lab",
+          "Level 54 - Cruel Lab",
+          "Level 68 - Merc Lab",
+          "Level 68+ - Respec",
+          "^2----- MAPS -----",
+          "Midgame",
+          "Endgame"
+        ],
+        "skill_sets": [
+          "^2Level 1 - 12",
+          "^2Level 12 - 28",
+          "^2Level 28 - 38",
+          "^2Level 38 - Cruel Lab",
+          "^2Cruel Lab - Maps",
+          "^5Maps"
+        ]
+      },
+      "early_loadout": {
+        "item_set": "Early Game",
+        "spec": "Level 68+ - Respec",
+        "skill_set": "^5Maps",
+        "level": 68,
+        "level_source": "spec title",
+        "linked_by": "inferred",
+        "spec_allocated_nodes": 99,
+        "gear_slots": {
+          "Gloves": "RARE",
+          "Weapon 1": "RARE",
+          "Helmet": "RARE",
+          "Belt": "RARE",
+          "Amulet": "RARE",
+          "Weapon 2": "RARE",
+          "Ring 2": "RARE",
+          "Body Armour": "RARE",
+          "Ring 1": "RARE",
+          "Boots": "RARE"
+        },
+        "uniques": {},
+        "flask_count": 5
+      }
+    },
+    {
+      "slug": "gladiator_earthquake",
+      "file": "gladiator_earthquake.pob.txt",
+      "title": "Bleed Earthquake Gladiator Leaguestarter",
+      "class": "Duelist",
+      "ascendancy": "Gladiator",
+      "ascendancy_in_pob": "Gladiator",
+      "main_skill": "Earthquake",
+      "league": "3.26 Secrets of the Atlas",
+      "maxroll_url": "https://maxroll.gg/poe/build-guides/earthquake-gladiator-league-starter",
+      "pob_url": "https://pobb.in/u/zizaran%236796/eq-glad",
+      "youtube_url": "https://www.youtube.com/watch?v=I3fGEt9RgKo",
+      "fetched": "2026-09-18",
+      "pob_build_level": 98,
+      "tree_versions": [
+        "3_26"
+      ],
+      "loadouts": {
+        "item_sets": [
+          "Level 13 example",
+          "Early Game",
+          "Midgame {1}",
+          "Endgame {2,4}",
+          "Endgame - suppress {3}",
+          "Minmax"
+        ],
+        "specs": [
+          "^2LEVELING",
+          "Level 12",
+          "Level 23",
+          "Level 33 - Normal Lab",
+          "Level 42",
+          "Level 52 - Cruel Lab",
+          "Level 68 - Merc Lab (Swap to 1H)",
+          "^2MAPS",
+          "Midgame - Uber Lab {1}",
+          "Endgame {2}",
+          "Endgame - Suppress {3}",
+          "Endgame - Cluster Setup {4}"
+        ],
+        "skill_sets": [
+          "Level 1 - 12",
+          "Level 12 - 18",
+          "Level 18 - 31",
+          "Level 31 - 38",
+          "Level 38 - Maps",
+          "Maps {1,2,3}",
+          "(Uber) Bossing",
+          "Awakened Gems and stuff {4}"
+        ]
+      },
+      "early_loadout": {
+        "item_set": "Early Game",
+        "spec": "Level 68 - Merc Lab (Swap to 1H)",
+        "skill_set": "Maps {1,2,3}",
+        "level": 68,
+        "level_source": "spec title",
+        "linked_by": "inferred",
+        "spec_allocated_nodes": 99,
+        "gear_slots": {
+          "Gloves": "RARE",
+          "Weapon 1": "RARE",
+          "Helmet": "RARE",
+          "Belt": "RARE",
+          "Amulet": "RARE",
+          "Weapon 2": "RARE",
+          "Ring 2": "RARE",
+          "Body Armour": "RARE",
+          "Ring 1": "RARE",
+          "Boots": "RARE"
+        },
+        "uniques": {},
+        "flask_count": 5
+      }
+    }
+  ]
+}
