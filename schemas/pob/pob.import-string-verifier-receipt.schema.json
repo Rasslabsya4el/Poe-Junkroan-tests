@@ -1,0 +1,175 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://poe-build-research.local/schemas/pob/pob.import-string-verifier-receipt.schema.json",
+  "title": "PoB import-string verifier receipt",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "receipt_kind",
+    "candidate_run_id",
+    "candidate_id",
+    "artifact_id",
+    "pob_release_pin",
+    "direct_build_output_ref",
+    "ready_pob_import_field",
+    "payload_sha256",
+    "proof_kind",
+    "surface_kind",
+    "status",
+    "locator",
+    "import_code_valid",
+    "native_pob_import_string_semantics_valid",
+    "observed_result_ref",
+    "missing_inputs",
+    "invalid_reasons"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "1.0.0"
+    },
+    "receipt_kind": {
+      "type": "string",
+      "const": "pob_import_string_verifier_receipt"
+    },
+    "candidate_run_id": {
+      "$ref": "#/$defs/non_empty_string"
+    },
+    "candidate_id": {
+      "$ref": "#/$defs/non_empty_string"
+    },
+    "artifact_id": {
+      "$ref": "#/$defs/non_empty_string"
+    },
+    "pob_release_pin": {
+      "$ref": "#/$defs/non_empty_string"
+    },
+    "direct_build_output_ref": {
+      "$ref": "#/$defs/artifact_ref"
+    },
+    "ready_pob_import_field": {
+      "type": "string",
+      "const": "composition_summary.ready_pob_import.payload"
+    },
+    "payload_sha256": {
+      "$ref": "#/$defs/sha256"
+    },
+    "proof_kind": {
+      "type": "string",
+      "const": "pinned_pob_import_tab_import_string"
+    },
+    "surface_kind": {
+      "type": "string",
+      "const": "pob_import_ui_import_code"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "accepted",
+        "blocked",
+        "failed"
+      ]
+    },
+    "locator": {
+      "$ref": "#/$defs/nullable_string"
+    },
+    "import_code_valid": {
+      "type": "boolean"
+    },
+    "native_pob_import_string_semantics_valid": {
+      "type": "boolean"
+    },
+    "observed_result_ref": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/artifact_ref"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "missing_inputs": {
+      "$ref": "#/$defs/string_list"
+    },
+    "invalid_reasons": {
+      "$ref": "#/$defs/string_list"
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "status": {
+            "const": "accepted"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "locator": {
+            "$ref": "#/$defs/non_empty_string"
+          },
+          "import_code_valid": {
+            "const": true
+          },
+          "native_pob_import_string_semantics_valid": {
+            "const": true
+          },
+          "observed_result_ref": {
+            "$ref": "#/$defs/artifact_ref"
+          },
+          "missing_inputs": {
+            "maxItems": 0
+          },
+          "invalid_reasons": {
+            "maxItems": 0
+          }
+        }
+      }
+    }
+  ],
+  "$defs": {
+    "non_empty_string": {
+      "type": "string",
+      "minLength": 1
+    },
+    "nullable_string": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "string_list": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/non_empty_string"
+      }
+    },
+    "artifact_ref": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "ref_id",
+        "locator",
+        "json_pointer"
+      ],
+      "properties": {
+        "ref_id": {
+          "$ref": "#/$defs/non_empty_string"
+        },
+        "locator": {
+          "$ref": "#/$defs/non_empty_string"
+        },
+        "json_pointer": {
+          "$ref": "#/$defs/nullable_string"
+        }
+      }
+    }
+  }
+}

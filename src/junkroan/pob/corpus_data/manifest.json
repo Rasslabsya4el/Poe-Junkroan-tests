@@ -1,0 +1,229 @@
+{
+  "corpus_id": "pob_game_corpus",
+  "downstream_policy": {
+    "consumer_rule": "Downstream agents must read committed corpus bundles instead of reparsing vendor/pob/source.",
+    "item_scope": "items family contains base item records from src/Data/Bases/*.lua only.",
+    "read_root": "src/junkroan/pob/corpus_data",
+    "runtime_authority": "vendor/pob/source"
+  },
+  "families": [
+    {
+      "family": "active_gems",
+      "record_count": 558,
+      "relative_path": "src/junkroan/pob/corpus_data/active_gems.json",
+      "source_inputs": [
+        {
+          "sha256": "4a33b0d559593748d926e0f8263d9dba0357e425e40ce047fd4b7ee5730a83fc",
+          "size_bytes": 427734,
+          "source_path": "vendor/pob/source/src/Data/Gems.lua"
+        }
+      ]
+    },
+    {
+      "family": "ascendancies",
+      "record_count": 37,
+      "relative_path": "src/junkroan/pob/corpus_data/ascendancies.json",
+      "source_inputs": [
+        {
+          "sha256": "ffb9a0ea0cc8886d8c24f7190c693f9f4295febdc85f85f528789a68045ba34c",
+          "size_bytes": 3012478,
+          "source_path": "vendor/pob/source/src/TreeData/3_29/tree.lua"
+        }
+      ]
+    },
+    {
+      "family": "config_surfaces",
+      "record_count": 578,
+      "relative_path": "src/junkroan/pob/corpus_data/config_surfaces.json",
+      "source_inputs": [
+        {
+          "sha256": "2bca798dd99fb7bb77e75c09ae5142cb065c6fc0402936399731d8fd69101b60",
+          "size_bytes": 249630,
+          "source_path": "vendor/pob/source/src/Modules/ConfigOptions.lua"
+        },
+        {
+          "sha256": "8f5a08f913ff6a8bbe4b46a001af921486c267c311cc6bcc4b061b872cd63385",
+          "size_bytes": 6510,
+          "source_path": "vendor/pob/source/src/Modules/ConfigVisibility.lua"
+        }
+      ]
+    },
+    {
+      "family": "items",
+      "record_count": 1106,
+      "relative_path": "src/junkroan/pob/corpus_data/items.json",
+      "source_inputs": [
+        {
+          "sha256": "dcc6f48d8a7aaea4d75a18b0557ca1f8bfceaf6e83e5b83638b7745d03cf850c",
+          "size_bytes": 80546,
+          "source_path": "vendor/pob/source/src/Data/Bases/amulet.lua"
+        },
+        {
+          "sha256": "846afc5c96e328a7bc2ffc9a91c87524fbf6d2cfe92191649fd3eab4d4bcd8ef",
+          "size_bytes": 34399,
+          "source_path": "vendor/pob/source/src/Data/Bases/axe.lua"
+        },
+        {
+          "sha256": "a1133ee49ea1beb658e6b7dbd8a2c2677c1ffdae42f868a6cb023994e1f01cc6",
+          "size_bytes": 7415,
+          "source_path": "vendor/pob/source/src/Data/Bases/belt.lua"
+        },
+        {
+          "sha256": "b764b6065a41af36d8433dd26838a6290ce0abd17431c3b7090ab935534f9557",
+          "size_bytes": 83691,
+          "source_path": "vendor/pob/source/src/Data/Bases/body.lua"
+        },
+        {
+          "sha256": "7634f2c366c79a83614520dbee74239fd3a742a4297d1e1c166a78610be68eb7",
+          "size_bytes": 50402,
+          "source_path": "vendor/pob/source/src/Data/Bases/boots.lua"
+        },
+        {
+          "sha256": "ad420096d028a4aadaef230e880f7b9d5feb57fbe8613d8e3722b3b4238e38f0",
+          "size_bytes": 19496,
+          "source_path": "vendor/pob/source/src/Data/Bases/bow.lua"
+        },
+        {
+          "sha256": "41f4f17efdf94ad4204c6bc332b91f5f68d2bbf43811692914bb0d3c3f802641",
+          "size_bytes": 21033,
+          "source_path": "vendor/pob/source/src/Data/Bases/claw.lua"
+        },
+        {
+          "sha256": "93ee30a90ba5722c5ae8e18279094befc4e3d35834a9e7279f9834676e616ae0",
+          "size_bytes": 25873,
+          "source_path": "vendor/pob/source/src/Data/Bases/dagger.lua"
+        },
+        {
+          "sha256": "3e7e54725bf0a86cf50036920bec0875bc9ec5df3ac23529518763e5158dbea2",
+          "size_bytes": 443,
+          "source_path": "vendor/pob/source/src/Data/Bases/fishing.lua"
+        },
+        {
+          "sha256": "afc246384f7148f1a28e3c1fe644895949e5f2f371c66bd2d369e1666ac5588a",
+          "size_bytes": 14430,
+          "source_path": "vendor/pob/source/src/Data/Bases/flask.lua"
+        },
+        {
+          "sha256": "6c251c4582062109de151ad9c7b5bf9583c4b51fb6fa27e7f9d1648d6ead2217",
+          "size_bytes": 50372,
+          "source_path": "vendor/pob/source/src/Data/Bases/gloves.lua"
+        },
+        {
+          "sha256": "eed3cea6a8cf8593cb2cd78b87675be33e7ff04a7e6c5e836d2896751e3d81f0",
+          "size_bytes": 5560,
+          "source_path": "vendor/pob/source/src/Data/Bases/graft.lua"
+        },
+        {
+          "sha256": "bb5f8a66c491ae5073350d9c5b0c45edafc137712d5a555435a9421d0419db8e",
+          "size_bytes": 59386,
+          "source_path": "vendor/pob/source/src/Data/Bases/helmet.lua"
+        },
+        {
+          "sha256": "26ec2bb2a143aa35b2fed909f1aefac752228da3cb9410620cda7e500be34fef",
+          "size_bytes": 3486,
+          "source_path": "vendor/pob/source/src/Data/Bases/jewel.lua"
+        },
+        {
+          "sha256": "24390eb446d37593833390d1998ab8a12995eadc38607ee5fb2410b6952230a7",
+          "size_bytes": 60534,
+          "source_path": "vendor/pob/source/src/Data/Bases/mace.lua"
+        },
+        {
+          "sha256": "dec328e30df12f07540b40220797fca85de4f48028d7ce44b60ab5000d99450c",
+          "size_bytes": 16367,
+          "source_path": "vendor/pob/source/src/Data/Bases/quiver.lua"
+        },
+        {
+          "sha256": "6db93137a173e81f2e16374ba96e845536004903bc01f12443bd754785bca86d",
+          "size_bytes": 28064,
+          "source_path": "vendor/pob/source/src/Data/Bases/ring.lua"
+        },
+        {
+          "sha256": "baaaa4c69531e4ddc80eb2afbdb03853d7e068538be9955ecbb650f9f62e1078",
+          "size_bytes": 74849,
+          "source_path": "vendor/pob/source/src/Data/Bases/shield.lua"
+        },
+        {
+          "sha256": "95d22d97649bb248bb7b1ae95c1356dbf5ac76386678162bcfa303a975e6628b",
+          "size_bytes": 22113,
+          "source_path": "vendor/pob/source/src/Data/Bases/staff.lua"
+        },
+        {
+          "sha256": "e1e9b53bfb4601dfdd281ed047eed876db6280ec9e17d94946b4ad4896516686",
+          "size_bytes": 64087,
+          "source_path": "vendor/pob/source/src/Data/Bases/sword.lua"
+        },
+        {
+          "sha256": "3f0a219bd85c9b0043d6dd115670441b763fcadce59b76221cb1e2f300f6170f",
+          "size_bytes": 4545,
+          "source_path": "vendor/pob/source/src/Data/Bases/tincture.lua"
+        },
+        {
+          "sha256": "695ec103d66683c5276a25f04a1aa74a40234038de7f1c733d059c1815fe85b1",
+          "size_bytes": 22448,
+          "source_path": "vendor/pob/source/src/Data/Bases/wand.lua"
+        }
+      ]
+    },
+    {
+      "family": "keystones",
+      "record_count": 57,
+      "relative_path": "src/junkroan/pob/corpus_data/keystones.json",
+      "source_inputs": [
+        {
+          "sha256": "ffb9a0ea0cc8886d8c24f7190c693f9f4295febdc85f85f528789a68045ba34c",
+          "size_bytes": 3012478,
+          "source_path": "vendor/pob/source/src/TreeData/3_29/tree.lua"
+        }
+      ]
+    },
+    {
+      "family": "masteries",
+      "record_count": 353,
+      "relative_path": "src/junkroan/pob/corpus_data/masteries.json",
+      "source_inputs": [
+        {
+          "sha256": "ffb9a0ea0cc8886d8c24f7190c693f9f4295febdc85f85f528789a68045ba34c",
+          "size_bytes": 3012478,
+          "source_path": "vendor/pob/source/src/TreeData/3_29/tree.lua"
+        }
+      ]
+    },
+    {
+      "family": "passives",
+      "record_count": 2421,
+      "relative_path": "src/junkroan/pob/corpus_data/passives.json",
+      "source_inputs": [
+        {
+          "sha256": "ffb9a0ea0cc8886d8c24f7190c693f9f4295febdc85f85f528789a68045ba34c",
+          "size_bytes": 3012478,
+          "source_path": "vendor/pob/source/src/TreeData/3_29/tree.lua"
+        }
+      ]
+    },
+    {
+      "family": "support_gems",
+      "record_count": 263,
+      "relative_path": "src/junkroan/pob/corpus_data/support_gems.json",
+      "source_inputs": [
+        {
+          "sha256": "4a33b0d559593748d926e0f8263d9dba0357e425e40ce047fd4b7ee5730a83fc",
+          "size_bytes": 427734,
+          "source_path": "vendor/pob/source/src/Data/Gems.lua"
+        }
+      ]
+    }
+  ],
+  "schema_version": "1.0.0",
+  "source_lane": {
+    "canonical_path": "vendor/pob/source",
+    "lane_id": "pob_source_lane",
+    "lock_path": "locks/pob.source.lock.json",
+    "observed_commit": "b32759ab0f31a1c8499a0d420cb0f0633d4fe478",
+    "pinned_commit": "b32759ab0f31a1c8499a0d420cb0f0633d4fe478",
+    "pinned_ref": "refs/tags/v2.67.2",
+    "repo": "PathOfBuildingCommunity/PathOfBuilding",
+    "repo_url": "https://github.com/PathOfBuildingCommunity/PathOfBuilding.git",
+    "tree_version": "3_29"
+  }
+}

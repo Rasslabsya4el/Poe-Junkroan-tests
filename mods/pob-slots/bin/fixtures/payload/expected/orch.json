@@ -1,0 +1,169 @@
+{
+ "at": "12:00:00",
+ "parsed": 6,
+ "periods": {
+  "day": {
+   "kinds": {
+    "autopilot": {
+     "by_model": {},
+     "by_type": {},
+     "closed": 0,
+     "cost": 0.0,
+     "ctx": 0,
+     "ended": 0,
+     "new": 0,
+     "sessions": 0,
+     "sub_cost": 0.0,
+     "subagents": 0,
+     "turns": 0,
+     "unpriced": 0
+    },
+    "keymaster": {
+     "by_model": {},
+     "by_type": {},
+     "closed": 0,
+     "cost": 0.0,
+     "ctx": 0,
+     "ended": 0,
+     "new": 0,
+     "sessions": 0,
+     "sub_cost": 0.0,
+     "subagents": 0,
+     "turns": 0,
+     "unpriced": 0
+    },
+    "orch": {
+     "by_model": {
+      "?": 1,
+      "m1": 1
+     },
+     "by_type": {
+      "?": 1,
+      "worker": 1
+     },
+     "closed": 1,
+     "cost": 0.07,
+     "ctx": 1850,
+     "ended": 1,
+     "new": 8700,
+     "sessions": 1,
+     "sub_cost": 0.02,
+     "subagents": 2,
+     "turns": 2,
+     "unpriced": 0
+    }
+   },
+   "since": "2026-10-10T12:00:00+00:00",
+   "until": "2026-10-11T12:00:00+00:00"
+  },
+  "month": {
+   "kinds": {
+    "autopilot": {
+     "by_model": {},
+     "by_type": {},
+     "closed": 0,
+     "cost": 0.0,
+     "ctx": 15,
+     "ended": 0,
+     "new": 30,
+     "sessions": 1,
+     "sub_cost": 0.0,
+     "subagents": 0,
+     "turns": 1,
+     "unpriced": 0
+    },
+    "keymaster": {
+     "by_model": {},
+     "by_type": {},
+     "closed": 0,
+     "cost": 0.0,
+     "ctx": 15,
+     "ended": 0,
+     "new": 30,
+     "sessions": 1,
+     "sub_cost": 0.0,
+     "subagents": 0,
+     "turns": 1,
+     "unpriced": 0
+    },
+    "orch": {
+     "by_model": {
+      "?": 1,
+      "m1": 1
+     },
+     "by_type": {
+      "?": 1,
+      "worker": 1
+     },
+     "closed": 1,
+     "cost": 0.07,
+     "ctx": 1850,
+     "ended": 1,
+     "new": 8700,
+     "sessions": 1,
+     "sub_cost": 0.02,
+     "subagents": 2,
+     "turns": 2,
+     "unpriced": 0
+    }
+   },
+   "since": "2026-09-11T12:00:00+00:00",
+   "until": "2026-10-11T12:00:00+00:00"
+  },
+  "week": {
+   "kinds": {
+    "autopilot": {
+     "by_model": {},
+     "by_type": {},
+     "closed": 0,
+     "cost": 0.0,
+     "ctx": 15,
+     "ended": 0,
+     "new": 30,
+     "sessions": 1,
+     "sub_cost": 0.0,
+     "subagents": 0,
+     "turns": 1,
+     "unpriced": 0
+    },
+    "keymaster": {
+     "by_model": {},
+     "by_type": {},
+     "closed": 0,
+     "cost": 0.0,
+     "ctx": 0,
+     "ended": 0,
+     "new": 0,
+     "sessions": 0,
+     "sub_cost": 0.0,
+     "subagents": 0,
+     "turns": 0,
+     "unpriced": 0
+    },
+    "orch": {
+     "by_model": {
+      "?": 1,
+      "m1": 1
+     },
+     "by_type": {
+      "?": 1,
+      "worker": 1
+     },
+     "closed": 1,
+     "cost": 0.07,
+     "ctx": 1850,
+     "ended": 1,
+     "new": 8700,
+     "sessions": 1,
+     "sub_cost": 0.02,
+     "subagents": 2,
+     "turns": 2,
+     "unpriced": 0
+    }
+   },
+   "since": "2026-10-04T12:00:00+00:00",
+   "until": "2026-10-11T12:00:00+00:00"
+  }
+ },
+ "took": "0 s"
+}

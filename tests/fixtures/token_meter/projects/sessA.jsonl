@@ -1,0 +1,12 @@
+{"type": "custom-title", "customTitle": "poe-junkroan-v2 Orch", "sessionId": "sessA"}
+{"type": "user", "message": {"role": "user", "content": "Please work on #47 token meter"}, "timestamp": "2026-09-13T09:55:00Z"}
+{"type": "assistant", "message": {"id": "msg_1", "model": "claude-opus-5-5", "usage": {"input_tokens": 100, "cache_creation_input_tokens": 50, "cache_read_input_tokens": 200, "output_tokens": 30}}, "timestamp": "2026-09-13T10:00:00Z"}
+{"type": "assistant", "message": {"id": "msg_1", "model": "claude-opus-5-5", "usage": {"input_tokens": 100, "cache_creation_input_tokens": 50, "cache_read_input_tokens": 200, "output_tokens": 45}}, "timestamp": "2026-09-13T10:00:01Z"}
+{"type": "user", "message": {"role": "user", "content": "no issue mentioned here"}, "timestamp": "2026-09-13T10:55:00Z"}
+{"type": "assistant", "message": {"id": "msg_2", "model": "claude-sonnet-5", "usage": {"input_tokens": 10, "cache_creation_input_tokens": 5, "cache_read_input_tokens": 1000, "output_tokens": 15}}, "timestamp": "2026-09-13T11:00:00Z"}
+{"type": "user", "message": {"role": "user", "content": "now switch to #6 and #9"}, "timestamp": "2026-09-20T08:55:00Z"}
+{"type": "assistant", "message": {"id": "msg_3", "model": "claude-opus-5-5", "usage": {"input_tokens": 1, "cache_creation_input_tokens": 1, "cache_read_input_tokens": 1, "output_tokens": 1}}, "timestamp": "2026-09-20T09:00:00Z"}
+{"type": "user", "message": {"role": "user", "content": "moving to #6"}, "timestamp": "2026-09-20T09:55:00Z"}
+{"type": "assistant", "message": {"id": "msg_4", "model": "claude-haiku-4-5-20251001", "usage": {"input_tokens": 5, "cache_creation_input_tokens": 5, "cache_read_input_tokens": 5, "output_tokens": 5}}, "timestamp": "2026-09-20T10:00:00Z"}
+{"type": "system", "subtype": "compact_boundary", "content": "Conversation compacted"}
+{"type": "assistant", "message": {"id": "msg_5", "model": "claude-unknown-model", "usage": {"input_tokens": 100, "cache_creation_input_tokens": 0, "cache_read_input_tokens": 0, "output_tokens": 50}}, "timestamp": "2026-09-20T10:30:00Z"}

@@ -1,0 +1,14 @@
+{
+ "written": "2026-10-14T00:46:33+02:00",
+ "base_rows": 42,
+ "base_done": 1,
+ "planned": [
+  {
+   "slug": "absolution_minions",
+   "seed": 4,
+   "variant": "no Eldritch Battery",
+   "stem": "absolution_minions-s4-no-eldritch_battery",
+   "after": "absolution_minions-s4"
+  }
+ ]
+}

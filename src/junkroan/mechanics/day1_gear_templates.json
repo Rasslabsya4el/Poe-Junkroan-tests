@@ -1,0 +1,75 @@
+{
+  "version": 1,
+  "templates": {
+    "Helmet": [
+      {"kind": "fixed", "group": "IncreasedLife", "tier": 3},
+      {"kind": "resistance", "tier": 3},
+      {"kind": "open_or_craft"}
+    ],
+    "Gloves": [
+      {"kind": "fixed", "group": "IncreasedLife", "tier": 2},
+      {"kind": "resistance", "tier": 3},
+      {"kind": "open_or_craft"}
+    ],
+    "Body Armour": [
+      {"kind": "fixed", "group": "IncreasedLife", "tier": 6},
+      {"kind": "resistance", "tier": 3},
+      {"kind": "open_or_craft"}
+    ],
+    "Boots": [
+      {"kind": "fixed", "group": "IncreasedLife", "tier": 2},
+      {"kind": "resistance", "tier": 3},
+      {"kind": "movement", "group": "MovementVelocity", "tier": 2}
+    ],
+    "Belt": [
+      {"kind": "fixed", "group": "IncreasedLife", "tier": 3},
+      {"kind": "resistance", "tier": 3},
+      {"kind": "open_or_craft"}
+    ],
+    "Shield": [
+      {"kind": "fixed", "group": "IncreasedLife", "tier": 3},
+      {"kind": "resistance", "tier": 3},
+      {"kind": "open_or_craft"}
+    ],
+    "Ring": [
+      {"kind": "fixed", "group": "IncreasedLife", "tier": 2},
+      {"kind": "resistance", "tier": 3},
+      {"kind": "open_or_craft"}
+    ],
+    "Amulet": [
+      {"kind": "fixed", "group": "IncreasedLife", "tier": 3},
+      {"kind": "resistance", "tier": 3},
+      {"kind": "open_or_craft"}
+    ],
+    "Quiver": [
+      {"kind": "fixed", "group": "IncreasedLife", "tier": 3},
+      {"kind": "resistance", "tier": 3},
+      {"kind": "open_or_craft"}
+    ],
+    "Focus": [
+      {"kind": "fixed", "group": "IncreasedLife", "tier": 3},
+      {"kind": "resistance", "tier": 3},
+      {"kind": "open_or_craft"}
+    ],
+    "weapon": [
+      {"kind": "open", "affix_type": "either"},
+      {"kind": "open", "affix_type": "either"},
+      {"kind": "craft", "affix_type": "either"}
+    ]
+  },
+  "by_type": {
+    "One Handed Axe": "weapon",
+    "One Handed Mace": "weapon",
+    "One Handed Sword": "weapon",
+    "Two Handed Axe": "weapon",
+    "Two Handed Mace": "weapon",
+    "Two Handed Sword": "weapon",
+    "Bow": "weapon",
+    "Claw": "weapon",
+    "Dagger": "weapon",
+    "Rune Dagger": "weapon",
+    "Sceptre": "weapon",
+    "Staff": "weapon",
+    "Wand": "weapon"
+  }
+}

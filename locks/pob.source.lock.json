@@ -1,0 +1,11 @@
+{
+  "schema_version": "1.0.0",
+  "lane_id": "pob_source_lane",
+  "ownership_model": "shallow_clone",
+  "repo": "PathOfBuildingCommunity/PathOfBuilding",
+  "repo_url": "https://github.com/PathOfBuildingCommunity/PathOfBuilding.git",
+  "pinned_ref": "refs/tags/v2.67.2",
+  "pinned_commit": "b32759ab0f31a1c8499a0d420cb0f0633d4fe478",
+  "canonical_path": "vendor/pob/source",
+  "how_to_sync": "git clone --depth 1 --branch v2.67.2 <repo_url> vendor/pob/source  (directory is gitignored; regenerate corpora after bumping)"
+}

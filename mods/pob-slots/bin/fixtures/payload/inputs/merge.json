@@ -1,0 +1,5 @@
+{"at": "2026-10-11T12:00:00",
+ "running": {"branches": ["orch-796-u0"], "issues": [796], "phase": "suite", "started": "2026-10-11T11:52:00", "percent": 62, "tests_done": 2647, "tests_total": 4270, "failed": 0, "eta_s": 140, "workers": 6, "suite_out": "x.out"},
+ "waiting": [{"branch": "orch-621", "issues": [621], "position": 1, "queued": "2026-10-11T11:55:00", "waited_s": 300, "eta_start_s": 140}],
+ "landed": [{"branch": "orch-674", "issues": [674], "queued": "a", "landed": "b", "queued_to_land_s": 302, "rc": 0}],
+ "suite_durations": [300.0, 340.0, 320.0]}

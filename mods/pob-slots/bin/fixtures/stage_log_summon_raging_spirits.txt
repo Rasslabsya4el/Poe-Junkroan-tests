@@ -1,0 +1,12 @@
+step skipped: rig tree
+step skipped: gear pass 1 (rig tree)
+step start: gear pass 1 (empty tree)
+  gear pass 1 (empty tree)        13 min  value       79,268  viol 5.234  ramp 0 s/2.5 s    [-24.0% vs config (conservative lane)]
+  flat-reservation aura levels     8.3 s  value       78,855  viol 5.050  ramp 0 s/2.5 s  Precision 1  [-0.5% vs gear pass 1 (empty tree)]
+step skipped: tree seed toward <stat>
+step start: tree greedy
+ALLOCATE(83) spent 83, stopped: budget spent
+  tree greedy                    6.5 min  value      732,581  viol 0.806  ramp 0 s/2.5 s  budget spent  [+829.0% vs flat-reservation aura levels]
+step start: gear pass 2 (with tree)
+  gear pass 2 (with tree)        8.4 min  value      816,142  viol 0.440  ramp 0 s/2.5 s    [+11.4% vs tree greedy]
+step start: tree rebuilt on gear

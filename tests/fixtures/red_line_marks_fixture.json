@@ -1,0 +1,87 @@
+[
+  {
+    "line": "10% chance to create a Smoke Cloud on Kill",
+    "surfaces": ["notable"],
+    "sources": ["13790"],
+    "group": "on_kill",
+    "kind": "custom_mod",
+    "boss_lane": [],
+    "optimistic_lane": ["10% chance to create a Smoke Cloud on Kill"],
+    "zero_reason": "",
+    "why": "Notable 13790, on-kill chance: PoB reads none of it. The optimistic lane writes the line as a custom modifier; the boss lane does not count a kill chance it cannot prove.",
+    "partial_part": "all of the line (PoB parses no Smoke Cloud)"
+  },
+  {
+    "line": "10% chance to Recover 10% of Mana when you use a Skill",
+    "surfaces": ["mastery"],
+    "sources": ["2841"],
+    "group": "trigger",
+    "kind": "custom_mod",
+    "boss_lane": ["10% chance to Recover 10% of Mana when you use a Skill"],
+    "optimistic_lane": ["10% chance to Recover 10% of Mana when you use a Skill"],
+    "zero_reason": "",
+    "why": "Mastery 2841, trigger: PoB reads part of it (outcome partial). The mark writes the whole line on both lanes.",
+    "partial_part": "PoB parses the Mana recovery; the chance and the trigger are not read"
+  },
+  {
+    "line": "+3 seconds to Duration of Frenzy and Power Charges on Culling Strike",
+    "surfaces": ["unique"],
+    "sources": ["Goblinedge, Ambusher"],
+    "group": "charges",
+    "kind": "custom_mod",
+    "boss_lane": [],
+    "optimistic_lane": ["+3 seconds to Duration of Frenzy and Power Charges on Culling Strike"],
+    "zero_reason": "",
+    "why": "Unique Goblinedge, Ambusher: PoB reads the line in part (outcome partial). Optimistic lane only: the charge duration is not proven by the build's own gear.",
+    "partial_part": "the Frenzy and Power Charge duration is not read"
+  },
+  {
+    "line": "5% chance to gain a Frenzy Charge on Kill",
+    "surfaces": ["gear_affix"],
+    "sources": ["ChanceToGainFrenzyChargeOnKillUber1"],
+    "group": "on_kill",
+    "kind": "custom_mod",
+    "boss_lane": [],
+    "optimistic_lane": ["5% chance to gain a Frenzy Charge on Kill"],
+    "zero_reason": "",
+    "why": "Rare affix (mod id ChanceToGainFrenzyChargeOnKillUber1): PoB reads none of it. Optimistic lane only, the same as the line.",
+    "partial_part": "all of the line"
+  },
+  {
+    "line": "Removes 10% of Life Recovered from Mana when used",
+    "surfaces": ["flask"],
+    "sources": ["FlaskExtraLifeCostsMana1"],
+    "group": "self_cost",
+    "kind": "custom_mod",
+    "boss_lane": ["Removes 10% of Life Recovered from Mana when used"],
+    "optimistic_lane": ["Removes 10% of Life Recovered from Mana when used"],
+    "zero_reason": "",
+    "why": "Flask mod FlaskExtraLifeCostsMana1: PoB reads part of it (outcome partial). A cost the build pays on both lanes.",
+    "partial_part": "PoB reads the Life recovery; the Mana cost is not applied"
+  },
+  {
+    "line": "Can Allocate Passives from the Duelist's starting point",
+    "surfaces": ["ascendancy"],
+    "sources": ["63357"],
+    "group": "other",
+    "kind": "none",
+    "boss_lane": [],
+    "optimistic_lane": [],
+    "zero_reason": "A start-point allocation right: no PoB stat or custom line says which passives the tree may take, so the mark writes nothing on either lane.",
+    "why": "Ascendancy node 63357: PoB reads none of it and no modifier line can express it. Zero record: the line is known and carries no mark.",
+    "partial_part": "all of the line"
+  },
+  {
+    "line": "10% increased Effect of Arcane Surge on you per\n200 Mana spent Recently, up to 50%",
+    "surfaces": ["notable"],
+    "sources": ["51108"],
+    "group": "buff",
+    "kind": "custom_mod",
+    "boss_lane": [],
+    "optimistic_lane": ["{formula}% increased Effect of Arcane Surge on you"],
+    "zero_reason": "",
+    "why": "Notable 51108: PoB reads part of it (outcome partial). The value scales with Mana spent Recently, so the lane line takes the formula's value from the build's outputs. Optimistic lane only.",
+    "partial_part": "the up to 50% cap, which the formula does not express",
+    "formula": "ManaSpentRecently / 200 * 10"
+  }
+]
