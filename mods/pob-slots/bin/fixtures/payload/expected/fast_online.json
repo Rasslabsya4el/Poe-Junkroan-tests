@@ -1,0 +1,628 @@
+{
+ "agents": [
+  {
+   "age": "40 min",
+   "busy": true,
+   "ctx": 90000,
+   "digest": "say: Reading the collector now.\nRead file_path=collect.py\nBash: run the tests",
+   "dk": "38307915a522",
+   "held": [
+    {
+     "number": 801,
+     "subagents": [
+      {
+       "agent_id": "w9",
+       "agent_type": "worker",
+       "context": 20000,
+       "duration_human": "3 min",
+       "issue": 801,
+       "model": "Sonnet 5.5",
+       "running": false,
+       "task": "worker #801"
+      }
+     ]
+    }
+   ],
+   "issue": 796,
+   "kind": "background",
+   "last": "ran pytest",
+   "model": "Sonnet 5.5",
+   "name": "orch Poe-Junkroan #796",
+   "sid": "a1b2c3d4-0000-0000-0000-000000000001",
+   "status": "думает",
+   "subagents": [
+    {
+     "age": "10 min",
+     "busy": true,
+     "ctx": 50000,
+     "digest": "Grep pattern=def fast",
+     "dk": "eb9496545f1f",
+     "id": "w1",
+     "issue": 796,
+     "model": "Sonnet 5.5",
+     "name": "worker #796",
+     "source": "transcript",
+     "started": null,
+     "status": "ищет в коде",
+     "type": "worker"
+    },
+    {
+     "age": "13 min",
+     "busy": true,
+     "ctx": 7658,
+     "depth": 1,
+     "issue": null,
+     "last": "task: Research flaky test practices",
+     "model": "Terra 5.6",
+     "name": "research merge pipeline practices",
+     "status": "ждёт воркера",
+     "type": "opencode"
+    },
+    {
+     "age": "12 min",
+     "busy": true,
+     "ctx": 231105,
+     "depth": 2,
+     "issue": null,
+     "last": "webfetch: https://bors.tech/ (text/html)",
+     "model": "Terra 5.6",
+     "name": "Research queue systems",
+     "status": "ищет в интернете",
+     "type": "opencode"
+    },
+    {
+     "age": "12 min",
+     "busy": true,
+     "ctx": 233193,
+     "depth": 2,
+     "issue": null,
+     "last": "websearch: Exa Web Search: \"Assessing Transition-based Test Selection Algorithms",
+     "model": "Terra 5.6",
+     "name": "Research affected tests",
+     "status": "ищет в интернете",
+     "type": "opencode"
+    },
+    {
+     "age": "12 min",
+     "busy": true,
+     "ctx": 187445,
+     "depth": 2,
+     "issue": null,
+     "last": "webfetch: https://shopify.engineering/automatic-deployment-at-shopify (text/html",
+     "model": "Terra 5.6",
+     "name": "Research postmerge workflows",
+     "status": "ищет в интернете",
+     "type": "opencode"
+    },
+    {
+     "age": "12 min",
+     "busy": true,
+     "ctx": 139141,
+     "depth": 2,
+     "issue": null,
+     "last": "webfetch: https://github.blog/engineering/engineering-principles/reducing-flaky-",
+     "model": "Terra 5.6",
+     "name": "Research flaky test practices",
+     "status": "ищет в интернете",
+     "type": "opencode"
+    },
+    {
+     "age": "3 min",
+     "busy": false,
+     "ctx": 20000,
+     "id": "w9",
+     "issue": 801,
+     "model": "Sonnet 5.5",
+     "name": "worker #801",
+     "source": "transcript",
+     "started": null,
+     "status": "завершён",
+     "type": "worker"
+    }
+   ],
+   "ticket_units": {}
+  },
+  {
+   "age": "2 h 5 min",
+   "busy": false,
+   "ctx": 150000,
+   "held": [],
+   "issue": null,
+   "kind": "interactive",
+   "last": "",
+   "model": "Fable 5.1",
+   "name": "Brain: PoB",
+   "sid": "e5f6a7b8-0000-0000-0000-000000000002",
+   "status": "работает",
+   "subagents": [],
+   "ticket_units": {}
+  }
+ ],
+ "at": "12:00:00",
+ "laptop": {
+  "age": "0 s",
+  "age_s": 0,
+  "machine": {
+   "cores": 8,
+   "cpu": {
+    "agents": 1.0,
+    "pob": 40.0,
+    "you": 2.0
+   },
+   "cpu_total": 43.0,
+   "interval_s": 5.0,
+   "ram": {
+    "agents": 0.5,
+    "pob": 6.0,
+    "you": 1.0
+   },
+   "ram_free": 8.0,
+   "ram_total": 16.0
+  },
+  "runs": {
+   "others": 0,
+   "period": "day",
+   "queued": [
+    {
+     "age": "10 min",
+     "host": "laptop",
+     "id": "j-lap-2",
+     "name": "Lap Next",
+     "state": "queued",
+     "tag": "lap-next",
+     "workers": 2
+    }
+   ],
+   "recent": [
+    {
+     "age": "3 h",
+     "end": "2026-10-11T08:00:00+00:00",
+     "host": "laptop",
+     "id": "j-lap-0",
+     "name": "Lap Old",
+     "state": "done",
+     "tag": "lap-old",
+     "took": "1 h",
+     "workers": 2
+    }
+   ],
+   "running": [
+    {
+     "age": "1 h",
+     "host": "laptop",
+     "id": "j-lap-1",
+     "name": "Lap Run",
+     "progress": {
+      "done": 4,
+      "eta": "13:20",
+      "total": 8
+     },
+     "state": "running",
+     "tag": "lap-run",
+     "workers": 2
+    }
+   ],
+   "slots": [
+    {
+     "age": "5 min",
+     "pid": 1,
+     "role": "queue",
+     "slot": 1
+    }
+   ],
+   "total": 5,
+   "waiting": 0
+  }
+ },
+ "machine": {
+  "cores": 8,
+  "cpu": {
+   "agents": 15.0,
+   "app": 0.0,
+   "pob": 65.0,
+   "tests": 0.0,
+   "unmeasured": 0.0,
+   "you": 7.5
+  },
+  "cpu_total": 25.0,
+  "interval_s": 5.0,
+  "merge": {
+   "cpu": 0.0,
+   "cpu_raw": 0.0,
+   "ram_mb": 0
+  },
+  "ram": {
+   "agents": 1.6,
+   "app": 0.0,
+   "pob": 4.4,
+   "tests": 0.0,
+   "unmeasured": 10.5,
+   "you": 3.0
+  },
+  "ram_free": 12.5,
+  "ram_total": 32.0
+ },
+ "merge": {
+  "at": "2026-10-11T12:00:00",
+  "landed": [
+   {
+    "branch": "orch-674",
+    "issues": [
+     674
+    ],
+    "landed": "b",
+    "queued": "a",
+    "queued_to_land_s": 302,
+    "rc": 0,
+    "took_h": "5 min"
+   }
+  ],
+  "queue_end_h": "2.3 min",
+  "queue_until": "12:02",
+  "running": {
+   "branches": [
+    "orch-796-u0"
+   ],
+   "elapsed_h": "8 min",
+   "eta_h": "2.3 min",
+   "eta_s": 140,
+   "failed": 0,
+   "issues": [
+    796
+   ],
+   "percent": 62,
+   "phase": "suite",
+   "started": "2026-10-11T11:52:00",
+   "suite_out": "x.out",
+   "tests_done": 2647,
+   "tests_total": 4270,
+   "workers": 6
+  },
+  "waiting": [
+   {
+    "branch": "orch-621",
+    "eta_start_h": "2.3 min",
+    "eta_start_s": 140,
+    "issues": [
+     621
+    ],
+    "position": 1,
+    "queued": "2026-10-11T11:55:00",
+    "takes_h": "5.3 min",
+    "waited_h": "5 min",
+    "waited_s": 300
+   }
+  ]
+ },
+ "pipeline": [],
+ "readings": {
+  "rows": [
+   {
+    "added_at": "2026-10-11T11:30:05+00:00",
+    "asc": "Occultist",
+    "audit": "1 errors / 2 warnings",
+    "class": "Witch",
+    "errors": 1,
+    "floors": "missed",
+    "floors_bad": true,
+    "metric": "CombinedDPS",
+    "metric_label": "Combined DPS",
+    "name": "Spark",
+    "note": "read the Total DPS",
+    "ours": 1234567.5,
+    "ours_h": "1.23M",
+    "rank": 1,
+    "ref": "spark",
+    "run_dir": "<ROOT>\\artifacts\\benchmark\\20261011-0800-snap-done",
+    "said": [
+     [
+      true,
+      "ниже порога защиты: Phys Max Hit 5000 при пороге 8000"
+     ],
+     [
+      false,
+      "поиск остановился рано: ещё один проход дал 1.2 %"
+     ],
+     [
+      false,
+      "PoB не считает: Frenzy Charge on kill"
+     ]
+    ],
+    "var": "без Mind over Matter",
+    "warnings": 2
+   },
+   {
+    "added_at": "2026-10-11T09:10:00+00:00",
+    "asc": "Deadeye",
+    "audit": "0 errors / 2 warnings",
+    "class": "Ranger",
+    "errors": 0,
+    "floors": "ok",
+    "floors_bad": false,
+    "metric": "PhysicalMaximumHitTaken",
+    "metric_label": "Phys Max Hit",
+    "name": "Bleed Bow",
+    "note": "older batch",
+    "ours": 7200,
+    "ours_h": "7,200",
+    "ref": "bleed_bow",
+    "said": [],
+    "var": "без Blood Magic",
+    "variant": "no-blood_magic",
+    "warnings": 2
+   }
+  ],
+  "updated": "2026-10-11T11:30:00+00:00"
+ },
+ "runs": {
+  "daemon": {
+   "age_s": 10,
+   "host": "pc",
+   "pid": 7000,
+   "reserved": 1,
+   "reserved_until": "2026-10-11T13:00:00+00:00",
+   "slots_in_use": 2,
+   "slots_total": 7
+  },
+  "history": [
+   {
+    "age": "",
+    "bench": true,
+    "date": "11.10",
+    "dur": "1 h 30 min",
+    "end": "2026-10-11T09:30:00+00:00",
+    "host": "pc",
+    "id": "j-20261011-0800-c003",
+    "issue": 790,
+    "kind_name": "прогон тикета",
+    "name": "Snap Done",
+    "priority": "P1",
+    "rows_done": 1,
+    "rows_total": 1,
+    "start": "08:00",
+    "state": "done",
+    "tag": "snap-done",
+    "what": "benchmark",
+    "workers": 2
+   },
+   {
+    "age": "3 h",
+    "end": "2026-10-11T08:00:00+00:00",
+    "host": "laptop",
+    "id": "j-lap-0",
+    "name": "Lap Old",
+    "state": "done",
+    "tag": "lap-old",
+    "took": "1 h",
+    "workers": 2
+   },
+   {
+    "age": "",
+    "bench": false,
+    "date": "10.10",
+    "dur": "10 min",
+    "end": "2026-10-10T22:10:00+00:00",
+    "host": "pc",
+    "id": "j-20261010-2200-d004",
+    "issue": null,
+    "kind_name": "тесты",
+    "name": "Snap Tests",
+    "priority": "P2",
+    "start": "22:00",
+    "state": "failed",
+    "tag": "snap-tests",
+    "what": "tests",
+    "workers": 1
+   }
+  ],
+  "others": 1,
+  "period": "day",
+  "queue_end_h": "1 h 35 min",
+  "queue_end_partial": false,
+  "queue_end_s": 5700,
+  "queue_until": "13:35",
+  "queued": [
+   {
+    "after": [
+     "j-20261011-1000-a001"
+    ],
+    "age": "1 h 55 min",
+    "bench": true,
+    "date": "11.10",
+    "dur": "1 h 55 min",
+    "end": "2026-10-11T10:05:00+00:00",
+    "est": "history",
+    "host": "pc",
+    "host_fixed": false,
+    "id": "j-20261011-1005-b002",
+    "issue": 801,
+    "kind_name": "прогон тикета",
+    "name": "Snap Queued",
+    "priority": "P2",
+    "start": "",
+    "start_h": "5 min",
+    "start_s": 300,
+    "state": "queued",
+    "tag": "snap-queued",
+    "takes_h": "1 h 30 min",
+    "takes_s": 5400,
+    "wait": {
+     "kind": "after",
+     "text": "waits for snap-run"
+    },
+    "waits_for": {
+     "tag": "snap-run"
+    },
+    "what": "benchmark",
+    "workers": 2
+   },
+   {
+    "age": "10 min",
+    "host": "laptop",
+    "id": "j-lap-2",
+    "name": "Lap Next",
+    "state": "queued",
+    "tag": "lap-next",
+    "workers": 2
+   }
+  ],
+  "recent": [
+   {
+    "age": "2 h 30 min",
+    "bench": true,
+    "date": "11.10",
+    "dur": "1 h 30 min",
+    "end": "2026-10-11T09:30:00+00:00",
+    "host": "pc",
+    "id": "j-20261011-0800-c003",
+    "issue": 790,
+    "kind_name": "прогон тикета",
+    "name": "Snap Done",
+    "priority": "P1",
+    "rows_done": 1,
+    "rows_total": 1,
+    "start": "08:00",
+    "state": "done",
+    "tag": "snap-done",
+    "took": "1 h 30 min",
+    "what": "benchmark",
+    "workers": 2
+   },
+   {
+    "age": "13 h 50 min",
+    "bench": false,
+    "date": "10.10",
+    "dur": "10 min",
+    "end": "2026-10-10T22:10:00+00:00",
+    "host": "pc",
+    "id": "j-20261010-2200-d004",
+    "issue": null,
+    "kind_name": "тесты",
+    "name": "Snap Tests",
+    "priority": "P2",
+    "start": "22:00",
+    "state": "failed",
+    "tag": "snap-tests",
+    "took": "10 min",
+    "what": "tests",
+    "workers": 1
+   }
+  ],
+  "running": [
+   {
+    "age": "2 h 00 min",
+    "bench": true,
+    "date": "11.10",
+    "dur": "2 h 00 min",
+    "end": "2026-10-11T10:00:00+00:00",
+    "est": "history",
+    "host": "pc",
+    "id": "j-20261011-1000-a001",
+    "issue": 796,
+    "kind_name": "прогон тикета",
+    "left_h": "5 min",
+    "left_s": 300,
+    "locks": 2,
+    "name": "Snap Run",
+    "priority": "P1",
+    "progress": {
+     "cells": [
+      {
+       "asc": "Occultist",
+       "class": "Witch",
+       "metrics": [
+        [
+         "Combined DPS",
+         1234567.5,
+         1100000
+        ],
+        [
+         "Life",
+         4200,
+         4000
+        ],
+        [
+         "Total EHP",
+         9000,
+         8800
+        ],
+        [
+         "Phys Max Hit",
+         6000,
+         5500
+        ]
+       ],
+       "name": "Spark",
+       "ref": "spark",
+       "seed": 1,
+       "stat": "CombinedDPS",
+       "state": "done",
+       "status": "готово",
+       "took": "14 min"
+      },
+      {
+       "after": "считается",
+       "asc": "Deadeye",
+       "class": "Ranger",
+       "name": "Bleed Bow",
+       "ref": "bleed_bow",
+       "seed": 1,
+       "started": 1791719700,
+       "state": "running",
+       "status": "считается",
+       "took": "11:55"
+      }
+     ],
+     "dir": "<ROOT>\\artifacts\\benchmark\\20261011-1000-snap-run",
+     "done": 1,
+     "eta": "12:05",
+     "total": 2,
+     "total_open": true
+    },
+    "start": "10:00",
+    "state": "running",
+    "tag": "snap-run",
+    "what": "benchmark",
+    "workers": 2
+   },
+   {
+    "age": "1 h",
+    "host": "laptop",
+    "id": "j-lap-1",
+    "name": "Lap Run",
+    "progress": {
+     "done": 4,
+     "eta": "13:20",
+     "total": 8
+    },
+    "state": "running",
+    "tag": "lap-run",
+    "workers": 2
+   }
+  ],
+  "slots": [
+   {
+    "age": "2 h 00 min",
+    "pid": 4242,
+    "role": "queue",
+    "slot": 1
+   },
+   {
+    "age": "1 h 58 min",
+    "pid": 4243,
+    "role": "queue",
+    "slot": 2
+   },
+   {
+    "age": "60 s",
+    "pid": null,
+    "role": "other",
+    "slot": 3
+   }
+  ],
+  "total": 7,
+  "waiting": 2
+ },
+ "status": "PoB 3/7 slots · 2 waiting · snap-run 1/2 ~12:05 · +1 runs · queued 2",
+ "version": null
+}

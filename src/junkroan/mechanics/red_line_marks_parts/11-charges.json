@@ -1,0 +1,1468 @@
+[
+ {
+  "line": "+3 to Maximum Fanatic Charges",
+  "surfaces": [
+   "ascendancy"
+  ],
+  "sources": [
+   "13851"
+  ],
+  "group": "charges",
+  "kind": "no_representation",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "no_representation: PoB has no Fanatic Charge stat",
+  "why": "Fanatic Charges have no PoB stat or mod; their one effect, Fanaticism, is the parsed line 'Gain Fanaticism for 5 seconds on reaching Maximum Fanatic Charges' (ModParser.lua:2904) that the same node carries",
+  "partial_part": "",
+  "type": "any"
+ },
+ {
+  "line": "10% chance to gain a Frenzy Charge when you Hit your Marked Enemy",
+  "surfaces": [
+   "mastery"
+  ],
+  "sources": [
+   "32657",
+   "56865",
+   "58563",
+   "62759"
+  ],
+  "group": "charges",
+  "kind": "chance_enemy_debuff",
+  "boss_lane": [
+   "+{formula} to Minimum Frenzy Charges"
+  ],
+  "optimistic_lane": [
+   "Count as having maximum number of Frenzy Charges"
+  ],
+  "zero_reason": "",
+  "why": "charge on hit with a chance: Frenzy Charges counted at the 2.5 s ramp window = Chance * Speed * RampSeconds (Speed and CritChance are PoB outputs), as a Minimum Frenzy Charges floor (ModParser.lua:503-516, CalcPerform.lua:1021); optimistic lane maximum (ModParser.lua:5219-5221); needs the enemy marked, counted as held",
+  "partial_part": "",
+  "type": "any",
+  "formula": "Chance * Speed * RampSeconds",
+  "vars": {
+   "RampSeconds": 2.5,
+   "Chance": 0.1
+  }
+ },
+ {
+  "line": "10% chance to gain a Power Charge on Critical Strike",
+  "surfaces": [
+   "ascendancy",
+   "gear_affix"
+  ],
+  "sources": [
+   "43122",
+   "CriticalMultiplierSupportedTwoHandedUber2",
+   "CriticalStrikeChanceSpellsTwoHandedPowerChargeUber1",
+   "CriticalStrikeChanceSpellsTwoHandedPowerChargeUber2"
+  ],
+  "group": "charges",
+  "kind": "chance_enemy_debuff",
+  "boss_lane": [
+   "+{formula} to Minimum Power Charges"
+  ],
+  "optimistic_lane": [
+   "Count as having maximum number of Power Charges"
+  ],
+  "zero_reason": "",
+  "why": "charge on crit with a chance: Power Charges counted at the 2.5 s ramp window = Chance * Speed * CritChance / 100 * RampSeconds (Speed and CritChance are PoB outputs), as a Minimum Power Charges floor (ModParser.lua:503-516, CalcPerform.lua:1021); optimistic lane maximum (ModParser.lua:5219-5221)",
+  "partial_part": "",
+  "type": "any",
+  "formula": "Chance * Speed * CritChance / 100 * RampSeconds",
+  "vars": {
+   "RampSeconds": 2.5,
+   "Chance": 0.1
+  }
+ },
+ {
+  "line": "10% chance to gain a Power Charge on Critical Strike with Wands",
+  "surfaces": [
+   "mastery"
+  ],
+  "sources": [
+   "35038",
+   "48411",
+   "53828",
+   "56128"
+  ],
+  "group": "charges",
+  "kind": "chance_enemy_debuff",
+  "boss_lane": [
+   "+{formula} to Minimum Power Charges"
+  ],
+  "optimistic_lane": [
+   "Count as having maximum number of Power Charges"
+  ],
+  "zero_reason": "",
+  "why": "charge on crit with a chance: Power Charges counted at the 2.5 s ramp window = Chance * Speed * CritChance / 100 * RampSeconds (Speed and CritChance are PoB outputs), as a Minimum Power Charges floor (ModParser.lua:503-516, CalcPerform.lua:1021); optimistic lane maximum (ModParser.lua:5219-5221)",
+  "partial_part": "",
+  "type": "any",
+  "formula": "Chance * Speed * CritChance / 100 * RampSeconds",
+  "vars": {
+   "RampSeconds": 2.5,
+   "Chance": 0.1
+  }
+ },
+ {
+  "line": "10% chance to gain a Power Charge on Non-Critical Strike with a Claw or Dagger",
+  "surfaces": [
+   "notable"
+  ],
+  "sources": [
+   "1067"
+  ],
+  "group": "charges",
+  "kind": "chance_enemy_debuff",
+  "boss_lane": [
+   "+{formula} to Minimum Power Charges"
+  ],
+  "optimistic_lane": [
+   "Count as having maximum number of Power Charges"
+  ],
+  "zero_reason": "",
+  "why": "charge on noncrit with a chance: Power Charges counted at the 2.5 s ramp window = Chance * Speed * (1 - CritChance / 100) * RampSeconds (Speed and CritChance are PoB outputs), as a Minimum Power Charges floor (ModParser.lua:503-516, CalcPerform.lua:1021); optimistic lane maximum (ModParser.lua:5219-5221)",
+  "partial_part": "",
+  "type": "attack",
+  "formula": "Chance * Speed * (1 - CritChance / 100) * RampSeconds",
+  "vars": {
+   "RampSeconds": 2.5,
+   "Chance": 0.1
+  }
+ },
+ {
+  "line": "10% chance to gain a Power Charge when you Shock a Chilled Enemy",
+  "surfaces": [
+   "notable"
+  ],
+  "sources": [
+   "37478"
+  ],
+  "group": "charges",
+  "kind": "charge_on_event",
+  "boss_lane": [],
+  "optimistic_lane": [
+   "Count as having maximum number of Power Charges"
+  ],
+  "zero_reason": "",
+  "why": "Power Charge when you Shock a Chilled Enemy: an event whose rate PoB does not hold (new kind, optimistic lane only): maximum charges (ModParser.lua:5219-5221), boss lane empty until the owner's verdict",
+  "partial_part": "a Power Charge when you Shock a Enemy",
+  "type": "any"
+ },
+ {
+  "line": "10% chance to gain a Power Charge when you Stun with Melee Damage",
+  "surfaces": [
+   "notable"
+  ],
+  "sources": [
+   "39657"
+  ],
+  "group": "charges",
+  "kind": "charge_on_event",
+  "boss_lane": [],
+  "optimistic_lane": [
+   "Count as having maximum number of Power Charges"
+  ],
+  "zero_reason": "",
+  "why": "Power Charge when you Stun with Melee Damage: an event whose rate PoB does not hold (new kind, optimistic lane only): maximum charges (ModParser.lua:5219-5221), boss lane empty until the owner's verdict",
+  "partial_part": "",
+  "type": "attack"
+ },
+ {
+  "line": "10% chance to gain a Power Charge when your Mine is Detonated targeting an Enemy",
+  "surfaces": [
+   "notable"
+  ],
+  "sources": [
+   "33777"
+  ],
+  "group": "charges",
+  "kind": "charge_on_event",
+  "boss_lane": [],
+  "optimistic_lane": [
+   "Count as having maximum number of Power Charges"
+  ],
+  "zero_reason": "",
+  "why": "Power Charge when your Mine is Detonated: an event whose rate PoB does not hold (new kind, optimistic lane only): maximum charges (ModParser.lua:5219-5221), boss lane empty until the owner's verdict",
+  "partial_part": "",
+  "type": "any"
+ },
+ {
+  "line": "10% chance to gain an Endurance Charge on Melee Critical Strike",
+  "surfaces": [
+   "notable"
+  ],
+  "sources": [
+   "51559"
+  ],
+  "group": "charges",
+  "kind": "chance_enemy_debuff",
+  "boss_lane": [
+   "+{formula} to Minimum Endurance Charges"
+  ],
+  "optimistic_lane": [
+   "Count as having maximum number of Endurance Charges"
+  ],
+  "zero_reason": "",
+  "why": "charge on crit with a chance: Endurance Charges counted at the 2.5 s ramp window = Chance * Speed * CritChance / 100 * RampSeconds (Speed and CritChance are PoB outputs), as a Minimum Endurance Charges floor (ModParser.lua:503-516, CalcPerform.lua:1021); optimistic lane maximum (ModParser.lua:5219-5221)",
+  "partial_part": "",
+  "type": "attack",
+  "formula": "Chance * Speed * CritChance / 100 * RampSeconds",
+  "vars": {
+   "RampSeconds": 2.5,
+   "Chance": 0.1
+  },
+  "stand_blind": {
+   "reason_kind": "uptime-saturated",
+   "why": "Endurance Charges already sit at their maximum on these stands, so one more charge moves no output (PoB does give Endurance resists; the cap is reached)"
+  }
+ },
+ {
+  "line": "15% chance that if you would gain Rage on Hit, you instead gain up to your maximum Rage",
+  "surfaces": [
+   "unique"
+  ],
+  "sources": [
+   "Admiral's Arrogance, Antique Gauntlets"
+  ],
+  "group": "charges",
+  "kind": "charge_to_maximum",
+  "boss_lane": [],
+  "optimistic_lane": [
+   "+{formula} to Minimum Rage"
+  ],
+  "zero_reason": "",
+  "why": "chance that gaining Rage on Hit gives the maximum Rage instead (new kind, optimistic lane only): Minimum Rage (ModParser.lua:496) = PoB's own MaximumRage output (CalcPerform.lua:883-889); PoB mis-parses the chance as MaximumRage +15 (ModCache.lua:3815), the rest is unparsed",
+  "partial_part": "that if you would gain Rage, you instead gain up to your",
+  "type": "attack",
+  "formula": "MaximumRage",
+  "stand_blind": {
+   "reason_kind": "charge-without-consumer",
+   "why": "Rage gain at the maximum on the attack stand: no per-charge consumer moves an output"
+  }
+ },
+ {
+  "line": "15% chance to gain a Frenzy Charge on Hit while Blinded",
+  "surfaces": [
+   "unique"
+  ],
+  "sources": [
+   "Retaliation Charm, Citrine Amulet"
+  ],
+  "group": "charges",
+  "kind": "uptime_dependent",
+  "boss_lane": [],
+  "optimistic_lane": [
+   "Count as having maximum number of Frenzy Charges"
+  ],
+  "zero_reason": "",
+  "why": "Frenzy Charge on Hit while Blinded: the gain holds only while a state holds, so its worth is that state's uptime (parked #965): optimistic lane at full uptime = maximum charges (ModParser.lua:5219-5221), boss lane empty",
+  "partial_part": "",
+  "type": "any"
+ },
+ {
+  "line": "15% chance to gain a Frenzy Charge when you Stun an Enemy",
+  "surfaces": [
+   "unique"
+  ],
+  "sources": [
+   "The Warden's Brand, Iron Ring"
+  ],
+  "group": "charges",
+  "kind": "charge_on_event",
+  "boss_lane": [],
+  "optimistic_lane": [
+   "Count as having maximum number of Frenzy Charges"
+  ],
+  "zero_reason": "",
+  "why": "Frenzy Charge when you Stun an Enemy: an event whose rate PoB does not hold (new kind, optimistic lane only): maximum charges (ModParser.lua:5219-5221), boss lane empty until the owner's verdict",
+  "partial_part": "",
+  "type": "any"
+ },
+ {
+  "line": "15% chance to gain a Power Charge on Critical Strike",
+  "surfaces": [
+   "ascendancy"
+  ],
+  "sources": [
+   "4242"
+  ],
+  "group": "charges",
+  "kind": "chance_enemy_debuff",
+  "boss_lane": [
+   "+{formula} to Minimum Power Charges"
+  ],
+  "optimistic_lane": [
+   "Count as having maximum number of Power Charges"
+  ],
+  "zero_reason": "",
+  "why": "charge on crit with a chance: Power Charges counted at the 2.5 s ramp window = Chance * Speed * CritChance / 100 * RampSeconds (Speed and CritChance are PoB outputs), as a Minimum Power Charges floor (ModParser.lua:503-516, CalcPerform.lua:1021); optimistic lane maximum (ModParser.lua:5219-5221)",
+  "partial_part": "",
+  "type": "any",
+  "formula": "Chance * Speed * CritChance / 100 * RampSeconds",
+  "vars": {
+   "RampSeconds": 2.5,
+   "Chance": 0.15
+  }
+ },
+ {
+  "line": "15% chance to gain a Power Charge when you Throw a Trap",
+  "surfaces": [
+   "unique"
+  ],
+  "sources": [
+   "Jaws of Agony, Supreme Spiked Shield"
+  ],
+  "group": "charges",
+  "kind": "charge_on_event",
+  "boss_lane": [],
+  "optimistic_lane": [
+   "Count as having maximum number of Power Charges"
+  ],
+  "zero_reason": "",
+  "why": "Power Charge when you Throw a Trap: an event whose rate PoB does not hold (new kind, optimistic lane only): maximum charges (ModParser.lua:5219-5221), boss lane empty until the owner's verdict",
+  "partial_part": "",
+  "type": "any"
+ },
+ {
+  "line": "20% chance to gain a Frenzy Charge when you Block Attack Damage",
+  "surfaces": [
+   "notable"
+  ],
+  "sources": [
+   "59151"
+  ],
+  "group": "charges",
+  "kind": "on_block_generator",
+  "boss_lane": [],
+  "optimistic_lane": [
+   "Count as having maximum number of Frenzy Charges"
+  ],
+  "zero_reason": "",
+  "why": "on_block_generator verdict: boss lane off (PoB has no boss attack rate; the retaliation-skill case is a build fact, not a mark), optimistic lane on = maximum charges (ModParser.lua:5219-5221)",
+  "partial_part": "",
+  "type": "any"
+ },
+ {
+  "line": "20% chance to gain a Power Charge when you Block",
+  "surfaces": [
+   "notable"
+  ],
+  "sources": [
+   "24889",
+   "25450",
+   "28384",
+   "42917"
+  ],
+  "group": "charges",
+  "kind": "on_block_generator",
+  "boss_lane": [],
+  "optimistic_lane": [
+   "Count as having maximum number of Power Charges"
+  ],
+  "zero_reason": "",
+  "why": "on_block_generator verdict: boss lane off (PoB has no boss attack rate; the retaliation-skill case is a build fact, not a mark), optimistic lane on = maximum charges (ModParser.lua:5219-5221)",
+  "partial_part": "",
+  "type": "any"
+ },
+ {
+  "line": "20% chance to gain an Endurance Charge when you Block",
+  "surfaces": [
+   "notable"
+  ],
+  "sources": [
+   "11011",
+   "9042"
+  ],
+  "group": "charges",
+  "kind": "on_block_generator",
+  "boss_lane": [],
+  "optimistic_lane": [
+   "Count as having maximum number of Endurance Charges"
+  ],
+  "zero_reason": "",
+  "why": "on_block_generator verdict: boss lane off (PoB has no boss attack rate; the retaliation-skill case is a build fact, not a mark), optimistic lane on = maximum charges (ModParser.lua:5219-5221)",
+  "partial_part": "",
+  "type": "any",
+  "stand_blind": {
+   "reason_kind": "uptime-saturated",
+   "why": "Endurance Charges already sit at their maximum on these stands, so one more charge moves no output (PoB does give Endurance resists; the cap is reached)"
+  }
+ },
+ {
+  "line": "20% chance to gain an Endurance Charge when you Stun an Enemy with a Melee Hit",
+  "surfaces": [
+   "mastery"
+  ],
+  "sources": [
+   "19725",
+   "37698",
+   "53216",
+   "62023",
+   "6588"
+  ],
+  "group": "charges",
+  "kind": "charge_on_event",
+  "boss_lane": [],
+  "optimistic_lane": [
+   "Count as having maximum number of Endurance Charges"
+  ],
+  "zero_reason": "",
+  "why": "Endurance Charge when you Stun with a Melee Hit: an event whose rate PoB does not hold (new kind, optimistic lane only): maximum charges (ModParser.lua:5219-5221), boss lane empty until the owner's verdict",
+  "partial_part": "",
+  "type": "attack",
+  "stand_blind": {
+   "reason_kind": "uptime-saturated",
+   "why": "Endurance Charges already sit at their maximum on these stands, so one more charge moves no output (PoB does give Endurance resists; the cap is reached)"
+  }
+ },
+ {
+  "line": "23% chance to gain a Frenzy Charge when you Block",
+  "surfaces": [
+   "gear_affix"
+  ],
+  "sources": [
+   "AccuracyRatingPerFrenzyChargeUber1"
+  ],
+  "group": "charges",
+  "kind": "on_block_generator",
+  "boss_lane": [],
+  "optimistic_lane": [
+   "Count as having maximum number of Frenzy Charges"
+  ],
+  "zero_reason": "",
+  "why": "on_block_generator verdict: boss lane off (PoB has no boss attack rate; the retaliation-skill case is a build fact, not a mark), optimistic lane on = maximum charges (ModParser.lua:5219-5221)",
+  "partial_part": "",
+  "type": "any"
+ },
+ {
+  "line": "23% chance to gain an Endurance Charge when you Block",
+  "surfaces": [
+   "gear_affix"
+  ],
+  "sources": [
+   "AdditionalBlockChancePerEnduranceChargeUber1_"
+  ],
+  "group": "charges",
+  "kind": "on_block_generator",
+  "boss_lane": [],
+  "optimistic_lane": [
+   "Count as having maximum number of Endurance Charges"
+  ],
+  "zero_reason": "",
+  "why": "on_block_generator verdict: boss lane off (PoB has no boss attack rate; the retaliation-skill case is a build fact, not a mark), optimistic lane on = maximum charges (ModParser.lua:5219-5221)",
+  "partial_part": "",
+  "type": "any",
+  "stand_blind": {
+   "reason_kind": "uptime-saturated",
+   "why": "Endurance Charges already sit at their maximum on these stands, so one more charge moves no output (PoB does give Endurance resists; the cap is reached)"
+  }
+ },
+ {
+  "line": "23% chance to gain an Endurance Charge when you Taunt an Enemy",
+  "surfaces": [
+   "gear_affix"
+  ],
+  "sources": [
+   "GainEnduranceChargeOnTauntingEnemiesUber1_"
+  ],
+  "group": "charges",
+  "kind": "charge_on_event",
+  "boss_lane": [],
+  "optimistic_lane": [
+   "Count as having maximum number of Endurance Charges"
+  ],
+  "zero_reason": "",
+  "why": "Endurance Charge when you Taunt an Enemy: an event whose rate PoB does not hold (new kind, optimistic lane only): maximum charges (ModParser.lua:5219-5221), boss lane empty until the owner's verdict",
+  "partial_part": "",
+  "type": "any",
+  "stand_blind": {
+   "reason_kind": "mechanic-absent",
+   "why": "no stand Taunts an enemy, so the Endurance Charge this line grants on a Taunt never fires on the stands"
+  }
+ },
+ {
+  "line": "25% chance that if you would gain Endurance Charges, you instead gain up to maximum Endurance Charges",
+  "surfaces": [
+   "ascendancy"
+  ],
+  "sources": [
+   "1734"
+  ],
+  "group": "charges",
+  "kind": "charge_to_maximum",
+  "boss_lane": [],
+  "optimistic_lane": [
+   "Count as having maximum number of Endurance Charges"
+  ],
+  "zero_reason": "",
+  "why": "chance that gaining Endurance Charges gives the maximum instead (new kind, optimistic lane only): maximum Endurance Charges (ModParser.lua:5221); PoB mis-parses the chance as +25 EnduranceChargesMax (ModCache.lua:4340), the rest is unparsed",
+  "partial_part": "that if you would gain Endurance Charges, you instead gain up to",
+  "type": "any",
+  "stand_blind": {
+   "reason_kind": "uptime-saturated",
+   "why": "Endurance Charges already sit at their maximum on these stands, so one more charge moves no output (PoB does give Endurance resists; the cap is reached)"
+  }
+ },
+ {
+  "line": "25% chance to gain a Frenzy Charge when you Block",
+  "surfaces": [
+   "notable"
+  ],
+  "sources": [
+   "33725"
+  ],
+  "group": "charges",
+  "kind": "on_block_generator",
+  "boss_lane": [],
+  "optimistic_lane": [
+   "Count as having maximum number of Frenzy Charges"
+  ],
+  "zero_reason": "",
+  "why": "on_block_generator verdict: boss lane off (PoB has no boss attack rate; the retaliation-skill case is a build fact, not a mark), optimistic lane on = maximum charges (ModParser.lua:5219-5221)",
+  "partial_part": "",
+  "type": "any"
+ },
+ {
+  "line": "25% chance to gain a Power Charge when you Block",
+  "surfaces": [
+   "gear_affix"
+  ],
+  "sources": [
+   "PowerChargeOnBlockUber1"
+  ],
+  "group": "charges",
+  "kind": "on_block_generator",
+  "boss_lane": [],
+  "optimistic_lane": [
+   "Count as having maximum number of Power Charges"
+  ],
+  "zero_reason": "",
+  "why": "on_block_generator verdict: boss lane off (PoB has no boss attack rate; the retaliation-skill case is a build fact, not a mark), optimistic lane on = maximum charges (ModParser.lua:5219-5221)",
+  "partial_part": "",
+  "type": "any"
+ },
+ {
+  "line": "25% chance to gain a Power Charge when you Block Spell Damage",
+  "surfaces": [
+   "notable"
+  ],
+  "sources": [
+   "65273"
+  ],
+  "group": "charges",
+  "kind": "on_block_generator",
+  "boss_lane": [],
+  "optimistic_lane": [
+   "Count as having maximum number of Power Charges"
+  ],
+  "zero_reason": "",
+  "why": "on_block_generator verdict: boss lane off (PoB has no boss attack rate; the retaliation-skill case is a build fact, not a mark), optimistic lane on = maximum charges (ModParser.lua:5219-5221)",
+  "partial_part": "",
+  "type": "any"
+ },
+ {
+  "line": "25% chance to gain a Power Charge when you Throw a Trap",
+  "surfaces": [
+   "unique"
+  ],
+  "sources": [
+   "Jaws of Agony, Supreme Spiked Shield"
+  ],
+  "group": "charges",
+  "kind": "charge_on_event",
+  "boss_lane": [],
+  "optimistic_lane": [
+   "Count as having maximum number of Power Charges"
+  ],
+  "zero_reason": "",
+  "why": "Power Charge when you Throw a Trap: an event whose rate PoB does not hold (new kind, optimistic lane only): maximum charges (ModParser.lua:5219-5221), boss lane empty until the owner's verdict",
+  "partial_part": "",
+  "type": "any"
+ },
+ {
+  "line": "25% chance to gain an Endurance Charge each second while Channelling",
+  "surfaces": [
+   "notable"
+  ],
+  "sources": [
+   "46264"
+  ],
+  "group": "charges",
+  "kind": "uptime_dependent",
+  "boss_lane": [],
+  "optimistic_lane": [
+   "Count as having maximum number of Endurance Charges"
+  ],
+  "zero_reason": "",
+  "why": "Endurance Charge each second while Channelling: the gain holds only while a state holds, so its worth is that state's uptime (parked #965): optimistic lane at full uptime = maximum charges (ModParser.lua:5219-5221), boss lane empty",
+  "partial_part": "",
+  "type": "any",
+  "stand_blind": {
+   "reason_kind": "uptime-saturated",
+   "why": "uptime-dependent Endurance Charge gain: the Endurance 3 maximum is already saturated on these stands"
+  }
+ },
+ {
+  "line": "25% chance to gain an Endurance Charge when you Block",
+  "surfaces": [
+   "notable"
+  ],
+  "sources": [
+   "15437"
+  ],
+  "group": "charges",
+  "kind": "on_block_generator",
+  "boss_lane": [],
+  "optimistic_lane": [
+   "Count as having maximum number of Endurance Charges"
+  ],
+  "zero_reason": "",
+  "why": "on_block_generator verdict: boss lane off (PoB has no boss attack rate; the retaliation-skill case is a build fact, not a mark), optimistic lane on = maximum charges (ModParser.lua:5219-5221)",
+  "partial_part": "",
+  "type": "any",
+  "stand_blind": {
+   "reason_kind": "uptime-saturated",
+   "why": "Endurance Charges already sit at their maximum on these stands, so one more charge moves no output (PoB does give Endurance resists; the cap is reached)"
+  }
+ },
+ {
+  "line": "25% chance to gain an Endurance Charge when you Stun an Enemy",
+  "surfaces": [
+   "ascendancy"
+  ],
+  "sources": [
+   "62595"
+  ],
+  "group": "charges",
+  "kind": "charge_on_event",
+  "boss_lane": [],
+  "optimistic_lane": [
+   "Count as having maximum number of Endurance Charges"
+  ],
+  "zero_reason": "",
+  "why": "Endurance Charge when you Stun an Enemy: an event whose rate PoB does not hold (new kind, optimistic lane only): maximum charges (ModParser.lua:5219-5221), boss lane empty until the owner's verdict",
+  "partial_part": "",
+  "type": "any",
+  "stand_blind": {
+   "reason_kind": "uptime-saturated",
+   "why": "Endurance Charges already sit at their maximum on these stands, so one more charge moves no output (PoB does give Endurance resists; the cap is reached)"
+  }
+ },
+ {
+  "line": "25% chance to gain an Endurance Charge when you are Hit",
+  "surfaces": [
+   "notable"
+  ],
+  "sources": [
+   "54629"
+  ],
+  "group": "charges",
+  "kind": "charge_on_event",
+  "boss_lane": [],
+  "optimistic_lane": [
+   "Count as having maximum number of Endurance Charges"
+  ],
+  "zero_reason": "",
+  "why": "Endurance Charge when you are Hit: an event whose rate PoB does not hold (new kind, optimistic lane only): maximum charges (ModParser.lua:5219-5221), boss lane empty until the owner's verdict",
+  "partial_part": "",
+  "type": "any",
+  "stand_blind": {
+   "reason_kind": "uptime-saturated",
+   "why": "Endurance Charges already sit at their maximum on these stands, so one more charge moves no output (PoB does give Endurance resists; the cap is reached)"
+  }
+ },
+ {
+  "line": "30% chance to gain a Power Charge on Non-Critical Strike",
+  "surfaces": [
+   "ascendancy"
+  ],
+  "sources": [
+   "4242"
+  ],
+  "group": "charges",
+  "kind": "chance_enemy_debuff",
+  "boss_lane": [
+   "+{formula} to Minimum Power Charges"
+  ],
+  "optimistic_lane": [
+   "Count as having maximum number of Power Charges"
+  ],
+  "zero_reason": "",
+  "why": "charge on noncrit with a chance: Power Charges counted at the 2.5 s ramp window = Chance * Speed * (1 - CritChance / 100) * RampSeconds (Speed and CritChance are PoB outputs), as a Minimum Power Charges floor (ModParser.lua:503-516, CalcPerform.lua:1021); optimistic lane maximum (ModParser.lua:5219-5221)",
+  "partial_part": "",
+  "type": "any",
+  "formula": "Chance * Speed * (1 - CritChance / 100) * RampSeconds",
+  "vars": {
+   "RampSeconds": 2.5,
+   "Chance": 0.3
+  }
+ },
+ {
+  "line": "30% chance to gain a Power Charge when you Stun",
+  "surfaces": [
+   "unique"
+  ],
+  "sources": [
+   "Death's Hand, Karui Sceptre"
+  ],
+  "group": "charges",
+  "kind": "charge_on_event",
+  "boss_lane": [],
+  "optimistic_lane": [
+   "Count as having maximum number of Power Charges"
+  ],
+  "zero_reason": "",
+  "why": "Power Charge when you Stun: an event whose rate PoB does not hold (new kind, optimistic lane only): maximum charges (ModParser.lua:5219-5221), boss lane empty until the owner's verdict",
+  "partial_part": "",
+  "type": "any"
+ },
+ {
+  "line": "30% chance to gain an Endurance Charge when you are Hit",
+  "surfaces": [
+   "ascendancy"
+  ],
+  "sources": [
+   "1734"
+  ],
+  "group": "charges",
+  "kind": "charge_on_event",
+  "boss_lane": [],
+  "optimistic_lane": [
+   "Count as having maximum number of Endurance Charges"
+  ],
+  "zero_reason": "",
+  "why": "Endurance Charge when you are Hit: an event whose rate PoB does not hold (new kind, optimistic lane only): maximum charges (ModParser.lua:5219-5221), boss lane empty until the owner's verdict",
+  "partial_part": "",
+  "type": "any",
+  "stand_blind": {
+   "reason_kind": "uptime-saturated",
+   "why": "Endurance Charges already sit at their maximum on these stands, so one more charge moves no output (PoB does give Endurance resists; the cap is reached)"
+  }
+ },
+ {
+  "line": "4% chance to gain a Frenzy Charge when you Hit a Rare or Unique Enemy",
+  "surfaces": [
+   "gear_affix"
+  ],
+  "sources": [
+   "FrenzyChargeOnHittingRareOrUniqueUber1"
+  ],
+  "group": "charges",
+  "kind": "chance_enemy_debuff",
+  "boss_lane": [
+   "+{formula} to Minimum Frenzy Charges"
+  ],
+  "optimistic_lane": [
+   "Count as having maximum number of Frenzy Charges"
+  ],
+  "zero_reason": "",
+  "why": "charge on hit with a chance: Frenzy Charges counted at the 2.5 s ramp window = Chance * Speed * RampSeconds (Speed and CritChance are PoB outputs), as a Minimum Frenzy Charges floor (ModParser.lua:503-516, CalcPerform.lua:1021); optimistic lane maximum (ModParser.lua:5219-5221); a boss is a Rare or Unique enemy, so the condition holds",
+  "partial_part": "",
+  "type": "any",
+  "formula": "Chance * Speed * RampSeconds",
+  "vars": {
+   "RampSeconds": 2.5,
+   "Chance": 0.04
+  }
+ },
+ {
+  "line": "5% chance to grant a Frenzy Charge to nearby Allies on Hit",
+  "surfaces": [
+   "unique"
+  ],
+  "sources": [
+   "Victario's Charity, Laminated Kite Shield"
+  ],
+  "group": "charges",
+  "kind": "no_representation",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "no_representation: charge goes to allies, not the player",
+  "why": "grants a Frenzy Charge to nearby Allies: the player's own charges do not change, PoB has no ally",
+  "partial_part": "",
+  "type": "any"
+ },
+ {
+  "line": "7% chance to gain a Power Charge on Critical Strike",
+  "surfaces": [
+   "gear_affix"
+  ],
+  "sources": [
+   "CriticalMultiplierSupportedTwoHandedUber1"
+  ],
+  "group": "charges",
+  "kind": "chance_enemy_debuff",
+  "boss_lane": [
+   "+{formula} to Minimum Power Charges"
+  ],
+  "optimistic_lane": [
+   "Count as having maximum number of Power Charges"
+  ],
+  "zero_reason": "",
+  "why": "charge on crit with a chance: Power Charges counted at the 2.5 s ramp window = Chance * Speed * CritChance / 100 * RampSeconds (Speed and CritChance are PoB outputs), as a Minimum Power Charges floor (ModParser.lua:503-516, CalcPerform.lua:1021); optimistic lane maximum (ModParser.lua:5219-5221)",
+  "partial_part": "",
+  "type": "any",
+  "formula": "Chance * Speed * CritChance / 100 * RampSeconds",
+  "vars": {
+   "RampSeconds": 2.5,
+   "Chance": 0.07
+  }
+ },
+ {
+  "line": "8% chance to gain a Frenzy Charge when you Hit a Unique Enemy",
+  "surfaces": [
+   "mastery"
+  ],
+  "sources": [
+   "10204",
+   "26697",
+   "31291",
+   "63184"
+  ],
+  "group": "charges",
+  "kind": "chance_enemy_debuff",
+  "boss_lane": [
+   "+{formula} to Minimum Frenzy Charges"
+  ],
+  "optimistic_lane": [
+   "Count as having maximum number of Frenzy Charges"
+  ],
+  "zero_reason": "",
+  "why": "charge on hit with a chance: Frenzy Charges counted at the 2.5 s ramp window = Chance * Speed * RampSeconds (Speed and CritChance are PoB outputs), as a Minimum Frenzy Charges floor (ModParser.lua:503-516, CalcPerform.lua:1021); optimistic lane maximum (ModParser.lua:5219-5221); a boss is a Unique enemy, so the condition holds",
+  "partial_part": "",
+  "type": "any",
+  "formula": "Chance * Speed * RampSeconds",
+  "vars": {
+   "RampSeconds": 2.5,
+   "Chance": 0.08
+  }
+ },
+ {
+  "line": "8% chance to gain an Endurance Charge on Critical Strike",
+  "surfaces": [
+   "gear_affix"
+  ],
+  "sources": [
+   "GainEnduranceChargeOnCritUber1"
+  ],
+  "group": "charges",
+  "kind": "chance_enemy_debuff",
+  "boss_lane": [
+   "+{formula} to Minimum Endurance Charges"
+  ],
+  "optimistic_lane": [
+   "Count as having maximum number of Endurance Charges"
+  ],
+  "zero_reason": "",
+  "why": "charge on crit with a chance: Endurance Charges counted at the 2.5 s ramp window = Chance * Speed * CritChance / 100 * RampSeconds (Speed and CritChance are PoB outputs), as a Minimum Endurance Charges floor (ModParser.lua:503-516, CalcPerform.lua:1021); optimistic lane maximum (ModParser.lua:5219-5221)",
+  "partial_part": "",
+  "type": "any",
+  "formula": "Chance * Speed * CritChance / 100 * RampSeconds",
+  "vars": {
+   "RampSeconds": 2.5,
+   "Chance": 0.08
+  },
+  "stand_blind": {
+   "reason_kind": "uptime-saturated",
+   "why": "Endurance Charges already sit at their maximum on these stands, so one more charge moves no output (PoB does give Endurance resists; the cap is reached)"
+  }
+ },
+ {
+  "line": "8% chance to gain an Endurance Charge when you Hit a Bleeding Enemy",
+  "surfaces": [
+   "gear_affix"
+  ],
+  "sources": [
+   "GainEnduranceChargeOnHittingBleedingEnemyUber1"
+  ],
+  "group": "charges",
+  "kind": "uptime_dependent",
+  "boss_lane": [],
+  "optimistic_lane": [
+   "Count as having maximum number of Endurance Charges"
+  ],
+  "zero_reason": "",
+  "why": "Endurance Charge on Hit of a Bleeding Enemy: the gain holds only while a state holds, so its worth is that state's uptime (parked #965): optimistic lane at full uptime = maximum charges (ModParser.lua:5219-5221), boss lane empty",
+  "partial_part": "",
+  "type": "any",
+  "stand_blind": {
+   "reason_kind": "uptime-saturated",
+   "why": "uptime-dependent Endurance Charge gain: the Endurance 3 maximum is already saturated on these stands"
+  }
+ },
+ {
+  "line": "Flasks adjacent to active Tinctures gain 2 charges when you Hit an Enemy with a Melee Weapon, no more than once every second",
+  "surfaces": [
+   "notable"
+  ],
+  "sources": [
+   "2275"
+  ],
+  "group": "charges",
+  "kind": "no_representation",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "no_representation: PoB has no Tincture adjacency",
+  "why": "flasks adjacent to active Tinctures: PoB has no flask adjacency, counting all flasks would overcount",
+  "partial_part": "",
+  "type": "any"
+ },
+ {
+  "line": "Flasks adjacent to active Tinctures gain 3 charges when you Hit an Enemy with a Melee Weapon, no more than once every second",
+  "surfaces": [
+   "ascendancy"
+  ],
+  "sources": [
+   "34637"
+  ],
+  "group": "charges",
+  "kind": "no_representation",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "no_representation: PoB has no Tincture adjacency",
+  "why": "flasks adjacent to active Tinctures: PoB has no flask adjacency, counting all flasks would overcount",
+  "partial_part": "",
+  "type": "any"
+ },
+ {
+  "line": "Gain 1 Charge when you are Hit by an Enemy",
+  "surfaces": [
+   "flask"
+  ],
+  "sources": [
+   "FlaskFullRechargeOnHit2_"
+  ],
+  "group": "charges",
+  "kind": "no_representation",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "no_representation: PoB has no rate of hits taken",
+  "why": "a flask charge per hit taken: PoB's flask generation lines are per second only and PoB holds no enemy attack rate",
+  "partial_part": "",
+  "type": "any"
+ },
+ {
+  "line": "Gain 1 Endurance Charge every second if you've been Hit Recently",
+  "surfaces": [
+   "ascendancy",
+   "notable"
+  ],
+  "sources": [
+   "1734",
+   "57572",
+   "61072"
+  ],
+  "group": "charges",
+  "kind": "uptime_dependent",
+  "boss_lane": [],
+  "optimistic_lane": [
+   "Count as having maximum number of Endurance Charges"
+  ],
+  "zero_reason": "",
+  "why": "Endurance Charge each second if Hit Recently: the gain holds only while a state holds, so its worth is that state's uptime (parked #965): optimistic lane at full uptime = maximum charges (ModParser.lua:5219-5221), boss lane empty",
+  "partial_part": "",
+  "type": "any",
+  "stand_blind": {
+   "reason_kind": "uptime-saturated",
+   "why": "uptime-dependent Endurance Charge gain: the Endurance 3 maximum is already saturated on these stands"
+  }
+ },
+ {
+  "line": "Gain 1 Fanatic Charge every second if you've Attacked in the past second",
+  "surfaces": [
+   "ascendancy"
+  ],
+  "sources": [
+   "13851"
+  ],
+  "group": "charges",
+  "kind": "no_representation",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "no_representation: PoB has no Fanatic Charge stat",
+  "why": "Fanatic Charges have no PoB stat or mod; the same node's line 'Gain Fanaticism ... on reaching Maximum Fanatic Charges' is parsed (ModParser.lua:2904)",
+  "partial_part": "",
+  "type": "any"
+ },
+ {
+  "line": "Gain 1 Vaal Soul per second",
+  "surfaces": [
+   "ascendancy"
+  ],
+  "sources": [
+   "7403"
+  ],
+  "group": "charges",
+  "kind": "no_representation",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "no_representation: PoB has no Vaal Soul gain per second",
+  "why": "Vaal Souls are not held as a per-second resource in PoB (no ModParser entry), so the gain cannot be counted",
+  "partial_part": "",
+  "type": "any"
+ },
+ {
+  "line": "Gain 2 Charges when you are Hit by an Enemy",
+  "surfaces": [
+   "flask"
+  ],
+  "sources": [
+   "FlaskFullRechargeOnHit4_"
+  ],
+  "group": "charges",
+  "kind": "no_representation",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "no_representation: PoB has no rate of hits taken",
+  "why": "2 flask charges per hit taken: PoB's flask generation lines are per second only and PoB holds no enemy attack rate",
+  "partial_part": "",
+  "type": "any"
+ },
+ {
+  "line": "Gain 2 Power Charges when you Warcry",
+  "surfaces": [
+   "unique"
+  ],
+  "sources": [
+   "Brinerot Flag, Tarnished Spirit Shield"
+  ],
+  "group": "charges",
+  "kind": "charge_on_event",
+  "boss_lane": [],
+  "optimistic_lane": [
+   "Count as having maximum number of Power Charges"
+  ],
+  "zero_reason": "",
+  "why": "2 Power Charges when you Warcry: an event whose rate PoB does not hold (new kind, optimistic lane only): maximum charges (ModParser.lua:5219-5221), boss lane empty until the owner's verdict",
+  "partial_part": "",
+  "type": "any"
+ },
+ {
+  "line": "Gain 3 Endurance Charges when you consume maximum Valour to place a Banner",
+  "surfaces": [
+   "notable"
+  ],
+  "sources": [
+   "13703"
+  ],
+  "group": "charges",
+  "kind": "charge_on_event",
+  "boss_lane": [],
+  "optimistic_lane": [
+   "Count as having maximum number of Endurance Charges"
+  ],
+  "zero_reason": "",
+  "why": "3 Endurance Charges when you consume maximum Valour to place a Banner: an event whose rate PoB does not hold (new kind, optimistic lane only): maximum charges (ModParser.lua:5219-5221), boss lane empty until the owner's verdict",
+  "partial_part": "Endurance Charges when you consume to place a Banner",
+  "type": "any",
+  "stand_blind": {
+   "reason_kind": "mechanic-absent",
+   "why": "no stand places a Banner, so the three Endurance Charges this line grants on a Banner never fire on the stands"
+  }
+ },
+ {
+  "line": "Gain 3 Frenzy Charges when you consume maximum Valour to place a Banner",
+  "surfaces": [
+   "notable"
+  ],
+  "sources": [
+   "13703"
+  ],
+  "group": "charges",
+  "kind": "charge_on_event",
+  "boss_lane": [],
+  "optimistic_lane": [
+   "Count as having maximum number of Frenzy Charges"
+  ],
+  "zero_reason": "",
+  "why": "3 Frenzy Charges when you consume maximum Valour to place a Banner: an event whose rate PoB does not hold (new kind, optimistic lane only): maximum charges (ModParser.lua:5219-5221), boss lane empty until the owner's verdict",
+  "partial_part": "Charges when you consume to place a Banner",
+  "type": "any"
+ },
+ {
+  "line": "Gain a Frenzy Charge each second while Moving",
+  "surfaces": [
+   "ascendancy"
+  ],
+  "sources": [
+   "44482"
+  ],
+  "group": "charges",
+  "kind": "uptime_dependent",
+  "boss_lane": [],
+  "optimistic_lane": [
+   "Count as having maximum number of Frenzy Charges"
+  ],
+  "zero_reason": "",
+  "why": "Frenzy Charge each second while Moving: the gain holds only while a state holds, so its worth is that state's uptime (parked #965): optimistic lane at full uptime = maximum charges (ModParser.lua:5219-5221), boss lane empty",
+  "partial_part": "",
+  "type": "any"
+ },
+ {
+  "line": "Gain a Frenzy Charge every 3 seconds while Moving",
+  "surfaces": [
+   "ascendancy"
+  ],
+  "sources": [
+   "34567"
+  ],
+  "group": "charges",
+  "kind": "uptime_dependent",
+  "boss_lane": [],
+  "optimistic_lane": [
+   "Count as having maximum number of Frenzy Charges"
+  ],
+  "zero_reason": "",
+  "why": "Frenzy Charge every 3 seconds while Moving: the gain holds only while a state holds, so its worth is that state's uptime (parked #965): optimistic lane at full uptime = maximum charges (ModParser.lua:5219-5221), boss lane empty",
+  "partial_part": "",
+  "type": "any"
+ },
+ {
+  "line": "Gain a Frenzy Charge if an Attack Ignites an Enemy",
+  "surfaces": [
+   "unique"
+  ],
+  "sources": [
+   "Oro's Sacrifice, Infernal Sword"
+  ],
+  "group": "charges",
+  "kind": "charge_on_event",
+  "boss_lane": [],
+  "optimistic_lane": [
+   "Count as having maximum number of Frenzy Charges"
+  ],
+  "zero_reason": "",
+  "why": "Frenzy Charge when an Attack Ignites an Enemy: an event whose rate PoB does not hold (new kind, optimistic lane only): maximum charges (ModParser.lua:5219-5221), boss lane empty until the owner's verdict",
+  "partial_part": "",
+  "type": "attack"
+ },
+ {
+  "line": "Gain a Frenzy Charge on Critical Strike",
+  "surfaces": [
+   "unique"
+  ],
+  "sources": [
+   "Terminus Est, Tiger Sword"
+  ],
+  "group": "charges",
+  "kind": "chance_enemy_debuff",
+  "boss_lane": [
+   "+{formula} to Minimum Frenzy Charges"
+  ],
+  "optimistic_lane": [
+   "Count as having maximum number of Frenzy Charges"
+  ],
+  "zero_reason": "",
+  "why": "charge on crit with a chance: Frenzy Charges counted at the 2.5 s ramp window = Chance * Speed * CritChance / 100 * RampSeconds (Speed and CritChance are PoB outputs), as a Minimum Frenzy Charges floor (ModParser.lua:503-516, CalcPerform.lua:1021); optimistic lane maximum (ModParser.lua:5219-5221)",
+  "partial_part": "",
+  "type": "any",
+  "formula": "Chance * Speed * CritChance / 100 * RampSeconds",
+  "vars": {
+   "RampSeconds": 2.5,
+   "Chance": 1.0
+  }
+ },
+ {
+  "line": "Gain a Power Charge after Spending a total of 200 Mana",
+  "surfaces": [
+   "ascendancy",
+   "gear_affix"
+  ],
+  "sources": [
+   "62504",
+   "PowerChargeOnManaSpentUber1"
+  ],
+  "group": "charges",
+  "kind": "charge_on_event",
+  "boss_lane": [],
+  "optimistic_lane": [
+   "Count as having maximum number of Power Charges"
+  ],
+  "zero_reason": "",
+  "why": "Power Charge per 200 Mana spent: an event whose rate PoB does not hold (new kind, optimistic lane only): maximum charges (ModParser.lua:5219-5221), boss lane empty until the owner's verdict",
+  "partial_part": "",
+  "type": "any"
+ },
+ {
+  "line": "Gain a Power Charge each second while Channelling a Spell",
+  "surfaces": [
+   "mastery"
+  ],
+  "sources": [
+   "14113",
+   "17411",
+   "25313",
+   "27733",
+   "28680",
+   "32509",
+   "40196",
+   "60512"
+  ],
+  "group": "charges",
+  "kind": "uptime_dependent",
+  "boss_lane": [],
+  "optimistic_lane": [
+   "Count as having maximum number of Power Charges"
+  ],
+  "zero_reason": "",
+  "why": "Power Charge each second while Channelling a Spell: the gain holds only while a state holds, so its worth is that state's uptime (parked #965): optimistic lane at full uptime = maximum charges (ModParser.lua:5219-5221), boss lane empty",
+  "partial_part": "",
+  "type": "spell",
+  "stand_blind": {
+   "reason_kind": "uptime-saturated",
+   "why": "uptime-dependent Power Charge gain: the Power Charge maximum is already saturated on the spell stand"
+  }
+ },
+ {
+  "line": "Gain a Power Charge every Second if you haven't lost Power Charges Recently",
+  "surfaces": [
+   "unique"
+  ],
+  "sources": [
+   "Willclash, Golden Mask"
+  ],
+  "group": "charges",
+  "kind": "uptime_dependent",
+  "boss_lane": [],
+  "optimistic_lane": [
+   "Count as having maximum number of Power Charges"
+  ],
+  "zero_reason": "",
+  "why": "Power Charge each second if no Power Charges lost Recently: the gain holds only while a state holds, so its worth is that state's uptime (parked #965): optimistic lane at full uptime = maximum charges (ModParser.lua:5219-5221), boss lane empty",
+  "partial_part": "",
+  "type": "any"
+ },
+ {
+  "line": "Gain an Endurance Charge every 4 seconds while Stationary",
+  "surfaces": [
+   "gear_affix"
+  ],
+  "sources": [
+   "GainEnduranceChargeWhileStationaryUber1"
+  ],
+  "group": "charges",
+  "kind": "uptime_dependent",
+  "boss_lane": [],
+  "optimistic_lane": [
+   "Count as having maximum number of Endurance Charges"
+  ],
+  "zero_reason": "",
+  "why": "Endurance Charge every 4 seconds while Stationary: the gain holds only while a state holds, so its worth is that state's uptime (parked #965): optimistic lane at full uptime = maximum charges (ModParser.lua:5219-5221), boss lane empty",
+  "partial_part": "",
+  "type": "any",
+  "stand_blind": {
+   "reason_kind": "uptime-saturated",
+   "why": "uptime-dependent Endurance Charge gain: the Endurance 3 maximum is already saturated on these stands"
+  }
+ },
+ {
+  "line": "Gain an Endurance, Frenzy or Power charge when you Block",
+  "surfaces": [
+   "gear_affix"
+  ],
+  "sources": [
+   "GainRandomChargeOnBlockInfluence1",
+   "GainRandomChargeOnBlockUber1__"
+  ],
+  "group": "charges",
+  "kind": "on_block_generator",
+  "boss_lane": [],
+  "optimistic_lane": [
+   "Count as having maximum number of Endurance Charges",
+   "Count as having maximum number of Frenzy Charges",
+   "Count as having maximum number of Power Charges"
+  ],
+  "zero_reason": "",
+  "why": "on_block_generator verdict: boss lane off (PoB has no boss attack rate; the retaliation-skill case is a build fact, not a mark), optimistic lane on = maximum charges (ModParser.lua:5219-5221); a random one of three charges: all three counted at the ceiling of 'on'",
+  "partial_part": "",
+  "type": "any"
+ },
+ {
+  "line": "Grant bonuses to Non-Channelling Skills you use by consuming 3 Charges from a Flask of each of the following types, if possible:",
+  "surfaces": [
+   "ascendancy"
+  ],
+  "sources": [
+   "6038"
+  ],
+  "group": "charges",
+  "kind": "no_representation",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "no_representation: header line, each flask type bonus is its own parsed line",
+  "why": "'Grant bonuses ... consuming 3 Charges from a Flask of each ... types' parses to an empty mod list (ModParser.lua:2960); its diamond, bismuth and amethyst bonuses (ModParser.lua:2961-2967) are separate lines",
+  "partial_part": "",
+  "type": "any"
+ },
+ {
+  "line": "Life Flasks gain 3 Charges when you Suppress Spell Damage",
+  "surfaces": [
+   "notable"
+  ],
+  "sources": [
+   "59866"
+  ],
+  "group": "charges",
+  "kind": "no_representation",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "no_representation: PoB has no rate of Suppressed spell hits",
+  "why": "3 Life Flask charges per Suppressed spell hit: PoB holds no enemy spell rate",
+  "partial_part": "",
+  "type": "any"
+ },
+ {
+  "line": "Life Flasks gain a Charge when you hit an Enemy, no more than once each second",
+  "surfaces": [
+   "notable"
+  ],
+  "sources": [
+   "41137"
+  ],
+  "group": "charges",
+  "kind": "flask_charge_on_event",
+  "boss_lane": [],
+  "optimistic_lane": [
+   "Life Flasks gain 1 charge every 1 seconds"
+  ],
+  "zero_reason": "",
+  "why": "Life Flasks gain a charge per Hit, at most once per second (new kind, optimistic lane only): PoB's per-second form 'Life Flasks gain N charges every M seconds' (ModParser.lua:5129) at the once-per-second ceiling; the build's hit rate has no integer form in that pattern",
+  "partial_part": "",
+  "type": "any",
+  "stand_blind": {
+   "reason_kind": "charge-without-consumer",
+   "why": "Life Flask charge gain: no flask-charge consumer on these stands moves an output"
+  }
+ },
+ {
+  "line": "Linked targets share Endurance, Frenzy and Power Charges with you",
+  "surfaces": [
+   "mastery"
+  ],
+  "sources": [
+   "12244",
+   "24334",
+   "48144",
+   "9213"
+  ],
+  "group": "charges",
+  "kind": "no_representation",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "no_representation: charges of a linked target, PoB has no linked ally",
+  "why": "shares the linked target's charges with you: PoB holds no ally charges to share",
+  "partial_part": "",
+  "type": "any"
+ },
+ {
+  "line": "Lose all Fanatic Charges on reaching Maximum Fanatic Charges",
+  "surfaces": [
+   "ascendancy"
+  ],
+  "sources": [
+   "13851"
+  ],
+  "group": "charges",
+  "kind": "no_representation",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "no_representation: PoB has no Fanatic Charge stat",
+  "why": "Fanatic Charges have no PoB stat or mod; the same node's line 'Gain Fanaticism ... on reaching Maximum Fanatic Charges' is parsed (ModParser.lua:2904)",
+  "partial_part": "",
+  "type": "any"
+ },
+ {
+  "line": "Lose all Power Charges when you Block",
+  "surfaces": [
+   "unique"
+  ],
+  "sources": [
+   "Willclash, Golden Mask"
+  ],
+  "group": "charges",
+  "kind": "no_representation",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "no_representation: PoB has no block rate, a reset on Block has no stat",
+  "why": "a drawback (all Power Charges lost on Block): needs a block rate PoB does not hold",
+  "partial_part": "",
+  "type": "any"
+ },
+ {
+  "line": "Lose all Rage on reaching Maximum Rage and gain Wild Savagery for 1 second per 10 Rage lost this way",
+  "surfaces": [
+   "ascendancy"
+  ],
+  "sources": [
+   "18519"
+  ],
+  "group": "charges",
+  "kind": "uptime_dependent",
+  "boss_lane": [],
+  "optimistic_lane": [
+   "100% increased Physical Damage",
+   "10% increased Action Speed",
+   "Hits have 100% chance to ignore Enemy Physical Damage Reduction"
+  ],
+  "zero_reason": "",
+  "why": "Wild Savagery (1 second per 10 Rage lost) is a buff of limited uptime (parked #965): optimistic lane at full uptime carries the buff's own effects as parsed mods (ConfigOptions.lua:1065 tooltip, CalcPerform.lua:749-753; phrase of the last line ModCache.lua:9463), boss lane empty",
+  "partial_part": "",
+  "type": "attack"
+ },
+ {
+  "line": "Share Endurance, Frenzy and Power Charges with nearby party members",
+  "surfaces": [
+   "keystone"
+  ],
+  "sources": [
+   "23540"
+  ],
+  "group": "charges",
+  "kind": "no_representation",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "no_representation: charges shared with party members, PoB has no party",
+  "why": "shares charges with party members: PoB holds no party",
+  "partial_part": "",
+  "type": "any"
+ },
+ {
+  "line": "Warcries have 5% Chance to grant an Endurance, Frenzy or Power Charge per Power",
+  "surfaces": [
+   "notable"
+  ],
+  "sources": [
+   "28744"
+  ],
+  "group": "charges",
+  "kind": "charge_on_event",
+  "boss_lane": [],
+  "optimistic_lane": [
+   "Count as having maximum number of Endurance Charges",
+   "Count as having maximum number of Frenzy Charges",
+   "Count as having maximum number of Power Charges"
+  ],
+  "zero_reason": "",
+  "why": "Warcry chance for a random Endurance, Frenzy or Power Charge per Power (all three at the ceiling): an event whose rate PoB does not hold (new kind, optimistic lane only): maximum charges (ModParser.lua:5219-5221), boss lane empty until the owner's verdict",
+  "partial_part": "",
+  "type": "any"
+ },
+ {
+  "line": "You lose all Endurance Charges on reaching maximum Endurance Charges",
+  "surfaces": [
+   "unique"
+  ],
+  "sources": [
+   "The Eternal Apple, Chiming Spirit Shield"
+  ],
+  "group": "charges",
+  "kind": "no_representation",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "no_representation: a reset at maximum charges has no PoB stat",
+  "why": "a drawback (all Endurance Charges lost on reaching the maximum): no PoB stat holds a reset at maximum",
+  "partial_part": "",
+  "type": "any"
+ }
+]

@@ -1,0 +1,3 @@
+{"type": "custom-title", "customTitle": "Настройка оркестрации", "sessionId": "sessD"}
+{"type": "user", "message": {"role": "user", "content": "let's grill this plan"}, "timestamp": "2026-09-26T21:00:00Z"}
+{"type": "assistant", "message": {"id": "msg_d1", "model": "claude-opus-5-5", "usage": {"input_tokens": 4000, "cache_creation_input_tokens": 0, "cache_read_input_tokens": 0, "output_tokens": 400}}, "timestamp": "2026-09-26T21:01:00Z"}

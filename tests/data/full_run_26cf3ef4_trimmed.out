@@ -1,0 +1,10 @@
+---------------------------- Captured stdout call -----------------------------
+1 passed
+FAILED tests/t.py::bad - boom
+1 failed, 2 passed in 0.1s
+1 passed
+================== slowest durations ==================
+=========================== short test summary info ===========================
+FAILED tests/test_agentops_merge_line_check.py::test_row2_a_flaky_failure_stays_in_the_line_and_is_batched
+1 failed, 4712 passed, 80 skipped in 574.79s (0:09:34)
+no tests ran in 0.01s

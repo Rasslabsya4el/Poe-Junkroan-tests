@@ -1,0 +1,827 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/schemas/pob/pob.game-corpus-bundle.schema.json",
+  "title": "PoB game corpus family bundle",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "corpus_id",
+    "family",
+    "record_count",
+    "provenance",
+    "records"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "1.0.0"
+    },
+    "corpus_id": {
+      "type": "string",
+      "const": "pob_game_corpus"
+    },
+    "family": {
+      "type": "string",
+      "enum": [
+        "items",
+        "active_gems",
+        "support_gems",
+        "passives",
+        "masteries",
+        "ascendancies",
+        "keystones",
+        "config_surfaces"
+      ]
+    },
+    "record_count": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "provenance": {
+      "$ref": "#/$defs/provenance"
+    },
+    "metadata": {
+      "type": "object"
+    },
+    "records": {
+      "type": "array",
+      "minItems": 1
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "family": {
+            "const": "items"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "records": {
+            "items": {
+              "$ref": "#/$defs/item_record"
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "family": {
+            "enum": [
+              "active_gems",
+              "support_gems"
+            ]
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "records": {
+            "items": {
+              "$ref": "#/$defs/gem_record"
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "family": {
+            "enum": [
+              "passives",
+              "keystones"
+            ]
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "records": {
+            "items": {
+              "$ref": "#/$defs/tree_node_record"
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "family": {
+            "const": "masteries"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "records": {
+            "items": {
+              "$ref": "#/$defs/mastery_record"
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "family": {
+            "const": "ascendancies"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "records": {
+            "items": {
+              "$ref": "#/$defs/ascendancy_record"
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "family": {
+            "const": "config_surfaces"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "records": {
+            "items": {
+              "$ref": "#/$defs/config_record"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "$defs": {
+    "sha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "source_input": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "source_path",
+        "sha256",
+        "size_bytes"
+      ],
+      "properties": {
+        "source_path": {
+          "type": "string",
+          "pattern": "^vendor/pob/source/.+\\.lua$"
+        },
+        "sha256": {
+          "$ref": "#/$defs/sha256"
+        },
+        "size_bytes": {
+          "type": "integer",
+          "minimum": 1
+        }
+      }
+    },
+    "provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "lane_id",
+        "canonical_path",
+        "lock_path",
+        "repo",
+        "repo_url",
+        "pinned_ref",
+        "pinned_commit",
+        "observed_commit",
+        "tree_version",
+        "source_inputs"
+      ],
+      "properties": {
+        "lane_id": {
+          "type": "string",
+          "const": "pob_source_lane"
+        },
+        "canonical_path": {
+          "type": "string",
+          "const": "vendor/pob/source"
+        },
+        "lock_path": {
+          "type": "string",
+          "const": "locks/pob.source.lock.json"
+        },
+        "repo": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+$"
+        },
+        "repo_url": {
+          "type": "string",
+          "format": "uri",
+          "pattern": "^https://github\\.com/[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+\\.git$"
+        },
+        "pinned_ref": {
+          "type": "string",
+          "pattern": "^refs/tags/v.+$"
+        },
+        "pinned_commit": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{40}$"
+        },
+        "observed_commit": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{40}$"
+        },
+        "tree_version": {
+          "type": "string",
+          "pattern": "^\\d+_\\d+(?:_[a-z]+(?:_[a-z]+)?)?$"
+        },
+        "source_inputs": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/source_input"
+          }
+        }
+      }
+    },
+    "text_list": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "connection_list": {
+      "type": "array",
+      "items": {
+        "anyOf": [
+          {
+            "type": "integer"
+          },
+          {
+            "type": "string"
+          }
+        ]
+      }
+    },
+    "tree_node_record": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "node_id",
+        "skill_id",
+        "name",
+        "stats",
+        "reminder_text",
+        "flavour_text",
+        "icon",
+        "group_id",
+        "orbit",
+        "orbit_index",
+        "incoming_node_ids",
+        "outgoing_node_ids",
+        "recipe",
+        "class_start_index",
+        "is_notable",
+        "is_proxy",
+        "is_blighted",
+        "is_mastery",
+        "is_keystone",
+        "is_ascendancy_start",
+        "ascendancy_name"
+      ],
+      "properties": {
+        "node_id": {
+          "type": "integer"
+        },
+        "skill_id": {
+          "type": "integer"
+        },
+        "name": {
+          "type": "string"
+        },
+        "stats": {
+          "$ref": "#/$defs/text_list"
+        },
+        "reminder_text": {
+          "$ref": "#/$defs/text_list"
+        },
+        "flavour_text": {
+          "$ref": "#/$defs/text_list"
+        },
+        "icon": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "group_id": {
+          "type": "integer"
+        },
+        "orbit": {
+          "type": "integer"
+        },
+        "orbit_index": {
+          "type": "integer"
+        },
+        "incoming_node_ids": {
+          "$ref": "#/$defs/connection_list"
+        },
+        "outgoing_node_ids": {
+          "$ref": "#/$defs/connection_list"
+        },
+        "recipe": {
+          "$ref": "#/$defs/text_list"
+        },
+        "class_start_index": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "is_notable": {
+          "type": "boolean"
+        },
+        "is_proxy": {
+          "type": "boolean"
+        },
+        "is_blighted": {
+          "type": "boolean"
+        },
+        "is_mastery": {
+          "type": "boolean"
+        },
+        "is_keystone": {
+          "type": "boolean"
+        },
+        "is_ascendancy_start": {
+          "type": "boolean"
+        },
+        "ascendancy_name": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "mastery_effect": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "effect_id",
+        "stats",
+        "reminder_text"
+      ],
+      "properties": {
+        "effect_id": {
+          "type": "integer"
+        },
+        "stats": {
+          "$ref": "#/$defs/text_list"
+        },
+        "reminder_text": {
+          "$ref": "#/$defs/text_list"
+        }
+      }
+    },
+    "mastery_record": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "node_id",
+        "skill_id",
+        "name",
+        "stats",
+        "reminder_text",
+        "flavour_text",
+        "icon",
+        "group_id",
+        "orbit",
+        "orbit_index",
+        "incoming_node_ids",
+        "outgoing_node_ids",
+        "recipe",
+        "class_start_index",
+        "is_notable",
+        "is_proxy",
+        "is_blighted",
+        "is_mastery",
+        "is_keystone",
+        "is_ascendancy_start",
+        "ascendancy_name",
+        "mastery_effects"
+      ],
+      "properties": {
+        "node_id": {
+          "type": "integer"
+        },
+        "skill_id": {
+          "type": "integer"
+        },
+        "name": {
+          "type": "string"
+        },
+        "stats": {
+          "$ref": "#/$defs/text_list"
+        },
+        "reminder_text": {
+          "$ref": "#/$defs/text_list"
+        },
+        "flavour_text": {
+          "$ref": "#/$defs/text_list"
+        },
+        "icon": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "group_id": {
+          "type": "integer"
+        },
+        "orbit": {
+          "type": "integer"
+        },
+        "orbit_index": {
+          "type": "integer"
+        },
+        "incoming_node_ids": {
+          "$ref": "#/$defs/connection_list"
+        },
+        "outgoing_node_ids": {
+          "$ref": "#/$defs/connection_list"
+        },
+        "recipe": {
+          "$ref": "#/$defs/text_list"
+        },
+        "class_start_index": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "is_notable": {
+          "type": "boolean"
+        },
+        "is_proxy": {
+          "type": "boolean"
+        },
+        "is_blighted": {
+          "type": "boolean"
+        },
+        "is_mastery": {
+          "type": "boolean"
+        },
+        "is_keystone": {
+          "type": "boolean"
+        },
+        "is_ascendancy_start": {
+          "type": "boolean"
+        },
+        "ascendancy_name": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "mastery_effects": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/mastery_effect"
+          }
+        }
+      }
+    },
+    "item_record": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "name",
+        "item_kind",
+        "slot_family",
+        "type",
+        "sub_type",
+        "tags",
+        "influence_tags",
+        "implicit_text",
+        "implicit_mod_types",
+        "requirements",
+        "flavour_text",
+        "source_file"
+      ],
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "item_kind": {
+          "type": "string",
+          "const": "base"
+        },
+        "slot_family": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string"
+        },
+        "sub_type": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "tags": {
+          "$ref": "#/$defs/text_list"
+        },
+        "influence_tags": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "string"
+          }
+        },
+        "implicit_text": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "implicit_mod_types": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/text_list"
+          }
+        },
+        "requirements": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "integer"
+          }
+        },
+        "flavour_text": {
+          "$ref": "#/$defs/text_list"
+        },
+        "source_file": {
+          "type": "string",
+          "pattern": "^vendor/pob/source/src/Data/Bases/.+\\.lua$"
+        }
+      }
+    },
+    "gem_record": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "record_id",
+        "name",
+        "base_type_name",
+        "game_id",
+        "granted_effect_id",
+        "grants_active_skill",
+        "is_support",
+        "is_vaal_gem",
+        "natural_max_level",
+        "required_attributes",
+        "secondary_granted_effect_id",
+        "tag_keys",
+        "tag_string",
+        "variant_id"
+      ],
+      "properties": {
+        "record_id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "base_type_name": {
+          "type": "string"
+        },
+        "game_id": {
+          "type": "string"
+        },
+        "granted_effect_id": {
+          "type": "string"
+        },
+        "grants_active_skill": {
+          "type": "boolean"
+        },
+        "is_support": {
+          "type": "boolean"
+        },
+        "is_vaal_gem": {
+          "type": "boolean"
+        },
+        "natural_max_level": {
+          "type": "integer"
+        },
+        "required_attributes": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "strength",
+            "dexterity",
+            "intelligence"
+          ],
+          "properties": {
+            "strength": {
+              "type": "integer"
+            },
+            "dexterity": {
+              "type": "integer"
+            },
+            "intelligence": {
+              "type": "integer"
+            }
+          }
+        },
+        "secondary_granted_effect_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "tag_keys": {
+          "$ref": "#/$defs/text_list"
+        },
+        "tag_string": {
+          "type": "string"
+        },
+        "variant_id": {
+          "type": "string"
+        }
+      }
+    },
+    "ascendancy_record": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "ascendancy_id",
+        "display_name",
+        "class_name",
+        "source_kind",
+        "flavour_text",
+        "node_count",
+        "start_node_ids",
+        "nodes"
+      ],
+      "properties": {
+        "ascendancy_id": {
+          "type": "string"
+        },
+        "display_name": {
+          "type": "string"
+        },
+        "class_name": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "source_kind": {
+          "type": "string",
+          "enum": [
+            "class_ascendancy",
+            "alternate_ascendancy",
+            "tree_only"
+          ]
+        },
+        "flavour_text": {
+          "$ref": "#/$defs/text_list"
+        },
+        "node_count": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "start_node_ids": {
+          "type": "array",
+          "items": {
+            "type": "integer"
+          }
+        },
+        "nodes": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/tree_node_record"
+          }
+        }
+      }
+    },
+    "config_choice": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "value",
+        "label"
+      ],
+      "properties": {
+        "value": {},
+        "label": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "config_record": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "order",
+        "section",
+        "column",
+        "var",
+        "type",
+        "label",
+        "default_index",
+        "default_placeholder",
+        "predicates",
+        "list_values",
+        "list_source",
+        "tooltip_text",
+        "include_transfigured",
+        "has_apply_function",
+        "has_tooltip_function"
+      ],
+      "properties": {
+        "order": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "section": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "column": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "var": {
+          "type": "string"
+        },
+        "type": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "label": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "default_index": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "default_placeholder": {},
+        "predicates": {
+          "type": "object"
+        },
+        "list_values": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/config_choice"
+          }
+        },
+        "list_source": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "tooltip_text": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "include_transfigured": {
+          "type": "boolean"
+        },
+        "has_apply_function": {
+          "type": "boolean"
+        },
+        "has_tooltip_function": {
+          "type": "boolean"
+        }
+      }
+    }
+  }
+}

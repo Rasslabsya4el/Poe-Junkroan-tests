@@ -1,0 +1,81 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/schemas/pob/pob.lock.schema.json",
+  "title": "Path of Building release lock",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "repo",
+    "tag",
+    "published_at",
+    "asset_name",
+    "asset_url",
+    "asset_sha256",
+    "asset_size",
+    "fetched_at",
+    "extract_subdir"
+  ],
+  "properties": {
+    "repo": {
+      "type": "string",
+      "minLength": 3,
+      "pattern": "^[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+$"
+    },
+    "tag": {
+      "type": "string",
+      "minLength": 2,
+      "pattern": "^v.+$"
+    },
+    "published_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "asset_name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "asset_url": {
+      "type": "string",
+      "format": "uri",
+      "pattern": "^https://"
+    },
+    "asset_sha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "asset_size": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "fetched_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "extract_subdir": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "^[A-Za-z0-9._/-]+$"
+    },
+    "release_id": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "etag": {
+      "type": "string",
+      "minLength": 1
+    },
+    "notes_url": {
+      "type": "string",
+      "format": "uri",
+      "pattern": "^https://"
+    },
+    "platform": {
+      "type": "string",
+      "enum": ["windows"]
+    },
+    "fallback_asset_name": {
+      "type": "string",
+      "minLength": 1
+    }
+  }
+}

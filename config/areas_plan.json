@@ -1,0 +1,153 @@
+{
+ "_about": "#317: the areas plan. A ticket takes the area of its nearest ancestor-or-self named in roots or loners, after the links (ticket, native parent) are made. Roots and loners: #317's body as amended by the brain's comment of 2026-09-29 (issuecomment on #317, part B); stream numbers from #318's closing comment. #48 and #323: the brain's comment issuecomment-5889510885.",
+ "roots": {
+  "1": "area:builds",
+  "32": "area:builds",
+  "36": "area:runs",
+  "155": "area:builds",
+  "334": "area:monitor"
+ },
+ "loners": {
+  "6": "area:builds",
+  "7": "area:builds",
+  "8": "area:builds",
+  "9": "area:builds",
+  "10": "area:builds",
+  "11": "area:builds",
+  "12": "area:builds",
+  "13": "area:builds",
+  "14": "area:builds",
+  "15": "area:builds",
+  "16": "area:builds",
+  "17": "area:builds",
+  "18": "area:builds",
+  "19": "area:builds",
+  "21": "area:builds",
+  "23": "area:builds",
+  "24": "area:builds",
+  "26": "area:builds",
+  "27": "area:builds",
+  "28": "area:crafting",
+  "29": "area:builds",
+  "30": "area:builds",
+  "43": "area:builds",
+  "44": "area:builds",
+  "129": "area:runs",
+  "164": "area:builds",
+  "173": "area:builds"
+ },
+ "links": [
+  [
+   50,
+   328
+  ],
+  [
+   58,
+   328
+  ],
+  [
+   60,
+   328
+  ],
+  [
+   47,
+   330
+  ],
+  [
+   249,
+   330
+  ],
+  [
+   45,
+   331
+  ],
+  [
+   46,
+   331
+  ],
+  [
+   49,
+   331
+  ],
+  [
+   53,
+   331
+  ],
+  [
+   296,
+   331
+  ],
+  [
+   297,
+   296
+  ],
+  [
+   291,
+   332
+  ],
+  [
+   295,
+   332
+  ],
+  [
+   227,
+   333
+  ],
+  [
+   39,
+   335
+  ],
+  [
+   85,
+   84
+  ],
+  [
+   114,
+   113
+  ],
+  [
+   222,
+   142
+  ],
+  [
+   294,
+   108
+  ],
+  [
+   119,
+   36
+  ],
+  [
+   138,
+   36
+  ],
+  [
+   180,
+   36
+  ],
+  [
+   203,
+   36
+  ],
+  [
+   302,
+   36
+  ],
+  [
+   308,
+   36
+  ],
+  [
+   20,
+   1
+  ],
+  [
+   22,
+   18
+  ],
+  [
+   48,
+   36
+  ]
+ ]
+}

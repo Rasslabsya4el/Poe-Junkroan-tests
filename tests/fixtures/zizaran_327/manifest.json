@@ -1,0 +1,672 @@
+{
+  "source": "Zizaran 3.27 Keepers of the Flame league-starter build guides",
+  "league": "3.27 Keepers of the Flame",
+  "collected": "2026-09-18",
+  "tree_versions": [
+    "3_26"
+  ],
+  "note": "Import codes fetched verbatim from pobb.in/<id>/raw, from pobb.in user paths (pobb.in/u/<user>/<slug>/raw) and from the Maxroll planner API (https://planners.maxroll.gg/profiles/poe/<id>, field data.pobCode). PoB tree_versions record the passive-tree data version the code actually targets; it lags the league when a patch shipped no tree change. '{n}' in a title is the author's own marker linking an item set / tree spec / skill set.",
+  "excluded": [
+    {
+      "title": "Forged Frostbearer Spectre Necromancer, the two extra PoBs from the same video",
+      "pob_url": [
+        "https://maxroll.gg/poe/pob/54yj0yga",
+        "https://maxroll.gg/poe/pob/8r1afp0g"
+      ],
+      "youtube_url": "https://www.youtube.com/watch?v=esvfGNythhY",
+      "reason": "Those Maxroll pob ids were re-saved in place for 3.29 (profile dates 2026-08-30 and 2026-08-16) and now decode with treeVersion 3_29, so they are no longer the 3.27 build. Only t11sg0yu (saved 2025-11-01, tree 3_26) still holds the 3.27 code."
+    }
+  ],
+  "builds": [
+    {
+      "slug": "champion_explosive_arrow",
+      "file": "champion_explosive_arrow.pob.txt",
+      "title": "Explosive Arrow Champion Leaguestarter",
+      "class": "Duelist",
+      "ascendancy": "Champion",
+      "ascendancy_in_pob": "Champion",
+      "main_skill": "Explosive Arrow (Ballista Totem)",
+      "league": "3.27 Keepers of the Flame",
+      "maxroll_url": "https://maxroll.gg/poe/build-guides/explosive-arrow-ballista-champion-league-starter",
+      "pob_url": "https://pobb.in/tgEiSsv1npXY",
+      "youtube_url": "https://www.youtube.com/watch?v=C2LY2sUDfSg",
+      "fetched": "2026-09-18",
+      "pob_build_level": 97,
+      "tree_versions": [
+        "3_26"
+      ],
+      "loadouts": {
+        "item_sets": [
+          "Splitting Steel Leveling",
+          "Useful leveling uniques",
+          "Early Game",
+          "Midgame",
+          "Endgame",
+          "Endgame - Replica Dragonfang"
+        ],
+        "specs": [
+          "Level 13",
+          "Level 32 - Normal Lab",
+          "Level 57 - Cruel Lab",
+          "Level 69 - Merciless Lab",
+          "Level 87 - Uber Lab (pre-annoint)",
+          "----ENDGAME----",
+          "Endgame",
+          "Endgame - Unnatural Instinct",
+          "Endgame - Unnatural Instinct + Cluster",
+          "Endgame - Replica Dragonfang"
+        ],
+        "skill_sets": [
+          "Level 1-12",
+          "Level 12-28",
+          "Level 28-38",
+          "Level 38+",
+          "Endgame",
+          "Endgame - Replica Dragonfang"
+        ]
+      },
+      "early_loadout": {
+        "item_set": "Early Game",
+        "spec": "Level 69 - Merciless Lab",
+        "skill_set": "Level 38+",
+        "level": 69,
+        "level_source": "spec title",
+        "linked_by": "inferred",
+        "spec_allocated_nodes": 99,
+        "gear_slots": {
+          "Weapon 1": "RARE",
+          "Amulet": "RARE",
+          "Helmet": "RARE",
+          "Weapon 2": "RARE",
+          "Body Armour": "RARE",
+          "Boots": "RARE",
+          "Ring 1": "RARE",
+          "Ring 2": "RARE",
+          "Belt": "RARE",
+          "Gloves": "RARE"
+        },
+        "uniques": {},
+        "flask_count": 5
+      }
+    },
+    {
+      "slug": "elementalist_lightning_conduit",
+      "file": "elementalist_lightning_conduit.pob.txt",
+      "title": "Lightning Conduit Elementalist Leaguestarter",
+      "class": "Witch",
+      "ascendancy": "Elementalist",
+      "ascendancy_in_pob": "Elementalist",
+      "main_skill": "Lightning Conduit",
+      "league": "3.27 Keepers of the Flame",
+      "maxroll_url": null,
+      "pob_url": "https://pobb.in/G_VL8P-w0Vh6",
+      "youtube_url": "https://www.youtube.com/watch?v=Oh7iDXT_utQ",
+      "fetched": "2026-09-18",
+      "pob_build_level": 98,
+      "tree_versions": [
+        "3_26"
+      ],
+      "loadouts": {
+        "item_sets": [
+          "Early Game {4}",
+          "Midgame {3}",
+          "Endgame {1}",
+          "Endgame - Inpulsa {2}"
+        ],
+        "specs": [
+          "^2LEVELING:",
+          "Level 12",
+          "Level 24",
+          "Level 31 - Normal Lab",
+          "Level 45",
+          "Level 55 - Cruel Lab",
+          "Level 69 - Merc Lab",
+          "^1MAPS:",
+          "Early Game {4}",
+          "Midgame {3}",
+          "Endgame {1}",
+          "Endgame - Inpulsa {2}"
+        ],
+        "skill_sets": [
+          "^2LEVELING:",
+          "Level 1 - 10",
+          "Level 10 - 16",
+          "Level 16 - 24",
+          "Level 24 - 28 (+lab)",
+          "Level 28 - 38",
+          "Level 38 - Cruel Lab",
+          "Cruel Lab - Maps",
+          "^1MAPS:",
+          "Early Game {4}",
+          "Endgame {1,2,3}",
+          "Endgame - Awakened Gems"
+        ]
+      },
+      "early_loadout": {
+        "item_set": "Early Game {4}",
+        "spec": "Early Game {4}",
+        "skill_set": "Early Game {4}",
+        "level": 85,
+        "level_source": "estimated from 118 allocated nodes",
+        "linked_by": "author marker {4}",
+        "spec_allocated_nodes": 118,
+        "gear_slots": {
+          "Weapon 1": "RARE",
+          "Amulet": "RARE",
+          "Helmet": "RARE",
+          "Weapon 2": "RARE",
+          "Body Armour": "RARE",
+          "Boots": "RARE",
+          "Ring 1": "UNIQUE",
+          "Ring 2": "RARE",
+          "Belt": "RARE",
+          "Gloves": "RARE"
+        },
+        "uniques": {
+          "Ring 1": "Berek's Grip"
+        },
+        "flask_count": 5
+      }
+    },
+    {
+      "slug": "gladiator_earthquake",
+      "file": "gladiator_earthquake.pob.txt",
+      "title": "Earthquake Gladiator Leaguestarter",
+      "class": "Duelist",
+      "ascendancy": "Gladiator",
+      "ascendancy_in_pob": "Gladiator",
+      "main_skill": "Earthquake",
+      "league": "3.27 Keepers of the Flame",
+      "maxroll_url": null,
+      "pob_url": "https://pobb.in/i8BRUJoDWa4e",
+      "youtube_url": "https://www.youtube.com/watch?v=tSplX1-s-pE",
+      "fetched": "2026-09-18",
+      "pob_build_level": 98,
+      "tree_versions": [
+        "3_26"
+      ],
+      "loadouts": {
+        "item_sets": [
+          "Level 13 example",
+          "Early Game",
+          "Midgame {1}",
+          "Endgame {2,4}",
+          "Endgame - suppress {3}",
+          "Minmax"
+        ],
+        "specs": [
+          "^2LEVELING",
+          "Level 12",
+          "Level 23",
+          "Level 33 - Normal Lab",
+          "Level 42",
+          "Level 52 - Cruel Lab",
+          "Level 68 - Merc Lab (Swap to 1H)",
+          "^2MAPS",
+          "Midgame - Uber Lab {1}",
+          "Endgame {2}",
+          "Endgame - Suppress {3}",
+          "Endgame - Cluster Setup {4}",
+          "Endgame - Bloodlines"
+        ],
+        "skill_sets": [
+          "Level 1 - 12",
+          "Level 12 - 18",
+          "Level 18 - 31",
+          "Level 31 - 38",
+          "Level 38 - Maps",
+          "Maps {1,2,3}",
+          "(Uber) Bossing",
+          "Awakened Gems and stuff {4}"
+        ]
+      },
+      "early_loadout": {
+        "item_set": "Early Game",
+        "spec": "Level 68 - Merc Lab (Swap to 1H)",
+        "skill_set": "Maps {1,2,3}",
+        "level": 68,
+        "level_source": "spec title",
+        "linked_by": "inferred",
+        "spec_allocated_nodes": 99,
+        "gear_slots": {
+          "Weapon 1": "RARE",
+          "Amulet": "RARE",
+          "Helmet": "RARE",
+          "Weapon 2": "RARE",
+          "Body Armour": "RARE",
+          "Boots": "RARE",
+          "Ring 1": "RARE",
+          "Ring 2": "RARE",
+          "Belt": "RARE",
+          "Gloves": "RARE"
+        },
+        "uniques": {},
+        "flask_count": 5
+      }
+    },
+    {
+      "slug": "juggernaut_boneshatter",
+      "file": "juggernaut_boneshatter.pob.txt",
+      "title": "Bleed Boneshatter Juggernaut Leaguestarter",
+      "class": "Marauder",
+      "ascendancy": "Juggernaut",
+      "ascendancy_in_pob": "Juggernaut",
+      "main_skill": "Boneshatter of Complex Trauma",
+      "league": "3.27 Keepers of the Flame",
+      "maxroll_url": "https://maxroll.gg/poe/build-guides/boneshatter-juggernaut-league-starter",
+      "pob_url": "https://pobb.in/uKL64yR_gshv",
+      "youtube_url": "https://www.youtube.com/watch?v=UXPVNIB9mD4",
+      "fetched": "2026-09-18",
+      "pob_build_level": 98,
+      "tree_versions": [
+        "3_26"
+      ],
+      "loadouts": {
+        "item_sets": [
+          "^4Early Game {1}",
+          "^4Midgame {2}",
+          "^4Endgame {3,4,5}"
+        ],
+        "specs": [
+          "^2Level 12",
+          "^2Level 22",
+          "^2Level 32 - Normal Lab",
+          "^2Level 44",
+          "^2Level 54 - Cruel Lab",
+          "^2Level 60",
+          "^2Level 67 - Merc Lab & Respec",
+          "^4Early Game {1}",
+          "^4Midgame {2}",
+          "^4Endgame {3}",
+          "^4Endgame - Corrupted Soul {4}",
+          "^4Endgame - Delirious Bloodline {5}"
+        ],
+        "skill_sets": [
+          "^2Level 1 - 4",
+          "^2Level 4 - 12",
+          "^2Level 12 - 16",
+          "^2Level 16 - 24",
+          "^2Level 24 - 38",
+          "^2Level 38 - Maps",
+          "^4Early Game {1}",
+          "^4Endgame {2,3,4,5}"
+        ]
+      },
+      "early_loadout": {
+        "item_set": "^4Early Game {1}",
+        "spec": "^4Early Game {1}",
+        "skill_set": "^4Early Game {1}",
+        "level": 82,
+        "level_source": "estimated from 115 allocated nodes",
+        "linked_by": "author marker {1}",
+        "spec_allocated_nodes": 115,
+        "gear_slots": {
+          "Weapon 1": "RARE",
+          "Amulet": "RARE",
+          "Helmet": "RARE",
+          "Body Armour": "RARE",
+          "Boots": "RARE",
+          "Ring 1": "UNIQUE",
+          "Ring 2": "RARE",
+          "Belt": "RARE",
+          "Gloves": "RARE"
+        },
+        "uniques": {
+          "Ring 1": "Kaom's Sign"
+        },
+        "flask_count": 5
+      }
+    },
+    {
+      "slug": "slayer_earthshatter",
+      "file": "slayer_earthshatter.pob.txt",
+      "title": "Earthshatter Slayer Leaguestarter (ft. Carn)",
+      "class": "Duelist",
+      "ascendancy": "Slayer",
+      "ascendancy_in_pob": "Slayer",
+      "main_skill": "Earthshatter",
+      "league": "3.27 Keepers of the Flame",
+      "maxroll_url": "https://maxroll.gg/poe/build-guides/earthshatter-slayer-league-starter",
+      "pob_url": "https://pobb.in/a9IXV_SNxQHe",
+      "youtube_url": "https://www.youtube.com/watch?v=Snwz9rVqSIE",
+      "fetched": "2026-09-18",
+      "pob_build_level": 100,
+      "tree_versions": [
+        "3_26"
+      ],
+      "loadouts": {
+        "item_sets": [
+          "Leveling {1}",
+          "Basic gear {2}",
+          "Early endgame",
+          "Super endgame {3}",
+          "Tainted Pact {4}",
+          "Schizophrenic Dissociation {5}"
+        ],
+        "specs": [
+          "Leveling (1-13)",
+          "Leveling (13-37) Part 1",
+          "Leveling (13-37) Part 2",
+          "Leveling (38 - Act 6)",
+          "Leveling (Act 6 - Cruel Lab) {1}",
+          "Leveling (Cruel lab - Merc lab)",
+          "Early Maps {2}",
+          "LvL 95",
+          "LvL 100",
+          "Super Endgame {3}",
+          "Tainted Pact {4}",
+          "Schizophrenic Dissociation {5}"
+        ],
+        "skill_sets": [
+          "Leveling (1-12)",
+          "Leveling (12-37)",
+          "Leveling (38-Act 6)",
+          "Leveling (Act 6 - Merc lab) {1}",
+          "Early Maps {2}",
+          "Endgame {3,4,5}"
+        ]
+      },
+      "early_loadout": {
+        "item_set": "Basic gear {2}",
+        "spec": "Early Maps {2}",
+        "skill_set": "Early Maps {2}",
+        "level": 65,
+        "level_source": "estimated from 98 allocated nodes",
+        "linked_by": "author marker {2}",
+        "spec_allocated_nodes": 98,
+        "gear_slots": {
+          "Gloves": "RARE",
+          "Weapon 1": "RARE",
+          "Helmet": "RARE",
+          "Belt": "RARE",
+          "Amulet": "RARE",
+          "Belt Abyssal Socket 1": "RARE",
+          "Ring 2": "RARE",
+          "Body Armour": "RARE",
+          "Ring 1": "RARE",
+          "Boots": "RARE"
+        },
+        "uniques": {},
+        "flask_count": 5
+      }
+    },
+    {
+      "slug": "hierophant_storm_burst",
+      "file": "hierophant_storm_burst.pob.txt",
+      "title": "Storm Burst Totems Hierophant Leaguestarter (ft. Oscrix)",
+      "class": "Templar",
+      "ascendancy": "Hierophant",
+      "ascendancy_in_pob": "Hierophant",
+      "main_skill": "Storm Burst (Spell Totem)",
+      "league": "3.27 Keepers of the Flame",
+      "maxroll_url": null,
+      "pob_url": "https://pobb.in/QRrYaTXg4ElD",
+      "youtube_url": "https://www.youtube.com/watch?v=WTBQFdkdi3M",
+      "fetched": "2026-09-18",
+      "pob_build_level": 97,
+      "tree_versions": [
+        "3_26"
+      ],
+      "loadouts": {
+        "item_sets": [
+          "Levelling {a,b,c,d}",
+          "Early Maps {1}",
+          "Red Maps {2}",
+          "Endgame {3}"
+        ],
+        "specs": [
+          "Level 1-18 {a}",
+          "Level 21 {b}",
+          "Level 30 - Normal Lab {c}",
+          "Level 40 {d}",
+          "Level 60 - Cruel Lab {e}",
+          "Early Maps {1} Merc Lab",
+          "Red Maps {2} Uber Lab",
+          "Endgame {3}"
+        ],
+        "skill_sets": [
+          "Levelling: 1-18 {a}",
+          "Levelling: 21 {b,c}",
+          "Levelling: 40 {d,e}",
+          "Early Maps {1}",
+          "Red Maps {2}",
+          "Endgame {3}"
+        ]
+      },
+      "early_loadout": {
+        "item_set": "Early Maps {1}",
+        "spec": "Early Maps {1} Merc Lab",
+        "skill_set": "Early Maps {1}",
+        "level": 66,
+        "level_source": "estimated from 99 allocated nodes",
+        "linked_by": "author marker {1}",
+        "spec_allocated_nodes": 99,
+        "gear_slots": {
+          "Weapon 1": "MAGIC",
+          "Amulet": "RARE",
+          "Helmet": "RARE",
+          "Weapon 2": "RARE",
+          "Body Armour": "RARE",
+          "Gloves": "RARE",
+          "Boots": "RARE",
+          "Ring 1": "RARE",
+          "Ring 2": "RARE",
+          "Belt": "RARE"
+        },
+        "uniques": {},
+        "flask_count": 5
+      }
+    },
+    {
+      "slug": "assassin_poison_spark",
+      "file": "assassin_poison_spark.pob.txt",
+      "title": "Poison Spark Assassin Leaguestarter (ft. Goratha)",
+      "class": "Shadow",
+      "ascendancy": "Assassin",
+      "ascendancy_in_pob": "Assassin",
+      "main_skill": "Spark of the Nova (poison)",
+      "league": "3.27 Keepers of the Flame",
+      "maxroll_url": null,
+      "pob_url": "https://pobb.in/7ZcpNh1SAnvn",
+      "youtube_url": "https://www.youtube.com/watch?v=KMxa__PnuMs",
+      "fetched": "2026-09-18",
+      "pob_build_level": 98,
+      "tree_versions": [
+        "3_26"
+      ],
+      "loadouts": {
+        "item_sets": [
+          "Cobra Lash Act 1",
+          "Poison Concoction Act 2-10",
+          "Poison Spark Maps (Reverse Chill)",
+          "Poison Spark Herald",
+          "Poison Spark MOM EB (low proj speed)",
+          "Poison Spark Ward"
+        ],
+        "specs": [
+          "Cobra Lash Act 1",
+          "Poison Concoction Act 2-10",
+          "Poison Spark Maps (Reverse Chill)",
+          "Poison Spark Herald",
+          "Poison Spark Ward",
+          "Poison Spark MOM EB (low proj speed)",
+          "Poison Spark Clusters CI"
+        ],
+        "skill_sets": [
+          "Cobra Lash Act 1",
+          "Poison Concoction Act 2-10",
+          "Poison Spark Maps (Reverse Chill)",
+          "Poison Spark Herald",
+          "Poison Spark MOM EB (low proj speed)"
+        ]
+      },
+      "early_loadout": {
+        "item_set": "Poison Spark Maps (Reverse Chill)",
+        "spec": "Poison Spark Maps (Reverse Chill)",
+        "skill_set": "Poison Spark Maps (Reverse Chill)",
+        "level": 87,
+        "level_source": "estimated from 120 allocated nodes",
+        "linked_by": "identical titles across all three set types",
+        "spec_allocated_nodes": 120,
+        "gear_slots": {
+          "Gloves": "UNIQUE",
+          "Weapon 1": "RARE",
+          "Helmet": "RARE",
+          "Belt": "RARE",
+          "Amulet": "UNIQUE",
+          "Belt Abyssal Socket 1": "RARE",
+          "Weapon 2": "UNIQUE",
+          "Ring 2": "UNIQUE",
+          "Body Armour": "RARE",
+          "Ring 1": "UNIQUE",
+          "Boots": "RARE"
+        },
+        "uniques": {
+          "Gloves": "Asenath's Gentle Touch",
+          "Amulet": "Whispers of Infinity",
+          "Weapon 2": "Apep's Slumber",
+          "Ring 2": "Icefang Orbit",
+          "Ring 1": "Winterweave"
+        },
+        "flask_count": 0
+      }
+    },
+    {
+      "slug": "assassin_poison_cremation",
+      "file": "assassin_poison_cremation.pob.txt",
+      "title": "Poison Cremation Assassin, second PoB from the Poison Spark video (ft. Goratha)",
+      "class": "Shadow",
+      "ascendancy": "Assassin",
+      "ascendancy_in_pob": "Assassin",
+      "main_skill": "Cremation of the Volcano",
+      "league": "3.27 Keepers of the Flame",
+      "maxroll_url": null,
+      "pob_url": "https://pobb.in/l7OAr6ZzwTWF",
+      "youtube_url": "https://www.youtube.com/watch?v=KMxa__PnuMs",
+      "fetched": "2026-09-18",
+      "pob_build_level": 98,
+      "tree_versions": [
+        "3_26"
+      ],
+      "loadouts": {
+        "item_sets": [
+          null
+        ],
+        "specs": [
+          null
+        ],
+        "skill_sets": [
+          null
+        ]
+      },
+      "early_loadout": null
+    },
+    {
+      "slug": "necromancer_raise_spectre",
+      "file": "necromancer_raise_spectre.pob.txt",
+      "title": "Forged Frostbearer Spectre Necromancer Leaguestarter (ft. Helm Breaker)",
+      "class": "Witch",
+      "ascendancy": "Necromancer",
+      "ascendancy_in_pob": "Necromancer",
+      "main_skill": "Raise Spectre",
+      "league": "3.27 Keepers of the Flame",
+      "maxroll_url": "https://maxroll.gg/poe/build-guides/forged-frostbearer-spectre-necromancer-league-starter",
+      "pob_url": "https://maxroll.gg/poe/pob/t11sg0yu",
+      "youtube_url": "https://www.youtube.com/watch?v=esvfGNythhY",
+      "fetched": "2026-09-18",
+      "pob_build_level": 92,
+      "tree_versions": [
+        "3_26"
+      ],
+      "loadouts": {
+        "item_sets": [
+          "^2Early Bitterdream {0}",
+          "^2Early Reverberation Rod {3}",
+          "^2Early 6L Rare {1}",
+          "^5Early Animate Guardian Gear",
+          "^2Early 6L ^5+1 Spectre {2}",
+          "^4^4Early Dark Monarch {4}",
+          "^4^4^1Mid Dark Monarch {5}",
+          "^4^4^1^6Late ES budget {9}",
+          "^4^4^1Late Dark Monarch {6}",
+          "^4^4^1Late Dark Monarch {8}",
+          "^4^4^1Late Dark Monarch {10}",
+          "^6Min-Max Mageblood {11}",
+          "^6Min-Max Dragonfang {12}",
+          "empty",
+          "^2Early 6L ^5+1 Spectre HC {13}"
+        ],
+        "specs": [
+          "^2LvLing Tree lvl 12",
+          "^2LvLing Tree lvl 24",
+          "^2LvLing Tree lvl 36",
+          "^2LvLing Tree lvl 48",
+          "^2LvLing Tree lvl 60",
+          "^2LvLing Tree lvl 70",
+          "^2LvLing Tree lvl 83 (respec x12 !Frostbearer setup)",
+          "^2LvLing lvl 92 ^1Bitterdream  {0}^2^1",
+          "^2LvLing lvl 92 ^1Reverberation Rod {3}^2^1",
+          "^2LvLing lvl 92 ^1Trigger wand {1}^2^1",
+          "^2Early lvl 92 ^5+1 Spectre ",
+          "^2Early lvl 93 ^1Hardcore tweaks {13}",
+          "^4^4^4^4^4Early Dark Monarch {4}",
+          "^4^4^1Mid {5}",
+          "^4^4^1^6Late ES budget {9}",
+          "^4^4^1^6Late ES Umbral Army {6}",
+          "^4^4^1^6Late ES 2x cluster {8}",
+          "^4^4^1^6Late ES Flesh and Flame {10}",
+          "^6^1Min-Max Dragonfang {12}",
+          "^6^1Min-Max Focused Amulet {11}"
+        ],
+        "skill_sets": [
+          "^6Act 1",
+          "^6Act 2",
+          "^6Act 3",
+          "^6Act 4-10",
+          "^6^5Lvl70 Early mapping",
+          "^2Early Bitterdream {0}",
+          "^2Early Reverberation Rod {3}",
+          "^2Early Rare 6 link {1}",
+          "^2Early ^5+1 Spectre {2}",
+          "^4^4Early Dark Monarch {4}",
+          "^4^4^1Mid Dark Monarch {5}",
+          "^4^4^1^6Late Commander of Darkness {9}",
+          "^4^4^1Late Umbral Army {6}",
+          "^4^4^1Late Umbral Army {8}",
+          "^4^4^1Late Umbral Army {10}",
+          "^6Min-Max Mageblood {11}",
+          "^6Min-Max Dragonfang {12}",
+          "^2Early ^5+1 Spectre HC {13}"
+        ]
+      },
+      "early_loadout": {
+        "item_set": "^2Early 6L Rare {1}",
+        "spec": "^2LvLing lvl 92 ^1Trigger wand {1}^2^1",
+        "skill_set": "^2Early Rare 6 link {1}",
+        "level": 92,
+        "level_source": "spec title",
+        "linked_by": "author marker {1}",
+        "spec_allocated_nodes": 125,
+        "gear_slots": {
+          "Weapon 1": "RARE",
+          "Amulet": "RARE",
+          "Helmet": "RARE",
+          "Weapon 2": "RARE",
+          "Body Armour": "RARE",
+          "Gloves": "RARE",
+          "Boots": "UNIQUE",
+          "Ring 1": "RARE",
+          "Ring 2": "RARE",
+          "Belt": "UNIQUE",
+          "Belt Abyssal Socket 1": "RARE",
+          "Belt Abyssal Socket 2": "RARE"
+        },
+        "uniques": {
+          "Boots": "Bones of Ullr",
+          "Belt": "Darkness Enthroned"
+        },
+        "flask_count": 5
+      }
+    }
+  ]
+}

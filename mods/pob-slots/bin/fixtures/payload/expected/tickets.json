@@ -1,0 +1,154 @@
+{
+ "at": "12:00:00",
+ "goals": [
+  1
+ ],
+ "groups": {
+  "blocked": 1,
+  "folder": 1,
+  "needs-triage": 1,
+  "no label": 1,
+  "ready-for-agent": 1,
+  "ready-for-human": 1
+ },
+ "issues": {
+  "1": {
+   "author": "owner",
+   "blockers": [],
+   "created": "2026-10-01T10:00:00Z",
+   "group": "folder",
+   "kids": [
+    2,
+    3,
+    4
+   ],
+   "labels": [
+    "wayfinder:map"
+   ],
+   "merge_lost": false,
+   "n": 1,
+   "open": true,
+   "parent": null,
+   "parked": false,
+   "parked_on_run": false,
+   "reason": null,
+   "state": "open",
+   "title": "Goal map"
+  },
+  "2": {
+   "author": "owner",
+   "blockers": [],
+   "created": "2026-10-02T10:00:00Z",
+   "group": "ready-for-agent",
+   "kids": [],
+   "labels": [
+    "ready-for-agent"
+   ],
+   "merge_lost": false,
+   "n": 2,
+   "open": true,
+   "parent": 1,
+   "parked": false,
+   "parked_on_run": false,
+   "reason": null,
+   "state": "ready",
+   "title": "Ready child"
+  },
+  "3": {
+   "author": "bot",
+   "blockers": [
+    2
+   ],
+   "created": "2026-10-03T10:00:00Z",
+   "group": "blocked",
+   "kids": [],
+   "labels": [],
+   "merge_lost": false,
+   "n": 3,
+   "open": true,
+   "parent": 1,
+   "parked": false,
+   "parked_on_run": false,
+   "reason": null,
+   "state": "blocked",
+   "title": "Blocked child"
+  },
+  "4": {
+   "author": null,
+   "blockers": [],
+   "created": "2026-10-03T11:00:00Z",
+   "group": null,
+   "kids": [],
+   "labels": [],
+   "merge_lost": false,
+   "n": 4,
+   "open": false,
+   "parent": 1,
+   "parked": false,
+   "parked_on_run": false,
+   "reason": "COMPLETED",
+   "state": "closed",
+   "title": "Closed child"
+  },
+  "5": {
+   "author": "owner",
+   "blockers": [],
+   "created": "2026-10-04T10:00:00Z",
+   "group": "ready-for-human",
+   "kids": [],
+   "labels": [
+    "ready-for-human"
+   ],
+   "merge_lost": false,
+   "n": 5,
+   "open": true,
+   "parent": null,
+   "parked": false,
+   "parked_on_run": false,
+   "reason": null,
+   "state": "owner",
+   "title": "Needs the owner"
+  },
+  "6": {
+   "author": "owner",
+   "blockers": [],
+   "created": "2026-10-05T10:00:00Z",
+   "group": "needs-triage",
+   "kids": [],
+   "labels": [
+    "needs-triage"
+   ],
+   "merge_lost": false,
+   "n": 6,
+   "open": true,
+   "parent": null,
+   "parked": false,
+   "parked_on_run": false,
+   "reason": null,
+   "state": "triage",
+   "title": "Triage me"
+  },
+  "7": {
+   "author": "owner",
+   "blockers": [],
+   "created": "2026-10-06T10:00:00Z",
+   "group": "no label",
+   "kids": [],
+   "labels": [],
+   "merge_lost": false,
+   "n": 7,
+   "open": true,
+   "parent": 99,
+   "parked": false,
+   "parked_on_run": false,
+   "reason": null,
+   "state": "open",
+   "title": "Plain open"
+  }
+ },
+ "loose": [
+  7,
+  6,
+  5
+ ]
+}

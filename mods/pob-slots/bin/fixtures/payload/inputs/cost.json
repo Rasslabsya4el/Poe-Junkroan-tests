@@ -1,0 +1,18 @@
+{"prices": {"claude-sonnet-5-5": {"input": 3.0, "cache_write": 6.0, "cache_read": 0.3, "output": 15.0}, "claude-haiku-5-5": {"input": 1.0, "cache_write": 2.0, "cache_read": 0.1, "output": 5.0}},
+ "turns": [
+  {"session": "brain1", "agent": null, "atype": null, "model": "claude-sonnet-5-5", "ts": "2026-10-11T08:00:00+00:00", "input": 1000000, "cw": 200000, "cr": 3000000, "out": 50000, "issue": null, "title": "Brain: PoB"},
+  {"session": "orch1", "agent": null, "atype": null, "model": "claude-sonnet-5-5", "ts": "2026-10-11T09:00:00+00:00", "input": 400000, "cw": 100000, "cr": 1000000, "out": 30000, "issue": 796, "title": "orch Poe-Junkroan #796"},
+  {"session": "orch1", "agent": "w1", "atype": "worker", "model": "claude-sonnet-5-5", "ts": "2026-10-11T09:30:00+00:00", "input": 200000, "cw": 50000, "cr": 500000, "out": 20000, "issue": 796, "title": null},
+  {"session": "orch1", "agent": "r1", "atype": "researcher-find", "model": "claude-haiku-5-5", "ts": "2026-10-11T09:40:00+00:00", "input": 300000, "cw": 0, "cr": 0, "out": 10000, "issue": 796, "title": null},
+  {"session": "old1", "agent": null, "atype": null, "model": "claude-sonnet-5-5", "ts": "2026-10-04T09:00:00+00:00", "input": 100000, "cw": 0, "cr": 0, "out": 1000, "issue": null, "title": "Old chat"}],
+ "titled": ["brain1", "orch1"],
+ "unslop": [
+  {"ts": "2026-10-11T07:00:00Z", "model": "claude-haiku-5-5", "input_tokens": 5000, "output_tokens": 300},
+  {"ts": "2026-10-11T07:30:00Z", "model": "claude-haiku-5-5", "via": "fork", "input_tokens": 100},
+  {"ts": "2026-10-10T07:30:00Z", "model": "claude-haiku-5-5", "retry": true, "input_tokens": 100, "output_tokens": 10}],
+ "monitor": [{"ts": "2026-10-11T07:40:00Z", "model": "claude-haiku-5-5", "input_tokens": 2000, "output_tokens": 100}],
+ "panel": {"total": {"turns": 4, "cost_usd": 12.5},
+           "by_model": [{"key": "claude-sonnet-5-5", "turns": 3, "context": 100, "cost_usd": 10.0, "unpriced_turns": 0}],
+           "by_day": [{"key": "2026-10-11", "turns": 4, "context": 100, "cost_usd": 12.5, "unpriced_turns": 0}],
+           "by_issue": [{"key": "796", "turns": 3, "cost_usd": 9.0}, {"key": "801", "turns": 1, "cost_usd": 3.5}],
+           "by_session": [{"key": "orch1", "turns": 3, "cost_usd": 9.0}], "refactor": {"x": 1}}}
