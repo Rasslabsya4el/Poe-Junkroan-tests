@@ -1,0 +1,62 @@
+[
+  {
+    "line": "15% chance to create Chilled Ground when you Freeze an Enemy",
+    "surfaces": ["unique"],
+    "sources": ["Nuro's Harp, Harbinger Bow"],
+    "group": "ground",
+    "kind": "uptime_dependent",
+    "boss_lane": [],
+    "optimistic_lane": [],
+    "zero_reason": "uptime_dependent: the worth is the ground's presence after a 15% chance on Freeze; no PoB line puts Chilled Ground around the player at full uptime (ModCache.lua:3282 is unparsed, no flag sets OnChilledGround), and the uptime rule is parked (#965)",
+    "why": "A chance to create ground on an event: PoB parses nothing of it (ModCache.lua:3282), and the only ground condition PoB reads (on chilled ground, ModParser.lua:1755) has no setter a line can give at full uptime.",
+    "partial_part": ""
+  },
+  {
+    "line": "40% increased Effect of Chilled Ground",
+    "surfaces": ["unique"],
+    "sources": ["Nuro's Harp, Harbinger Bow"],
+    "group": "ground",
+    "kind": "uptime_dependent",
+    "boss_lane": [],
+    "optimistic_lane": [],
+    "zero_reason": "uptime_dependent: PoB already counts the 40% as EnemyChillEffect (ModCache.lua:5400); the unparsed Chilled Ground noun is the ground's presence, parked with its uptime (#965), so no lane line adds to it",
+    "why": "PoB parses the increase (EnemyChillEffect INC 40, ModCache.lua:5400) and leaves only the ground noun unparsed; that noun is a duration's uptime, so no lane carries it.",
+    "partial_part": "ed Ground"
+  },
+  {
+    "line": "Consecrated Ground you create also grants 50% reduced duration of Damaging Ailments on you",
+    "surfaces": ["notable"],
+    "sources": ["37512"],
+    "group": "ground",
+    "kind": "no_representation",
+    "boss_lane": [],
+    "optimistic_lane": [],
+    "zero_reason": "no_representation: the 50% reduced duration of Damaging Ailments on you is a defensive quality outside EHP; PoB parses it only under OnConsecratedGround (ModCache.lua:8196) and none of the seven outputs carries ailment durations",
+    "why": "A defensive duration on the player, outside EHP (the no_representation verdict); the ground it needs is the same uptime question as the other ground lines.",
+    "partial_part": ""
+  },
+  {
+    "line": "Create Consecrated Ground when you Shatter an Enemy",
+    "surfaces": ["unique"],
+    "sources": ["Nuro's Harp, Harbinger Bow"],
+    "group": "ground",
+    "kind": "uptime_dependent",
+    "boss_lane": [],
+    "optimistic_lane": [],
+    "zero_reason": "uptime_dependent: the worth is the ground's presence after a Shatter; the only PoB flag for ground around the player (you have consecrated ground around you while stationary, ModParser.lua:2902) needs the Stationary condition, so it is not full uptime; the uptime rule is parked (#965)",
+    "why": "A ground created on an event: PoB parses nothing of it (ModCache.lua:8232), and the ground's conditional mods are already the other lines' marks.",
+    "partial_part": ""
+  },
+  {
+    "line": "Effects of Consecrated Ground you create Linger for 4 seconds",
+    "surfaces": ["ascendancy"],
+    "sources": ["32816", "43962"],
+    "group": "ground",
+    "kind": "uptime_dependent",
+    "boss_lane": [],
+    "optimistic_lane": [],
+    "zero_reason": "uptime_dependent: the linger extends the ground's effect for 4 seconds after leaving it; full uptime would be OnConsecratedGround always set, and no PoB line sets it without the Stationary condition (ModParser.lua:2902); the uptime rule is parked (#965)",
+    "why": "A duration after leaving the ground: PoB parses nothing of it (ModCache.lua:8481), and its worth is the uptime of the ground's conditional effects, parked.",
+    "partial_part": ""
+  }
+]

@@ -1,0 +1,3 @@
+{"skeleton": {"main_link": ["Spark"], "class_name": "Witch", "ascendancy": "Occultist", "forbid_keystones": ["Mind over Matter"], "forbid_supports": [], "forbid_utilities": []},
+ "audit": ["[error] floor: PhysicalMaximumHitTaken = 5000 < 8000", "[warning] fixed point: gained 1.2 % on the last pass", "[warning] not modelled by PoB: Frenzy Charge on kill: worth zero in every number here"],
+ "floors_missed": ["PhysicalMaximumHitTaken 5000 < 8000"]}

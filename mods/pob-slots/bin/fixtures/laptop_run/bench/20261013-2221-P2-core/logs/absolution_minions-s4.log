@@ -1,0 +1,7 @@
+author tree 3_28 -> 3_29: 106 nodes, 0 lost
+author gems normalized to the rails: level 18/0 -> 18/0 on 8 gems (1 flat-reservation auras kept below the rail)
+author's main group flagged for full DPS with the derived count 3 (their own count replaced)
+author uniques from PoB's database (current variant, mid roll) ['Weapon 1']: CombinedDPS 68,835 -> 68,835, FullDPS 609,973 -> 609,973 (author's own config)
+author raw 609,973 FullDPS; under our lane 606,671 (choices {'elementalArmyExposureType': '0'}); objective maximize FullDPS subject to Life >= 4559, EffectiveMovementSpeedMod >= 1.164, MoMCastsAfterMaxHit >= 3, ElementalOverloadUptime >= 0.9, TotalEHP >= 21482.8, PhysicalMaximumHitTaken >= 5257.3, FireMaximumHitTaken >= 20831.6, ColdMaximumHitTaken >= 21699.9, LightningMaximumHitTaken >= 20831.6, RampBudget >= RampStages, FireResist >= FireResistMax, ColdResist >= ColdResistMax, LightningResist >= LightningResistMax, Str >= ReqStr, Dex >= ReqDex, Int >= ReqInt, ManaUnreserved >= ManaOverReserved, ManaCostPool >= ManaCost, LifeUnreserved >= LifeCost, NetLifeRegen+NetEnergyShieldRegen+SelfCostPerSecond >= 0*Life, ManaRegenRecovery+ManaLeechGainRate+ManaRecoup >= 0.85*ManaSustainPerSecondCost, LifeRegenRecovery+LifeLeechGainRate+LifeRecoup >= 0.85*LifeSustainPerSecondCost, EnergyShieldRegenRecovery+EnergyShieldLeechGainRate+EnergyShieldRecoup+EnergyShieldRechargeForCosts >= 0.85*ESSustainPerSecondCost
+pantheon_major: 'TheBrineKing' -> 'None' (rails)
+pantheon_minor: 'Ryslatha' -> '

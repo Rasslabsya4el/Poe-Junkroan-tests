@@ -1,0 +1,1 @@
+2026-09-27 17:55:29 orch-dispatch: started orch (d0e08af0) offered #198: C:\Users\user\AppData\Local\Packages\Claude_pzs8sxrjxfjjc\LocalCache\Roaming\Claude\claude-code\2.1.280\claude.exe --bg --name orch #198 --agent orch --effort high --permission-mode auto Take every ready issue (ready now, in dispatch order: #198). Follow docs/agents/orch.md.

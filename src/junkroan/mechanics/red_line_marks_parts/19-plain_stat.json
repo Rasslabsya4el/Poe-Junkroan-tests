@@ -1,0 +1,619 @@
+[
+  {
+    "line": "1% increased Fishing Line Strength",
+    "surfaces": [
+      "keystone"
+    ],
+    "sources": [
+      "37081"
+    ],
+    "group": "plain_stat",
+    "kind": "no_representation",
+    "boss_lane": [],
+    "optimistic_lane": [],
+    "zero_reason": "no_representation: fishing stat with no combat number; PoB has no phrase for it",
+    "why": "Fishing line strength; PoB has no phrase for the fishing part, the 1% increased part is already counted by PoB",
+    "partial_part": "Fishing Line Strength"
+  },
+  {
+    "line": "10% chance to Cause Monsters to Flee",
+    "surfaces": [
+      "unique"
+    ],
+    "sources": [
+      "Blackheart, Iron Ring",
+      "Wake of Destruction, Mesh Boots"
+    ],
+    "group": "plain_stat",
+    "kind": "no_representation",
+    "boss_lane": [],
+    "optimistic_lane": [],
+    "zero_reason": "no_representation: monster flee has no PoB phrase and no damage or defence number",
+    "why": "Flee is a monster behaviour; ModParser has no phrase for Cause Monsters to Flee",
+    "partial_part": ""
+  },
+  {
+    "line": "10% increased Effect of Arcane Surge on you per 200 Mana spent Recently, up to 50%",
+    "surfaces": [
+      "notable"
+    ],
+    "sources": [
+      "51108"
+    ],
+    "group": "plain_stat",
+    "kind": "ramp",
+    "boss_lane": [],
+    "optimistic_lane": [],
+    "zero_reason": "ramp_window: a stack of mana spent recently over the 2.5 s window needs a mana spend rate PoB does not give as a formula input; no lane written",
+    "why": "Ramp by mana spent recently; ModParser.lua:1426 has the Multiplier form, its ManaSpentRecently has no config, so the lane stays empty",
+    "partial_part": "per 200 Mana spent Recently, up to 50%"
+  },
+  {
+    "line": "10% increased Quantity of Primal Wisps found in the Viridian Wildwood",
+    "surfaces": [
+      "ascendancy"
+    ],
+    "sources": [
+      "10539",
+      "22174",
+      "24462",
+      "4245",
+      "54139"
+    ],
+    "group": "plain_stat",
+    "kind": "no_representation",
+    "boss_lane": [],
+    "optimistic_lane": [],
+    "zero_reason": "no_representation: loot quantity of a Wildwood wisp, no combat number",
+    "why": "Wisp loot quantity; no PoB phrase and no effect on a damage or defence output",
+    "partial_part": ""
+  },
+  {
+    "line": "10% increased Quantity of Vivid Wisps found in the Viridian Wildwood",
+    "surfaces": [
+      "ascendancy"
+    ],
+    "sources": [
+      "20772",
+      "24764",
+      "29259",
+      "32605",
+      "33897",
+      "48606",
+      "53414"
+    ],
+    "group": "plain_stat",
+    "kind": "no_representation",
+    "boss_lane": [],
+    "optimistic_lane": [],
+    "zero_reason": "no_representation: loot quantity of a Wildwood wisp, no combat number",
+    "why": "Wisp loot quantity; no PoB phrase and no effect on a damage or defence output",
+    "partial_part": ""
+  },
+  {
+    "line": "10% increased Quantity of Wild Wisps found in the Viridian Wildwood",
+    "surfaces": [
+      "ascendancy"
+    ],
+    "sources": [
+      "19689",
+      "23155",
+      "24924",
+      "26596",
+      "30632",
+      "39142",
+      "60511"
+    ],
+    "group": "plain_stat",
+    "kind": "no_representation",
+    "boss_lane": [],
+    "optimistic_lane": [],
+    "zero_reason": "no_representation: loot quantity of a Wildwood wisp, no combat number",
+    "why": "Wisp loot quantity; no PoB phrase and no effect on a damage or defence output",
+    "partial_part": ""
+  },
+  {
+    "line": "10% increased Rarity of Items found from Slain Unique Enemies",
+    "surfaces": [
+      "gear_affix"
+    ],
+    "sources": [
+      "SupportedByItemRarityUber1"
+    ],
+    "group": "plain_stat",
+    "kind": "no_representation",
+    "boss_lane": [],
+    "optimistic_lane": [],
+    "zero_reason": "no_representation: loot rarity has no combat number; the unique-enemy scope has no PoB phrase",
+    "why": "PoB parses the rarity part (ModParser.lua:834, LootRarity); the scope from Slain Unique Enemies is left out",
+    "partial_part": "from Slain Unique Enemies"
+  },
+  {
+    "line": "10% increased Scorching Ray beam length",
+    "surfaces": [
+      "unique"
+    ],
+    "sources": [
+      "Balefire, Opal Sceptre"
+    ],
+    "group": "plain_stat",
+    "kind": "no_representation",
+    "boss_lane": [],
+    "optimistic_lane": [],
+    "zero_reason": "no_representation: beam length has no PoB phrase",
+    "why": "Beam length is not a damage number in PoB",
+    "partial_part": ""
+  },
+  {
+    "line": "10% reduced Character Size",
+    "surfaces": [
+      "unique"
+    ],
+    "sources": [
+      "Rat's Nest, Ursine Pelt"
+    ],
+    "group": "plain_stat",
+    "kind": "no_representation",
+    "boss_lane": [],
+    "optimistic_lane": [],
+    "zero_reason": "no_representation: character size has no PoB phrase and no combat number",
+    "why": "Character size is cosmetic for the optimizer",
+    "partial_part": ""
+  },
+  {
+    "line": "18% increased Quantity of Fish Caught",
+    "surfaces": [
+      "gear_affix"
+    ],
+    "sources": [
+      "FishingQuantity"
+    ],
+    "group": "plain_stat",
+    "kind": "no_representation",
+    "boss_lane": [],
+    "optimistic_lane": [],
+    "zero_reason": "no_representation: fishing stat with no combat number; PoB has no phrase for it",
+    "why": "Fish quantity; no PoB phrase",
+    "partial_part": ""
+  },
+  {
+    "line": "2 Valour consumed for that Banner",
+    "surfaces": [
+      "gear_affix"
+    ],
+    "sources": [
+      "DeepwaterSwordBanners"
+    ],
+    "group": "plain_stat",
+    "kind": "no_representation",
+    "boss_lane": [],
+    "optimistic_lane": [],
+    "zero_reason": "no_representation: a valour cost of a banner placement has no PoB phrase (ModParser.lua:2592 has only the regen per valour consumed)",
+    "why": "Valour spent on banner placement; PoB has no phrase for the cost",
+    "partial_part": ""
+  },
+  {
+    "line": "23% reduced Fishing Pool Consumption",
+    "surfaces": [
+      "gear_affix"
+    ],
+    "sources": [
+      "FishingPoolConsumption"
+    ],
+    "group": "plain_stat",
+    "kind": "no_representation",
+    "boss_lane": [],
+    "optimistic_lane": [],
+    "zero_reason": "no_representation: fishing stat with no combat number; PoB has no phrase for it",
+    "why": "Fishing pool consumption; no PoB phrase",
+    "partial_part": ""
+  },
+  {
+    "line": "30% increased Chaining range",
+    "surfaces": [
+      "notable"
+    ],
+    "sources": [
+      "45329"
+    ],
+    "group": "plain_stat",
+    "kind": "no_representation",
+    "boss_lane": [],
+    "optimistic_lane": [],
+    "zero_reason": "no_representation: chaining range has no PoB phrase",
+    "why": "Chain range is not a PoB output",
+    "partial_part": ""
+  },
+  {
+    "line": "30% increased Effect of Cruelty",
+    "surfaces": [
+      "mastery"
+    ],
+    "sources": [
+      "17945",
+      "22067",
+      "2828",
+      "41273",
+      "47294",
+      "57949",
+      "60834"
+    ],
+    "group": "plain_stat",
+    "kind": "cruelty_effect",
+    "boss_lane": [],
+    "optimistic_lane": [],
+    "zero_reason": "cruelty_effect: counted in code by ramp_inputs.py cruelty_excess_mod (#400), not by a PoB line; ModParser has no cruelty phrase, so the lanes stay empty",
+    "why": "The Cruelty excess is a custom mod written by code, not a PoB phrase; a PoB line here would double-count it",
+    "partial_part": "30% increased Effect of Cruelty"
+  },
+  {
+    "line": "30% increased Fishing Line Strength",
+    "surfaces": [
+      "gear_affix"
+    ],
+    "sources": [
+      "FishingLineStrength"
+    ],
+    "group": "plain_stat",
+    "kind": "no_representation",
+    "boss_lane": [],
+    "optimistic_lane": [],
+    "zero_reason": "no_representation: fishing stat with no combat number; PoB has no phrase for it",
+    "why": "Fishing line strength; no PoB phrase",
+    "partial_part": "Fishing Line Strength"
+  },
+  {
+    "line": "33% increased Rarity of Fish Caught",
+    "surfaces": [
+      "gear_affix"
+    ],
+    "sources": [
+      "FishingRarity"
+    ],
+    "group": "plain_stat",
+    "kind": "no_representation",
+    "boss_lane": [],
+    "optimistic_lane": [],
+    "zero_reason": "no_representation: fishing stat with no combat number; PoB has no phrase for it",
+    "why": "Fish rarity; no PoB phrase",
+    "partial_part": ""
+  },
+  {
+    "line": "40% increased Fishing Range",
+    "surfaces": [
+      "gear_affix"
+    ],
+    "sources": [
+      "FishingCastDistance"
+    ],
+    "group": "plain_stat",
+    "kind": "no_representation",
+    "boss_lane": [],
+    "optimistic_lane": [],
+    "zero_reason": "no_representation: fishing stat with no combat number; PoB has no phrase for it",
+    "why": "Fishing cast distance; no PoB phrase",
+    "partial_part": ""
+  },
+  {
+    "line": "5% increased Character Size",
+    "surfaces": [
+      "ascendancy"
+    ],
+    "sources": [
+      "63623"
+    ],
+    "group": "plain_stat",
+    "kind": "no_representation",
+    "boss_lane": [],
+    "optimistic_lane": [],
+    "zero_reason": "no_representation: character size has no PoB phrase and no combat number",
+    "why": "Character size is cosmetic for the optimizer",
+    "partial_part": ""
+  },
+  {
+    "line": "60% increased Item Rarity per White Socket",
+    "surfaces": [
+      "unique"
+    ],
+    "sources": [
+      "The Pariah, Unset Ring"
+    ],
+    "group": "plain_stat",
+    "kind": "no_representation",
+    "boss_lane": [],
+    "optimistic_lane": [],
+    "zero_reason": "no_representation: loot rarity per socket has no combat number and no PoB phrase",
+    "why": "Loot rarity scaled by sockets; PoB has no per-socket phrase",
+    "partial_part": ""
+  },
+  {
+    "line": "Arcane Surge also grants 20% increased Mana Cost Efficiency to you",
+    "surfaces": [
+      "ascendancy"
+    ],
+    "sources": [
+      "14588"
+    ],
+    "group": "plain_stat",
+    "kind": "uptime_dependent",
+    "boss_lane": [],
+    "optimistic_lane": [
+      "20% increased Mana Cost Efficiency while you have arcane surge"
+    ],
+    "zero_reason": "",
+    "why": "Arcane Surge is gained from events: uptime_dependent, optimistic lane at full uptime; ModParser.lua:203 (mana cost efficiency), :1716 (while you have arcane surge)",
+    "partial_part": "",
+    "type": "spell", "stand_blind": {"reason_kind": "mechanic-absent", "why": "no stand casts Arcane Surge, so the 20% increased Mana Cost Efficiency it grants has no Arcane Surge to act on"}
+  },
+  {
+    "line": "Brand Recall grants 20% increased Brand Attachment range to recalled Brands",
+    "surfaces": [
+      "notable"
+    ],
+    "sources": [
+      "26839"
+    ],
+    "group": "plain_stat",
+    "kind": "no_representation",
+    "boss_lane": [],
+    "optimistic_lane": [],
+    "zero_reason": "no_representation: brand attachment range has no damage or defence number in PoB",
+    "why": "PoB counts the brand attachment range part (ModParser.lua:618); the recall grant has no PoB phrase",
+    "partial_part": "Brand Recall grants / to recalled Brands"
+  },
+  {
+    "line": "Brands Attach to a new Enemy each time they Activate, no more than once every 0.3 seconds",
+    "surfaces": [
+      "mastery"
+    ],
+    "sources": [
+      "21143",
+      "40439",
+      "61343"
+    ],
+    "group": "plain_stat",
+    "kind": "no_representation",
+    "boss_lane": [],
+    "optimistic_lane": [],
+    "zero_reason": "no_representation: attaching to a new enemy per activation is not modelled (only BrandsAttachedLimit, ModParser.lua:2334)",
+    "why": "Brand attachment to new enemies is not a PoB output on a single target",
+    "partial_part": ""
+  },
+  {
+    "line": "Call of Steel has 40% increased Use Speed",
+    "surfaces": [
+      "mastery"
+    ],
+    "sources": [
+      "31400",
+      "47059",
+      "48982",
+      "49677",
+      "52074"
+    ],
+    "group": "plain_stat",
+    "kind": "no_representation",
+    "boss_lane": [],
+    "optimistic_lane": [],
+    "zero_reason": "no_representation: no PoB phrase for use speed of this skill",
+    "why": "Use Speed of one skill; no PoB phrase in ModParser",
+    "partial_part": ""
+  },
+  {
+    "line": "Enemies near your Banner take 8% increased Damage",
+    "surfaces": [
+      "mastery"
+    ],
+    "sources": [
+      "32242",
+      "35321",
+      "43307",
+      "55281"
+    ],
+    "group": "plain_stat",
+    "kind": "plain_stat",
+    "boss_lane": [],
+    "optimistic_lane": [
+      "banners also cause enemies to take 8% increased damage"
+    ],
+    "zero_reason": "",
+    "why": "PoB phrase ModParser.lua:5338 (ExtraAuraDebuffEffect, BannerPlanted); boss lane empty because plain_stat is a new kind (rule 2)",
+    "partial_part": "",
+    "type": "any", "stand_blind": {"reason_kind": "flag-only", "why": "Enemies near your Banner take 8% increased Damage: a Banner scope, no Banner on the stands"}
+  },
+  {
+    "line": "Hinders nearby Enemies with 20% reduced Movement Speed if used while not on Full Life",
+    "surfaces": [
+      "flask"
+    ],
+    "sources": [
+      "LocalLifeFlaskHinderNearbyEnemies1_"
+    ],
+    "group": "plain_stat",
+    "kind": "no_representation",
+    "boss_lane": [],
+    "optimistic_lane": [],
+    "zero_reason": "no_representation: enemy movement speed is not a PoB damage or defence number",
+    "why": "Flask hinder on enemy movement; PoB has no output for it",
+    "partial_part": ""
+  },
+  {
+    "line": "Hinders nearby Enemies with 20% reduced Movement Speed if used while not on Full Mana",
+    "surfaces": [
+      "flask"
+    ],
+    "sources": [
+      "LocalManaFlaskHinderNearbyEnemies1_"
+    ],
+    "group": "plain_stat",
+    "kind": "no_representation",
+    "boss_lane": [],
+    "optimistic_lane": [],
+    "zero_reason": "no_representation: enemy movement speed is not a PoB damage or defence number",
+    "why": "Flask hinder on enemy movement; PoB has no output for it",
+    "partial_part": ""
+  },
+  {
+    "line": "Hinders nearby Enemies with 26% reduced Movement Speed if used while not on Full Life",
+    "surfaces": [
+      "flask"
+    ],
+    "sources": [
+      "LocalLifeFlaskHinderNearbyEnemies2_"
+    ],
+    "group": "plain_stat",
+    "kind": "no_representation",
+    "boss_lane": [],
+    "optimistic_lane": [],
+    "zero_reason": "no_representation: enemy movement speed is not a PoB damage or defence number",
+    "why": "Flask hinder on enemy movement; PoB has no output for it",
+    "partial_part": ""
+  },
+  {
+    "line": "Hinders nearby Enemies with 26% reduced Movement Speed if used while not on Full Mana",
+    "surfaces": [
+      "flask"
+    ],
+    "sources": [
+      "LocalManaFlaskHinderNearbyEnemies2"
+    ],
+    "group": "plain_stat",
+    "kind": "no_representation",
+    "boss_lane": [],
+    "optimistic_lane": [],
+    "zero_reason": "no_representation: enemy movement speed is not a PoB damage or defence number",
+    "why": "Flask hinder on enemy movement; PoB has no output for it",
+    "partial_part": ""
+  },
+  {
+    "line": "Hinders nearby Enemies with 32% reduced Movement Speed if used while not on Full Life",
+    "surfaces": [
+      "flask"
+    ],
+    "sources": [
+      "LocalLifeFlaskHinderNearbyEnemies3_"
+    ],
+    "group": "plain_stat",
+    "kind": "no_representation",
+    "boss_lane": [],
+    "optimistic_lane": [],
+    "zero_reason": "no_representation: enemy movement speed is not a PoB damage or defence number",
+    "why": "Flask hinder on enemy movement; PoB has no output for it",
+    "partial_part": ""
+  },
+  {
+    "line": "Hinders nearby Enemies with 32% reduced Movement Speed if used while not on Full Mana",
+    "surfaces": [
+      "flask"
+    ],
+    "sources": [
+      "LocalManaFlaskHinderNearbyEnemies3"
+    ],
+    "group": "plain_stat",
+    "kind": "no_representation",
+    "boss_lane": [],
+    "optimistic_lane": [],
+    "zero_reason": "no_representation: enemy movement speed is not a PoB damage or defence number",
+    "why": "Flask hinder on enemy movement; PoB has no output for it",
+    "partial_part": ""
+  },
+  {
+    "line": "Mines have 20% increased Detonation Speed",
+    "surfaces": [
+      "notable"
+    ],
+    "sources": [
+      "54760"
+    ],
+    "group": "plain_stat",
+    "kind": "no_representation",
+    "boss_lane": [],
+    "optimistic_lane": [],
+    "zero_reason": "no_representation: detonation speed has no PoB phrase",
+    "why": "Mine detonation speed; no PoB phrase",
+    "partial_part": ""
+  },
+  {
+    "line": "Mines have 30% increased Detonation Speed",
+    "surfaces": [
+      "notable"
+    ],
+    "sources": [
+      "9055"
+    ],
+    "group": "plain_stat",
+    "kind": "no_representation",
+    "boss_lane": [],
+    "optimistic_lane": [],
+    "zero_reason": "no_representation: detonation speed has no PoB phrase",
+    "why": "Mine detonation speed; no PoB phrase",
+    "partial_part": ""
+  },
+  {
+    "line": "Mines have a 10% chance to be Detonated an Additional Time",
+    "surfaces": [
+      "notable"
+    ],
+    "sources": [
+      "54760"
+    ],
+    "group": "plain_stat",
+    "kind": "no_representation",
+    "boss_lane": [],
+    "optimistic_lane": [],
+    "zero_reason": "no_representation: an extra detonation chance has no PoB phrase",
+    "why": "Extra mine detonation is not in PoB's mine model here",
+    "partial_part": ""
+  },
+  {
+    "line": "Mines have a 15% chance to be Detonated an Additional Time",
+    "surfaces": [
+      "notable"
+    ],
+    "sources": [
+      "44102"
+    ],
+    "group": "plain_stat",
+    "kind": "no_representation",
+    "boss_lane": [],
+    "optimistic_lane": [],
+    "zero_reason": "no_representation: an extra detonation chance has no PoB phrase",
+    "why": "Extra mine detonation is not in PoB's mine model here",
+    "partial_part": ""
+  },
+  {
+    "line": "Plague Bearer has 20% increased Maximum Plague Value",
+    "surfaces": [
+      "mastery"
+    ],
+    "sources": [
+      "1205",
+      "28903",
+      "38579",
+      "60210"
+    ],
+    "group": "plain_stat",
+    "kind": "ramp",
+    "boss_lane": [],
+    "optimistic_lane": [],
+    "zero_reason": "ramp_window: plague builds to its maximum over time; no PoB phrase for Maximum Plague Value (ModParser has only the Plague Bearer buff line, :5738), no lane written",
+    "why": "Plague is a ramp; the cap cannot be counted at the cap, and PoB has no phrase for it",
+    "partial_part": ""
+  },
+  {
+    "line": "Unattached Brands gain 20% increased Brand Attachment Range per second, up to a maximum of 100%",
+    "surfaces": [
+      "notable"
+    ],
+    "sources": [
+      "37358"
+    ],
+    "group": "plain_stat",
+    "kind": "ramp",
+    "boss_lane": [],
+    "optimistic_lane": [],
+    "zero_reason": "ramp_window: a per-second ramp to a cap; brand attachment range has no damage number, so the ramp counts 0",
+    "why": "Ramp of brand attachment range; no damage output in PoB",
+    "partial_part": ""
+  }
+]

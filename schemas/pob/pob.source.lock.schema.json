@@ -1,0 +1,168 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/schemas/pob/pob.source.lock.schema.json",
+  "title": "Path of Building source lane lock",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "lane_id",
+    "ownership_model",
+    "repo",
+    "repo_url",
+    "pinned_ref",
+    "pinned_commit",
+    "canonical_path",
+    "sync_policy",
+    "update_policy",
+    "fail_closed"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "1.0.0"
+    },
+    "lane_id": {
+      "type": "string",
+      "const": "pob_source_lane"
+    },
+    "ownership_model": {
+      "type": "string",
+      "const": "git_submodule"
+    },
+    "repo": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+$"
+    },
+    "repo_url": {
+      "type": "string",
+      "format": "uri",
+      "pattern": "^https://github\\.com/[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+\\.git$"
+    },
+    "pinned_ref": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "^refs/tags/v.+$"
+    },
+    "pinned_commit": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{40}$"
+    },
+    "canonical_path": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9._/-]+$",
+      "not": {
+        "pattern": "(^|/)\\.\\.(?:/|$)"
+      }
+    },
+    "sync_policy": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "gitmodules_path",
+        "submodule_update",
+        "require_initialized_checkout",
+        "require_detached_head",
+        "require_commit_match",
+        "allow_local_modifications"
+      ],
+      "properties": {
+        "gitmodules_path": {
+          "type": "string",
+          "const": ".gitmodules"
+        },
+        "submodule_update": {
+          "type": "string",
+          "const": "checkout"
+        },
+        "require_initialized_checkout": {
+          "type": "boolean",
+          "const": true
+        },
+        "require_detached_head": {
+          "type": "boolean",
+          "const": true
+        },
+        "require_commit_match": {
+          "type": "boolean",
+          "const": true
+        },
+        "allow_local_modifications": {
+          "type": "boolean",
+          "const": false
+        }
+      }
+    },
+    "update_policy": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "mode",
+        "requires_explicit_ref_bump",
+        "requires_lock_update",
+        "requires_spec_review",
+        "requires_release_lock_review"
+      ],
+      "properties": {
+        "mode": {
+          "type": "string",
+          "const": "explicit_manual_bump"
+        },
+        "requires_explicit_ref_bump": {
+          "type": "boolean",
+          "const": true
+        },
+        "requires_lock_update": {
+          "type": "boolean",
+          "const": true
+        },
+        "requires_spec_review": {
+          "type": "boolean",
+          "const": true
+        },
+        "requires_release_lock_review": {
+          "type": "boolean",
+          "const": true
+        }
+      }
+    },
+    "fail_closed": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "missing_gitmodules_entry",
+        "missing_checkout",
+        "missing_required_fields",
+        "commit_mismatch",
+        "repo_url_mismatch",
+        "path_mismatch"
+      ],
+      "properties": {
+        "missing_gitmodules_entry": {
+          "type": "boolean",
+          "const": true
+        },
+        "missing_checkout": {
+          "type": "boolean",
+          "const": true
+        },
+        "missing_required_fields": {
+          "type": "boolean",
+          "const": true
+        },
+        "commit_mismatch": {
+          "type": "boolean",
+          "const": true
+        },
+        "repo_url_mismatch": {
+          "type": "boolean",
+          "const": true
+        },
+        "path_mismatch": {
+          "type": "boolean",
+          "const": true
+        }
+      }
+    }
+  }
+}
