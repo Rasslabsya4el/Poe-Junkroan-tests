@@ -1,0 +1,3760 @@
+{
+  "schema_version": "1.0.0",
+  "corpus_id": "pob_tag_corpus",
+  "family": "keystones",
+  "record_count": 57,
+  "provenance": {
+    "derived_from_corpus_id": "pob_game_corpus",
+    "derived_from_manifest_path": "src/junkroan/pob/corpus_data/manifest.json",
+    "derived_from_manifest_sha256": "8bf4070d5451e186841e7bb3fa8516ee515569d841f3fbe1d66c90ef21020a6d",
+    "derived_from_family": "keystones",
+    "derived_from_bundle_path": "src/junkroan/pob/corpus_data/keystones.json",
+    "derived_from_bundle_sha256": "d5c177915bf7662fac1752d6ef7b99a2a1cd65fc871e310a238c151d76abadcb",
+    "source_lane": {
+      "canonical_path": "vendor/pob/source",
+      "lane_id": "pob_source_lane",
+      "lock_path": "locks/pob.source.lock.json",
+      "observed_commit": "b32759ab0f31a1c8499a0d420cb0f0633d4fe478",
+      "pinned_commit": "b32759ab0f31a1c8499a0d420cb0f0633d4fe478",
+      "pinned_ref": "refs/tags/v2.67.2",
+      "repo": "PathOfBuildingCommunity/PathOfBuilding",
+      "repo_url": "https://github.com/PathOfBuildingCommunity/PathOfBuilding.git",
+      "tree_version": "3_29"
+    }
+  },
+  "metadata": {
+    "record_field_order": [
+      "source_id",
+      "source_name",
+      "search_tags",
+      "scaling_facets",
+      "supporting_text",
+      "source_context"
+    ],
+    "facet_field_order": [
+      "facet",
+      "values"
+    ],
+    "facet_coverage": [
+      {
+        "facet": "node_kind",
+        "record_count": 57,
+        "values": [
+          "blighted",
+          "keystone"
+        ]
+      },
+      {
+        "facet": "attribute",
+        "record_count": 7,
+        "values": [
+          "dexterity",
+          "intelligence",
+          "strength"
+        ]
+      },
+      {
+        "facet": "damage_type",
+        "record_count": 15,
+        "values": [
+          "chaos",
+          "cold",
+          "elemental",
+          "fire",
+          "lightning",
+          "physical"
+        ]
+      },
+      {
+        "facet": "mechanic",
+        "record_count": 36,
+        "values": [
+          "attack",
+          "aura",
+          "brand",
+          "chaining",
+          "corpse",
+          "curse",
+          "duration",
+          "guard",
+          "herald",
+          "hex",
+          "melee",
+          "minion",
+          "movement",
+          "projectile",
+          "retaliation",
+          "spell",
+          "stance",
+          "strike",
+          "totem",
+          "vaal",
+          "warcry"
+        ]
+      },
+      {
+        "facet": "weapon",
+        "record_count": 12,
+        "values": [
+          "bow",
+          "dual_wield",
+          "shield",
+          "sword"
+        ]
+      },
+      {
+        "facet": "resource",
+        "record_count": 20,
+        "values": [
+          "cost",
+          "energy_shield",
+          "leech",
+          "life",
+          "mana",
+          "recovery",
+          "regeneration",
+          "reservation",
+          "ward"
+        ]
+      },
+      {
+        "facet": "defence",
+        "record_count": 19,
+        "values": [
+          "armour",
+          "block",
+          "energy_shield",
+          "evasion",
+          "resistances",
+          "ward"
+        ]
+      },
+      {
+        "facet": "charge",
+        "record_count": 1,
+        "values": [
+          "power_charge"
+        ]
+      },
+      {
+        "facet": "ailment",
+        "record_count": 13,
+        "values": [
+          "bleed",
+          "brittle",
+          "chill",
+          "exposure",
+          "freeze",
+          "ignite",
+          "impale",
+          "poison",
+          "sap",
+          "scorch",
+          "shock",
+          "stun"
+        ]
+      },
+      {
+        "facet": "scaling_stat",
+        "record_count": 29,
+        "values": [
+          "accuracy",
+          "armour",
+          "attack_speed",
+          "aura_effect",
+          "block_chance",
+          "critical_strike_chance",
+          "critical_strike_multiplier",
+          "damage_over_time",
+          "duration",
+          "energy_shield",
+          "evasion",
+          "leech",
+          "life_regeneration",
+          "movement_speed"
+        ]
+      }
+    ]
+  },
+  "records": [
+    {
+      "source_id": "keystones:3354",
+      "source_name": "Lone Messenger",
+      "search_tags": [
+        "aura",
+        "damage_over_time",
+        "herald",
+        "keystone",
+        "lone",
+        "lone_messenger",
+        "messenger",
+        "minion"
+      ],
+      "scaling_facets": [
+        {
+          "facet": "node_kind",
+          "values": [
+            "keystone"
+          ]
+        },
+        {
+          "facet": "mechanic",
+          "values": [
+            "aura",
+            "herald",
+            "minion"
+          ]
+        },
+        {
+          "facet": "scaling_stat",
+          "values": [
+            "damage_over_time"
+          ]
+        }
+      ],
+      "supporting_text": [
+        "Lone Messenger",
+        "You can only have one Herald\n50% more Effect of Herald Buffs on you\n100% more Damage with Hits from Herald Skills\n50% more Damage Over Time with Herald Skills\nMinions from Herald Skills deal 25% more Damage\nYour Aura Skills are Disabled",
+        "Some tasks are too important to entrust to others."
+      ],
+      "source_context": {
+        "node_id": 3354,
+        "skill_id": 3354,
+        "stats": [
+          "You can only have one Herald\n50% more Effect of Herald Buffs on you\n100% more Damage with Hits from Herald Skills\n50% more Damage Over Time with Herald Skills\nMinions from Herald Skills deal 25% more Damage\nYour Aura Skills are Disabled"
+        ],
+        "reminder_text": [],
+        "recipe": [],
+        "is_notable": false,
+        "is_keystone": true,
+        "is_mastery": false,
+        "is_blighted": false,
+        "is_proxy": false,
+        "is_ascendancy_start": false,
+        "class_start_index": null,
+        "ascendancy_name": null
+      }
+    },
+    {
+      "source_id": "keystones:10661",
+      "source_name": "Iron Reflexes",
+      "search_tags": [
+        "armour",
+        "dexterity",
+        "evasion",
+        "iron",
+        "iron_reflexes",
+        "keystone",
+        "reflexes"
+      ],
+      "scaling_facets": [
+        {
+          "facet": "node_kind",
+          "values": [
+            "keystone"
+          ]
+        },
+        {
+          "facet": "attribute",
+          "values": [
+            "dexterity"
+          ]
+        },
+        {
+          "facet": "defence",
+          "values": [
+            "armour",
+            "evasion"
+          ]
+        },
+        {
+          "facet": "scaling_stat",
+          "values": [
+            "armour",
+            "evasion"
+          ]
+        }
+      ],
+      "supporting_text": [
+        "Iron Reflexes",
+        "Converts all Evasion Rating to Armour. Dexterity provides no bonus to Evasion Rating",
+        "Why should I dodge blows that I do not fear?"
+      ],
+      "source_context": {
+        "node_id": 10661,
+        "skill_id": 10661,
+        "stats": [
+          "Converts all Evasion Rating to Armour. Dexterity provides no bonus to Evasion Rating"
+        ],
+        "reminder_text": [],
+        "recipe": [],
+        "is_notable": false,
+        "is_keystone": true,
+        "is_mastery": false,
+        "is_blighted": false,
+        "is_proxy": false,
+        "is_ascendancy_start": false,
+        "class_start_index": null,
+        "ascendancy_name": null
+      }
+    },
+    {
+      "source_id": "keystones:10808",
+      "source_name": "Vaal Pact",
+      "search_tags": [
+        "keystone",
+        "leech",
+        "life",
+        "melee",
+        "pact",
+        "recovery",
+        "vaal",
+        "vaal_pact"
+      ],
+      "scaling_facets": [
+        {
+          "facet": "node_kind",
+          "values": [
+            "keystone"
+          ]
+        },
+        {
+          "facet": "mechanic",
+          "values": [
+            "melee",
+            "vaal"
+          ]
+        },
+        {
+          "facet": "resource",
+          "values": [
+            "leech",
+            "life",
+            "recovery"
+          ]
+        },
+        {
+          "facet": "scaling_stat",
+          "values": [
+            "leech"
+          ]
+        }
+      ],
+      "supporting_text": [
+        "Vaal Pact",
+        "Life Leech from Melee Damage is Instant\nCannot Recover Life other than from Leech",
+        "My ancestral pact was sealed. Forevermore, I would gain sustenance",
+        "only from the ravaged flesh of my enemies."
+      ],
+      "source_context": {
+        "node_id": 10808,
+        "skill_id": 10808,
+        "stats": [
+          "Life Leech from Melee Damage is Instant\nCannot Recover Life other than from Leech"
+        ],
+        "reminder_text": [],
+        "recipe": [],
+        "is_notable": false,
+        "is_keystone": true,
+        "is_mastery": false,
+        "is_blighted": false,
+        "is_proxy": false,
+        "is_ascendancy_start": false,
+        "class_start_index": null,
+        "ascendancy_name": null
+      }
+    },
+    {
+      "source_id": "keystones:11239",
+      "source_name": "Wind Dancer",
+      "search_tags": [
+        "attack",
+        "dancer",
+        "keystone",
+        "strike",
+        "wind",
+        "wind_dancer"
+      ],
+      "scaling_facets": [
+        {
+          "facet": "node_kind",
+          "values": [
+            "keystone"
+          ]
+        },
+        {
+          "facet": "mechanic",
+          "values": [
+            "attack",
+            "strike"
+          ]
+        }
+      ],
+      "supporting_text": [
+        "Wind Dancer",
+        "20% less Attack Damage taken if you haven't been Hit by an Attack Recently\n10% more chance to Evade Attacks if you have been Hit by an Attack Recently\n20% more Attack Damage taken if you have been Hit by an Attack Recently",
+        "(Recently refers to the past 4 seconds)",
+        "Invite the enemy when you are strong, evade them when you are weak;",
+        "strike with the coming of the storm."
+      ],
+      "source_context": {
+        "node_id": 11239,
+        "skill_id": 11239,
+        "stats": [
+          "20% less Attack Damage taken if you haven't been Hit by an Attack Recently\n10% more chance to Evade Attacks if you have been Hit by an Attack Recently\n20% more Attack Damage taken if you have been Hit by an Attack Recently"
+        ],
+        "reminder_text": [
+          "(Recently refers to the past 4 seconds)"
+        ],
+        "recipe": [],
+        "is_notable": false,
+        "is_keystone": true,
+        "is_mastery": false,
+        "is_blighted": false,
+        "is_proxy": false,
+        "is_ascendancy_start": false,
+        "class_start_index": null,
+        "ascendancy_name": null
+      }
+    },
+    {
+      "source_id": "keystones:11455",
+      "source_name": "Chaos Inoculation",
+      "search_tags": [
+        "chaos",
+        "chaos_inoculation",
+        "inoculation",
+        "keystone",
+        "life"
+      ],
+      "scaling_facets": [
+        {
+          "facet": "node_kind",
+          "values": [
+            "keystone"
+          ]
+        },
+        {
+          "facet": "damage_type",
+          "values": [
+            "chaos"
+          ]
+        },
+        {
+          "facet": "resource",
+          "values": [
+            "life"
+          ]
+        }
+      ],
+      "supporting_text": [
+        "Chaos Inoculation",
+        "Maximum Life becomes 1, Immune to Chaos Damage",
+        "Give up everything in pursuit of greatness - even life itself."
+      ],
+      "source_context": {
+        "node_id": 11455,
+        "skill_id": 11455,
+        "stats": [
+          "Maximum Life becomes 1, Immune to Chaos Damage"
+        ],
+        "reminder_text": [],
+        "recipe": [],
+        "is_notable": false,
+        "is_keystone": true,
+        "is_mastery": false,
+        "is_blighted": false,
+        "is_proxy": false,
+        "is_ascendancy_start": false,
+        "class_start_index": null,
+        "ascendancy_name": null
+      }
+    },
+    {
+      "source_id": "keystones:12128",
+      "source_name": "Bitter Frost",
+      "search_tags": [
+        "bitter",
+        "bitter_frost",
+        "chill",
+        "cold",
+        "frost",
+        "keystone"
+      ],
+      "scaling_facets": [
+        {
+          "facet": "node_kind",
+          "values": [
+            "keystone"
+          ]
+        },
+        {
+          "facet": "damage_type",
+          "values": [
+            "cold"
+          ]
+        },
+        {
+          "facet": "ailment",
+          "values": [
+            "chill"
+          ]
+        }
+      ],
+      "supporting_text": [
+        "Bitter Frost",
+        "Enemies Chilled by your Hits have Cold Damage taken increased by Chill Effect\nEnemies in your Chilling Areas have Cold Damage taken increased by Chill Effect\nCannot deal non-Cold Damage",
+        "Chill them to the bone, that they might never know warmth again."
+      ],
+      "source_context": {
+        "node_id": 12128,
+        "skill_id": 12128,
+        "stats": [
+          "Enemies Chilled by your Hits have Cold Damage taken increased by Chill Effect\nEnemies in your Chilling Areas have Cold Damage taken increased by Chill Effect\nCannot deal non-Cold Damage"
+        ],
+        "reminder_text": [],
+        "recipe": [],
+        "is_notable": false,
+        "is_keystone": true,
+        "is_mastery": false,
+        "is_blighted": false,
+        "is_proxy": false,
+        "is_ascendancy_start": false,
+        "class_start_index": null,
+        "ascendancy_name": null
+      }
+    },
+    {
+      "source_id": "keystones:12926",
+      "source_name": "Iron Grip",
+      "search_tags": [
+        "attack",
+        "bow",
+        "grip",
+        "iron",
+        "iron_grip",
+        "keystone",
+        "melee",
+        "projectile"
+      ],
+      "scaling_facets": [
+        {
+          "facet": "node_kind",
+          "values": [
+            "keystone"
+          ]
+        },
+        {
+          "facet": "mechanic",
+          "values": [
+            "attack",
+            "melee",
+            "projectile"
+          ]
+        },
+        {
+          "facet": "weapon",
+          "values": [
+            "bow"
+          ]
+        }
+      ],
+      "supporting_text": [
+        "Iron Grip",
+        "Strength's Damage bonus applies to Projectile Attack Damage as well as Melee Damage",
+        "Legend tells of bows so powerful that only giants could draw them back."
+      ],
+      "source_context": {
+        "node_id": 12926,
+        "skill_id": 12926,
+        "stats": [
+          "Strength's Damage bonus applies to Projectile Attack Damage as well as Melee Damage"
+        ],
+        "reminder_text": [],
+        "recipe": [],
+        "is_notable": false,
+        "is_keystone": true,
+        "is_mastery": false,
+        "is_blighted": false,
+        "is_proxy": false,
+        "is_ascendancy_start": false,
+        "class_start_index": null,
+        "ascendancy_name": null
+      }
+    },
+    {
+      "source_id": "keystones:12953",
+      "source_name": "Disciple of Kitava",
+      "search_tags": [
+        "corpse",
+        "disciple",
+        "disciple_of_kitava",
+        "keystone",
+        "kitava",
+        "life",
+        "mana",
+        "recovery"
+      ],
+      "scaling_facets": [
+        {
+          "facet": "node_kind",
+          "values": [
+            "keystone"
+          ]
+        },
+        {
+          "facet": "mechanic",
+          "values": [
+            "corpse"
+          ]
+        },
+        {
+          "facet": "resource",
+          "values": [
+            "life",
+            "mana",
+            "recovery"
+          ]
+        }
+      ],
+      "supporting_text": [
+        "Disciple of Kitava",
+        "Every second, Consume a nearby Corpse to Recover 5% of Life and Mana\n10% more Damage taken if you haven't Consumed a Corpse Recently",
+        "(Recently refers to the past 4 seconds)",
+        "All are invited to his feast, one way or another."
+      ],
+      "source_context": {
+        "node_id": 12953,
+        "skill_id": 12953,
+        "stats": [
+          "Every second, Consume a nearby Corpse to Recover 5% of Life and Mana\n10% more Damage taken if you haven't Consumed a Corpse Recently"
+        ],
+        "reminder_text": [
+          "(Recently refers to the past 4 seconds)"
+        ],
+        "recipe": [],
+        "is_notable": false,
+        "is_keystone": true,
+        "is_mastery": false,
+        "is_blighted": false,
+        "is_proxy": false,
+        "is_ascendancy_start": false,
+        "class_start_index": null,
+        "ascendancy_name": null
+      }
+    },
+    {
+      "source_id": "keystones:13019",
+      "source_name": "Bloodsoaked Blade",
+      "search_tags": [
+        "blade",
+        "bloodsoaked",
+        "bloodsoaked_blade",
+        "keystone",
+        "life",
+        "mana"
+      ],
+      "scaling_facets": [
+        {
+          "facet": "node_kind",
+          "values": [
+            "keystone"
+          ]
+        },
+        {
+          "facet": "resource",
+          "values": [
+            "life",
+            "mana"
+          ]
+        }
+      ],
+      "supporting_text": [
+        "Bloodsoaked Blade",
+        "Tinctures inflict Weeping Wounds instead of Mana Burn\nEffects that interact with Mana Burn interact with Weeping Wounds instead",
+        "(Weeping Wounds cause you to lose 1% of your maximum Life per second per stack. Tinctures deactivate when you have 1 life remaining)",
+        "Tainted blood is a gift that must be shared."
+      ],
+      "source_context": {
+        "node_id": 13019,
+        "skill_id": 13019,
+        "stats": [
+          "Tinctures inflict Weeping Wounds instead of Mana Burn\nEffects that interact with Mana Burn interact with Weeping Wounds instead"
+        ],
+        "reminder_text": [
+          "(Weeping Wounds cause you to lose 1% of your maximum Life per second per stack. Tinctures deactivate when you have 1 life remaining)"
+        ],
+        "recipe": [],
+        "is_notable": false,
+        "is_keystone": true,
+        "is_mastery": false,
+        "is_blighted": false,
+        "is_proxy": false,
+        "is_ascendancy_start": false,
+        "class_start_index": null,
+        "ascendancy_name": null
+      }
+    },
+    {
+      "source_id": "keystones:17818",
+      "source_name": "Crimson Dance",
+      "search_tags": [
+        "bleed",
+        "crimson",
+        "crimson_dance",
+        "dance",
+        "keystone"
+      ],
+      "scaling_facets": [
+        {
+          "facet": "node_kind",
+          "values": [
+            "keystone"
+          ]
+        },
+        {
+          "facet": "ailment",
+          "values": [
+            "bleed"
+          ]
+        }
+      ],
+      "supporting_text": [
+        "Crimson Dance",
+        "You can inflict Bleeding on an Enemy up to 8 times\nYour Bleeding does not deal extra Damage while the Enemy is moving and cannot be Aggravated\n50% less Damage with Bleeding",
+        "My blade sings so sweetly, your body cannot help but weep."
+      ],
+      "source_context": {
+        "node_id": 17818,
+        "skill_id": 17818,
+        "stats": [
+          "You can inflict Bleeding on an Enemy up to 8 times\nYour Bleeding does not deal extra Damage while the Enemy is moving and cannot be Aggravated\n50% less Damage with Bleeding"
+        ],
+        "reminder_text": [],
+        "recipe": [],
+        "is_notable": false,
+        "is_keystone": true,
+        "is_mastery": false,
+        "is_blighted": false,
+        "is_proxy": false,
+        "is_ascendancy_start": false,
+        "class_start_index": null,
+        "ascendancy_name": null
+      }
+    },
+    {
+      "source_id": "keystones:18663",
+      "source_name": "Minion Instability",
+      "search_tags": [
+        "fire",
+        "instability",
+        "keystone",
+        "life",
+        "minion",
+        "minion_instability"
+      ],
+      "scaling_facets": [
+        {
+          "facet": "node_kind",
+          "values": [
+            "keystone"
+          ]
+        },
+        {
+          "facet": "damage_type",
+          "values": [
+            "fire"
+          ]
+        },
+        {
+          "facet": "mechanic",
+          "values": [
+            "minion"
+          ]
+        },
+        {
+          "facet": "resource",
+          "values": [
+            "life"
+          ]
+        }
+      ],
+      "supporting_text": [
+        "Minion Instability",
+        "Minions Explode when reduced to Low Life, dealing 33% of their Life as Fire Damage to surrounding Enemies",
+        "Even in death, they have their uses. They just need a little encouragement."
+      ],
+      "source_context": {
+        "node_id": 18663,
+        "skill_id": 18663,
+        "stats": [
+          "Minions Explode when reduced to Low Life, dealing 33% of their Life as Fire Damage to surrounding Enemies"
+        ],
+        "reminder_text": [],
+        "recipe": [],
+        "is_notable": false,
+        "is_keystone": true,
+        "is_mastery": false,
+        "is_blighted": false,
+        "is_proxy": false,
+        "is_ascendancy_start": false,
+        "class_start_index": null,
+        "ascendancy_name": null
+      }
+    },
+    {
+      "source_id": "keystones:19732",
+      "source_name": "The Agnostic",
+      "search_tags": [
+        "agnostic",
+        "energy_shield",
+        "keystone",
+        "life",
+        "mana",
+        "recovery",
+        "shield",
+        "the_agnostic"
+      ],
+      "scaling_facets": [
+        {
+          "facet": "node_kind",
+          "values": [
+            "keystone"
+          ]
+        },
+        {
+          "facet": "weapon",
+          "values": [
+            "shield"
+          ]
+        },
+        {
+          "facet": "resource",
+          "values": [
+            "energy_shield",
+            "life",
+            "mana",
+            "recovery"
+          ]
+        },
+        {
+          "facet": "defence",
+          "values": [
+            "energy_shield"
+          ]
+        },
+        {
+          "facet": "scaling_stat",
+          "values": [
+            "energy_shield"
+          ]
+        }
+      ],
+      "supporting_text": [
+        "The Agnostic",
+        "Removes all Energy Shield\nWhile not on Full Life, Sacrifice 20% of Mana per Second to Recover that much Life",
+        "Put your faith in intellect rather than mysticism."
+      ],
+      "source_context": {
+        "node_id": 19732,
+        "skill_id": 19732,
+        "stats": [
+          "Removes all Energy Shield\nWhile not on Full Life, Sacrifice 20% of Mana per Second to Recover that much Life"
+        ],
+        "reminder_text": [],
+        "recipe": [],
+        "is_notable": false,
+        "is_keystone": true,
+        "is_mastery": false,
+        "is_blighted": false,
+        "is_proxy": false,
+        "is_ascendancy_start": false,
+        "class_start_index": null,
+        "ascendancy_name": null
+      }
+    },
+    {
+      "source_id": "keystones:21210",
+      "source_name": "Arsenal of Vengeance",
+      "search_tags": [
+        "arsenal",
+        "arsenal_of_vengeance",
+        "keystone",
+        "retaliation",
+        "vengeance"
+      ],
+      "scaling_facets": [
+        {
+          "facet": "node_kind",
+          "values": [
+            "keystone"
+          ]
+        },
+        {
+          "facet": "mechanic",
+          "values": [
+            "retaliation"
+          ]
+        }
+      ],
+      "supporting_text": [
+        "Arsenal of Vengeance",
+        "Damaging Retaliation Skills become Usable every sixth Hit from Enemies instead",
+        "Never start the war... but be sure to end it."
+      ],
+      "source_context": {
+        "node_id": 21210,
+        "skill_id": 21210,
+        "stats": [
+          "Damaging Retaliation Skills become Usable every sixth Hit from Enemies instead"
+        ],
+        "reminder_text": [],
+        "recipe": [],
+        "is_notable": false,
+        "is_keystone": true,
+        "is_mastery": false,
+        "is_blighted": false,
+        "is_proxy": false,
+        "is_ascendancy_start": false,
+        "class_start_index": null,
+        "ascendancy_name": null
+      }
+    },
+    {
+      "source_id": "keystones:21650",
+      "source_name": "Eternal Youth",
+      "search_tags": [
+        "energy_shield",
+        "eternal",
+        "eternal_youth",
+        "keystone",
+        "leech",
+        "life",
+        "life_regeneration",
+        "recovery",
+        "regeneration",
+        "shield",
+        "youth"
+      ],
+      "scaling_facets": [
+        {
+          "facet": "node_kind",
+          "values": [
+            "keystone"
+          ]
+        },
+        {
+          "facet": "weapon",
+          "values": [
+            "shield"
+          ]
+        },
+        {
+          "facet": "resource",
+          "values": [
+            "energy_shield",
+            "leech",
+            "life",
+            "recovery",
+            "regeneration"
+          ]
+        },
+        {
+          "facet": "defence",
+          "values": [
+            "energy_shield"
+          ]
+        },
+        {
+          "facet": "scaling_stat",
+          "values": [
+            "energy_shield",
+            "leech",
+            "life_regeneration"
+          ]
+        }
+      ],
+      "supporting_text": [
+        "Eternal Youth",
+        "50% less Life Regeneration Rate\n50% less maximum Total Life Recovery per Second from Leech\nEnergy Shield Recharge instead applies to Life",
+        "Burn the spirit to vitalise the flesh."
+      ],
+      "source_context": {
+        "node_id": 21650,
+        "skill_id": 21650,
+        "stats": [
+          "50% less Life Regeneration Rate\n50% less maximum Total Life Recovery per Second from Leech\nEnergy Shield Recharge instead applies to Life"
+        ],
+        "reminder_text": [],
+        "recipe": [],
+        "is_notable": false,
+        "is_keystone": true,
+        "is_mastery": false,
+        "is_blighted": false,
+        "is_proxy": false,
+        "is_ascendancy_start": false,
+        "class_start_index": null,
+        "ascendancy_name": null
+      }
+    },
+    {
+      "source_id": "keystones:22088",
+      "source_name": "Elemental Overload",
+      "search_tags": [
+        "elemental",
+        "elemental_overload",
+        "fire",
+        "keystone",
+        "overload",
+        "strike"
+      ],
+      "scaling_facets": [
+        {
+          "facet": "node_kind",
+          "values": [
+            "keystone"
+          ]
+        },
+        {
+          "facet": "damage_type",
+          "values": [
+            "elemental",
+            "fire"
+          ]
+        },
+        {
+          "facet": "mechanic",
+          "values": [
+            "strike"
+          ]
+        }
+      ],
+      "supporting_text": [
+        "Elemental Overload",
+        "Skills that have dealt a Critical Strike in the past 8 seconds deal 40% more Elemental Damage with Hits and Ailments\nYour Critical Strikes do not deal extra Damage\nAilments never count as being from Critical Strikes",
+        "You are not a vanishing spark, but a patient ember waiting to seed a great fire."
+      ],
+      "source_context": {
+        "node_id": 22088,
+        "skill_id": 22088,
+        "stats": [
+          "Skills that have dealt a Critical Strike in the past 8 seconds deal 40% more Elemental Damage with Hits and Ailments\nYour Critical Strikes do not deal extra Damage\nAilments never count as being from Critical Strikes"
+        ],
+        "reminder_text": [],
+        "recipe": [],
+        "is_notable": false,
+        "is_keystone": true,
+        "is_mastery": false,
+        "is_blighted": false,
+        "is_proxy": false,
+        "is_ascendancy_start": false,
+        "class_start_index": null,
+        "ascendancy_name": null
+      }
+    },
+    {
+      "source_id": "keystones:23090",
+      "source_name": "Call to Arms",
+      "search_tags": [
+        "arms",
+        "call",
+        "call_to_arms",
+        "duration",
+        "keystone",
+        "strength",
+        "warcry"
+      ],
+      "scaling_facets": [
+        {
+          "facet": "node_kind",
+          "values": [
+            "keystone"
+          ]
+        },
+        {
+          "facet": "attribute",
+          "values": [
+            "strength"
+          ]
+        },
+        {
+          "facet": "mechanic",
+          "values": [
+            "duration",
+            "warcry"
+          ]
+        },
+        {
+          "facet": "scaling_stat",
+          "values": [
+            "duration"
+          ]
+        }
+      ],
+      "supporting_text": [
+        "Call to Arms",
+        "Your Warcries do not grant Buffs or Charges to You\n100% more Warcry Duration",
+        "Follow me, and I will show you strength!"
+      ],
+      "source_context": {
+        "node_id": 23090,
+        "skill_id": 23090,
+        "stats": [
+          "Your Warcries do not grant Buffs or Charges to You\n100% more Warcry Duration"
+        ],
+        "reminder_text": [],
+        "recipe": [],
+        "is_notable": false,
+        "is_keystone": true,
+        "is_mastery": false,
+        "is_blighted": false,
+        "is_proxy": false,
+        "is_ascendancy_start": false,
+        "class_start_index": null,
+        "ascendancy_name": null
+      }
+    },
+    {
+      "source_id": "keystones:23407",
+      "source_name": "Perfect Agony",
+      "search_tags": [
+        "agony",
+        "bleed",
+        "brittle",
+        "chill",
+        "critical_strike_multiplier",
+        "damage_over_time",
+        "freeze",
+        "ignite",
+        "keystone",
+        "perfect",
+        "perfect_agony",
+        "poison",
+        "sap",
+        "scorch",
+        "shock",
+        "strike"
+      ],
+      "scaling_facets": [
+        {
+          "facet": "node_kind",
+          "values": [
+            "keystone"
+          ]
+        },
+        {
+          "facet": "mechanic",
+          "values": [
+            "strike"
+          ]
+        },
+        {
+          "facet": "ailment",
+          "values": [
+            "bleed",
+            "brittle",
+            "chill",
+            "freeze",
+            "ignite",
+            "poison",
+            "sap",
+            "scorch",
+            "shock"
+          ]
+        },
+        {
+          "facet": "scaling_stat",
+          "values": [
+            "critical_strike_multiplier",
+            "damage_over_time"
+          ]
+        }
+      ],
+      "supporting_text": [
+        "Perfect Agony",
+        "Damage over Time Multiplier for Ailments is equal to Critical Strike Multiplier\nCritical Strikes do not deal extra Damage\nNon-Critical Strikes cannot inflict Ailments",
+        "(Ailments are Bleeding, Ignited, Scorched, Chilled, Frozen, Brittle, Shocked, Sapped, and Poisoned)",
+        "Your foes will beg not for their pitiful lives, but for a quick, merciful death."
+      ],
+      "source_context": {
+        "node_id": 23407,
+        "skill_id": 23407,
+        "stats": [
+          "Damage over Time Multiplier for Ailments is equal to Critical Strike Multiplier\nCritical Strikes do not deal extra Damage\nNon-Critical Strikes cannot inflict Ailments"
+        ],
+        "reminder_text": [
+          "(Ailments are Bleeding, Ignited, Scorched, Chilled, Frozen, Brittle, Shocked, Sapped, and Poisoned)"
+        ],
+        "recipe": [],
+        "is_notable": false,
+        "is_keystone": true,
+        "is_mastery": false,
+        "is_blighted": false,
+        "is_proxy": false,
+        "is_ascendancy_start": false,
+        "class_start_index": null,
+        "ascendancy_name": null
+      }
+    },
+    {
+      "source_id": "keystones:23540",
+      "source_name": "Conduit",
+      "search_tags": [
+        "conduit",
+        "keystone",
+        "power_charge"
+      ],
+      "scaling_facets": [
+        {
+          "facet": "node_kind",
+          "values": [
+            "keystone"
+          ]
+        },
+        {
+          "facet": "charge",
+          "values": [
+            "power_charge"
+          ]
+        }
+      ],
+      "supporting_text": [
+        "Conduit",
+        "Share Endurance, Frenzy and Power Charges with nearby party members",
+        "To me, brave companions! Feel my radiance flow through you!"
+      ],
+      "source_context": {
+        "node_id": 23540,
+        "skill_id": 23540,
+        "stats": [
+          "Share Endurance, Frenzy and Power Charges with nearby party members"
+        ],
+        "reminder_text": [],
+        "recipe": [],
+        "is_notable": false,
+        "is_keystone": true,
+        "is_mastery": false,
+        "is_blighted": false,
+        "is_proxy": false,
+        "is_ascendancy_start": false,
+        "class_start_index": null,
+        "ascendancy_name": null
+      }
+    },
+    {
+      "source_id": "keystones:23950",
+      "source_name": "Wicked Ward",
+      "search_tags": [
+        "energy_shield",
+        "keystone",
+        "shield",
+        "ward",
+        "wicked",
+        "wicked_ward"
+      ],
+      "scaling_facets": [
+        {
+          "facet": "node_kind",
+          "values": [
+            "keystone"
+          ]
+        },
+        {
+          "facet": "weapon",
+          "values": [
+            "shield"
+          ]
+        },
+        {
+          "facet": "resource",
+          "values": [
+            "energy_shield",
+            "ward"
+          ]
+        },
+        {
+          "facet": "defence",
+          "values": [
+            "energy_shield",
+            "ward"
+          ]
+        },
+        {
+          "facet": "scaling_stat",
+          "values": [
+            "energy_shield"
+          ]
+        }
+      ],
+      "supporting_text": [
+        "Wicked Ward",
+        "Energy Shield Recharge is not interrupted by Damage if Recharge began Recently\n40% less Energy Shield Recharge Rate",
+        "Embrace the forbidden. Let dark energies envelop you."
+      ],
+      "source_context": {
+        "node_id": 23950,
+        "skill_id": 23950,
+        "stats": [
+          "Energy Shield Recharge is not interrupted by Damage if Recharge began Recently\n40% less Energy Shield Recharge Rate"
+        ],
+        "reminder_text": [],
+        "recipe": [],
+        "is_notable": false,
+        "is_keystone": true,
+        "is_mastery": false,
+        "is_blighted": false,
+        "is_proxy": false,
+        "is_ascendancy_start": false,
+        "class_start_index": null,
+        "ascendancy_name": null
+      }
+    },
+    {
+      "source_id": "keystones:24426",
+      "source_name": "Ghost Reaver",
+      "search_tags": [
+        "energy_shield",
+        "ghost",
+        "ghost_reaver",
+        "keystone",
+        "leech",
+        "life",
+        "reaver",
+        "recovery",
+        "shield"
+      ],
+      "scaling_facets": [
+        {
+          "facet": "node_kind",
+          "values": [
+            "keystone"
+          ]
+        },
+        {
+          "facet": "weapon",
+          "values": [
+            "shield"
+          ]
+        },
+        {
+          "facet": "resource",
+          "values": [
+            "energy_shield",
+            "leech",
+            "life",
+            "recovery"
+          ]
+        },
+        {
+          "facet": "defence",
+          "values": [
+            "energy_shield"
+          ]
+        },
+        {
+          "facet": "scaling_stat",
+          "values": [
+            "energy_shield",
+            "leech"
+          ]
+        }
+      ],
+      "supporting_text": [
+        "Ghost Reaver",
+        "Leech Energy Shield instead of Life\nMaximum total Energy Shield Recovery per second from Leech is doubled\nCannot Recharge Energy Shield",
+        "I will wear your ghost, and you will die twice: against me, and for me."
+      ],
+      "source_context": {
+        "node_id": 24426,
+        "skill_id": 24426,
+        "stats": [
+          "Leech Energy Shield instead of Life\nMaximum total Energy Shield Recovery per second from Leech is doubled\nCannot Recharge Energy Shield"
+        ],
+        "reminder_text": [],
+        "recipe": [],
+        "is_notable": false,
+        "is_keystone": true,
+        "is_mastery": false,
+        "is_blighted": false,
+        "is_proxy": false,
+        "is_ascendancy_start": false,
+        "class_start_index": null,
+        "ascendancy_name": null
+      }
+    },
+    {
+      "source_id": "keystones:24720",
+      "source_name": "Imbalanced Guard",
+      "search_tags": [
+        "armour",
+        "bleed",
+        "guard",
+        "imbalanced",
+        "imbalanced_guard",
+        "keystone"
+      ],
+      "scaling_facets": [
+        {
+          "facet": "node_kind",
+          "values": [
+            "keystone"
+          ]
+        },
+        {
+          "facet": "mechanic",
+          "values": [
+            "guard"
+          ]
+        },
+        {
+          "facet": "defence",
+          "values": [
+            "armour"
+          ]
+        },
+        {
+          "facet": "ailment",
+          "values": [
+            "bleed"
+          ]
+        },
+        {
+          "facet": "scaling_stat",
+          "values": [
+            "armour"
+          ]
+        }
+      ],
+      "supporting_text": [
+        "Imbalanced Guard",
+        "100% chance to Defend with 200% of Armour\nMaximum Damage Reduction for any Damage Type is 50%",
+        "(Armour is treated as this percentage of its actual value, only for calculating damage mitigation)",
+        "Layer only your most vital areas, child. We have less steel,",
+        "but we are willing to bleed, and that is why we will be victorious."
+      ],
+      "source_context": {
+        "node_id": 24720,
+        "skill_id": 24720,
+        "stats": [
+          "100% chance to Defend with 200% of Armour\nMaximum Damage Reduction for any Damage Type is 50%"
+        ],
+        "reminder_text": [
+          "(Armour is treated as this percentage of its actual value, only for calculating damage mitigation)"
+        ],
+        "recipe": [],
+        "is_notable": false,
+        "is_keystone": true,
+        "is_mastery": false,
+        "is_blighted": false,
+        "is_proxy": false,
+        "is_ascendancy_start": false,
+        "class_start_index": null,
+        "ascendancy_name": null
+      }
+    },
+    {
+      "source_id": "keystones:27781",
+      "source_name": "Worship the Blightheart",
+      "search_tags": [
+        "anointable",
+        "blighted",
+        "blightheart",
+        "chaos",
+        "curse",
+        "keystone",
+        "life",
+        "life_regeneration",
+        "oil",
+        "prismatic",
+        "prismatic_oil",
+        "regeneration",
+        "resistances",
+        "worship",
+        "worship_the_blightheart"
+      ],
+      "scaling_facets": [
+        {
+          "facet": "node_kind",
+          "values": [
+            "blighted",
+            "keystone"
+          ]
+        },
+        {
+          "facet": "damage_type",
+          "values": [
+            "chaos"
+          ]
+        },
+        {
+          "facet": "mechanic",
+          "values": [
+            "curse"
+          ]
+        },
+        {
+          "facet": "resource",
+          "values": [
+            "life",
+            "regeneration"
+          ]
+        },
+        {
+          "facet": "defence",
+          "values": [
+            "resistances"
+          ]
+        },
+        {
+          "facet": "scaling_stat",
+          "values": [
+            "life_regeneration"
+          ]
+        }
+      ],
+      "supporting_text": [
+        "Worship the Blightheart",
+        "Create Fungal Ground instead of Consecrated Ground",
+        "(Allies on your Consecrated Ground Regenerate a percentage of their Maximum Life per second, and Curses have 50% reduced effect on them)",
+        "(Allies on your Fungal Ground have +25% to Chaos Resistance. Enemies on your Fungal Ground have -10% to all Resistances.)",
+        "PrismaticOil",
+        "You can feel the fungus growing in your skull,",
+        "bringing not pain, but religious ecstasy."
+      ],
+      "source_context": {
+        "node_id": 27781,
+        "skill_id": 27781,
+        "stats": [
+          "Create Fungal Ground instead of Consecrated Ground"
+        ],
+        "reminder_text": [
+          "(Allies on your Consecrated Ground Regenerate a percentage of their Maximum Life per second, and Curses have 50% reduced effect on them)",
+          "(Allies on your Fungal Ground have +25% to Chaos Resistance. Enemies on your Fungal Ground have -10% to all Resistances.)"
+        ],
+        "recipe": [
+          "PrismaticOil"
+        ],
+        "is_notable": false,
+        "is_keystone": true,
+        "is_mastery": false,
+        "is_blighted": true,
+        "is_proxy": false,
+        "is_ascendancy_start": false,
+        "class_start_index": null,
+        "ascendancy_name": null
+      }
+    },
+    {
+      "source_id": "keystones:30847",
+      "source_name": "Nature's Patience",
+      "search_tags": [
+        "keystone",
+        "movement",
+        "movement_speed",
+        "natures",
+        "natures_patience",
+        "patience"
+      ],
+      "scaling_facets": [
+        {
+          "facet": "node_kind",
+          "values": [
+            "keystone"
+          ]
+        },
+        {
+          "facet": "mechanic",
+          "values": [
+            "movement"
+          ]
+        },
+        {
+          "facet": "scaling_stat",
+          "values": [
+            "movement_speed"
+          ]
+        }
+      ],
+      "supporting_text": [
+        "Nature's Patience",
+        "Gain 2 Grasping Vines each second while stationary\n2% chance to deal Double Damage per Grasping Vine\n1% less Damage taken per Grasping Vine",
+        "(Up to 10 Vines can grasp you, inflicting 8% less Movement Speed per Vine. Broken by moving)",
+        "To win, all you must do is outlast."
+      ],
+      "source_context": {
+        "node_id": 30847,
+        "skill_id": 30847,
+        "stats": [
+          "Gain 2 Grasping Vines each second while stationary\n2% chance to deal Double Damage per Grasping Vine\n1% less Damage taken per Grasping Vine"
+        ],
+        "reminder_text": [
+          "(Up to 10 Vines can grasp you, inflicting 8% less Movement Speed per Vine. Broken by moving)"
+        ],
+        "recipe": [],
+        "is_notable": false,
+        "is_keystone": true,
+        "is_mastery": false,
+        "is_blighted": false,
+        "is_proxy": false,
+        "is_ascendancy_start": false,
+        "class_start_index": null,
+        "ascendancy_name": null
+      }
+    },
+    {
+      "source_id": "keystones:31703",
+      "source_name": "Pain Attunement",
+      "search_tags": [
+        "attunement",
+        "keystone",
+        "life",
+        "pain",
+        "pain_attunement",
+        "spell"
+      ],
+      "scaling_facets": [
+        {
+          "facet": "node_kind",
+          "values": [
+            "keystone"
+          ]
+        },
+        {
+          "facet": "mechanic",
+          "values": [
+            "spell"
+          ]
+        },
+        {
+          "facet": "resource",
+          "values": [
+            "life"
+          ]
+        }
+      ],
+      "supporting_text": [
+        "Pain Attunement",
+        "30% more Spell Damage when on Low Life",
+        "Embrace the pain, drink it in.",
+        "Your enemies will know your agony tenfold."
+      ],
+      "source_context": {
+        "node_id": 31703,
+        "skill_id": 31703,
+        "stats": [
+          "30% more Spell Damage when on Low Life"
+        ],
+        "reminder_text": [],
+        "recipe": [],
+        "is_notable": false,
+        "is_keystone": true,
+        "is_mastery": false,
+        "is_blighted": false,
+        "is_proxy": false,
+        "is_ascendancy_start": false,
+        "class_start_index": null,
+        "ascendancy_name": null
+      }
+    },
+    {
+      "source_id": "keystones:31961",
+      "source_name": "Resolute Technique",
+      "search_tags": [
+        "keystone",
+        "resolute",
+        "resolute_technique",
+        "strike",
+        "technique"
+      ],
+      "scaling_facets": [
+        {
+          "facet": "node_kind",
+          "values": [
+            "keystone"
+          ]
+        },
+        {
+          "facet": "mechanic",
+          "values": [
+            "strike"
+          ]
+        }
+      ],
+      "supporting_text": [
+        "Resolute Technique",
+        "Your hits can't be Evaded\nNever deal Critical Strikes",
+        "Great tacticians learn that consistency often trumps potential."
+      ],
+      "source_context": {
+        "node_id": 31961,
+        "skill_id": 31961,
+        "stats": [
+          "Your hits can't be Evaded\nNever deal Critical Strikes"
+        ],
+        "reminder_text": [],
+        "recipe": [],
+        "is_notable": false,
+        "is_keystone": true,
+        "is_mastery": false,
+        "is_blighted": false,
+        "is_proxy": false,
+        "is_ascendancy_start": false,
+        "class_start_index": null,
+        "ascendancy_name": null
+      }
+    },
+    {
+      "source_id": "keystones:32118",
+      "source_name": "Veteran's Awareness",
+      "search_tags": [
+        "awareness",
+        "elemental",
+        "guard",
+        "keystone",
+        "physical",
+        "resistances",
+        "vaal",
+        "veterans",
+        "veterans_awareness"
+      ],
+      "scaling_facets": [
+        {
+          "facet": "node_kind",
+          "values": [
+            "keystone"
+          ]
+        },
+        {
+          "facet": "damage_type",
+          "values": [
+            "elemental",
+            "physical"
+          ]
+        },
+        {
+          "facet": "mechanic",
+          "values": [
+            "guard",
+            "vaal"
+          ]
+        },
+        {
+          "facet": "defence",
+          "values": [
+            "resistances"
+          ]
+        }
+      ],
+      "supporting_text": [
+        "Veteran's Awareness",
+        "+10% to all Elemental Resistances and maximum Elemental Resistances while affected by a Non-Vaal Guard Skill\n20% additional Physical Damage Reduction while affected by a Non-Vaal Guard Skill\n20% more Damage taken if a Non-Vaal Guard Buff was lost Recently",
+        "(Maximum Resistances cannot be raised above 90%)",
+        "(Recently refers to the past 4 seconds)",
+        "Know when you'll be hit, and you'll barely feel it."
+      ],
+      "source_context": {
+        "node_id": 32118,
+        "skill_id": 32118,
+        "stats": [
+          "+10% to all Elemental Resistances and maximum Elemental Resistances while affected by a Non-Vaal Guard Skill\n20% additional Physical Damage Reduction while affected by a Non-Vaal Guard Skill\n20% more Damage taken if a Non-Vaal Guard Buff was lost Recently"
+        ],
+        "reminder_text": [
+          "(Maximum Resistances cannot be raised above 90%)",
+          "(Recently refers to the past 4 seconds)"
+        ],
+        "recipe": [],
+        "is_notable": false,
+        "is_keystone": true,
+        "is_mastery": false,
+        "is_blighted": false,
+        "is_proxy": false,
+        "is_ascendancy_start": false,
+        "class_start_index": null,
+        "ascendancy_name": null
+      }
+    },
+    {
+      "source_id": "keystones:34098",
+      "source_name": "Mind Over Matter",
+      "search_tags": [
+        "keystone",
+        "life",
+        "mana",
+        "matter",
+        "mind",
+        "mind_over_matter",
+        "over"
+      ],
+      "scaling_facets": [
+        {
+          "facet": "node_kind",
+          "values": [
+            "keystone"
+          ]
+        },
+        {
+          "facet": "resource",
+          "values": [
+            "life",
+            "mana"
+          ]
+        }
+      ],
+      "supporting_text": [
+        "Mind Over Matter",
+        "40% of Damage is taken from Mana before Life",
+        "While the mind endures, so too will the body."
+      ],
+      "source_context": {
+        "node_id": 34098,
+        "skill_id": 34098,
+        "stats": [
+          "40% of Damage is taken from Mana before Life"
+        ],
+        "reminder_text": [],
+        "recipe": [],
+        "is_notable": false,
+        "is_keystone": true,
+        "is_mastery": false,
+        "is_blighted": false,
+        "is_proxy": false,
+        "is_ascendancy_start": false,
+        "class_start_index": null,
+        "ascendancy_name": null
+      }
+    },
+    {
+      "source_id": "keystones:35255",
+      "source_name": "Ghost Dance",
+      "search_tags": [
+        "dance",
+        "energy_shield",
+        "evasion",
+        "ghost",
+        "ghost_dance",
+        "keystone",
+        "recovery",
+        "shield"
+      ],
+      "scaling_facets": [
+        {
+          "facet": "node_kind",
+          "values": [
+            "keystone"
+          ]
+        },
+        {
+          "facet": "weapon",
+          "values": [
+            "shield"
+          ]
+        },
+        {
+          "facet": "resource",
+          "values": [
+            "energy_shield",
+            "recovery"
+          ]
+        },
+        {
+          "facet": "defence",
+          "values": [
+            "energy_shield",
+            "evasion"
+          ]
+        },
+        {
+          "facet": "scaling_stat",
+          "values": [
+            "energy_shield",
+            "evasion"
+          ]
+        }
+      ],
+      "supporting_text": [
+        "Ghost Dance",
+        "Cannot Recover Energy Shield to above Evasion Rating\nEvery 2 seconds, gain a Ghost Shroud, up to a maximum of 3\nWhen Hit, lose a Ghost Shroud to Recover Energy Shield equal to 3% of your Evasion Rating",
+        "Surround yourself with the dead,",
+        "so that you may avoid joining them."
+      ],
+      "source_context": {
+        "node_id": 35255,
+        "skill_id": 35255,
+        "stats": [
+          "Cannot Recover Energy Shield to above Evasion Rating\nEvery 2 seconds, gain a Ghost Shroud, up to a maximum of 3\nWhen Hit, lose a Ghost Shroud to Recover Energy Shield equal to 3% of your Evasion Rating"
+        ],
+        "reminder_text": [],
+        "recipe": [],
+        "is_notable": false,
+        "is_keystone": true,
+        "is_mastery": false,
+        "is_blighted": false,
+        "is_proxy": false,
+        "is_ascendancy_start": false,
+        "class_start_index": null,
+        "ascendancy_name": null
+      }
+    },
+    {
+      "source_id": "keystones:37081",
+      "source_name": "Pitfighter",
+      "search_tags": [
+        "keystone",
+        "pitfighter",
+        "strength"
+      ],
+      "scaling_facets": [
+        {
+          "facet": "node_kind",
+          "values": [
+            "keystone"
+          ]
+        },
+        {
+          "facet": "attribute",
+          "values": [
+            "strength"
+          ]
+        }
+      ],
+      "supporting_text": [
+        "Pitfighter",
+        "1% increased Fishing Line Strength",
+        "When winning is all that matters, you'll use everything at your disposal."
+      ],
+      "source_context": {
+        "node_id": 37081,
+        "skill_id": 37081,
+        "stats": [
+          "1% increased Fishing Line Strength"
+        ],
+        "reminder_text": [],
+        "recipe": [],
+        "is_notable": false,
+        "is_keystone": true,
+        "is_mastery": false,
+        "is_blighted": false,
+        "is_proxy": false,
+        "is_ascendancy_start": false,
+        "class_start_index": null,
+        "ascendancy_name": null
+      }
+    },
+    {
+      "source_id": "keystones:39085",
+      "source_name": "Elemental Equilibrium",
+      "search_tags": [
+        "elemental",
+        "elemental_equilibrium",
+        "equilibrium",
+        "exposure",
+        "keystone",
+        "resistances"
+      ],
+      "scaling_facets": [
+        {
+          "facet": "node_kind",
+          "values": [
+            "keystone"
+          ]
+        },
+        {
+          "facet": "damage_type",
+          "values": [
+            "elemental"
+          ]
+        },
+        {
+          "facet": "defence",
+          "values": [
+            "resistances"
+          ]
+        },
+        {
+          "facet": "ailment",
+          "values": [
+            "exposure"
+          ]
+        }
+      ],
+      "supporting_text": [
+        "Elemental Equilibrium",
+        "Hits that deal Elemental Damage remove Exposure to those Elements and inflict Exposure to other Elements\nExposure inflicted this way applies -25% to Resistances",
+        "Balance is good in all things, but especially in the realm of magic."
+      ],
+      "source_context": {
+        "node_id": 39085,
+        "skill_id": 39085,
+        "stats": [
+          "Hits that deal Elemental Damage remove Exposure to those Elements and inflict Exposure to other Elements\nExposure inflicted this way applies -25% to Resistances"
+        ],
+        "reminder_text": [],
+        "recipe": [],
+        "is_notable": false,
+        "is_keystone": true,
+        "is_mastery": false,
+        "is_blighted": false,
+        "is_proxy": false,
+        "is_ascendancy_start": false,
+        "class_start_index": null,
+        "ascendancy_name": null
+      }
+    },
+    {
+      "source_id": "keystones:39713",
+      "source_name": "Glancing Blows",
+      "search_tags": [
+        "attack",
+        "block",
+        "block_chance",
+        "blows",
+        "glancing",
+        "glancing_blows",
+        "keystone",
+        "spell"
+      ],
+      "scaling_facets": [
+        {
+          "facet": "node_kind",
+          "values": [
+            "keystone"
+          ]
+        },
+        {
+          "facet": "mechanic",
+          "values": [
+            "attack",
+            "spell"
+          ]
+        },
+        {
+          "facet": "defence",
+          "values": [
+            "block"
+          ]
+        },
+        {
+          "facet": "scaling_stat",
+          "values": [
+            "block_chance"
+          ]
+        }
+      ],
+      "supporting_text": [
+        "Glancing Blows",
+        "Chance to Block Attack Damage is doubled\nChance to Block Spell Damage is doubled\nYou take 65% of Damage from Blocked Hits",
+        "Utter trust in your defence unleashes ultimate potential."
+      ],
+      "source_context": {
+        "node_id": 39713,
+        "skill_id": 39713,
+        "stats": [
+          "Chance to Block Attack Damage is doubled\nChance to Block Spell Damage is doubled\nYou take 65% of Damage from Blocked Hits"
+        ],
+        "reminder_text": [],
+        "recipe": [],
+        "is_notable": false,
+        "is_keystone": true,
+        "is_mastery": false,
+        "is_blighted": false,
+        "is_proxy": false,
+        "is_ascendancy_start": false,
+        "class_start_index": null,
+        "ascendancy_name": null
+      }
+    },
+    {
+      "source_id": "keystones:40351",
+      "source_name": "Roiling Tempest",
+      "search_tags": [
+        "keystone",
+        "lightning",
+        "roiling",
+        "roiling_tempest",
+        "tempest"
+      ],
+      "scaling_facets": [
+        {
+          "facet": "node_kind",
+          "values": [
+            "keystone"
+          ]
+        },
+        {
+          "facet": "damage_type",
+          "values": [
+            "lightning"
+          ]
+        }
+      ],
+      "supporting_text": [
+        "Roiling Tempest",
+        "25% more Maximum Lightning Damage\n50% less Minimum Lightning Damage\nCannot deal non-Lightning Damage",
+        "Where you step, the sky darkens."
+      ],
+      "source_context": {
+        "node_id": 40351,
+        "skill_id": 40351,
+        "stats": [
+          "25% more Maximum Lightning Damage\n50% less Minimum Lightning Damage\nCannot deal non-Lightning Damage"
+        ],
+        "reminder_text": [],
+        "recipe": [],
+        "is_notable": false,
+        "is_keystone": true,
+        "is_mastery": false,
+        "is_blighted": false,
+        "is_proxy": false,
+        "is_ascendancy_start": false,
+        "class_start_index": null,
+        "ascendancy_name": null
+      }
+    },
+    {
+      "source_id": "keystones:40561",
+      "source_name": "Kineticism",
+      "search_tags": [
+        "attack",
+        "bleed",
+        "chaining",
+        "damage_over_time",
+        "keystone",
+        "kineticism",
+        "movement",
+        "movement_speed",
+        "physical",
+        "projectile"
+      ],
+      "scaling_facets": [
+        {
+          "facet": "node_kind",
+          "values": [
+            "keystone"
+          ]
+        },
+        {
+          "facet": "damage_type",
+          "values": [
+            "physical"
+          ]
+        },
+        {
+          "facet": "mechanic",
+          "values": [
+            "attack",
+            "chaining",
+            "movement",
+            "projectile"
+          ]
+        },
+        {
+          "facet": "ailment",
+          "values": [
+            "bleed"
+          ]
+        },
+        {
+          "facet": "scaling_stat",
+          "values": [
+            "damage_over_time",
+            "movement_speed"
+          ]
+        }
+      ],
+      "supporting_text": [
+        "Kineticism",
+        "Attack Projectiles always inflict Bleeding and Maim, and Knock Back Enemies\nProjectiles cannot Pierce, Fork or Chain",
+        "(Bleeding deals Physical Damage over time, based on the base Physical Damage of the Skill. Damage is 200% higher while moving)",
+        "(Maimed enemies have 30% reduced Movement Speed)",
+        "No force wasted, no time wasted."
+      ],
+      "source_context": {
+        "node_id": 40561,
+        "skill_id": 40561,
+        "stats": [
+          "Attack Projectiles always inflict Bleeding and Maim, and Knock Back Enemies\nProjectiles cannot Pierce, Fork or Chain"
+        ],
+        "reminder_text": [
+          "(Bleeding deals Physical Damage over time, based on the base Physical Damage of the Skill. Damage is 200% higher while moving)",
+          "(Maimed enemies have 30% reduced Movement Speed)"
+        ],
+        "recipe": [],
+        "is_notable": false,
+        "is_keystone": true,
+        "is_mastery": false,
+        "is_blighted": false,
+        "is_proxy": false,
+        "is_ascendancy_start": false,
+        "class_start_index": null,
+        "ascendancy_name": null
+      }
+    },
+    {
+      "source_id": "keystones:40907",
+      "source_name": "Unwavering Stance",
+      "search_tags": [
+        "attack",
+        "keystone",
+        "stance",
+        "stun",
+        "unwavering",
+        "unwavering_stance"
+      ],
+      "scaling_facets": [
+        {
+          "facet": "node_kind",
+          "values": [
+            "keystone"
+          ]
+        },
+        {
+          "facet": "mechanic",
+          "values": [
+            "attack",
+            "stance"
+          ]
+        },
+        {
+          "facet": "ailment",
+          "values": [
+            "stun"
+          ]
+        }
+      ],
+      "supporting_text": [
+        "Unwavering Stance",
+        "Cannot Evade enemy Attacks\nCannot be Stunned",
+        "Stand your ground, child, keep your senses.",
+        "The pain is fleeting, but victory is forever."
+      ],
+      "source_context": {
+        "node_id": 40907,
+        "skill_id": 40907,
+        "stats": [
+          "Cannot Evade enemy Attacks\nCannot be Stunned"
+        ],
+        "reminder_text": [],
+        "recipe": [],
+        "is_notable": false,
+        "is_keystone": true,
+        "is_mastery": false,
+        "is_blighted": false,
+        "is_proxy": false,
+        "is_ascendancy_start": false,
+        "class_start_index": null,
+        "ascendancy_name": null
+      }
+    },
+    {
+      "source_id": "keystones:41970",
+      "source_name": "Ancestral Bond",
+      "search_tags": [
+        "ancestral",
+        "ancestral_bond",
+        "bond",
+        "keystone",
+        "totem"
+      ],
+      "scaling_facets": [
+        {
+          "facet": "node_kind",
+          "values": [
+            "keystone"
+          ]
+        },
+        {
+          "facet": "mechanic",
+          "values": [
+            "totem"
+          ]
+        }
+      ],
+      "supporting_text": [
+        "Ancestral Bond",
+        "You can't deal Damage with Skills yourself\n+1 to maximum number of Summoned Totems",
+        "A wooden construct, mute and blind.",
+        "But fear the wrath of shackled mind."
+      ],
+      "source_context": {
+        "node_id": 41970,
+        "skill_id": 41970,
+        "stats": [
+          "You can't deal Damage with Skills yourself\n+1 to maximum number of Summoned Totems"
+        ],
+        "reminder_text": [],
+        "recipe": [],
+        "is_notable": false,
+        "is_keystone": true,
+        "is_mastery": false,
+        "is_blighted": false,
+        "is_proxy": false,
+        "is_ascendancy_start": false,
+        "class_start_index": null,
+        "ascendancy_name": null
+      }
+    },
+    {
+      "source_id": "keystones:42178",
+      "source_name": "Point Blank",
+      "search_tags": [
+        "attack",
+        "blank",
+        "keystone",
+        "movement",
+        "point",
+        "point_blank",
+        "projectile"
+      ],
+      "scaling_facets": [
+        {
+          "facet": "node_kind",
+          "values": [
+            "keystone"
+          ]
+        },
+        {
+          "facet": "mechanic",
+          "values": [
+            "attack",
+            "movement",
+            "projectile"
+          ]
+        }
+      ],
+      "supporting_text": [
+        "Point Blank",
+        "Projectile Attack Hits deal up to 30% more Damage to targets at the start of their movement, dealing less Damage to targets as the projectile travels farther",
+        "Look your foe in the eyes before you pierce him. Delight in his fear."
+      ],
+      "source_context": {
+        "node_id": 42178,
+        "skill_id": 42178,
+        "stats": [
+          "Projectile Attack Hits deal up to 30% more Damage to targets at the start of their movement, dealing less Damage to targets as the projectile travels farther"
+        ],
+        "reminder_text": [],
+        "recipe": [],
+        "is_notable": false,
+        "is_keystone": true,
+        "is_mastery": false,
+        "is_blighted": false,
+        "is_proxy": false,
+        "is_ascendancy_start": false,
+        "class_start_index": null,
+        "ascendancy_name": null
+      }
+    },
+    {
+      "source_id": "keystones:42343",
+      "source_name": "Runebinder",
+      "search_tags": [
+        "brand",
+        "keystone",
+        "runebinder",
+        "totem"
+      ],
+      "scaling_facets": [
+        {
+          "facet": "node_kind",
+          "values": [
+            "keystone"
+          ]
+        },
+        {
+          "facet": "mechanic",
+          "values": [
+            "brand",
+            "totem"
+          ]
+        }
+      ],
+      "supporting_text": [
+        "Runebinder",
+        "-1 to maximum number of Summoned Totems\nYou can have an additional Brand Attached to an Enemy",
+        "An arcane pattern, secrets bound. Blind truth splinters with lies abound."
+      ],
+      "source_context": {
+        "node_id": 42343,
+        "skill_id": 42343,
+        "stats": [
+          "-1 to maximum number of Summoned Totems\nYou can have an additional Brand Attached to an Enemy"
+        ],
+        "reminder_text": [],
+        "recipe": [],
+        "is_notable": false,
+        "is_keystone": true,
+        "is_mastery": false,
+        "is_blighted": false,
+        "is_proxy": false,
+        "is_ascendancy_start": false,
+        "class_start_index": null,
+        "ascendancy_name": null
+      }
+    },
+    {
+      "source_id": "keystones:43988",
+      "source_name": "Hex Master",
+      "search_tags": [
+        "curse",
+        "duration",
+        "hex",
+        "hex_master",
+        "keystone",
+        "master"
+      ],
+      "scaling_facets": [
+        {
+          "facet": "node_kind",
+          "values": [
+            "keystone"
+          ]
+        },
+        {
+          "facet": "mechanic",
+          "values": [
+            "curse",
+            "duration",
+            "hex"
+          ]
+        },
+        {
+          "facet": "scaling_stat",
+          "values": [
+            "duration"
+          ]
+        }
+      ],
+      "supporting_text": [
+        "Hex Master",
+        "Your Hexes have infinite Duration\n20% less Effect of your Curses",
+        "Hear these words but once and they will echo in your nightmares forever."
+      ],
+      "source_context": {
+        "node_id": 43988,
+        "skill_id": 43988,
+        "stats": [
+          "Your Hexes have infinite Duration\n20% less Effect of your Curses"
+        ],
+        "reminder_text": [],
+        "recipe": [],
+        "is_notable": false,
+        "is_keystone": true,
+        "is_mastery": false,
+        "is_blighted": false,
+        "is_proxy": false,
+        "is_ascendancy_start": false,
+        "class_start_index": null,
+        "ascendancy_name": null
+      }
+    },
+    {
+      "source_id": "keystones:44941",
+      "source_name": "Avatar of Fire",
+      "search_tags": [
+        "avatar",
+        "avatar_of_fire",
+        "cold",
+        "fire",
+        "keystone",
+        "lightning",
+        "physical",
+        "scorch"
+      ],
+      "scaling_facets": [
+        {
+          "facet": "node_kind",
+          "values": [
+            "keystone"
+          ]
+        },
+        {
+          "facet": "damage_type",
+          "values": [
+            "cold",
+            "fire",
+            "lightning",
+            "physical"
+          ]
+        },
+        {
+          "facet": "ailment",
+          "values": [
+            "scorch"
+          ]
+        }
+      ],
+      "supporting_text": [
+        "Avatar of Fire",
+        "50% of Physical, Cold and Lightning Damage Converted to Fire Damage\nDeal no Non-Fire Damage",
+        "\"In my dreams I see a great warrior, his skin scorched black, his fists aflame.\""
+      ],
+      "source_context": {
+        "node_id": 44941,
+        "skill_id": 44941,
+        "stats": [
+          "50% of Physical, Cold and Lightning Damage Converted to Fire Damage\nDeal no Non-Fire Damage"
+        ],
+        "reminder_text": [],
+        "recipe": [],
+        "is_notable": false,
+        "is_keystone": true,
+        "is_mastery": false,
+        "is_blighted": false,
+        "is_proxy": false,
+        "is_ascendancy_start": false,
+        "class_start_index": null,
+        "ascendancy_name": null
+      }
+    },
+    {
+      "source_id": "keystones:45175",
+      "source_name": "Necromantic Aegis",
+      "search_tags": [
+        "aegis",
+        "keystone",
+        "minion",
+        "necromantic",
+        "necromantic_aegis",
+        "shield",
+        "strength"
+      ],
+      "scaling_facets": [
+        {
+          "facet": "node_kind",
+          "values": [
+            "keystone"
+          ]
+        },
+        {
+          "facet": "attribute",
+          "values": [
+            "strength"
+          ]
+        },
+        {
+          "facet": "mechanic",
+          "values": [
+            "minion"
+          ]
+        },
+        {
+          "facet": "weapon",
+          "values": [
+            "shield"
+          ]
+        }
+      ],
+      "supporting_text": [
+        "Necromantic Aegis",
+        "All bonuses from an Equipped Shield apply to your Minions instead of you",
+        "I give you everything, my pets. My trust, my strength, my safety. Do not disappoint me."
+      ],
+      "source_context": {
+        "node_id": 45175,
+        "skill_id": 45175,
+        "stats": [
+          "All bonuses from an Equipped Shield apply to your Minions instead of you"
+        ],
+        "reminder_text": [],
+        "recipe": [],
+        "is_notable": false,
+        "is_keystone": true,
+        "is_mastery": false,
+        "is_blighted": false,
+        "is_proxy": false,
+        "is_ascendancy_start": false,
+        "class_start_index": null,
+        "ascendancy_name": null
+      }
+    },
+    {
+      "source_id": "keystones:49639",
+      "source_name": "Supreme Ego",
+      "search_tags": [
+        "aura",
+        "aura_effect",
+        "ego",
+        "keystone",
+        "mana",
+        "reservation",
+        "supreme",
+        "supreme_ego"
+      ],
+      "scaling_facets": [
+        {
+          "facet": "node_kind",
+          "values": [
+            "keystone"
+          ]
+        },
+        {
+          "facet": "mechanic",
+          "values": [
+            "aura"
+          ]
+        },
+        {
+          "facet": "resource",
+          "values": [
+            "mana",
+            "reservation"
+          ]
+        },
+        {
+          "facet": "scaling_stat",
+          "values": [
+            "aura_effect"
+          ]
+        }
+      ],
+      "supporting_text": [
+        "Supreme Ego",
+        "Auras from your Skills can only affect you\nAura Skills have 1% more Aura Effect per 2% of maximum Mana they Reserve\n40% more Mana Reservation of Aura Skills",
+        "You are the heart of the empire, shining bright so that all are lifted up by your light.",
+        "Let none tell you otherwise."
+      ],
+      "source_context": {
+        "node_id": 49639,
+        "skill_id": 49639,
+        "stats": [
+          "Auras from your Skills can only affect you\nAura Skills have 1% more Aura Effect per 2% of maximum Mana they Reserve\n40% more Mana Reservation of Aura Skills"
+        ],
+        "reminder_text": [],
+        "recipe": [],
+        "is_notable": false,
+        "is_keystone": true,
+        "is_mastery": false,
+        "is_blighted": false,
+        "is_proxy": false,
+        "is_ascendancy_start": false,
+        "class_start_index": null,
+        "ascendancy_name": null
+      }
+    },
+    {
+      "source_id": "keystones:50288",
+      "source_name": "Iron Will",
+      "search_tags": [
+        "iron",
+        "iron_will",
+        "keystone",
+        "spell",
+        "will"
+      ],
+      "scaling_facets": [
+        {
+          "facet": "node_kind",
+          "values": [
+            "keystone"
+          ]
+        },
+        {
+          "facet": "mechanic",
+          "values": [
+            "spell"
+          ]
+        }
+      ],
+      "supporting_text": [
+        "Iron Will",
+        "Strength's Damage bonus applies to all Spell Damage as well",
+        "Legend tells of incantations so powerful that only giants could recite them."
+      ],
+      "source_context": {
+        "node_id": 50288,
+        "skill_id": 50288,
+        "stats": [
+          "Strength's Damage bonus applies to all Spell Damage as well"
+        ],
+        "reminder_text": [],
+        "recipe": [],
+        "is_notable": false,
+        "is_keystone": true,
+        "is_mastery": false,
+        "is_blighted": false,
+        "is_proxy": false,
+        "is_ascendancy_start": false,
+        "class_start_index": null,
+        "ascendancy_name": null
+      }
+    },
+    {
+      "source_id": "keystones:50679",
+      "source_name": "Versatile Combatant",
+      "search_tags": [
+        "attack",
+        "block",
+        "block_chance",
+        "combatant",
+        "keystone",
+        "spell",
+        "versatile",
+        "versatile_combatant"
+      ],
+      "scaling_facets": [
+        {
+          "facet": "node_kind",
+          "values": [
+            "keystone"
+          ]
+        },
+        {
+          "facet": "mechanic",
+          "values": [
+            "attack",
+            "spell"
+          ]
+        },
+        {
+          "facet": "defence",
+          "values": [
+            "block"
+          ]
+        },
+        {
+          "facet": "scaling_stat",
+          "values": [
+            "block_chance"
+          ]
+        }
+      ],
+      "supporting_text": [
+        "Versatile Combatant",
+        "-10% to maximum Chance to Block Attack Damage\n-10% to maximum Chance to Block Spell Damage\n+2% Chance to Block Spell Damage for each 1% Overcapped Chance to Block Attack Damage",
+        "(Overcapped Chance to Block is the amount by which Uncapped Chance to Block is higher than Maximum Chance to Block)",
+        "(Uncapped Chance to Block is the value Chance to Block would have if ignoring Maximum Chance to Block)",
+        "To master the arena, you must be prepared for anything."
+      ],
+      "source_context": {
+        "node_id": 50679,
+        "skill_id": 50679,
+        "stats": [
+          "-10% to maximum Chance to Block Attack Damage\n-10% to maximum Chance to Block Spell Damage\n+2% Chance to Block Spell Damage for each 1% Overcapped Chance to Block Attack Damage"
+        ],
+        "reminder_text": [
+          "(Overcapped Chance to Block is the amount by which Uncapped Chance to Block is higher than Maximum Chance to Block)",
+          "(Uncapped Chance to Block is the value Chance to Block would have if ignoring Maximum Chance to Block)"
+        ],
+        "recipe": [],
+        "is_notable": false,
+        "is_keystone": true,
+        "is_mastery": false,
+        "is_blighted": false,
+        "is_proxy": false,
+        "is_ascendancy_start": false,
+        "class_start_index": null,
+        "ascendancy_name": null
+      }
+    },
+    {
+      "source_id": "keystones:54307",
+      "source_name": "Acrobatics",
+      "search_tags": [
+        "acrobatics",
+        "keystone",
+        "spell"
+      ],
+      "scaling_facets": [
+        {
+          "facet": "node_kind",
+          "values": [
+            "keystone"
+          ]
+        },
+        {
+          "facet": "mechanic",
+          "values": [
+            "spell"
+          ]
+        }
+      ],
+      "supporting_text": [
+        "Acrobatics",
+        "Modifiers to Chance to Suppress Spell Damage instead apply to Chance to Dodge Spell Hits at 50% of their value\nMaximum Chance to Dodge Spell Hits is 75%",
+        "Light and unadorned, like wind on water, you will be."
+      ],
+      "source_context": {
+        "node_id": 54307,
+        "skill_id": 54307,
+        "stats": [
+          "Modifiers to Chance to Suppress Spell Damage instead apply to Chance to Dodge Spell Hits at 50% of their value\nMaximum Chance to Dodge Spell Hits is 75%"
+        ],
+        "reminder_text": [],
+        "recipe": [],
+        "is_notable": false,
+        "is_keystone": true,
+        "is_mastery": false,
+        "is_blighted": false,
+        "is_proxy": false,
+        "is_ascendancy_start": false,
+        "class_start_index": null,
+        "ascendancy_name": null
+      }
+    },
+    {
+      "source_id": "keystones:54922",
+      "source_name": "Arrow Dancing",
+      "search_tags": [
+        "arrow",
+        "arrow_dancing",
+        "attack",
+        "dancing",
+        "evasion",
+        "keystone",
+        "melee",
+        "projectile"
+      ],
+      "scaling_facets": [
+        {
+          "facet": "node_kind",
+          "values": [
+            "keystone"
+          ]
+        },
+        {
+          "facet": "mechanic",
+          "values": [
+            "attack",
+            "melee",
+            "projectile"
+          ]
+        },
+        {
+          "facet": "defence",
+          "values": [
+            "evasion"
+          ]
+        },
+        {
+          "facet": "scaling_stat",
+          "values": [
+            "evasion"
+          ]
+        }
+      ],
+      "supporting_text": [
+        "Arrow Dancing",
+        "Evasion Rating is Doubled against Projectile Attacks\n25% less Evasion Rating against Melee Attacks",
+        "Let the whistling of arrows and stones be your music."
+      ],
+      "source_context": {
+        "node_id": 54922,
+        "skill_id": 54922,
+        "stats": [
+          "Evasion Rating is Doubled against Projectile Attacks\n25% less Evasion Rating against Melee Attacks"
+        ],
+        "reminder_text": [],
+        "recipe": [],
+        "is_notable": false,
+        "is_keystone": true,
+        "is_mastery": false,
+        "is_blighted": false,
+        "is_proxy": false,
+        "is_ascendancy_start": false,
+        "class_start_index": null,
+        "ascendancy_name": null
+      }
+    },
+    {
+      "source_id": "keystones:56075",
+      "source_name": "Eldritch Battery",
+      "search_tags": [
+        "battery",
+        "cost",
+        "eldritch",
+        "eldritch_battery",
+        "energy_shield",
+        "keystone",
+        "life",
+        "mana",
+        "shield"
+      ],
+      "scaling_facets": [
+        {
+          "facet": "node_kind",
+          "values": [
+            "keystone"
+          ]
+        },
+        {
+          "facet": "weapon",
+          "values": [
+            "shield"
+          ]
+        },
+        {
+          "facet": "resource",
+          "values": [
+            "cost",
+            "energy_shield",
+            "life",
+            "mana"
+          ]
+        },
+        {
+          "facet": "defence",
+          "values": [
+            "energy_shield"
+          ]
+        },
+        {
+          "facet": "scaling_stat",
+          "values": [
+            "energy_shield"
+          ]
+        }
+      ],
+      "supporting_text": [
+        "Eldritch Battery",
+        "Spend Energy Shield before Mana for Skill Mana Costs\nEnergy Shield protects Mana instead of Life\n50% less Energy Shield Recharge Rate",
+        "What need have I for defence when my enemies",
+        "are reduced to ash and splinters?"
+      ],
+      "source_context": {
+        "node_id": 56075,
+        "skill_id": 56075,
+        "stats": [
+          "Spend Energy Shield before Mana for Skill Mana Costs\nEnergy Shield protects Mana instead of Life\n50% less Energy Shield Recharge Rate"
+        ],
+        "reminder_text": [],
+        "recipe": [],
+        "is_notable": false,
+        "is_keystone": true,
+        "is_mastery": false,
+        "is_blighted": false,
+        "is_proxy": false,
+        "is_ascendancy_start": false,
+        "class_start_index": null,
+        "ascendancy_name": null
+      }
+    },
+    {
+      "source_id": "keystones:56116",
+      "source_name": "Magebane",
+      "search_tags": [
+        "dexterity",
+        "evasion",
+        "keystone",
+        "magebane",
+        "spell"
+      ],
+      "scaling_facets": [
+        {
+          "facet": "node_kind",
+          "values": [
+            "keystone"
+          ]
+        },
+        {
+          "facet": "attribute",
+          "values": [
+            "dexterity"
+          ]
+        },
+        {
+          "facet": "mechanic",
+          "values": [
+            "spell"
+          ]
+        },
+        {
+          "facet": "defence",
+          "values": [
+            "evasion"
+          ]
+        },
+        {
+          "facet": "scaling_stat",
+          "values": [
+            "evasion"
+          ]
+        }
+      ],
+      "supporting_text": [
+        "Magebane",
+        "Dexterity provides no inherent bonus to Evasion Rating\n+1% Chance to Suppress Spell Damage per 15 Dexterity",
+        "(40% of Damage from Suppressed Hits and Ailments they inflict is prevented)",
+        "To avert a mystical assault, you must be absolutely still."
+      ],
+      "source_context": {
+        "node_id": 56116,
+        "skill_id": 56116,
+        "stats": [
+          "Dexterity provides no inherent bonus to Evasion Rating\n+1% Chance to Suppress Spell Damage per 15 Dexterity"
+        ],
+        "reminder_text": [
+          "(40% of Damage from Suppressed Hits and Ailments they inflict is prevented)"
+        ],
+        "recipe": [],
+        "is_notable": false,
+        "is_keystone": true,
+        "is_mastery": false,
+        "is_blighted": false,
+        "is_proxy": false,
+        "is_ascendancy_start": false,
+        "class_start_index": null,
+        "ascendancy_name": null
+      }
+    },
+    {
+      "source_id": "keystones:57257",
+      "source_name": "The Impaler",
+      "search_tags": [
+        "impale",
+        "impaler",
+        "keystone",
+        "the_impaler"
+      ],
+      "scaling_facets": [
+        {
+          "facet": "node_kind",
+          "values": [
+            "keystone"
+          ]
+        },
+        {
+          "facet": "ailment",
+          "values": [
+            "impale"
+          ]
+        }
+      ],
+      "supporting_text": [
+        "The Impaler",
+        "When your Hits Impale Enemies, also Impale other Enemies near them\nInflict 5 additional Impales on Enemies you Impale\nFor 5 seconds after you Impale Enemies, they cannot be Impaled again, and Impales cannot be Called from them",
+        "Punish your enemies with the excessive cruelty of a tyrant,",
+        "then move on without a second thought."
+      ],
+      "source_context": {
+        "node_id": 57257,
+        "skill_id": 57257,
+        "stats": [
+          "When your Hits Impale Enemies, also Impale other Enemies near them\nInflict 5 additional Impales on Enemies you Impale\nFor 5 seconds after you Impale Enemies, they cannot be Impaled again, and Impales cannot be Called from them"
+        ],
+        "reminder_text": [],
+        "recipe": [],
+        "is_notable": false,
+        "is_keystone": true,
+        "is_mastery": false,
+        "is_blighted": false,
+        "is_proxy": false,
+        "is_ascendancy_start": false,
+        "class_start_index": null,
+        "ascendancy_name": null
+      }
+    },
+    {
+      "source_id": "keystones:57279",
+      "source_name": "Blood Magic",
+      "search_tags": [
+        "blood",
+        "blood_magic",
+        "cost",
+        "keystone",
+        "life",
+        "magic",
+        "mana"
+      ],
+      "scaling_facets": [
+        {
+          "facet": "node_kind",
+          "values": [
+            "keystone"
+          ]
+        },
+        {
+          "facet": "resource",
+          "values": [
+            "cost",
+            "life",
+            "mana"
+          ]
+        }
+      ],
+      "supporting_text": [
+        "Blood Magic",
+        "Removes all mana\n10% more maximum Life\nSkills Cost Life instead of Mana\nSkills Reserve Life instead of Mana",
+        "Lay open your veins, and draw power from your own spilled life."
+      ],
+      "source_context": {
+        "node_id": 57279,
+        "skill_id": 57279,
+        "stats": [
+          "Removes all mana\n10% more maximum Life\nSkills Cost Life instead of Mana\nSkills Reserve Life instead of Mana"
+        ],
+        "reminder_text": [],
+        "recipe": [],
+        "is_notable": false,
+        "is_keystone": true,
+        "is_mastery": false,
+        "is_blighted": false,
+        "is_proxy": false,
+        "is_ascendancy_start": false,
+        "class_start_index": null,
+        "ascendancy_name": null
+      }
+    },
+    {
+      "source_id": "keystones:57280",
+      "source_name": "Secrets of Suffering",
+      "search_tags": [
+        "brittle",
+        "chill",
+        "cold",
+        "critical_strike_chance",
+        "elemental",
+        "fire",
+        "freeze",
+        "ignite",
+        "keystone",
+        "lightning",
+        "resistances",
+        "sap",
+        "scorch",
+        "secrets",
+        "secrets_of_suffering",
+        "shock",
+        "strike",
+        "suffering"
+      ],
+      "scaling_facets": [
+        {
+          "facet": "node_kind",
+          "values": [
+            "keystone"
+          ]
+        },
+        {
+          "facet": "damage_type",
+          "values": [
+            "cold",
+            "elemental",
+            "fire",
+            "lightning"
+          ]
+        },
+        {
+          "facet": "mechanic",
+          "values": [
+            "strike"
+          ]
+        },
+        {
+          "facet": "defence",
+          "values": [
+            "resistances"
+          ]
+        },
+        {
+          "facet": "ailment",
+          "values": [
+            "brittle",
+            "chill",
+            "freeze",
+            "ignite",
+            "sap",
+            "scorch",
+            "shock"
+          ]
+        },
+        {
+          "facet": "scaling_stat",
+          "values": [
+            "critical_strike_chance"
+          ]
+        }
+      ],
+      "supporting_text": [
+        "Secrets of Suffering",
+        "Cannot Ignite, Chill, Freeze or Shock\nCritical Strikes inflict Scorch, Brittle and Sapped",
+        "(Scorched Enemies have their Elemental Resistances lowered by up to 30%, based on the Fire Damage of the Hit, for 4 seconds)",
+        "(Hits have up to +6% Critical Strike Chance against Brittle Enemies, based on the Cold Damage of the Hit which inflicted Brittle, for 4 seconds)",
+        "(Sapped Enemies deal up to 20% less Damage, based on the Lightning Damage of the Hit, for 4 seconds)",
+        "Even within the realm of torture, there are subtle intricacies."
+      ],
+      "source_context": {
+        "node_id": 57280,
+        "skill_id": 57280,
+        "stats": [
+          "Cannot Ignite, Chill, Freeze or Shock\nCritical Strikes inflict Scorch, Brittle and Sapped"
+        ],
+        "reminder_text": [
+          "(Scorched Enemies have their Elemental Resistances lowered by up to 30%, based on the Fire Damage of the Hit, for 4 seconds)",
+          "(Hits have up to +6% Critical Strike Chance against Brittle Enemies, based on the Cold Damage of the Hit which inflicted Brittle, for 4 seconds)",
+          "(Sapped Enemies deal up to 20% less Damage, based on the Lightning Damage of the Hit, for 4 seconds)"
+        ],
+        "recipe": [],
+        "is_notable": false,
+        "is_keystone": true,
+        "is_mastery": false,
+        "is_blighted": false,
+        "is_proxy": false,
+        "is_ascendancy_start": false,
+        "class_start_index": null,
+        "ascendancy_name": null
+      }
+    },
+    {
+      "source_id": "keystones:58556",
+      "source_name": "Divine Shield",
+      "search_tags": [
+        "armour",
+        "divine",
+        "divine_shield",
+        "energy_shield",
+        "keystone",
+        "physical",
+        "recovery",
+        "regeneration",
+        "shield"
+      ],
+      "scaling_facets": [
+        {
+          "facet": "node_kind",
+          "values": [
+            "keystone"
+          ]
+        },
+        {
+          "facet": "damage_type",
+          "values": [
+            "physical"
+          ]
+        },
+        {
+          "facet": "weapon",
+          "values": [
+            "shield"
+          ]
+        },
+        {
+          "facet": "resource",
+          "values": [
+            "energy_shield",
+            "recovery",
+            "regeneration"
+          ]
+        },
+        {
+          "facet": "defence",
+          "values": [
+            "armour",
+            "energy_shield"
+          ]
+        },
+        {
+          "facet": "scaling_stat",
+          "values": [
+            "armour",
+            "energy_shield"
+          ]
+        }
+      ],
+      "supporting_text": [
+        "Divine Shield",
+        "Cannot Recover Energy Shield to above Armour\n3% of Physical Damage prevented from Hits Recently is Regenerated as Energy Shield per second",
+        "(Recently refers to the past 4 seconds)",
+        "My faith is my shield."
+      ],
+      "source_context": {
+        "node_id": 58556,
+        "skill_id": 58556,
+        "stats": [
+          "Cannot Recover Energy Shield to above Armour\n3% of Physical Damage prevented from Hits Recently is Regenerated as Energy Shield per second"
+        ],
+        "reminder_text": [
+          "(Recently refers to the past 4 seconds)"
+        ],
+        "recipe": [],
+        "is_notable": false,
+        "is_keystone": true,
+        "is_mastery": false,
+        "is_blighted": false,
+        "is_proxy": false,
+        "is_ascendancy_start": false,
+        "class_start_index": null,
+        "ascendancy_name": null
+      }
+    },
+    {
+      "source_id": "keystones:60069",
+      "source_name": "Hollow Palm Technique",
+      "search_tags": [
+        "attack",
+        "attack_speed",
+        "dexterity",
+        "dual_wield",
+        "hollow",
+        "hollow_palm_technique",
+        "keystone",
+        "melee",
+        "palm",
+        "physical",
+        "sword",
+        "technique"
+      ],
+      "scaling_facets": [
+        {
+          "facet": "node_kind",
+          "values": [
+            "keystone"
+          ]
+        },
+        {
+          "facet": "attribute",
+          "values": [
+            "dexterity"
+          ]
+        },
+        {
+          "facet": "damage_type",
+          "values": [
+            "physical"
+          ]
+        },
+        {
+          "facet": "mechanic",
+          "values": [
+            "attack",
+            "melee"
+          ]
+        },
+        {
+          "facet": "weapon",
+          "values": [
+            "dual_wield",
+            "sword"
+          ]
+        },
+        {
+          "facet": "scaling_stat",
+          "values": [
+            "attack_speed"
+          ]
+        }
+      ],
+      "supporting_text": [
+        "Hollow Palm Technique",
+        "You count as Dual Wielding while you are Unencumbered\n40% more Attack Speed with Melee Skills while you are Unencumbered\nAdds 14 to 20 Attack Physical Damage to Melee Skills per 10 Dexterity while you are Unencumbered",
+        "(You are Unencumbered while you have no Gloves, no Main Hand Item, and no Off Hand Item Equipped)",
+        "\"The mastodons of yore were each born with two weapons greater than any sword. So, too, were you.\" - Maraketh Proverb"
+      ],
+      "source_context": {
+        "node_id": 60069,
+        "skill_id": 60069,
+        "stats": [
+          "You count as Dual Wielding while you are Unencumbered\n40% more Attack Speed with Melee Skills while you are Unencumbered\nAdds 14 to 20 Attack Physical Damage to Melee Skills per 10 Dexterity while you are Unencumbered"
+        ],
+        "reminder_text": [
+          "(You are Unencumbered while you have no Gloves, no Main Hand Item, and no Off Hand Item Equipped)"
+        ],
+        "recipe": [],
+        "is_notable": false,
+        "is_keystone": true,
+        "is_mastery": false,
+        "is_blighted": false,
+        "is_proxy": false,
+        "is_ascendancy_start": false,
+        "class_start_index": null,
+        "ascendancy_name": null
+      }
+    },
+    {
+      "source_id": "keystones:60247",
+      "source_name": "Solipsism",
+      "search_tags": [
+        "brittle",
+        "chill",
+        "duration",
+        "elemental",
+        "energy_shield",
+        "freeze",
+        "ignite",
+        "intelligence",
+        "keystone",
+        "sap",
+        "scorch",
+        "shield",
+        "shock",
+        "solipsism"
+      ],
+      "scaling_facets": [
+        {
+          "facet": "node_kind",
+          "values": [
+            "keystone"
+          ]
+        },
+        {
+          "facet": "attribute",
+          "values": [
+            "intelligence"
+          ]
+        },
+        {
+          "facet": "damage_type",
+          "values": [
+            "elemental"
+          ]
+        },
+        {
+          "facet": "mechanic",
+          "values": [
+            "duration"
+          ]
+        },
+        {
+          "facet": "weapon",
+          "values": [
+            "shield"
+          ]
+        },
+        {
+          "facet": "resource",
+          "values": [
+            "energy_shield"
+          ]
+        },
+        {
+          "facet": "defence",
+          "values": [
+            "energy_shield"
+          ]
+        },
+        {
+          "facet": "ailment",
+          "values": [
+            "brittle",
+            "chill",
+            "freeze",
+            "ignite",
+            "sap",
+            "scorch",
+            "shock"
+          ]
+        },
+        {
+          "facet": "scaling_stat",
+          "values": [
+            "duration",
+            "energy_shield"
+          ]
+        }
+      ],
+      "supporting_text": [
+        "Solipsism",
+        "Intelligence provides no inherent bonus to Energy Shield\n2% reduced Duration of Elemental Ailments on you per 15 Intelligence",
+        "(Elemental Ailments are Ignited, Scorched, Chilled, Frozen, Brittle, Shocked, and Sapped)",
+        "To know yourself is to understand existence - and understanding brings control."
+      ],
+      "source_context": {
+        "node_id": 60247,
+        "skill_id": 60247,
+        "stats": [
+          "Intelligence provides no inherent bonus to Energy Shield\n2% reduced Duration of Elemental Ailments on you per 15 Intelligence"
+        ],
+        "reminder_text": [
+          "(Elemental Ailments are Ignited, Scorched, Chilled, Frozen, Brittle, Shocked, and Sapped)"
+        ],
+        "recipe": [],
+        "is_notable": false,
+        "is_keystone": true,
+        "is_mastery": false,
+        "is_blighted": false,
+        "is_proxy": false,
+        "is_ascendancy_start": false,
+        "class_start_index": null,
+        "ascendancy_name": null
+      }
+    },
+    {
+      "source_id": "keystones:62791",
+      "source_name": "Lethe Shade",
+      "search_tags": [
+        "bleed",
+        "brittle",
+        "chill",
+        "damage_over_time",
+        "duration",
+        "freeze",
+        "ignite",
+        "keystone",
+        "lethe",
+        "lethe_shade",
+        "poison",
+        "sap",
+        "scorch",
+        "shade",
+        "shock"
+      ],
+      "scaling_facets": [
+        {
+          "facet": "node_kind",
+          "values": [
+            "keystone"
+          ]
+        },
+        {
+          "facet": "mechanic",
+          "values": [
+            "duration"
+          ]
+        },
+        {
+          "facet": "ailment",
+          "values": [
+            "bleed",
+            "brittle",
+            "chill",
+            "freeze",
+            "ignite",
+            "poison",
+            "sap",
+            "scorch",
+            "shock"
+          ]
+        },
+        {
+          "facet": "scaling_stat",
+          "values": [
+            "damage_over_time",
+            "duration"
+          ]
+        }
+      ],
+      "supporting_text": [
+        "Lethe Shade",
+        "Take 50% less Damage over Time if you've started taking Damage over Time in the past second\n100% more Duration of Ailments on you",
+        "(Ailments are Bleeding, Ignited, Scorched, Chilled, Frozen, Brittle, Shocked, Sapped, and Poisoned)",
+        "A sip of poison each day keeps the shadow of death at bay."
+      ],
+      "source_context": {
+        "node_id": 62791,
+        "skill_id": 62791,
+        "stats": [
+          "Take 50% less Damage over Time if you've started taking Damage over Time in the past second\n100% more Duration of Ailments on you"
+        ],
+        "reminder_text": [
+          "(Ailments are Bleeding, Ignited, Scorched, Chilled, Frozen, Brittle, Shocked, Sapped, and Poisoned)"
+        ],
+        "recipe": [],
+        "is_notable": false,
+        "is_keystone": true,
+        "is_mastery": false,
+        "is_blighted": false,
+        "is_proxy": false,
+        "is_ascendancy_start": false,
+        "class_start_index": null,
+        "ascendancy_name": null
+      }
+    },
+    {
+      "source_id": "keystones:63425",
+      "source_name": "Zealot's Oath",
+      "search_tags": [
+        "energy_shield",
+        "keystone",
+        "life",
+        "life_regeneration",
+        "oath",
+        "regeneration",
+        "shield",
+        "zealots",
+        "zealots_oath"
+      ],
+      "scaling_facets": [
+        {
+          "facet": "node_kind",
+          "values": [
+            "keystone"
+          ]
+        },
+        {
+          "facet": "weapon",
+          "values": [
+            "shield"
+          ]
+        },
+        {
+          "facet": "resource",
+          "values": [
+            "energy_shield",
+            "life",
+            "regeneration"
+          ]
+        },
+        {
+          "facet": "defence",
+          "values": [
+            "energy_shield"
+          ]
+        },
+        {
+          "facet": "scaling_stat",
+          "values": [
+            "energy_shield",
+            "life_regeneration"
+          ]
+        }
+      ],
+      "supporting_text": [
+        "Zealot's Oath",
+        "Life Regeneration is applied to Energy Shield instead",
+        "Tear my flesh and splinter my bones. You will never break my spirit."
+      ],
+      "source_context": {
+        "node_id": 63425,
+        "skill_id": 63425,
+        "stats": [
+          "Life Regeneration is applied to Energy Shield instead"
+        ],
+        "reminder_text": [],
+        "recipe": [],
+        "is_notable": false,
+        "is_keystone": true,
+        "is_mastery": false,
+        "is_blighted": false,
+        "is_proxy": false,
+        "is_ascendancy_start": false,
+        "class_start_index": null,
+        "ascendancy_name": null
+      }
+    },
+    {
+      "source_id": "keystones:63620",
+      "source_name": "Precise Technique",
+      "search_tags": [
+        "accuracy",
+        "attack",
+        "keystone",
+        "life",
+        "precise",
+        "precise_technique",
+        "strike",
+        "technique"
+      ],
+      "scaling_facets": [
+        {
+          "facet": "node_kind",
+          "values": [
+            "keystone"
+          ]
+        },
+        {
+          "facet": "mechanic",
+          "values": [
+            "attack",
+            "strike"
+          ]
+        },
+        {
+          "facet": "resource",
+          "values": [
+            "life"
+          ]
+        },
+        {
+          "facet": "scaling_stat",
+          "values": [
+            "accuracy"
+          ]
+        }
+      ],
+      "supporting_text": [
+        "Precise Technique",
+        "40% more Attack Damage if Accuracy Rating is higher than Maximum Life\nNever deal Critical Strikes",
+        "Fear not the warrior that has practiced ten thousand techniques once.",
+        "Fear the warrior that has practiced one technique ten thousand times."
+      ],
+      "source_context": {
+        "node_id": 63620,
+        "skill_id": 63620,
+        "stats": [
+          "40% more Attack Damage if Accuracy Rating is higher than Maximum Life\nNever deal Critical Strikes"
+        ],
+        "reminder_text": [],
+        "recipe": [],
+        "is_notable": false,
+        "is_keystone": true,
+        "is_mastery": false,
+        "is_blighted": false,
+        "is_proxy": false,
+        "is_ascendancy_start": false,
+        "class_start_index": null,
+        "ascendancy_name": null
+      }
+    },
+    {
+      "source_id": "keystones:63903",
+      "source_name": "Voracious Flame",
+      "search_tags": [
+        "damage_over_time",
+        "duration",
+        "fire",
+        "flame",
+        "ignite",
+        "keystone",
+        "voracious",
+        "voracious_flame"
+      ],
+      "scaling_facets": [
+        {
+          "facet": "node_kind",
+          "values": [
+            "keystone"
+          ]
+        },
+        {
+          "facet": "damage_type",
+          "values": [
+            "fire"
+          ]
+        },
+        {
+          "facet": "mechanic",
+          "values": [
+            "duration"
+          ]
+        },
+        {
+          "facet": "ailment",
+          "values": [
+            "ignite"
+          ]
+        },
+        {
+          "facet": "scaling_stat",
+          "values": [
+            "damage_over_time",
+            "duration"
+          ]
+        }
+      ],
+      "supporting_text": [
+        "Voracious Flame",
+        "You can inflict an additional Ignite on each Enemy\nBase Ignite Duration is 1 second\n25% less Damage with Ignite\nCannot deal non-Fire Damage",
+        "(Ignite deals Fire Damage over time, based on the base Fire Damage of the Skill, for 4 seconds)",
+        "Sacrifice your foes upon the pyre of your supremacy."
+      ],
+      "source_context": {
+        "node_id": 63903,
+        "skill_id": 63903,
+        "stats": [
+          "You can inflict an additional Ignite on each Enemy\nBase Ignite Duration is 1 second\n25% less Damage with Ignite\nCannot deal non-Fire Damage"
+        ],
+        "reminder_text": [
+          "(Ignite deals Fire Damage over time, based on the base Fire Damage of the Skill, for 4 seconds)"
+        ],
+        "recipe": [],
+        "is_notable": false,
+        "is_keystone": true,
+        "is_mastery": false,
+        "is_blighted": false,
+        "is_proxy": false,
+        "is_ascendancy_start": false,
+        "class_start_index": null,
+        "ascendancy_name": null
+      }
+    }
+  ]
+}

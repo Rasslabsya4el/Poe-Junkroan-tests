@@ -1,0 +1,9 @@
+{"cache": {"at": "2026-10-11T11:50:00+00:00", "data": {"machine": {"cores": 8}, "runs": {"total": 5,
+   "running": [{"id": "j-lap-1", "tag": "lap-run", "workers": 2, "host": "laptop", "state": "running", "progress": {"done": 3, "total": 8, "eta": "13:30"}}],
+   "queued": [{"id": "j-lap-2", "tag": "lap-next", "workers": 2, "host": "laptop", "state": "queued"}], "recent": []}}},
+ "host": {"machine": {"cores": 8, "cpu": {"pob": 40.0, "agents": 1.0, "you": 2.0}, "cpu_total": 43.0, "interval_s": 5.0, "ram": {"pob": 6.0, "agents": 0.5, "you": 1.0}, "ram_total": 16.0, "ram_free": 8.0},
+  "runs": {"total": 5, "period": "day", "others": 0, "waiting": 0, "slots": [{"slot": 1, "role": "queue", "pid": 1, "age": "5 min"}],
+   "running": [{"id": "j-lap-1", "tag": "lap-run", "name": "Lap Run", "workers": 2, "host": "laptop", "state": "running", "age": "1 h", "progress": {"done": 4, "total": 8, "eta": "13:20"}}],
+   "queued": [{"id": "j-lap-2", "tag": "lap-next", "name": "Lap Next", "workers": 2, "host": "laptop", "state": "queued", "age": "10 min"}],
+   "recent": [{"id": "j-lap-0", "tag": "lap-old", "name": "Lap Old", "workers": 2, "host": "laptop", "state": "done", "age": "3 h", "end": "2026-10-11T08:00:00+00:00", "took": "1 h"}]}},
+ "ssh_error": "ssh: connect to host laptop port 22: Connection timed out"}

@@ -1,0 +1,14 @@
+{"jobs": [
+ {"id": "j-20261011-1000-a001", "host": "pc", "priority": "P1", "issue": 796, "tag": "snap-run", "cmd": "python scripts/benchmark.py --tag snap-run --workers 2 --seeds 1",
+  "argv": ["python", "scripts/benchmark.py", "--tag", "snap-run", "--workers", "2", "--seeds", "1"], "state": "running", "submit_ts": "2026-10-11T09:59:30+00:00", "start_ts": "2026-10-11T10:00:00+00:00", "end_ts": null, "workers": 2},
+ {"id": "j-20261011-1005-b002", "host": "pc", "priority": "P2", "issue": 801, "tag": "snap-queued", "cmd": "python scripts/benchmark.py --tag snap-queued --workers 2 --seeds 1",
+  "argv": ["python", "scripts/benchmark.py", "--tag", "snap-queued", "--workers", "2", "--seeds", "1"], "state": "queued", "submit_ts": "2026-10-11T10:05:00+00:00", "start_ts": null, "end_ts": null, "workers": 2, "after": ["j-20261011-1000-a001"]},
+ {"id": "j-20261011-0800-c003", "host": "pc", "priority": "P1", "issue": 790, "tag": "snap-done", "cmd": "python scripts/benchmark.py --tag snap-done --workers 2 --seeds 1",
+  "argv": ["python", "scripts/benchmark.py", "--tag", "snap-done", "--workers", "2", "--seeds", "1"], "state": "done", "submit_ts": "2026-10-11T07:59:00+00:00", "start_ts": "2026-10-11T08:00:00+00:00", "end_ts": "2026-10-11T09:30:00+00:00", "workers": 2,
+  "run_dir": "snapshots/s1/artifacts/benchmark/20261011-0800-snap-done"},
+ {"id": "j-20261010-2200-d004", "host": "pc", "priority": "P2", "issue": null, "tag": "snap-tests", "cmd": "python -m pytest -q", "argv": null, "state": "failed",
+  "submit_ts": "2026-10-10T21:59:00+00:00", "start_ts": "2026-10-10T22:00:00+00:00", "end_ts": "2026-10-10T22:10:00+00:00", "workers": 1}
+],
+ "budget": {"period": "day", "total": 7, "others": 1, "queue_limit": 5},
+ "busy_slots": [{"slot": 1, "role": "queue", "pid": 4242, "job": "j-20261011-1000-a001", "age_seconds": 7200}, {"slot": 2, "role": "queue", "pid": 4243, "job": "j-20261011-1000-a001", "age_seconds": 7100}, {"slot": 3, "role": "other", "pid": null, "age_seconds": 60}],
+ "waiting": [1, 2]}

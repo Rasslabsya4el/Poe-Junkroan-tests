@@ -1,0 +1,27 @@
+{
+ "id": "j-20261013-2220-1c28",
+ "host": "laptop",
+ "state": "running",
+ "tag": "P2-core",
+ "cmd": "python scripts/benchmark.py --set core14 --gear wishlist --seed 4 --seeds 3 --workers auto --tag P2-core",
+ "argv": [
+  "python",
+  "scripts/benchmark.py",
+  "--set",
+  "core14",
+  "--gear",
+  "wishlist",
+  "--seed",
+  "4",
+  "--seeds",
+  "3",
+  "--workers",
+  "auto",
+  "--tag",
+  "P2-core"
+ ],
+ "out": "C:\\Coding\\poe-junkroan-v2-daemon\u0007rtifacts\runs\u008261013-2221-P2-core.out",
+ "run_dir": null,
+ "workers": 1,
+ "start_ts": "2026-10-13T20:21:23.526170+00:00"
+}

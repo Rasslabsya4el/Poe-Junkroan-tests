@@ -1,0 +1,9 @@
+{"cores": 8, "ram_total_gb": 32, "ram_available_gb": 12.5, "clock": [1010.0, 2040.0], "prev": {"t_ago": 5, "busy": 1000.0, "total": 2000.0, "p": {"4242": [1791700000, 400.0], "4243": [1791700100, 250.0], "5000": [1791600000, 900.0], "5001": [1791600100, 50.0], "6000": [1791500000, 2000.0], "7001": [1791711000, 10.0]}},
+ "procs": {"4242": {"ppid": 4000, "name": "python.exe", "cpu": 410.0, "rss_gb": 2.0, "created": 1791700000},
+           "4243": {"ppid": 4242, "name": "python.exe", "cpu": 262.0, "rss_gb": 1.5, "created": 1791700100},
+           "5000": {"ppid": 1, "name": "claude.exe", "cpu": 905.0, "rss_gb": 1.0, "created": 1791600000},
+           "5001": {"ppid": 5000, "name": "node.exe", "cpu": 51.0, "rss_gb": 0.5, "created": 1791600100},
+           "6000": {"ppid": 1, "name": "chrome.exe", "cpu": 2003.0, "rss_gb": 3.0, "created": 1791500000},
+           "7000": {"ppid": 1, "name": "junkroan.exe", "cpu": 5.0, "rss_gb": 0.1, "created": 1791400000},
+           "7001": {"ppid": 7000, "name": "python.exe", "cpu": 14.0, "rss_gb": 0.9, "created": 1791711000},
+           "100": {"ppid": 0, "name": "System Idle Process", "cpu": 99999.0, "rss_gb": 0.0, "created": 0}}}

@@ -1,0 +1,184 @@
+{
+ "rows": [
+  {
+   "ok": true,
+   "slug": "arc_archmage",
+   "seed": 7,
+   "gear_mode": "loot",
+   "variant": "",
+   "ratio_lane": 0.88,
+   "audit": [],
+   "audit_errors": 0
+  },
+  {
+   "ok": true,
+   "slug": "arc_archmage",
+   "seed": 8,
+   "gear_mode": "loot",
+   "variant": "",
+   "ratio_lane": 0.89,
+   "audit": [],
+   "audit_errors": 0
+  },
+  {
+   "ok": true,
+   "slug": "arc_archmage",
+   "seed": 9,
+   "gear_mode": "loot",
+   "variant": "",
+   "ratio_lane": 0.9,
+   "audit": [],
+   "audit_errors": 0
+  },
+  {
+   "ok": true,
+   "slug": "bow_poison",
+   "seed": 7,
+   "gear_mode": "loot",
+   "variant": "",
+   "ratio_lane": 0.93,
+   "audit": [],
+   "audit_errors": 0
+  },
+  {
+   "ok": true,
+   "slug": "bow_poison",
+   "seed": 8,
+   "gear_mode": "loot",
+   "variant": "",
+   "ratio_lane": 0.94,
+   "audit": [],
+   "audit_errors": 0
+  },
+  {
+   "ok": true,
+   "slug": "bow_poison",
+   "seed": 9,
+   "gear_mode": "loot",
+   "variant": "",
+   "ratio_lane": 0.95,
+   "audit": [],
+   "audit_errors": 0
+  },
+  {
+   "ok": true,
+   "slug": "fireball_ignite",
+   "seed": 7,
+   "gear_mode": "loot",
+   "variant": "",
+   "ratio_lane": 0.98,
+   "audit": [],
+   "audit_errors": 0
+  },
+  {
+   "ok": true,
+   "slug": "fireball_ignite",
+   "seed": 8,
+   "gear_mode": "loot",
+   "variant": "",
+   "ratio_lane": 0.99,
+   "audit": [],
+   "audit_errors": 0
+  },
+  {
+   "ok": true,
+   "slug": "fireball_ignite",
+   "seed": 9,
+   "gear_mode": "loot",
+   "variant": "",
+   "ratio_lane": 1.0,
+   "audit": [],
+   "audit_errors": 0
+  },
+  {
+   "ok": true,
+   "slug": "cyclone_slayer",
+   "seed": 7,
+   "gear_mode": "loot",
+   "variant": "",
+   "ratio_lane": 1.03,
+   "audit": [],
+   "audit_errors": 0
+  },
+  {
+   "ok": true,
+   "slug": "cyclone_slayer",
+   "seed": 8,
+   "gear_mode": "loot",
+   "variant": "",
+   "ratio_lane": 1.04,
+   "audit": [],
+   "audit_errors": 0
+  },
+  {
+   "ok": true,
+   "slug": "cyclone_slayer",
+   "seed": 9,
+   "gear_mode": "loot",
+   "variant": "",
+   "ratio_lane": 1.05,
+   "audit": [],
+   "audit_errors": 0
+  },
+  {
+   "ok": true,
+   "slug": "spark_inquis",
+   "seed": 7,
+   "gear_mode": "loot",
+   "variant": "",
+   "ratio_lane": 1.08,
+   "audit": [],
+   "audit_errors": 0
+  },
+  {
+   "ok": true,
+   "slug": "spark_inquis",
+   "seed": 8,
+   "gear_mode": "loot",
+   "variant": "",
+   "ratio_lane": 1.09,
+   "audit": [],
+   "audit_errors": 0
+  },
+  {
+   "ok": true,
+   "slug": "spark_inquis",
+   "seed": 9,
+   "gear_mode": "loot",
+   "variant": "",
+   "ratio_lane": 1.1,
+   "audit": [],
+   "audit_errors": 0
+  },
+  {
+   "ok": true,
+   "slug": "ba_raider",
+   "seed": 7,
+   "gear_mode": "loot",
+   "variant": "",
+   "ratio_lane": 1.13,
+   "audit": [],
+   "audit_errors": 0
+  },
+  {
+   "ok": true,
+   "slug": "ba_raider",
+   "seed": 8,
+   "gear_mode": "loot",
+   "variant": "",
+   "ratio_lane": 1.14,
+   "audit": [],
+   "audit_errors": 0
+  },
+  {
+   "ok": true,
+   "slug": "ba_raider",
+   "seed": 9,
+   "gear_mode": "loot",
+   "variant": "",
+   "ratio_lane": 1.15,
+   "audit": [],
+   "audit_errors": 0
+  }
+ ]
+}

@@ -1,0 +1,292 @@
+{
+  "schema_version": "1.0.0",
+  "name": "day1_yellow_maps",
+  "description": "What a strong day-1 build actually has when it reaches yellow maps / first Exarch & Eater. Derived from tests/fixtures/tuadh_329/stats.json (10 builds, PoE 3.29). Floors = lower quartile, targets = median.",
+  "provenance": {
+    "fixture_set": "tuadh_329",
+    "derived_on": "2026-09-11",
+    "regenerate_with": "python scripts/fixture_stats.py tuadh_329, then update this file from the quartiles"
+  },
+  "character": {
+    "level": 77,
+    "bandit": "None",
+    "bandit_note": "Kill all the bandits, always (the user's rail, 2026-09-18): PoB's \"None\" is the two passive points, and every PoB people play from is built that way. Not a judged choice any more (it was, and kinetic_fusillade s2 came back helping Alira); a reference's own bandit stays in the author's row.",
+    "passive_points_note": "the budget is PoB's formula (rails.max_passive_points): level - 1 + quest points (23 from level 67) + ExtraPoints for bandit None; 99 at level 77. The earlier fixed budget of 107 was the references' node count with the ascendancy included; their allocatable median is 100."
+  },
+  "floors": {
+    "Life": 4500,
+    "MaximumHitTaken": {
+      "Physical": 4700,
+      "Fire": 14800,
+      "Cold": 14600,
+      "Lightning": 16000,
+      "note": "PoB <Type>MaximumHitTaken, lower quartile of the 14 references (phys 4551-6913, fire 12374-25474, cold 12028-25474, lightning 14725-25474). The bossing defence rail (D53): no block, no evasion, suppression only at 100%. TotalEHP (block averaged in: 8,800 to 38,343 on the same references) is the mapping number and is only reported. Chaos is not floored (day-1 chaos resistance is negative on every reference), like chaos resistance."
+    },
+    "elemental_resist_each": 65,
+    "elemental_resist_goal": 75,
+    "ChaosResist": null,
+    "EffectiveMovementSpeedMod": 1.2,
+    "movement_speed_note": "PoB EffectiveMovementSpeedMod on the 10 reference builds: 1.19-1.43, lower quartile 1.22, median 1.24 (every pair of boots has 22-30% MS, one 12%). Generated builds without this floor ended at 0.95-1.17.",
+    "net_life_note": "No degen while idle: the rule moved out of the floors into sustain.idle_recovery_over_life (2026-09-18), because a shortfall against a floor of 0 has no scale of its own and -12/s would have counted the same as -1,200/s.",
+    "MoMCastsAfterMaxHit": 3,
+    "MoMHitFraction": 0.8,
+    "mom_note": "#608: Mind over Matter (anything PoB counts in sharedMindOverMatter) may be allocated only while the unreserved mana (plus ES under Eldritch Battery) left after a hit of MoMHitFraction x PhysicalMaximumHitTaken still pays for MoMCastsAfterMaxHit casts of the main skill. Both numbers are the research note's proposal (docs/research/2026-10-06-mom-pool-balance.md), replacing the hand rule of 40% unreserved mana (2026-09-18). optimizer/keystone_floors.py derives the casts, a number far above the floor when nothing takes damage from mana, so the floor costs nothing to a build without the keystone."
+  },
+  "targets": {
+    "CombinedDPS": 375000
+  },
+  "gems": {
+    "level": 18,
+    "quality": 0,
+    "main_skill_quality": 0,
+    "main_link_max": 5,
+    "other_link_max": 4,
+    "observed": "10 reference builds: enabled gems are L17-18 (max 19), quality 0 except the main skill (Q0-20, median ~7). Utility gems are often deliberately lower (Arcane Surge L10, GMP L11).",
+    "note": "Every gem at 20/20 inflated Cold DoT by 73% against the author (D23). Levels 21+ / Q23 corrupted gems and awakened supports are never day-1."
+  },
+  "anoint": {
+    "oil_max": "Black",
+    "note": "#432: the highest oil of an anointment recipe on day 1 (rulebook t-anoint: Clear..Black, 208 notables); t16 Silver, endgame Prismatic"
+  },
+  "assumptions": {
+    "trinity_resonance_when_all_three_elements": 50,
+    "rage_fraction_of_max": 0.5,
+    "withered_stacks_from_wither_skill": 15,
+    "chill_seconds_on_boss": 10,
+    "pinnacle_ramp_seconds": 10.0,
+    "note": "Numeric config inputs a from-scratch build has no author for. Each is applied only when PoB shows the input for the build AND the build proves the source (Trinity linked and hits carry fire+cold+lightning; PoB's CanGainRage flag; chill chance). Values are what the reference builds assume: Tuadh Smite resonance 50, rage 15/30; Cold DoT 10 s of chill. pinnacle_ramp_seconds is a placeholder until the user sets it; it is report-only and never optimized or gated. Toxic Rain: all pods overlap on a stationary boss (PoB tooltip: the maximum is the projectile count; PoB's default of 1 pod is 3x low). Ramp-type counts are no longer assumptions but arithmetic (D62 amendment, optimizer/ramp_inputs.py): min(cap, rate x ramp.seconds_to_full_dps), the rate from PoB's own stats and the cap from PoB. Stack-type skill options (\"# of Intensity\", \"Stages\", \"Stacks\") are still probed at stack_options_ceiling and kept only when PoB caps them below it (Spark with Pinpoint: 3, 4 with the mastery; an uncapped option stays off), but that cap is what the optimistic lane holds: the conservative lane holds what the build stacks inside the budget (Spark: 4 intensity, 1 Sigil of Power stage). withered_stacks_from_wither_skill is Wither's own maximum, the cap of the same arithmetic. Mines: \"# of Mines Detonated Recently\" = 4 s window x PoB's Speed (mines per second: laying speed x mines per throw) x the fraction detonated, 1.0 (Pyroclast 38, Exsanguinate mines 42; the authors typed 10, the mods cap their own \"up to\").",
+    "toxic_rain_pods_fraction_of_projectiles": 1.0,
+    "snipe_stages": 6,
+    "stack_options_ceiling": 50,
+    "mine_detonation_window_seconds": 4,
+    "mine_detonation_fraction": 1.0
+  },
+  "gear": {
+    "max_uniques": 2,
+    "rare_slots_typical": 9,
+    "max_explicit_mods_per_rare": 6,
+    "item_level": 70,
+    "influence_allowed": false,
+    "jewels": {"count_max": 2, "lines": 1},
+    "clusters": {"count_max": 0, "sizes": [], "passives": {"large": 0, "medium": 0}, "notables_max": 2, "screen_keep": 6},
+    "flasks": {"slots": 5, "tinctures": true, "flask_utility_crafting": false},
+    "weapon_forbidden_lines": ["to Level of all Spell Skill Gems", "to Level of all Skill Gems"],
+    "bases_excluded_by_loadout": {"day1": ["Prismatic Ring"], "t16": ["Prismatic Ring"], "endgame": []},
+    "bases_excluded_by_loadout_note": "#1154, the owner 2026-10-16 (reading Contagion A1, Ring 1: Prismatic Ring): loadout -> the base names no slot is offered in it; Prismatic Ring is an endgame base. Generic: any base name listed here is refused at every site that offers a base (the loot screen's candidate bases, the loot weapon-base swap, the wishlist's base candidates and capacity), compared case-insensitively; a request that names the base itself (rare_bases) is the owner's word and is not filtered. Trace class base-excluded-by-loadout (must stay 0 generated / 0 evaluated on a day1 search).",
+    "weapon_forbidden_lines_note": "#1152, the owner 2026-10-16 (\"Я запрещал +1 оф олл на оружиях в дей 1, но разрешал +1 остальные\"): a day-1 Weapon 1 / Weapon 2 rare (one-hand, two-hand, shield, quiver) never carries these lines, whatever the number after the +. Compared whole and case-insensitively after the leading {tags} and the +N / +(a-b), so \"to Level of all Chaos Spell Skill Gems\" and the other per-element and per-tag lines stay allowed. Every path that can put the line on a weapon obeys it: the template's open mods, the bench list, the pick, and every random roll (loot fill, construction screen, headroom ranking). Trace classes weapon-all-gems-level (must stay 0) and weapon-element-gems-level (the allowed ones, > 0).",
+    "tier_distribution_observed": {
+      "T1": 0.09,
+      "T2": 0.2,
+      "T3": 0.18,
+      "T4": 0.15,
+      "T5": 0.13,
+      "T6": 0.09,
+      "T7+": 0.16
+    },
+    "note": "Tiers = rank within a PoB mod group by level (T1 best), measured on 94 reference rares (tests/fixtures/tuadh_329/gear_tiers.json): median 0 T1 mods per rare, max 3; 2 of 94 rares have 3 T1. The old per-item tier caps (max_t1_per_rare / max_t2_per_rare / max_tier) are gone with D67: the loot path never read them and the wishlist path places every mod at its ladder median (see \"wishlist\"). The weapon-base ceiling screen (D41, search/generator._ceiling) keeps them as its own constants in gear_filler.py.",
+    "item_level_note": "70 = the loot path's flat item level (D19). The wishlist path uses \"wishlist\".\"item_level\" instead.",
+    "wishlist": {
+      "item_level": {"default": 72, "Weapon 1": 76, "Weapon 2": 76},
+      "bench_crafts": 1,
+      "area_level": 77,
+      "base_level_max": 70,
+      "base_level_max_note": "day-1 template base drop level cap (#438, the owner's rule); item levels stay 70 loot / 72 template / 76 weapons",
+      "base_candidates": 3,
+      "attribute_affixes_max": 3,
+      "weapon_open_lines": 2,
+      "weapon_open_lines_note": "2 natural weapon lines plus one craft = 3 template lines (rulebook i-day1-templates, #429); earlier 3 natural lines: the median useful-line count of both the 32 Tuadh authors and our best-of-200 loot (artifacts/runs/gear-templates/weapon-lines-census.md).",
+      "weapon_open_tier_positions": [0.35, 0.5, 0.57],
+      "weapon_open_tier_positions_note": "Top-1/top-2/top-3 useful weapon line positions. The census found authors at 0.43/0.57/0.69 and our best-of-200 loot at 0.27/0.43/0.44; 0.35/0.50/0.57 is their midpoint per rank, approved by the owner 2026-09-20. A longer weapon repeats the final position. A legacy weapon_open_tier_position is read as a one-element list.",
+      "weapon_base_open_line_share": 0.0294,
+      "weapon_base_open_line_share_note": "2.94% is the median value share of the 10 value-bearing armour or jewellery open-or-craft lines over D89's six template sets, measured by deleting each from its delivered item in artifacts/runs/gear-templates/fix3-results.json and fix4-results.json (fix4 replaces two corrected controls): scripts/template_open_line_share.py. The all-line median is 0% because 31 flexible lines were floor-only repairs; they are not a forgone value line. A payable weapon base with k attribute lines needed is ranked at value x (1 - k x this share).",
+      "open_mod_never_below_share": 0.002,
+      "open_mod_two_lines_below_share": 0.01,
+      "extra_resistance_items": 2,
+      "quiver_weapon_shape": true,
+      "note": "Template-driven day-1 gearing (D79), the alternative to the loot simulation, behind BuildPipeline.run(gear_mode=\"wishlist\"). src/junkroan/mechanics/day1_gear_templates.json fixes every item class's shape: armour and jewellery are life, one resistance at the authors' per-slot median tier, then one PoB-selected open-or-craft line; boots end with movement speed; a weapon has weapon_open_lines (2) natural open lines plus one craft, 3 lines in all. weapon_open_tier_positions are relative whole-ladder positions per open-line rank: the legal tier nearest each position, with a tie going to the better tier; a longer weapon repeats its final position. A weapon line is ranked by the objective's VALUE (a candidate that worsens a floor is refused, violation only breaks ties); an armour or jewellery open-or-craft line is ranked violation first, but a line that removes less than 0.01 of violation at +0 value is left free instead of bought. Rarity no longer prices line count: every ordinary mod at its group's median tier costs one line, and only open_mod_never_below_share still refuses a group too rare to assume on day one. A gem-level property (PoB's `gem` tag plus a \"Level of ... Gems\" line: all-skill, all-spell, per element, per tag, socketed) takes the item's WHOLE open budget and is kept only when PoB measures it above the best ordinary filling of exactly those lines. attribute_affixes_max is a budget in ITEMS: at most one attribute affix (rolled or crafted) per item (D73, the user's rule) and at most three items of the set carry one -- the 32 Tuadh authors' own median, scripts/fixture_attribute_affixes.py, distribution 1:3, 2:9, 3:9, 4:6, 5:3, 6:2, mean 3.09, max 6. Payments go to jewellery and armour open-or-craft lines first. If fixed lines and implicits still miss elemental cap, at most two non-weapon items receive a fourth T3 resistance line before an ordinary open-or-craft line is spent on resistance.",
+      "base_note": "The base is the cheap, certain part of day-1 gear and the filler chooses it for every rare slot (D73, the user 2026-09-18): a base with the right implicit drops from mapping by the million and is loot-filtered at any rarity, while an affix has to be rolled or crafted. So attributes and resistances are solved implicit-first -- the base per slot for the build's needs, then AT MOST ONE attribute affix or craft per ITEM and at most attribute_affixes_max items of the set carrying one (implicits do not count), then useful mods; a paid base competes with an uncharged finished item. Tree nodes for attributes and resists are poor value outside stackers. Example of one finished item: Onyx Amulet (+16 to all Attributes) / +44% to Fire Resistance / +29 to Dexterity (craft). area_level 77 = T10 maps, the area level a day-1 character maps at (docs/research/2026-09-18-day1-gear.md, PoE Wiki map tiers): a base whose drop level is above it is not a day-1 base (Vermillion Ring 80, Crystal Belt 79) and never a candidate. The class is not chosen here -- it is the skeleton's (a bow build stays on bows, a Body Armour slot stays a body armour) -- only the base inside it, and the candidates are the classes' bases a character finds and vendors sell (PoB's not_for_sale / experimental_base / demigods bases are out, which is also what the search's loot screen takes). base_candidates 3 = how many of them, best first on the bare base, are actually filled with affixes and compared as finished items.",
+      "flexible_lines": true,
+      "boots_movement_floor": true,
+      "template_v4_switches_note": "Spec 2026-09-22 (template v4, docs/specs/2026-09-22-template-v4-flexible-lines.md): the only hard-code left is the LINE COUNT per item (read from day1_gear_templates.json) and bench_crafts; every line kind is a PoB decision under these three independent switches, ALL THREE ON by default (the owner: the 2026-09-22 intent was all three on; on #8 (a) the boots' movement line takes the tier the movement floor needs, only where the floor needs it). quiver_weapon_shape gives a quiver the weapon shape (weapon_open_lines open lines + one craft) instead of the life+resistance+open-or-craft armour shape. flexible_lines lets every armour/jewellery line take any legal mod group (IncreasedLife and a resistance are ordinary candidates, priced at the slot's existing life/resistance tier wherever they land; every other group at the existing open-line tier rule), then runs a fixed-point move loop over the finished set (line swap, two-item exchange, base re-choice), each move judged by Objective.better_score. boots_movement_floor lets boots' own movement line pick its tier by PoB (any legal MovementVelocity tier, or another group if movement is not the floor) instead of always taking the fixed template tier, independently of flexible_lines so it can be measured alone. A test that measures the pinned fixed-template behaviour turns flexible_lines and boots_movement_floor off in its own rails. scripts/gear_transplant.py takes a CLI flag for each."
+    },
+    "loot_best_of_n": 200,
+    "construction_best_of_n": 600,
+    "construction_best_of_n_note": "best of N for the construction rolls (gear pass 1 on the empty tree and gear pass 2 with the tree): the loot is where the seed-to-seed spread is born and the greedy amplifies it; N=600 measured 2026-09-18 on stormbrand / bleed_bow at the greedy stage: +6.7 / +35.5 points, spread -7.5 / -8.4, +22 / +39 s. The loop's per-slot re-rolls keep loot_best_of_n.",
+    "loot_calibration": {
+      "stormbrand": 0.939,
+      "smite": 0.716,
+      "spark": 0.733,
+      "ignite_penance_brand": 1.096,
+      "hit_penance_brand": 1.229,
+      "poison_spectral_throw": 0.943,
+      "regular_viper_strike": 1.469,
+      "winter_orb": 1.117,
+      "physical_dot": 0.972,
+      "cold_dot": 0.838,
+      "median": 0.955,
+      "note": "best-of-300 random rares per slot (PoB spawn weights, 2 passes) vs the author's rares, same tree/uniques/config; smite, spark, cold_dot end slightly infeasible (no bench crafts yet)"
+    },
+    "loot_calibration_with_bench": {
+      "pool": "regular explicit drops only (D21)",
+      "N=100": {
+        "median": 0.86,
+        "mean": 0.9,
+        "p25": 0.8,
+        "p75": 0.99,
+        "infeasible_runs": "4/20"
+      },
+      "N=200": {
+        "median": 1.11,
+        "mean": 1.1,
+        "p25": 0.95,
+        "p75": 1.22,
+        "infeasible_runs": "1/20"
+      },
+      "N=300": {
+        "median": 1.05,
+        "mean": 1.08,
+        "p25": 0.84,
+        "p75": 1.27,
+        "infeasible_runs": "2/20"
+      },
+      "note": "10 reference builds x 2 seeds each, 2 passes, one bench craft per item; ratio = CombinedDPS vs the author's gear under the author's tree/config. Per-run loot noise is ~±20%. N=200 chosen: median slightly above the authors, almost always feasible."
+    },
+    "bench": {
+      "max_map_tier": 10,
+      "unknown_tier_allowed": false,
+      "excluded_cost_currencies": ["Exalted Orb"]
+    }
+  },
+  "observed_quartiles": {
+    "level": {
+      "min": 75,
+      "p25": 76,
+      "med": 77,
+      "p75": 78,
+      "max": 81
+    },
+    "allocated_nodes": {
+      "min": 106,
+      "p25": 107,
+      "med": 108,
+      "p75": 110,
+      "max": 112
+    },
+    "Life": {
+      "min": 3084,
+      "p25": 3740,
+      "med": 4039,
+      "p75": 4220,
+      "max": 4763
+    },
+    "TotalEHP": {
+      "min": 8800,
+      "p25": 10347,
+      "med": 13236,
+      "p75": 17736,
+      "max": 21804
+    },
+    "CombinedDPS": {
+      "min": 84247,
+      "p25": 139000,
+      "med": 376416,
+      "p75": 840238,
+      "max": 898678
+    },
+    "min_elemental_resist": {
+      "min": 64,
+      "p25": 65,
+      "med": 74,
+      "p75": 76,
+      "max": 78
+    },
+    "ChaosResist": {
+      "min": -60,
+      "p25": -60,
+      "med": -38,
+      "p75": -27,
+      "max": -11
+    },
+    "uniques": {
+      "min": 0,
+      "p25": 0,
+      "med": 0,
+      "p75": 1,
+      "max": 2
+    },
+    "rares": {
+      "min": 8,
+      "p25": 9,
+      "med": 9,
+      "p75": 10,
+      "max": 11
+    },
+    "explicit_mods_per_rare": {
+      "min": 3,
+      "p25": 5,
+      "med": 5,
+      "p75": 6,
+      "max": 7
+    },
+    "affix_tier": {
+      "T1": 37,
+      "T2": 87,
+      "T3": 78,
+      "T4": 63,
+      "T5": 54,
+      "T6": 39,
+      "T7": 29,
+      "T8": 20,
+      "T9+": 19
+    }
+  },
+  "sustain": {
+    "recovery_over_cost": 0.85,
+    "note": "PoB per-second cost of the main skill vs regen + leech gain rate + recoup, per resource (mana, life, ES). Reference builds: Spark covers 90% of its mana cost from regen alone, Ignite Penance Brand 99%, attack builds via leech; the rest is flasks/on-hit. Blood Magic builds must sustain life the same way (Fireball Jiquani's: 255 life/s cost vs 37 regen was unplayable). A channelling main skill (gem tag) must cover 100%, not 85%: the channel stops the moment the resource runs out (optimizer/objective_select.with_skill_floors).",
+    "idle_recovery_over_life": 0.0,
+    "idle_note": "No degen while idle (the user, 2026-09-18: \"нельзя играть с дегеном\"), replacing the -100/s of D34: NetLifeRegen + NetEnergyShieldRegen + SelfCostPerSecond >= this fraction of the life pool. Leech, recoup and on-hit recovery left the sum with the -100: idle is not hitting (running to the next pack, looting, a boss phase), and a build that loses life there dies eventually and on an ES build never recharges. Sustain while attacking is recovery_over_cost above, which keeps leech and recoup. The life pool is the scale of the shortfall, not the floor itself (a floor of 0 has none): lightning_trap s2's -12/s reads 0.003, the generated RF Berserker's -1,316/s reads 0.33, comparable with a 33% life shortfall. PoB sends degen to ES first while ES regenerates, so an RF Inquisitor with Pious Path (life regen also recovers ES) is 854 - 697 = +157. SelfCostPerSecond (optimizer/self_cost.py) is the loss per second from what PoB does not count: \"Lose X% of Life when you use a Chaos Skill\" and a support that pays life per use (Sacrifice), at the main skill's uses per second when it carries the tag and is not triggered. PoB writes NetLifeRegen only when the build has some degen of its own (CalcDefence: TotalBuildDegen ~= 0), so a build whose only loss is a self-cost is judged against 0 rather than against its regeneration; those costs are a share of a pool per use and run into the thousands per second, so the verdict does not turn on it."
+  },
+  "uniques": {
+    "allowed_availability": [
+      "core"
+    ],
+    "max_req_level": 70,
+    "note": "Availability classes from PoB's own 'Source:' line (scripts/build_unique_index.py): core = no restriction (world drop), boss, boss_uber, mechanic (Heist, Delve, Sanctum...), vendor, upgrade (blessings, Vaal orb, fated), legacy = 'No longer obtainable' or wiki drop_enabled=0 (Malachai's Awakening). Drop-rate tiers from the wiki guide (T0 rarest .. T5 most common, corpus_data/unique_tiers.json): Tuadh's five uniques are T3-T5 (Honourhome 5, Wasp Nest 5, Natural Hierarchy 4, Blood of the Karui 4, Dyadian Dawn 3); T2 is 0.8% of unique drops and out. Core uniques with no tier data are allowed (the list omits some). T5 only on day 1: the owner's rulebook entry u-tiers, 2026-10-01 (#392).",
+    "allowed_tiers": [
+      5
+    ]
+  },
+  "utilities": {
+    "max_groups": 4,
+    "movement_skill_required": true,
+    "movement_spell": ["Dash", "Frostblink", "Flame Dash"],
+    "movement_skill": ["Shield Charge", "Leap Slam"],
+    "movement_skill_needs_shield": ["Shield Charge"],
+    "movement_forbidden": ["Smoke Mine", "Lightning Warp"],
+    "movement_skill_links": ["Faster Attacks", "Momentum"],
+    "movement_skill_links_for": ["Leap Slam"],
+    "movement_skill_link_sockets": 3,
+    "movement_skill_skip_weapon": "Staff",
+    "movement_skill_skip_attack_time_s": 1.0,
+    "fill_step": true,
+    "fill_min_gain": 0.005,
+    "fill_max_objective_loss": 0.001,
+    "note": "Utility socket groups a day-1 build carries besides the main link: auras, heralds, curses, guards, golems, banners, warcries, and the movement pair. Reference builds have 3-5 such groups (10 of 10 have a movement skill). Chosen by PoB greedily under mana reservation and sustain. The movement pair is always added and does not count against max_groups (the owner's word, #1153): slot movement_spell is one of movement_spell, slot movement_skill is one of movement_skill (the names in movement_skill_needs_shield only with a shield in Weapon 2), the skills named in movement_skill_links_for (Leap Slam; Shield Charge stands alone) are linked with movement_skill_links when an item has movement_skill_link_sockets free linked sockets, else alone; movement_forbidden is refused in both slots (Smoke Mine, Lightning Warp). A build with movement_skill_skip_weapon in Weapon 1 whose Leap Slam 'Attack Time' in PoB is at least movement_skill_skip_attack_time_s seconds skips the skill slot. Which member of a slot is PoB's pick, never a preference; a transfigured variant counts as its base gem. The fill step (fill_step, #1156) runs after the utility pick and is not capped by max_groups: every free socket gets a gem PoB counts as an aura, a guard, a herald or a buff (candidates from the gem tags and PoB's skill types), kept when TotalEHP or the objective rises by at least fill_min_gain, the objective falls by at most fill_max_objective_loss and no floor gets worse."
+  },
+  "ramp": {
+    "seconds_to_full_dps": 2.5,
+    "fraction_of_full_dps": 0.8,
+    "note": "PoB's DPS is a steady state (all bleed stacks / blades / withered stacks already on the target). optimizer/ramp.py derives how many seconds of continuous attacking reach fraction_of_full_dps of it from PoB's own stack potentials, durations and rates. Measured (80%): references Poison Spectral Throw 2.2 s, Viper Strike 4.2 s (5.4 s poisons), Ignite Penance Brand 0.3 s, hit builds 0; generated Puncture Gladiator with Crimson Dance at 1.39 aps 4.6 s (8 stacks), without it 0.5 s. The bar is the user's call from play experience (4.5 s judged far too slow; 2.5 s is the most a build may take): the Viper Strike reference sits above it and is knowingly out. seconds_by_component: a component whose mechanic is the ramp (poison: the stacks are the damage) may take longer; the build's budget is each component's seconds weighted by its share of the DPS (D43). Tune from experience.",
+    "seconds_by_component": {
+      "poison": 4.0
+    }
+  },
+  "tree": {
+    "forbidden_text": [
+      "more accuracy rating against (unique|rare|marked)",
+      "increased accuracy rating against (unique|rare|marked)"
+    ],
+    "attribute_plus30_nodes_max": 1,
+    "note": "Passive lines the tree optimizer never allocates (a node whose every line matches, a mastery effect that matches). Hit chance is a gate on whether damage happens at all, and the objective judges it against a unique boss: accuracy conditional on the enemy being unique, rare or marked caps the boss number while maps are hit at 70% (a Smite benchmark build took both Accuracy Mastery 'more accuracy against Unique' and Mark Mastery 'more accuracy against Marked'). The user's rule, 2026-09-14: hit chance is capped by universal means only, so that the boss-judged hit chance is a lower bound for maps (bosses have more evasion)."
+  }
+}
