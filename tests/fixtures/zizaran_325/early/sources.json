@@ -1,0 +1,141 @@
+{
+  "source": "Zizaran 3.25 Settlers of Kalguur league-starter guides, one early-game loadout per build (scripts/extract_loadout.py)",
+  "league": "3.25 Settlers of Kalguur",
+  "collected": "2026-09-18",
+  "note": "Extracted from tests/fixtures/zizaran_325/<file>: the item set, tree spec, skill set and config set the manifest's early_loadout names, as a single-loadout PoB. Regenerate with `python scripts/extract_loadout.py`.",
+  "builds": [
+    {
+      "slug": "hierophant_ice_nova_archmage",
+      "title": "Ice Nova Archmage Hierophant Leaguestarter",
+      "level": 68,
+      "class": "Templar",
+      "ascendancy": "Hierophant",
+      "main_skill": "Ice Nova of Frostbolts (Archmage)",
+      "tree_version": "3_25",
+      "pob_url": "https://pobb.in/20ygT23MsdQV",
+      "from": {
+        "file": "hierophant_ice_nova_archmage.pob.txt",
+        "item_set": "Early Game",
+        "spec": "Level 68 - Merciless Lab",
+        "skill_set": "Level 31 - Maps",
+        "config_set": "Default",
+        "linked_by": "inferred",
+        "level_source": "spec title"
+      }
+    },
+    {
+      "slug": "gladiator_lacerate",
+      "title": "Bleed Lacerate Gladiator Leaguestarter",
+      "level": 68,
+      "class": "Duelist",
+      "ascendancy": "Gladiator",
+      "main_skill": "Lacerate of Haemorrhage",
+      "tree_version": "3_25",
+      "pob_url": "https://pobb.in/wELCM8sLamR1",
+      "from": {
+        "file": "gladiator_lacerate.pob.txt",
+        "item_set": "Early Game",
+        "spec": "Level 68 - Merc Lab (Swap to 1H)",
+        "skill_set": "Level 38 - Maps",
+        "config_set": "Default",
+        "linked_by": "inferred",
+        "level_source": "spec title"
+      }
+    },
+    {
+      "slug": "slayer_ground_slam",
+      "title": "Ground Slam Slayer Leaguestarter",
+      "level": 61,
+      "class": "Duelist",
+      "ascendancy": "Slayer",
+      "main_skill": "Vaal Ground Slam of Earthshaking",
+      "tree_version": "3_25",
+      "pob_url": "https://pobb.in/BuNxOBIGRtX3",
+      "from": {
+        "file": "slayer_ground_slam.pob.txt",
+        "item_set": "Basic gear (Blood magic)",
+        "spec": "Leveling (Cruel lab - Merc lab)",
+        "skill_set": "Blood Magic",
+        "config_set": "Default",
+        "linked_by": "inferred",
+        "level_source": "estimated from 94 allocated nodes"
+      }
+    },
+    {
+      "slug": "gladiator_eviscerate_retaliate",
+      "title": "Eviscerate & Retaliate Gladiator Leaguestarter (ft. Goratha)",
+      "level": 68,
+      "class": "Duelist",
+      "ascendancy": "Gladiator",
+      "main_skill": "Sunder / Eviscerate",
+      "tree_version": "3_25",
+      "pob_url": "https://pobb.in/4_eAbfqEiRXe",
+      "from": {
+        "file": "gladiator_eviscerate_retaliate.pob.txt",
+        "item_set": "Early Game",
+        "spec": "Level 68 - Merc Lab",
+        "skill_set": "Level 38 - Maps",
+        "config_set": "Default",
+        "linked_by": "inferred",
+        "level_source": "spec title"
+      }
+    },
+    {
+      "slug": "berserker_ground_slam_autocry",
+      "title": "Autocry Slammer Berserker Leaguestarter",
+      "level": 85,
+      "class": "Marauder",
+      "ascendancy": "Berserker",
+      "main_skill": "Ground Slam of Earthshaking",
+      "tree_version": "3_25",
+      "pob_url": "https://pobb.in/vYfc3T0fTQFN",
+      "from": {
+        "file": "berserker_ground_slam_autocry.pob.txt",
+        "item_set": "Early Game {5}",
+        "spec": "Early Game {5}",
+        "skill_set": "Maps {1,2,4,5}",
+        "config_set": "Default",
+        "linked_by": "author marker {5}",
+        "level_source": "estimated from 118 allocated nodes"
+      }
+    },
+    {
+      "slug": "gladiator_spectral_shield_throw",
+      "title": "Bleed SST Gladiator Leaguestarter",
+      "level": 74,
+      "class": "Duelist",
+      "ascendancy": "Gladiator",
+      "main_skill": "Spectral Shield Throw",
+      "tree_version": "3_25",
+      "pob_url": "https://pobb.in/shIlZ8ebpX5s",
+      "from": {
+        "file": "gladiator_spectral_shield_throw.pob.txt",
+        "item_set": "Early {3}",
+        "spec": "Level 74 + Merc Lab {3}",
+        "skill_set": "Maps {2,3,4}",
+        "config_set": "Default",
+        "linked_by": "author marker {3}",
+        "level_source": "spec title"
+      }
+    },
+    {
+      "slug": "champion_explosive_arrow",
+      "title": "Explosive Arrow Ballista Champion Leaguestarter",
+      "level": 69,
+      "class": "Duelist",
+      "ascendancy": "Champion",
+      "main_skill": "Explosive Arrow (Ballista Totem)",
+      "tree_version": "3_25",
+      "pob_url": "https://pobb.in/5mc-zEY068U9",
+      "from": {
+        "file": "champion_explosive_arrow.pob.txt",
+        "item_set": "Early Game",
+        "spec": "Level 69 - Merciless Lab",
+        "skill_set": "Level 38+",
+        "config_set": "Default",
+        "linked_by": "inferred",
+        "level_source": "spec title"
+      }
+    }
+  ]
+}

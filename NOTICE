@@ -1,0 +1,10 @@
+This repository is a test copy: the code and tests of a private project, published so that its tests run on
+GitHub's machines. It is non-commercial and carries no warranty.
+
+Path of Exile and its game data are the copyright of Grinding Gear Games. Data files in this copy are derived from
+that game's data. This project is not affiliated with, endorsed or sponsored by Grinding Gear Games.
+
+Credits and licences of the data and tools this copy was built with:
+- Path of Building (PoB), MIT licence, https://github.com/PathOfBuildingCommunity/PathOfBuilding
+- RePoE, game data exports, credit to its authors
+- Path of Exile Wiki (poewiki.net) and poedb.tw content: CC BY-NC-SA 3.0, non-commercial use only

@@ -1,0 +1,2979 @@
+{
+ "version": 1,
+ "updated": "2026-09-19",
+ "about": "Правила по лодаутам: с какого лодаута система может использовать каждую систему игры и в каком объёме. Пустая ячейка наследует предыдущий лодаут. Источник правил — пользователь (матрица 19.09 и правки в чате); ячейки с пометкой «предположение» вписал лид, их нужно подтвердить.",
+ "loadouts": [
+  {
+   "id": "day1",
+   "name": "Day-1",
+   "sub": "карты до T10",
+   "level": "75-80",
+   "floors": {
+    "title": "Полы Day-1 (floors): значения из src/junkroan/optimizer/rails_default.json, переписаны вручную",
+    "lines": [
+     "Life >= 4500",
+     "PhysicalMaximumHitTaken >= 4700",
+     "FireMaximumHitTaken >= 14800",
+     "ColdMaximumHitTaken >= 14600",
+     "LightningMaximumHitTaken >= 16000",
+     "FireResist, ColdResist, LightningResist each >= 65",
+     "FireResist, ColdResist, LightningResist goal 75",
+     "ChaosResist: no floor",
+     "EffectiveMovementSpeedMod >= 1.2",
+     "MoMCastsAfterMaxHit >= 3",
+     "MoMHitFraction >= 0.8",
+     "sustain (recovery_over_cost) >= 0.85",
+     "self-degen (idle_recovery_over_life) >= 0.0"
+    ],
+    "objective": "CombinedDPS: цель оптимизации (objective), не пол; цель 375000 (targets.CombinedDPS в rails_default.json)"
+   }
+  },
+  {
+   "id": "t16",
+   "name": "T16",
+   "sub": "красные карты",
+   "level": "90-95"
+  },
+  {
+   "id": "endgame",
+   "name": "Endgame",
+   "sub": "боссы, босс-дроп",
+   "level": "95-100"
+  },
+  {
+   "id": "uber",
+   "name": "Uber-endgame",
+   "sub": "убер-боссы, T0",
+   "level": "97-100"
+  },
+  {
+   "id": "uber_plus",
+   "name": "Uber-endgame+",
+   "sub": "экстендер: +1 редкое свойство",
+   "level": "97-100"
+  },
+  {
+   "id": "mirror",
+   "name": "Mirror",
+   "sub": "без ограничений бюджета",
+   "level": "100"
+  }
+ ],
+ "categories": [
+  {
+   "id": "general",
+   "name": "Общие правила"
+  },
+  {
+   "id": "character",
+   "name": "Персонаж"
+  },
+  {
+   "id": "tree",
+   "name": "Дерево пассивок"
+  },
+  {
+   "id": "gems",
+   "name": "Гемы и сокеты"
+  },
+  {
+   "id": "items",
+   "name": "Предметы: базы, редкие, крафт"
+  },
+  {
+   "id": "uniques",
+   "name": "Уники"
+  },
+  {
+   "id": "jewels",
+   "name": "Джевелы: общие правила"
+  },
+  {
+   "id": "unique_jewels",
+   "name": "Уник-джевелы по одному"
+  },
+  {
+   "id": "other_gear",
+   "name": "Фласки, тинктуры, прочее"
+  },
+  {
+   "id": "config",
+   "name": "Конфиг и окружение"
+  },
+  {
+   "id": "never",
+   "name": "Нет в игре / не используем"
+  }
+ ],
+ "entries": [
+  {
+   "id": "g-inherit",
+   "category": "general",
+   "scope": "broad",
+   "status": "base",
+   "title": "Лодаут = самый ранний этап, с которого система разрешена",
+   "rules": {
+    "day1": "каждый следующий лодаут наследует всё, что разрешено в предыдущем"
+   },
+   "explain": "Лестница: Day-1 (T10) -> T16 -> Endgame -> Uber-endgame -> Uber-endgame+ -> Mirror. Лодаут — это пакет рейлов: бюджетные ручки, шаблоны гира, выключатели систем, цель. Пока считаем только боссинг; маппинг позже как набор порогов комфорта, а не второе число DPS.",
+   "source": "чат 19.09"
+  },
+  {
+   "id": "g-useful-n",
+   "category": "general",
+   "scope": "broad",
+   "status": "base",
+   "title": "Что значит «N полезных свойств»",
+   "rules": {
+    "day1": "засчитываем ровно N полезных строк; остальные полезные строки игнорируем (ноль); негативные строки не игнорируем никогда"
+   },
+   "explain": "Пример пользователя: у предмета две строки, каждая роллится от минуса до плюса. «+10 хп / +20 мана» при правиле «1 полезное» проходит (хп засчитано, мана проигнорирована). «+10 хп / -20 мана» не проходит: негатив нельзя списать как «вторую, проигнорированную» строку. Для системы: строка вне N засчитанных моделируется нулём, если она полезная или может роллиться неотрицательной, и своим реальным значением, если это недостаток.",
+   "source": "чат 19.09, 4-й проход"
+  },
+  {
+   "id": "g-uber-plus",
+   "category": "general",
+   "scope": "broad",
+   "status": "open",
+   "title": "Uber-endgame+: экстендер между Uber-endgame и Mirror",
+   "rules": {
+    "uber_plus": "то же, что Uber-endgame, плюс одно «лишнее» редкое свойство там, где оно полностью меняет билд и цену"
+   },
+   "assumed": [
+    "uber_plus"
+   ],
+   "explain": "Пользователь: «экстендер uber-endgame лодаута для случаев, где, к примеру, правило +1 стат у джевела может полностью менять билд и его стоимость / трудность экваера». Пока ячейки этого лодаута пустые (наследуют Uber-endgame), кроме мест, где пользователь уже намекал на промежуточную ступень: Bound by Destiny, таймлесы, Voices.",
+   "question": "Название лодаута рабочее. Какие записи, кроме отдельных уник-джевелов, должны отличаться в нём от Uber-endgame (джевелы 3 -> 4 мода? eldritch T2?)",
+   "source": "чат 19.09",
+   "user_note": "Ответ на вопрос - я в каждом пункте в этой странице распишу то что нуждается в уберэндгейм+ лодауте"
+  },
+  {
+   "id": "g-rarity",
+   "category": "general",
+   "scope": "broad",
+   "status": "rule",
+   "title": "Редкость открытого мода на редком предмете",
+   "rules": {
+    "day1": "доля мода в пуле < 0.2% — не берём вообще; < 1% — стоит двух строк шаблона"
+   },
+   "explain": "«+1 ко всем спелл-гемам» (0.07% пула префиксов на Void Sceptre ilvl 76) — не берём; «+1 к огненным / холодным / молниевым спелл-гемам» (0.37%) — занимает две строки. Фиксированные строки лайфа и реза не вытесняются. Для лодаутов выше Day-1 — решается вместе с эндгейм-итемизацией.",
+   "machine": {
+    "open_mod_never_below_share": 0.002,
+    "open_mod_two_lines_below_share": 0.01
+   },
+   "source": "чат 19.09 (D79)",
+   "user_note": "Это отдельная тема, пока в беклог. Могу лишь сказать что Миррор тир должен иметь рарки с 6 перфект модами (необязательно т1, но 6 мост ипмактфул)"
+  },
+  {
+   "id": "c-level",
+   "category": "character",
+   "scope": "broad",
+   "status": "rule",
+   "title": "Уровень персонажа и квестовые поинты",
+   "title_en": "Character level and quest passive points",
+   "rules": {
+    "day1": "75-80",
+    "t16": "90-95",
+    "endgame": "95-100",
+    "uber": "97-100",
+    "mirror": "100",
+    "uber_plus": "99-100"
+   },
+   "explain": "Квесты всегда на максимум, бандиты — kill all. Диапазон, а не точка: система должна закончить дерево на эффективной точке, а не брать два бессмысленных малых нода ради ровного числа.",
+   "machine": {
+    "level": {
+     "day1": [
+      75,
+      80
+     ],
+     "t16": [
+      90,
+      95
+     ],
+     "endgame": [
+      95,
+      100
+     ],
+     "uber": [
+      97,
+      100
+     ],
+     "uber_plus": [
+      97,
+      100
+     ],
+     "mirror": [
+      100,
+      100
+     ]
+    }
+   },
+   "source": "матрица 19.09; uber — 3-й проход"
+  },
+  {
+   "id": "c-class",
+   "category": "character",
+   "scope": "broad",
+   "status": "base",
+   "title": "Класс и стартовая точка",
+   "title_en": "Character class and class start",
+   "rules": {
+    "day1": "определяется скелетом, по лодаутам не меняется"
+   },
+   "explain": "Исключение — Сционка: её сабкласс может давать вторую стартовую точку; это должно работать корректно с Day-1.",
+   "source": "матрица 19.09"
+  },
+  {
+   "id": "c-ascendancy",
+   "category": "character",
+   "scope": "broad",
+   "status": "rule",
+   "title": "Асенденси и альтернативные асенденси",
+   "title_en": "Ascendancy and alternate ascendancy",
+   "rules": {
+    "day1": "основные асенденси",
+    "t16": "как дей 1",
+    "endgame": "+ альтрнативные асенденси"
+   },
+   "source": "матрица 19.09"
+  },
+  {
+   "id": "c-bandits",
+   "category": "character",
+   "scope": "broad",
+   "status": "base",
+   "title": "Бандиты",
+   "title_en": "Bandit quest choice",
+   "rules": {
+    "day1": "kill all"
+   },
+   "machine": {
+    "bandit": {
+     "day1": "None"
+    }
+   },
+   "source": "матрица 19.09",
+   "user_note": "Я крайне сомневаюсь, но что если какие - то бандит эффекты выгоднее поинта даже в эндгейме, а мы их вот так убираем хардкодом? Надо будет это проверить в будущем когда будут готовы лодауты и заревизитить решение по бандитам. Необязательно ждать пока дойдем до миррор лодаута, достаточно закрыть эндгейм. В беклог"
+  },
+  {
+   "id": "c-pantheon",
+   "category": "character",
+   "scope": "broad",
+   "status": "settled",
+   "title": "Пантеон",
+   "title_en": "Pantheon major/minor gods",
+   "rules": {
+    "day1": "нет",
+    "t16": "все силы и апгрейды"
+   },
+   "explain": "Ресёрч сделан (вики, 3.25-3.29): карта каждого апгрейда — данные текущей лиги, тиры прыгают (Yugul: T15 / T1 / - / T4 / T7). В 3.29 выше T10 лежат: Arakaali 3 (Arid Lake T11), Lunaris 3 (Beach T13), Ralakesh (Fields T14), Ryslatha (Infested Valley T15), Solaris 3 (Volcano T11), Brine King 3 (Mineral Pools T12). Нужен Divine Vessel. Таблица: docs/rulebook/2026-09-19-bench-and-pantheon-unlocks.md.",
+   "user_note": "интересно было бы чтобы ты спарсил с каких мап/тиров открываются определенные пантеоны... ггг вроде каждую лигу при смене мап в атласе балансят чтобы было примерно в одинаковых тирах. Но не уверен, это надо проводить ресерч между несколькими лигами (5 пускай)\nПосмотрел на ресерч, не думал что так сильно прыгают тиры. Пускай тогда у нас любые пантеоны будут только с т16",
+   "source": "матрица 19.09; ресёрч вики 19.09"
+  },
+  {
+   "id": "t-nodes",
+   "category": "tree",
+   "scope": "broad",
+   "status": "base",
+   "title": "Обычные ноды, нотаблы, кистоуны, мастери",
+   "title_en": "Ordinary passive nodes, notables, keystones, masteries",
+   "rules": {
+    "day1": "без ограничений по лодауту"
+   },
+   "explain": "Одно ограничение Day-1 из шаблонов гира: дерево может взять не больше ОДНОГО нода +30 к атрибуту ради требований; остальное — с гира.",
+   "machine": {
+    "attribute_plus30_nodes_max": {
+     "day1": 1
+    }
+   },
+   "source": "матрица 19.09; D79"
+  },
+  {
+   "id": "t-anoint",
+   "category": "tree",
+   "scope": "broad",
+   "status": "rule",
+   "title": "Аноинты (масла)",
+   "title_en": "Anointments and oil allocation",
+   "rules": {
+    "day1": "масла до Black включительно (дроп-уровень 1-68): 208 нотаблов",
+    "t16": "+ Opalescent, Silver: ещё 143 нотабла",
+    "endgame": "+ Golden (исключение: редкость) и Prismatic: ещё 121"
+   },
+   "machine": {
+    "oil_max": {
+     "day1": "Black",
+     "t16": "Silver",
+     "endgame": "Prismatic"
+    }
+   },
+   "explain": "Рецепты — из данных дерева PoB (472), дроп-уровни масел — вики; они не меняются годами, перепроверять каждую лигу не нужно. Подробно: docs/rulebook/2026-09-19-anoint-oils.md.",
+   "source": "матрица 19.09; чат (Golden с эндгейма как исключение)"
+  },
+  {
+   "id": "t-tattoos",
+   "category": "tree",
+   "scope": "broad",
+   "status": "rule",
+   "title": "Тату",
+   "title_en": "Tattoos",
+   "rules": {
+    "t16": "тату 3-го тира и ниже",
+    "endgame": "2-го тира и ниже",
+    "uber": "любые"
+   },
+   "explain": "Тиры — из статьи вики о тату (тесты игроков, могут меняться) -> обновлять раз в лигу (docs/DATA_FRESHNESS.md). Данных в системе пока нет.",
+   "source": "чат 19.09, 2-й проход"
+  },
+  {
+   "id": "t-cluster",
+   "category": "tree",
+   "scope": "broad",
+   "status": "rule",
+   "title": "Кластерные джевелы (редкие)",
+   "title_en": "Cluster jewels",
+   "rules": {
+    "day1": "нет",
+    "t16": "large / medium, не меньше 12 / 6 пассивок",
+    "endgame": "все типы, любое число пассивок"
+   },
+   "machine": {
+    "sizes": {
+     "day1": [],
+     "t16": [
+      "large",
+      "medium"
+     ],
+     "endgame": "all"
+    },
+    "passives": {
+     "large": {
+      "day1": 0,
+      "t16": 12,
+      "endgame": null
+     },
+     "medium": {
+      "day1": 0,
+      "t16": 6,
+      "endgame": null
+     }
+    }
+   },
+   "explain": "ilvl баз — из общего рейла баз. Уник-кластеры (Megalomaniac, Voices) — отдельными записями в уник-джевелах.",
+   "source": "матрица 19.09"
+  },
+  {
+   "id": "t-timeless",
+   "category": "tree",
+   "scope": "broad",
+   "status": "open",
+   "title": "Timeless-джевелы (и новые abyss-джевелы 3.29 с той же механикой)",
+   "title_en": "Timeless jewels",
+   "rules": {
+    "t16": "берём только ради кистоуна; изменившиеся в радиусе ноды не засчитываем",
+    "endgame": "кистоун + 3 нотабла + 5 малых в радиусе",
+    "uber": "промежуточная доля между Endgame и Mirror — не задана",
+    "mirror": "кистоун + 80% нотаблов и малых в радиусе"
+   },
+   "assumed": [
+    "uber"
+   ],
+   "explain": "Кистоун не всегда обязателен. Тип / база джевела на редкость не влияют — влияет то, что на нём нароллилось. Сиды расшифрованы (есть git-репо декодера): нужна модель вероятности выбранного таймлеса, чтобы система понимала, засчитывать его или нет (чистый кистоун — вероятность 100%). Пользователь: цифры от Endgame и выше «чисто из головы, возможно слишком сильные — потенциальная уязвимость».",
+   "question": "Поднять в момент старта Endgame-лодаута: числа, модель вероятности, декодер сидов; доля для Uber-endgame и Uber-endgame+.",
+   "source": "матрица 19.09; чат 2-й и 3-й проходы; форма джевелов"
+  },
+  {
+   "id": "gm-active",
+   "category": "gems",
+   "scope": "broad",
+   "status": "base",
+   "title": "Активные скилл-гемы",
+   "title_en": "Active skill gems",
+   "rules": {
+    "day1": "без ограничений по лодауту"
+   },
+   "source": "матрица 19.09"
+  },
+  {
+   "id": "gm-links",
+   "category": "gems",
+   "scope": "broad",
+   "status": "rule",
+   "title": "Саппорты и состав линков",
+   "title_en": "Support gems and link composition",
+   "rules": {
+    "day1": "4-сокетные предметы — 4L; 5+-сокетные — 5L (если таких два, то один 5L, второй 4L)",
+    "t16": "один 6L",
+    "endgame": "6L сколько угодно",
+    "uber": "exceptional supports",
+    "uber_plus": "Awakened exceptional supports"
+   },
+   "source": "матрица 19.09"
+  },
+  {
+   "id": "gm-level",
+   "category": "gems",
+   "scope": "broad",
+   "status": "rule",
+   "title": "Уровень и качество гемов",
+   "title_en": "Gem level and gem quality",
+   "rules": {
+    "day1": "18/0 гемы",
+    "t16": "2 20/20 гемов макс, остальные 20/0",
+    "endgame": "21/0 ИЛИ 20/20",
+    "uber": "21/20 ИЛИ 20/23 — «это всегда выбор»",
+    "mirror": "все гемы могут быть 21/23",
+    "uber_plus": "3 самых влияющих гема могут быть 21/23"
+   },
+   "explain": "Для гемов с максимальным уровнем ниже 20 — «+1 уровень», а не 21. До D23 гемы 20/20 завышали результат до 70%: сравнивать билды можно только на равных уровнях гемов.",
+   "machine": {
+    "gem_level": {
+     "day1": 18,
+     "t16": 20
+    },
+    "gem_quality": {
+     "day1": 0
+    }
+   },
+   "source": "матрица 19.09; 2-й проход"
+  },
+  {
+   "id": "gm-vaal",
+   "category": "gems",
+   "scope": "broad",
+   "status": "rule",
+   "title": "Vaal-версии гемов",
+   "title_en": "Vaal skill-gem variant",
+   "rules": {
+    "day1": "18/0",
+    "t16": "20/0",
+    "endgame": "20/20",
+    "mirror": "21/20 или 20/23"
+   },
+   "machine": {
+    "vaal_gem": {
+     "day1": {
+      "level": 18,
+      "quality": 0
+     },
+     "t16": {
+      "level": 20,
+      "quality": 0
+     },
+     "endgame": {
+      "level": 20,
+      "quality": 20
+     },
+     "mirror": [
+      {
+       "level": 21,
+       "quality": 20
+      },
+      {
+       "level": 20,
+       "quality": 23
+      }
+     ]
+    }
+   },
+   "source": "матрица 19.09"
+  },
+  {
+   "id": "gm-transfigured",
+   "category": "gems",
+   "scope": "broad",
+   "status": "rule",
+   "title": "Трансфигурированные гемы",
+   "title_en": "Transfigured skill-gem variant",
+   "rules": {
+    "day1": "разрешены; уровень / качество — как у Vaal-версий"
+   },
+   "machine": {
+    "transfigured_gem": {
+     "day1": {
+      "level": 18,
+      "quality": 0
+     }
+    }
+   },
+   "explain": "Оба вида гемов сложно добываются, поэтому лестница уровней и качества общая с Vaal.",
+   "source": "матрица 19.09"
+  },
+  {
+   "id": "gm-awakened",
+   "category": "gems",
+   "scope": "broad",
+   "status": "rule",
+   "title": "Awakened и другие исключительные саппорты",
+   "title_en": "Awakened and other exceptional supports",
+   "rules": {
+    "endgame": "разрешены; уровень / качество — как у Vaal-версий, относительно их собственного максимума"
+   },
+   "explain": "У awakened / greater и т. п. максимальный уровень обычно не 20.",
+   "source": "матрица 19.09"
+  },
+  {
+   "id": "gm-sockets",
+   "category": "gems",
+   "scope": "broad",
+   "status": "rule",
+   "title": "Цвета сокетов (3.29: цветной сокет = +10% качества гема)",
+   "title_en": "Item sockets, links, and socket colours",
+   "rules": {
+    "day1": "2 цветных сокета",
+    "t16": "4",
+    "endgame": "8",
+    "mirror": "сколько угодно"
+   },
+   "machine": {
+    "coloured_max": {
+     "day1": 2,
+     "t16": 4,
+     "endgame": 8,
+     "mirror": null
+    }
+   },
+   "explain": "С 3.29 сокеты по умолчанию белые и принимают любой гем, а цвет даёт +10% качества. Число сокетов и линков — в записи о линках.",
+   "source": "матрица 19.09"
+  },
+  {
+   "id": "i-bases",
+   "category": "items",
+   "scope": "broad",
+   "status": "settled",
+   "title": "Базы предметов и item level",
+   "title_en": "Item bases and ordinary implicits",
+   "rules": {
+    "day1": "базы до 70; ilvl: loot gear 70, template (wishlist) gear 72, оружие 76",
+    "t16": "до 83",
+    "endgame": "86+"
+   },
+   "machine": {
+    "item_level_max": {
+     "day1": 70,
+     "t16": 83
+    },
+    "template_item_level": {
+     "day1": 72
+    },
+    "weapon_item_level": {
+     "day1": 76
+    },
+    "base_level_max": {
+     "day1": 70
+    }
+   },
+   "source": "матрица 19.09"
+  },
+  {
+   "id": "i-day1-templates",
+   "category": "items",
+   "scope": "broad",
+   "status": "rule",
+   "title": "Редкие предметы Day-1: шаблоны",
+   "title_en": "Day-1 gear templates (D79)",
+   "rules": {
+    "day1": "броня и бижутерия: лайф + рез T3 + одна открытая строка или бенч-крафт; ботинки: лайф + рез + скорость бега; оружие: 3 строки (открытая, открытая, открытая-или-крафт)",
+    "t16": "не задано — обсуждается при старте лодаута"
+   },
+   "assumed": [
+    "t16"
+   ],
+   "explain": "Лайф — медианные тиры с побов Туада по слотам (нагрудник T6, шлем T3, перчатки T2, ботинки T2, пояс T3, амулет T3, кольцо T2, щит / колчан T3). Рез T3 (36-41%) на каждом слоте; до ДВУХ предметов могут нести одну дополнительную строку реза T3 — только если иначе билд не капается. На лайф-билдах лайф на всех предметах, где он возможен, без исключений; для ES — аналогично. Гир должен подсвечивать, что игроку крафтить / покупать (shopping list), и считаться быстрее 3 минут на билд. Шаблоны — данные: src/junkroan/mechanics/day1_gear_templates.json.",
+   "question": "Эндгейм-итемизация (рекомбинаторы, тройной T1, эффективные пути крафта) — отдельный разговор до рейлов; шаблоны Day-1 не переносятся сменой тиров.",
+   "source": "чат 19.09 (D79 и поправка)"
+  },
+  {
+   "id": "i-rare-mods",
+   "category": "items",
+   "scope": "broad",
+   "status": "base",
+   "title": "Обычные моды редких предметов и их тиры",
+   "title_en": "Regular rare explicit modifiers and tiers",
+   "rules": {
+    "day1": "считает система от рейлов уровня / ilvl"
+   },
+   "source": "матрица 19.09"
+  },
+  {
+   "id": "i-quality",
+   "category": "items",
+   "scope": "broad",
+   "status": "rule",
+   "title": "Качество предметов и катализаторы",
+   "title_en": "Item quality and jewellery catalysts",
+   "rules": {
+    "endgame": "катализаторы до 20%",
+    "mirror": "качество предметов 27%",
+    "t16": "качество предметов 20%"
+   },
+   "source": "матрица 19.09"
+  },
+  {
+   "id": "i-bench",
+   "category": "items",
+   "scope": "broad",
+   "status": "settled",
+   "title": "Бенч-крафты",
+   "title_en": "Crafting-bench modifiers",
+   "rules": {
+    "day1": "рецепты из актов, лабиринта и карт <= T10 текущей лиги; крафты за Exalted Orb — нет (только с T16)",
+    "t16": "рецепты со всех обычных карт, крафты за любого кол-во экзальтов только начиная отсюда",
+    "endgame": "мета-крафты с уник-карт (мультимод, prefixes / suffixes cannot be changed, cannot roll attack / caster)"
+   },
+   "explain": "Ресёрч сделан (вики, Cargo-таблицы): 829 опций — 79 открыты сразу, 187 в актах, 18 в лабиринте, 422 на картах T1-10 и 123 на картах T11-16 (3.29). Тир карты рецепта НЕ стабилен: из 82 карт с рецептами 49 за пять лиг побывали по обе стороны линии T10, только 10 всегда оставались <= T10 -> это данные лиги, обновляются каждую лигу. В 3.29 выше T10 лежат, например: скорость атаки / каста 3 ранга (Residence T13), spell damage 4 ранга (Malformation T12), phys damage 4 ранга (Foundry T11), миньонские крафты на оружии (Orchard T11), +1 min charges (T12), крит 3 ранга (Belfry T14). Плоский лайф 5 ранга — Sulphur Vents T7 (в 3.27 был T15). С 3.26 veiled-крафты — тоже рецепты на картах. Таблица: docs/rulebook/2026-09-19-bench-and-pantheon-unlocks.md. В системе с 19.09 (D81): рейл gear.bench.max_map_tier = 10 для Day-1; замер по кампании new18-rules: 21 из 342 крафтов (6%) были рецептами с карт T11-16 — теперь запрещены; крафтов за Exalted / Divine система не брала ни разу (0 из 342).",
+   "user_note": "какие то открываются в актах, а какие то на мапах... Было бы очень круто если система это учитывала. Что касается бенчкрафтов с уник мап (мультимод, преф/суф кеннот би чендж и тд) - это эндгейм",
+   "source": "матрица 19.09; ресёрч вики 19.09",
+   "machine": {
+    "bench_max_map_tier": {
+     "day1": 10,
+     "t16": 16
+    }
+   }
+  },
+  {
+   "id": "i-essence",
+   "category": "items",
+   "scope": "broad",
+   "status": "rule",
+   "title": "Эссенции",
+   "title_en": "Essence-forced modifiers",
+   "rules": {
+    "t16": "все, кроме высшего тира",
+    "endgame": "высший тир (на вики: T8 Deafening) и Delirium / Hysteria / Insanity / Horror"
+   },
+   "source": "матрица 19.09"
+  },
+  {
+   "id": "i-veiled",
+   "category": "items",
+   "scope": "broad",
+   "status": "rule",
+   "title": "Veiled-моды",
+   "title_en": "Veiled modifiers",
+   "rules": {
+    "t16": "разрешены"
+   },
+   "explain": "С 3.26 veiled-крафты открываются объектами-рецептами на картах (вики), так что часть из них регулируется записью о бенч-крафтах.",
+   "source": "матрица 19.09"
+  },
+  {
+   "id": "i-fractured",
+   "category": "items",
+   "scope": "broad",
+   "status": "rule",
+   "title": "Fractured-мод",
+   "title_en": "Fractured explicit modifier",
+   "rules": {
+    "endgame": "разрешён"
+   },
+   "source": "матрица 19.09"
+  },
+  {
+   "id": "i-influence",
+   "category": "items",
+   "scope": "broad",
+   "status": "rule",
+   "title": "Influence-моды",
+   "title_en": "Influence modifier pools",
+   "rules": {
+    "endgame": "одна инфлюенса",
+    "uber": "две инфлюенсы на предмете (Awakener's Orb)"
+   },
+   "source": "матрица 19.09; 3-й проход"
+  },
+  {
+   "id": "i-heist-bases",
+   "category": "items",
+   "scope": "narrow",
+   "status": "rule",
+   "title": "Базы только из Heist (Helical Ring, Focused Amulet и т. п.)",
+   "title_en": "Heist-only bases",
+   "rules": {
+    "uber": "разрешены"
+   },
+   "source": "чат 19.09, 3-й проход"
+  },
+  {
+   "id": "i-eldritch",
+   "category": "items",
+   "scope": "broad",
+   "status": "open",
+   "title": "Eldritch-имплиситы (6 тиров)",
+   "title_en": "Eldritch implicits",
+   "rules": {
+    "t16": "T6 (нижний)",
+    "endgame": "T6-T4",
+    "uber": "до T3",
+    "mirror": "остальные; на одном предмете максимум один T1 и один T2"
+   },
+   "question": "T2 на Uber-endgame (или на Uber-endgame+) — открыто.",
+   "source": "матрица 19.09; 2-й проход"
+  },
+  {
+   "id": "i-delve",
+   "category": "items",
+   "scope": "broad",
+   "status": "rule",
+   "title": "Delve-моды",
+   "title_en": "Delve modifiers",
+   "rules": {
+    "endgame": "разрешены"
+   },
+   "source": "матрица 19.09"
+  },
+  {
+   "id": "i-beast",
+   "category": "items",
+   "scope": "broad",
+   "status": "rule",
+   "title": "Beastcraft-моды",
+   "title_en": "Beastcraft modifiers",
+   "rules": {
+    "endgame": "разрешены"
+   },
+   "source": "матрица 19.09"
+  },
+  {
+   "id": "i-corruption",
+   "category": "items",
+   "scope": "broad",
+   "status": "rule",
+   "title": "Corruption-имплиситы",
+   "title_en": "Corruption implicits",
+   "rules": {
+    "endgame": "только на magic-предметах (1 префикс + 1 суффикс + corruption) — для механик вроде The Adorned, на любом слоте",
+    "mirror": "на любых предметах; джевел: 3 мода + corruption"
+   },
+   "source": "матрица 19.09; 2-й проход"
+  },
+  {
+   "id": "i-synth",
+   "category": "items",
+   "scope": "broad",
+   "status": "rule",
+   "title": "Synthesised-имплиситы",
+   "title_en": "Synthesised implicits",
+   "rules": {
+    "endgame": "только synthesised-уники с боссов Synthesis (по правилам уников)",
+    "mirror": "не-уник synthesised-предмет"
+   },
+   "explain": "Проверено на вики: из игры не убраны. «Currently, synthesised items can only be found as unique item drops from Synthesis bosses»; не-уник получается только порчей такого уника.",
+   "user_note": "По моему их убрали из игры. Но если нет то миррор",
+   "source": "матрица 19.09; проверка вики 19.09"
+  },
+  {
+   "id": "i-talismans",
+   "category": "items",
+   "scope": "narrow",
+   "status": "rule",
+   "title": "Редкие талисманы",
+   "title_en": "Rare talismans",
+   "rules": {
+    "t16": "требование уровня 1",
+    "endgame": "требование уровня 1-28",
+    "uber": "36+"
+   },
+   "explain": "Деление по требованию уровня талисмана (вики). Данных в системе пока нет.",
+   "source": "чат 19.09, 3-й проход"
+  },
+  {
+   "id": "u-tiers",
+   "category": "uniques",
+   "scope": "broad",
+   "status": "settled",
+   "title": "Уники: тиры редкости и источник дропа",
+   "title_en": "Unique items and availability source class",
+   "rules": {
+    "day1": "T5",
+    "t16": "до T4",
+    "endgame": "до T1 включительно; + босс-дроп",
+    "uber": "до T0; + дроп только с убер-боссов; класс Mageblood / Headhunter, vestigial уники не выше т3 и энчант от вестиджл уника не выше т3",
+    "mirror": "T0, vestigial уники любого тира и энчант от вестиджл уника любого тира",
+    "uber_plus": "vestigial уники не выше т2 и энчант от вестиджл уника не выше т2"
+   },
+   "explain": "Тиры — вики (drop-rate tier), обновляются раз в лигу. Требование уровня уника <= 70 на Day-1. Пользователь надеется, что с шаблонами гира система реже будет брать уник без резов / лайфа: уник должен сравниваться с шаблонной редкой вещью, с пересчётом резов по всему сету.",
+   "source": "матрица 19.09; 2-й проход",
+   "user_note": "https://www.poewiki.net/wiki/Vestigial_unique_item, но поб пока что вроде не показывает вестиджл версии уников. У каждого уника есть пул модов которые можно завестиджилить (перенести на другой уник в качестве имплисита с изменением эффекта аффикса, в этой статье описаны все моды переноса). Будет круто если система сможет находить неочевидные сильные вестидж уники которые не редкие, скажем т5/т4 или типо того. Но это супер комплексия, ты количество уников возводишь в квадрат как я понимаю для расчета. Также здесь надо разобрать все остальные механики обтейна уников помимо боссдроп и глобал дроп. К примеру рецепт онли уники надо в частном порядке обсуждать, там все зависит от редкости айтемов в рецепте. "
+  },
+  {
+   "id": "u-foulborn",
+   "category": "uniques",
+   "scope": "broad",
+   "status": "rule",
+   "title": "Foulborn / мутировавшие моды уников",
+   "title_en": "Foulborn / mutated unique modifiers",
+   "rules": {
+    "t16": "разрешены"
+   },
+   "source": "матрица 19.09"
+  },
+  {
+   "id": "j-regular",
+   "category": "jewels",
+   "scope": "broad",
+   "status": "rule",
+   "title": "Обычные редкие джевелы",
+   "title_en": "Regular jewels",
+   "rules": {
+    "day1": "2 джевела по 1 полезному моду",
+    "t16": "сколько угодно джевелов по 1 моду",
+    "endgame": "по 2 мода",
+    "uber": "по 3 мода",
+    "mirror": "4 мода или 3 мода + corruption-имплисит"
+   },
+   "explain": "«Моды» здесь — полезные свойства в смысле общего правила «N полезных свойств».",
+   "machine": {
+    "useful_mods": {
+     "day1": 1,
+     "t16": 1,
+     "endgame": 2,
+     "uber": 3,
+     "mirror": 4
+    },
+    "count_max": {
+     "day1": 2
+    }
+   },
+   "source": "матрица 19.09; 2-й проход"
+  },
+  {
+   "id": "j-abyss",
+   "category": "jewels",
+   "scope": "broad",
+   "status": "rule",
+   "title": "Abyss-джевелы",
+   "title_en": "Abyss jewels",
+   "rules": {
+    "t16": "как обычные джевелы (1 мод)",
+    "endgame": "2 мода",
+    "uber": "3 мода",
+    "mirror": "4 мода или 3 + corruption"
+   },
+   "source": "матрица 19.09"
+  },
+  {
+   "id": "j-forbidden",
+   "category": "jewels",
+   "scope": "narrow",
+   "status": "rule",
+   "title": "Forbidden Flame / Forbidden Flesh",
+   "title_en": "Forbidden jewels",
+   "rules": {
+    "uber": "разрешены"
+   },
+   "explain": "Босс-дроп, не убер («если не ошибаюсь»), но относятся к Uber-endgame.",
+   "source": "чат 19.09, 3-й проход"
+  },
+  {
+   "id": "o-flasks",
+   "category": "other_gear",
+   "scope": "broad",
+   "status": "rule",
+   "title": "Фласки: базы, моды, энчанты",
+   "title_en": "Flask bases, modifiers, and flask enchantments",
+   "rules": {
+    "day1": "базы и моды по общему рейлу ilvl",
+    "endgame": "+ энчанты и качество"
+   },
+   "machine": {
+    "item_level_max": {
+     "day1": 70
+    },
+    "base_level_max": {
+     "day1": 70
+    }
+   },
+   "source": "матрица 19.09"
+  },
+  {
+   "id": "o-tinctures",
+   "category": "other_gear",
+   "scope": "broad",
+   "status": "rule",
+   "title": "Тинктуры",
+   "title_en": "Tinctures",
+   "rules": {
+    "day1": "разрешены",
+    "endgame": "+ качество"
+   },
+   "machine": {
+    "tinctures": {
+     "day1": true
+    }
+   },
+   "source": "матрица 19.09"
+  },
+  {
+   "id": "o-runegrafts",
+   "category": "other_gear",
+   "scope": "broad",
+   "status": "rule",
+   "title": "Рунеграфты",
+   "title_en": "Runegrafts",
+   "rules": {
+    "endgame": "T6 и T5",
+    "uber": "T4, T3, T2",
+    "mirror": "T1 и выше"
+   },
+   "explain": "«Never» в форме было ошибкой (спутаны с Grafts лиги Keepers). Тиры — со страницы вики Runegraft (массовые отчёты игроков) -> обновлять раз в лигу. Данных в системе пока нет.",
+   "source": "чат 19.09, 3-й проход"
+  },
+  {
+   "id": "o-magic",
+   "category": "other_gear",
+   "scope": "narrow",
+   "status": "rule",
+   "title": "Magic-предметы (для механик вроде The Adorned)",
+   "title_en": "Magic items",
+   "rules": {
+    "endgame": "1 префикс + 1 суффикс + corruption-имплисит, на любом слоте"
+   },
+   "source": "чат 19.09, 2-й проход"
+  },
+  {
+   "id": "o-minions",
+   "category": "other_gear",
+   "scope": "broad",
+   "status": "open",
+   "title": "Миньоны: тип, скилл, выбор спектров",
+   "title_en": "Minion type, minion skill, and spectre choice",
+   "rules": {
+    "day1": "тип и скилл считаются системой, не рейл лодаута"
+   },
+   "explain": "Моды экипировки для миньонов — тоже не рейл, а работа подборщика гира.",
+   "question": "Спектры — отдельная большая задача (парсить poedb, считать цифры спектров, понимать, когда какой доступен). Поднять при старте Endgame-лодаута.",
+   "source": "матрица 19.09"
+  },
+  {
+   "id": "cf-state",
+   "category": "config",
+   "scope": "broad",
+   "status": "base",
+   "title": "Боевое состояние и состояние врага (конфиг PoB)",
+   "title_en": "Configurable combat state and enemy state",
+   "rules": {
+    "day1": "одинаково во всех лодаутах: консервативная полоса требует доказательства"
+   },
+   "explain": "Вердикты пользователя: заряды / бафы «on kill», «on block» не считаются против босса; аилменты — внутри рамп-бюджета 2.5 с; хиты тотемов / ловушек / мин — не хиты игрока; баф, который снимается использованием скилла (Withering Step, Phase Run), в бою не держится. Отдельная метрика «pinnacle boss ramp» 10 с (утверждено, #27) — только в отчёте.",
+   "source": "матрица 19.09; DECISIONS D74-D80"
+  },
+  {
+   "id": "cf-map-mods",
+   "category": "config",
+   "scope": "broad",
+   "status": "backlog",
+   "title": "Моды карт / окружения",
+   "title_en": "Area/map modifiers",
+   "rules": {},
+   "explain": "Бэклог, quality of life для билдов: резы под T16 ele weakness + exposure, аккураси с учётом «less aura effect» или «monsters have more evasion». Возможно, отдельный лодаут. Пока не трогаем.",
+   "source": "матрица 19.09"
+  },
+  {
+   "id": "n-charms",
+   "category": "never",
+   "scope": "broad",
+   "status": "never",
+   "title": "Charms",
+   "rules": {},
+   "explain": "Вики: предмет из Affliction-энкаунтеров, нужен асенденси Wildwood Primalist — лиг-специфик.",
+   "source": "матрица 19.09; вики"
+  },
+  {
+   "id": "n-crucible",
+   "category": "never",
+   "scope": "broad",
+   "status": "never",
+   "title": "Crucible: дерево на оружии",
+   "rules": {},
+   "explain": "Вики: появляется на предметах из Crucible Forge — лиг-специфик.",
+   "source": "матрица 19.09; вики"
+  },
+  {
+   "id": "n-grafts",
+   "category": "never",
+   "scope": "broad",
+   "status": "never",
+   "title": "Grafts",
+   "rules": {},
+   "explain": "Вики: «Grafts were items exclusive to Keepers league». Не путать с рунеграфтами.",
+   "source": "матрица 19.09; вики"
+  },
+  {
+   "id": "n-scourge",
+   "category": "never",
+   "scope": "broad",
+   "status": "never",
+   "title": "Scourge-моды",
+   "rules": {},
+   "explain": "Вики: создавались Blood Crucible лиги Scourge.",
+   "source": "матрица 19.09; вики"
+  },
+  {
+   "id": "n-necropolis",
+   "category": "never",
+   "scope": "broad",
+   "status": "never",
+   "title": "Necropolis-крафт",
+   "rules": {},
+   "explain": "Лиг-специфик; страницы модов на вики в этом проходе не нашлось.",
+   "source": "матрица 19.09"
+  },
+  {
+   "id": "n-enchants",
+   "category": "never",
+   "scope": "broad",
+   "status": "never",
+   "title": "Энчанты предметов (лабиринт)",
+   "title_en": "Item enchantments",
+   "rules": {},
+   "source": "матрица 19.09"
+  },
+  {
+   "id": "n-legacy-jewels",
+   "category": "never",
+   "scope": "broad",
+   "status": "never",
+   "title": "Legacy-уники (в т. ч. 84 legacy уник-джевела)",
+   "rules": {},
+   "explain": "Пользователь: «Легаси все невер». В списке уник-джевелов ниже их нет.",
+   "source": "форма джевелов 19.09"
+  },
+  {
+   "id": "jewel-amanamu-s-gaze",
+   "category": "unique_jewels",
+   "scope": "narrow",
+   "title": "Amanamu's Gaze",
+   "title_en": "Ghastly Eye Jewel",
+   "tags": [
+    "abyss",
+    "обычный дроп"
+   ],
+   "explain": "+8 to all Attributes / Minions have +6% to Damage over Time Multiplier per Ghastly Eye Jewel affecting you, up to a maximum of +30%",
+   "source": "форма уник-джевелов, 19.09",
+   "user_note": "",
+   "status": "rule",
+   "rules": {
+    "endgame": "разрешён"
+   }
+  },
+  {
+   "id": "jewel-ancestral-vision",
+   "category": "unique_jewels",
+   "scope": "narrow",
+   "title": "Ancestral Vision",
+   "title_en": "Viridian Jewel",
+   "tags": [
+    "обычный",
+    "обычный дроп",
+    "вики T2"
+   ],
+   "explain": "+8 to Dexterity / Modifiers to Chance to Suppress Spell Damage also apply to Chance to Avoid Elemental Ailments at 50% of their Value",
+   "source": "форма уник-джевелов, 19.09",
+   "user_note": "",
+   "status": "rule",
+   "rules": {
+    "endgame": "разрешён"
+   }
+  },
+  {
+   "id": "jewel-apex-mode",
+   "category": "unique_jewels",
+   "scope": "narrow",
+   "title": "Apex Mode",
+   "title_en": "Cobalt Jewel",
+   "tags": [
+    "обычный",
+    "босс-дроп"
+   ],
+   "explain": "23% increased Spell Damage / Spells have 10% reduced Critical Strike Chance per Intensity / Spells which have gained Intensity Recently gain 1 Intensity every 0.50 Seconds",
+   "source": "форма уник-джевелов, 19.09",
+   "user_note": "",
+   "status": "rule",
+   "rules": {
+    "endgame": "разрешён"
+   }
+  },
+  {
+   "id": "jewel-atziri-s-reign",
+   "category": "unique_jewels",
+   "scope": "narrow",
+   "title": "Atziri's Reign",
+   "title_en": "Crimson Jewel",
+   "tags": [
+    "обычный",
+    "upgrade"
+   ],
+   "explain": "Vaal Skills have 18% increased Skill Effect Duration / Vaal Skills have 18% chance to regain consumed Souls when used",
+   "source": "форма уник-джевелов, 19.09",
+   "user_note": "",
+   "status": "rule",
+   "rules": {
+    "endgame": "разрешён"
+   }
+  },
+  {
+   "id": "jewel-baleful-dominion",
+   "category": "unique_jewels",
+   "scope": "narrow",
+   "title": "Baleful Dominion",
+   "title_en": "Hypnotic Eye Jewel",
+   "tags": [
+    "abyss",
+    "босс-дроп"
+   ],
+   "explain": "Historic / Subjugating 4050 souls in the thrall of Kurgal / Passives affected are Conquered by the Abyssal",
+   "source": "форма уник-джевелов, 19.09",
+   "user_note": "",
+   "status": "rule",
+   "rules": {
+    "endgame": "разрешён"
+   }
+  },
+  {
+   "id": "jewel-bloodnotch",
+   "category": "unique_jewels",
+   "scope": "narrow",
+   "title": "Bloodnotch",
+   "title_en": "Crimson Jewel",
+   "tags": [
+    "обычный",
+    "обычный дроп",
+    "вики T2"
+   ],
+   "explain": "50% of Damage taken from Stunning Hits is Recovered as Life / 25% of Damage taken from Stunning Hits is Recovered as Life",
+   "source": "форма уник-джевелов, 19.09",
+   "user_note": "",
+   "status": "rule",
+   "rules": {
+    "uber": "разрешён"
+   }
+  },
+  {
+   "id": "jewel-bound-by-destiny",
+   "category": "unique_jewels",
+   "scope": "narrow",
+   "title": "Bound by Destiny",
+   "title_en": "Prismatic Jewel",
+   "tags": [
+    "обычный",
+    "босс-дроп"
+   ],
+   "explain": "15% increased Cooldown Recovery Rate if 2 Shaper Items are Equipped / 2% of Elemental Damage Leeched as Energy Shield if 2 Shaper Items are Equipped / 2% of Physical Damage Leeched as Energy Shield if 2 Elder Items are Equipped / Unaffected by Poison if 2 Hunter Items are Equipped / Consecrated Ground around you while stationary if 2 Crusader Items are Equipped / 13% increased Dexterity if 2 Redeemer Items are Equipped / Every 4 seconds, Regenerate 35% of Life over one second if 2 Hunter Items are Equipped / 13% increased Intelligence if 2 Crusader Items are Equipped / 13% increased maximum Life if 2 Elder Items are Equipped / 13% increased maximum Mana if 2 Shaper Items are Equipped / Nearby Enemies are Blinded if 2 Redeemer Items are Equipped / Nearby Enemies are Intimidated if 2 Warlord Items are Equipped / Nearby Enemies are Unnerved if 2 Elder Items are Equipped / Projectiles Pierce 2 additional Targets if 2 Hunter Items are Equipped / 13% increased Strength if 2 Warlord Items are Equipped / Unaffected by Chill if 2 Redeemer Items are Equipped / Unaffected by Ignite if 2 Warlord Items are Equipped / Unaffected by Shock if 2 Crusader Items are Equipped / 13% chance to gain a Frenzy Charge on Hit if 4 Redeemer Items are Equipped / 13% chance to gain a Power Charge on Hit if 4 Crusader Items are Equipped / Attacks have +1.25% to Critical Strike Chance if 4 Elder Items are Equipped / +3% to maximum Chaos Resistance if 4 Hunter Items are Equipped / +3% to maximum Cold Resistance if 4 Redeemer Items are Equipped / +3% to maximum Fire Resistance if 4 Warlord Items are Equipped / +3% to maximum Lightning Resistance if 4 Crusader Items are Equipped / +3% to maximum Chance to Block Spell Damage if 4 Shaper Items are Equipped / 13% increased Movement Speed if 4 Hunter Items are Equipped / Cannot take Reflected Elemental Damage if 4 Shaper Items are Equipped / Cannot take Reflected Physical Damage if 4 Elder Items are Equipped / 8% of Elemental Damage taken as Chaos Damage if 4 Hunter Items are Equipped / Gain 1 Endurance Charge every second if you've been Hit Recently and / 4 Warlord Items are Equipped / +3% to maximum Chance to Block Attack Damage if 4 Elder Items are Equipped / 8% of Physical Damage taken as Cold Damage if 4 Redeemer Items are Equipped / 8% of Physical Damage taken as Fire Damage if 4 Warlord Items are Equipped / 8% of Physical Damage taken as Lightning Damage if 4 Crusader Items are Equipped / +1.25% to Spell Critical Strike Chance if 4 Shaper Items are Equipped / +2% to all maximum Elemental Resistances if 6 Shaper Items are Equipped / Skills fire an additional Projectile if 6 Hunter Items are Equipped / 13% increased Attributes if 6 Elder Items are Equipped / Cannot be Frozen if 6 Redeemer Items are Equipped / Cannot be Stunned if 6 Elder Items are Equipped / Melee Hits Fortify if 6 Warlord Items are Equipped / +1 to Level of all Chaos Skill Gems if 6 Hunter Items are Equipped / +1 to Level of all Cold Skill Gems if 6 Redeemer Items are Equipped / +1 to Level of all Fire Skill Gems if 6 Warlord Items are Equipped / 2.0% of Physical Damage Prevented Recently is Regenerated as Energy Shield Per Second if 6 Crusader Items are Equipped / +1 to Level of all Lightning Skill Gems if 6 Crusader Items are Equipped / +1 to Maximum Endurance Charges if 6 Warlord Items are Equipped / +1 to Maximum Frenzy Charges if 6 Redeemer Items are Equipped / +1 to Maximum Power Charges if 6 Crusader Items are Equipped / You can apply an additional Curse if 6 Hunter Items are Equipped / +1 to Level of all Physical Skill Gems if 6 Elder Items are Equipped / +1 to Level of all non-Exceptional Support Gems if 6 Shaper Items are Equipped / Gain 13% of Physical Damage as Extra Damage of each Element if 6 Shaper Items are Equipped",
+   "source": "форма уник-джевелов, 19.09",
+   "user_note": "Убер: 1 полезное свойство (любое: х2, х4, х6), миррор 2 полезных. Этот айтем настолько меняет билд что возможно под него можно будет генерить отдельный лодаут при необходимости чтобы было к примеру 2 полезных свойства.",
+   "status": "rule",
+   "rules": {
+    "uber": "1 полезное свойство (любое: x2, x4, x6)",
+    "uber_plus": "2 полезных свойства",
+    "mirror": "2 полезных свойства"
+   },
+   "assumed": [
+    "uber_plus"
+   ]
+  },
+  {
+   "id": "jewel-brutal-restraint",
+   "category": "unique_jewels",
+   "scope": "narrow",
+   "title": "Brutal Restraint",
+   "title_en": "Timeless Jewel",
+   "tags": [
+    "timeless",
+    "mechanic"
+   ],
+   "explain": "Denoted service of 4250 dekhara in the akhara of Balbala / Passives in radius are Conquered by the Maraketh / Historic / Denoted service of 4250 dekhara in the akhara of Asenath / Denoted service of 4250 dekhara in the akhara of Deshret / Denoted service of 4250 dekhara in the akhara of Nasima",
+   "source": "форма уник-джевелов, 19.09",
+   "user_note": "Сам тип/база не сильно влияет, они все (таймлесы и новые абисс с такой же механикой джевелы) имеют одинаковую редкость. Влияет то что на джевеле ролится. Я расписывал таймлес джевелы до этого",
+   "status": "rule",
+   "rules": {
+    "t16": "только ради кистоуна",
+    "endgame": "кистоун + 3 нотабла + 5 малых",
+    "mirror": "кистоун + 80% радиуса"
+   },
+   "see": "t-timeless"
+  },
+  {
+   "id": "jewel-brute-force-solution",
+   "category": "unique_jewels",
+   "scope": "narrow",
+   "title": "Brute Force Solution",
+   "title_en": "Cobalt Jewel",
+   "tags": [
+    "обычный",
+    "upgrade"
+   ],
+   "explain": "+20 to Intelligence / Strength from Passives in Radius is Transformed to Intelligence / Corrupted",
+   "source": "форма уник-джевелов, 19.09",
+   "user_note": "",
+   "status": "rule",
+   "rules": {
+    "endgame": "разрешён"
+   }
+  },
+  {
+   "id": "jewel-calamitous-visions",
+   "category": "unique_jewels",
+   "scope": "narrow",
+   "title": "Calamitous Visions",
+   "title_en": "Small Cluster Jewel",
+   "tags": [
+    "кластерный",
+    "mechanic"
+   ],
+   "explain": "Adds Lone Messenger",
+   "source": "форма уник-джевелов, 19.09",
+   "user_note": "",
+   "status": "rule",
+   "rules": {
+    "endgame": "разрешён"
+   }
+  },
+  {
+   "id": "jewel-careful-planning",
+   "category": "unique_jewels",
+   "scope": "narrow",
+   "title": "Careful Planning",
+   "title_en": "Viridian Jewel",
+   "tags": [
+    "обычный",
+    "upgrade"
+   ],
+   "explain": "+20 to Dexterity / Intelligence from Passives in Radius is Transformed to Dexterity / Corrupted",
+   "source": "форма уник-джевелов, 19.09",
+   "user_note": "",
+   "status": "rule",
+   "rules": {
+    "endgame": "разрешён"
+   }
+  },
+  {
+   "id": "jewel-chill-of-corruption",
+   "category": "unique_jewels",
+   "scope": "narrow",
+   "title": "Chill of Corruption",
+   "title_en": "Viridian Jewel",
+   "tags": [
+    "обычный",
+    "upgrade"
+   ],
+   "explain": "50% chance to gain an additional Vaal Soul per Enemy Shattered",
+   "source": "форма уник-джевелов, 19.09",
+   "user_note": "",
+   "status": "rule",
+   "rules": {
+    "endgame": "разрешён"
+   }
+  },
+  {
+   "id": "jewel-combat-focus",
+   "category": "unique_jewels",
+   "scope": "narrow",
+   "title": "Combat Focus",
+   "title_en": "Cobalt Jewel",
+   "tags": [
+    "обычный",
+    "vendor"
+   ],
+   "explain": "13% increased Elemental Damage / 13% increased Elemental Damage with Attack Skills / With 40 total Intelligence and Dexterity in Radius, Prismatic Skills deal 50% less Fire Damage / With 40 total Intelligence and Dexterity in Radius, Prismatic Skills cannot choose Fire",
+   "source": "форма уник-джевелов, 19.09",
+   "user_note": "",
+   "status": "rule",
+   "rules": {
+    "t16": "разрешён"
+   }
+  },
+  {
+   "id": "jewel-dead-reckoning",
+   "category": "unique_jewels",
+   "scope": "narrow",
+   "title": "Dead Reckoning",
+   "title_en": "Cobalt Jewel",
+   "tags": [
+    "обычный",
+    "обычный дроп",
+    "вики T2"
+   ],
+   "explain": "Minions have +9% to all Elemental Resistances / With at least 40 Intelligence in Radius, Summon Skeletons can Summon up to 3 Skeleton Mages / With at least 40 Intelligence in Radius, Summon Skeletons can Summon up to 5 Skeleton Mages / With at least 40 Intelligence in Radius, Summon Skeletons can Summon up to 15 Skeleton Mages / Skeletons gain Added Chaos Damage equal to 25% of Maximum Energy Shield on your Equipped Shield",
+   "source": "форма уник-джевелов, 19.09",
+   "user_note": "",
+   "status": "rule",
+   "rules": {
+    "endgame": "разрешён"
+   }
+  },
+  {
+   "id": "jewel-destructive-aspiration",
+   "category": "unique_jewels",
+   "scope": "narrow",
+   "title": "Destructive Aspiration",
+   "title_en": "Ghastly Eye Jewel",
+   "tags": [
+    "abyss",
+    "босс-дроп"
+   ],
+   "explain": "Historic / Subjugating 4050 souls in the thrall of Amanamu / Passives affected are Conquered by the Abyssal",
+   "source": "форма уник-джевелов, 19.09",
+   "user_note": "",
+   "status": "rule",
+   "rules": {
+    "endgame": "разрешён"
+   }
+  },
+  {
+   "id": "jewel-dissolution-of-the-flesh",
+   "category": "unique_jewels",
+   "scope": "narrow",
+   "title": "Dissolution of the Flesh",
+   "title_en": "Prismatic Jewel",
+   "tags": [
+    "обычный",
+    "босс-дроп"
+   ],
+   "explain": "Removes all Energy Shield / Life that would be lost by taking Damage is instead Reserved / until you take no Damage to Life for 2 seconds / 25% more Maximum Life",
+   "source": "форма уник-джевелов, 19.09",
+   "user_note": "",
+   "status": "rule",
+   "rules": {
+    "endgame": "разрешён"
+   }
+  },
+  {
+   "id": "jewel-efficient-training",
+   "category": "unique_jewels",
+   "scope": "narrow",
+   "title": "Efficient Training",
+   "title_en": "Crimson Jewel",
+   "tags": [
+    "обычный",
+    "upgrade"
+   ],
+   "explain": "+20 to Strength / Intelligence from Passives in Radius is Transformed to Strength / Corrupted",
+   "source": "форма уник-джевелов, 19.09",
+   "user_note": "",
+   "status": "rule",
+   "rules": {
+    "endgame": "разрешён"
+   }
+  },
+  {
+   "id": "jewel-elegant-hubris",
+   "category": "unique_jewels",
+   "scope": "narrow",
+   "title": "Elegant Hubris",
+   "title_en": "Timeless Jewel",
+   "tags": [
+    "timeless",
+    "mechanic"
+   ],
+   "explain": "Commissioned 81000 coins to commemorate Cadiro / Passives in radius are Conquered by the Eternal Empire / Historic / Commissioned 81000 coins to commemorate Chitus / Commissioned 81000 coins to commemorate Victario / Commissioned 81000 coins to commemorate Caspiro",
+   "source": "форма уник-джевелов, 19.09",
+   "user_note": "",
+   "status": "rule",
+   "rules": {
+    "t16": "только ради кистоуна",
+    "endgame": "кистоун + 3 нотабла + 5 малых",
+    "mirror": "кистоун + 80% радиуса"
+   },
+   "see": "t-timeless"
+  },
+  {
+   "id": "jewel-emperor-s-cunning",
+   "category": "unique_jewels",
+   "scope": "narrow",
+   "title": "Emperor's Cunning",
+   "title_en": "Viridian Jewel",
+   "tags": [
+    "обычный",
+    "mechanic"
+   ],
+   "explain": "5% increased Dexterity / 20% increased Global Accuracy Rating / 3% increased Character Size",
+   "source": "форма уник-джевелов, 19.09",
+   "user_note": "",
+   "status": "rule",
+   "rules": {
+    "uber": "разрешён"
+   }
+  },
+  {
+   "id": "jewel-emperor-s-mastery",
+   "category": "unique_jewels",
+   "scope": "narrow",
+   "title": "Emperor's Mastery",
+   "title_en": "Prismatic Jewel",
+   "tags": [
+    "обычный",
+    "mechanic"
+   ],
+   "explain": "6% increased Attributes / 4% increased maximum Life / 3% increased Character Size / 5% increased Global Defences",
+   "source": "форма уник-джевелов, 19.09",
+   "user_note": "",
+   "status": "rule",
+   "rules": {
+    "uber": "разрешён"
+   }
+  },
+  {
+   "id": "jewel-emperor-s-might",
+   "category": "unique_jewels",
+   "scope": "narrow",
+   "title": "Emperor's Might",
+   "title_en": "Crimson Jewel",
+   "tags": [
+    "обычный",
+    "mechanic"
+   ],
+   "explain": "5% increased Strength / 10% increased Damage / 3% increased Character Size",
+   "source": "форма уник-джевелов, 19.09",
+   "user_note": "",
+   "status": "rule",
+   "rules": {
+    "uber": "разрешён"
+   }
+  },
+  {
+   "id": "jewel-emperor-s-wit",
+   "category": "unique_jewels",
+   "scope": "narrow",
+   "title": "Emperor's Wit",
+   "title_en": "Cobalt Jewel",
+   "tags": [
+    "обычный",
+    "mechanic"
+   ],
+   "explain": "5% increased Intelligence / 30% increased Global Critical Strike Chance / 3% increased Character Size",
+   "source": "форма уник-джевелов, 19.09",
+   "user_note": "",
+   "status": "rule",
+   "rules": {
+    "uber": "разрешён"
+   }
+  },
+  {
+   "id": "jewel-energised-armour",
+   "category": "unique_jewels",
+   "scope": "narrow",
+   "title": "Energised Armour",
+   "title_en": "Crimson Jewel",
+   "tags": [
+    "обычный",
+    "upgrade"
+   ],
+   "explain": "18% increased Armour / Increases and Reductions to Energy Shield in Radius are Transformed to apply to Armour at 200% of their value / Corrupted",
+   "source": "форма уник-джевелов, 19.09",
+   "user_note": "",
+   "status": "rule",
+   "rules": {
+    "endgame": "разрешён"
+   }
+  },
+  {
+   "id": "jewel-energy-from-within",
+   "category": "unique_jewels",
+   "scope": "narrow",
+   "title": "Energy From Within",
+   "title_en": "Cobalt Jewel",
+   "tags": [
+    "обычный",
+    "upgrade"
+   ],
+   "explain": "10% increased maximum Energy Shield / 5% increased maximum Energy Shield / Increases and Reductions to Life in Radius are Transformed to apply to Energy Shield / Corrupted",
+   "source": "форма уник-джевелов, 19.09",
+   "user_note": "",
+   "status": "rule",
+   "rules": {
+    "endgame": "разрешён"
+   }
+  },
+  {
+   "id": "jewel-extinguishing-grasp",
+   "category": "unique_jewels",
+   "scope": "narrow",
+   "title": "Extinguishing Grasp",
+   "title_en": "Searching Eye Jewel",
+   "tags": [
+    "abyss",
+    "босс-дроп"
+   ],
+   "explain": "Historic / Subjugating 4050 souls in the thrall of Ulaman / Passives affected are Conquered by the Abyssal",
+   "source": "форма уник-джевелов, 19.09",
+   "user_note": "",
+   "status": "rule",
+   "rules": {
+    "endgame": "разрешён"
+   }
+  },
+  {
+   "id": "jewel-fertile-mind",
+   "category": "unique_jewels",
+   "scope": "narrow",
+   "title": "Fertile Mind",
+   "title_en": "Cobalt Jewel",
+   "tags": [
+    "обычный",
+    "upgrade"
+   ],
+   "explain": "+20 to Intelligence / Dexterity from Passives in Radius is Transformed to Intelligence / Corrupted",
+   "source": "форма уник-джевелов, 19.09",
+   "user_note": "",
+   "status": "rule",
+   "rules": {
+    "endgame": "разрешён"
+   }
+  },
+  {
+   "id": "jewel-festering-vengeance",
+   "category": "unique_jewels",
+   "scope": "narrow",
+   "title": "Festering Vengeance",
+   "title_en": "Murderous Eye Jewel",
+   "tags": [
+    "abyss",
+    "босс-дроп"
+   ],
+   "explain": "Historic / Subjugating 4050 souls in the thrall of Tecrod / Passives affected are Conquered by the Abyssal",
+   "source": "форма уник-джевелов, 19.09",
+   "user_note": "",
+   "status": "rule",
+   "rules": {
+    "endgame": "разрешён"
+   }
+  },
+  {
+   "id": "jewel-fevered-mind",
+   "category": "unique_jewels",
+   "scope": "narrow",
+   "title": "Fevered Mind",
+   "title_en": "Cobalt Jewel",
+   "tags": [
+    "обычный",
+    "upgrade"
+   ],
+   "explain": "+8 to Intelligence / 25% increased Spell Damage / 35% increased Spell Damage / 100% increased Mana Cost of Skills / 50% increased Mana Cost of Skills / Notable Passive Skills in Radius are Transformed to instead grant: 10% increased Mana Cost of Skills and 20% increased Spell Damage",
+   "source": "форма уник-джевелов, 19.09",
+   "user_note": "",
+   "status": "rule",
+   "rules": {
+    "endgame": "разрешён"
+   }
+  },
+  {
+   "id": "jewel-firesong",
+   "category": "unique_jewels",
+   "scope": "narrow",
+   "title": "Firesong",
+   "title_en": "Crimson Jewel",
+   "tags": [
+    "обычный",
+    "обычный дроп",
+    "вики T2"
+   ],
+   "explain": "+13% to Fire Resistance / Modifiers to Ignite Duration on you apply to all Elemental Ailments",
+   "source": "форма уник-джевелов, 19.09",
+   "user_note": "",
+   "status": "rule",
+   "rules": {
+    "uber": "разрешён"
+   }
+  },
+  {
+   "id": "jewel-fluid-motion",
+   "category": "unique_jewels",
+   "scope": "narrow",
+   "title": "Fluid Motion",
+   "title_en": "Viridian Jewel",
+   "tags": [
+    "обычный",
+    "upgrade"
+   ],
+   "explain": "+20 to Dexterity / Strength from Passives in Radius is Transformed to Dexterity / Corrupted",
+   "source": "форма уник-джевелов, 19.09",
+   "user_note": "",
+   "status": "rule",
+   "rules": {
+    "endgame": "разрешён"
+   }
+  },
+  {
+   "id": "jewel-forbidden-flame",
+   "category": "unique_jewels",
+   "scope": "narrow",
+   "title": "Forbidden Flame",
+   "title_en": "Crimson Jewel",
+   "tags": [
+    "обычный",
+    "босс-дроп"
+   ],
+   "explain": "Allocates Bane of Legends if you have the matching modifier on Forbidden Flesh / Allocates Brutal Fervour if you have the matching modifier on Forbidden Flesh / Allocates Determined Survivor if you have the matching modifier on Forbidden Flesh / Allocates Endless Hunger if you have the matching modifier on Forbidden Flesh / Allocates Fatal Flourish if you have the matching modifier on Forbidden Flesh / Allocates First to Strike, Last to Fall if you have the matching modifier on Forbidden Flesh / Allocates Fortitude if you have the matching modifier on Forbidden Flesh / Allocates Gratuitous Violence if you have the matching modifier on Forbidden Flesh / Allocates Headsman if you have the matching modifier on Forbidden Flesh / Allocates Impact if you have the matching modifier on Forbidden Flesh / Allocates Inspirational if you have the matching modifier on Forbidden Flesh / Allocates Jagged Technique if you have the matching modifier on Forbidden Flesh / Allocates Master of Metal if you have the matching modifier on Forbidden Flesh / Allocates Masterful Form if you have the matching modifier on Forbidden Flesh / Allocates Measured Retaliation if you have the matching modifier on Forbidden Flesh / Allocates More Than Skill if you have the matching modifier on Forbidden Flesh / Allocates Overwhelm if you have the matching modifier on Forbidden Flesh / Allocates Unstoppable Hero if you have the matching modifier on Forbidden Flesh / Allocates War of Attrition if you have the matching modifier on Forbidden Flesh / Allocates Weapon Master if you have the matching modifier on Forbidden Flesh / Allocates Worthy Causes if you have the matching modifier on Forbidden Flesh / Allocates Worthy Foe if you have the matching modifier on Forbidden Flesh / Allocates Ancestral Fury if you have the matching modifier on Forbidden Flesh / Allocates Aspect of Carnage if you have the matching modifier on Forbidden Flesh / Allocates Crave the Slaughter if you have the matching modifier on Forbidden Flesh / Allocates Defy Pain if you have the matching modifier on Forbidden Flesh / Allocates Gore Dancer if you have the matching modifier on Forbidden Flesh / Allocates Hinekora, Death's Fury if you have the matching modifier on Forbidden Flesh / Allocates Indomitable Resolve if you have the matching modifier on Forbidden Flesh / Allocates Ngamahu, Flame's Advance if you have the matching modifier on Forbidden Flesh / Allocates Ramako, Sun's Light if you have the matching modifier on Forbidden Flesh / Allocates Rite of Ruin if you have the matching modifier on Forbidden Flesh / Allocates Sione, Sun's Roar if you have the matching modifier on Forbidden Flesh / Allocates Tasalio, Cleansing Water if you have the matching modifier on Forbidden Flesh / Allocates Tukohama, War's Herald if you have the matching modifier on Forbidden Flesh / Allocates Unbreakable if you have the matching modifier on Forbidden Flesh / Allocates Undeniable if you have the matching modifier on Forbidden Flesh / Allocates Unflinching if you have the matching modifier on Forbidden Flesh / Allocates Unrelenting if you have the matching modifier on Forbidden Flesh / Allocates Unstoppable if you have the matching modifier on Forbidden Flesh / Allocates Untiring if you have the matching modifier on Forbidden Flesh / Allocates Unyielding if you have the matching modifier on Forbidden Flesh / Allocates Valako, Storm's Embrace if you have the matching modifier on Forbidden Flesh / Allocates War Bringer if you have the matching modifier on Forbidden Flesh / Allocates Avatar of the Wilds if you have the matching modifier on Forbidden Flesh / Allocates Avidity if you have the matching modifier on Forbidden Flesh / Allocates Endless Munitions if you have the matching modifier on Forbidden Flesh / Allocates Enduring Suffusion if you have the matching modifier on Forbidden Flesh / Allocates Experienced Herbalist if you have the matching modifier on Forbidden Flesh / Allocates Far Shot if you have the matching modifier on Forbidden Flesh / Allocates Focal Point if you have the matching modifier on Forbidden Flesh / Allocates Fury of Nature if you have the matching modifier on Forbidden Flesh / Allocates Gathering Winds if you have the matching modifier on Forbidden Flesh / Allocates Lesson of the Seasons if you have the matching modifier on Forbidden Flesh / Allocates Master Alchemist if you have the matching modifier on Forbidden Flesh / Allocates Master Distiller if you have the matching modifier on Forbidden Flesh / Allocates Master Surgeon if you have the matching modifier on Forbidden Flesh / Allocates Master Toxicist if you have the matching modifier on Forbidden Flesh / Allocates Mother's Teachings if you have the matching modifier on Forbidden Flesh / Allocates Nature's Adrenaline if you have the matching modifier on Forbidden Flesh / Allocates Nature's Boon if you have the matching modifier on Forbidden Flesh / Allocates Nature's Reprisal if you have the matching modifier on Forbidden Flesh / Allocates Oath of Spring if you have the matching modifier on Forbidden Flesh / Allocates Oath of Summer if you have the matching modifier on Forbidden Flesh / Allocates Oath of Winter if you have the matching modifier on Forbidden Flesh / Allocates Occupying Force if you have the matching modifier on Forbidden Flesh / Allocates Ricochet if you have the matching modifier on Forbidden Flesh / Allocates Seasoned Hunter if you have the matching modifier on Forbidden Flesh / Allocates Wind Ward if you have the matching modifier on Forbidden Flesh / Allocates Assassin if you have the matching modifier on Forbidden Flesh / Allocates Berserker if you have the matching modifier on Forbidden Flesh / Allocates Champion if you have the matching modifier on Forbidden Flesh / Allocates Chieftain if you have the matching modifier on Forbidden Flesh / Allocates Deadeye if you have the matching modifier on Forbidden Flesh / Allocates Elementalist if you have the matching modifier on Forbidden Flesh / Allocates Gladiator if you have the matching modifier on Forbidden Flesh / Allocates Guardian if you have the matching modifier on Forbidden Flesh / Allocates Hierophant if you have the matching modifier on Forbidden Flesh / Allocates Inquisitor if you have the matching modifier on Forbidden Flesh / Allocates Juggernaut if you have the matching modifier on Forbidden Flesh / Allocates Necromancer if you have the matching modifier on Forbidden Flesh / Allocates Occultist if you have the matching modifier on Forbidden Flesh / Allocates Pathfinder if you have the matching modifier on Forbidden Flesh / Allocates Saboteur if you have the matching modifier on Forbidden Flesh / Allocates Slayer if you have the matching modifier on Forbidden Flesh / Allocates Trickster if you have the matching modifier on Forbidden Flesh / Allocates Unleashed Potential if you have the matching modifier on Forbidden Flesh / Allocates Warden if you have the matching modifier on Forbidden Flesh / Allocates Assassination Style if you have the matching modifier on Forbidden Flesh / Allocates Bomb Specialist if you have the matching modifier on Forbidden Flesh / Allocates Born in the Shadows if you have the matching modifier on Forbidden Flesh / Allocates Calculated Risk if you have the matching modifier on Forbidden Flesh / Allocates Chain Reaction if you have the matching modifier on Forbidden Flesh / Allocates Deathmarked if you have the matching modifier on Forbidden Flesh / Allocates Demolitions Specialist if you have the matching modifier on Forbidden Flesh / Allocates Escape Artist if you have the matching modifier on Forbidden Flesh / Allocates For the Jugular if you have the matching modifier on Forbidden Flesh / Allocates Harness the Void if you have the matching modifier on Forbidden Flesh / Allocates Heartstopper if you have the matching modifier on Forbidden Flesh / Allocates Infused Toxins if you have the matching modifier on Forbidden Flesh / Allocates Knife in the Back if you have the matching modifier on Forbidden Flesh / Allocates Like Clockwork if you have the matching modifier on Forbidden Flesh / Allocates Mistwalker if you have the matching modifier on Forbidden Flesh / Allocates Mystical Infusion if you have the matching modifier on Forbidden Flesh / Allocates One Step Ahead if you have the matching modifier on Forbidden Flesh / Allocates Opportunistic if you have the matching modifier on Forbidden Flesh / Allocates Perfect Crime if you have the matching modifier on Forbidden Flesh / Allocates Polymath if you have the matching modifier on Forbidden Flesh / Allocates Pyromaniac if you have the matching modifier on Forbidden Flesh / Allocates Shadowed Blood if you have the matching modifier on Forbidden Flesh / Allocates Shrapnel Specialist if you have the matching modifier on Forbidden Flesh / Allocates Soul Drinker if you have the matching modifier on Forbidden Flesh / Allocates Spellbreaker if you have the matching modifier on Forbidden Flesh / Allocates Swift Killer if you have the matching modifier on Forbidden Flesh / Allocates Toxic Delivery if you have the matching modifier on Forbidden Flesh / Allocates Unstable Infusion if you have the matching modifier on Forbidden Flesh / Allocates Arcane Blessing if you have the matching modifier on Forbidden Flesh / Allocates Augury of Penitence if you have the matching modifier on Forbidden Flesh / Allocates Bastion of Hope if you have the matching modifier on Forbidden Flesh / Allocates Conviction of Power if you have the matching modifier on Forbidden Flesh / Allocates Divine Guidance if you have the matching modifier on Forbidden Flesh / Allocates Harmony of Purpose if you have the matching modifier on Forbidden Flesh / Allocates Illuminated Devotion if you have the matching modifier on Forbidden Flesh / Allocates Inevitable Judgement if you have the matching modifier on Forbidden Flesh / Allocates Instruments of Justice if you have the matching modifier on Forbidden Flesh / Allocates Instruments of Virtue if you have the matching modifier on Forbidden Flesh / Allocates Instruments of Zeal if you have the matching modifier on Forbidden Flesh / Allocates Marshal of Divinity if you have the matching modifier on Forbidden Flesh / Allocates Pious Path if you have the matching modifier on Forbidden Flesh / Allocates Pursuit of Faith if you have the matching modifier on Forbidden Flesh / Allocates Radiant Crusade if you have the matching modifier on Forbidden Flesh / Allocates Radiant Faith if you have the matching modifier on Forbidden Flesh / Allocates Righteous Providence if you have the matching modifier on Forbidden Flesh / Allocates Ritual of Awakening if you have the matching modifier on Forbidden Flesh / Allocates Sanctuary if you have the matching modifier on Forbidden Flesh / Allocates Sanctuary of Thought if you have the matching modifier on Forbidden Flesh / Allocates Searing Purity if you have the matching modifier on Forbidden Flesh / Allocates Sign of Purpose if you have the matching modifier on Forbidden Flesh / Allocates Time of Need if you have the matching modifier on Forbidden Flesh / Allocates Unwavering Crusade if you have the matching modifier on Forbidden Flesh / Allocates Unwavering Faith if you have the matching modifier on Forbidden Flesh / Allocates Bastion of Elements if you have the matching modifier on Forbidden Flesh / Allocates Bone Barrier if you have the matching modifier on Forbidden Flesh / Allocates Bringer of Ruin if you have the matching modifier on Forbidden Flesh / Allocates Commander of Darkness if you have the matching modifier on Forbidden Flesh / Allocates Corpse Pact if you have the matching modifier on Forbidden Flesh / Allocates Essence Glutton if you have the matching modifier on Forbidden Flesh / Allocates Forbidden Power if you have the matching modifier on Forbidden Flesh / Allocates Frigid Wake if you have the matching modifier on Forbidden Flesh / Allocates Heart of Destruction if you have the matching modifier on Forbidden Flesh / Allocates Liege of the Primordial if you have the matching modifier on Forbidden Flesh / Allocates Mastermind of Discord if you have the matching modifier on Forbidden Flesh / Allocates Mindless Aggression if you have the matching modifier on Forbidden Flesh / Allocates Mistress of Sacrifice if you have the matching modifier on Forbidden Flesh / Allocates Nine Lives if you have the matching modifier on Forbidden Flesh / Allocates Plaguebringer if you have the matching modifier on Forbidden Flesh / Allocates Profane Bloom if you have the matching modifier on Forbidden Flesh / Allocates Shaper of Flames if you have the matching modifier on Forbidden Flesh / Allocates Shaper of Storms if you have the matching modifier on Forbidden Flesh / Allocates Shaper of Winter if you have the matching modifier on Forbidden Flesh / Allocates Unhallowed Rite if you have the matching modifier on Forbidden Flesh / Allocates Unholy Authority if you have the matching modifier on Forbidden Flesh / Allocates Unnatural Strength if you have the matching modifier on Forbidden Flesh / Allocates Vile Bastion if you have the matching modifier on Forbidden Flesh / Allocates Void Beacon if you have the matching modifier on Forbidden Flesh / Allocates Withering Presence if you have the matching modifier on Forbidden Flesh",
+   "source": "форма уник-джевелов, 19.09",
+   "user_note": "",
+   "status": "rule",
+   "rules": {
+    "uber": "разрешён"
+   }
+  },
+  {
+   "id": "jewel-forbidden-flesh",
+   "category": "unique_jewels",
+   "scope": "narrow",
+   "title": "Forbidden Flesh",
+   "title_en": "Cobalt Jewel",
+   "tags": [
+    "обычный",
+    "босс-дроп"
+   ],
+   "explain": "Allocates Bane of Legends if you have the matching modifier on Forbidden Flame / Allocates Brutal Fervour if you have the matching modifier on Forbidden Flame / Allocates Determined Survivor if you have the matching modifier on Forbidden Flame / Allocates Endless Hunger if you have the matching modifier on Forbidden Flame / Allocates Fatal Flourish if you have the matching modifier on Forbidden Flame / Allocates First to Strike, Last to Fall if you have the matching modifier on Forbidden Flame / Allocates Fortitude if you have the matching modifier on Forbidden Flame / Allocates Gratuitous Violence if you have the matching modifier on Forbidden Flame / Allocates Headsman if you have the matching modifier on Forbidden Flame / Allocates Impact if you have the matching modifier on Forbidden Flame / Allocates Inspirational if you have the matching modifier on Forbidden Flame / Allocates Jagged Technique if you have the matching modifier on Forbidden Flame / Allocates Master of Metal if you have the matching modifier on Forbidden Flame / Allocates Masterful Form if you have the matching modifier on Forbidden Flame / Allocates Measured Retaliation if you have the matching modifier on Forbidden Flame / Allocates More Than Skill if you have the matching modifier on Forbidden Flame / Allocates Overwhelm if you have the matching modifier on Forbidden Flame / Allocates Unstoppable Hero if you have the matching modifier on Forbidden Flame / Allocates War of Attrition if you have the matching modifier on Forbidden Flame / Allocates Weapon Master if you have the matching modifier on Forbidden Flame / Allocates Worthy Causes if you have the matching modifier on Forbidden Flame / Allocates Worthy Foe if you have the matching modifier on Forbidden Flame / Allocates Ancestral Fury if you have the matching modifier on Forbidden Flame / Allocates Aspect of Carnage if you have the matching modifier on Forbidden Flame / Allocates Crave the Slaughter if you have the matching modifier on Forbidden Flame / Allocates Defy Pain if you have the matching modifier on Forbidden Flame / Allocates Gore Dancer if you have the matching modifier on Forbidden Flame / Allocates Hinekora, Death's Fury if you have the matching modifier on Forbidden Flame / Allocates Indomitable Resolve if you have the matching modifier on Forbidden Flame / Allocates Ngamahu, Flame's Advance if you have the matching modifier on Forbidden Flame / Allocates Ramako, Sun's Light if you have the matching modifier on Forbidden Flame / Allocates Rite of Ruin if you have the matching modifier on Forbidden Flame / Allocates Sione, Sun's Roar if you have the matching modifier on Forbidden Flame / Allocates Tasalio, Cleansing Water if you have the matching modifier on Forbidden Flame / Allocates Tukohama, War's Herald if you have the matching modifier on Forbidden Flame / Allocates Unbreakable if you have the matching modifier on Forbidden Flame / Allocates Undeniable if you have the matching modifier on Forbidden Flame / Allocates Unflinching if you have the matching modifier on Forbidden Flame / Allocates Unrelenting if you have the matching modifier on Forbidden Flame / Allocates Unstoppable if you have the matching modifier on Forbidden Flame / Allocates Untiring if you have the matching modifier on Forbidden Flame / Allocates Unyielding if you have the matching modifier on Forbidden Flame / Allocates Valako, Storm's Embrace if you have the matching modifier on Forbidden Flame / Allocates War Bringer if you have the matching modifier on Forbidden Flame / Allocates Avatar of the Wilds if you have the matching modifier on Forbidden Flame / Allocates Avidity if you have the matching modifier on Forbidden Flame / Allocates Endless Munitions if you have the matching modifier on Forbidden Flame / Allocates Enduring Suffusion if you have the matching modifier on Forbidden Flame / Allocates Experienced Herbalist if you have the matching modifier on Forbidden Flame / Allocates Far Shot if you have the matching modifier on Forbidden Flame / Allocates Focal Point if you have the matching modifier on Forbidden Flame / Allocates Fury of Nature if you have the matching modifier on Forbidden Flame / Allocates Gathering Winds if you have the matching modifier on Forbidden Flame / Allocates Lesson of the Seasons if you have the matching modifier on Forbidden Flame / Allocates Master Alchemist if you have the matching modifier on Forbidden Flame / Allocates Master Distiller if you have the matching modifier on Forbidden Flame / Allocates Master Surgeon if you have the matching modifier on Forbidden Flame / Allocates Master Toxicist if you have the matching modifier on Forbidden Flame / Allocates Mother's Teachings if you have the matching modifier on Forbidden Flame / Allocates Nature's Adrenaline if you have the matching modifier on Forbidden Flame / Allocates Nature's Boon if you have the matching modifier on Forbidden Flame / Allocates Nature's Reprisal if you have the matching modifier on Forbidden Flame / Allocates Oath of Spring if you have the matching modifier on Forbidden Flame / Allocates Oath of Summer if you have the matching modifier on Forbidden Flame / Allocates Oath of Winter if you have the matching modifier on Forbidden Flame / Allocates Occupying Force if you have the matching modifier on Forbidden Flame / Allocates Ricochet if you have the matching modifier on Forbidden Flame / Allocates Seasoned Hunter if you have the matching modifier on Forbidden Flame / Allocates Wind Ward if you have the matching modifier on Forbidden Flame / Allocates Assassin if you have the matching modifier on Forbidden Flame / Allocates Berserker if you have the matching modifier on Forbidden Flame / Allocates Champion if you have the matching modifier on Forbidden Flame / Allocates Chieftain if you have the matching modifier on Forbidden Flame / Allocates Deadeye if you have the matching modifier on Forbidden Flame / Allocates Elementalist if you have the matching modifier on Forbidden Flame / Allocates Gladiator if you have the matching modifier on Forbidden Flame / Allocates Guardian if you have the matching modifier on Forbidden Flame / Allocates Hierophant if you have the matching modifier on Forbidden Flame / Allocates Inquisitor if you have the matching modifier on Forbidden Flame / Allocates Juggernaut if you have the matching modifier on Forbidden Flame / Allocates Necromancer if you have the matching modifier on Forbidden Flame / Allocates Occultist if you have the matching modifier on Forbidden Flame / Allocates Pathfinder if you have the matching modifier on Forbidden Flame / Allocates Saboteur if you have the matching modifier on Forbidden Flame / Allocates Slayer if you have the matching modifier on Forbidden Flame / Allocates Trickster if you have the matching modifier on Forbidden Flame / Allocates Unleashed Potential if you have the matching modifier on Forbidden Flame / Allocates Warden if you have the matching modifier on Forbidden Flame / Allocates Assassination Style if you have the matching modifier on Forbidden Flame / Allocates Bomb Specialist if you have the matching modifier on Forbidden Flame / Allocates Born in the Shadows if you have the matching modifier on Forbidden Flame / Allocates Calculated Risk if you have the matching modifier on Forbidden Flame / Allocates Chain Reaction if you have the matching modifier on Forbidden Flame / Allocates Deathmarked if you have the matching modifier on Forbidden Flame / Allocates Demolitions Specialist if you have the matching modifier on Forbidden Flame / Allocates Escape Artist if you have the matching modifier on Forbidden Flame / Allocates For the Jugular if you have the matching modifier on Forbidden Flame / Allocates Harness the Void if you have the matching modifier on Forbidden Flame / Allocates Heartstopper if you have the matching modifier on Forbidden Flame / Allocates Infused Toxins if you have the matching modifier on Forbidden Flame / Allocates Knife in the Back if you have the matching modifier on Forbidden Flame / Allocates Like Clockwork if you have the matching modifier on Forbidden Flame / Allocates Mistwalker if you have the matching modifier on Forbidden Flame / Allocates Mystical Infusion if you have the matching modifier on Forbidden Flame / Allocates One Step Ahead if you have the matching modifier on Forbidden Flame / Allocates Opportunistic if you have the matching modifier on Forbidden Flame / Allocates Perfect Crime if you have the matching modifier on Forbidden Flame / Allocates Polymath if you have the matching modifier on Forbidden Flame / Allocates Pyromaniac if you have the matching modifier on Forbidden Flame / Allocates Shadowed Blood if you have the matching modifier on Forbidden Flame / Allocates Shrapnel Specialist if you have the matching modifier on Forbidden Flame / Allocates Soul Drinker if you have the matching modifier on Forbidden Flame / Allocates Spellbreaker if you have the matching modifier on Forbidden Flame / Allocates Swift Killer if you have the matching modifier on Forbidden Flame / Allocates Toxic Delivery if you have the matching modifier on Forbidden Flame / Allocates Unstable Infusion if you have the matching modifier on Forbidden Flame / Allocates Arcane Blessing if you have the matching modifier on Forbidden Flame / Allocates Augury of Penitence if you have the matching modifier on Forbidden Flame / Allocates Bastion of Hope if you have the matching modifier on Forbidden Flame / Allocates Conviction of Power if you have the matching modifier on Forbidden Flame / Allocates Divine Guidance if you have the matching modifier on Forbidden Flame / Allocates Harmony of Purpose if you have the matching modifier on Forbidden Flame / Allocates Illuminated Devotion if you have the matching modifier on Forbidden Flame / Allocates Inevitable Judgement if you have the matching modifier on Forbidden Flame / Allocates Instruments of Justice if you have the matching modifier on Forbidden Flame / Allocates Instruments of Virtue if you have the matching modifier on Forbidden Flame / Allocates Instruments of Zeal if you have the matching modifier on Forbidden Flame / Allocates Marshal of Divinity if you have the matching modifier on Forbidden Flame / Allocates Pious Path if you have the matching modifier on Forbidden Flame / Allocates Pursuit of Faith if you have the matching modifier on Forbidden Flame / Allocates Radiant Crusade if you have the matching modifier on Forbidden Flame / Allocates Radiant Faith if you have the matching modifier on Forbidden Flame / Allocates Righteous Providence if you have the matching modifier on Forbidden Flame / Allocates Ritual of Awakening if you have the matching modifier on Forbidden Flame / Allocates Sanctuary if you have the matching modifier on Forbidden Flame / Allocates Sanctuary of Thought if you have the matching modifier on Forbidden Flame / Allocates Searing Purity if you have the matching modifier on Forbidden Flame / Allocates Sign of Purpose if you have the matching modifier on Forbidden Flame / Allocates Time of Need if you have the matching modifier on Forbidden Flame / Allocates Unwavering Crusade if you have the matching modifier on Forbidden Flame / Allocates Unwavering Faith if you have the matching modifier on Forbidden Flame / Allocates Bastion of Elements if you have the matching modifier on Forbidden Flame / Allocates Bone Barrier if you have the matching modifier on Forbidden Flame / Allocates Bringer of Ruin if you have the matching modifier on Forbidden Flame / Allocates Commander of Darkness if you have the matching modifier on Forbidden Flame / Allocates Corpse Pact if you have the matching modifier on Forbidden Flame / Allocates Essence Glutton if you have the matching modifier on Forbidden Flame / Allocates Forbidden Power if you have the matching modifier on Forbidden Flame / Allocates Frigid Wake if you have the matching modifier on Forbidden Flame / Allocates Heart of Destruction if you have the matching modifier on Forbidden Flame / Allocates Liege of the Primordial if you have the matching modifier on Forbidden Flame / Allocates Mastermind of Discord if you have the matching modifier on Forbidden Flame / Allocates Mindless Aggression if you have the matching modifier on Forbidden Flame / Allocates Mistress of Sacrifice if you have the matching modifier on Forbidden Flame / Allocates Nine Lives if you have the matching modifier on Forbidden Flame / Allocates Plaguebringer if you have the matching modifier on Forbidden Flame / Allocates Profane Bloom if you have the matching modifier on Forbidden Flame / Allocates Shaper of Flames if you have the matching modifier on Forbidden Flame / Allocates Shaper of Storms if you have the matching modifier on Forbidden Flame / Allocates Shaper of Winter if you have the matching modifier on Forbidden Flame / Allocates Unhallowed Rite if you have the matching modifier on Forbidden Flame / Allocates Unholy Authority if you have the matching modifier on Forbidden Flame / Allocates Unnatural Strength if you have the matching modifier on Forbidden Flame / Allocates Vile Bastion if you have the matching modifier on Forbidden Flame / Allocates Void Beacon if you have the matching modifier on Forbidden Flame / Allocates Withering Presence if you have the matching modifier on Forbidden Flame",
+   "source": "форма уник-джевелов, 19.09",
+   "user_note": "",
+   "status": "rule",
+   "rules": {
+    "uber": "разрешён"
+   }
+  },
+  {
+   "id": "jewel-fortress-covenant",
+   "category": "unique_jewels",
+   "scope": "narrow",
+   "title": "Fortress Covenant",
+   "title_en": "Cobalt Jewel",
+   "tags": [
+    "обычный",
+    "upgrade"
+   ],
+   "explain": "Minions deal 40% increased Damage / Minions have +11% Chance to Block Attack Damage / Minions have +11% Chance to Block Spell Damage / Notable Passive Skills in Radius are Transformed to instead grant: Minions take 20% increased Damage / Corrupted",
+   "source": "форма уник-джевелов, 19.09",
+   "user_note": "",
+   "status": "rule",
+   "rules": {
+    "endgame": "разрешён"
+   }
+  },
+  {
+   "id": "jewel-fragility",
+   "category": "unique_jewels",
+   "scope": "narrow",
+   "title": "Fragility",
+   "title_en": "Crimson Jewel",
+   "tags": [
+    "обычный",
+    "upgrade"
+   ],
+   "explain": "-1 to Maximum Endurance Charges",
+   "source": "форма уник-джевелов, 19.09",
+   "user_note": "",
+   "status": "rule",
+   "rules": {
+    "endgame": "разрешён"
+   }
+  },
+  {
+   "id": "jewel-glorious-vanity",
+   "category": "unique_jewels",
+   "scope": "narrow",
+   "title": "Glorious Vanity",
+   "title_en": "Timeless Jewel",
+   "tags": [
+    "timeless",
+    "mechanic"
+   ],
+   "explain": "Bathed in the blood of 4050 sacrificed in the name of Xibaqua / Passives in radius are Conquered by the Vaal / Historic / Bathed in the blood of 4050 sacrificed in the name of Doryani / Bathed in the blood of 4050 sacrificed in the name of Zerphi / Bathed in the blood of 4050 sacrificed in the name of Ahuana",
+   "source": "форма уник-джевелов, 19.09",
+   "user_note": "",
+   "status": "rule",
+   "rules": {
+    "t16": "только ради кистоуна",
+    "endgame": "кистоун + 3 нотабла + 5 малых",
+    "mirror": "кистоун + 80% радиуса"
+   },
+   "see": "t-timeless"
+  },
+  {
+   "id": "jewel-grand-spectrum",
+   "category": "unique_jewels",
+   "scope": "narrow",
+   "title": "Grand Spectrum",
+   "title_en": "Cobalt Jewel",
+   "tags": [
+    "обычный",
+    "mechanic"
+   ],
+   "explain": "Gain 15 Mana per Grand Spectrum / Gain 30 Mana per Grand Spectrum / 25% increased Critical Strike Chance per Grand Spectrum / +1 to Minimum Power Charges per Grand Spectrum / Minions have +10% to Critical Strike Multiplier per Grand Spectrum",
+   "source": "форма уник-джевелов, 19.09",
+   "user_note": "",
+   "status": "rule",
+   "rules": {
+    "uber": "разрешён"
+   }
+  },
+  {
+   "id": "jewel-healthy-mind",
+   "category": "unique_jewels",
+   "scope": "narrow",
+   "title": "Healthy Mind",
+   "title_en": "Cobalt Jewel",
+   "tags": [
+    "обычный",
+    "upgrade"
+   ],
+   "explain": "18% increased maximum Mana / Increases and Reductions to Life in Radius are Transformed to apply to Mana at 200% of their value / Corrupted",
+   "source": "форма уник-джевелов, 19.09",
+   "user_note": "",
+   "status": "rule",
+   "rules": {
+    "endgame": "разрешён"
+   }
+  },
+  {
+   "id": "jewel-heroic-tragedy",
+   "category": "unique_jewels",
+   "scope": "narrow",
+   "title": "Heroic Tragedy",
+   "title_en": "Timeless Jewel",
+   "tags": [
+    "timeless",
+    "mechanic"
+   ],
+   "explain": "Remembrancing 4050 songworthy deeds by the line of Vorana / Passives in radius are Conquered by the Kalguur / Historic / Remembrancing 4050 songworthy deeds by the line of Uhtred / Remembrancing 4050 songworthy deeds by the line of Medved",
+   "source": "форма уник-джевелов, 19.09",
+   "user_note": "",
+   "status": "rule",
+   "rules": {
+    "t16": "только ради кистоуна",
+    "endgame": "кистоун + 3 нотабла + 5 малых",
+    "mirror": "кистоун + 80% радиуса"
+   },
+   "see": "t-timeless"
+  },
+  {
+   "id": "jewel-hidden-potential",
+   "category": "unique_jewels",
+   "scope": "narrow",
+   "title": "Hidden Potential",
+   "title_en": "Viridian Jewel",
+   "tags": [
+    "обычный",
+    "upgrade"
+   ],
+   "explain": "23% increased Damage for each Magic Item Equipped / Corrupted",
+   "source": "форма уник-джевелов, 19.09",
+   "user_note": "",
+   "status": "rule",
+   "rules": {
+    "endgame": "разрешён"
+   }
+  },
+  {
+   "id": "jewel-immutable-force",
+   "category": "unique_jewels",
+   "scope": "narrow",
+   "title": "Immutable Force",
+   "title_en": "Crimson Jewel",
+   "tags": [
+    "обычный",
+    "обычный дроп",
+    "вики T2"
+   ],
+   "explain": "750% increased Stun and Block Recovery",
+   "source": "форма уник-джевелов, 19.09",
+   "user_note": "",
+   "status": "rule",
+   "rules": {
+    "endgame": "разрешён"
+   }
+  },
+  {
+   "id": "jewel-impossible-escape",
+   "category": "unique_jewels",
+   "scope": "narrow",
+   "title": "Impossible Escape",
+   "title_en": "Viridian Jewel",
+   "tags": [
+    "обычный",
+    "boss_uber"
+   ],
+   "explain": "Passive Skills in radius of Acrobatics can be allocated without being connected to your tree / Passive Skills in radius of Ancestral Bond can be allocated without being connected to your tree / Passive Skills in radius of Arrow Dancing can be allocated without being connected to your tree / Passive Skills in radius of Arsenal of Vengeance can be allocated without being connected to your tree / Passive Skills in radius of Avatar of Fire can be allocated without being connected to your tree / Passive Skills in radius of Bitter Frost can be allocated without being connected to your tree / Passive Skills in radius of Blood Magic can be allocated without being connected to your tree / Passive Skills in radius of Bloodsoaked Blade can be allocated without being connected to your tree / Passive Skills in radius of Call to Arms can be allocated without being connected to your tree / Passive Skills in radius of Chaos Inoculation can be allocated without being connected to your tree / Passive Skills in radius of Conduit can be allocated without being connected to your tree / Passive Skills in radius of Crimson Dance can be allocated without being connected to your tree / Passive Skills in radius of Divine Shield can be allocated without being connected to your tree / Passive Skills in radius of Eldritch Battery can be allocated without being connected to your tree / Passive Skills in radius of Elemental Equilibrium can be allocated without being connected to your tree / Passive Skills in radius of Elemental Overload can be allocated without being connected to your tree / Passive Skills in radius of Eternal Youth can be allocated without being connected to your tree / Passive Skills in radius of Ghost Dance can be allocated without being connected to your tree / Passive Skills in radius of Ghost Reaver can be allocated without being connected to your tree / Passive Skills in radius of Glancing Blows can be allocated without being connected to your tree / Passive Skills in radius of Hex Master can be allocated without being connected to your tree / Passive Skills in radius of Imbalanced Guard can be allocated without being connected to your tree / Passive Skills in radius of Iron Grip can be allocated without being connected to your tree / Passive Skills in radius of Iron Reflexes can be allocated without being connected to your tree / Passive Skills in radius of Iron Will can be allocated without being connected to your tree / Passive Skills in radius of Lethe Shade can be allocated without being connected to your tree / Passive Skills in radius of Magebane can be allocated without being connected to your tree / Passive Skills in radius of Mind Over Matter can be allocated without being connected to your tree / Passive Skills in radius of Minion Instability can be allocated without being connected to your tree / Passive Skills in radius of Necromantic Aegis can be allocated without being connected to your tree / Passive Skills in radius of Pain Attunement can be allocated without being connected to your tree / Passive Skills in radius of Perfect Agony can be allocated without being connected to your tree / Passive Skills in radius of Point Blank can be allocated without being connected to your tree / Passive Skills in radius of Precise Technique can be allocated without being connected to your tree / Passive Skills in radius of Resolute Technique can be allocated without being connected to your tree / Passive Skills in radius of Roiling Tempest can be allocated without being connected to your tree / Passive Skills in radius of Runebinder can be allocated without being connected to your tree / Passive Skills in radius of Solipsism can be allocated without being connected to your tree / Passive Skills in radius of Supreme Ego can be allocated without being connected to your tree / Passive Skills in radius of The Agnostic can be allocated without being connected to your tree / Passive Skills in radius of The Impaler can be allocated without being connected to your tree / Passive Skills in radius of Unwavering Stance can be allocated without being connected to your tree / Passive Skills in radius of Vaal Pact can be allocated without being connected to your tree / Passive Skills in radius of Versatile Combatant can be allocated without being connected to your tree / Passive Skills in radius of Voracious Flame can be allocated without being connected to your tree / Passive Skills in radius of Wicked Ward can be allocated without being connected to your tree / Passive Skills in radius of Wind Dancer can be allocated without being connected to your tree / Passive Skills in radius of Zealot's Oath can be allocated without being connected to your tree",
+   "source": "форма уник-джевелов, 19.09",
+   "user_note": "",
+   "status": "rule",
+   "rules": {
+    "uber": "разрешён"
+   }
+  },
+  {
+   "id": "jewel-inertia",
+   "category": "unique_jewels",
+   "scope": "narrow",
+   "title": "Inertia",
+   "title_en": "Crimson Jewel",
+   "tags": [
+    "обычный",
+    "upgrade"
+   ],
+   "explain": "+20 to Strength / Dexterity from Passives in Radius is Transformed to Strength / Corrupted",
+   "source": "форма уник-джевелов, 19.09",
+   "user_note": "",
+   "status": "rule",
+   "rules": {
+    "endgame": "разрешён"
+   }
+  },
+  {
+   "id": "jewel-inspired-learning",
+   "category": "unique_jewels",
+   "scope": "narrow",
+   "title": "Inspired Learning",
+   "title_en": "Crimson Jewel",
+   "tags": [
+    "обычный",
+    "обычный дроп",
+    "вики T2"
+   ],
+   "explain": "With 4 Notables Allocated in Radius, When you Kill a Rare monster, you gain 1 of its Modifiers for 20 seconds",
+   "source": "форма уник-джевелов, 19.09",
+   "user_note": "",
+   "status": "rule",
+   "rules": {
+    "uber": "разрешён"
+   }
+  },
+  {
+   "id": "jewel-intuitive-leap",
+   "category": "unique_jewels",
+   "scope": "narrow",
+   "title": "Intuitive Leap",
+   "title_en": "Viridian Jewel",
+   "tags": [
+    "обычный",
+    "обычный дроп",
+    "вики T2"
+   ],
+   "explain": "Passive Skills in Radius can be Allocated without being connected to your tree / Passage",
+   "source": "форма уник-джевелов, 19.09",
+   "user_note": "",
+   "status": "rule",
+   "rules": {
+    "endgame": "разрешён"
+   }
+  },
+  {
+   "id": "jewel-kitava-s-teachings",
+   "category": "unique_jewels",
+   "scope": "narrow",
+   "title": "Kitava's Teachings",
+   "title_en": "Small Cluster Jewel",
+   "tags": [
+    "кластерный",
+    "mechanic"
+   ],
+   "explain": "Adds Disciple of Kitava",
+   "source": "форма уник-джевелов, 19.09",
+   "user_note": "",
+   "status": "rule",
+   "rules": {
+    "endgame": "разрешён"
+   }
+  },
+  {
+   "id": "jewel-kurgal-s-gaze",
+   "category": "unique_jewels",
+   "scope": "narrow",
+   "title": "Kurgal's Gaze",
+   "title_en": "Hypnotic Eye Jewel",
+   "tags": [
+    "abyss",
+    "обычный дроп"
+   ],
+   "explain": "+15 to Intelligence / 8% increased Effect of Arcane Surge on you per Hypnotic Eye Jewel affecting you, up to a maximum of 40%",
+   "source": "форма уник-джевелов, 19.09",
+   "user_note": "",
+   "status": "rule",
+   "rules": {
+    "endgame": "разрешён"
+   }
+  },
+  {
+   "id": "jewel-lethal-pride",
+   "category": "unique_jewels",
+   "scope": "narrow",
+   "title": "Lethal Pride",
+   "title_en": "Timeless Jewel",
+   "tags": [
+    "timeless",
+    "mechanic"
+   ],
+   "explain": "Commanded leadership over 14000 warriors under Kaom / Passives in radius are Conquered by the Karui / Historic / Commanded leadership over 14000 warriors under Kiloava / Commanded leadership over 14000 warriors under Rakiata / Commanded leadership over 14000 warriors under Akoya",
+   "source": "форма уник-джевелов, 19.09",
+   "user_note": "",
+   "status": "rule",
+   "rules": {
+    "t16": "только ради кистоуна",
+    "endgame": "кистоун + 3 нотабла + 5 малых",
+    "mirror": "кистоун + 80% радиуса"
+   },
+   "see": "t-timeless"
+  },
+  {
+   "id": "jewel-lioneye-s-fall",
+   "category": "unique_jewels",
+   "scope": "narrow",
+   "title": "Lioneye's Fall",
+   "title_en": "Viridian Jewel",
+   "tags": [
+    "обычный",
+    "обычный дроп",
+    "вики T2"
+   ],
+   "explain": "Melee and Melee Weapon Type modifiers in Radius are Transformed to Bow Modifiers",
+   "source": "форма уник-джевелов, 19.09",
+   "user_note": "",
+   "status": "rule",
+   "rules": {
+    "endgame": "разрешён"
+   }
+  },
+  {
+   "id": "jewel-megalomaniac",
+   "category": "unique_jewels",
+   "scope": "narrow",
+   "title": "Megalomaniac",
+   "title_en": "Medium Cluster Jewel",
+   "tags": [
+    "кластерный",
+    "mechanic"
+   ],
+   "explain": "Adds 4 Passive Skills / Added Small Passive Skills grant Nothing / 1 Added Passive Skill is Adrenaline / 1 Added Passive Skill is Advance Guard / 1 Added Passive Skill is Aerialist / 1 Added Passive Skill is Aerodynamics / 1 Added Passive Skill is Agent of Destruction / 1 Added Passive Skill is Aggressive Defence / 1 Added Passive Skill is Alchemist / 1 Added Passive Skill is Ancestral Echo / 1 Added Passive Skill is Ancestral Guidance / 1 Added Passive Skill is Ancestral Inspiration / 1 Added Passive Skill is Ancestral Might / 1 Added Passive Skill is Ancestral Preservation / 1 Added Passive Skill is Ancestral Reach / 1 Added Passive Skill is Antifreeze / 1 Added Passive Skill is Antivenom / 1 Added Passive Skill is Arcane Adept / 1 Added Passive Skill is Arcane Heroism / 1 Added Passive Skill is Arcane Pyrotechnics / 1 Added Passive Skill is Arcing Shot / 1 Added Passive Skill is Assert Dominance / 1 Added Passive Skill is Astonishing Affliction / 1 Added Passive Skill is Basics of Pain / 1 Added Passive Skill is Battle-Hardened / 1 Added Passive Skill is Battlefield Dominator / 1 Added Passive Skill is Blacksmith / 1 Added Passive Skill is Blanketed Snow / 1 Added Passive Skill is Blast-Freeze / 1 Added Passive Skill is Blessed / 1 Added Passive Skill is Blessed Rebirth / 1 Added Passive Skill is Blizzard Caller / 1 Added Passive Skill is Blood Artist / 1 Added Passive Skill is Bloodscent / 1 Added Passive Skill is Blowback / 1 Added Passive Skill is Bodyguards / 1 Added Passive Skill is Born of Chaos / 1 Added Passive Skill is Brand Loyalty / 1 Added Passive Skill is Brewed for Potency / 1 Added Passive Skill is Broadside / 1 Added Passive Skill is Brush with Death / 1 Added Passive Skill is Brutal Infamy / 1 Added Passive Skill is Burden Projection / 1 Added Passive Skill is Burning Bright / 1 Added Passive Skill is Calamitous / 1 Added Passive Skill is Call to the Slaughter / 1 Added Passive Skill is Capacitor / 1 Added Passive Skill is Careful Handling / 1 Added Passive Skill is Chilling Presence / 1 Added Passive Skill is Chip Away / 1 Added Passive Skill is Circling Oblivion / 1 Added Passive Skill is Clarity of Purpose / 1 Added Passive Skill is Cold Conduction / 1 Added Passive Skill is Cold to the Core / 1 Added Passive Skill is Cold-Blooded Killer / 1 Added Passive Skill is Combat Rhythm / 1 Added Passive Skill is Compound Injury / 1 Added Passive Skill is Confident Combatant / 1 Added Passive Skill is Conjured Wall / 1 Added Passive Skill is Conservation of Energy / 1 Added Passive Skill is Cooked Alive / 1 Added Passive Skill is Corrosive Elements / 1 Added Passive Skill is Cremator / 1 Added Passive Skill is Cry Wolf / 1 Added Passive Skill is Cult-Leader / 1 Added Passive Skill is Daring Ideas / 1 Added Passive Skill is Dark Ideation / 1 Added Passive Skill is Dark Messenger / 1 Added Passive Skill is Darting Movements / 1 Added Passive Skill is Deadly Repartee / 1 Added Passive Skill is Deep Chill / 1 Added Passive Skill is Deep Cuts / 1 Added Passive Skill is Destructive Aspect / 1 Added Passive Skill is Devastator / 1 Added Passive Skill is Disciples / 1 Added Passive Skill is Disease Vector / 1 Added Passive Skill is Disorienting Display / 1 Added Passive Skill is Disorienting Wounds / 1 Added Passive Skill is Distilled Perfection / 1 Added Passive Skill is Doedre's Apathy / 1 Added Passive Skill is Doedre's Gluttony / 1 Added Passive Skill is Doedre's Spite / 1 Added Passive Skill is Doryani's Lesson / 1 Added Passive Skill is Dragon Hunter / 1 Added Passive Skill is Dread March / 1 Added Passive Skill is Drive the Destruction / 1 Added Passive Skill is Eldritch Inspiration / 1 Added Passive Skill is Electric Presence / 1 Added Passive Skill is Elegant Form / 1 Added Passive Skill is Empowered Envoy / 1 Added Passive Skill is Endbringer / 1 Added Passive Skill is Enduring Composure / 1 Added Passive Skill is Enduring Focus / 1 Added Passive Skill is Enduring Ward / 1 Added Passive Skill is Energy From Naught / 1 Added Passive Skill is Essence Rush / 1 Added Passive Skill is Eternal Suffering / 1 Added Passive Skill is Evil Eye / 1 Added Passive Skill is Expansive Might / 1 Added Passive Skill is Expendability / 1 Added Passive Skill is Expert Sabotage / 1 Added Passive Skill is Exploit Weakness / 1 Added Passive Skill is Explosive Force / 1 Added Passive Skill is Exposure Therapy / 1 Added Passive Skill is Eye of the Storm / 1 Added Passive Skill is Eye to Eye / 1 Added Passive Skill is Fan of Blades / 1 Added Passive Skill is Fan the Flames / 1 Added Passive Skill is Fasting / 1 Added Passive Skill is Fearsome Warrior / 1 Added Passive Skill is Feast of Flesh / 1 Added Passive Skill is Feasting Fiends / 1 Added Passive Skill is Feed the Fury / 1 Added Passive Skill is Fettle / 1 Added Passive Skill is Fiery Aegis / 1 Added Passive Skill is Fire Attunement / 1 Added Passive Skill is Flexible Sentry / 1 Added Passive Skill is Flow of Life / 1 Added Passive Skill is Follow-Through / 1 Added Passive Skill is Forbidden Words / 1 Added Passive Skill is Force Multiplier / 1 Added Passive Skill is Frantic Aspect / 1 Added Passive Skill is Fuel the Fight / 1 Added Passive Skill is Furious Assault / 1 Added Passive Skill is Genius / 1 Added Passive Skill is Gladiator's Fortitude / 1 Added Passive Skill is Gladiatorial Combat / 1 Added Passive Skill is Graceful Execution / 1 Added Passive Skill is Grand Design / 1 Added Passive Skill is Grim Oath / 1 Added Passive Skill is Guerilla Tactics / 1 Added Passive Skill is Haemorrhage / 1 Added Passive Skill is Haunting Shout / 1 Added Passive Skill is Heart of Iron / 1 Added Passive Skill is Heavy Hitter / 1 Added Passive Skill is Heraldry / 1 Added Passive Skill is Hex Breaker / 1 Added Passive Skill is Hibernator / 1 Added Passive Skill is Hit and Run / 1 Added Passive Skill is Holistic Health / 1 Added Passive Skill is Holy Conquest / 1 Added Passive Skill is Holy Word / 1 Added Passive Skill is Hound's Mark / 1 Added Passive Skill is Hulking Corpses / 1 Added Passive Skill is Improvisor / 1 Added Passive Skill is Insatiable Killer / 1 Added Passive Skill is Inspired Oppression / 1 Added Passive Skill is Insulated / 1 Added Passive Skill is Intensity / 1 Added Passive Skill is Introspection / 1 Added Passive Skill is Invigorating Portents / 1 Added Passive Skill is Iron Breaker / 1 Added Passive Skill is Lasting Impression / 1 Added Passive Skill is Lead By Example / 1 Added Passive Skill is Life from Death / 1 Added Passive Skill is Liquid Inspiration / 1 Added Passive Skill is Lord of Drought / 1 Added Passive Skill is Low Tolerance / 1 Added Passive Skill is Mage Bane / 1 Added Passive Skill is Mage Hunter / 1 Added Passive Skill is Magnifier / 1 Added Passive Skill is Martial Mastery / 1 Added Passive Skill is Martial Momentum / 1 Added Passive Skill is Martial Prowess / 1 Added Passive Skill is Master of Command / 1 Added Passive Skill is Master of Fear / 1 Added Passive Skill is Master of Fire / 1 Added Passive Skill is Master of the Maelstrom / 1 Added Passive Skill is Master the Fundamentals / 1 Added Passive Skill is Mender's Wellspring / 1 Added Passive Skill is Militarism / 1 Added Passive Skill is Mindfulness / 1 Added Passive Skill is Misery Everlasting / 1 Added Passive Skill is Mob Mentality / 1 Added Passive Skill is Molten One's Mark / 1 Added Passive Skill is Mortifying Aspect / 1 Added Passive Skill is Mystical Ward / 1 Added Passive Skill is Natural Vigour / 1 Added Passive Skill is No Witnesses / 1 Added Passive Skill is Non-Flammable / 1 Added Passive Skill is Numbing Elixir / 1 Added Passive Skill is One with the Shield / 1 Added Passive Skill is Openness / 1 Added Passive Skill is Opportunistic Fusilade / 1 Added Passive Skill is Overlord / 1 Added Passive Skill is Overshock / 1 Added Passive Skill is Overwhelming Malice / 1 Added Passive Skill is Paralysis / 1 Added Passive Skill is Peace Amidst Chaos / 1 Added Passive Skill is Peak Vigour / 1 Added Passive Skill is Phlebotomist / 1 Added Passive Skill is Powerful Assault / 1 Added Passive Skill is Powerful Ward / 1 Added Passive Skill is Practiced Caster / 1 Added Passive Skill is Precise Focus / 1 Added Passive Skill is Precise Retaliation / 1 Added Passive Skill is Pressure Points / 1 Added Passive Skill is Primordial Bond / 1 Added Passive Skill is Prismatic Carapace / 1 Added Passive Skill is Prismatic Dance / 1 Added Passive Skill is Prismatic Heart / 1 Added Passive Skill is Prodigious Defence / 1 Added Passive Skill is Provocateur / 1 Added Passive Skill is Pure Agony / 1 Added Passive Skill is Pure Aptitude / 1 Added Passive Skill is Pure Guile / 1 Added Passive Skill is Pure Might / 1 Added Passive Skill is Purposeful Harbinger / 1 Added Passive Skill is Quick Getaway / 1 Added Passive Skill is Quick and Deadly / 1 Added Passive Skill is Rattling Bellow / 1 Added Passive Skill is Raze and Pillage / 1 Added Passive Skill is Readiness / 1 Added Passive Skill is Remarkable / 1 Added Passive Skill is Rend / 1 Added Passive Skill is Renewal / 1 Added Passive Skill is Repeater / 1 Added Passive Skill is Replenishing Presence / 1 Added Passive Skill is Righteous Path / 1 Added Passive Skill is Riot Queller / 1 Added Passive Skill is Rot-Resistant / 1 Added Passive Skill is Rote Reinforcement / 1 Added Passive Skill is Rotten Claws / 1 Added Passive Skill is Run Through / 1 Added Passive Skill is Sadist / 1 Added Passive Skill is Sage / 1 Added Passive Skill is Sap Psyche / 1 Added Passive Skill is Savage Response / 1 Added Passive Skill is Savour the Moment / 1 Added Passive Skill is Scintillating Idea / 1 Added Passive Skill is Seal Mender / 1 Added Passive Skill is Second Skin / 1 Added Passive Skill is Seeker Runes / 1 Added Passive Skill is Self-Control / 1 Added Passive Skill is Self-Fulfilling Prophecy / 1 Added Passive Skill is Septic Spells / 1 Added Passive Skill is Set and Forget / 1 Added Passive Skill is Shifting Shadow / 1 Added Passive Skill is Shrieking Bolts / 1 Added Passive Skill is Skeletal Atrophy / 1 Added Passive Skill is Skullbreaker / 1 Added Passive Skill is Sleepless Sentries / 1 Added Passive Skill is Smite the Weak / 1 Added Passive Skill is Smoking Remains / 1 Added Passive Skill is Snaring Spirits / 1 Added Passive Skill is Snowstorm / 1 Added Passive Skill is Special Reserve / 1 Added Passive Skill is Spiked Concoction / 1 Added Passive Skill is Spiteful Presence / 1 Added Passive Skill is Spring Back / 1 Added Passive Skill is Steady Torment / 1 Added Passive Skill is Stoic Focus / 1 Added Passive Skill is Storm Drinker / 1 Added Passive Skill is Storm's Hand / 1 Added Passive Skill is Stormrider / 1 Added Passive Skill is Streamlined / 1 Added Passive Skill is Strike Leader / 1 Added Passive Skill is Stubborn Student / 1 Added Passive Skill is Student of Decay / 1 Added Passive Skill is Sublime Form / 1 Added Passive Skill is Sublime Sensation / 1 Added Passive Skill is Supercharge / 1 Added Passive Skill is Surefooted Striker / 1 Added Passive Skill is Surging Vitality / 1 Added Passive Skill is Surprise Sabotage / 1 Added Passive Skill is Tempered Arrowheads / 1 Added Passive Skill is Tempt the Storm / 1 Added Passive Skill is Thaumophage / 1 Added Passive Skill is Thunderstruck / 1 Added Passive Skill is Titanic Swings / 1 Added Passive Skill is Touch of Cruelty / 1 Added Passive Skill is Towering Threat / 1 Added Passive Skill is Uncompromising / 1 Added Passive Skill is Unholy Grace / 1 Added Passive Skill is Unrestrained Focus / 1 Added Passive Skill is Unspeakable Gifts / 1 Added Passive Skill is Untouchable / 1 Added Passive Skill is Unwavering Focus / 1 Added Passive Skill is Unwaveringly Evil / 1 Added Passive Skill is Vast Power / 1 Added Passive Skill is Veteran Defender / 1 Added Passive Skill is Vicious Bite / 1 Added Passive Skill is Vicious Guard / 1 Added Passive Skill is Vicious Skewering / 1 Added Passive Skill is Victim Maker / 1 Added Passive Skill is Vile Reinvigoration / 1 Added Passive Skill is Vital Focus / 1 Added Passive Skill is Vivid Hues / 1 Added Passive Skill is Volatile Presence / 1 Added Passive Skill is Wall of Muscle / 1 Added Passive Skill is Warning Call / 1 Added Passive Skill is Wasting Affliction / 1 Added Passive Skill is Weight Advantage / 1 Added Passive Skill is Wicked Pall / 1 Added Passive Skill is Widespread Destruction / 1 Added Passive Skill is Will Shaper / 1 Added Passive Skill is Wind-up / 1 Added Passive Skill is Winter Prowler / 1 Added Passive Skill is Wish for Death / 1 Added Passive Skill is Wizardry / 1 Added Passive Skill is Wound Aggravation / 1 Added Passive Skill is Wrapped in Flame",
+   "source": "форма уник-джевелов, 19.09",
+   "user_note": "Прописывал его отдельно до этого файла",
+   "status": "rule",
+   "rules": {
+    "endgame": "1 полезный нотабл",
+    "uber": "2",
+    "mirror": "3"
+   }
+  },
+  {
+   "id": "jewel-melding-of-the-flesh",
+   "category": "unique_jewels",
+   "scope": "narrow",
+   "title": "Melding of the Flesh",
+   "title_en": "Cobalt Jewel",
+   "tags": [
+    "обычный",
+    "босс-дроп"
+   ],
+   "explain": "-75% to all Elemental Resistances / -5% to all maximum Elemental Resistances / Elemental Resistances are capped by your highest Maximum Elemental Resistance instead",
+   "source": "форма уник-джевелов, 19.09",
+   "user_note": "",
+   "status": "rule",
+   "rules": {
+    "uber": "разрешён"
+   }
+  },
+  {
+   "id": "jewel-might-of-the-meek",
+   "category": "unique_jewels",
+   "scope": "narrow",
+   "title": "Might of the Meek",
+   "title_en": "Crimson Jewel",
+   "tags": [
+    "обычный",
+    "обычный дроп",
+    "вики T2"
+   ],
+   "explain": "50% increased Effect of non-Keystone Passive Skills in Radius / Notable Passive Skills in Radius grant nothing",
+   "source": "форма уник-джевелов, 19.09",
+   "user_note": "",
+   "status": "rule",
+   "rules": {
+    "uber": "разрешён"
+   }
+  },
+  {
+   "id": "jewel-militant-faith",
+   "category": "unique_jewels",
+   "scope": "narrow",
+   "title": "Militant Faith",
+   "title_en": "Timeless Jewel",
+   "tags": [
+    "timeless",
+    "mechanic"
+   ],
+   "explain": "Carved to glorify 6000 new faithful converted by High Templar Maxarius / Passives in radius are Conquered by the Templars / 4% increased Area Damage per 10 Devotion / 3% increased Mana Cost Efficiency per 10 Devotion / Channelling Skills deal 4% increased Damage per 10 Devotion / 4% increased Elemental Damage per 10 Devotion / +2% to all Elemental Resistances per 10 Devotion / 1% reduced Mana Cost of Skills per 10 Devotion / Regenerate 0.6 Mana per Second per 10 Devotion / Minions have +60 to Accuracy Rating per 10 Devotion / 1% increased Minion Attack and Cast Speed per 10 Devotion / 1% increased effect of Non-Curse Auras per 10 Devotion / 3% increased Effect of non-Damaging Ailments on Enemies per 10 Devotion / 4% reduced Duration of Curses on you per 10 Devotion / 4% reduced Elemental Ailment Duration on you per 10 Devotion / 3% increased Defences from Equipped Shield per 10 Devotion / 4% increased Brand Damage per 10 Devotion / 4% increased Totem Damage per 10 Devotion / Historic / Carved to glorify 6000 new faithful converted by High Templar Avarius / Carved to glorify 6000 new faithful converted by High Templar Dominus / Carved to glorify 6000 new faithful converted by High Templar Venarius",
+   "source": "форма уник-джевелов, 19.09",
+   "user_note": "",
+   "status": "rule",
+   "rules": {
+    "t16": "только ради кистоуна",
+    "endgame": "кистоун + 3 нотабла + 5 малых",
+    "mirror": "кистоун + 80% радиуса"
+   },
+   "see": "t-timeless"
+  },
+  {
+   "id": "jewel-nadir-mode",
+   "category": "unique_jewels",
+   "scope": "narrow",
+   "title": "Nadir Mode",
+   "title_en": "Cobalt Jewel",
+   "tags": [
+    "обычный",
+    "босс-дроп"
+   ],
+   "explain": "23% increased Spell Damage / Spells have 30% increased Critical Strike Chance per Intensity / Spells have 40% increased Critical Strike Chance per Intensity / Spells which have gained Intensity Recently lose 1 Intensity every 0.50 Seconds",
+   "source": "форма уник-джевелов, 19.09",
+   "user_note": "",
+   "status": "rule",
+   "rules": {
+    "endgame": "разрешён"
+   }
+  },
+  {
+   "id": "jewel-natural-affinity",
+   "category": "unique_jewels",
+   "scope": "narrow",
+   "title": "Natural Affinity",
+   "title_en": "Small Cluster Jewel",
+   "tags": [
+    "кластерный",
+    "mechanic"
+   ],
+   "explain": "Adds Nature's Patience",
+   "source": "форма уник-джевелов, 19.09",
+   "user_note": "",
+   "status": "rule",
+   "rules": {
+    "endgame": "разрешён"
+   }
+  },
+  {
+   "id": "jewel-one-with-nothing",
+   "category": "unique_jewels",
+   "scope": "narrow",
+   "title": "One With Nothing",
+   "title_en": "Small Cluster Jewel",
+   "tags": [
+    "кластерный",
+    "mechanic"
+   ],
+   "explain": "Adds Hollow Palm Technique",
+   "source": "форма уник-джевелов, 19.09",
+   "user_note": "",
+   "status": "rule",
+   "rules": {
+    "endgame": "разрешён"
+   }
+  },
+  {
+   "id": "jewel-pacifism",
+   "category": "unique_jewels",
+   "scope": "narrow",
+   "title": "Pacifism",
+   "title_en": "Viridian Jewel",
+   "tags": [
+    "обычный",
+    "upgrade"
+   ],
+   "explain": "-1 to Maximum Frenzy Charges",
+   "source": "форма уник-джевелов, 19.09",
+   "user_note": "",
+   "status": "rule",
+   "rules": {
+    "endgame": "разрешён"
+   }
+  },
+  {
+   "id": "jewel-powerlessness",
+   "category": "unique_jewels",
+   "scope": "narrow",
+   "title": "Powerlessness",
+   "title_en": "Cobalt Jewel",
+   "tags": [
+    "обычный",
+    "upgrade"
+   ],
+   "explain": "-1 to Maximum Power Charges",
+   "source": "форма уник-джевелов, 19.09",
+   "user_note": "",
+   "status": "rule",
+   "rules": {
+    "endgame": "разрешён"
+   }
+  },
+  {
+   "id": "jewel-primordial-eminence",
+   "category": "unique_jewels",
+   "scope": "narrow",
+   "title": "Primordial Eminence",
+   "title_en": "Viridian Jewel",
+   "tags": [
+    "обычный",
+    "обычный дроп"
+   ],
+   "explain": "Golems have 18% increased Attack and Cast Speed / 30% increased Effect of Buffs granted by your Golems / Golems have +900 to Armour / Primordial",
+   "source": "форма уник-джевелов, 19.09",
+   "user_note": "",
+   "status": "rule",
+   "rules": {
+    "endgame": "разрешён"
+   }
+  },
+  {
+   "id": "jewel-primordial-harmony",
+   "category": "unique_jewels",
+   "scope": "narrow",
+   "title": "Primordial Harmony",
+   "title_en": "Cobalt Jewel",
+   "tags": [
+    "обычный",
+    "обычный дроп"
+   ],
+   "explain": "Golem Skills have 25% increased Cooldown Recovery Rate / Summoned Golems have 13% increased Cooldown Recovery Rate / Summoned Golems have 38% increased Cooldown Recovery Rate / 18% increased Golem Damage for each Type of Golem you have Summoned / Summoned Golems Regenerate 2% of their Life per second / Primordial",
+   "source": "форма уник-джевелов, 19.09",
+   "user_note": "",
+   "status": "rule",
+   "rules": {
+    "endgame": "разрешён"
+   }
+  },
+  {
+   "id": "jewel-primordial-might",
+   "category": "unique_jewels",
+   "scope": "narrow",
+   "title": "Primordial Might",
+   "title_en": "Crimson Jewel",
+   "tags": [
+    "обычный",
+    "обычный дроп"
+   ],
+   "explain": "28% increased Damage if you Summoned a Golem in the past 8 seconds / Golems Summoned in the past 8 seconds deal 40% increased Damage / Golems have 20% increased Maximum Life / Primordial / Summoned Golems are Aggressive",
+   "source": "форма уник-джевелов, 19.09",
+   "user_note": "",
+   "status": "rule",
+   "rules": {
+    "endgame": "разрешён"
+   }
+  },
+  {
+   "id": "jewel-pure-talent",
+   "category": "unique_jewels",
+   "scope": "narrow",
+   "title": "Pure Talent",
+   "title_en": "Viridian Jewel",
+   "tags": [
+    "обычный",
+    "обычный дроп",
+    "вики T2"
+   ],
+   "explain": "While your Passive Skill Tree connects to a class' starting location, you gain: / Marauder: Melee Skills have 15% increased Area of Effect / Marauder: Melee Skills have 25% increased Area of Effect / Duelist: 1% of Attack Damage Leeched as Life / Ranger: 7% increased Movement Speed / Shadow: +0.5% to Critical Strike Chance / Witch: 0.5% of Mana Regenerated per second / Templar: Damage Penetrates 5% Elemental Resistances / Scion: +25 to All Attributes",
+   "source": "форма уник-джевелов, 19.09",
+   "user_note": "",
+   "status": "rule",
+   "rules": {
+    "endgame": "разрешён"
+   }
+  },
+  {
+   "id": "jewel-quickening-covenant",
+   "category": "unique_jewels",
+   "scope": "narrow",
+   "title": "Quickening Covenant",
+   "title_en": "Viridian Jewel",
+   "tags": [
+    "обычный",
+    "upgrade"
+   ],
+   "explain": "Minions have 14% increased Attack Speed / Minions have 14% increased Cast Speed / Minions have +22% chance to Suppress Spell Damage / Notable Passive Skills in Radius are Transformed to instead grant: Minions have 25% reduced Movement Speed / Corrupted",
+   "source": "форма уник-джевелов, 19.09",
+   "user_note": "",
+   "status": "rule",
+   "rules": {
+    "endgame": "разрешён"
+   }
+  },
+  {
+   "id": "jewel-rain-of-splinters",
+   "category": "unique_jewels",
+   "scope": "narrow",
+   "title": "Rain of Splinters",
+   "title_en": "Crimson Jewel",
+   "tags": [
+    "обычный",
+    "upgrade"
+   ],
+   "explain": "40% reduced Totem Damage / Totems fire 2 additional Projectiles / Corrupted",
+   "source": "форма уник-джевелов, 19.09",
+   "user_note": "",
+   "status": "rule",
+   "rules": {
+    "endgame": "разрешён"
+   }
+  },
+  {
+   "id": "jewel-rational-doctrine",
+   "category": "unique_jewels",
+   "scope": "narrow",
+   "title": "Rational Doctrine",
+   "title_en": "Cobalt Jewel",
+   "tags": [
+    "обычный",
+    "boss_uber"
+   ],
+   "explain": "You have Consecrated Ground around you while stationary if Strength is your highest Attribute / 25% chance to create Profane Ground on Critical Strike if Intelligence is your highest Attribute / Effects of Consecrated Ground you create Linger for 4 seconds / Effects of Profane Ground you create Linger for 4 seconds",
+   "source": "форма уник-джевелов, 19.09",
+   "user_note": "",
+   "status": "rule",
+   "rules": {
+    "uber": "разрешён"
+   }
+  },
+  {
+   "id": "jewel-reckless-defence",
+   "category": "unique_jewels",
+   "scope": "narrow",
+   "title": "Reckless Defence",
+   "title_en": "Cobalt Jewel",
+   "tags": [
+    "обычный",
+    "upgrade"
+   ],
+   "explain": "3% Chance to Block Attack Damage / +4% Chance to Block Attack Damage / +6% Chance to Block Spell Damage / +3% Chance to Block Spell Damage / +4% Chance to Block Spell Damage / Hits have 170% increased Critical Strike Chance against you / Corrupted",
+   "source": "форма уник-джевелов, 19.09",
+   "user_note": "",
+   "status": "rule",
+   "rules": {
+    "endgame": "разрешён"
+   }
+  },
+  {
+   "id": "jewel-reclaimed-malevolence",
+   "category": "unique_jewels",
+   "scope": "narrow",
+   "title": "Reclaimed Malevolence",
+   "title_en": "Assembled Eye Jewel",
+   "tags": [
+    "abyss",
+    "vendor"
+   ],
+   "explain": "Historic / Binding 4050 souls to phylacteries to sustain Zorath / Passives affected are Conquered by the Abyssal",
+   "source": "форма уник-джевелов, 19.09",
+   "user_note": "",
+   "status": "rule",
+   "rules": {
+    "endgame": "разрешён"
+   }
+  },
+  {
+   "id": "jewel-replica-fragility",
+   "category": "unique_jewels",
+   "scope": "narrow",
+   "title": "Replica Fragility",
+   "title_en": "Crimson Jewel",
+   "tags": [
+    "обычный",
+    "mechanic"
+   ],
+   "explain": "Lose an Endurance Charge each second",
+   "source": "форма уник-джевелов, 19.09",
+   "user_note": "",
+   "status": "rule",
+   "rules": {
+    "endgame": "разрешён"
+   }
+  },
+  {
+   "id": "jewel-replica-pacifism",
+   "category": "unique_jewels",
+   "scope": "narrow",
+   "title": "Replica Pacifism",
+   "title_en": "Viridian Jewel",
+   "tags": [
+    "обычный",
+    "mechanic"
+   ],
+   "explain": "Lose a Frenzy Charge each second",
+   "source": "форма уник-джевелов, 19.09",
+   "user_note": "",
+   "status": "rule",
+   "rules": {
+    "endgame": "разрешён"
+   }
+  },
+  {
+   "id": "jewel-replica-powerlessness",
+   "category": "unique_jewels",
+   "scope": "narrow",
+   "title": "Replica Powerlessness",
+   "title_en": "Cobalt Jewel",
+   "tags": [
+    "обычный",
+    "mechanic"
+   ],
+   "explain": "Lose a Power Charge each second",
+   "source": "форма уник-джевелов, 19.09",
+   "user_note": "",
+   "status": "rule",
+   "rules": {
+    "endgame": "разрешён"
+   }
+  },
+  {
+   "id": "jewel-replica-primordial-might",
+   "category": "unique_jewels",
+   "scope": "narrow",
+   "title": "Replica Primordial Might",
+   "title_en": "Crimson Jewel",
+   "tags": [
+    "обычный",
+    "mechanic"
+   ],
+   "explain": "-1 to maximum number of Summoned Golems / 28% increased Damage if you Summoned a Golem in the past 8 seconds / Golems Summoned in the past 8 seconds deal 113% increased Damage / Golems have 20% increased Maximum Life / Primordial / Summoned Golems are Aggressive",
+   "source": "форма уник-джевелов, 19.09",
+   "user_note": "",
+   "status": "rule",
+   "rules": {
+    "endgame": "разрешён"
+   }
+  },
+  {
+   "id": "jewel-replica-reckless-defence",
+   "category": "unique_jewels",
+   "scope": "narrow",
+   "title": "Replica Reckless Defence",
+   "title_en": "Cobalt Jewel",
+   "tags": [
+    "обычный",
+    "обычный дроп"
+   ],
+   "explain": "+3% Chance to Block Attack Damage / +4% Chance to Block Attack Damage / +3% Chance to Block Spell Damage / +4% Chance to Block Spell Damage / +10% chance to be Frozen, Shocked and Ignited",
+   "source": "форма уник-джевелов, 19.09",
+   "user_note": "",
+   "status": "rule",
+   "rules": {
+    "endgame": "разрешён"
+   }
+  },
+  {
+   "id": "jewel-seething-fury",
+   "category": "unique_jewels",
+   "scope": "narrow",
+   "title": "Seething Fury",
+   "title_en": "Viridian Jewel",
+   "tags": [
+    "обычный",
+    "upgrade"
+   ],
+   "explain": "13% increased Attack Damage while holding a Shield / +0.2% to Off Hand Critical Strike Chance per 10 Maximum Energy Shield on Shield / +0.15% to Off Hand Critical Strike Chance per 10 Maximum Energy Shield on Shield / +4% to Off Hand Critical Strike Multiplier per 10 Maximum Energy Shield on Shield / Corrupted",
+   "source": "форма уник-джевелов, 19.09",
+   "user_note": "",
+   "status": "rule",
+   "rules": {
+    "endgame": "разрешён"
+   }
+  },
+  {
+   "id": "jewel-self-flagellation",
+   "category": "unique_jewels",
+   "scope": "narrow",
+   "title": "Self-Flagellation",
+   "title_en": "Viridian Jewel",
+   "tags": [
+    "обычный",
+    "upgrade"
+   ],
+   "explain": "15% increased Damage per Curse on you / An additional Curse can be applied to you",
+   "source": "форма уник-джевелов, 19.09",
+   "user_note": "",
+   "status": "rule",
+   "rules": {
+    "endgame": "разрешён"
+   }
+  },
+  {
+   "id": "jewel-split-personality",
+   "category": "unique_jewels",
+   "scope": "narrow",
+   "title": "Split Personality",
+   "title_en": "Crimson Jewel",
+   "tags": [
+    "обычный",
+    "mechanic"
+   ],
+   "explain": "This Jewel's Socket has 25% increased effect per Allocated Passive Skill between it and your Class' starting location / +5 to Strength / +5 to Dexterity / +5 to Intelligence / +40 to Accuracy Rating / +40 to Armour / +40 to Evasion Rating / +5 to maximum Energy Shield / +5 to maximum Life / +5 to maximum Mana",
+   "source": "форма уник-джевелов, 19.09",
+   "user_note": "Эндгейм: 1 полезное свойство (второе игнор соответственно), уберэндгейм: 2 полезных свойства",
+   "status": "rule",
+   "rules": {
+    "endgame": "1 полезное свойство (второе игнорируем)",
+    "uber": "2 полезных свойства"
+   }
+  },
+  {
+   "id": "jewel-stormshroud",
+   "category": "unique_jewels",
+   "scope": "narrow",
+   "title": "Stormshroud",
+   "title_en": "Viridian Jewel",
+   "tags": [
+    "обычный",
+    "обычный дроп",
+    "вики T2"
+   ],
+   "explain": "+13% to Lightning Resistance / Modifiers to Chance to Avoid being Shocked apply to all Elemental Ailments",
+   "source": "форма уник-джевелов, 19.09",
+   "user_note": "",
+   "status": "rule",
+   "rules": {
+    "uber": "разрешён"
+   }
+  },
+  {
+   "id": "jewel-sublime-vision",
+   "category": "unique_jewels",
+   "scope": "narrow",
+   "title": "Sublime Vision",
+   "title_en": "Prismatic Jewel",
+   "tags": [
+    "обычный",
+    "boss_uber"
+   ],
+   "explain": "Auras from your Skills have 30% increased Effect on you / Always Scorch while affected by Anger / Aura Skills other than Anger are Disabled / Auras from your Skills have 30% increased Effect on you / 80% increased Effect of Arcane Surge on you while affected by Clarity / Aura Skills other than Clarity are Disabled / Auras from your Skills have 30% increased Effect on you / +1 to Maximum Endurance Charges while affected by Determination / Aura Skills other than Determination are Disabled / Auras from your Skills have 30% increased Effect on you / +1 to Maximum Power Charges while affected by Discipline / Aura Skills other than Discipline are Disabled / Auras from your Skills have 30% increased Effect on you / +1 to Maximum Frenzy Charges while affected by Grace / Aura Skills other than Grace are Disabled / Auras from your Skills have 30% increased Effect on you / 10% increased Action Speed while affected by Haste / Aura Skills other than Haste are Disabled / Auras from your Skills have 30% increased Effect on you / Always inflict Brittle while affected by Hatred / Aura Skills other than Hatred are Disabled / Auras from your Skills have 30% increased Effect on you / You can apply an additional Curse while affected by Malevolence / Aura Skills other than Malevolence are Disabled / Auras from your Skills have 30% increased Effect on you / 25% more Critical Strike chance while affected by Precision / Aura Skills other than Precision are Disabled / 30% increased Effect of Non-Curse Auras from your Skills on Enemies / Enemies you Kill while using Pride have 25% chance to Explode, dealing a tenth of their maximum Life as Physical Damage / Aura Skills other than Pride are Disabled / Auras from your Skills have 30% increased Effect on you / +3% to all maximum Elemental Resistances while affected by Purity of Elements / Aura Skills other than Purity of Elements are Disabled / Auras from your Skills have 30% increased Effect on you / 30% of Cold and Lightning Damage taken as Fire Damage while affected by Purity of Fire / Aura Skills other than Purity of Fire are Disabled / Auras from your Skills have 30% increased Effect on you / 30% of Fire and Lightning Damage taken as Cold Damage while affected by Purity of Ice / Aura Skills other than Purity of Ice are Disabled / Auras from your Skills have 30% increased Effect on you / 30% of Fire and Cold Damage taken as Lightning Damage while affected by Purity of Lightning / Aura Skills other than Purity of Lightning are Disabled / Auras from your Skills have 30% increased Effect on you / Regenerate 15% Life over one second when hit while affected by Vitality / Aura Skills other than Vitality are Disabled / Auras from your Skills have 30% increased Effect on you / Always Sap while affected by Wrath / Aura Skills other than Wrath are Disabled / Auras from your Skills have 30% increased Effect on you / Unaffected by Curses while affected by Zealotry / Aura Skills other than Zealotry are Disabled",
+   "source": "форма уник-джевелов, 19.09",
+   "user_note": "",
+   "status": "rule",
+   "rules": {
+    "uber": "разрешён"
+   }
+  },
+  {
+   "id": "jewel-tecrod-s-gaze",
+   "category": "unique_jewels",
+   "scope": "narrow",
+   "title": "Tecrod's Gaze",
+   "title_en": "Murderous Eye Jewel",
+   "tags": [
+    "abyss",
+    "обычный дроп"
+   ],
+   "explain": "+15 to Strength / 20% increased Main Hand Critical Strike Chance per Murderous Eye Jewel affecting you, up to a maximum of 200% / 40% increased Main Hand Critical Strike Chance per Murderous Eye Jewel affecting you, up to a maximum of 200% / +10% to Off Hand Critical Strike Multiplier per Murderous Eye Jewel affecting you, up to a maximum of +100% / +20% to Off Hand Critical Strike Multiplier per Murderous Eye Jewel affecting you, up to a maximum of +100%",
+   "source": "форма уник-джевелов, 19.09",
+   "user_note": "",
+   "status": "rule",
+   "rules": {
+    "endgame": "разрешён"
+   }
+  },
+  {
+   "id": "jewel-tempered-flesh",
+   "category": "unique_jewels",
+   "scope": "narrow",
+   "title": "Tempered Flesh",
+   "title_en": "Crimson Jewel",
+   "tags": [
+    "обычный",
+    "босс-дроп"
+   ],
+   "explain": "-1 Strength per 1 Strength on Allocated Passives in Radius / +5% to Critical Strike Multiplier per 10 Strength on Unallocated Passives in Radius / +7% to Critical Strike Multiplier per 10 Strength on Unallocated Passives in Radius / 2% increased Life Recovery Rate per 10 Strength on Allocated Passives in Radius",
+   "source": "форма уник-джевелов, 19.09",
+   "user_note": "",
+   "status": "rule",
+   "rules": {
+    "endgame": "разрешён"
+   }
+  },
+  {
+   "id": "jewel-tempered-mind",
+   "category": "unique_jewels",
+   "scope": "narrow",
+   "title": "Tempered Mind",
+   "title_en": "Cobalt Jewel",
+   "tags": [
+    "обычный",
+    "босс-дроп"
+   ],
+   "explain": "-1 Intelligence per 1 Intelligence on Allocated Passives in Radius / +100 to Accuracy Rating per 10 Intelligence on Unallocated Passives in Radius / +125 to Accuracy Rating per 10 Intelligence on Unallocated Passives in Radius / 2% increased Mana Recovery Rate per 10 Intelligence on Allocated Passives in Radius",
+   "source": "форма уник-джевелов, 19.09",
+   "user_note": "",
+   "status": "rule",
+   "rules": {
+    "endgame": "разрешён"
+   }
+  },
+  {
+   "id": "jewel-tempered-spirit",
+   "category": "unique_jewels",
+   "scope": "narrow",
+   "title": "Tempered Spirit",
+   "title_en": "Viridian Jewel",
+   "tags": [
+    "обычный",
+    "босс-дроп"
+   ],
+   "explain": "-1 Dexterity per 1 Dexterity on Allocated Passives in Radius / 2% increased Movement Speed per 10 Dexterity on Allocated Passives in Radius / +15 to Maximum Mana per 10 Dexterity on Unallocated Passives in Radius",
+   "source": "форма уник-джевелов, 19.09",
+   "user_note": "",
+   "status": "rule",
+   "rules": {
+    "endgame": "разрешён"
+   }
+  },
+  {
+   "id": "jewel-the-adorned",
+   "category": "unique_jewels",
+   "scope": "narrow",
+   "title": "The Adorned",
+   "title_en": "Crimson Jewel",
+   "tags": [
+    "обычный",
+    "other"
+   ],
+   "explain": "100% increased Effect of Jewel Socket Passive Skills containing Corrupted Magic Jewels / 50% increased Effect of Jewel Socket Passive Skills containing Corrupted Magic Jewels",
+   "source": "форма уник-джевелов, 19.09",
+   "user_note": "Уберэндгейм: до 70% включительно, миррор: до 100% но должен быть скрипт который вычисляет с какого % перестает идти прирост. Скажем если разница между 97% и 100% чтобы он ставил в поб 97% и я понимал где порог полезности",
+   "status": "rule",
+   "rules": {
+    "uber": "до 70% включительно",
+    "mirror": "до 100%, но скрипт ищет порог, после которого прироста нет (если 97% = 100%, ставим 97%)"
+   }
+  },
+  {
+   "id": "jewel-the-anima-stone",
+   "category": "unique_jewels",
+   "scope": "narrow",
+   "title": "The Anima Stone",
+   "title_en": "Prismatic Jewel",
+   "tags": [
+    "обычный",
+    "vendor"
+   ],
+   "explain": "+1 to maximum number of Summoned Golems / +1 to maximum number of Summoned Golems if you have 3 Primordial Items Socketed or Equipped",
+   "source": "форма уник-джевелов, 19.09",
+   "user_note": "",
+   "status": "rule",
+   "rules": {
+    "endgame": "разрешён"
+   }
+  },
+  {
+   "id": "jewel-the-balance-of-terror",
+   "category": "unique_jewels",
+   "scope": "narrow",
+   "title": "The Balance of Terror",
+   "title_en": "Cobalt Jewel",
+   "tags": [
+    "обычный",
+    "mechanic"
+   ],
+   "explain": "+13% to all Elemental Resistances / 8% chance to deal Double Damage if you've cast Vulnerability in the past 10 seconds / 23% increased Cooldown Recovery Rate if you've cast Temporal Chains in the past 10 seconds / +35% to Critical Strike Multiplier if you've cast Enfeeble in the past 10 seconds / Gain 35% of Physical Damage as a Random Element if you've cast Elemental Weakness in the past 10 seconds / Immune to Curses if you've cast Despair in the past 10 seconds / Immune to Exposure if you've cast Elemental Weakness in the past 10 seconds / Immune to Reflected Damage if you've cast Punishment in the past 10 seconds / Cold Exposure on Hit if you've cast Frostbite in the past 10 seconds / Inflict Fire Exposure on Hit if you've cast Flammability in the past 10 seconds / Inflict Lightning Exposure on Hit if you've cast Conductivity in the past 10 seconds / Inflict Withered for 2 seconds on Hit if you've cast Despair in the past 10 seconds / Intimidate Enemies on Hit if you've cast Punishment in the past 10 seconds / Take no Extra Damage from Critical Strikes if you've cast Enfeeble in the past 10 seconds / You are Unaffected by Bleeding if you've cast Vulnerability in the past 10 seconds / You are Unaffected by Freeze if you've cast Frostbite in the past 10 seconds / You are Unaffected by Ignite if you've cast Flammability in the past 10 seconds / You are Unaffected by Shock if you've cast Conductivity in the past 10 seconds / Action Speed cannot be Slowed below Base Value if you've cast Temporal Chains in the past 10 seconds",
+   "source": "форма уник-джевелов, 19.09",
+   "user_note": "Уберэндгейм: 1 полезный, миррор: 2 полезных",
+   "status": "rule",
+   "rules": {
+    "uber": "1 полезное свойство",
+    "mirror": "2 полезных"
+   }
+  },
+  {
+   "id": "jewel-the-blue-dream",
+   "category": "unique_jewels",
+   "scope": "narrow",
+   "title": "The Blue Dream",
+   "title_en": "Cobalt Jewel",
+   "tags": [
+    "обычный",
+    "mechanic"
+   ],
+   "explain": "Gain 5% of Lightning Damage as Extra Chaos Damage / Gain 8% of Lightning Damage as Extra Chaos Damage / Passives granting Lightning Resistance or all Elemental Resistances in Radius / also grant an equal chance to gain a Power Charge on Kill",
+   "source": "форма уник-джевелов, 19.09",
+   "user_note": "",
+   "status": "rule",
+   "rules": {
+    "uber": "разрешён"
+   }
+  },
+  {
+   "id": "jewel-the-blue-nightmare",
+   "category": "unique_jewels",
+   "scope": "narrow",
+   "title": "The Blue Nightmare",
+   "title_en": "Cobalt Jewel",
+   "tags": [
+    "обычный",
+    "upgrade"
+   ],
+   "explain": "Gain 5% of Lightning Damage as Extra Chaos Damage / Gain 8% of Lightning Damage as Extra Chaos Damage / Passives granting Lightning Resistance or all Elemental Resistances in Radius / also grant an equal chance to gain a Power Charge on Kill / Passives granting Lightning Resistance or all Elemental Resistances in Radius also grant Chance to Block Spell Damage at 35% of its value / Passives granting Lightning Resistance or all Elemental Resistances in Radius also grant Chance to Block Spell Damage at 50% of its value",
+   "source": "форма уник-джевелов, 19.09",
+   "user_note": "",
+   "status": "rule",
+   "rules": {
+    "uber": "разрешён"
+   }
+  },
+  {
+   "id": "jewel-the-front-line",
+   "category": "unique_jewels",
+   "scope": "narrow",
+   "title": "The Front Line",
+   "title_en": "Small Cluster Jewel",
+   "tags": [
+    "кластерный",
+    "mechanic"
+   ],
+   "explain": "Adds Veteran's Awareness",
+   "source": "форма уник-джевелов, 19.09",
+   "user_note": "",
+   "status": "rule",
+   "rules": {
+    "endgame": "разрешён"
+   }
+  },
+  {
+   "id": "jewel-the-golden-rule",
+   "category": "unique_jewels",
+   "scope": "narrow",
+   "title": "The Golden Rule",
+   "title_en": "Viridian Jewel",
+   "tags": [
+    "обычный",
+    "upgrade"
+   ],
+   "explain": "35% increased Armour while Bleeding / Bleeding you inflict is Reflected to you / +1% to Chaos Resistance per Poison on you / Poison you inflict is Reflected to you if you have fewer than 100 Poisons on you / Corrupted",
+   "source": "форма уник-джевелов, 19.09",
+   "user_note": "",
+   "status": "rule",
+   "rules": {
+    "endgame": "разрешён"
+   }
+  },
+  {
+   "id": "jewel-the-green-dream",
+   "category": "unique_jewels",
+   "scope": "narrow",
+   "title": "The Green Dream",
+   "title_en": "Viridian Jewel",
+   "tags": [
+    "обычный",
+    "mechanic"
+   ],
+   "explain": "Gain 5% of Cold Damage as Extra Chaos Damage / Gain 8% of Cold Damage as Extra Chaos Damage / Passives granting Cold Resistance or all Elemental Resistances in Radius / also grant an equal chance to gain a Frenzy Charge on Kill",
+   "source": "форма уник-джевелов, 19.09",
+   "user_note": "",
+   "status": "rule",
+   "rules": {
+    "uber": "разрешён"
+   }
+  },
+  {
+   "id": "jewel-the-green-nightmare",
+   "category": "unique_jewels",
+   "scope": "narrow",
+   "title": "The Green Nightmare",
+   "title_en": "Viridian Jewel",
+   "tags": [
+    "обычный",
+    "upgrade"
+   ],
+   "explain": "Gain 5% of Cold Damage as Extra Chaos Damage / Gain 8% of Cold Damage as Extra Chaos Damage / Passives granting Cold Resistance or all Elemental Resistances in Radius / also grant an equal chance to gain a Frenzy Charge on Kill / Passives granting Cold Resistance or all Elemental Resistances in Radius also grant Chance to Suppress Spell Damage at 35% of its value / Passives granting Cold Resistance or all Elemental Resistances in Radius also grant Chance to Suppress Spell Damage at 50% of its value / Passives granting Cold Resistance or all Elemental Resistances in Radius also grant Chance to Suppress Spell Damage at 70% of its value",
+   "source": "форма уник-джевелов, 19.09",
+   "user_note": "",
+   "status": "rule",
+   "rules": {
+    "uber": "разрешён"
+   }
+  },
+  {
+   "id": "jewel-the-interrogation",
+   "category": "unique_jewels",
+   "scope": "narrow",
+   "title": "The Interrogation",
+   "title_en": "Small Cluster Jewel",
+   "tags": [
+    "кластерный",
+    "mechanic"
+   ],
+   "explain": "Adds Secrets of Suffering",
+   "source": "форма уник-джевелов, 19.09",
+   "user_note": "",
+   "status": "rule",
+   "rules": {
+    "endgame": "разрешён"
+   }
+  },
+  {
+   "id": "jewel-the-light-of-meaning",
+   "category": "unique_jewels",
+   "scope": "narrow",
+   "title": "The Light of Meaning",
+   "title_en": "Prismatic Jewel",
+   "tags": [
+    "обычный",
+    "other"
+   ],
+   "explain": "Passive Skills in Radius also grant +2 to all Attributes / Passive Skills in Radius also grant +4% to Chaos Resistance / Passive Skills in Radius also grant +5 to maximum Life / Passive Skills in Radius also grant +5 to maximum Mana / Passive Skills in Radius also grant 6% increased Chaos Damage / Passive Skills in Radius also grant 6% increased Cold Damage / Passive Skills in Radius also grant 5% increased Global Critical Strike Chance / Passive Skills in Radius also grant 7% increased Evasion Rating / Passive Skills in Radius also grant 6% increased Fire Damage / Passive Skills in Radius also grant 6% increased Lightning Damage / Passive Skills in Radius also grant 3% increased Energy Shield / Passive Skills in Radius also grant 6% increased Physical Damage / Passive Skills in Radius also grant 7% increased Armour",
+   "source": "форма уник-джевелов, 19.09",
+   "user_note": "",
+   "status": "rule",
+   "rules": {
+    "uber": "разрешён"
+   }
+  },
+  {
+   "id": "jewel-the-red-dream",
+   "category": "unique_jewels",
+   "scope": "narrow",
+   "title": "The Red Dream",
+   "title_en": "Crimson Jewel",
+   "tags": [
+    "обычный",
+    "mechanic"
+   ],
+   "explain": "Gain 5% of Fire Damage as Extra Chaos Damage / Gain 8% of Fire Damage as Extra Chaos Damage / Passives granting Fire Resistance or all Elemental Resistances in Radius / also grant an equal chance to gain an Endurance Charge on Kill",
+   "source": "форма уник-джевелов, 19.09",
+   "user_note": "",
+   "status": "rule",
+   "rules": {
+    "uber": "разрешён"
+   }
+  },
+  {
+   "id": "jewel-the-red-nightmare",
+   "category": "unique_jewels",
+   "scope": "narrow",
+   "title": "The Red Nightmare",
+   "title_en": "Crimson Jewel",
+   "tags": [
+    "обычный",
+    "upgrade"
+   ],
+   "explain": "Gain 5% of Fire Damage as Extra Chaos Damage / Gain 8% of Fire Damage as Extra Chaos Damage / Passives granting Fire Resistance or all Elemental Resistances in Radius / also grant an equal chance to gain an Endurance Charge on Kill / Passives granting Fire Resistance or all Elemental Resistances in Radius also grant Chance to Block Attack Damage at 35% of its value / Passives granting Fire Resistance or all Elemental Resistances in Radius also grant Chance to Block Attack Damage at 50% of its value",
+   "source": "форма уник-джевелов, 19.09",
+   "user_note": "",
+   "status": "rule",
+   "rules": {
+    "uber": "разрешён"
+   }
+  },
+  {
+   "id": "jewel-the-siege",
+   "category": "unique_jewels",
+   "scope": "narrow",
+   "title": "The Siege",
+   "title_en": "Small Cluster Jewel",
+   "tags": [
+    "кластерный",
+    "mechanic"
+   ],
+   "explain": "Adds Kineticism",
+   "source": "форма уник-джевелов, 19.09",
+   "user_note": "",
+   "status": "rule",
+   "rules": {
+    "endgame": "разрешён"
+   }
+  },
+  {
+   "id": "jewel-thread-of-hope",
+   "category": "unique_jewels",
+   "scope": "narrow",
+   "title": "Thread of Hope",
+   "title_en": "Crimson Jewel",
+   "tags": [
+    "обычный",
+    "босс-дроп"
+   ],
+   "explain": "Only affects Passives in Small Ring / Only affects Passives in Massive Ring / -15% to all Elemental Resistances / Passive Skills in Radius can be Allocated without being connected to your tree / Passage / Only affects Passives in Medium Ring / Only affects Passives in Large Ring / Only affects Passives in Very Large Ring",
+   "source": "форма уник-джевелов, 19.09",
+   "user_note": "эндгейм: все ринги кроме массив, уберэндгейм: массив ринг потому что он только с убер сируса падает",
+   "status": "rule",
+   "rules": {
+    "endgame": "все кольца, кроме Massive",
+    "uber": "Massive (падает только с убер-Сируса)"
+   }
+  },
+  {
+   "id": "jewel-to-dust",
+   "category": "unique_jewels",
+   "scope": "narrow",
+   "title": "To Dust",
+   "title_en": "Cobalt Jewel",
+   "tags": [
+    "обычный",
+    "upgrade"
+   ],
+   "explain": "15% reduced Skeleton Duration / Minions deal 10% increased Damage / 2% increased Skeleton Attack Speed / 9% increased Skeleton Attack Speed / 9% increased Skeleton Cast Speed / 4% increased Skeleton Movement Speed / Corrupted",
+   "source": "форма уник-джевелов, 19.09",
+   "user_note": "",
+   "status": "rule",
+   "rules": {
+    "endgame": "разрешён"
+   }
+  },
+  {
+   "id": "jewel-transcendent-flesh",
+   "category": "unique_jewels",
+   "scope": "narrow",
+   "title": "Transcendent Flesh",
+   "title_en": "Crimson Jewel",
+   "tags": [
+    "обычный",
+    "upgrade"
+   ],
+   "explain": "-1 Strength per 1 Strength on Allocated Passives in Radius / 1% additional Physical Damage Reduction per 10 Strength on Allocated Passives in Radius / +7% to Critical Strike Multiplier per 10 Strength on Unallocated Passives in Radius / +5% to Critical Strike Multiplier per 10 Strength on Unallocated Passives in Radius / 3% increased Life Recovery Rate per 10 Strength on Allocated Passives in Radius / 2% reduced Life Recovery Rate per 10 Strength on Unallocated Passives in Radius",
+   "source": "форма уник-джевелов, 19.09",
+   "user_note": "",
+   "status": "rule",
+   "rules": {
+    "endgame": "разрешён"
+   }
+  },
+  {
+   "id": "jewel-transcendent-mind",
+   "category": "unique_jewels",
+   "scope": "narrow",
+   "title": "Transcendent Mind",
+   "title_en": "Cobalt Jewel",
+   "tags": [
+    "обычный",
+    "upgrade"
+   ],
+   "explain": "-1 Intelligence per 1 Intelligence on Allocated Passives in Radius / Regenerate 0.4% of Energy Shield per Second for every 10 Intelligence on Allocated Passives in Radius / +100 to Accuracy Rating per 10 Intelligence on Unallocated Passives in Radius / +125 to Accuracy Rating per 10 Intelligence on Unallocated Passives in Radius / +3% to Damage over Time Multiplier per 10 Intelligence on Unallocated Passives in Radius / 3% increased Mana Recovery Rate per 10 Intelligence on Allocated Passives in Radius / 2% reduced Mana Recovery Rate per 10 Intelligence on Unallocated Passives in Radius",
+   "source": "форма уник-джевелов, 19.09",
+   "user_note": "",
+   "status": "rule",
+   "rules": {
+    "endgame": "разрешён"
+   }
+  },
+  {
+   "id": "jewel-transcendent-spirit",
+   "category": "unique_jewels",
+   "scope": "narrow",
+   "title": "Transcendent Spirit",
+   "title_en": "Viridian Jewel",
+   "tags": [
+    "обычный",
+    "upgrade"
+   ],
+   "explain": "-1 Dexterity per 1 Dexterity on Allocated Passives in Radius / 2% increased Movement Speed per 10 Dexterity on Allocated Passives in Radius / 3% increased Movement Speed per 10 Dexterity on Allocated Passives in Radius / +15 to Maximum Mana per 10 Dexterity on Unallocated Passives in Radius / +125 to Accuracy Rating per 10 Dexterity on Unallocated Passives in Radius / 2% reduced Movement Speed per 10 Dexterity on Unallocated Passives in Radius",
+   "source": "форма уник-джевелов, 19.09",
+   "user_note": "",
+   "status": "rule",
+   "rules": {
+    "endgame": "разрешён"
+   }
+  },
+  {
+   "id": "jewel-ulaman-s-gaze",
+   "category": "unique_jewels",
+   "scope": "narrow",
+   "title": "Ulaman's Gaze",
+   "title_en": "Searching Eye Jewel",
+   "tags": [
+    "abyss",
+    "обычный дроп"
+   ],
+   "explain": "+15 to Dexterity / Projectiles have 4% chance to be able to Chain when colliding with terrain per / Searching Eye Jewel affecting you, up to a maximum of 20%",
+   "source": "форма уник-джевелов, 19.09",
+   "user_note": "",
+   "status": "rule",
+   "rules": {
+    "endgame": "разрешён"
+   }
+  },
+  {
+   "id": "jewel-unending-hunger",
+   "category": "unique_jewels",
+   "scope": "narrow",
+   "title": "Unending Hunger",
+   "title_en": "Cobalt Jewel",
+   "tags": [
+    "обычный",
+    "обычный дроп",
+    "вики T2"
+   ],
+   "explain": "Minions have 7% increased Area of Effect / Minions have 7% increased Area of Effect / With at least 40 Intelligence in Radius, Raised Spectres have a 50% chance to gain Soul Eater for 20 seconds on Kill",
+   "source": "форма уник-джевелов, 19.09",
+   "user_note": "",
+   "status": "rule",
+   "rules": {
+    "uber": "разрешён"
+   }
+  },
+  {
+   "id": "jewel-unnatural-instinct",
+   "category": "unique_jewels",
+   "scope": "narrow",
+   "title": "Unnatural Instinct",
+   "title_en": "Viridian Jewel",
+   "tags": [
+    "обычный",
+    "обычный дроп",
+    "вики T2"
+   ],
+   "explain": "Allocated Small Passive Skills in Radius grant nothing / Grants all bonuses of Unallocated Small Passive Skills in Radius",
+   "source": "форма уник-джевелов, 19.09",
+   "user_note": "",
+   "status": "rule",
+   "rules": {
+    "uber": "разрешён"
+   }
+  },
+  {
+   "id": "jewel-voices",
+   "category": "unique_jewels",
+   "scope": "narrow",
+   "title": "Voices",
+   "title_en": "Large Cluster Jewel",
+   "tags": [
+    "кластерный",
+    "mechanic"
+   ],
+   "explain": "Adds 3 Jewel Socket Passive Skills / Adds 1 Small Passive Skill which grants nothing / Adds 3 Small Passive Skills which grant nothing / Adds 5 Small Passive Skills which grant nothing / Adds 7 Small Passive Skills which grant nothing",
+   "source": "форма уник-джевелов, 19.09",
+   "user_note": "Прописывал его отдельно до этого файла",
+   "status": "rule",
+   "rules": {
+    "endgame": "7 пассивок",
+    "uber": "5 и 3 пассивки",
+    "mirror": "1 пассивка"
+   }
+  },
+  {
+   "id": "jewel-watcher-s-eye",
+   "category": "unique_jewels",
+   "scope": "narrow",
+   "title": "Watcher's Eye",
+   "title_en": "Prismatic Jewel",
+   "tags": [
+    "обычный",
+    "boss_uber"
+   ],
+   "explain": "5% increased maximum Energy Shield / 5% increased maximum Life / 5% increased maximum Mana / 1.25% of Fire Damage Leeched as Life while affected by Anger / Damage Penetrates 13% Fire Resistance while affected by Anger / +40% to Critical Strike Multiplier while affected by Anger / 50% increased Fire Damage while affected by Anger / Gain 20% of Physical Damage as Extra Fire Damage while affected by Anger / 33% of Physical Damage Converted to Fire Damage while affected by Anger / 8% of Damage taken from Mana before Life while affected by Clarity / 18% of Damage taken while affected by Clarity Recouped as Mana / Gain 15% of Maximum Mana as Extra Maximum Energy Shield while affected by Clarity / Gain 8% of Maximum Mana as Extra Maximum Energy Shield while affected by Clarity / 25% increased Mana Recovery Rate while affected by Clarity / 13% increased Mana Recovery Rate while affected by Clarity / 13% chance to Recover 10% of Mana when you use a Skill while affected by Clarity / -8 to Total Mana Cost of Skills while affected by Clarity / Non-Channelling Skills have -8 to Total Mana Cost while affected by Clarity / +800 to Armour while affected by Determination / +7% Chance to Block Attack Damage while affected by Determination / 7% additional Physical Damage Reduction while affected by Determination / You take 50% reduced Extra Damage from Critical Strikes while affected by Determination / Prevent +63% of Reflected Physical Damage you would take while affected by Determination / Unaffected by Vulnerability while affected by Determination / +7% Chance to Block Spell Damage while affected by Discipline / Gain 25 Energy Shield per Enemy Hit while affected by Discipline / 25% increased Energy Shield Recovery Rate while affected by Discipline / 13% increased Energy Shield Recovery Rate while affected by Discipline / Regenerate 2.00% of Energy Shield per Second while affected by Discipline / 35% faster start of Energy Shield Recharge while affected by Discipline / +7% chance to Evade Attack Hits while affected by Grace / 40% chance to Blind Enemies which Hit you while affected by Grace / +14% chance to Suppress Spell Damage while affected by Grace / 13% increased Movement Speed while affected by Grace / Unaffected by Enfeeble while affected by Grace / +7% chance to Suppress Spell Damage while affected by Haste / 40% increased Cooldown Recovery Rate of Movement Skills used while affected by Haste / Debuffs on you expire 18% faster while affected by Haste / You gain Onslaught for 4 seconds on Kill while affected by Haste / You have Phasing while affected by Haste / Unaffected by Temporal Chains while affected by Haste / Adds 64 to 96 Cold Damage while affected by Hatred / +1.5% to Critical Strike Chance while affected by Hatred / Damage Penetrates 13% Cold Resistance while affected by Hatred / 50% increased Cold Damage while affected by Hatred / 33% of Physical Damage Converted to Cold Damage while affected by Hatred / +40% to Damage over Time Multiplier while affected by Malevolence / +20% to Damage over Time Multiplier while affected by Malevolence / 18% increased Recovery rate of Life and Energy Shield while affected by Malevolence / 10% increased Recovery rate of Life and Energy Shield while affected by Malevolence / Unaffected by Bleeding while affected by Malevolence / Unaffected by Poison while affected by Malevolence / Damaging Ailments you inflict deal Damage 13% faster while affected by Malevolence / Cannot be Blinded while affected by Precision / Gain a Flask Charge when you deal a Critical Strike while affected by Precision / 50% increased Attack Damage while affected by Precision / 13% increased Attack Speed while affected by Precision / +40% to Critical Strike Multiplier while affected by Precision / +25% to Critical Strike Multiplier while affected by Precision / 10% chance to deal Double Damage while using Pride / 25% chance to Impale Enemies on Hit with Attacks while using Pride / Impales you inflict last 2 additional Hits while using Pride / 50% increased Physical Damage while using Pride / Your Hits Intimidate Enemies for 4 seconds while you are using Pride / +40% to Chaos Resistance while affected by Purity of Elements / +1% to all maximum Elemental Resistances while affected by Purity of Elements / Prevent +63% of Reflected Elemental Damage you would take while / affected by Purity of Elements / 10% of Physical Damage from Hits taken as Cold Damage while affected by Purity of Elements / 10% of Physical Damage from Hits taken as Fire Damage while affected by Purity of Elements / 10% of Physical Damage from Hits taken as Lightning Damage while affected by Purity of Elements / Unaffected by Elemental Weakness while affected by Purity of Elements / 15% of Cold and Lightning Damage taken as Fire Damage while affected by Purity of Fire / Immune to Ignite while affected by Purity of Fire / 8% of Physical Damage from Hits taken as Fire Damage while affected by Purity of Fire / Unaffected by Burning Ground while affected by Purity of Fire / Unaffected by Flammability while affected by Purity of Fire / 15% of Fire and Lightning Damage taken as Cold Damage while affected by Purity of Ice / Immune to Freeze while affected by Purity of Ice / 8% of Physical Damage from Hits taken as Cold Damage while affected by Purity of Ice / Unaffected by Chilled Ground while affected by Purity of Ice / Unaffected by Frostbite while affected by Purity of Ice / 15% of Fire and Cold Damage taken as Lightning Damage while affected by Purity of Lightning / Immune to Shock while affected by Purity of Lightning / 8% of Physical Damage from Hits taken as Lightning Damage while affected by Purity of Lightning / Unaffected by Conductivity while affected by Purity of Lightning / Unaffected by Shocked Ground while affected by Purity of Lightning / 1.25% of Damage leeched as Life while affected by Vitality / 1% of Damage leeched as Life while affected by Vitality / Regenerate 120 Life per Second while affected by Vitality / Gain 25 Life per Enemy Hit while affected by Vitality / 60% increased Life Recovery from Flasks while affected by Vitality / 25% increased Life Recovery Rate while affected by Vitality / 13% increased Life Recovery Rate while affected by Vitality / Regenerate 1.25% of Life per second while affected by Vitality / 85% increased Critical Strike Chance while affected by Wrath / 50% increased Lightning Damage while affected by Wrath / 1.25% of Lightning Damage is Leeched as Energy Shield while affected by Wrath / 1.25% of Lightning Damage is Leeched as Mana while affected by Wrath / Damage Penetrates 13% Lightning Resistance while affected by Wrath / Gain 20% of Physical Damage as Extra Lightning Damage while affected by Wrath / 33% of Physical Damage Converted to Lightning Damage while affected by Wrath / 13% increased Cast Speed while affected by Zealotry / Effects of Consecrated Ground you create while affected by Zealotry Linger for 2 seconds / Consecrated Ground you create while affected by Zealotry causes enemies to take 9% increased Damage / 110% increased Critical Strike Chance against Enemies on Consecrated Ground while affected by Zealotry / Critical Strikes Penetrate 9% of Enemy Elemental Resistances while affected by Zealotry / Gain Arcane Surge for 4 seconds when you create Consecrated Ground while affected by Zealotry / 30% increased Maximum total Energy Shield Recovery per second from Leech while affected by Zealotry",
+   "source": "форма уник-джевелов, 19.09",
+   "user_note": "Эндгейм: 1 полезное свойство, уберэндгейм: 2 полезных свойства. Айлвл не влияет на моды а только диктует количество модов на нем поэтому с убер и нон убер падают одинаковые по модам",
+   "status": "rule",
+   "rules": {
+    "endgame": "1 полезное свойство",
+    "uber": "2 полезных свойства"
+   }
+  },
+  {
+   "id": "jewel-witchbane",
+   "category": "unique_jewels",
+   "scope": "narrow",
+   "title": "Witchbane",
+   "title_en": "Cobalt Jewel",
+   "tags": [
+    "обычный",
+    "обычный дроп",
+    "вики T2"
+   ],
+   "explain": "+10 to Intelligence / When you Kill an Enemy Cursed with a Non-Aura Hex, become Immune to Curses for remaining Hex Duration",
+   "source": "форма уник-джевелов, 19.09",
+   "user_note": "",
+   "status": "rule",
+   "rules": {
+    "endgame": "разрешён"
+   }
+  }
+ ]
+}

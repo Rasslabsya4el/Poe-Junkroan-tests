@@ -1,0 +1,7 @@
+{"prices": {"m1": {"input": 1.0, "cache_write": 2.0, "cache_read": 0.5, "output": 10.0}},
+ "sessions": [
+  {"stem": "a1b2c3d4-0000-0000-0000-000000000001", "title": "orch Poe-Junkroan #796", "turns": [["2026-10-11T08:00:00+00:00", 1000, 200, 5000, 100]],
+   "subs": [{"name": "agent-w1", "meta": {"agentType": "worker"}, "model": "m1", "turns": [["2026-10-11T08:10:00+00:00", 500, 0, 2000, 50]]}, {"name": "agent-w2", "meta": {}, "model": "<synthetic>", "turns": []}]},
+  {"stem": "e5f6a7b8-0000-0000-0000-000000000002", "title": "autopilot #780", "turns": [["2026-10-09T08:00:00+00:00", 10, 0, 20, 5]], "subs": []},
+  {"stem": "c0ffee00-0000-0000-0000-000000000003", "title": "keymaster: job_failed j-1", "turns": [["2026-09-20T08:00:00+00:00", 10, 0, 20, 5]], "subs": []},
+  {"stem": "dd000000-0000-0000-0000-000000000004", "title": "Brain: PoB", "turns": [["2026-10-11T08:00:00+00:00", 10, 0, 20, 5]], "subs": []}]}

@@ -1,0 +1,948 @@
+[
+ {
+  "line": "-1 to maximum number of Summoned Totems You can have an additional Brand Attached to an Enemy",
+  "surfaces": [
+   "keystone"
+  ],
+  "sources": [
+   "42343"
+  ],
+  "group": "minion",
+  "kind": "rephrased_stat",
+  "boss_lane": [],
+  "optimistic_lane": [
+   "You can have an additional Brand Attached to an Enemy"
+  ],
+  "zero_reason": "",
+  "why": "PoB parses the totem-limit half and leaves the glued Brand half; the same stat alone parses as BrandsAttachedLimit +1 (ModParser.lua:2334); new kind, optimistic lane only.",
+  "partial_part": "You can have an additional Brand Attached to an Enemy",
+  "stand_blind": {
+   "reason_kind": "mechanic-absent",
+   "why": "the stands carry no Brand skill, so the extra Brand Attached limit moves no output"
+  }
+ },
+ {
+  "line": "1% of Damage Dealt by your Minions is Leeched to you as Life",
+  "surfaces": [
+   "ascendancy"
+  ],
+  "sources": [
+   "14603"
+  ],
+  "group": "minion",
+  "kind": "no_representation",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "no_representation: PoB has no leech from minion damage to the player (DamageLifeLeechToPlayer is read only for totem, trap and mine skills, CalcOffence.lua:3528) and no formula reaches the minion's DPS",
+  "why": "no PoB line carries minion damage into the player's life; PoB mis-parses the head as a minion Damage BASE 1.",
+  "partial_part": "Dealt by your Minions is Leeched to you as Life"
+ },
+ {
+  "line": "1% of Physical Attack Damage dealt by your Totems is Leeched to you as Life",
+  "surfaces": [
+   "mastery"
+  ],
+  "sources": [
+   "26608",
+   "34487",
+   "38377",
+   "48508",
+   "55152",
+   "65154"
+  ],
+  "group": "minion",
+  "kind": "proxy_delivery",
+  "boss_lane": [
+   "1% of Damage dealt by your Totems is Leeched to you as Life"
+  ],
+  "optimistic_lane": [
+   "1% of Damage dealt by your Totems is Leeched to you as Life"
+  ],
+  "zero_reason": "",
+  "why": "the line is written for the proxy (totem damage leeched to you), so it counts on both lanes, the boss lane equal to the optimistic lane by the owner's verdict (proxy_delivery); PoB's phrasing has no damage-type limit (ModParser.lua:4362), so it counts all totem damage, an over-count for non-physical-attack totems.",
+  "partial_part": "dealt by your Totems is Leeched to you as Life",
+  "type": "attack",
+  "stand_blind": {
+   "reason_kind": "totem",
+   "why": "the attack stand has no Totem skill, so no Totem damage is dealt to leech"
+  }
+ },
+ {
+  "line": "10% increased Damage taken from Skeletons",
+  "surfaces": [
+   "unique"
+  ],
+  "sources": [
+   "The Princess, Sabre"
+  ],
+  "group": "minion",
+  "kind": "no_representation",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "no_representation: a downside against one monster family (skeletons); PoB has no damage taken by monster type and a boss is not a skeleton",
+  "why": "The Princess drawback: PoB's parse of it is a wrong minion DamageTaken mod, the real effect is the player's damage taken from skeleton monsters; counted 0.",
+  "partial_part": "from Skeletons"
+ },
+ {
+  "line": "25% increased Totem Placement range",
+  "surfaces": [
+   "notable"
+  ],
+  "sources": [
+   "57212"
+  ],
+  "group": "minion",
+  "kind": "no_representation",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "no_representation: PoB has TotemPlacementSpeed but no placement range stat",
+  "why": "range of placing a totem changes no PoB output.",
+  "partial_part": ""
+ },
+ {
+  "line": "All bonuses from an Equipped Shield apply to your Minions instead of you",
+  "surfaces": [
+   "keystone"
+  ],
+  "sources": [
+   "45175"
+  ],
+  "group": "minion",
+  "kind": "engine_handled_line",
+  "boss_lane": [],
+  "optimistic_lane": [
+   "Necromantic Aegis"
+  ],
+  "zero_reason": "",
+  "why": "PoB reads the keystone from its allocation (CalcSetup.lua:998) and the line parses to an empty mod (ModParser.lua:2309); the keystone name parses as the Keystone grant (ModParser.lua:5878), idempotent on a build that allocates the node.",
+  "partial_part": "",
+  "type": "minion",
+  "stand_blind": {
+   "reason_kind": "shield",
+   "why": "the minion stand holds no Equipped Shield"
+  }
+ },
+ {
+  "line": "All other Summoned Totems die when you Summon a Totem",
+  "surfaces": [
+   "ascendancy"
+  ],
+  "sources": [
+   "28609"
+  ],
+  "group": "minion",
+  "kind": "no_representation",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "no_representation: a restriction of the Conjoined Spire to one live totem; PoB has no line that caps the live totem count below ActiveTotemLimit",
+  "why": "its sibling lines (per maximum number of Summoned Totems) are parsed, the cap itself has no PoB phrasing.",
+  "partial_part": ""
+ },
+ {
+  "line": "Damageable Minions deal 30% increased Damage for each second they have been alive, up to a maximum of 150%",
+  "surfaces": [
+   "ascendancy"
+  ],
+  "sources": [
+   "43660"
+  ],
+  "group": "minion",
+  "kind": "ramp_window",
+  "boss_lane": [
+   "Minions deal {formula}% increased Damage"
+  ],
+  "optimistic_lane": [
+   "Minions deal {formula}% increased Damage"
+  ],
+  "zero_reason": "",
+  "why": "a ramp: 30% per second alive counted at the 2.5 s ramp window, the boss lane equal to the optimistic lane by the owner's verdict (ramp_window) (the cap of 150% needs 5 s and is never reached); formula = 30 * RampSeconds.",
+  "partial_part": "",
+  "type": "minion",
+  "formula": "30 * RampSeconds",
+  "vars": {
+   "RampSeconds": 2.5
+  },
+  "stand_blind": {
+   "reason_kind": "minion",
+   "why": "minion stand's CombinedDPS is 0 (summon_raging_spirits has no Hit of its own); Minion damage is not among the 7 outputs"
+  }
+ },
+ {
+  "line": "Damageable Minions take 5% increased Damage for each second they have been alive, up to a maximum of 50%",
+  "surfaces": [
+   "ascendancy"
+  ],
+  "sources": [
+   "43660"
+  ],
+  "group": "minion",
+  "kind": "ramp_window",
+  "boss_lane": [
+   "Minions have {formula}% increased Damage taken"
+  ],
+  "optimistic_lane": [
+   "Minions have {formula}% increased Damage taken"
+  ],
+  "zero_reason": "",
+  "why": "the drawback ramp: 5% per second alive at the 2.5 s ramp window, same window as the damage line; formula = 5 * RampSeconds.",
+  "partial_part": "",
+  "type": "minion",
+  "formula": "5 * RampSeconds",
+  "vars": {
+   "RampSeconds": 2.5
+  },
+  "stand_blind": {
+   "reason_kind": "minion",
+   "why": "Minion damage taken is not among the 7 outputs of the player on the minion stand"
+  }
+ },
+ {
+  "line": "Grants 110% of Life Recovery to Minions",
+  "surfaces": [
+   "flask"
+  ],
+  "sources": [
+   "FlaskHealsMinions1"
+  ],
+  "group": "minion",
+  "kind": "no_representation",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "no_representation: PoB has no flask recovery shared to minions and minion life recovery is no player output",
+  "why": "a flask effect on the minions' life; PoB treats minions as not needing sustain from flasks.",
+  "partial_part": "% of Life Recovery to Minions"
+ },
+ {
+  "line": "Grants 130% of Life Recovery to Minions",
+  "surfaces": [
+   "flask"
+  ],
+  "sources": [
+   "FlaskHealsMinions2"
+  ],
+  "group": "minion",
+  "kind": "no_representation",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "no_representation: PoB has no flask recovery shared to minions and minion life recovery is no player output",
+  "why": "a flask effect on the minions' life; PoB treats minions as not needing sustain from flasks.",
+  "partial_part": "% of Life Recovery to Minions"
+ },
+ {
+  "line": "Grants 150% of Life Recovery to Minions",
+  "surfaces": [
+   "flask"
+  ],
+  "sources": [
+   "FlaskHealsMinions3"
+  ],
+  "group": "minion",
+  "kind": "no_representation",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "no_representation: PoB has no flask recovery shared to minions and minion life recovery is no player output",
+  "why": "a flask effect on the minions' life; PoB treats minions as not needing sustain from flasks.",
+  "partial_part": "% of Life Recovery to Minions"
+ },
+ {
+  "line": "Grants 170% of Life Recovery to Minions",
+  "surfaces": [
+   "flask"
+  ],
+  "sources": [
+   "FlaskHealsMinions4____"
+  ],
+  "group": "minion",
+  "kind": "no_representation",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "no_representation: PoB has no flask recovery shared to minions and minion life recovery is no player output",
+  "why": "a flask effect on the minions' life; PoB treats minions as not needing sustain from flasks.",
+  "partial_part": "% of Life Recovery to Minions"
+ },
+ {
+  "line": "Grants Level 20 Summon Dark Effigy Skill",
+  "surfaces": [
+   "ascendancy"
+  ],
+  "sources": [
+   "45727"
+  ],
+  "group": "minion",
+  "kind": "no_representation",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "no_representation: Summon Dark Effigy is not in PoB's gem data, so the granted skill has no skill to carry",
+  "why": "grantedExtraSkill (ModParser.lua:3276) needs the skill in the gem data.",
+  "partial_part": ""
+ },
+ {
+  "line": "Grants Level 20 Summon Petrification Statue Skill",
+  "surfaces": [
+   "unique"
+  ],
+  "sources": [
+   "Gorgon's Gaze, Regicide Mask"
+  ],
+  "group": "minion",
+  "kind": "no_representation",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "no_representation: Summon Petrification Statue is not in PoB's gem data, so the granted skill has no skill to carry",
+  "why": "grantedExtraSkill (ModParser.lua:3276) needs the skill in the gem data; the line parses to nothing.",
+  "partial_part": ""
+ },
+ {
+  "line": "Left ring slot: you and your Minions prevent +100% of Reflected Elemental Damage",
+  "surfaces": [
+   "unique"
+  ],
+  "sources": [
+   "Sibyl's Lament, Coral Ring"
+  ],
+  "group": "minion",
+  "kind": "no_representation",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "no_representation: reflect protection is a defensive quality of life outside EHP",
+  "why": "reflected damage is not in any of the PoB outputs the lanes are judged on; only the 100% 'cannot take' forms have a PoB line and they move no EHP.",
+  "partial_part": ""
+ },
+ {
+  "line": "Left ring slot: you and your Minions prevent +30% of Reflected Elemental Damage",
+  "surfaces": [
+   "unique"
+  ],
+  "sources": [
+   "Sibyl's Lament, Coral Ring"
+  ],
+  "group": "minion",
+  "kind": "no_representation",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "no_representation: reflect protection is a defensive quality of life outside EHP",
+  "why": "reflected damage is not in any of the PoB outputs the lanes are judged on; only the 100% 'cannot take' forms have a PoB line and they move no EHP.",
+  "partial_part": ""
+ },
+ {
+  "line": "Left ring slot: you and your Minions prevent +40% of Reflected Elemental Damage",
+  "surfaces": [
+   "unique"
+  ],
+  "sources": [
+   "Sibyl's Lament, Coral Ring"
+  ],
+  "group": "minion",
+  "kind": "no_representation",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "no_representation: reflect protection is a defensive quality of life outside EHP",
+  "why": "reflected damage is not in any of the PoB outputs the lanes are judged on; only the 100% 'cannot take' forms have a PoB line and they move no EHP.",
+  "partial_part": ""
+ },
+ {
+  "line": "Left ring slot: you and your Minions prevent +80% of Reflected Elemental Damage",
+  "surfaces": [
+   "unique"
+  ],
+  "sources": [
+   "Sibyl's Lament, Coral Ring"
+  ],
+  "group": "minion",
+  "kind": "no_representation",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "no_representation: reflect protection is a defensive quality of life outside EHP",
+  "why": "reflected damage is not in any of the PoB outputs the lanes are judged on; only the 100% 'cannot take' forms have a PoB line and they move no EHP.",
+  "partial_part": ""
+ },
+ {
+  "line": "Minions Recover 4% of Life on Minion Death",
+  "surfaces": [
+   "notable"
+  ],
+  "sources": [
+   "62318"
+  ],
+  "group": "minion",
+  "kind": "no_representation",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "no_representation: other minions recovering life when one dies is no player output and PoB has no minion sustain model",
+  "why": "PoB's 'on minion death' lines (ModParser.lua:3256) are for the player's own pools.",
+  "partial_part": ""
+ },
+ {
+  "line": "Minions Recover 5% of Life on Minion Death",
+  "surfaces": [
+   "mastery"
+  ],
+  "sources": [
+   "22970",
+   "26393",
+   "41225",
+   "48290",
+   "9083"
+  ],
+  "group": "minion",
+  "kind": "no_representation",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "no_representation: other minions recovering life when one dies is no player output and PoB has no minion sustain model",
+  "why": "PoB's 'on minion death' lines (ModParser.lua:3256) are for the player's own pools.",
+  "partial_part": ""
+ },
+ {
+  "line": "Minions affected by Affliction have Onslaught",
+  "surfaces": [
+   "ascendancy"
+  ],
+  "sources": [
+   "699"
+  ],
+  "group": "minion",
+  "kind": "uptime_dependent",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "no_representation: PoB has no minion-wide Onslaught phrase: a bare 'Onslaught' is a player FLAG form only (ModParser.lua:5995), and 'Minions have Unholy Might' is a whole-line PoB entry (ModCache.lua:10282) with no Onslaught twin",
+  "why": "Affliction is a timed state of the minion, and 'Minions have Onslaught' does not parse in PoB (extra 'Onslaught'); no PoB phrase carries the minion-wide flag, so both lanes are empty (the uptime rule is parked #965).",
+  "partial_part": "",
+  "type": "minion"
+ },
+ {
+  "line": "Minions deal 7 to 14 additional Attack Physical Damage",
+  "surfaces": [
+   "unique"
+  ],
+  "sources": [
+   "Clayshaper, Rock Breaker"
+  ],
+  "group": "minion",
+  "kind": "rephrased_stat",
+  "boss_lane": [],
+  "optimistic_lane": [
+   "Minions deal 7 to 14 additional Physical Damage"
+  ],
+  "zero_reason": "",
+  "why": "PoB's own phrasing 'Minions deal N to M additional Physical Damage' parses fully (ModCache); the Attack limit is dropped, an over-count for a spell minion.",
+  "partial_part": "to 14 additional Attack Physical Damage",
+  "type": "minion",
+  "stand_blind": {
+   "reason_kind": "minion",
+   "why": "minion stand's CombinedDPS is 0; Minion damage is not among the 7 outputs"
+  }
+ },
+ {
+  "line": "Minions have 5% chance to Taunt on Hit with Attacks",
+  "surfaces": [
+   "unique"
+  ],
+  "sources": [
+   "Siegebreaker, Heavy Belt"
+  ],
+  "group": "minion",
+  "kind": "no_representation",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "no_representation: PoB computes no number from Taunt without a taunt-dependent mod",
+  "why": "a taunt chance moves none of the seven outputs.",
+  "partial_part": ""
+ },
+ {
+  "line": "Moving while Bleeding doesn't cause Minions to take extra Damage",
+  "surfaces": [
+   "notable"
+  ],
+  "sources": [
+   "25409"
+  ],
+  "group": "minion",
+  "kind": "no_representation",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "no_representation: a minion-only defence against moving while bleeding, no player output",
+  "why": "PoB has no minion bleed-movement model.",
+  "partial_part": ""
+ },
+ {
+  "line": "Non-Spectre Minions' Base Attack time is equal to the Attack time of your Main Hand Weapon",
+  "surfaces": [
+   "unique"
+  ],
+  "sources": [
+   "Replica Maata's Teaching, Karui Sceptre"
+  ],
+  "group": "minion",
+  "kind": "engine_handled_line",
+  "boss_lane": [],
+  "optimistic_lane": [
+   "Non-Spectre Minions' Base Attack time is equal to the Attack time of your Main Hand Weapon"
+  ],
+  "zero_reason": "",
+  "why": "the line parses to the flag NonSpectreMinionsUseParentMainHandAttackTime (ModParser.lua:4476) that CalcActiveSkill.lua:778 reads; it is red only in the day-1 list's outcome, the lane carries the line itself.",
+  "partial_part": "",
+  "type": "minion",
+  "stand_blind": {
+   "reason_kind": "minion",
+   "why": "Minion attack time is not among the 7 outputs; minion stand CombinedDPS is 0"
+  }
+ },
+ {
+  "line": "Phantasms from Penance Mark grant 50% increased Flask Charges",
+  "surfaces": [
+   "ascendancy"
+  ],
+  "sources": [
+   "699"
+  ],
+  "group": "minion",
+  "kind": "no_representation",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "no_representation: Penance Mark phantasms have no spawn rate in PoB's skill data (see on_kill_generator enablers), so their kills and charges have no number",
+  "why": "a Penance Mark phantasm effect; PoB has no phantasm count per time.",
+  "partial_part": ""
+ },
+ {
+  "line": "Phantasms from Penance Mark have a 50% chance to grant a Vaal Soul when Killed",
+  "surfaces": [
+   "ascendancy"
+  ],
+  "sources": [
+   "699"
+  ],
+  "group": "minion",
+  "kind": "no_representation",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "no_representation: Penance Mark phantasms have no spawn rate in PoB's skill data (see on_kill_generator enablers), so their kills and charges have no number",
+  "why": "a Penance Mark phantasm effect; PoB has no phantasm count per time.",
+  "partial_part": ""
+ },
+ {
+  "line": "Raised Beast Spectres have 3 additional modifiers randomly chosen in each Area",
+  "surfaces": [
+   "ascendancy"
+  ],
+  "sources": [
+   "27121",
+   "37670",
+   "7442"
+  ],
+  "group": "minion",
+  "kind": "no_representation",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "no_representation: modifiers chosen at random in each area have no fixed value PoB could count",
+  "why": "random per area, no number.",
+  "partial_part": ""
+ },
+ {
+  "line": "Raised Zombies have 5% chance to Taunt Enemies on Hit",
+  "surfaces": [
+   "notable"
+  ],
+  "sources": [
+   "68"
+  ],
+  "group": "minion",
+  "kind": "no_representation",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "no_representation: PoB computes no number from Taunt without a taunt-dependent mod",
+  "why": "a taunt chance moves none of the seven outputs.",
+  "partial_part": ""
+ },
+ {
+  "line": "Right ring slot: you and your Minions prevent +100% of Reflected Physical Damage",
+  "surfaces": [
+   "unique"
+  ],
+  "sources": [
+   "Sibyl's Lament, Coral Ring"
+  ],
+  "group": "minion",
+  "kind": "no_representation",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "no_representation: reflect protection is a defensive quality of life outside EHP",
+  "why": "reflected damage is not in any of the PoB outputs the lanes are judged on; only the 100% 'cannot take' forms have a PoB line and they move no EHP.",
+  "partial_part": ""
+ },
+ {
+  "line": "Right ring slot: you and your Minions prevent +30% of Reflected Physical Damage",
+  "surfaces": [
+   "unique"
+  ],
+  "sources": [
+   "Sibyl's Lament, Coral Ring"
+  ],
+  "group": "minion",
+  "kind": "no_representation",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "no_representation: reflect protection is a defensive quality of life outside EHP",
+  "why": "reflected damage is not in any of the PoB outputs the lanes are judged on; only the 100% 'cannot take' forms have a PoB line and they move no EHP.",
+  "partial_part": ""
+ },
+ {
+  "line": "Right ring slot: you and your Minions prevent +40% of Reflected Physical Damage",
+  "surfaces": [
+   "unique"
+  ],
+  "sources": [
+   "Sibyl's Lament, Coral Ring"
+  ],
+  "group": "minion",
+  "kind": "no_representation",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "no_representation: reflect protection is a defensive quality of life outside EHP",
+  "why": "reflected damage is not in any of the PoB outputs the lanes are judged on; only the 100% 'cannot take' forms have a PoB line and they move no EHP.",
+  "partial_part": ""
+ },
+ {
+  "line": "Right ring slot: you and your Minions prevent +80% of Reflected Physical Damage",
+  "surfaces": [
+   "unique"
+  ],
+  "sources": [
+   "Sibyl's Lament, Coral Ring"
+  ],
+  "group": "minion",
+  "kind": "no_representation",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "no_representation: reflect protection is a defensive quality of life outside EHP",
+  "why": "reflected damage is not in any of the PoB outputs the lanes are judged on; only the 100% 'cannot take' forms have a PoB line and they move no EHP.",
+  "partial_part": ""
+ },
+ {
+  "line": "Skills that Summon a Totem have 30% chance to Summon two Totems instead of one",
+  "surfaces": [
+   "mastery"
+  ],
+  "sources": [
+   "26608",
+   "34487",
+   "38377",
+   "48508",
+   "55152",
+   "65154"
+  ],
+  "group": "minion",
+  "kind": "no_representation",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "no_representation: the live totem count is capped by ActiveTotemLimit, so a second totem per summon changes the summon speed to the cap, not the steady state",
+  "why": "PoB takes TotemsSummoned = ActiveTotemLimit (CalcOffence.lua:1400); no PoB line for a chance of a double summon.",
+  "partial_part": ""
+ },
+ {
+  "line": "Summoned Golems are Resummoned 4 seconds after being Killed",
+  "surfaces": [
+   "ascendancy"
+  ],
+  "sources": [
+   "56461"
+  ],
+  "group": "minion",
+  "kind": "no_representation",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "no_representation: PoB counts a golem as always alive; a downtime after its death has no PoB phrasing",
+  "why": "the resummon delay is a duty cycle PoB does not model.",
+  "partial_part": ""
+ },
+ {
+  "line": "Summoned Raging Spirits refresh their Duration when they Kill an Ignited Enemy",
+  "surfaces": [
+   "unique"
+  ],
+  "sources": [
+   "Mark of the Red Covenant, Tribal Circlet"
+  ],
+  "group": "minion",
+  "kind": "on_kill_generator",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "on_kill_generator: a refresh on kill, 0 on the boss lane by the standing verdict, and no PoB line makes spirits permanent or refreshes their duration for the optimistic lane",
+  "why": "on-kill effect, boss lane 0 by the standing verdict; the optimistic lane has no PoB phrase for refreshing a minion duration.",
+  "partial_part": ""
+ },
+ {
+  "line": "Summoned Raging Spirits' Melee Strikes deal Fire-only Splash",
+  "surfaces": [
+   "unique"
+  ],
+  "sources": [
+   "Mark of the Red Covenant, Tribal Circlet"
+  ],
+  "group": "minion",
+  "kind": "no_representation",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "no_representation: splash damage on nearby enemies adds nothing to one target and PoB has no single-hit splash line for minions",
+  "why": "area effect of the spirit's strike, no single-target number.",
+  "partial_part": ""
+ },
+ {
+  "line": "Summoned Skeletons Cover Enemies in Ash on Hit",
+  "surfaces": [
+   "unique"
+  ],
+  "sources": [
+   "Earendel's Embrace, Grinning Fetish"
+  ],
+  "group": "minion",
+  "kind": "uptime_dependent",
+  "boss_lane": [],
+  "optimistic_lane": [
+   "Nearby Enemies are Covered in Ash"
+  ],
+  "zero_reason": "",
+  "why": "Covered in Ash is a timed debuff applied by a skeleton's hit (no PoB duration rule, uptime parked #965): optimistic lane at full uptime, boss lane empty; PoB's CoveredInAshEffect 20 (ModParser.lua:4291, CalcPerform.lua:916-918) is 20% increased Fire Damage taken.",
+  "partial_part": "",
+  "type": "minion",
+  "stand_blind": {
+   "reason_kind": "minion",
+   "why": "Skeleton hits are Minion damage; minion stand CombinedDPS is 0"
+  }
+ },
+ {
+  "line": "Totems Hinder Enemies near them when Summoned",
+  "surfaces": [
+   "notable"
+  ],
+  "sources": [
+   "2004"
+  ],
+  "group": "minion",
+  "kind": "no_representation",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "no_representation: a hinder applied once when a totem is summoned has no PoB number among the seven outputs",
+  "why": "event effect on summon, no steady state.",
+  "partial_part": ""
+ },
+ {
+  "line": "Totems Reflect 100% of their maximum Life as Fire Damage to nearby Enemies when Hit",
+  "surfaces": [
+   "unique"
+  ],
+  "sources": [
+   "Torchoak Step, Antique Greaves"
+  ],
+  "group": "minion",
+  "kind": "no_representation",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "no_representation: damage a totem reflects when hit has no PoB line",
+  "why": "reflect damage of the proxy, not in the PoB outputs.",
+  "partial_part": ""
+ },
+ {
+  "line": "Totems Reflect 25% of their maximum Life as Fire Damage to nearby Enemies when Hit",
+  "surfaces": [
+   "unique"
+  ],
+  "sources": [
+   "Torchoak Step, Antique Greaves"
+  ],
+  "group": "minion",
+  "kind": "no_representation",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "no_representation: damage a totem reflects when hit has no PoB line",
+  "why": "reflect damage of the proxy, not in the PoB outputs.",
+  "partial_part": ""
+ },
+ {
+  "line": "Totems Regenerate 2% of Life per second",
+  "surfaces": [
+   "notable"
+  ],
+  "sources": [
+   "54209"
+  ],
+  "group": "minion",
+  "kind": "no_representation",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "no_representation: totem life regeneration is not one of the seven player outputs",
+  "why": "PoB only has the 'per summoned totem' regeneration form (ModParser.lua:2883); no player number moves.",
+  "partial_part": ""
+ },
+ {
+  "line": "Totems Taunt Enemies around them for 1 second when Summoned",
+  "surfaces": [
+   "mastery"
+  ],
+  "sources": [
+   "26608",
+   "34487",
+   "38377",
+   "48508",
+   "55152",
+   "65154"
+  ],
+  "group": "minion",
+  "kind": "no_representation",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "no_representation: taunt on summon has no PoB number among the seven outputs",
+  "why": "event effect, one second.",
+  "partial_part": ""
+ },
+ {
+  "line": "You and your Minions prevent +100% of Reflected Elemental Damage",
+  "surfaces": [
+   "gear_affix"
+  ],
+  "sources": [
+   "ElementalDamageCannotBeReflectedPercentInfluence1",
+   "ElementalDamageCannotBeReflectedPercentUber1"
+  ],
+  "group": "minion",
+  "kind": "no_representation",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "no_representation: reflect protection is a defensive quality of life outside EHP",
+  "why": "reflected damage is not in any of the PoB outputs the lanes are judged on.",
+  "partial_part": ""
+ },
+ {
+  "line": "You and your Minions prevent +100% of Reflected Physical Damage",
+  "surfaces": [
+   "gear_affix"
+  ],
+  "sources": [
+   "PhysicalDamageCannotBeReflectedPercentInfluence1",
+   "PhysicalDamageCannotBeReflectedPercentUber1"
+  ],
+  "group": "minion",
+  "kind": "no_representation",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "no_representation: reflect protection is a defensive quality of life outside EHP",
+  "why": "reflected damage is not in any of the PoB outputs the lanes are judged on.",
+  "partial_part": ""
+ },
+ {
+  "line": "You and your Minions prevent +48% of Reflected Elemental Damage",
+  "surfaces": [
+   "gear_affix"
+  ],
+  "sources": [
+   "ElementalDamageCannotBeReflectedPercentRingInfluence1",
+   "ElementalDamageCannotBeReflectedPercentRingUber1"
+  ],
+  "group": "minion",
+  "kind": "no_representation",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "no_representation: reflect protection is a defensive quality of life outside EHP",
+  "why": "reflected damage is not in any of the PoB outputs the lanes are judged on.",
+  "partial_part": ""
+ },
+ {
+  "line": "You and your Minions prevent +48% of Reflected Physical Damage",
+  "surfaces": [
+   "gear_affix"
+  ],
+  "sources": [
+   "PhysicalDamageCannotBeReflectedPercentRingInfluence1",
+   "PhysicalDamageCannotBeReflectedPercentRingUber1"
+  ],
+  "group": "minion",
+  "kind": "no_representation",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "no_representation: reflect protection is a defensive quality of life outside EHP",
+  "why": "reflected damage is not in any of the PoB outputs the lanes are judged on.",
+  "partial_part": ""
+ },
+ {
+  "line": "You and your Minions prevent +66% of Reflected Elemental Damage",
+  "surfaces": [
+   "gear_affix"
+  ],
+  "sources": [
+   "ElementalDamageCannotBeReflectedPercentRingInfluence2",
+   "ElementalDamageCannotBeReflectedPercentRingUber2"
+  ],
+  "group": "minion",
+  "kind": "no_representation",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "no_representation: reflect protection is a defensive quality of life outside EHP",
+  "why": "reflected damage is not in any of the PoB outputs the lanes are judged on.",
+  "partial_part": ""
+ },
+ {
+  "line": "You and your Minions prevent +66% of Reflected Physical Damage",
+  "surfaces": [
+   "gear_affix"
+  ],
+  "sources": [
+   "PhysicalDamageCannotBeReflectedPercentRingInfluence2",
+   "PhysicalDamageCannotBeReflectedPercentRingUber2"
+  ],
+  "group": "minion",
+  "kind": "no_representation",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "no_representation: reflect protection is a defensive quality of life outside EHP",
+  "why": "reflected damage is not in any of the PoB outputs the lanes are judged on.",
+  "partial_part": ""
+ },
+ {
+  "line": "Your Mercenary and their Minions deal 15% increased Damage",
+  "surfaces": [
+   "ascendancy"
+  ],
+  "sources": [
+   "35877"
+  ],
+  "group": "minion",
+  "kind": "no_representation",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "no_representation: the Mercenary and the minions that belong to him are not actors in PoB, the player's own minions are not 'their Minions'",
+  "why": "a Luminary Mercenary line; PoB has no Mercenary actor and his gear.",
+  "partial_part": ""
+ },
+ {
+  "line": "Your Mercenary and their Minions deal 8% more Damage for each Unique item they have equipped",
+  "surfaces": [
+   "ascendancy"
+  ],
+  "sources": [
+   "25944"
+  ],
+  "group": "minion",
+  "kind": "no_representation",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "no_representation: the Mercenary and the minions that belong to him are not actors in PoB, the player's own minions are not 'their Minions'",
+  "why": "a Luminary Mercenary line; PoB has no Mercenary actor and his gear.",
+  "partial_part": ""
+ },
+ {
+  "line": "Your Mercenary and their Minions have 15% increased maximum Life",
+  "surfaces": [
+   "ascendancy"
+  ],
+  "sources": [
+   "27123",
+   "61133"
+  ],
+  "group": "minion",
+  "kind": "no_representation",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "no_representation: the Mercenary and the minions that belong to him are not actors in PoB, the player's own minions are not 'their Minions'",
+  "why": "a Luminary Mercenary line; PoB has no Mercenary actor and his gear.",
+  "partial_part": ""
+ }
+]

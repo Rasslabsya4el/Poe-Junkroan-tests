@@ -1,0 +1,66 @@
+# Tests red on main before #1205 (the move of the merge suite to GitHub). One line each: 'skip <path|nodeid>' (skipped: an xfail still runs the body, and a red merge rig leaks its fake FAILED lines into the suite output the merge tool reads); 'xfail <nodeid>' is also read.
+# Read by _mark_red_on_main in tests/conftest.py; fixed under the one needs-triage issue that lists them, then the lines and the hook go.
+skip tests/test_pane_dump.py
+skip tests/test_pane_draw.py
+skip tests/test_pane_layout.py
+skip tests/test_pane_look.py
+skip tests/test_pane_look_idle.py
+skip tests/test_agent_files_guard_rule.py::test_every_agent_file_and_orch_doc_carries_the_guard_rule
+skip tests/test_agentops_detach.py::test_detached_merge_survives_a_tree_kill_of_its_starter
+skip tests/test_agentops_failed_ids_772.py::test_row3_not_found_id_is_dropped_and_named
+skip tests/test_agentops_failed_ids_772.py::test_row4_a_recheck_with_no_output_keeps_every_id
+skip tests/test_agentops_line_check.py::test_row1_always_failing_test_is_red_after_the_rerun_alone
+skip tests/test_agentops_merge.py::test_merge_log_holds_2_lines_with_human_durations
+skip tests/test_agentops_merge_docs_rebase.py::test_row3_seven_docs_commits_in_three_waves_end_at_one_suite_run
+skip tests/test_agentops_merge_line_check.py::test_row1_failing_branch_leaves_before_the_holder_ends_and_row6_hands_back
+skip tests/test_agentops_merge_line_check.py::test_row2_a_flaky_failure_stays_in_the_line_and_is_batched
+skip tests/test_agentops_merge_line_check.py::test_row3_green_waiters_are_batched_exactly_as_without_the_feature
+skip tests/test_agentops_merge_line_check.py::test_row4_an_unfinished_check_is_stopped_when_the_waiter_is_claimed
+skip tests/test_agentops_merge_recheck_665.py::test_flaky_test_passes_the_recheck_and_the_merge_lands
+skip tests/test_agentops_merge_recheck_665.py::test_test_failing_every_time_stays_red_with_both_outputs
+skip tests/test_agentops_merge_triage_665.py::test_row2_culprit_member_is_ejected_the_rest_land_in_two_full_suites
+skip tests/test_agentops_merge_triage_665.py::test_row3_red_on_base_ejects_nobody_and_runs_one_full_suite
+skip tests/test_agentops_merge_triage_665.py::test_row4_holder_culprit_exits_red_and_oldest_member_holds_next
+skip tests/test_agentops_merge_triage_665.py::test_row5_second_red_after_triage_is_final_with_two_full_suites
+skip tests/test_issue1096_collect_imports.py::test_slow_keeps_its_fallback_when_the_helper_gives_none
+skip tests/test_issue1096_collect_imports.py::test_slow_keeps_its_fallback_when_the_module_is_missing
+skip tests/test_issue1121_losses_cli.py::test_bucket_values_of_the_fixture_week
+skip tests/test_issue1121_losses_cli.py::test_the_printed_table_of_the_fixture_week_matches_the_hand_numbers
+skip tests/test_issue198_steps_new_code.py::test_a_dirty_project_ts_in_the_fresh_process_refuses_and_puts_everything_back
+skip tests/test_issue198_steps_new_code.py::test_a_fresh_process_of_the_new_files_does_the_append_and_the_same_commit_holds_it
+skip tests/test_issue198_steps_new_code.py::test_a_name_the_stub_lacks_in_the_fresh_process_fails_the_update_and_undoes_the_copy
+skip tests/test_issue223_line_check.py::test_prequeue_prints_the_verdict_word_of_a_test_that_passes_on_recheck
+skip tests/test_issue223_line_check.py::test_prequeue_prints_the_verdict_word_of_each_failing_test
+skip tests/test_issue223_line_check.py::test_the_red_batch_triage_gives_a_verdict_per_id
+skip tests/test_issue685_merge_wiring.py::test_a_selected_subset_is_never_routed_to_the_laptop
+skip tests/test_issue690_full_run.py::test_red_run_opens_one_issue_and_keeps_last_green
+skip tests/test_issue690_full_run.py::test_red_without_previous_green_says_so_and_counts_more
+skip tests/test_issue690_merge_select.py::test_d_failing_selected_test_is_red_and_rechecked_once
+skip tests/test_issue737_core_check.py::test_row7_merge_py_selects_the_core_check_test
+skip tests/test_issue737_referrers.py::test_row1_modes_py_selects_its_referrers_not_the_suite
+skip tests/test_issue737_referrers.py::test_row9_selection_time_on_the_real_tree
+skip tests/test_issue779_merge.py::test_row5_line_check_starts_nothing_in_play_with_a_live_holder
+skip tests/test_issue849_full_run_dedupe.py::test_listing_failure_still_opens_ticket
+skip tests/test_issue849_full_run_dedupe.py::test_row2_open_ticket_names_a_comment_only
+skip tests/test_issue849_full_run_dedupe.py::test_row3_other_test_opens_ticket
+skip tests/test_issue849_full_run_dedupe.py::test_row4_closed_ticket_names_nothing
+skip tests/test_issue849_full_run_dedupe.py::test_row5_split_between_comment_and_new_ticket
+skip tests/test_issue851_full_run_whole_id.py::test_row2_longer_name_is_not_the_same_test
+skip tests/test_issue851_full_run_whole_id.py::test_row3_parametrized_case_is_not_the_same_test
+skip tests/test_issue851_full_run_whole_id.py::test_row4_id_at_title_end_and_body_middle
+skip tests/test_mods_install_steps.py::test_both_present_prints_neither_line
+skip tests/test_mods_install_steps.py::test_command_file_absent_is_written_from_the_core_stub
+skip tests/test_mods_install_steps.py::test_missing_stub_names_the_missing_command_file
+skip tests/test_token_meter.py::test_cost_per_closed_issue
+skip tests/test_token_meter.py::test_subagent_attribution_from_first_prompt
+skip tests/test_token_meter.py::test_unattributed_share_over_the_whole_fixture
+# #1207: red when the PC has no free berth (core defect orchestration-layer#314: merge_machine.on_wait writes into a dir the rig never made)
+skip tests/test_agentops_detach_handback.py::test_real_detached_merge_posts_to_its_issue
+skip tests/test_agentops_failed_ids_772.py::test_row2_each_callers_path_gets_one_id
+skip tests/test_agentops_line_check.py::test_row2_test_that_passes_alone_leaves_green_and_no_outcome
+# #1207: a nested pytest leaks its fake F lines into the outer suite events file (core defect orchestration-layer#317: suite_events_plugin._active() has no pid check); leaves with the #317 fix
+skip tests/test_issue268_safety_green_later.py::test_d_a_fixture_error_is_red_a_pass_is_green
+# #1207: orchestration-layer#316: the core update wrote brain_reset_nudge before brain_state_inject in .claude/settings.json (the core owns that file)
+skip tests/test_issue316_wiring.py::test_settings_user_prompt_submit_hook_comes_before_the_reset_nudge
+# #1207: orchestration-layer#319: the core update added this test, the repo conftest still carries its own pytest_ hooks (the move to the plugin is the core issue's)
+skip tests/test_issue319_red_on_base.py::test_row4_the_repo_conftest_loads_the_plugin_and_keeps_no_hook_of_its_own
