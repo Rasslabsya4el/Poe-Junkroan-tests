@@ -1,0 +1,104 @@
+{
+  "repo": "Rasslabsya4el/Poe-Junkroan",
+  "monitor": {
+    "source": "pob-slots",
+    "addon": "mods/pob-slots/addon/addon.py"
+  },
+  "brain_chat_title": "Brain: PoB",
+  "brain_chats": {
+    "area:orchestration": "Brain: orch layer"
+  },
+  "brain_chat_title_aliases": [
+    "Настройка оркестрации"
+  ],
+  "context_line": 150000,
+  "context_hard_line": 400000,
+  "context_ceiling": 200000,
+  "loss_ceiling_usd_per_closed": 5.5,
+  "loss_note_area": "area:orchestration",
+  "loss_repos": [
+    {
+      "name": "poe-junkroan-v2",
+      "root": "C:/Coding/poe-junkroan-v2",
+      "projects_dir": "~/.claude/projects/C--Coding-poe-junkroan-v2"
+    }
+  ],
+  "claude_projects_dir": "C--Coding-poe-junkroan-v2",
+  "bridge_dir": "C:\\Coding\\poe-junkroan-v2\\var\\agentops",
+  "bridge_lock": "var/locks/pob.lock",
+  "local_modules": [
+    ".cloud_lane",
+    ".autopilot",
+    ".runs_marker",
+    ".monitor",
+    ".provisional",
+    ".full_run",
+    ".mods",
+    ".skill_counter"
+  ],
+  "areas": [
+    "area:orchestration",
+    "area:builds",
+    "area:runs",
+    "area:crafting",
+    "area:monitor"
+  ],
+  "runs_parent_issue": 404,
+  "code_issue_area": "area:orchestration",
+  "home": "Rasslabsya4el/orchestration-layer",
+  "update_rule": "auto",
+  "core_version": "de6fd309b7ceb11050ed509265a4ad27a2e8f860",
+  "merge_suite": "python -m pytest tests -q -p no:faulthandler -m \"not slow and not pob\"",
+  "merge_select_tests": true,
+  "test_copy_standins": {
+    "src/junkroan/pob/mod_data/poedb_affix_catalog/catalog.json": "tests/fixtures/standins/poedb_affix_catalog.json"
+  },
+  "test_copy_exclude": [
+    "src/junkroan/pob/mod_data/mod_families.json",
+    "src/junkroan/pob/mod_data/stat_families.json",
+    "tests/fixtures/zizaran_326/early/elementalist_wave_of_conviction.pob.txt",
+    "tests/fixtures/zizaran_327/early/necromancer_raise_spectre.pob.txt",
+    "docs/STATE.md",
+    "mods/pob-slots/test/cache-live-20261013.ts",
+    "mods/pob-slots/test/cost-live-20261011.ts",
+    "mods/pob-slots/test/fixtures.ts",
+    "mods/pob-slots/test/tickets-cells-20261011.ts",
+    "mods/pob-slots/test/tickets-live-20261011.ts",
+    "mods/pob-slots/test/tickets-live.ts",
+    "mods/pob-slots/bin/fixtures/pane_elements/hover-inert.base.png",
+    "mods/pob-slots/bin/fixtures/pane_elements/hover-inert.png",
+    "mods/pob-slots/bin/fixtures/pane_elements/hover-inert.raw.png",
+    "mods/pob-slots/bin/fixtures/pane_elements/hover-number.base.png",
+    "mods/pob-slots/bin/fixtures/pane_elements/hover-number.png",
+    "mods/pob-slots/bin/fixtures/pane_elements/hover-number.raw.png",
+    "mods/pob-slots/bin/fixtures/pane_elements/hover-row.base.png",
+    "mods/pob-slots/bin/fixtures/pane_elements/hover-row.png",
+    "mods/pob-slots/bin/fixtures/pane_elements/hover-row.raw.png",
+    "mods/pob-slots/bin/fixtures/pane_elements/hover-tab.base.png",
+    "mods/pob-slots/bin/fixtures/pane_elements/hover-tab.png",
+    "mods/pob-slots/bin/fixtures/pane_elements/hover-tab.raw.png",
+    "mods/pob-slots/bin/fixtures/pane_elements/rec-builds.png",
+    "mods/pob-slots/bin/fixtures/pane_elements/rec-cost.png",
+    "mods/pob-slots/bin/fixtures/pane_elements/rec-main.png"
+  ],
+  "merge_suite_quiet_limit": 900,
+  "merge_suite_total_limit": 9360,
+  "merge_suite_workers_probe": "python scripts/machine_load.py --suite-workers",
+  "merge_suite_laptop": true,
+  "suite_router": "tools.agentops.suite_router:route",
+  "suite_priority_flags": "tools.agentops.full_run:suite_priority_flags",
+  "monitor_dashboard": "tools.agentops.monitor_dashboard",
+  "agent_status": "tools.agentops.agent_status",
+  "limit_usd_per_pct": 16.5,
+  "start_admission": "junkroan.pob.slot_budget:admission_now",
+  "start_admission_hold_cap_s": 1800,
+  "full_run_admission_hold_cap_s": 3600,
+  "pending_job_command": "python scripts/pending_job.py {issue}",
+  "merge_suite_env": {
+    "JUNKROAN_NO_POB": "1"
+  },
+  "core_version_before": "e5a91ebbae1eb6d271f1fbc8017719969a4103a8",
+  "core_version_count": 1765,
+  "github_suite": true,
+  "test_copy_remote": "https://github.com/Rasslabsya4el/Poe-Junkroan-tests.git"
+}

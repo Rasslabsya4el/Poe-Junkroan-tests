@@ -1,0 +1,4499 @@
+{
+ "source": "https://www.poewiki.net/wiki/Guide:Analysis_of_unique_item_tiers (community drop-rate tiers, T0 rarest .. T5 most common) + poewiki cargo items.drop_enabled",
+ "fetched": "2026-09-12",
+ "page_last_updated": "2026-08-12",
+ "note": "https://www.poewiki.net/wiki/Guide:Analysis_of_unique_item_tiers; page says: Last updated on August 12, 2026; fetched 2026-09-12; tier = last numeric column (d = dust 3.25, u = ultimatum 3.26/3.27, r = ritual); drop_disabled from cargo items.drop_enabled=0",
+ "tiers": {
+  "Debeon's Dirge": {
+   "section": "Two Hand Axes",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Hezmana's Bloodlust": {
+   "section": "Two Hand Axes",
+   "tier": 3,
+   "tier_raw": "3d",
+   "notes": ""
+  },
+  "Kaom's Primacy": {
+   "section": "Two Hand Axes",
+   "tier": 2,
+   "tier_raw": "2u",
+   "notes": ""
+  },
+  "Kitava's Feast": {
+   "section": "Two Hand Axes",
+   "tier": 1,
+   "tier_raw": "1d",
+   "notes": ""
+  },
+  "Limbsplit": {
+   "section": "Two Hand Axes",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Ngamahu's Flame": {
+   "section": "Two Hand Axes",
+   "tier": 3,
+   "tier_raw": "3d",
+   "notes": ""
+  },
+  "Reaper's Pursuit": {
+   "section": "Two Hand Axes",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Sinvicta's Mettle": {
+   "section": "Two Hand Axes",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "The Blood Reaper": {
+   "section": "Two Hand Axes",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "The Harvest": {
+   "section": "Two Hand Axes",
+   "tier": 4,
+   "tier_raw": "4d",
+   "notes": ""
+  },
+  "Wideswing": {
+   "section": "Two Hand Axes",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Wings of Entropy": {
+   "section": "Two Hand Axes",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Dreadarc": {
+   "section": "One Hand Axes",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Dyadus": {
+   "section": "One Hand Axes",
+   "tier": 4,
+   "tier_raw": "4d",
+   "notes": ""
+  },
+  "Jack, the Axe": {
+   "section": "One Hand Axes",
+   "tier": 3,
+   "tier_raw": "3d",
+   "notes": ""
+  },
+  "Moonbender's Wing": {
+   "section": "One Hand Axes",
+   "tier": 4,
+   "tier_raw": "4d",
+   "notes": ""
+  },
+  "Relentless Fury": {
+   "section": "One Hand Axes",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Rigwald's Savagery": {
+   "section": "One Hand Axes",
+   "tier": 4,
+   "tier_raw": "4d",
+   "notes": ""
+  },
+  "Soul Taker": {
+   "section": "One Hand Axes",
+   "tier": 0,
+   "tier_raw": "0d",
+   "notes": ""
+  },
+  "The Screaming Eagle": {
+   "section": "One Hand Axes",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Brain Rattler": {
+   "section": "Two Hand Maces",
+   "tier": 3,
+   "tier_raw": "3d",
+   "notes": ""
+  },
+  "Chober Chaber": {
+   "section": "Two Hand Maces",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Geofri's Baptism": {
+   "section": "Two Hand Maces",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Hrimnor's Hymn": {
+   "section": "Two Hand Maces",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Jorrhast's Blacksteel": {
+   "section": "Two Hand Maces",
+   "tier": 4,
+   "tier_raw": "4d",
+   "notes": ""
+  },
+  "Kongor's Undying Rage": {
+   "section": "Two Hand Maces",
+   "tier": 4,
+   "tier_raw": "4d",
+   "notes": ""
+  },
+  "Marohi Erqi": {
+   "section": "Two Hand Maces",
+   "tier": 0,
+   "tier_raw": "0d",
+   "notes": ""
+  },
+  "Quecholli": {
+   "section": "Two Hand Maces",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "The Yielding Mortality": {
+   "section": "Two Hand Maces",
+   "tier": null,
+   "tier_raw": "",
+   "notes": "Core drop pool in 3.28"
+  },
+  "Tidebreaker": {
+   "section": "Two Hand Maces",
+   "tier": 1,
+   "tier_raw": "1d",
+   "notes": ""
+  },
+  "Trypanon": {
+   "section": "Two Hand Maces",
+   "tier": 3,
+   "tier_raw": "3d",
+   "notes": ""
+  },
+  "Voidhome": {
+   "section": "Two Hand Maces",
+   "tier": 4,
+   "tier_raw": "4d",
+   "notes": ""
+  },
+  "Augyre": {
+   "section": "Sceptres",
+   "tier": 3,
+   "tier_raw": "3d",
+   "notes": ""
+  },
+  "Axiom Perpetuum": {
+   "section": "Sceptres",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Balefire": {
+   "section": "Sceptres",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Bitterdream": {
+   "section": "Sceptres",
+   "tier": 3,
+   "tier_raw": "3d",
+   "notes": ""
+  },
+  "Breath of the Council": {
+   "section": "Sceptres",
+   "tier": 4,
+   "tier_raw": "4d",
+   "notes": ""
+  },
+  "Brutus' Lead Sprinkler": {
+   "section": "Sceptres",
+   "tier": 3,
+   "tier_raw": "3d",
+   "notes": ""
+  },
+  "Death's Hand": {
+   "section": "Sceptres",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Doon Cuebiyari": {
+   "section": "Sceptres",
+   "tier": 3,
+   "tier_raw": "3d",
+   "notes": ""
+  },
+  "Earendel's Embrace": {
+   "section": "Sceptres",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Maata's Teaching": {
+   "section": "Sceptres",
+   "tier": 2,
+   "tier_raw": "2d",
+   "notes": ""
+  },
+  "Mon'tregul's Grasp": {
+   "section": "Sceptres",
+   "tier": 3,
+   "tier_raw": "3d",
+   "notes": ""
+  },
+  "Nycta's Lantern": {
+   "section": "Sceptres",
+   "tier": 3,
+   "tier_raw": "3d",
+   "notes": ""
+  },
+  "Sign of the Sin Eater": {
+   "section": "Sceptres",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Singularity": {
+   "section": "Sceptres",
+   "tier": 4,
+   "tier_raw": "4d",
+   "notes": ""
+  },
+  "The Black Cane": {
+   "section": "Sceptres",
+   "tier": 4,
+   "tier_raw": "4d",
+   "notes": ""
+  },
+  "The Dark Seer": {
+   "section": "Sceptres",
+   "tier": 3,
+   "tier_raw": "3",
+   "notes": "A boss drop since 3.24."
+  },
+  "The Supreme Truth": {
+   "section": "Sceptres",
+   "tier": 3,
+   "tier_raw": "3d",
+   "notes": ""
+  },
+  "Brightbeak": {
+   "section": "One Hand Maces",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Callinellus Malleus": {
+   "section": "One Hand Maces",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Cameria's Maul": {
+   "section": "One Hand Maces",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Clayshaper": {
+   "section": "One Hand Maces",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Flesh-Eater": {
+   "section": "One Hand Maces",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Frostbreath": {
+   "section": "One Hand Maces",
+   "tier": 4,
+   "tier_raw": "4d",
+   "notes": ""
+  },
+  "Lavianga's Wisdom": {
+   "section": "One Hand Maces",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Mjölner": {
+   "section": "One Hand Maces",
+   "tier": 2,
+   "tier_raw": "2d",
+   "notes": ""
+  },
+  "The Monastery Bell": {
+   "section": "One Hand Maces",
+   "tier": 4,
+   "tier_raw": "4",
+   "notes": ""
+  },
+  "Gorebreaker": {
+   "section": "One Hand Maces",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Doomsower": {
+   "section": "Two Hand Swords",
+   "tier": 3,
+   "tier_raw": "3u",
+   "notes": ""
+  },
+  "Edge of Madness": {
+   "section": "Two Hand Swords",
+   "tier": 4,
+   "tier_raw": "4d",
+   "notes": ""
+  },
+  "Hiltless": {
+   "section": "Two Hand Swords",
+   "tier": 4,
+   "tier_raw": "4d",
+   "notes": ""
+  },
+  "Kondo's Pride": {
+   "section": "Two Hand Swords",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Oro's Sacrifice": {
+   "section": "Two Hand Swords",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Queen's Decree": {
+   "section": "Two Hand Swords",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Rakiata's Dance": {
+   "section": "Two Hand Swords",
+   "tier": 0,
+   "tier_raw": "0d",
+   "notes": ""
+  },
+  "Rigwald's Charge": {
+   "section": "Two Hand Swords",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Shiversting": {
+   "section": "Two Hand Swords",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Terminus Est": {
+   "section": "Two Hand Swords",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "The Dancing Dervish": {
+   "section": "Two Hand Swords",
+   "tier": 4,
+   "tier_raw": "4d",
+   "notes": ""
+  },
+  "Ichimonji": {
+   "section": "3x1 One Hand Swords",
+   "tier": 4,
+   "tier_raw": "4d",
+   "notes": ""
+  },
+  "Redbeak": {
+   "section": "3x1 One Hand Swords",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "The Princess": {
+   "section": "3x1 One Hand Swords",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Ahn's Might": {
+   "section": "3x2 One Hand Swords",
+   "tier": 4,
+   "tier_raw": "4d",
+   "notes": ""
+  },
+  "Beltimber Blade": {
+   "section": "3x2 One Hand Swords",
+   "tier": 3,
+   "tier_raw": "3u",
+   "notes": ""
+  },
+  "Dreamfeather": {
+   "section": "3x2 One Hand Swords",
+   "tier": 3,
+   "tier_raw": "3u",
+   "notes": ""
+  },
+  "Ephemeral Edge": {
+   "section": "3x2 One Hand Swords",
+   "tier": 0,
+   "tier_raw": "0u",
+   "notes": ""
+  },
+  "Grelwood Shank": {
+   "section": "3x2 One Hand Swords",
+   "tier": 3,
+   "tier_raw": "3u",
+   "notes": ""
+  },
+  "Hyaon's Fury": {
+   "section": "3x2 One Hand Swords",
+   "tier": 4,
+   "tier_raw": "4d",
+   "notes": ""
+  },
+  "Innsbury Edge": {
+   "section": "3x2 One Hand Swords",
+   "tier": 4,
+   "tier_raw": "4d",
+   "notes": ""
+  },
+  "Lakishu's Blade": {
+   "section": "3x2 One Hand Swords",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Nametaker": {
+   "section": "3x2 One Hand Swords",
+   "tier": null,
+   "tier_raw": "",
+   "notes": "Temporarily 4 during 3.24"
+  },
+  "Prismatic Eclipse": {
+   "section": "3x2 One Hand Swords",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Razor of the Seventh Sun": {
+   "section": "3x2 One Hand Swords",
+   "tier": 3,
+   "tier_raw": "3u",
+   "notes": ""
+  },
+  "Rebuke of the Vaal": {
+   "section": "3x2 One Hand Swords",
+   "tier": 3,
+   "tier_raw": "3u",
+   "notes": ""
+  },
+  "Rigwald's Command": {
+   "section": "3x2 One Hand Swords",
+   "tier": 4,
+   "tier_raw": "4d",
+   "notes": ""
+  },
+  "Scaeva": {
+   "section": "3x2 One Hand Swords",
+   "tier": 4,
+   "tier_raw": "4d",
+   "notes": ""
+  },
+  "The Surging Thoughts": {
+   "section": "3x2 One Hand Swords",
+   "tier": null,
+   "tier_raw": "",
+   "notes": "Core drop pool in 3.28"
+  },
+  "The Tempestuous Steel": {
+   "section": "3x2 One Hand Swords",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Varunastra": {
+   "section": "3x2 One Hand Swords",
+   "tier": 0,
+   "tier_raw": "0u",
+   "notes": ""
+  },
+  "Aurumvorax": {
+   "section": "4x1 One Hand Swords",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Cospri's Malice": {
+   "section": "4x1 One Hand Swords",
+   "tier": 2,
+   "tier_raw": "2d",
+   "notes": ""
+  },
+  "Daresso's Passion": {
+   "section": "4x1 One Hand Swords",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Ewar's Mirage": {
+   "section": "4x1 One Hand Swords",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Fidelitas' Spike": {
+   "section": "4x1 One Hand Swords",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "The Goddess Bound": {
+   "section": "4x1 One Hand Swords",
+   "tier": 4,
+   "tier_raw": "4d",
+   "notes": ""
+  },
+  "Agnerod East": {
+   "section": "4x2 Staves",
+   "tier": 4,
+   "tier_raw": "4d",
+   "notes": ""
+  },
+  "Agnerod North": {
+   "section": "4x2 Staves",
+   "tier": 4,
+   "tier_raw": "4d",
+   "notes": ""
+  },
+  "Agnerod South": {
+   "section": "4x2 Staves",
+   "tier": 4,
+   "tier_raw": "4d",
+   "notes": ""
+  },
+  "Agnerod West": {
+   "section": "4x2 Staves",
+   "tier": 4,
+   "tier_raw": "4d",
+   "notes": ""
+  },
+  "Cane of Unravelling": {
+   "section": "4x2 Staves",
+   "tier": 4,
+   "tier_raw": "4d",
+   "notes": ""
+  },
+  "Dying Breath": {
+   "section": "4x2 Staves",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Femurs of the Saints": {
+   "section": "4x2 Staves",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Hegemony's Era": {
+   "section": "4x2 Staves",
+   "tier": 3,
+   "tier_raw": "3d",
+   "notes": ""
+  },
+  "Jiquani's Potential": {
+   "section": "4x2 Staves",
+   "tier": 3,
+   "tier_raw": "3u",
+   "notes": "T0 from 3.28"
+  },
+  "Martyr of Innocence": {
+   "section": "4x2 Staves",
+   "tier": 1,
+   "tier_raw": "1d",
+   "notes": ""
+  },
+  "Pillar of the Caged God": {
+   "section": "4x2 Staves",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Realmshaper": {
+   "section": "4x2 Staves",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Sire of Shards": {
+   "section": "4x2 Staves",
+   "tier": 4,
+   "tier_raw": "4d",
+   "notes": ""
+  },
+  "Soulwrest": {
+   "section": "4x2 Staves",
+   "tier": 4,
+   "tier_raw": "4d",
+   "notes": ""
+  },
+  "Taryn's Shiver": {
+   "section": "4x2 Staves",
+   "tier": 3,
+   "tier_raw": "3d",
+   "notes": ""
+  },
+  "The Burden of Shadows": {
+   "section": "4x2 Staves",
+   "tier": null,
+   "tier_raw": "",
+   "notes": "Temporarily 0 during 3.24"
+  },
+  "The Grey Spire": {
+   "section": "4x2 Staves",
+   "tier": 3,
+   "tier_raw": "3d",
+   "notes": ""
+  },
+  "The Searing Touch": {
+   "section": "4x2 Staves",
+   "tier": 3,
+   "tier_raw": "3d",
+   "notes": ""
+  },
+  "The Stormheart": {
+   "section": "4x2 Staves",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "The Whispering Ice": {
+   "section": "4x2 Staves",
+   "tier": 3,
+   "tier_raw": "3d",
+   "notes": ""
+  },
+  "Tremor Rod": {
+   "section": "4x2 Staves",
+   "tier": 3,
+   "tier_raw": "3d",
+   "notes": ""
+  },
+  "Fencoil": {
+   "section": "4x1 Staves",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "The Blood Thorn": {
+   "section": "4x1 Staves",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Arakaali's Fang": {
+   "section": "Daggers",
+   "tier": 1,
+   "tier_raw": "1d",
+   "notes": ""
+  },
+  "Bino's Kitchen Knife": {
+   "section": "Daggers",
+   "tier": 0,
+   "tier_raw": "0d",
+   "notes": ""
+  },
+  "Bloodplay": {
+   "section": "Daggers",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Cold Iron Point": {
+   "section": "Daggers",
+   "tier": 3,
+   "tier_raw": "3d",
+   "notes": ""
+  },
+  "Divinarius": {
+   "section": "Daggers",
+   "tier": 0,
+   "tier_raw": "0d",
+   "notes": ""
+  },
+  "Goblinedge": {
+   "section": "Daggers",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Goredrill": {
+   "section": "Daggers",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Heartbreaker": {
+   "section": "Daggers",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Mark of the Doubting Knight": {
+   "section": "Daggers",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Mightflay": {
+   "section": "Daggers",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Taproot": {
+   "section": "Daggers",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "The Consuming Dark": {
+   "section": "Daggers",
+   "tier": 4,
+   "tier_raw": "4d",
+   "notes": ""
+  },
+  "Ungil's Gauche": {
+   "section": "Daggers",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Vulconus": {
+   "section": "Daggers",
+   "tier": 3,
+   "tier_raw": "3d",
+   "notes": ""
+  },
+  "White Wind": {
+   "section": "Daggers",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Widowmaker": {
+   "section": "Daggers",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Advancing Fortress": {
+   "section": "Claws",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Al Dhih": {
+   "section": "Claws",
+   "tier": 4,
+   "tier_raw": "4d",
+   "notes": ""
+  },
+  "Allure": {
+   "section": "Claws",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Bloodseeker": {
+   "section": "Claws",
+   "tier": 0,
+   "tier_raw": "0d",
+   "notes": ""
+  },
+  "Cybil's Paw": {
+   "section": "Claws",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Essentia Sanguis": {
+   "section": "Claws",
+   "tier": 0,
+   "tier_raw": "0d",
+   "notes": ""
+  },
+  "Last Resort": {
+   "section": "Claws",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Mortem Morsu": {
+   "section": "Claws",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Ornament of the East": {
+   "section": "Claws",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Rive": {
+   "section": "Claws",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "The Scourge": {
+   "section": "Claws",
+   "tier": 3,
+   "tier_raw": "3d",
+   "notes": ""
+  },
+  "The Wasp Nest": {
+   "section": "Claws",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Touch of Anguish": {
+   "section": "Claws",
+   "tier": 4,
+   "tier_raw": "4d",
+   "notes": ""
+  },
+  "Wildslash": {
+   "section": "Claws",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Abberath's Horn": {
+   "section": "Wands",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Apep's Rage": {
+   "section": "Wands",
+   "tier": 3,
+   "tier_raw": "3d",
+   "notes": ""
+  },
+  "Ashcaller": {
+   "section": "Wands",
+   "tier": 4,
+   "tier_raw": "4d",
+   "notes": ""
+  },
+  "Eclipse Solaris": {
+   "section": "Wands",
+   "tier": 1,
+   "tier_raw": "1u",
+   "notes": ""
+  },
+  "Lifesprig": {
+   "section": "Wands",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Midnight Bargain": {
+   "section": "Wands",
+   "tier": 4,
+   "tier_raw": "4d",
+   "notes": ""
+  },
+  "Moonsorrow": {
+   "section": "Wands",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Mystic Refractor": {
+   "section": "Wands",
+   "tier": 3,
+   "tier_raw": "3u",
+   "notes": ""
+  },
+  "Obliteration": {
+   "section": "Wands",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Piscator's Vigil": {
+   "section": "Wands",
+   "tier": 4,
+   "tier_raw": "4d",
+   "notes": ""
+  },
+  "Reverberation Rod": {
+   "section": "Wands",
+   "tier": 3,
+   "tier_raw": "3d",
+   "notes": ""
+  },
+  "Shade of Solaris": {
+   "section": "Wands",
+   "tier": 1,
+   "tier_raw": "1d",
+   "notes": ""
+  },
+  "Storm Prison": {
+   "section": "Wands",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "The Poet's Pen": {
+   "section": "Wands",
+   "tier": 2,
+   "tier_raw": "2d",
+   "notes": ""
+  },
+  "Twyzel": {
+   "section": "Wands",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Unlight Extant": {
+   "section": "Wands",
+   "tier": 4,
+   "tier_raw": "4",
+   "notes": ""
+  },
+  "Void Battery": {
+   "section": "Wands",
+   "tier": 2,
+   "tier_raw": "2d",
+   "notes": ""
+  },
+  "Chin Sol": {
+   "section": "Bows",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Darkscorn": {
+   "section": "Bows",
+   "tier": 2,
+   "tier_raw": "2d",
+   "notes": ""
+  },
+  "Death's Harp": {
+   "section": "Bows",
+   "tier": 3,
+   "tier_raw": "3d",
+   "notes": ""
+  },
+  "Doomfletch": {
+   "section": "Bows",
+   "tier": 3,
+   "tier_raw": "3d",
+   "notes": ""
+  },
+  "Infractem": {
+   "section": "Bows",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Iron Commander": {
+   "section": "Bows",
+   "tier": 4,
+   "tier_raw": "4d",
+   "notes": ""
+  },
+  "Lioneye's Glare": {
+   "section": "Bows",
+   "tier": 0,
+   "tier_raw": "0d",
+   "notes": ""
+  },
+  "Null's Inclination": {
+   "section": "Bows",
+   "tier": 3,
+   "tier_raw": "3d",
+   "notes": ""
+  },
+  "Nuro's Harp": {
+   "section": "Bows",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Quill Rain": {
+   "section": "Bows",
+   "tier": 4,
+   "tier_raw": "4d",
+   "notes": ""
+  },
+  "Reach of the Council": {
+   "section": "Bows",
+   "tier": 3,
+   "tier_raw": "3d",
+   "notes": ""
+  },
+  "Roth's Reach": {
+   "section": "Bows",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Silverbranch": {
+   "section": "Bows",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Slivertongue": {
+   "section": "Bows",
+   "tier": 4,
+   "tier_raw": "4d",
+   "notes": ""
+  },
+  "Storm Cloud": {
+   "section": "Bows",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Voltaxic Rift": {
+   "section": "Bows",
+   "tier": 0,
+   "tier_raw": "0d",
+   "notes": ""
+  },
+  "Widowhail": {
+   "section": "Bows",
+   "tier": 3,
+   "tier_raw": "3d",
+   "notes": ""
+  },
+  "Windripper": {
+   "section": "Bows",
+   "tier": 2,
+   "tier_raw": "2d",
+   "notes": ""
+  },
+  "Azadi Crest": {
+   "section": "2x2 Shields",
+   "tier": 4,
+   "tier_raw": "4",
+   "notes": "Mercenary unique in 3.29"
+  },
+  "Chalice of Horrors": {
+   "section": "2x2 Shields",
+   "tier": 4,
+   "tier_raw": "4d",
+   "notes": ""
+  },
+  "Crest of Perandus": {
+   "section": "2x2 Shields",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Great Old One's Ward": {
+   "section": "2x2 Shields",
+   "tier": 4,
+   "tier_raw": "4d",
+   "notes": ""
+  },
+  "Jaws of Agony": {
+   "section": "2x2 Shields",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Kaltenhalt": {
+   "section": "2x2 Shields",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Kiloava's Bluster": {
+   "section": "2x2 Shields",
+   "tier": 4,
+   "tier_raw": "4d",
+   "notes": ""
+  },
+  "Kongming's Stratagem": {
+   "section": "2x2 Shields",
+   "tier": 4,
+   "tier_raw": "4d",
+   "notes": ""
+  },
+  "Leper's Alms": {
+   "section": "2x2 Shields",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Light of Lunaris": {
+   "section": "2x2 Shields",
+   "tier": 1,
+   "tier_raw": "1d",
+   "notes": ""
+  },
+  "Malachai's Loop": {
+   "section": "2x2 Shields",
+   "tier": 4,
+   "tier_raw": "4d",
+   "notes": ""
+  },
+  "Maligaro's Lens": {
+   "section": "2x2 Shields",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Manastorm": {
+   "section": "2x2 Shields",
+   "tier": 3,
+   "tier_raw": "3",
+   "notes": "A boss drop since 3.24."
+  },
+  "Matua Tupuna": {
+   "section": "2x2 Shields",
+   "tier": 4,
+   "tier_raw": "4d",
+   "notes": ""
+  },
+  "Mistwall": {
+   "section": "2x2 Shields",
+   "tier": 3,
+   "tier_raw": "3d",
+   "notes": ""
+  },
+  "Rathpith Globe": {
+   "section": "2x2 Shields",
+   "tier": 2,
+   "tier_raw": "2d",
+   "notes": ""
+  },
+  "Sentari's Answer": {
+   "section": "2x2 Shields",
+   "tier": 4,
+   "tier_raw": "4d",
+   "notes": ""
+  },
+  "The Eternal Apple": {
+   "section": "2x2 Shields",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Thousand Teeth Temu": {
+   "section": "2x2 Shields",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Zeel's Amplifier": {
+   "section": "2x2 Shields",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Aegis Aurora": {
+   "section": "3x2 Shields",
+   "tier": 2,
+   "tier_raw": "2d",
+   "notes": ""
+  },
+  "Daresso's Courage": {
+   "section": "3x2 Shields",
+   "tier": 3,
+   "tier_raw": "3d",
+   "notes": ""
+  },
+  "Emperor's Vigilance": {
+   "section": "3x2 Shields",
+   "tier": 2,
+   "tier_raw": "2d",
+   "notes": ""
+  },
+  "Prism Guardian": {
+   "section": "3x2 Shields",
+   "tier": 2,
+   "tier_raw": "2d",
+   "notes": ""
+  },
+  "Rise of the Phoenix": {
+   "section": "3x2 Shields",
+   "tier": 4,
+   "tier_raw": "4d",
+   "notes": ""
+  },
+  "Saffell's Frame": {
+   "section": "3x2 Shields",
+   "tier": 3,
+   "tier_raw": "3d",
+   "notes": ""
+  },
+  "Springleaf": {
+   "section": "3x2 Shields",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "The Deep One's Hide": {
+   "section": "3x2 Shields",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "The Flawed Refuge": {
+   "section": "3x2 Shields",
+   "tier": null,
+   "tier_raw": "",
+   "notes": "Temporarily 4 during 3.24"
+  },
+  "The Ghastly Theatre": {
+   "section": "3x2 Shields",
+   "tier": 4,
+   "tier_raw": "4d",
+   "notes": "Mercenary unique in 3.29"
+  },
+  "The Oppressor": {
+   "section": "3x2 Shields",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "The Squire": {
+   "section": "3x2 Shields",
+   "tier": 0,
+   "tier_raw": "0d",
+   "notes": ""
+  },
+  "The Immortal Will": {
+   "section": "3x2 Shields",
+   "tier": null,
+   "tier_raw": "",
+   "notes": "Core drop pool in 3.28"
+  },
+  "Victario's Charity": {
+   "section": "3x2 Shields",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Wheel of the Stormsail": {
+   "section": "3x2 Shields",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Ahn's Heritage": {
+   "section": "4x2 Shields",
+   "tier": 4,
+   "tier_raw": "4d",
+   "notes": ""
+  },
+  "Chernobog's Pillar": {
+   "section": "4x2 Shields",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Cowards' Wail": {
+   "section": "4x2 Shields",
+   "tier": 3,
+   "tier_raw": "3u",
+   "notes": ""
+  },
+  "Lioneye's Remorse": {
+   "section": "4x2 Shields",
+   "tier": 3,
+   "tier_raw": "3d",
+   "notes": ""
+  },
+  "Lycosidae": {
+   "section": "4x2 Shields",
+   "tier": 3,
+   "tier_raw": "3d",
+   "notes": ""
+  },
+  "Titucius' Span": {
+   "section": "4x2 Shields",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Trolltimber Spire": {
+   "section": "4x2 Shields",
+   "tier": 4,
+   "tier_raw": "4d",
+   "notes": ""
+  },
+  "Tukohama's Fortress": {
+   "section": "4x2 Shields",
+   "tier": 1,
+   "tier_raw": "1d",
+   "notes": ""
+  },
+  "Ahuana's Bite": {
+   "section": "Quivers",
+   "tier": 4,
+   "tier_raw": "4d",
+   "notes": ""
+  },
+  "Asphyxia's Wrath": {
+   "section": "Quivers",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Blackgleam": {
+   "section": "Quivers",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Craghead": {
+   "section": "Quivers",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Drillneck": {
+   "section": "Quivers",
+   "tier": 4,
+   "tier_raw": "4d",
+   "notes": ""
+  },
+  "Hyrri's Bite": {
+   "section": "Quivers",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Maloney's Mechanism": {
+   "section": "Quivers",
+   "tier": 2,
+   "tier_raw": "2d",
+   "notes": ""
+  },
+  "Maloney's Nightfall": {
+   "section": "Quivers",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Rearguard": {
+   "section": "Quivers",
+   "tier": 4,
+   "tier_raw": "4d",
+   "notes": ""
+  },
+  "Rigwald's Quills": {
+   "section": "Quivers",
+   "tier": 2,
+   "tier_raw": "2d",
+   "notes": ""
+  },
+  "Saemus' Gift": {
+   "section": "Quivers",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Scorpion's Call": {
+   "section": "Quivers",
+   "tier": 4,
+   "tier_raw": "4d",
+   "notes": ""
+  },
+  "Skirmish": {
+   "section": "Quivers",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Soul Strike": {
+   "section": "Quivers",
+   "tier": 4,
+   "tier_raw": "4d",
+   "notes": ""
+  },
+  "The Poised Prism": {
+   "section": "Quivers",
+   "tier": 4,
+   "tier_raw": "4d",
+   "notes": ""
+  },
+  "The Shattered Divinity": {
+   "section": "Quivers",
+   "tier": null,
+   "tier_raw": "",
+   "notes": "Core drop pool in 3.28"
+  },
+  "Abyssus": {
+   "section": "Helmets",
+   "tier": 3,
+   "tier_raw": "3d",
+   "notes": ""
+  },
+  "Ahn's Contempt": {
+   "section": "Helmets",
+   "tier": 4,
+   "tier_raw": "4d",
+   "notes": ""
+  },
+  "Akoya's Gaze": {
+   "section": "Helmets",
+   "tier": 3,
+   "tier_raw": "3",
+   "notes": ""
+  },
+  "Alpha's Howl": {
+   "section": "Helmets",
+   "tier": 3,
+   "tier_raw": "3d",
+   "notes": ""
+  },
+  "Ancient Skull": {
+   "section": "Helmets",
+   "tier": 4,
+   "tier_raw": "4d",
+   "notes": ""
+  },
+  "Asenath's Mark": {
+   "section": "Helmets",
+   "tier": 2,
+   "tier_raw": "2d",
+   "notes": ""
+  },
+  "Assailum": {
+   "section": "Helmets",
+   "tier": 3,
+   "tier_raw": "3d",
+   "notes": ""
+  },
+  "Black Sun Crest": {
+   "section": "Helmets",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Blood Price": {
+   "section": "Helmets",
+   "tier": 3,
+   "tier_raw": "3d",
+   "notes": ""
+  },
+  "Chitus' Apex": {
+   "section": "Helmets",
+   "tier": 3,
+   "tier_raw": "3d",
+   "notes": ""
+  },
+  "Crown of Eyes": {
+   "section": "Helmets",
+   "tier": 3,
+   "tier_raw": "3d",
+   "notes": ""
+  },
+  "Crown of the Pale King": {
+   "section": "Helmets",
+   "tier": 4,
+   "tier_raw": "4d",
+   "notes": ""
+  },
+  "Crown of Thorns": {
+   "section": "Helmets",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Curtain Call": {
+   "section": "Helmets",
+   "tier": 4,
+   "tier_raw": "4d",
+   "notes": ""
+  },
+  "Deidbell": {
+   "section": "Helmets",
+   "tier": 3,
+   "tier_raw": "3d",
+   "notes": ""
+  },
+  "Devoto's Devotion": {
+   "section": "Helmets",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Doedre's Scorn": {
+   "section": "Helmets",
+   "tier": 4,
+   "tier_raw": "4d",
+   "notes": ""
+  },
+  "Eber's Unification": {
+   "section": "Helmets",
+   "tier": 4,
+   "tier_raw": "4d",
+   "notes": ""
+  },
+  "Elevore": {
+   "section": "Helmets",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Eye of Malice": {
+   "section": "Helmets",
+   "tier": 4,
+   "tier_raw": "4d",
+   "notes": ""
+  },
+  "Ezomyte Peak": {
+   "section": "Helmets",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Fairgraves' Tricorne": {
+   "section": "Helmets",
+   "tier": 3,
+   "tier_raw": "3d",
+   "notes": ""
+  },
+  "Flamesight": {
+   "section": "Helmets",
+   "tier": 3,
+   "tier_raw": "3d",
+   "notes": ""
+  },
+  "Fractal Thoughts": {
+   "section": "Helmets",
+   "tier": 3,
+   "tier_raw": "3d",
+   "notes": ""
+  },
+  "Galesight": {
+   "section": "Helmets",
+   "tier": 3,
+   "tier_raw": "3d",
+   "notes": ""
+  },
+  "Geofri's Crest": {
+   "section": "Helmets",
+   "tier": 4,
+   "tier_raw": "4d",
+   "notes": ""
+  },
+  "Goldrim": {
+   "section": "Helmets",
+   "tier": 4,
+   "tier_raw": "4d",
+   "notes": ""
+  },
+  "Heatshiver": {
+   "section": "Helmets",
+   "tier": 3,
+   "tier_raw": "3d",
+   "notes": ""
+  },
+  "Heretic's Veil": {
+   "section": "Helmets",
+   "tier": 2,
+   "tier_raw": "2d",
+   "notes": ""
+  },
+  "Honourhome": {
+   "section": "Helmets",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Howlcrack": {
+   "section": "Helmets",
+   "tier": 3,
+   "tier_raw": "3u",
+   "notes": "Mercenary unique in 3.29"
+  },
+  "Hrimnor's Resolve": {
+   "section": "Helmets",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Kitava's Thirst": {
+   "section": "Helmets",
+   "tier": 4,
+   "tier_raw": "4d",
+   "notes": ""
+  },
+  "Leer Cast": {
+   "section": "Helmets",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Malachai's Simula": {
+   "section": "Helmets",
+   "tier": 4,
+   "tier_raw": "4d",
+   "notes": ""
+  },
+  "Mark of the Red Covenant": {
+   "section": "Helmets",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Maw of Conquest": {
+   "section": "Helmets",
+   "tier": 3,
+   "tier_raw": "3d",
+   "notes": ""
+  },
+  "Memory Vault": {
+   "section": "Helmets",
+   "tier": 3,
+   "tier_raw": "3d",
+   "notes": ""
+  },
+  "Mind of the Council": {
+   "section": "Helmets",
+   "tier": 3,
+   "tier_raw": "3d",
+   "notes": ""
+  },
+  "Mindspiral": {
+   "section": "Helmets",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Obscurantis": {
+   "section": "Helmets",
+   "tier": 4,
+   "tier_raw": "4d",
+   "notes": ""
+  },
+  "Rat's Nest": {
+   "section": "Helmets",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Rime Gaze": {
+   "section": "Helmets",
+   "tier": 3,
+   "tier_raw": "3d",
+   "notes": ""
+  },
+  "Scold's Bridle": {
+   "section": "Helmets",
+   "tier": 3,
+   "tier_raw": "3d",
+   "notes": ""
+  },
+  "Skullhead": {
+   "section": "Helmets",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Speaker's Wreath": {
+   "section": "Helmets",
+   "tier": 4,
+   "tier_raw": "4d",
+   "notes": ""
+  },
+  "Starkonja's Head": {
+   "section": "Helmets",
+   "tier": 4,
+   "tier_raw": "4d",
+   "notes": ""
+  },
+  "The Baron": {
+   "section": "Helmets",
+   "tier": 4,
+   "tier_raw": "4d",
+   "notes": ""
+  },
+  "The Brine Crown": {
+   "section": "Helmets",
+   "tier": 1,
+   "tier_raw": "1d",
+   "notes": ""
+  },
+  "The Bringer of Rain": {
+   "section": "Helmets",
+   "tier": 3,
+   "tier_raw": "3d",
+   "notes": ""
+  },
+  "The Broken Crown": {
+   "section": "Helmets",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "The Gull": {
+   "section": "Helmets",
+   "tier": 2,
+   "tier_raw": "2d",
+   "notes": ""
+  },
+  "The Peregrine": {
+   "section": "Helmets",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "The Tempest's Liberation": {
+   "section": "Helmets",
+   "tier": null,
+   "tier_raw": "",
+   "notes": "Core drop pool in 3.28"
+  },
+  "The Three Dragons": {
+   "section": "Helmets",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "The Trickster's Smile": {
+   "section": "Helmets",
+   "tier": 4,
+   "tier_raw": "4d",
+   "notes": ""
+  },
+  "Thrillsteel": {
+   "section": "Helmets",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Thundersight": {
+   "section": "Helmets",
+   "tier": 3,
+   "tier_raw": "3d",
+   "notes": ""
+  },
+  "Usurper's Penance": {
+   "section": "Helmets",
+   "tier": 3,
+   "tier_raw": "3d",
+   "notes": ""
+  },
+  "Veil of the Night": {
+   "section": "Helmets",
+   "tier": 4,
+   "tier_raw": "4d",
+   "notes": ""
+  },
+  "Voll's Vision": {
+   "section": "Helmets",
+   "tier": 3,
+   "tier_raw": "3d",
+   "notes": ""
+  },
+  "Willclash": {
+   "section": "Helmets",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Wilma's Requital": {
+   "section": "Helmets",
+   "tier": 3,
+   "tier_raw": "3d",
+   "notes": ""
+  },
+  "Wraithlord": {
+   "section": "Helmets",
+   "tier": 4,
+   "tier_raw": "4",
+   "notes": "A boss drop since 3.24."
+  },
+  "Wreath of Phrecia": {
+   "section": "Helmets",
+   "tier": 4,
+   "tier_raw": "4d",
+   "notes": ""
+  },
+  "Ylfeban's Trickery": {
+   "section": "Helmets",
+   "tier": 3,
+   "tier_raw": "3d",
+   "notes": ""
+  },
+  "Algor Mortis": {
+   "section": "Gloves",
+   "tier": 4,
+   "tier_raw": "4d",
+   "notes": ""
+  },
+  "Allelopathy": {
+   "section": "Gloves",
+   "tier": 3,
+   "tier_raw": "3d",
+   "notes": ""
+  },
+  "Asenath's Gentle Touch": {
+   "section": "Gloves",
+   "tier": 3,
+   "tier_raw": "3d",
+   "notes": ""
+  },
+  "Aukuna's Will": {
+   "section": "Gloves",
+   "tier": 4,
+   "tier_raw": "4d",
+   "notes": ""
+  },
+  "Aurseize": {
+   "section": "Gloves",
+   "tier": 3,
+   "tier_raw": "3d",
+   "notes": ""
+  },
+  "Demon Stitcher": {
+   "section": "Gloves",
+   "tier": 4,
+   "tier_raw": "4d",
+   "notes": ""
+  },
+  "Doedre's Tenure": {
+   "section": "Gloves",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Doryani's Fist": {
+   "section": "Gloves",
+   "tier": 2,
+   "tier_raw": "2d",
+   "notes": ""
+  },
+  "Empire's Grasp": {
+   "section": "Gloves",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Facebreaker": {
+   "section": "Gloves",
+   "tier": 4,
+   "tier_raw": "4d",
+   "notes": ""
+  },
+  "Flesh and Spirit": {
+   "section": "Gloves",
+   "tier": 4,
+   "tier_raw": "4d",
+   "notes": ""
+  },
+  "Giantsbane": {
+   "section": "Gloves",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Gravebind": {
+   "section": "Gloves",
+   "tier": 2,
+   "tier_raw": "2d",
+   "notes": ""
+  },
+  "Great Old One's Tentacles": {
+   "section": "Gloves",
+   "tier": 4,
+   "tier_raw": "4d",
+   "notes": ""
+  },
+  "Grip of the Council": {
+   "section": "Gloves",
+   "tier": 3,
+   "tier_raw": "3d",
+   "notes": ""
+  },
+  "Haemophilia": {
+   "section": "Gloves",
+   "tier": 3,
+   "tier_raw": "3d",
+   "notes": ""
+  },
+  "Hand of Heresy": {
+   "section": "Gloves",
+   "tier": 2,
+   "tier_raw": "2u",
+   "notes": "Mercenary unique in 3.29"
+  },
+  "Hrimsorrow": {
+   "section": "Gloves",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Kalisa's Grace": {
+   "section": "Gloves",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Kaom's Spirit": {
+   "section": "Gloves",
+   "tier": 3,
+   "tier_raw": "3d",
+   "notes": ""
+  },
+  "Lochtonial Caress": {
+   "section": "Gloves",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Machina Mitts": {
+   "section": "Gloves",
+   "tier": 2,
+   "tier_raw": "2d",
+   "notes": ""
+  },
+  "Malachai's Mark": {
+   "section": "Gloves",
+   "tier": 3,
+   "tier_raw": "3",
+   "notes": "A boss drop since 3.24."
+  },
+  "Maligaro's Virtuosity": {
+   "section": "Gloves",
+   "tier": 3,
+   "tier_raw": "3d",
+   "notes": ""
+  },
+  "Meginord's Vise": {
+   "section": "Gloves",
+   "tier": 3,
+   "tier_raw": "3d",
+   "notes": ""
+  },
+  "Mercenary's Lot": {
+   "section": "Gloves",
+   "tier": 3,
+   "tier_raw": "3u",
+   "notes": "Temporarily Mercenaries exclusive from 3.26 to 3.26.0c."
+  },
+  "Null and Void": {
+   "section": "Gloves",
+   "tier": 4,
+   "tier_raw": "4d",
+   "notes": ""
+  },
+  "Ondar's Clasp": {
+   "section": "Gloves",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Oskarm": {
+   "section": "Gloves",
+   "tier": 4,
+   "tier_raw": "4d",
+   "notes": ""
+  },
+  "Painseeker": {
+   "section": "Gloves",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Repentance": {
+   "section": "Gloves",
+   "tier": 3,
+   "tier_raw": "3d",
+   "notes": ""
+  },
+  "Sadima's Touch": {
+   "section": "Gloves",
+   "tier": 4,
+   "tier_raw": "4d",
+   "notes": ""
+  },
+  "Shackles of the Wretched": {
+   "section": "Gloves",
+   "tier": 4,
+   "tier_raw": "4d",
+   "notes": ""
+  },
+  "Shadows and Dust": {
+   "section": "Gloves",
+   "tier": 4,
+   "tier_raw": "4d",
+   "notes": ""
+  },
+  "Slitherpinch": {
+   "section": "Gloves",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Snakebite": {
+   "section": "Gloves",
+   "tier": 4,
+   "tier_raw": "4d",
+   "notes": ""
+  },
+  "Southbound": {
+   "section": "Gloves",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Stormseeker": {
+   "section": "Gloves",
+   "tier": 4,
+   "tier_raw": "4d",
+   "notes": ""
+  },
+  "Storm's Gift": {
+   "section": "Gloves",
+   "tier": 3,
+   "tier_raw": "3d",
+   "notes": ""
+  },
+  "Surgebinders": {
+   "section": "Gloves",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Tanu Ahi": {
+   "section": "Gloves",
+   "tier": 4,
+   "tier_raw": "4d",
+   "notes": ""
+  },
+  "The Embalmer": {
+   "section": "Gloves",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "The Hand of Phrecia": {
+   "section": "Gloves",
+   "tier": 3,
+   "tier_raw": "3d",
+   "notes": ""
+  },
+  "Thunderfist": {
+   "section": "Gloves",
+   "tier": 2,
+   "tier_raw": "2d",
+   "notes": ""
+  },
+  "Triad Grip": {
+   "section": "Gloves",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Vaal Caress": {
+   "section": "Gloves",
+   "tier": 3,
+   "tier_raw": "3d",
+   "notes": ""
+  },
+  "Veruso's Battering Rams": {
+   "section": "Gloves",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Vixen's Entrapment": {
+   "section": "Gloves",
+   "tier": 3,
+   "tier_raw": "3d",
+   "notes": ""
+  },
+  "Voidbringer": {
+   "section": "Gloves",
+   "tier": 4,
+   "tier_raw": "4d",
+   "notes": ""
+  },
+  "Volkuur's Guidance": {
+   "section": "Gloves",
+   "tier": 3,
+   "tier_raw": "3d",
+   "notes": ""
+  },
+  "Wyrmsign": {
+   "section": "Gloves",
+   "tier": 4,
+   "tier_raw": "4d",
+   "notes": ""
+  },
+  "Abberath's Hooves": {
+   "section": "Boots",
+   "tier": 1,
+   "tier_raw": "1d",
+   "notes": ""
+  },
+  "Alberon's Warpath": {
+   "section": "Boots",
+   "tier": 4,
+   "tier_raw": "4d",
+   "notes": ""
+  },
+  "Beacon of Madness": {
+   "section": "Boots",
+   "tier": 2,
+   "tier_raw": "2",
+   "notes": ""
+  },
+  "Bones of Ullr": {
+   "section": "Boots",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Corpsewalker": {
+   "section": "Boots",
+   "tier": 2,
+   "tier_raw": "2d",
+   "notes": ""
+  },
+  "Darkray Vectors": {
+   "section": "Boots",
+   "tier": 4,
+   "tier_raw": "4d",
+   "notes": ""
+  },
+  "Deerstalker": {
+   "section": "Boots",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Dusktoe": {
+   "section": "Boots",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Gang's Momentum": {
+   "section": "Boots",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Garukhan's Flight": {
+   "section": "Boots",
+   "tier": 1,
+   "tier_raw": "1d",
+   "notes": ""
+  },
+  "Goldwyrm": {
+   "section": "Boots",
+   "tier": 4,
+   "tier_raw": "4d",
+   "notes": ""
+  },
+  "Inya's Epiphany": {
+   "section": "Boots",
+   "tier": 3,
+   "tier_raw": "3d",
+   "notes": ""
+  },
+  "Kahuturoa's Certainty": {
+   "section": "Boots",
+   "tier": 4,
+   "tier_raw": "4d",
+   "notes": ""
+  },
+  "Kaom's Roots": {
+   "section": "Boots",
+   "tier": 3,
+   "tier_raw": "3d",
+   "notes": ""
+  },
+  "Lioneye's Paws": {
+   "section": "Boots",
+   "tier": 4,
+   "tier_raw": "4d",
+   "notes": ""
+  },
+  "March of the Legion": {
+   "section": "Boots",
+   "tier": 3,
+   "tier_raw": "3u",
+   "notes": ""
+  },
+  "Nomic's Storm": {
+   "section": "Boots",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Orbala's Stand": {
+   "section": "Boots",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Rainbowstride": {
+   "section": "Boots",
+   "tier": 3,
+   "tier_raw": "3d",
+   "notes": ""
+  },
+  "Ralakesh's Impatience": {
+   "section": "Boots",
+   "tier": 1,
+   "tier_raw": "1d",
+   "notes": ""
+  },
+  "Scornflux": {
+   "section": "Boots",
+   "tier": 4,
+   "tier_raw": "4",
+   "notes": "Mercenary unique in 3.29"
+  },
+  "Seven-League Step": {
+   "section": "Boots",
+   "tier": 2,
+   "tier_raw": "2d",
+   "notes": ""
+  },
+  "Shavronne's Pace": {
+   "section": "Boots",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Sin Trek": {
+   "section": "Boots",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Skyforth": {
+   "section": "Boots",
+   "tier": 2,
+   "tier_raw": "2d",
+   "notes": ""
+  },
+  "Stormcharger": {
+   "section": "Boots",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Sundance": {
+   "section": "Boots",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "The Blood Dance": {
+   "section": "Boots",
+   "tier": 3,
+   "tier_raw": "3d",
+   "notes": ""
+  },
+  "Three-step Assault": {
+   "section": "Boots",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Torchoak Step": {
+   "section": "Boots",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Veruso's Ambition": {
+   "section": "Boots",
+   "tier": 4,
+   "tier_raw": "4d",
+   "notes": ""
+  },
+  "Victario's Flight": {
+   "section": "Boots",
+   "tier": 4,
+   "tier_raw": "4d",
+   "notes": ""
+  },
+  "Wake of Destruction": {
+   "section": "Boots",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Wanderlust": {
+   "section": "Boots",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Windscream": {
+   "section": "Boots",
+   "tier": 3,
+   "tier_raw": "3d",
+   "notes": ""
+  },
+  "Wondertrap": {
+   "section": "Boots",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Ambu's Charge": {
+   "section": "Body Armours",
+   "tier": 4,
+   "tier_raw": "4d",
+   "notes": ""
+  },
+  "Ashrend": {
+   "section": "Body Armours",
+   "tier": 4,
+   "tier_raw": "4d",
+   "notes": ""
+  },
+  "Belly of the Beast": {
+   "section": "Body Armours",
+   "tier": 3,
+   "tier_raw": "3d",
+   "notes": ""
+  },
+  "Bloodbond": {
+   "section": "Body Armours",
+   "tier": 4,
+   "tier_raw": "4d",
+   "notes": ""
+  },
+  "Blunderbore": {
+   "section": "Body Armours",
+   "tier": 3,
+   "tier_raw": "3d",
+   "notes": ""
+  },
+  "Bramblejack": {
+   "section": "Body Armours",
+   "tier": 4,
+   "tier_raw": "4d",
+   "notes": ""
+  },
+  "Briskwrap": {
+   "section": "Body Armours",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Bronn's Lithe": {
+   "section": "Body Armours",
+   "tier": 4,
+   "tier_raw": "4d",
+   "notes": ""
+  },
+  "Carcass Jack": {
+   "section": "Body Armours",
+   "tier": 3,
+   "tier_raw": "3d",
+   "notes": ""
+  },
+  "Chains of Command": {
+   "section": "Body Armours",
+   "tier": 3,
+   "tier_raw": "3d",
+   "notes": ""
+  },
+  "Cherrubim's Maleficence": {
+   "section": "Body Armours",
+   "tier": 4,
+   "tier_raw": "4d",
+   "notes": ""
+  },
+  "Cloak of Defiance": {
+   "section": "Body Armours",
+   "tier": 2,
+   "tier_raw": "2d",
+   "notes": ""
+  },
+  "Cloak of Flame": {
+   "section": "Body Armours",
+   "tier": 3,
+   "tier_raw": "3d",
+   "notes": ""
+  },
+  "Cospri's Will": {
+   "section": "Body Armours",
+   "tier": 3,
+   "tier_raw": "3d",
+   "notes": ""
+  },
+  "Daresso's Defiance": {
+   "section": "Body Armours",
+   "tier": 3,
+   "tier_raw": "3d",
+   "notes": ""
+  },
+  "Death's Oath": {
+   "section": "Body Armours",
+   "tier": 3,
+   "tier_raw": "3d",
+   "notes": ""
+  },
+  "Dendrobate": {
+   "section": "Body Armours",
+   "tier": 4,
+   "tier_raw": "4d",
+   "notes": ""
+  },
+  "Dialla's Malefaction": {
+   "section": "Body Armours",
+   "tier": 1,
+   "tier_raw": "1d",
+   "notes": ""
+  },
+  "Doedre's Skin": {
+   "section": "Body Armours",
+   "tier": 2,
+   "tier_raw": "2d",
+   "notes": ""
+  },
+  "Doryani's Prototype": {
+   "section": "Body Armours",
+   "tier": 2,
+   "tier_raw": "2d",
+   "notes": ""
+  },
+  "Fleshcrafter": {
+   "section": "Body Armours",
+   "tier": 2,
+   "tier_raw": "2d",
+   "notes": ""
+  },
+  "Foxshade": {
+   "section": "Body Armours",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Geofri's Sanctuary": {
+   "section": "Body Armours",
+   "tier": 4,
+   "tier_raw": "4d",
+   "notes": ""
+  },
+  "Ghostwrithe": {
+   "section": "Body Armours",
+   "tier": 4,
+   "tier_raw": "4d",
+   "notes": ""
+  },
+  "Greed's Embrace": {
+   "section": "Body Armours",
+   "tier": 4,
+   "tier_raw": "4d",
+   "notes": ""
+  },
+  "Gruthkul's Pelt": {
+   "section": "Body Armours",
+   "tier": 1,
+   "tier_raw": "1d",
+   "notes": ""
+  },
+  "Hyrri's Ire": {
+   "section": "Body Armours",
+   "tier": 2,
+   "tier_raw": "2d",
+   "notes": ""
+  },
+  "Icetomb": {
+   "section": "Body Armours",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Incandescent Heart": {
+   "section": "Body Armours",
+   "tier": 3,
+   "tier_raw": "3d",
+   "notes": ""
+  },
+  "Infernal Mantle": {
+   "section": "Body Armours",
+   "tier": 3,
+   "tier_raw": "3d",
+   "notes": ""
+  },
+  "Inpulsa's Broken Heart": {
+   "section": "Body Armours",
+   "tier": 2,
+   "tier_raw": "2d",
+   "notes": ""
+  },
+  "Kaom's Heart": {
+   "section": "Body Armours",
+   "tier": 2,
+   "tier_raw": "2d",
+   "notes": ""
+  },
+  "Kingsguard": {
+   "section": "Body Armours",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Kintsugi": {
+   "section": "Body Armours",
+   "tier": 2,
+   "tier_raw": "2d",
+   "notes": ""
+  },
+  "Lightbane Raiment": {
+   "section": "Body Armours",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Lightning Coil": {
+   "section": "Body Armours",
+   "tier": 3,
+   "tier_raw": "3d",
+   "notes": ""
+  },
+  "Lioneye's Vision": {
+   "section": "Body Armours",
+   "tier": 4,
+   "tier_raw": "4d",
+   "notes": ""
+  },
+  "Perfidy": {
+   "section": "Body Armours",
+   "tier": 3,
+   "tier_raw": "3d",
+   "notes": ""
+  },
+  "Pragmatism": {
+   "section": "Body Armours",
+   "tier": null,
+   "tier_raw": "",
+   "notes": "Temporarily 2 during 3.24"
+  },
+  "Queen of the Forest": {
+   "section": "Body Armours",
+   "tier": 3,
+   "tier_raw": "3d",
+   "notes": ""
+  },
+  "Rigwald's Hunt": {
+   "section": "Body Armours",
+   "tier": 2,
+   "tier_raw": "2u",
+   "notes": ""
+  },
+  "Shavronne's Wrappings": {
+   "section": "Body Armours",
+   "tier": 2,
+   "tier_raw": "2d",
+   "notes": ""
+  },
+  "Solaris Lorica": {
+   "section": "Body Armours",
+   "tier": 4,
+   "tier_raw": "4d",
+   "notes": ""
+  },
+  "Soul Mantle": {
+   "section": "Body Armours",
+   "tier": 4,
+   "tier_raw": "4d",
+   "notes": ""
+  },
+  "Tabula Rasa": {
+   "section": "Body Armours",
+   "tier": 3,
+   "tier_raw": "3d",
+   "notes": ""
+  },
+  "The Beast Fur Shawl": {
+   "section": "Body Armours",
+   "tier": 4,
+   "tier_raw": "4d",
+   "notes": ""
+  },
+  "The Brass Dome": {
+   "section": "Body Armours",
+   "tier": 2,
+   "tier_raw": "2d",
+   "notes": ""
+  },
+  "The Coming Calamity": {
+   "section": "Body Armours",
+   "tier": 4,
+   "tier_raw": "4d",
+   "notes": ""
+  },
+  "The Covenant": {
+   "section": "Body Armours",
+   "tier": 2,
+   "tier_raw": "2d",
+   "notes": ""
+  },
+  "The Fourth Vow": {
+   "section": "Body Armours",
+   "tier": 2,
+   "tier_raw": "2d",
+   "notes": ""
+  },
+  "The Iron Fortress": {
+   "section": "Body Armours",
+   "tier": 2,
+   "tier_raw": "2d",
+   "notes": ""
+  },
+  "The Ivory Tower": {
+   "section": "Body Armours",
+   "tier": 3,
+   "tier_raw": "3d",
+   "notes": ""
+  },
+  "The Rat Cage": {
+   "section": "Body Armours",
+   "tier": 3,
+   "tier_raw": "3d",
+   "notes": ""
+  },
+  "The Restless Ward": {
+   "section": "Body Armours",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Thousand Ribbons": {
+   "section": "Body Armours",
+   "tier": 3,
+   "tier_raw": "3d",
+   "notes": ""
+  },
+  "Tinkerskin": {
+   "section": "Body Armours",
+   "tier": 3,
+   "tier_raw": "3d",
+   "notes": ""
+  },
+  "Victario's Influence": {
+   "section": "Body Armours",
+   "tier": 4,
+   "tier_raw": "4d",
+   "notes": ""
+  },
+  "Utula's Hunger": {
+   "section": "Body Armours",
+   "tier": 2,
+   "tier_raw": "2d",
+   "notes": ""
+  },
+  "Vis Mortis": {
+   "section": "Body Armours",
+   "tier": 4,
+   "tier_raw": "4d",
+   "notes": ""
+  },
+  "Voll's Protector": {
+   "section": "Body Armours",
+   "tier": 3,
+   "tier_raw": "3d",
+   "notes": ""
+  },
+  "Yriel's Fostering": {
+   "section": "Body Armours",
+   "tier": 3,
+   "tier_raw": "3d",
+   "notes": ""
+  },
+  "Zahndethus' Cassock": {
+   "section": "Body Armours",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Ascent From Flesh": {
+   "section": "Belts",
+   "tier": 4,
+   "tier_raw": "4d",
+   "notes": ""
+  },
+  "Auxium": {
+   "section": "Belts",
+   "tier": 3,
+   "tier_raw": "3d",
+   "notes": ""
+  },
+  "Bated Breath": {
+   "section": "Belts",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Belt of the Deceiver": {
+   "section": "Belts",
+   "tier": 4,
+   "tier_raw": "4d",
+   "notes": ""
+  },
+  "Binds of Bloody Vengeance": {
+   "section": "Belts",
+   "tier": 2,
+   "tier_raw": "2u",
+   "notes": "Mercenary unique in 3.29"
+  },
+  "Bisco's Leash": {
+   "section": "Belts",
+   "tier": 3,
+   "tier_raw": "3d",
+   "notes": ""
+  },
+  "Bound Fate": {
+   "section": "Belts",
+   "tier": 3,
+   "tier_raw": "3d",
+   "notes": ""
+  },
+  "Ceinture of Benevolence": {
+   "section": "Belts",
+   "tier": 4,
+   "tier_raw": "4d",
+   "notes": ""
+  },
+  "Chain of Endurance": {
+   "section": "Belts",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Dyadian Dawn": {
+   "section": "Belts",
+   "tier": 3,
+   "tier_raw": "3d",
+   "notes": ""
+  },
+  "Faminebind": {
+   "section": "Belts",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Feastbind": {
+   "section": "Belts",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Gluttony": {
+   "section": "Belts",
+   "tier": 4,
+   "tier_raw": "4d",
+   "notes": ""
+  },
+  "Headhunter": {
+   "section": "Belts",
+   "tier": 0,
+   "tier_raw": "0d",
+   "notes": ""
+  },
+  "Immortal Flesh": {
+   "section": "Belts",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Kaom's Binding": {
+   "section": "Belts",
+   "tier": 3,
+   "tier_raw": "3d",
+   "notes": ""
+  },
+  "Leash of Oblation": {
+   "section": "Belts",
+   "tier": 3,
+   "tier_raw": "3d",
+   "notes": ""
+  },
+  "Mageblood": {
+   "section": "Belts",
+   "tier": 0,
+   "tier_raw": "0d",
+   "notes": ""
+  },
+  "Maligaro's Restraint": {
+   "section": "Belts",
+   "tier": 4,
+   "tier_raw": "4d",
+   "notes": ""
+  },
+  "Meginord's Girdle": {
+   "section": "Belts",
+   "tier": 4,
+   "tier_raw": "4d",
+   "notes": ""
+  },
+  "Mother's Embrace": {
+   "section": "Belts",
+   "tier": 3,
+   "tier_raw": "3d",
+   "notes": ""
+  },
+  "Nevalius Inheritance": {
+   "section": "Belts",
+   "tier": 3,
+   "tier_raw": "3d",
+   "notes": ""
+  },
+  "Perandus Blazon": {
+   "section": "Belts",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Perseverance": {
+   "section": "Belts",
+   "tier": 4,
+   "tier_raw": "4d",
+   "notes": ""
+  },
+  "Prismweave": {
+   "section": "Belts",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Pyroshock Clasp": {
+   "section": "Belts",
+   "tier": 4,
+   "tier_raw": "4d",
+   "notes": ""
+  },
+  "Ryslatha's Coil": {
+   "section": "Belts",
+   "tier": 1,
+   "tier_raw": "1d",
+   "notes": ""
+  },
+  "Siegebreaker": {
+   "section": "Belts",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Soul Tether": {
+   "section": "Belts",
+   "tier": 3,
+   "tier_raw": "3d",
+   "notes": ""
+  },
+  "Soulthirst": {
+   "section": "Belts",
+   "tier": 3,
+   "tier_raw": "3d",
+   "notes": ""
+  },
+  "Sunblast": {
+   "section": "Belts",
+   "tier": 2,
+   "tier_raw": "2d",
+   "notes": ""
+  },
+  "The Druggery": {
+   "section": "Belts",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "The Magnate": {
+   "section": "Belts",
+   "tier": 2,
+   "tier_raw": "2d",
+   "notes": ""
+  },
+  "Umbilicus Immortalis": {
+   "section": "Belts",
+   "tier": 3,
+   "tier_raw": "3d",
+   "notes": ""
+  },
+  "Wurm's Molt": {
+   "section": "Belts",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Araku Tiki": {
+   "section": "Amulets",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Astramentis": {
+   "section": "Amulets",
+   "tier": 2,
+   "tier_raw": "2d",
+   "notes": ""
+  },
+  "Atziri's Foible": {
+   "section": "Amulets",
+   "tier": 2,
+   "tier_raw": "2d",
+   "notes": ""
+  },
+  "Badge of the Brotherhood": {
+   "section": "Amulets",
+   "tier": 2,
+   "tier_raw": "2d",
+   "notes": ""
+  },
+  "Bisco's Collar": {
+   "section": "Amulets",
+   "tier": 3,
+   "tier_raw": "3",
+   "notes": "Drop disabled in 3.25."
+  },
+  "Blightwell": {
+   "section": "Amulets",
+   "tier": 4,
+   "tier_raw": "4d",
+   "notes": "Bestiary unique in 3.29"
+  },
+  "Bloodgrip": {
+   "section": "Amulets",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Bloodsoaked Medallion": {
+   "section": "Amulets",
+   "tier": 4,
+   "tier_raw": "4d",
+   "notes": ""
+  },
+  "Carnage Heart": {
+   "section": "Amulets",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Daresso's Salute": {
+   "section": "Amulets",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Defiance of Destiny": {
+   "section": "Amulets",
+   "tier": 0,
+   "tier_raw": "0d",
+   "notes": ""
+  },
+  "Doedre's Tongue": {
+   "section": "Amulets",
+   "tier": 3,
+   "tier_raw": "3d",
+   "notes": ""
+  },
+  "Extractor Mentis": {
+   "section": "Amulets",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Eye of Chayula": {
+   "section": "Amulets",
+   "tier": 3,
+   "tier_raw": "3d",
+   "notes": ""
+  },
+  "Eye of Innocence": {
+   "section": "Amulets",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Eyes of the Greatwolf": {
+   "section": "Amulets",
+   "tier": 2,
+   "tier_raw": "2d",
+   "notes": "Bestiary unique in 3.29"
+  },
+  "Fury Valve": {
+   "section": "Amulets",
+   "tier": 3,
+   "tier_raw": "3d",
+   "notes": ""
+  },
+  "Gloomfang": {
+   "section": "Amulets",
+   "tier": 3,
+   "tier_raw": "3d",
+   "notes": ""
+  },
+  "Hinekora's Sight": {
+   "section": "Amulets",
+   "tier": 3,
+   "tier_raw": "3d",
+   "notes": ""
+  },
+  "Hyrri's Truth": {
+   "section": "Amulets",
+   "tier": 4,
+   "tier_raw": "4d",
+   "notes": ""
+  },
+  "Ikiaho's Promise": {
+   "section": "Amulets",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Karui Ward": {
+   "section": "Amulets",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Maligaro's Cruelty": {
+   "section": "Amulets",
+   "tier": 4,
+   "tier_raw": "4d",
+   "notes": ""
+  },
+  "Marylene's Fallacy": {
+   "section": "Amulets",
+   "tier": 3,
+   "tier_raw": "3d",
+   "notes": ""
+  },
+  "Natural Hierarchy": {
+   "section": "Amulets",
+   "tier": 4,
+   "tier_raw": "4d",
+   "notes": "Bestiary unique in 3.29"
+  },
+  "Night's Hold": {
+   "section": "Amulets",
+   "tier": 4,
+   "tier_raw": "4d",
+   "notes": "Bestiary unique in 3.29"
+  },
+  "Perquil's Toe": {
+   "section": "Amulets",
+   "tier": 4,
+   "tier_raw": "4d",
+   "notes": ""
+  },
+  "Rashkaldor's Patience": {
+   "section": "Amulets",
+   "tier": 3,
+   "tier_raw": "3d",
+   "notes": ""
+  },
+  "Replica Dragonfang's Flight": {
+   "section": "Amulets",
+   "tier": 3,
+   "tier_raw": "3d",
+   "notes": ""
+  },
+  "Retaliation Charm": {
+   "section": "Amulets",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Rigwald's Curse": {
+   "section": "Amulets",
+   "tier": 3,
+   "tier_raw": "3d",
+   "notes": "Bestiary unique in 3.29"
+  },
+  "Shaper's Seed": {
+   "section": "Amulets",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Sidhebreath": {
+   "section": "Amulets",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Stone of Lazhwar": {
+   "section": "Amulets",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Tainted Pact": {
+   "section": "Amulets",
+   "tier": 3,
+   "tier_raw": "3d",
+   "notes": ""
+  },
+  "Tavukai": {
+   "section": "Amulets",
+   "tier": 3,
+   "tier_raw": "3d",
+   "notes": ""
+  },
+  "Tear of Purity": {
+   "section": "Amulets",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "The Anvil": {
+   "section": "Amulets",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "The Ascetic": {
+   "section": "Amulets",
+   "tier": 3,
+   "tier_raw": "3",
+   "notes": "Drop disabled in 3.25."
+  },
+  "The Aylardex": {
+   "section": "Amulets",
+   "tier": 4,
+   "tier_raw": "4d",
+   "notes": ""
+  },
+  "The Ephemeral Bond": {
+   "section": "Amulets",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "The Ignomon": {
+   "section": "Amulets",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "The Jinxed Juju": {
+   "section": "Amulets",
+   "tier": 3,
+   "tier_raw": "3d",
+   "notes": ""
+  },
+  "The Primordial Chain": {
+   "section": "Amulets",
+   "tier": 4,
+   "tier_raw": "4d",
+   "notes": ""
+  },
+  "The Torrent's Reclamation": {
+   "section": "Amulets",
+   "tier": null,
+   "tier_raw": "",
+   "notes": "Core drop pool in 3.28"
+  },
+  "The Untouched Soul": {
+   "section": "Amulets",
+   "tier": null,
+   "tier_raw": "",
+   "notes": "Temporarily 2 during 3.24"
+  },
+  "Ungil's Harmony": {
+   "section": "Amulets",
+   "tier": 3,
+   "tier_raw": "3d",
+   "notes": ""
+  },
+  "Victario's Acuity": {
+   "section": "Amulets",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Voll's Devotion": {
+   "section": "Amulets",
+   "tier": 2,
+   "tier_raw": "2d",
+   "notes": ""
+  },
+  "Warped Timepiece": {
+   "section": "Amulets",
+   "tier": 4,
+   "tier_raw": "4d",
+   "notes": ""
+  },
+  "Willowgift": {
+   "section": "Amulets",
+   "tier": 4,
+   "tier_raw": "4d",
+   "notes": ""
+  },
+  "Winterheart": {
+   "section": "Amulets",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Yoke of Suffering": {
+   "section": "Amulets",
+   "tier": 3,
+   "tier_raw": "3",
+   "notes": "A boss drop since 3.24."
+  },
+  "Anathema": {
+   "section": "Rings",
+   "tier": 2,
+   "tier_raw": "2d",
+   "notes": ""
+  },
+  "Andvarius": {
+   "section": "Rings",
+   "tier": 3,
+   "tier_raw": "3d",
+   "notes": ""
+  },
+  "Astral Projector": {
+   "section": "Rings",
+   "tier": 2,
+   "tier_raw": "2d",
+   "notes": ""
+  },
+  "Berek's Grip": {
+   "section": "Rings",
+   "tier": 4,
+   "tier_raw": "4d",
+   "notes": ""
+  },
+  "Berek's Pass": {
+   "section": "Rings",
+   "tier": 4,
+   "tier_raw": "4d",
+   "notes": ""
+  },
+  "Berek's Respite": {
+   "section": "Rings",
+   "tier": 3,
+   "tier_raw": "3d",
+   "notes": ""
+  },
+  "Blackheart": {
+   "section": "Rings",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Call of the Brotherhood": {
+   "section": "Rings",
+   "tier": 3,
+   "tier_raw": "3d",
+   "notes": ""
+  },
+  "Death Rush": {
+   "section": "Rings",
+   "tier": 2,
+   "tier_raw": "2d",
+   "notes": ""
+  },
+  "Doedre's Damning": {
+   "section": "Rings",
+   "tier": 4,
+   "tier_raw": "4d",
+   "notes": ""
+  },
+  "Dream Fragments": {
+   "section": "Rings",
+   "tier": 3,
+   "tier_raw": "3d",
+   "notes": ""
+  },
+  "Emberwake": {
+   "section": "Rings",
+   "tier": 3,
+   "tier_raw": "3d",
+   "notes": ""
+  },
+  "Essence Worm": {
+   "section": "Rings",
+   "tier": 4,
+   "tier_raw": "4d",
+   "notes": ""
+  },
+  "Gifts from Above": {
+   "section": "Rings",
+   "tier": 4,
+   "tier_raw": "4d",
+   "notes": ""
+  },
+  "Grattus Signet": {
+   "section": "Rings",
+   "tier": 4,
+   "tier_raw": "4d",
+   "notes": ""
+  },
+  "Heartbound Loop": {
+   "section": "Rings",
+   "tier": 4,
+   "tier_raw": "4d",
+   "notes": ""
+  },
+  "Icefang Orbit": {
+   "section": "Rings",
+   "tier": 4,
+   "tier_raw": "4d",
+   "notes": ""
+  },
+  "Kalandra's Touch": {
+   "section": "Rings",
+   "tier": 0,
+   "tier_raw": "0d",
+   "notes": ""
+  },
+  "Kaom's Sign": {
+   "section": "Rings",
+   "tier": 4,
+   "tier_raw": "4d",
+   "notes": ""
+  },
+  "Kikazaru": {
+   "section": "Rings",
+   "tier": 4,
+   "tier_raw": "4d",
+   "notes": ""
+  },
+  "Le Heup of All": {
+   "section": "Rings",
+   "tier": 4,
+   "tier_raw": "4d",
+   "notes": ""
+  },
+  "Lori's Lantern": {
+   "section": "Rings",
+   "tier": 4,
+   "tier_raw": "4d",
+   "notes": ""
+  },
+  "Malachai's Artifice": {
+   "section": "Rings",
+   "tier": 4,
+   "tier_raw": "4d",
+   "notes": ""
+  },
+  "Mark of Submission": {
+   "section": "Rings",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Ming's Heart": {
+   "section": "Rings",
+   "tier": 3,
+   "tier_raw": "3d",
+   "notes": ""
+  },
+  "Mokou's Embrace": {
+   "section": "Rings",
+   "tier": 4,
+   "tier_raw": "4d",
+   "notes": ""
+  },
+  "Ngamahu's Sign": {
+   "section": "Rings",
+   "tier": 4,
+   "tier_raw": "4d",
+   "notes": ""
+  },
+  "Perandus Signet": {
+   "section": "Rings",
+   "tier": 3,
+   "tier_raw": "3d",
+   "notes": ""
+  },
+  "Praxis": {
+   "section": "Rings",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Profane Proxy": {
+   "section": "Rings",
+   "tier": 3,
+   "tier_raw": "3d",
+   "notes": ""
+  },
+  "Prospero's Protection": {
+   "section": "Rings",
+   "tier": 4,
+   "tier_raw": "4u",
+   "notes": ""
+  },
+  "Pyre": {
+   "section": "Rings",
+   "tier": 3,
+   "tier_raw": "3d",
+   "notes": ""
+  },
+  "Rigwald's Crest": {
+   "section": "Rings",
+   "tier": 3,
+   "tier_raw": "3d",
+   "notes": ""
+  },
+  "Romira's Banquet": {
+   "section": "Rings",
+   "tier": 4,
+   "tier_raw": "4d",
+   "notes": ""
+  },
+  "Shavronne's Revelation": {
+   "section": "Rings",
+   "tier": 2,
+   "tier_raw": "2d",
+   "notes": ""
+  },
+  "Sibyl's Lament": {
+   "section": "Rings",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Snakepit": {
+   "section": "Rings",
+   "tier": 3,
+   "tier_raw": "3d",
+   "notes": ""
+  },
+  "Soulbound": {
+   "section": "Rings",
+   "tier": 4,
+   "tier_raw": "4d",
+   "notes": ""
+  },
+  "Squirming Terror": {
+   "section": "Rings",
+   "tier": 3,
+   "tier_raw": "3u",
+   "notes": ""
+  },
+  "Storm Secret": {
+   "section": "Rings",
+   "tier": 4,
+   "tier_raw": "4d",
+   "notes": ""
+  },
+  "Stormfire": {
+   "section": "Rings",
+   "tier": 4,
+   "tier_raw": "4d",
+   "notes": ""
+  },
+  "Tasalio's Sign": {
+   "section": "Rings",
+   "tier": 4,
+   "tier_raw": "4d",
+   "notes": ""
+  },
+  "Tawhanuku's Timing": {
+   "section": "Rings",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "The Highwayman": {
+   "section": "Rings",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "The Hungry Loop": {
+   "section": "Rings",
+   "tier": 3,
+   "tier_raw": "3d",
+   "notes": ""
+  },
+  "The Warden's Brand": {
+   "section": "Rings",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Thief's Torment": {
+   "section": "Rings",
+   "tier": 4,
+   "tier_raw": "4d",
+   "notes": ""
+  },
+  "Timeclasp": {
+   "section": "Rings",
+   "tier": 4,
+   "tier_raw": "4d",
+   "notes": ""
+  },
+  "Valako's Sign": {
+   "section": "Rings",
+   "tier": 4,
+   "tier_raw": "4d",
+   "notes": ""
+  },
+  "Valyrium": {
+   "section": "Rings",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Venopuncture": {
+   "section": "Rings",
+   "tier": 4,
+   "tier_raw": "4d",
+   "notes": ""
+  },
+  "Ventor's Gamble": {
+   "section": "Rings",
+   "tier": 4,
+   "tier_raw": "4d",
+   "notes": ""
+  },
+  "Voideye": {
+   "section": "Rings",
+   "tier": 4,
+   "tier_raw": "4d",
+   "notes": ""
+  },
+  "Warrior's Legacy": {
+   "section": "Rings",
+   "tier": 2,
+   "tier_raw": "2d",
+   "notes": ""
+  },
+  "Winterweave": {
+   "section": "Rings",
+   "tier": 3,
+   "tier_raw": "3d",
+   "notes": ""
+  },
+  "Blood of the Karui": {
+   "section": "Flasks",
+   "tier": 4,
+   "tier_raw": "4d",
+   "notes": ""
+  },
+  "Coralito's Signature": {
+   "section": "Flasks",
+   "tier": 4,
+   "tier_raw": "4d",
+   "notes": ""
+  },
+  "Divination Distillate": {
+   "section": "Flasks",
+   "tier": 3,
+   "tier_raw": "3d",
+   "notes": ""
+  },
+  "Doedre's Elixir": {
+   "section": "Flasks",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Forbidden Taste": {
+   "section": "Flasks",
+   "tier": 4,
+   "tier_raw": "4d",
+   "notes": ""
+  },
+  "Kiara's Determination": {
+   "section": "Flasks",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Lavianga's Spirit": {
+   "section": "Flasks",
+   "tier": 4,
+   "tier_raw": "4d",
+   "notes": ""
+  },
+  "Lion's Roar": {
+   "section": "Flasks",
+   "tier": 3,
+   "tier_raw": "3d",
+   "notes": ""
+  },
+  "Rotgut": {
+   "section": "Flasks",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Rumi's Concoction": {
+   "section": "Flasks",
+   "tier": 3,
+   "tier_raw": "3d",
+   "notes": ""
+  },
+  "Sin's Rebirth": {
+   "section": "Flasks",
+   "tier": 1,
+   "tier_raw": "1d",
+   "notes": ""
+  },
+  "Taste of Hate": {
+   "section": "Flasks",
+   "tier": 2,
+   "tier_raw": "2d",
+   "notes": ""
+  },
+  "The Overflowing Chalice": {
+   "section": "Flasks",
+   "tier": 4,
+   "tier_raw": "4d",
+   "notes": ""
+  },
+  "The Sorrow of the Divine": {
+   "section": "Flasks",
+   "tier": 4,
+   "tier_raw": "4d",
+   "notes": ""
+  },
+  "The Wise Oak": {
+   "section": "Flasks",
+   "tier": 3,
+   "tier_raw": "3d",
+   "notes": ""
+  },
+  "The Writhing Jar": {
+   "section": "Flasks",
+   "tier": 4,
+   "tier_raw": "4d",
+   "notes": ""
+  },
+  "Witchfire Brew": {
+   "section": "Flasks",
+   "tier": 3,
+   "tier_raw": "3d",
+   "notes": ""
+  },
+  "Zerphi's Last Breath": {
+   "section": "Flasks",
+   "tier": 1,
+   "tier_raw": "1d",
+   "notes": ""
+  },
+  "Grasping Nightshade": {
+   "section": "Tinctures",
+   "tier": 3,
+   "tier_raw": "3d",
+   "notes": ""
+  },
+  "Mightblood Ire": {
+   "section": "Tinctures",
+   "tier": 3,
+   "tier_raw": "3d",
+   "notes": ""
+  },
+  "Sap of the Seasons": {
+   "section": "Tinctures",
+   "tier": 3,
+   "tier_raw": "3d",
+   "notes": ""
+  },
+  "The Battle Within": {
+   "section": "Tinctures",
+   "tier": 3,
+   "tier_raw": "3d",
+   "notes": ""
+  },
+  "Wildfire Phloem": {
+   "section": "Tinctures",
+   "tier": 3,
+   "tier_raw": "3d",
+   "notes": ""
+  },
+  "Ancestral Vision": {
+   "section": "Post 3.20 Jewels",
+   "tier": 2,
+   "tier_raw": "2d",
+   "notes": ""
+  },
+  "Bloodnotch": {
+   "section": "Post 3.20 Jewels",
+   "tier": 2,
+   "tier_raw": "2d",
+   "notes": ""
+  },
+  "Dead Reckoning": {
+   "section": "Post 3.20 Jewels",
+   "tier": 2,
+   "tier_raw": "2d",
+   "notes": ""
+  },
+  "Firesong": {
+   "section": "Post 3.20 Jewels",
+   "tier": 2,
+   "tier_raw": "2d",
+   "notes": ""
+  },
+  "Immutable Force": {
+   "section": "Post 3.20 Jewels",
+   "tier": 2,
+   "tier_raw": "2d",
+   "notes": ""
+  },
+  "Inspired Learning": {
+   "section": "Post 3.20 Jewels",
+   "tier": 2,
+   "tier_raw": "2d",
+   "notes": ""
+  },
+  "Intuitive Leap": {
+   "section": "Post 3.20 Jewels",
+   "tier": 2,
+   "tier_raw": "2d",
+   "notes": ""
+  },
+  "Lioneye's Fall": {
+   "section": "Post 3.20 Jewels",
+   "tier": 2,
+   "tier_raw": "2d",
+   "notes": ""
+  },
+  "Might of the Meek": {
+   "section": "Post 3.20 Jewels",
+   "tier": 2,
+   "tier_raw": "2d",
+   "notes": ""
+  },
+  "Pure Talent": {
+   "section": "Post 3.20 Jewels",
+   "tier": 2,
+   "tier_raw": "2d",
+   "notes": ""
+  },
+  "Stormshroud": {
+   "section": "Post 3.20 Jewels",
+   "tier": 2,
+   "tier_raw": "2d",
+   "notes": ""
+  },
+  "Unending Hunger": {
+   "section": "Post 3.20 Jewels",
+   "tier": 2,
+   "tier_raw": "2d",
+   "notes": ""
+  },
+  "Unnatural Instinct": {
+   "section": "Post 3.20 Jewels",
+   "tier": 2,
+   "tier_raw": "2d",
+   "notes": ""
+  },
+  "Witchbane": {
+   "section": "Post 3.20 Jewels",
+   "tier": 2,
+   "tier_raw": "2d",
+   "notes": ""
+  },
+  "Acton's Nightmare": {
+   "section": "Maps",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Caer Blaidd, Wolfpack's Den": {
+   "section": "Maps",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Death and Taxes": {
+   "section": "Maps",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Hall of Grandmasters": {
+   "section": "Maps",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Hallowed Ground": {
+   "section": "Maps",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Maelström of Chaos": {
+   "section": "Maps",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Mao Kun": {
+   "section": "Maps",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Oba's Cursed Trove": {
+   "section": "Maps",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Olmec's Sanctum": {
+   "section": "Maps",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Pillars of Arun": {
+   "section": "Maps",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Poorjoy's Asylum": {
+   "section": "Maps",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "The Putrid Cloister": {
+   "section": "Maps",
+   "tier": 3,
+   "tier_raw": "3u",
+   "notes": ""
+  },
+  "The Coward's Trial": {
+   "section": "Maps",
+   "tier": 3,
+   "tier_raw": "3u",
+   "notes": ""
+  },
+  "The Twilight Temple": {
+   "section": "Maps",
+   "tier": 3,
+   "tier_raw": "3u",
+   "notes": ""
+  },
+  "Vaults of Atziri": {
+   "section": "Maps",
+   "tier": 3,
+   "tier_raw": "3u",
+   "notes": ""
+  },
+  "Whakawairua Tuahu": {
+   "section": "Maps",
+   "tier": 5,
+   "tier_raw": "5d",
+   "notes": ""
+  },
+  "Reefbane": {
+   "section": "Fishing Rods",
+   "tier": 0,
+   "tier_raw": "0",
+   "notes": ""
+  },
+  "Song of the Sirens": {
+   "section": "Fishing Rods",
+   "tier": 2,
+   "tier_raw": "2d",
+   "notes": ""
+  },
+  "Arbitrary Tenets": {
+   "section": "Idols",
+   "tier": 4,
+   "tier_raw": "4r",
+   "notes": ""
+  },
+  "Black Thumb": {
+   "section": "Idols",
+   "tier": 5,
+   "tier_raw": "5r",
+   "notes": ""
+  },
+  "Bold Undertakings": {
+   "section": "Idols",
+   "tier": 4,
+   "tier_raw": "4r",
+   "notes": ""
+  },
+  "Cassia's Pride": {
+   "section": "Idols",
+   "tier": 4,
+   "tier_raw": "4r",
+   "notes": ""
+  },
+  "Crop Rotation": {
+   "section": "Idols",
+   "tier": 4,
+   "tier_raw": "4r",
+   "notes": ""
+  },
+  "Crystallised Power": {
+   "section": "Idols",
+   "tier": 4,
+   "tier_raw": "4r",
+   "notes": ""
+  },
+  "Dance of Destruction": {
+   "section": "Idols",
+   "tier": 4,
+   "tier_raw": "4r",
+   "notes": ""
+  },
+  "Destructive Play": {
+   "section": "Idols",
+   "tier": 4,
+   "tier_raw": "4r",
+   "notes": ""
+  },
+  "Dimensional Barrier": {
+   "section": "Idols",
+   "tier": 5,
+   "tier_raw": "5r",
+   "notes": ""
+  },
+  "Eldritch Gaze": {
+   "section": "Idols",
+   "tier": 4,
+   "tier_raw": "4r",
+   "notes": ""
+  },
+  "Endless Tide": {
+   "section": "Idols",
+   "tier": 4,
+   "tier_raw": "4r",
+   "notes": ""
+  },
+  "Extreme Archaeology": {
+   "section": "Idols",
+   "tier": 4,
+   "tier_raw": "4r",
+   "notes": ""
+  },
+  "Fungal Remission": {
+   "section": "Idols",
+   "tier": 5,
+   "tier_raw": "5r",
+   "notes": ""
+  },
+  "Gruelling Gauntlet": {
+   "section": "Idols",
+   "tier": 4,
+   "tier_raw": "4r",
+   "notes": ""
+  },
+  "Immutable Dogma": {
+   "section": "Idols",
+   "tier": 4,
+   "tier_raw": "4r",
+   "notes": ""
+  },
+  "Loved by the Sun": {
+   "section": "Idols",
+   "tier": 5,
+   "tier_raw": "5r",
+   "notes": ""
+  },
+  "Lucid Dreams": {
+   "section": "Idols",
+   "tier": 4,
+   "tier_raw": "4r",
+   "notes": ""
+  },
+  "Meticulous Appraiser": {
+   "section": "Idols",
+   "tier": 4,
+   "tier_raw": "4r",
+   "notes": ""
+  },
+  "Ominous Silence": {
+   "section": "Idols",
+   "tier": 5,
+   "tier_raw": "5r",
+   "notes": ""
+  },
+  "Perceived Greatness": {
+   "section": "Idols",
+   "tier": 4,
+   "tier_raw": "4r",
+   "notes": ""
+  },
+  "Ruinous Wager": {
+   "section": "Idols",
+   "tier": 4,
+   "tier_raw": "4r",
+   "notes": ""
+  },
+  "Sealed Domain": {
+   "section": "Idols",
+   "tier": 5,
+   "tier_raw": "5r",
+   "notes": ""
+  },
+  "Secular Focus": {
+   "section": "Idols",
+   "tier": 5,
+   "tier_raw": "5r",
+   "notes": ""
+  },
+  "Servant of Order": {
+   "section": "Idols",
+   "tier": 5,
+   "tier_raw": "5r",
+   "notes": ""
+  },
+  "Shadow Shaping": {
+   "section": "Idols",
+   "tier": 4,
+   "tier_raw": "4r",
+   "notes": ""
+  },
+  "Singular Focus": {
+   "section": "Idols",
+   "tier": 4,
+   "tier_raw": "4r",
+   "notes": ""
+  },
+  "Smash and Grab": {
+   "section": "Idols",
+   "tier": 4,
+   "tier_raw": "4r",
+   "notes": ""
+  },
+  "Speaker of the Dead": {
+   "section": "Idols",
+   "tier": 4,
+   "tier_raw": "4r",
+   "notes": ""
+  },
+  "Straight and Narrow": {
+   "section": "Idols",
+   "tier": 5,
+   "tier_raw": "5r",
+   "notes": ""
+  },
+  "Thorough Exploration": {
+   "section": "Idols",
+   "tier": 4,
+   "tier_raw": "4r",
+   "notes": ""
+  },
+  "Timeless Conflict": {
+   "section": "Idols",
+   "tier": 4,
+   "tier_raw": "4r",
+   "notes": ""
+  },
+  "Trade Embargo": {
+   "section": "Idols",
+   "tier": 5,
+   "tier_raw": "5r",
+   "notes": ""
+  },
+  "Twist of Fate": {
+   "section": "Idols",
+   "tier": 4,
+   "tier_raw": "4r",
+   "notes": ""
+  },
+  "Twisted Wish": {
+   "section": "Idols",
+   "tier": 4,
+   "tier_raw": "4r",
+   "notes": ""
+  },
+  "Unending Nightmare": {
+   "section": "Idols",
+   "tier": 4,
+   "tier_raw": "4r",
+   "notes": ""
+  },
+  "Well Supplied": {
+   "section": "Idols",
+   "tier": 4,
+   "tier_raw": "4r",
+   "notes": ""
+  },
+  "Wellspring of Creation": {
+   "section": "Idols",
+   "tier": 4,
+   "tier_raw": "4r",
+   "notes": ""
+  },
+  "Wrath of the Cosmos": {
+   "section": "Idols",
+   "tier": 4,
+   "tier_raw": "4r",
+   "notes": ""
+  }
+ },
+ "drop_disabled": [
+  "Amplification Rod",
+  "Anatomical Knowledge",
+  "Ancient Waystones",
+  "Apparitions",
+  "Arbitrary Tenets",
+  "Asenath's Chant",
+  "Ashes of the Sun",
+  "Assassin's Haste",
+  "Atop the Atlas",
+  "Atziri's Mirror",
+  "Band of the Victor",
+  "Bisco's Collar",
+  "Black Thumb",
+  "Blood Sacrifice",
+  "Blood of Summer",
+  "Bold Undertakings",
+  "Booming Populace",
+  "Brawn",
+  "Brittle Barrier",
+  "Broadstroke",
+  "Cannibalistic Habits",
+  "Cassia's Pride",
+  "Chaber Cairn",
+  "Chains of Time",
+  "Cheap Construction",
+  "Chitus' Needle",
+  "Circle of Anguish",
+  "Circle of Fear",
+  "Circle of Guilt",
+  "Circle of Nostalgia",
+  "Circle of Regret",
+  "Clear Mind",
+  "Coated Shrapnel",
+  "Coated Weapons",
+  "Cold Steel",
+  "Collateral Damage",
+  "Combustibles",
+  "Conqueror's Efficiency",
+  "Conqueror's Longevity",
+  "Conqueror's Potency",
+  "Controlled Energy",
+  "Corona Solaris",
+  "Corrupted Energy",
+  "Cragfall",
+  "Crop Rotation",
+  "Crystal Vault",
+  "Crystallised Power",
+  "Dance of Destruction",
+  "Dark Thoughts",
+  "Death's Opus",
+  "Deidbellow",
+  "Demigod's Authority",
+  "Demigod's Beacon",
+  "Demigod's Bounty",
+  "Demigod's Dominance",
+  "Demigod's Eye",
+  "Demigod's Immortality",
+  "Demigod's Presence",
+  "Demigod's Stride",
+  "Demigod's Touch",
+  "Demigod's Triumph",
+  "Destructive Play",
+  "Dimensional Barrier",
+  "Divine Inferno",
+  "Doedre's Malevolence",
+  "Doomfletch's Prism",
+  "Dreadbeak",
+  "Dreadsurge",
+  "Duskblight",
+  "El'Abin's Visage",
+  "Eldritch Gaze",
+  "Eldritch Knowledge",
+  "Endless Misery",
+  "Endless Tide",
+  "Escalation",
+  "Extreme Archaeology",
+  "Ezomyte Hold",
+  "Fight for Survival",
+  "Fireborn",
+  "First Piece of Brutality",
+  "First Piece of Directions",
+  "First Piece of Focus",
+  "First Piece of Storms",
+  "First Piece of Time",
+  "First Piece of the Arcane",
+  "First Snow",
+  "Fleshrender",
+  "Fortified Legion",
+  "Fourth Piece of Focus",
+  "Fox's Fortune",
+  "Fragile Bloom",
+  "Fragment of Eternity",
+  "From Dust",
+  "Frostferno",
+  "Frozen Trail",
+  "Fungal Remission",
+  "Garb of the Ephemeral",
+  "Geofri's Devotion",
+  "Geofri's Legacy",
+  "Glitterdisc",
+  "Greedtrap",
+  "Growing Agony",
+  "Gruelling Gauntlet",
+  "Hair Trigger",
+  "Hazardous Research",
+  "Honoured Alliance",
+  "Hotheaded",
+  "Hrimburn",
+  "Hrimnor's Dirge",
+  "Hungry Abyss",
+  "Hyrri's Demise",
+  "Immutable Dogma",
+  "Inevitability",
+  "Infused Beachhead",
+  "Insomnia",
+  "Irresistable Temptation",
+  "Izaro's Dilemma",
+  "Izaro's Turmoil",
+  "Kaltensoul",
+  "Kaom's Way",
+  "Karui Charge",
+  "Khatal's Geyser",
+  "Khatal's Weeping",
+  "Lord of Steel",
+  "Lord of Steel",
+  "Lord of Steel",
+  "Loved by the Sun",
+  "Lucid Dreams",
+  "Malachai's Awakening",
+  "Malicious Intent",
+  "Mantra of Flames",
+  "Mantra of Force",
+  "Martial Artistry",
+  "Martyr's Crown",
+  "Mask of the Tribunal",
+  "Meticulous Appraiser",
+  "Might and Influence",
+  "Might in All Forms",
+  "Mirebough",
+  "Miser of Misery",
+  "Misinformation",
+  "Mutated Growth",
+  "Nebulis",
+  "Ngamahu Tiki",
+  "Offering to the Serpent",
+  "Omen on the Winds",
+  "Ominous Silence",
+  "Overwhelming Odds",
+  "Panquetzaliztli",
+  "Perceived Greatness",
+  "Perepiteia",
+  "Pitch Darkness",
+  "Poacher's Aim",
+  "Projected Force",
+  "Pugilist",
+  "Qotra's Hypothesis",
+  "Queen's Escape",
+  "Rapid Expansion",
+  "Realm Ender",
+  "Refiner's Bargain",
+  "Relic of the Cycle",
+  "Remnant of Empires",
+  "Replica Blood Sacrifice",
+  "Replica Cheap Construction",
+  "Replica Conqueror's Efficiency",
+  "Replica Forbidden Shako",
+  "Replica Fragile Bloom",
+  "Replica Hotheaded",
+  "Replica Pure Talent",
+  "Replica Soul Taker",
+  "Replica Unstable Payload",
+  "Restless Cycles",
+  "Ring of Blades",
+  "Rolling Flames",
+  "Rotting Legion",
+  "Ruinous Wager",
+  "Rust of Winter",
+  "Sacrificial Harvest",
+  "Sanguine Gambol",
+  "Saresh's Darkness",
+  "Scar of Fate",
+  "Screams of the Desiccated",
+  "Screams of the Desiccated",
+  "Sealed Domain",
+  "Second Piece of Brutality",
+  "Second Piece of Directions",
+  "Second Piece of Focus",
+  "Second Piece of Storms",
+  "Second Piece of Time",
+  "Second Piece of the Arcane",
+  "Secular Focus",
+  "Selfless Leadership",
+  "Serle's Masterwork",
+  "Servant of Order",
+  "Shadow Shaping",
+  "Shattered Chains",
+  "Shavronne's Gambit",
+  "Shroud of the Lightless",
+  "Silverbough",
+  "Singular Focus",
+  "Skysunder",
+  "Slivers of Providence",
+  "Smash and Grab",
+  "Solerai's Radiance",
+  "Soul's Wick",
+  "Speaker of the Dead",
+  "Specialised",
+  "Spine of the First Claimant",
+  "Spire of Stone",
+  "Spirit Guards",
+  "Spirited Response",
+  "Splinter of the Moon",
+  "Spreading Rot",
+  "Stalwart Defenders",
+  "Static Electricity",
+  "Steel Spirit",
+  "Stimulated Growth",
+  "Storm's Gift",
+  "Storm's Gift",
+  "Straight and Narrow",
+  "Sturdy Growth",
+  "Sudden Ignition",
+  "Sunspite",
+  "Surplus",
+  "Survival Instincts",
+  "Survival Secrets",
+  "Survival Skills",
+  "Talisman of the Victor",
+  "Tear of Entropy",
+  "Territories Unknown",
+  "Terror",
+  "That Which Was Taken",
+  "The Ancient Angler",
+  "The Angel of Vengeance",
+  "The Arbiter",
+  "The Ascetic",
+  "The Bane of Hope",
+  "The Basilisk",
+  "The Beachhead",
+  "The Beachhead",
+  "The Beachhead",
+  "The Benefactor",
+  "The Broken Elegy",
+  "The Builder",
+  "The Cauteriser",
+  "The Claim",
+  "The Closest Peak",
+  "The Dancing Duo",
+  "The Depraved",
+  "The Desecrated Chalice",
+  "The Effigon",
+  "The Epiphany",
+  "The False Hope",
+  "The Flame of Hope",
+  "The Geomantic Gyre",
+  "The Goddess Unleashed",
+  "The Gryphon",
+  "The Hollow-Eyed Skull",
+  "The Infested",
+  "The Iron Fortress",
+  "The Long Winter",
+  "The Megalomaniac",
+  "The Narcissist",
+  "The Nomad",
+  "The Oak",
+  "The Perandus Manor",
+  "The Perandus Pact",
+  "The Peregrine",
+  "The Raging Inferno",
+  "The Redblade",
+  "The Sacred Chalice",
+  "The Sands of Time",
+  "The Signal Fire",
+  "The Stormwall",
+  "The Tactician",
+  "The Tempest",
+  "The Torturer",
+  "The Tower of Ordeals",
+  "The Twisted Trinity",
+  "The Unbridled Tempest",
+  "The Vast Horizon",
+  "The Vigil",
+  "The Walls",
+  "Third Piece of Brutality",
+  "Third Piece of Directions",
+  "Third Piece of Focus",
+  "Third Piece of Storms",
+  "Third Piece of the Arcane",
+  "Thirst for Horrors",
+  "Thorough Exploration",
+  "Thunder of the Dawn",
+  "Timeless Conflict",
+  "Timetwist",
+  "Trade Embargo",
+  "Twist of Fate",
+  "Twisted Wish",
+  "Unending Nightmare",
+  "Unstable Payload",
+  "Untainted Paradise",
+  "Vaal Sentencing",
+  "Vampire's Might",
+  "Vestige of Divinity",
+  "Violent Dead",
+  "Viper's Scales",
+  "Voidheart",
+  "Volley Fire",
+  "Wall of Brambles",
+  "War Among the Stars",
+  "Warlord's Reach",
+  "Warrior's Tale",
+  "Weight of Sin",
+  "Weight of the Empire",
+  "Well Supplied",
+  "Wellspring of Creation",
+  "Whakatutuki o Matua",
+  "Wildfire",
+  "Wildwrap",
+  "Windshriek",
+  "Winter Burial",
+  "Winter's Bounty",
+  "Winterweave",
+  "Wisdom of the Path Not Taken",
+  "Worldcarver",
+  "Wrath of the Cosmos",
+  "Zerphi's Youth"
+ ]
+}

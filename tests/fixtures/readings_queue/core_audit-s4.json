@@ -1,0 +1,16 @@
+{
+  "pobbin_id": "CoreAudit1234",
+  "author_pobbin_url": "https://pobb.in/AuthorAudit12",
+  "ratio_lane": 0.9,
+  "stat": "CombinedDPS",
+  "ours": 1000000.0,
+  "author_lane": 1111111.0,
+  "ours_life": 4000,
+  "loop_stop": "time",
+  "audit": [
+    "[error] fixture: a made-up error line",
+    "[warning] fixture: a made-up warning line",
+    "[warning] fixture: another made-up warning line"
+  ],
+  "audit_errors": 1
+}

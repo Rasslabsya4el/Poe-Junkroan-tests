@@ -1,0 +1,253 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/schemas/pob/pob.mod-corpus-manifest.schema.json",
+  "title": "PoB mod corpus manifest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "corpus_id",
+    "source_game_corpus",
+    "families",
+    "downstream_policy"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "1.0.0"
+    },
+    "corpus_id": {
+      "type": "string",
+      "const": "pob_mod_corpus"
+    },
+    "source_game_corpus": {
+      "$ref": "#/$defs/source_game_corpus"
+    },
+    "families": {
+      "type": "array",
+      "minItems": 2,
+      "items": {
+        "$ref": "#/$defs/family_summary"
+      }
+    },
+    "downstream_policy": {
+      "$ref": "#/$defs/downstream_policy"
+    }
+  },
+  "$defs": {
+    "sha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "source_family": {
+      "type": "string",
+      "enum": [
+        "items",
+        "passives",
+        "keystones",
+        "masteries"
+      ]
+    },
+    "source_families": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "$ref": "#/$defs/source_family"
+      }
+    },
+    "source_lane": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "lane_id",
+        "canonical_path",
+        "lock_path",
+        "repo",
+        "repo_url",
+        "pinned_ref",
+        "pinned_commit",
+        "observed_commit",
+        "tree_version"
+      ],
+      "properties": {
+        "lane_id": {
+          "type": "string",
+          "const": "pob_source_lane"
+        },
+        "canonical_path": {
+          "type": "string",
+          "const": "vendor/pob/source"
+        },
+        "lock_path": {
+          "type": "string",
+          "const": "locks/pob.source.lock.json"
+        },
+        "repo": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+$"
+        },
+        "repo_url": {
+          "type": "string",
+          "format": "uri",
+          "pattern": "^https://github\\.com/[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+\\.git$"
+        },
+        "pinned_ref": {
+          "type": "string",
+          "pattern": "^refs/tags/v.+$"
+        },
+        "pinned_commit": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{40}$"
+        },
+        "observed_commit": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{40}$"
+        },
+        "tree_version": {
+          "type": "string",
+          "pattern": "^\\d+_\\d+(?:_[a-z]+(?:_[a-z]+)?)?$"
+        }
+      }
+    },
+    "bundle_input": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "family",
+        "record_count",
+        "relative_path",
+        "sha256"
+      ],
+      "properties": {
+        "family": {
+          "$ref": "#/$defs/source_family"
+        },
+        "record_count": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "relative_path": {
+          "type": "string",
+          "pattern": "^src/poe_build_research/pob/corpus_data/[A-Za-z0-9_.-]+\\.json$"
+        },
+        "sha256": {
+          "$ref": "#/$defs/sha256"
+        }
+      }
+    },
+    "source_game_corpus": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "bundle_inputs",
+        "corpus_id",
+        "manifest_path",
+        "manifest_sha256",
+        "schema_version",
+        "source_lane"
+      ],
+      "properties": {
+        "bundle_inputs": {
+          "type": "array",
+          "minItems": 4,
+          "items": {
+            "$ref": "#/$defs/bundle_input"
+          }
+        },
+        "corpus_id": {
+          "type": "string",
+          "const": "pob_game_corpus"
+        },
+        "manifest_path": {
+          "type": "string",
+          "const": "src/poe_build_research/pob/corpus_data/manifest.json"
+        },
+        "manifest_sha256": {
+          "$ref": "#/$defs/sha256"
+        },
+        "schema_version": {
+          "type": "string",
+          "const": "1.0.0"
+        },
+        "source_lane": {
+          "$ref": "#/$defs/source_lane"
+        }
+      }
+    },
+    "family_summary": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "family",
+        "member_count",
+        "record_count",
+        "relative_path",
+        "source_families"
+      ],
+      "properties": {
+        "family": {
+          "type": "string",
+          "enum": [
+            "mod_families",
+            "stat_families"
+          ]
+        },
+        "member_count": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "record_count": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "relative_path": {
+          "type": "string",
+          "pattern": "^src/poe_build_research/pob/mod_data/[A-Za-z0-9_.-]+\\.json$"
+        },
+        "source_families": {
+          "$ref": "#/$defs/source_families"
+        }
+      }
+    },
+    "downstream_policy": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "consumer_rule",
+        "non_goals",
+        "read_root",
+        "runtime_authority"
+      ],
+      "properties": {
+        "consumer_rule": {
+          "type": "string",
+          "const": "Downstream agents must read committed mod-family bundles instead of deriving families ad hoc from the game corpus."
+        },
+        "non_goals": {
+          "type": "array",
+          "minItems": 5,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "enum": [
+              "No build ranking.",
+              "No craft advice.",
+              "No DPS valuation.",
+              "No item delta calculation.",
+              "No shopping advice."
+            ]
+          }
+        },
+        "read_root": {
+          "type": "string",
+          "pattern": "^src/poe_build_research/pob/mod_data$"
+        },
+        "runtime_authority": {
+          "type": "string",
+          "const": "src/poe_build_research/pob/corpus_data"
+        }
+      }
+    }
+  }
+}

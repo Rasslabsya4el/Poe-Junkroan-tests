@@ -1,0 +1,7404 @@
+{
+ "league": "Curse of the Allflame",
+ "series_id": "Deepwater",
+ "fetched": "2026-09-19",
+ "source": "poewiki.net cargo: crafting_bench_options, crafting_bench_options_costs, atlas_nodes, areas",
+ "by_mod_id": {
+  "AbyssLeagueCrafted": {
+   "where": "start",
+   "location": "",
+   "tier": null,
+   "rank": 0,
+   "cost": [
+    "3x Chaos Orb"
+   ]
+  },
+  "AlluringVaalSideAreaCrafted": {
+   "where": "start",
+   "location": "",
+   "tier": null,
+   "rank": 0,
+   "cost": []
+  },
+  "BreachstoneAdditionalRewardAndModifierCrafted1": {
+   "where": "start",
+   "location": "",
+   "tier": null,
+   "rank": 0,
+   "cost": []
+  },
+  "BreachstoneAdditionalRewardAndModifierCrafted2": {
+   "where": "start",
+   "location": "",
+   "tier": null,
+   "rank": 0,
+   "cost": []
+  },
+  "BreachstoneAdditionalRewardAndModifierCrafted3": {
+   "where": "start",
+   "location": "",
+   "tier": null,
+   "rank": 0,
+   "cost": []
+  },
+  "CorruptingTempestCrafted": {
+   "where": "start",
+   "location": "",
+   "tier": null,
+   "rank": 0,
+   "cost": []
+  },
+  "CraftedTravelSkillsCannotBeExerted": {
+   "where": "campaign",
+   "location": "The Chamber of Innocence",
+   "tier": null,
+   "rank": 0,
+   "cost": [
+    "1x Orb of Alchemy"
+   ]
+  },
+  "DexMasterItemGenerationCannotChangeSuffixes": {
+   "where": "map",
+   "location": "Oba's Cursed Trove",
+   "tier": null,
+   "rank": 0,
+   "cost": [
+    "2x Divine Orb"
+   ]
+  },
+  "EinharMasterAccuracyRating1": {
+   "where": "campaign",
+   "location": "The Reliquary",
+   "tier": null,
+   "rank": 1,
+   "cost": [
+    "4x Orb of Transmutation"
+   ]
+  },
+  "EinharMasterAccuracyRating2_": {
+   "where": "campaign",
+   "location": "The Desecrated Chambers",
+   "tier": null,
+   "rank": 2,
+   "cost": [
+    "2x Orb of Alchemy"
+   ]
+  },
+  "EinharMasterAccuracyRating3": {
+   "where": "map",
+   "location": "Dunes",
+   "tier": 5,
+   "rank": 3,
+   "cost": [
+    "2x Chaos Orb"
+   ]
+  },
+  "EinharMasterAddedChaosDamage1": {
+   "where": "campaign",
+   "location": "The Temple of Decay Level 2",
+   "tier": null,
+   "rank": 1,
+   "cost": [
+    "6x Orb of Transmutation"
+   ]
+  },
+  "EinharMasterAddedChaosDamage2": {
+   "where": "campaign",
+   "location": "The Ossuary",
+   "tier": null,
+   "rank": 2,
+   "cost": [
+    "2x Chaos Orb"
+   ]
+  },
+  "EinharMasterAddedColdDamage1_": {
+   "where": "campaign",
+   "location": "The Crystal Veins",
+   "tier": null,
+   "rank": 1,
+   "cost": [
+    "4x Orb of Transmutation"
+   ]
+  },
+  "EinharMasterAddedColdDamage2": {
+   "where": "campaign",
+   "location": "The Causeway",
+   "tier": null,
+   "rank": 2,
+   "cost": [
+    "2x Orb of Alchemy"
+   ]
+  },
+  "EinharMasterAddedColdDamageQuiver1__": {
+   "where": "campaign",
+   "location": "The Crystal Veins",
+   "tier": null,
+   "rank": 1,
+   "cost": [
+    "4x Orb of Transmutation"
+   ]
+  },
+  "EinharMasterAddedColdDamageQuiver2": {
+   "where": "campaign",
+   "location": "The Causeway",
+   "tier": null,
+   "rank": 2,
+   "cost": [
+    "2x Orb of Alchemy"
+   ]
+  },
+  "EinharMasterAddedFireDamage1": {
+   "where": "campaign",
+   "location": "The Solaris Temple Level 2",
+   "tier": null,
+   "rank": 1,
+   "cost": [
+    "4x Orb of Transmutation"
+   ]
+  },
+  "EinharMasterAddedFireDamage2": {
+   "where": "campaign",
+   "location": "The Dread Thicket",
+   "tier": null,
+   "rank": 2,
+   "cost": [
+    "2x Orb of Alchemy"
+   ]
+  },
+  "EinharMasterAddedFireDamageQuiver1___": {
+   "where": "campaign",
+   "location": "The Solaris Temple Level 2",
+   "tier": null,
+   "rank": 1,
+   "cost": [
+    "4x Orb of Transmutation"
+   ]
+  },
+  "EinharMasterAddedFireDamageQuiver2": {
+   "where": "campaign",
+   "location": "The Dread Thicket",
+   "tier": null,
+   "rank": 2,
+   "cost": [
+    "2x Orb of Alchemy"
+   ]
+  },
+  "EinharMasterAddedLightningDamage1": {
+   "where": "campaign",
+   "location": "The Lunaris Temple Level 2",
+   "tier": null,
+   "rank": 1,
+   "cost": [
+    "4x Orb of Transmutation"
+   ]
+  },
+  "EinharMasterAddedLightningDamage2": {
+   "where": "campaign",
+   "location": "The Chamber of Sins Level 1",
+   "tier": null,
+   "rank": 2,
+   "cost": [
+    "2x Orb of Alchemy"
+   ]
+  },
+  "EinharMasterAddedLightningDamageQuiver1_": {
+   "where": "campaign",
+   "location": "The Lunaris Temple Level 2",
+   "tier": null,
+   "rank": 1,
+   "cost": [
+    "4x Orb of Transmutation"
+   ]
+  },
+  "EinharMasterAddedLightningDamageQuiver2_": {
+   "where": "campaign",
+   "location": "The Chamber of Sins Level 1",
+   "tier": null,
+   "rank": 2,
+   "cost": [
+    "2x Orb of Alchemy"
+   ]
+  },
+  "EinharMasterAddedPhysicalDamage1": {
+   "where": "campaign",
+   "location": "The Sewers",
+   "tier": null,
+   "rank": 1,
+   "cost": [
+    "4x Orb of Transmutation"
+   ]
+  },
+  "EinharMasterAddedPhysicalDamage2": {
+   "where": "campaign",
+   "location": "The Ossuary",
+   "tier": null,
+   "rank": 2,
+   "cost": [
+    "2x Chaos Orb"
+   ]
+  },
+  "EinharMasterAllAttributes1": {
+   "where": "labyrinth",
+   "location": "Labyrinth Trial in The Imperial Gardens",
+   "tier": null,
+   "rank": 1,
+   "cost": [
+    "3x Orb of Chance"
+   ]
+  },
+  "EinharMasterAllAttributes2": {
+   "where": "labyrinth",
+   "location": "Labyrinth Trial in The Tunnel",
+   "tier": null,
+   "rank": 2,
+   "cost": [
+    "6x Orb of Chance"
+   ]
+  },
+  "EinharMasterAllResist1": {
+   "where": "campaign",
+   "location": "Aspirant's Trial",
+   "tier": null,
+   "rank": 1,
+   "cost": [
+    "6x Orb of Alteration"
+   ]
+  },
+  "EinharMasterAllResist2": {
+   "where": "labyrinth",
+   "location": "Eternal Aspirant's Trial",
+   "tier": null,
+   "rank": 2,
+   "cost": [
+    "1x Chaos Orb"
+   ]
+  },
+  "EinharMasterAllResistMinionResist1_": {
+   "where": "campaign",
+   "location": "Aspirant's Trial",
+   "tier": null,
+   "rank": 1,
+   "cost": [
+    "6x Orb of Alteration"
+   ]
+  },
+  "EinharMasterAllResistMinionResist2": {
+   "where": "labyrinth",
+   "location": "Eternal Aspirant's Trial",
+   "tier": null,
+   "rank": 2,
+   "cost": [
+    "1x Chaos Orb"
+   ]
+  },
+  "EinharMasterArmourAndEnergyShieldPercent1": {
+   "where": "campaign",
+   "location": "The Crematorium",
+   "tier": null,
+   "rank": 1,
+   "cost": [
+    "4x Orb of Transmutation"
+   ]
+  },
+  "EinharMasterArmourAndEnergyShieldPercent2": {
+   "where": "campaign",
+   "location": "The Karui Fortress",
+   "tier": null,
+   "rank": 2,
+   "cost": [
+    "1x Orb of Alchemy"
+   ]
+  },
+  "EinharMasterArmourAndEnergyShieldPercent3_": {
+   "where": "map",
+   "location": "Geode",
+   "tier": 6,
+   "rank": 3,
+   "cost": [
+    "2x Chaos Orb"
+   ]
+  },
+  "EinharMasterArmourAndEvasionPercent1_": {
+   "where": "campaign",
+   "location": "The Crematorium",
+   "tier": null,
+   "rank": 1,
+   "cost": [
+    "4x Orb of Transmutation"
+   ]
+  },
+  "EinharMasterArmourAndEvasionPercent2": {
+   "where": "campaign",
+   "location": "The Karui Fortress",
+   "tier": null,
+   "rank": 2,
+   "cost": [
+    "1x Orb of Alchemy"
+   ]
+  },
+  "EinharMasterArmourAndEvasionPercent3": {
+   "where": "map",
+   "location": "Geode",
+   "tier": 6,
+   "rank": 3,
+   "cost": [
+    "2x Chaos Orb"
+   ]
+  },
+  "EinharMasterArmourPercent1_": {
+   "where": "campaign",
+   "location": "The Crematorium",
+   "tier": null,
+   "rank": 1,
+   "cost": [
+    "4x Orb of Transmutation"
+   ]
+  },
+  "EinharMasterArmourPercent2": {
+   "where": "campaign",
+   "location": "The Karui Fortress",
+   "tier": null,
+   "rank": 2,
+   "cost": [
+    "1x Orb of Alchemy"
+   ]
+  },
+  "EinharMasterArmourPercent3_": {
+   "where": "map",
+   "location": "Geode",
+   "tier": 6,
+   "rank": 3,
+   "cost": [
+    "2x Chaos Orb"
+   ]
+  },
+  "EinharMasterAttackSpeed1": {
+   "where": "campaign",
+   "location": "The Dried Lake",
+   "tier": null,
+   "rank": 0,
+   "cost": [
+    "2x Chaos Orb"
+   ]
+  },
+  "EinharMasterAttackSpeedJewelry1": {
+   "where": "campaign",
+   "location": "The Dried Lake",
+   "tier": null,
+   "rank": 0,
+   "cost": [
+    "2x Orb of Alchemy"
+   ]
+  },
+  "EinharMasterAvoidBleed1": {
+   "where": "campaign",
+   "location": "The Ascent",
+   "tier": null,
+   "rank": 1,
+   "cost": [
+    "4x Orb of Alteration"
+   ]
+  },
+  "EinharMasterAvoidBleed2_": {
+   "where": "map",
+   "location": "Core",
+   "tier": 10,
+   "rank": 2,
+   "cost": [
+    "2x Chaos Orb"
+   ]
+  },
+  "EinharMasterAvoidElementalAilments1": {
+   "where": "campaign",
+   "location": "The Ascent",
+   "tier": null,
+   "rank": 1,
+   "cost": [
+    "1x Chaos Orb"
+   ]
+  },
+  "EinharMasterAvoidElementalAilments2_": {
+   "where": "map",
+   "location": "Core",
+   "tier": 10,
+   "rank": 2,
+   "cost": [
+    "2x Chaos Orb"
+   ]
+  },
+  "EinharMasterAvoidStun1": {
+   "where": "campaign",
+   "location": "The Ascent",
+   "tier": null,
+   "rank": 1,
+   "cost": [
+    "1x Regal Orb"
+   ]
+  },
+  "EinharMasterAvoidStun2": {
+   "where": "map",
+   "location": "Core",
+   "tier": 10,
+   "rank": 2,
+   "cost": [
+    "2x Regal Orb"
+   ]
+  },
+  "EinharMasterChanceToSuppressSpells1_": {
+   "where": "map",
+   "location": "Reef",
+   "tier": 2,
+   "rank": 1,
+   "cost": [
+    "2x Orb of Alchemy"
+   ]
+  },
+  "EinharMasterChanceToSuppressSpells2": {
+   "where": "map",
+   "location": "Lair",
+   "tier": 10,
+   "rank": 2,
+   "cost": [
+    "4x Chaos Orb"
+   ]
+  },
+  "EinharMasterChanceToSuppressSpellsHigh1": {
+   "where": "map",
+   "location": "Reef",
+   "tier": 2,
+   "rank": 1,
+   "cost": [
+    "2x Orb of Alchemy"
+   ]
+  },
+  "EinharMasterChanceToSuppressSpellsHigh2": {
+   "where": "map",
+   "location": "Lair",
+   "tier": 10,
+   "rank": 2,
+   "cost": [
+    "4x Chaos Orb"
+   ]
+  },
+  "EinharMasterChaosDamage1": {
+   "where": "campaign",
+   "location": "The Temple of Decay Level 2",
+   "tier": null,
+   "rank": 1,
+   "cost": [
+    "3x Orb of Chance"
+   ]
+  },
+  "EinharMasterChaosDamage2": {
+   "where": "campaign",
+   "location": "The Ossuary",
+   "tier": null,
+   "rank": 2,
+   "cost": [
+    "3x Orb of Alchemy"
+   ]
+  },
+  "EinharMasterChaosDamagePrefix1": {
+   "where": "campaign",
+   "location": "The Temple of Decay Level 2",
+   "tier": null,
+   "rank": 1,
+   "cost": [
+    "2x Orb of Chance"
+   ]
+  },
+  "EinharMasterChaosDamagePrefix2": {
+   "where": "campaign",
+   "location": "The Ossuary",
+   "tier": null,
+   "rank": 2,
+   "cost": [
+    "4x Orb of Chance"
+   ]
+  },
+  "EinharMasterChaosDamagePrefix3": {
+   "where": "map",
+   "location": "Crater",
+   "tier": 10,
+   "rank": 3,
+   "cost": [
+    "3x Regal Orb"
+   ]
+  },
+  "EinharMasterChaosDamageTwoHandPrefix1": {
+   "where": "campaign",
+   "location": "The Temple of Decay Level 2",
+   "tier": null,
+   "rank": 1,
+   "cost": [
+    "2x Orb of Chance"
+   ]
+  },
+  "EinharMasterChaosDamageTwoHandPrefix2": {
+   "where": "campaign",
+   "location": "The Ossuary",
+   "tier": null,
+   "rank": 2,
+   "cost": [
+    "4x Orb of Chance"
+   ]
+  },
+  "EinharMasterChaosDamageTwoHandPrefix3_": {
+   "where": "map",
+   "location": "Crater",
+   "tier": 10,
+   "rank": 3,
+   "cost": [
+    "3x Regal Orb"
+   ]
+  },
+  "EinharMasterChaosResistanceToDamageOverTime1": {
+   "where": "map",
+   "location": "Stagnation",
+   "tier": 11,
+   "rank": 1,
+   "cost": [
+    "4x Orb of Alteration"
+   ]
+  },
+  "EinharMasterChaosResistanceToDamageOverTime2": {
+   "where": "map",
+   "location": "Stagnation",
+   "tier": 11,
+   "rank": 2,
+   "cost": [
+    "2x Chaos Orb"
+   ]
+  },
+  "EinharMasterColdAndLightningResist1_": {
+   "where": "labyrinth",
+   "location": "Labyrinth Trial in The Lower Prison",
+   "tier": null,
+   "rank": 1,
+   "cost": [
+    "6x Orb of Transmutation"
+   ]
+  },
+  "EinharMasterColdAndLightningResist2": {
+   "where": "labyrinth",
+   "location": "Cruel Aspirant's Trial",
+   "tier": null,
+   "rank": 2,
+   "cost": [
+    "1x Orb of Alchemy"
+   ]
+  },
+  "EinharMasterColdAndLightningResist3_": {
+   "where": "labyrinth",
+   "location": "Merciless Aspirant's Trial",
+   "tier": null,
+   "rank": 3,
+   "cost": [
+    "3x Chaos Orb"
+   ]
+  },
+  "EinharMasterColdDamage1_": {
+   "where": "campaign",
+   "location": "The Crystal Veins",
+   "tier": null,
+   "rank": 1,
+   "cost": [
+    "4x Orb of Transmutation"
+   ]
+  },
+  "EinharMasterColdDamage2": {
+   "where": "campaign",
+   "location": "The Causeway",
+   "tier": null,
+   "rank": 2,
+   "cost": [
+    "2x Orb of Alchemy"
+   ]
+  },
+  "EinharMasterColdDamagePrefix1": {
+   "where": "campaign",
+   "location": "The Crystal Veins",
+   "tier": null,
+   "rank": 1,
+   "cost": [
+    "4x Orb of Alteration"
+   ]
+  },
+  "EinharMasterColdDamagePrefix2__": {
+   "where": "campaign",
+   "location": "The Causeway",
+   "tier": null,
+   "rank": 2,
+   "cost": [
+    "8x Orb of Alteration"
+   ]
+  },
+  "EinharMasterColdDamagePrefix3_": {
+   "where": "map",
+   "location": "Caldera",
+   "tier": 8,
+   "rank": 3,
+   "cost": [
+    "4x Chaos Orb"
+   ]
+  },
+  "EinharMasterColdDamageTwoHandPrefix1": {
+   "where": "campaign",
+   "location": "The Crystal Veins",
+   "tier": null,
+   "rank": 1,
+   "cost": [
+    "4x Orb of Alteration"
+   ]
+  },
+  "EinharMasterColdDamageTwoHandPrefix2": {
+   "where": "campaign",
+   "location": "The Causeway",
+   "tier": null,
+   "rank": 2,
+   "cost": [
+    "8x Orb of Alteration"
+   ]
+  },
+  "EinharMasterColdDamageTwoHandPrefix3": {
+   "where": "map",
+   "location": "Caldera",
+   "tier": 8,
+   "rank": 3,
+   "cost": [
+    "4x Chaos Orb"
+   ]
+  },
+  "EinharMasterColdResist2": {
+   "where": "campaign",
+   "location": "The Belly of the Beast Level 2",
+   "tier": null,
+   "rank": 2,
+   "cost": [
+    "1x Orb of Alchemy"
+   ]
+  },
+  "EinharMasterColdResist3__": {
+   "where": "campaign",
+   "location": "Doedre's Cesspool",
+   "tier": null,
+   "rank": 3,
+   "cost": [
+    "3x Chaos Orb"
+   ]
+  },
+  "EinharMasterCriticalStrikeChanceSpells1": {
+   "where": "map",
+   "location": "Phantasmagoria",
+   "tier": 2,
+   "rank": 1,
+   "cost": [
+    "6x Orb of Alteration"
+   ]
+  },
+  "EinharMasterCriticalStrikeChanceSpells2": {
+   "where": "map",
+   "location": "Lava Lake",
+   "tier": 8,
+   "rank": 2,
+   "cost": [
+    "3x Chaos Orb"
+   ]
+  },
+  "EinharMasterCriticalStrikeChanceSpells2h1": {
+   "where": "map",
+   "location": "Phantasmagoria",
+   "tier": 2,
+   "rank": 1,
+   "cost": [
+    "6x Orb of Alteration"
+   ]
+  },
+  "EinharMasterCriticalStrikeChanceSpells2h2_": {
+   "where": "map",
+   "location": "Lava Lake",
+   "tier": 8,
+   "rank": 2,
+   "cost": [
+    "3x Chaos Orb"
+   ]
+  },
+  "EinharMasterCriticalStrikeMultiplier1": {
+   "where": "map",
+   "location": "Phantasmagoria",
+   "tier": 2,
+   "rank": 1,
+   "cost": [
+    "6x Orb of Alteration"
+   ]
+  },
+  "EinharMasterCriticalStrikeMultiplier2": {
+   "where": "map",
+   "location": "Lava Lake",
+   "tier": 8,
+   "rank": 2,
+   "cost": [
+    "2x Orb of Alchemy"
+   ]
+  },
+  "EinharMasterCriticalStrikeMultiplier3": {
+   "where": "map",
+   "location": "Belfry",
+   "tier": 14,
+   "rank": 3,
+   "cost": [
+    "4x Chaos Orb"
+   ]
+  },
+  "EinharMasterDegenerationDamage1_": {
+   "where": "labyrinth",
+   "location": "Labyrinth Trial in The Crypt",
+   "tier": null,
+   "rank": 1,
+   "cost": [
+    "6x Orb of Alteration"
+   ]
+  },
+  "EinharMasterDegenerationDamage2": {
+   "where": "map",
+   "location": "Cold River",
+   "tier": 6,
+   "rank": 2,
+   "cost": [
+    "2x Chaos Orb"
+   ]
+  },
+  "EinharMasterDexterity2": {
+   "where": "campaign",
+   "location": "The Western Forest",
+   "tier": null,
+   "rank": 2,
+   "cost": [
+    "2x Orb of Alchemy"
+   ]
+  },
+  "EinharMasterDexterity3": {
+   "where": "map",
+   "location": "Primordial Blocks",
+   "tier": 5,
+   "rank": 3,
+   "cost": [
+    "2x Chaos Orb"
+   ]
+  },
+  "EinharMasterEnergyShieldDelay1_": {
+   "where": "map",
+   "location": "Reef",
+   "tier": 2,
+   "rank": 1,
+   "cost": [
+    "2x Orb of Alchemy"
+   ]
+  },
+  "EinharMasterEnergyShieldDelay2": {
+   "where": "map",
+   "location": "Lair",
+   "tier": 10,
+   "rank": 2,
+   "cost": [
+    "4x Chaos Orb"
+   ]
+  },
+  "EinharMasterEnergyShieldPercent1": {
+   "where": "campaign",
+   "location": "The Crematorium",
+   "tier": null,
+   "rank": 1,
+   "cost": [
+    "4x Orb of Transmutation"
+   ]
+  },
+  "EinharMasterEnergyShieldPercent2": {
+   "where": "campaign",
+   "location": "The Karui Fortress",
+   "tier": null,
+   "rank": 2,
+   "cost": [
+    "1x Orb of Alchemy"
+   ]
+  },
+  "EinharMasterEnergyShieldPercent3_": {
+   "where": "map",
+   "location": "Geode",
+   "tier": 6,
+   "rank": 3,
+   "cost": [
+    "2x Chaos Orb"
+   ]
+  },
+  "EinharMasterEnergyShieldRegeneration1___": {
+   "where": "map",
+   "location": "Reef",
+   "tier": 2,
+   "rank": 1,
+   "cost": [
+    "2x Orb of Alchemy"
+   ]
+  },
+  "EinharMasterEnergyShieldRegeneration2": {
+   "where": "map",
+   "location": "Lair",
+   "tier": 10,
+   "rank": 2,
+   "cost": [
+    "4x Chaos Orb"
+   ]
+  },
+  "EinharMasterEvasionAndEnergyShieldPercent1": {
+   "where": "campaign",
+   "location": "The Crematorium",
+   "tier": null,
+   "rank": 1,
+   "cost": [
+    "4x Orb of Transmutation"
+   ]
+  },
+  "EinharMasterEvasionAndEnergyShieldPercent2": {
+   "where": "campaign",
+   "location": "The Karui Fortress",
+   "tier": null,
+   "rank": 2,
+   "cost": [
+    "1x Orb of Alchemy"
+   ]
+  },
+  "EinharMasterEvasionAndEnergyShieldPercent3": {
+   "where": "map",
+   "location": "Geode",
+   "tier": 6,
+   "rank": 3,
+   "cost": [
+    "2x Chaos Orb"
+   ]
+  },
+  "EinharMasterEvasionPercent1": {
+   "where": "campaign",
+   "location": "The Crematorium",
+   "tier": null,
+   "rank": 1,
+   "cost": [
+    "4x Orb of Transmutation"
+   ]
+  },
+  "EinharMasterEvasionPercent2": {
+   "where": "campaign",
+   "location": "The Karui Fortress",
+   "tier": null,
+   "rank": 2,
+   "cost": [
+    "1x Orb of Alchemy"
+   ]
+  },
+  "EinharMasterEvasionPercent3": {
+   "where": "map",
+   "location": "Geode",
+   "tier": 6,
+   "rank": 3,
+   "cost": [
+    "2x Chaos Orb"
+   ]
+  },
+  "EinharMasterFireAndColdResist1": {
+   "where": "labyrinth",
+   "location": "Labyrinth Trial in The Lower Prison",
+   "tier": null,
+   "rank": 1,
+   "cost": [
+    "6x Orb of Transmutation"
+   ]
+  },
+  "EinharMasterFireAndColdResist2": {
+   "where": "labyrinth",
+   "location": "Cruel Aspirant's Trial",
+   "tier": null,
+   "rank": 2,
+   "cost": [
+    "1x Orb of Alchemy"
+   ]
+  },
+  "EinharMasterFireAndColdResist3": {
+   "where": "labyrinth",
+   "location": "Merciless Aspirant's Trial",
+   "tier": null,
+   "rank": 3,
+   "cost": [
+    "3x Chaos Orb"
+   ]
+  },
+  "EinharMasterFireAndLightningResist1": {
+   "where": "labyrinth",
+   "location": "Labyrinth Trial in The Lower Prison",
+   "tier": null,
+   "rank": 1,
+   "cost": [
+    "6x Orb of Transmutation"
+   ]
+  },
+  "EinharMasterFireAndLightningResist2": {
+   "where": "labyrinth",
+   "location": "Cruel Aspirant's Trial",
+   "tier": null,
+   "rank": 2,
+   "cost": [
+    "1x Orb of Alchemy"
+   ]
+  },
+  "EinharMasterFireAndLightningResist3_": {
+   "where": "labyrinth",
+   "location": "Merciless Aspirant's Trial",
+   "tier": null,
+   "rank": 3,
+   "cost": [
+    "3x Chaos Orb"
+   ]
+  },
+  "EinharMasterFireDamage1": {
+   "where": "campaign",
+   "location": "The Solaris Temple Level 2",
+   "tier": null,
+   "rank": 1,
+   "cost": [
+    "4x Orb of Transmutation"
+   ]
+  },
+  "EinharMasterFireDamage2_": {
+   "where": "campaign",
+   "location": "The Dread Thicket",
+   "tier": null,
+   "rank": 2,
+   "cost": [
+    "2x Orb of Alchemy"
+   ]
+  },
+  "EinharMasterFireDamagePrefix1_": {
+   "where": "campaign",
+   "location": "The Solaris Temple Level 2",
+   "tier": null,
+   "rank": 1,
+   "cost": [
+    "4x Orb of Alteration"
+   ]
+  },
+  "EinharMasterFireDamagePrefix2": {
+   "where": "campaign",
+   "location": "The Dread Thicket",
+   "tier": null,
+   "rank": 2,
+   "cost": [
+    "8x Orb of Alteration"
+   ]
+  },
+  "EinharMasterFireDamagePrefix3_": {
+   "where": "map",
+   "location": "Factory",
+   "tier": 11,
+   "rank": 3,
+   "cost": [
+    "4x Chaos Orb"
+   ]
+  },
+  "EinharMasterFireDamageTwoHandPrefix1": {
+   "where": "campaign",
+   "location": "The Solaris Temple Level 2",
+   "tier": null,
+   "rank": 1,
+   "cost": [
+    "4x Orb of Alteration"
+   ]
+  },
+  "EinharMasterFireDamageTwoHandPrefix2": {
+   "where": "campaign",
+   "location": "The Dread Thicket",
+   "tier": null,
+   "rank": 2,
+   "cost": [
+    "8x Orb of Alteration"
+   ]
+  },
+  "EinharMasterFireDamageTwoHandPrefix3": {
+   "where": "map",
+   "location": "Factory",
+   "tier": 11,
+   "rank": 3,
+   "cost": [
+    "4x Chaos Orb"
+   ]
+  },
+  "EinharMasterFireResist2": {
+   "where": "campaign",
+   "location": "The Belly of the Beast Level 2",
+   "tier": null,
+   "rank": 2,
+   "cost": [
+    "1x Orb of Alchemy"
+   ]
+  },
+  "EinharMasterFireResist3_": {
+   "where": "campaign",
+   "location": "Doedre's Cesspool",
+   "tier": null,
+   "rank": 3,
+   "cost": [
+    "3x Chaos Orb"
+   ]
+  },
+  "EinharMasterFlaskEffectDuration1": {
+   "where": "labyrinth",
+   "location": "Labyrinth Trial in The Bath House",
+   "tier": null,
+   "rank": 1,
+   "cost": [
+    "2x Glassblower's Bauble"
+   ]
+  },
+  "EinharMasterFlaskEffectDuration2": {
+   "where": "map",
+   "location": "Marshes",
+   "tier": 2,
+   "rank": 2,
+   "cost": [
+    "4x Glassblower's Bauble"
+   ]
+  },
+  "EinharMasterFlatArmour1": {
+   "where": "campaign",
+   "location": "The Crematorium",
+   "tier": null,
+   "rank": 1,
+   "cost": [
+    "4x Orb of Transmutation"
+   ]
+  },
+  "EinharMasterFlatArmour2_": {
+   "where": "campaign",
+   "location": "The Karui Fortress",
+   "tier": null,
+   "rank": 2,
+   "cost": [
+    "1x Orb of Alchemy"
+   ]
+  },
+  "EinharMasterFlatArmour3": {
+   "where": "map",
+   "location": "Geode",
+   "tier": 6,
+   "rank": 3,
+   "cost": [
+    "2x Chaos Orb"
+   ]
+  },
+  "EinharMasterFlatEnergyShield1": {
+   "where": "campaign",
+   "location": "The Crematorium",
+   "tier": null,
+   "rank": 1,
+   "cost": [
+    "4x Orb of Transmutation"
+   ]
+  },
+  "EinharMasterFlatEnergyShield2": {
+   "where": "campaign",
+   "location": "The Karui Fortress",
+   "tier": null,
+   "rank": 2,
+   "cost": [
+    "1x Orb of Alchemy"
+   ]
+  },
+  "EinharMasterFlatEnergyShield3": {
+   "where": "map",
+   "location": "Geode",
+   "tier": 6,
+   "rank": 3,
+   "cost": [
+    "2x Chaos Orb"
+   ]
+  },
+  "EinharMasterFlatEvasion1": {
+   "where": "campaign",
+   "location": "The Crematorium",
+   "tier": null,
+   "rank": 1,
+   "cost": [
+    "4x Orb of Transmutation"
+   ]
+  },
+  "EinharMasterFlatEvasion2": {
+   "where": "campaign",
+   "location": "The Karui Fortress",
+   "tier": null,
+   "rank": 2,
+   "cost": [
+    "1x Orb of Alchemy"
+   ]
+  },
+  "EinharMasterFlatEvasion3": {
+   "where": "map",
+   "location": "Geode",
+   "tier": 6,
+   "rank": 3,
+   "cost": [
+    "2x Chaos Orb"
+   ]
+  },
+  "EinharMasterFlatLifeAndManaRegeneration1": {
+   "where": "campaign",
+   "location": "The Archives",
+   "tier": null,
+   "rank": 1,
+   "cost": [
+    "1x Orb of Alchemy"
+   ]
+  },
+  "EinharMasterGlobalCriticalStrikeChance1": {
+   "where": "map",
+   "location": "Phantasmagoria",
+   "tier": 2,
+   "rank": 1,
+   "cost": [
+    "9x Orb of Alteration"
+   ]
+  },
+  "EinharMasterGlobalCriticalStrikeChance2": {
+   "where": "map",
+   "location": "Lava Lake",
+   "tier": 8,
+   "rank": 2,
+   "cost": [
+    "1x Chaos Orb"
+   ]
+  },
+  "EinharMasterGlobalEnergyShield1": {
+   "where": "map",
+   "location": "Bazaar",
+   "tier": 4,
+   "rank": 1,
+   "cost": [
+    "1x Chaos Orb"
+   ]
+  },
+  "EinharMasterGlobalEnergyShield2": {
+   "where": "map",
+   "location": "Basilica",
+   "tier": 8,
+   "rank": 2,
+   "cost": [
+    "2x Chaos Orb"
+   ]
+  },
+  "EinharMasterIncreasedCastSpeed1": {
+   "where": "campaign",
+   "location": "The Dried Lake",
+   "tier": null,
+   "rank": 1,
+   "cost": [
+    "6x Orb of Alteration"
+   ]
+  },
+  "EinharMasterIncreasedCastSpeed2": {
+   "where": "campaign",
+   "location": "The Vastiri Desert",
+   "tier": null,
+   "rank": 2,
+   "cost": [
+    "2x Chaos Orb"
+   ]
+  },
+  "EinharMasterIncreasedCastSpeed3": {
+   "where": "map",
+   "location": "Residence",
+   "tier": 13,
+   "rank": 3,
+   "cost": [
+    "4x Exalted Orb"
+   ]
+  },
+  "EinharMasterIncreasedCastSpeedJewelry1": {
+   "where": "campaign",
+   "location": "The Dried Lake",
+   "tier": null,
+   "rank": 1,
+   "cost": [
+    "6x Orb of Alteration"
+   ]
+  },
+  "EinharMasterIncreasedCastSpeedTwoHand1": {
+   "where": "campaign",
+   "location": "The Dried Lake",
+   "tier": null,
+   "rank": 1,
+   "cost": [
+    "6x Orb of Alteration"
+   ]
+  },
+  "EinharMasterIncreasedCastSpeedTwoHand2": {
+   "where": "campaign",
+   "location": "The Vastiri Desert",
+   "tier": null,
+   "rank": 2,
+   "cost": [
+    "2x Chaos Orb"
+   ]
+  },
+  "EinharMasterIncreasedCastSpeedTwoHand3_": {
+   "where": "map",
+   "location": "Residence",
+   "tier": 13,
+   "rank": 3,
+   "cost": [
+    "4x Exalted Orb"
+   ]
+  },
+  "EinharMasterIncreasedLife2": {
+   "where": "campaign",
+   "location": "The Beacon",
+   "tier": null,
+   "rank": 2,
+   "cost": [
+    "6x Orb of Transmutation"
+   ]
+  },
+  "EinharMasterIncreasedLife3": {
+   "where": "campaign",
+   "location": "The Feeding Trough",
+   "tier": null,
+   "rank": 3,
+   "cost": [
+    "2x Orb of Alchemy"
+   ]
+  },
+  "EinharMasterIncreasedLife4": {
+   "where": "map",
+   "location": "Frozen Cabins",
+   "tier": 3,
+   "rank": 4,
+   "cost": [
+    "4x Orb of Alchemy"
+   ]
+  },
+  "EinharMasterIncreasedLife5_": {
+   "where": "map",
+   "location": "Sulphur Vents",
+   "tier": 7,
+   "rank": 5,
+   "cost": [
+    "4x Chaos Orb"
+   ]
+  },
+  "EinharMasterIncreasedMana1": {
+   "where": "start",
+   "location": "",
+   "tier": null,
+   "rank": 1,
+   "cost": [
+    "3x Orb of Augmentation"
+   ]
+  },
+  "EinharMasterIncreasedMana2": {
+   "where": "campaign",
+   "location": "The Beacon",
+   "tier": null,
+   "rank": 2,
+   "cost": [
+    "6x Orb of Augmentation"
+   ]
+  },
+  "EinharMasterIncreasedMana3": {
+   "where": "campaign",
+   "location": "The Feeding Trough",
+   "tier": null,
+   "rank": 3,
+   "cost": [
+    "2x Chaos Orb"
+   ]
+  },
+  "EinharMasterIncreasedManaRegenerationTwoHandWeapon1": {
+   "where": "labyrinth",
+   "location": "Labyrinth Trial in The Chamber of Sins Level 2",
+   "tier": null,
+   "rank": 1,
+   "cost": [
+    "6x Orb of Alteration"
+   ]
+  },
+  "EinharMasterIncreasedManaRegenerationTwoHandWeapon2": {
+   "where": "map",
+   "location": "Sunken City",
+   "tier": 6,
+   "rank": 2,
+   "cost": [
+    "2x Orb of Alchemy"
+   ]
+  },
+  "EinharMasterIncreasedManaTwoHandWeapon1___": {
+   "where": "start",
+   "location": "",
+   "tier": null,
+   "rank": 1,
+   "cost": [
+    "3x Orb of Augmentation"
+   ]
+  },
+  "EinharMasterIncreasedManaTwoHandWeapon2_": {
+   "where": "campaign",
+   "location": "The Beacon",
+   "tier": null,
+   "rank": 2,
+   "cost": [
+    "6x Orb of Augmentation"
+   ]
+  },
+  "EinharMasterIncreasedManaTwoHandWeapon3_": {
+   "where": "campaign",
+   "location": "The Feeding Trough",
+   "tier": null,
+   "rank": 3,
+   "cost": [
+    "2x Chaos Orb"
+   ]
+  },
+  "EinharMasterIncreasedManaTwoHandWeapon4": {
+   "where": "map",
+   "location": "Frozen Cabins",
+   "tier": 3,
+   "rank": 4,
+   "cost": [
+    "4x Chaos Orb"
+   ]
+  },
+  "EinharMasterIncreasedManaWeapon1__": {
+   "where": "start",
+   "location": "",
+   "tier": null,
+   "rank": 1,
+   "cost": [
+    "3x Orb of Augmentation"
+   ]
+  },
+  "EinharMasterIncreasedManaWeapon2": {
+   "where": "campaign",
+   "location": "The Beacon",
+   "tier": null,
+   "rank": 2,
+   "cost": [
+    "6x Orb of Augmentation"
+   ]
+  },
+  "EinharMasterIncreasedManaWeapon3_": {
+   "where": "campaign",
+   "location": "The Feeding Trough",
+   "tier": null,
+   "rank": 3,
+   "cost": [
+    "2x Chaos Orb"
+   ]
+  },
+  "EinharMasterIncreasedManaWeapon4": {
+   "where": "map",
+   "location": "Frozen Cabins",
+   "tier": 3,
+   "rank": 4,
+   "cost": [
+    "4x Chaos Orb"
+   ]
+  },
+  "EinharMasterIntelligence2__": {
+   "where": "campaign",
+   "location": "The Western Forest",
+   "tier": null,
+   "rank": 2,
+   "cost": [
+    "2x Orb of Alchemy"
+   ]
+  },
+  "EinharMasterIntelligence3": {
+   "where": "map",
+   "location": "Primordial Blocks",
+   "tier": 5,
+   "rank": 3,
+   "cost": [
+    "2x Chaos Orb"
+   ]
+  },
+  "EinharMasterLifeLeechFromAttacksPermyriadSuffix1": {
+   "where": "map",
+   "location": "Flooded Mine",
+   "tier": 4,
+   "rank": 1,
+   "cost": [
+    "3x Orb of Chance"
+   ]
+  },
+  "EinharMasterLifeLeechFromAttacksPermyriadSuffix2": {
+   "where": "map",
+   "location": "Jungle Valley",
+   "tier": 9,
+   "rank": 2,
+   "cost": [
+    "4x Orb of Chance"
+   ]
+  },
+  "EinharMasterLifeRegenerationRate1": {
+   "where": "map",
+   "location": "Reef",
+   "tier": 2,
+   "rank": 1,
+   "cost": [
+    "2x Orb of Alchemy"
+   ]
+  },
+  "EinharMasterLifeRegenerationRate2_": {
+   "where": "map",
+   "location": "Lair",
+   "tier": 10,
+   "rank": 2,
+   "cost": [
+    "4x Chaos Orb"
+   ]
+  },
+  "EinharMasterLightRadiusScalesWithEnergyShield1": {
+   "where": "map",
+   "location": "Plateau",
+   "tier": 9,
+   "rank": 0,
+   "cost": [
+    "4x Chaos Orb"
+   ]
+  },
+  "EinharMasterLightningDamage1": {
+   "where": "campaign",
+   "location": "The Lunaris Temple Level 2",
+   "tier": null,
+   "rank": 1,
+   "cost": [
+    "4x Orb of Transmutation"
+   ]
+  },
+  "EinharMasterLightningDamage2_": {
+   "where": "campaign",
+   "location": "The Chamber of Sins Level 1",
+   "tier": null,
+   "rank": 2,
+   "cost": [
+    "2x Orb of Alchemy"
+   ]
+  },
+  "EinharMasterLightningDamagePrefix1": {
+   "where": "campaign",
+   "location": "The Lunaris Temple Level 2",
+   "tier": null,
+   "rank": 1,
+   "cost": [
+    "4x Orb of Alteration"
+   ]
+  },
+  "EinharMasterLightningDamagePrefix2": {
+   "where": "campaign",
+   "location": "The Chamber of Sins Level 1",
+   "tier": null,
+   "rank": 2,
+   "cost": [
+    "8x Orb of Alteration"
+   ]
+  },
+  "EinharMasterLightningDamagePrefix3": {
+   "where": "map",
+   "location": "Desert Spring",
+   "tier": 8,
+   "rank": 3,
+   "cost": [
+    "4x Chaos Orb"
+   ]
+  },
+  "EinharMasterLightningDamageTwoHandPrefix1": {
+   "where": "campaign",
+   "location": "The Lunaris Temple Level 2",
+   "tier": null,
+   "rank": 1,
+   "cost": [
+    "4x Orb of Alteration"
+   ]
+  },
+  "EinharMasterLightningDamageTwoHandPrefix2": {
+   "where": "campaign",
+   "location": "The Chamber of Sins Level 1",
+   "tier": null,
+   "rank": 2,
+   "cost": [
+    "8x Orb of Alteration"
+   ]
+  },
+  "EinharMasterLightningDamageTwoHandPrefix3": {
+   "where": "map",
+   "location": "Desert Spring",
+   "tier": 8,
+   "rank": 3,
+   "cost": [
+    "4x Chaos Orb"
+   ]
+  },
+  "EinharMasterLightningResist2": {
+   "where": "campaign",
+   "location": "The Belly of the Beast Level 2",
+   "tier": null,
+   "rank": 2,
+   "cost": [
+    "1x Orb of Alchemy"
+   ]
+  },
+  "EinharMasterLightningResist3_": {
+   "where": "campaign",
+   "location": "Doedre's Cesspool",
+   "tier": null,
+   "rank": 3,
+   "cost": [
+    "3x Chaos Orb"
+   ]
+  },
+  "EinharMasterLocalAccuracyRating1": {
+   "where": "campaign",
+   "location": "The Reliquary",
+   "tier": null,
+   "rank": 1,
+   "cost": [
+    "4x Orb of Transmutation"
+   ]
+  },
+  "EinharMasterLocalAccuracyRating2": {
+   "where": "campaign",
+   "location": "The Desecrated Chambers",
+   "tier": null,
+   "rank": 2,
+   "cost": [
+    "2x Orb of Alchemy"
+   ]
+  },
+  "EinharMasterLocalAccuracyRating3": {
+   "where": "map",
+   "location": "Dunes",
+   "tier": 5,
+   "rank": 3,
+   "cost": [
+    "2x Chaos Orb"
+   ]
+  },
+  "EinharMasterLocalColdDamage1": {
+   "where": "campaign",
+   "location": "The Crystal Veins",
+   "tier": null,
+   "rank": 1,
+   "cost": [
+    "4x Orb of Transmutation"
+   ]
+  },
+  "EinharMasterLocalColdDamage2": {
+   "where": "campaign",
+   "location": "The Causeway",
+   "tier": null,
+   "rank": 2,
+   "cost": [
+    "2x Orb of Alchemy"
+   ]
+  },
+  "EinharMasterLocalColdDamage3": {
+   "where": "map",
+   "location": "Caldera",
+   "tier": 8,
+   "rank": 3,
+   "cost": [
+    "4x Chaos Orb"
+   ]
+  },
+  "EinharMasterLocalColdDamageTwoHand1": {
+   "where": "campaign",
+   "location": "The Crystal Veins",
+   "tier": null,
+   "rank": 1,
+   "cost": [
+    "4x Orb of Transmutation"
+   ]
+  },
+  "EinharMasterLocalColdDamageTwoHand2": {
+   "where": "campaign",
+   "location": "The Causeway",
+   "tier": null,
+   "rank": 2,
+   "cost": [
+    "2x Orb of Alchemy"
+   ]
+  },
+  "EinharMasterLocalColdDamageTwoHand3": {
+   "where": "map",
+   "location": "Caldera",
+   "tier": 8,
+   "rank": 3,
+   "cost": [
+    "4x Chaos Orb"
+   ]
+  },
+  "EinharMasterLocalCriticalStrikeChance1_": {
+   "where": "map",
+   "location": "Phantasmagoria",
+   "tier": 2,
+   "rank": 1,
+   "cost": [
+    "6x Orb of Alteration"
+   ]
+  },
+  "EinharMasterLocalCriticalStrikeChance2": {
+   "where": "map",
+   "location": "Lava Lake",
+   "tier": 8,
+   "rank": 2,
+   "cost": [
+    "2x Orb of Alchemy"
+   ]
+  },
+  "EinharMasterLocalCriticalStrikeChance3_": {
+   "where": "map",
+   "location": "Belfry",
+   "tier": 14,
+   "rank": 3,
+   "cost": [
+    "4x Chaos Orb"
+   ]
+  },
+  "EinharMasterLocalFireDamage1": {
+   "where": "campaign",
+   "location": "The Solaris Temple Level 2",
+   "tier": null,
+   "rank": 1,
+   "cost": [
+    "4x Orb of Transmutation"
+   ]
+  },
+  "EinharMasterLocalFireDamage2": {
+   "where": "campaign",
+   "location": "The Dread Thicket",
+   "tier": null,
+   "rank": 2,
+   "cost": [
+    "2x Orb of Alchemy"
+   ]
+  },
+  "EinharMasterLocalFireDamage3": {
+   "where": "map",
+   "location": "Factory",
+   "tier": 11,
+   "rank": 3,
+   "cost": [
+    "4x Chaos Orb"
+   ]
+  },
+  "EinharMasterLocalFireDamageTwoHand1": {
+   "where": "campaign",
+   "location": "The Solaris Temple Level 2",
+   "tier": null,
+   "rank": 1,
+   "cost": [
+    "4x Orb of Transmutation"
+   ]
+  },
+  "EinharMasterLocalFireDamageTwoHand2": {
+   "where": "campaign",
+   "location": "The Dread Thicket",
+   "tier": null,
+   "rank": 2,
+   "cost": [
+    "2x Orb of Alchemy"
+   ]
+  },
+  "EinharMasterLocalFireDamageTwoHand3": {
+   "where": "map",
+   "location": "Factory",
+   "tier": 11,
+   "rank": 3,
+   "cost": [
+    "4x Chaos Orb"
+   ]
+  },
+  "EinharMasterLocalIncreasedAttackSpeed1__": {
+   "where": "campaign",
+   "location": "The Dried Lake",
+   "tier": null,
+   "rank": 1,
+   "cost": [
+    "6x Orb of Alteration"
+   ]
+  },
+  "EinharMasterLocalIncreasedAttackSpeed2_": {
+   "where": "campaign",
+   "location": "The Vastiri Desert",
+   "tier": null,
+   "rank": 2,
+   "cost": [
+    "2x Chaos Orb"
+   ]
+  },
+  "EinharMasterLocalIncreasedAttackSpeed3": {
+   "where": "map",
+   "location": "Residence",
+   "tier": 13,
+   "rank": 3,
+   "cost": [
+    "4x Exalted Orb"
+   ]
+  },
+  "EinharMasterLocalIncreasedAttackSpeedRanged3": {
+   "where": "map",
+   "location": "Residence",
+   "tier": 13,
+   "rank": 3,
+   "cost": [
+    "4x Exalted Orb"
+   ]
+  },
+  "EinharMasterLocalIncreasedBlockPercentage1": {
+   "where": "map",
+   "location": "Relic Chambers",
+   "tier": 5,
+   "rank": 1,
+   "cost": [
+    "9x Orb of Alteration"
+   ]
+  },
+  "EinharMasterLocalIncreasedBlockPercentage2": {
+   "where": "map",
+   "location": "City Square",
+   "tier": 9,
+   "rank": 2,
+   "cost": [
+    "3x Chaos Orb"
+   ]
+  },
+  "EinharMasterLocalIncreasedPhysicalDamage1": {
+   "where": "campaign",
+   "location": "The Sewers",
+   "tier": null,
+   "rank": 1,
+   "cost": [
+    "4x Orb of Alteration"
+   ]
+  },
+  "EinharMasterLocalIncreasedPhysicalDamage2_": {
+   "where": "campaign",
+   "location": "The Ossuary",
+   "tier": null,
+   "rank": 2,
+   "cost": [
+    "8x Orb of Alteration"
+   ]
+  },
+  "EinharMasterLocalIncreasedPhysicalDamage3": {
+   "where": "campaign",
+   "location": "The Quarry",
+   "tier": null,
+   "rank": 3,
+   "cost": [
+    "4x Chaos Orb"
+   ]
+  },
+  "EinharMasterLocalIncreasedPhysicalDamage4___": {
+   "where": "map",
+   "location": "Foundry",
+   "tier": 11,
+   "rank": 4,
+   "cost": [
+    "4x Exalted Orb"
+   ]
+  },
+  "EinharMasterLocalLifeLeechPermyriadNewSuffix1": {
+   "where": "map",
+   "location": "Flooded Mine",
+   "tier": 4,
+   "rank": 1,
+   "cost": [
+    "3x Orb of Chance"
+   ]
+  },
+  "EinharMasterLocalLifeLeechPermyriadNewSuffix2": {
+   "where": "map",
+   "location": "Jungle Valley",
+   "tier": 9,
+   "rank": 2,
+   "cost": [
+    "4x Orb of Chance"
+   ]
+  },
+  "EinharMasterLocalLightningDamage1_": {
+   "where": "campaign",
+   "location": "The Lunaris Temple Level 2",
+   "tier": null,
+   "rank": 1,
+   "cost": [
+    "4x Orb of Transmutation"
+   ]
+  },
+  "EinharMasterLocalLightningDamage2": {
+   "where": "campaign",
+   "location": "The Chamber of Sins Level 1",
+   "tier": null,
+   "rank": 2,
+   "cost": [
+    "2x Orb of Alchemy"
+   ]
+  },
+  "EinharMasterLocalLightningDamage3": {
+   "where": "map",
+   "location": "Desert Spring",
+   "tier": 8,
+   "rank": 3,
+   "cost": [
+    "4x Chaos Orb"
+   ]
+  },
+  "EinharMasterLocalLightningDamageTwoHand1_": {
+   "where": "campaign",
+   "location": "The Lunaris Temple Level 2",
+   "tier": null,
+   "rank": 1,
+   "cost": [
+    "4x Orb of Transmutation"
+   ]
+  },
+  "EinharMasterLocalLightningDamageTwoHand2": {
+   "where": "campaign",
+   "location": "The Chamber of Sins Level 1",
+   "tier": null,
+   "rank": 2,
+   "cost": [
+    "2x Orb of Alchemy"
+   ]
+  },
+  "EinharMasterLocalLightningDamageTwoHand3": {
+   "where": "map",
+   "location": "Desert Spring",
+   "tier": 8,
+   "rank": 3,
+   "cost": [
+    "4x Chaos Orb"
+   ]
+  },
+  "EinharMasterLocalManaLeechPermyriadNewSuffix1": {
+   "where": "map",
+   "location": "Jungle Valley",
+   "tier": 9,
+   "rank": 0,
+   "cost": [
+    "1x Regal Orb"
+   ]
+  },
+  "EinharMasterLocalPhysicalDamage1": {
+   "where": "campaign",
+   "location": "The Sewers",
+   "tier": null,
+   "rank": 1,
+   "cost": [
+    "4x Orb of Transmutation"
+   ]
+  },
+  "EinharMasterLocalPhysicalDamage2_": {
+   "where": "campaign",
+   "location": "The Ossuary",
+   "tier": null,
+   "rank": 2,
+   "cost": [
+    "2x Orb of Alchemy"
+   ]
+  },
+  "EinharMasterLocalPhysicalDamage3": {
+   "where": "campaign",
+   "location": "The Quarry",
+   "tier": null,
+   "rank": 3,
+   "cost": [
+    "4x Chaos Orb"
+   ]
+  },
+  "EinharMasterLocalPhysicalDamageTwoHand1": {
+   "where": "campaign",
+   "location": "The Sewers",
+   "tier": null,
+   "rank": 1,
+   "cost": [
+    "4x Orb of Transmutation"
+   ]
+  },
+  "EinharMasterLocalPhysicalDamageTwoHand2": {
+   "where": "campaign",
+   "location": "The Ossuary",
+   "tier": null,
+   "rank": 2,
+   "cost": [
+    "2x Orb of Alchemy"
+   ]
+  },
+  "EinharMasterLocalPhysicalDamageTwoHand3": {
+   "where": "campaign",
+   "location": "The Quarry",
+   "tier": null,
+   "rank": 3,
+   "cost": [
+    "4x Chaos Orb"
+   ]
+  },
+  "EinharMasterManaRegeneration1": {
+   "where": "labyrinth",
+   "location": "Labyrinth Trial in The Chamber of Sins Level 2",
+   "tier": null,
+   "rank": 1,
+   "cost": [
+    "6x Orb of Alteration"
+   ]
+  },
+  "EinharMasterManaRegeneration2": {
+   "where": "map",
+   "location": "Sunken City",
+   "tier": 6,
+   "rank": 2,
+   "cost": [
+    "2x Orb of Alchemy"
+   ]
+  },
+  "EinharMasterMaximumEnergyShield1_": {
+   "where": "map",
+   "location": "Bazaar",
+   "tier": 4,
+   "rank": 1,
+   "cost": [
+    "1x Orb of Alchemy"
+   ]
+  },
+  "EinharMasterMaximumEnergyShield2_": {
+   "where": "map",
+   "location": "Basilica",
+   "tier": 8,
+   "rank": 2,
+   "cost": [
+    "2x Chaos Orb"
+   ]
+  },
+  "EinharMasterMineDamageOnWeapon1h1": {
+   "where": "campaign",
+   "location": "The Solaris Temple Level 2",
+   "tier": null,
+   "rank": 1,
+   "cost": [
+    "2x Orb of Alchemy"
+   ]
+  },
+  "EinharMasterMineDamageOnWeapon1h2": {
+   "where": "map",
+   "location": "Overgrown Shrine",
+   "tier": 5,
+   "rank": 2,
+   "cost": [
+    "4x Chaos Orb"
+   ]
+  },
+  "EinharMasterMineDamageOnWeapon2h1": {
+   "where": "campaign",
+   "location": "The Solaris Temple Level 2",
+   "tier": null,
+   "rank": 1,
+   "cost": [
+    "2x Orb of Alchemy"
+   ]
+  },
+  "EinharMasterMineDamageOnWeapon2h2": {
+   "where": "map",
+   "location": "Overgrown Shrine",
+   "tier": 5,
+   "rank": 2,
+   "cost": [
+    "4x Chaos Orb"
+   ]
+  },
+  "EinharMasterMineLayingSpeed1": {
+   "where": "campaign",
+   "location": "The Solaris Temple Level 2",
+   "tier": null,
+   "rank": 1,
+   "cost": [
+    "6x Orb of Augmentation"
+   ]
+  },
+  "EinharMasterMineLayingSpeed2": {
+   "where": "map",
+   "location": "Overgrown Shrine",
+   "tier": 5,
+   "rank": 2,
+   "cost": [
+    "2x Orb of Alchemy"
+   ]
+  },
+  "EinharMasterMineLayingSpeed2h1": {
+   "where": "campaign",
+   "location": "The Solaris Temple Level 2",
+   "tier": null,
+   "rank": 1,
+   "cost": [
+    "6x Orb of Augmentation"
+   ]
+  },
+  "EinharMasterMineLayingSpeed2h2_": {
+   "where": "map",
+   "location": "Overgrown Shrine",
+   "tier": 5,
+   "rank": 2,
+   "cost": [
+    "2x Orb of Alchemy"
+   ]
+  },
+  "EinharMasterMinionDamage1": {
+   "where": "campaign",
+   "location": "The Lunaris Temple Level 2",
+   "tier": null,
+   "rank": 0,
+   "cost": [
+    "3x Chaos Orb"
+   ]
+  },
+  "EinharMasterMinionDamageOnWeapon1h1": {
+   "where": "campaign",
+   "location": "The Lunaris Temple Level 2",
+   "tier": null,
+   "rank": 1,
+   "cost": [
+    "4x Orb of Augmentation"
+   ]
+  },
+  "EinharMasterMinionDamageOnWeapon1h2": {
+   "where": "map",
+   "location": "Siege",
+   "tier": 5,
+   "rank": 2,
+   "cost": [
+    "2x Orb of Alchemy"
+   ]
+  },
+  "EinharMasterMinionDamageOnWeapon1h3": {
+   "where": "map",
+   "location": "Orchard",
+   "tier": 11,
+   "rank": 3,
+   "cost": [
+    "4x Chaos Orb"
+   ]
+  },
+  "EinharMasterMinionDamageOnWeapon2h1_": {
+   "where": "campaign",
+   "location": "The Lunaris Temple Level 2",
+   "tier": null,
+   "rank": 1,
+   "cost": [
+    "4x Orb of Augmentation"
+   ]
+  },
+  "EinharMasterMinionDamageOnWeapon2h2": {
+   "where": "map",
+   "location": "Siege",
+   "tier": 5,
+   "rank": 2,
+   "cost": [
+    "2x Orb of Alchemy"
+   ]
+  },
+  "EinharMasterMinionDamageOnWeapon2h3": {
+   "where": "map",
+   "location": "Orchard",
+   "tier": 11,
+   "rank": 3,
+   "cost": [
+    "4x Chaos Orb"
+   ]
+  },
+  "EinharMasterMinionLife1": {
+   "where": "campaign",
+   "location": "The Lunaris Temple Level 2",
+   "tier": null,
+   "rank": 1,
+   "cost": [
+    "4x Orb of Augmentation"
+   ]
+  },
+  "EinharMasterMinionLife2": {
+   "where": "map",
+   "location": "Siege",
+   "tier": 5,
+   "rank": 2,
+   "cost": [
+    "2x Orb of Alchemy"
+   ]
+  },
+  "EinharMasterMinionMovementSpeed1": {
+   "where": "campaign",
+   "location": "The Lunaris Temple Level 2",
+   "tier": null,
+   "rank": 1,
+   "cost": [
+    "4x Orb of Augmentation"
+   ]
+  },
+  "EinharMasterMinionMovementSpeed2": {
+   "where": "map",
+   "location": "Siege",
+   "tier": 5,
+   "rank": 2,
+   "cost": [
+    "2x Orb of Alchemy"
+   ]
+  },
+  "EinharMasterMovementVelocity1": {
+   "where": "campaign",
+   "location": "The City of Sarn",
+   "tier": null,
+   "rank": 1,
+   "cost": [
+    "3x Orb of Augmentation"
+   ]
+  },
+  "EinharMasterMovementVelocity2": {
+   "where": "campaign",
+   "location": "The Chamber of Innocence",
+   "tier": null,
+   "rank": 2,
+   "cost": [
+    "2x Chaos Orb"
+   ]
+  },
+  "EinharMasterMovementVelocity3": {
+   "where": "campaign",
+   "location": "Epilogue",
+   "tier": null,
+   "rank": 3,
+   "cost": [
+    "4x Chaos Orb"
+   ]
+  },
+  "EinharMasterNoExtraDamageFromBleedingWhileMoving1": {
+   "where": "campaign",
+   "location": "The Ascent",
+   "tier": null,
+   "rank": 0,
+   "cost": [
+    "2x Chaos Orb"
+   ]
+  },
+  "EinharMasterPhysicalDamage1_": {
+   "where": "campaign",
+   "location": "The Sewers",
+   "tier": null,
+   "rank": 1,
+   "cost": [
+    "3x Orb of Chance"
+   ]
+  },
+  "EinharMasterPhysicalDamage2": {
+   "where": "campaign",
+   "location": "The Ossuary",
+   "tier": null,
+   "rank": 2,
+   "cost": [
+    "3x Orb of Alchemy"
+   ]
+  },
+  "EinharMasterReducedDamageOverTimeTaken1": {
+   "where": "map",
+   "location": "Stagnation",
+   "tier": 11,
+   "rank": 0,
+   "cost": [
+    "2x Regal Orb"
+   ]
+  },
+  "EinharMasterReducedElementalAilmentEffect1": {
+   "where": "campaign",
+   "location": "The Ascent",
+   "tier": null,
+   "rank": 1,
+   "cost": [
+    "1x Chaos Orb"
+   ]
+  },
+  "EinharMasterReducedElementalAilmentEffect2_": {
+   "where": "map",
+   "location": "Core",
+   "tier": 10,
+   "rank": 2,
+   "cost": [
+    "2x Chaos Orb"
+   ]
+  },
+  "EinharMasterReducedPhysicalDamageTaken1": {
+   "where": "map",
+   "location": "Reef",
+   "tier": 2,
+   "rank": 1,
+   "cost": [
+    "2x Orb of Alchemy"
+   ]
+  },
+  "EinharMasterReducedPhysicalDamageTaken2___": {
+   "where": "map",
+   "location": "Lair",
+   "tier": 10,
+   "rank": 2,
+   "cost": [
+    "4x Chaos Orb"
+   ]
+  },
+  "EinharMasterReducedSelfChillEffect1": {
+   "where": "campaign",
+   "location": "The Ascent",
+   "tier": null,
+   "rank": 1,
+   "cost": [
+    "4x Orb of Alteration"
+   ]
+  },
+  "EinharMasterReducedSelfChillEffect2": {
+   "where": "map",
+   "location": "Core",
+   "tier": 10,
+   "rank": 2,
+   "cost": [
+    "2x Chaos Orb"
+   ]
+  },
+  "EinharMasterReducedSelfCurseEffect1": {
+   "where": "campaign",
+   "location": "The Ascent",
+   "tier": null,
+   "rank": 1,
+   "cost": [
+    "4x Orb of Alteration"
+   ]
+  },
+  "EinharMasterReducedSelfCurseEffect2": {
+   "where": "map",
+   "location": "Core",
+   "tier": 10,
+   "rank": 2,
+   "cost": [
+    "2x Chaos Orb"
+   ]
+  },
+  "EinharMasterReducedSelfFreezeEffect1": {
+   "where": "campaign",
+   "location": "The Ascent",
+   "tier": null,
+   "rank": 1,
+   "cost": [
+    "4x Orb of Alteration"
+   ]
+  },
+  "EinharMasterReducedSelfFreezeEffect2_": {
+   "where": "map",
+   "location": "Core",
+   "tier": 10,
+   "rank": 2,
+   "cost": [
+    "2x Chaos Orb"
+   ]
+  },
+  "EinharMasterReducedSelfIgniteDuration1": {
+   "where": "campaign",
+   "location": "The Ascent",
+   "tier": null,
+   "rank": 1,
+   "cost": [
+    "4x Orb of Alteration"
+   ]
+  },
+  "EinharMasterReducedSelfIgniteDuration2": {
+   "where": "map",
+   "location": "Core",
+   "tier": 10,
+   "rank": 2,
+   "cost": [
+    "2x Chaos Orb"
+   ]
+  },
+  "EinharMasterReducedSelfShockEffect1": {
+   "where": "campaign",
+   "location": "The Ascent",
+   "tier": null,
+   "rank": 1,
+   "cost": [
+    "4x Orb of Alteration"
+   ]
+  },
+  "EinharMasterReducedSelfShockEffect2_": {
+   "where": "map",
+   "location": "Core",
+   "tier": 10,
+   "rank": 2,
+   "cost": [
+    "2x Chaos Orb"
+   ]
+  },
+  "EinharMasterSpellAddedColdDamage1": {
+   "where": "campaign",
+   "location": "The Crystal Veins",
+   "tier": null,
+   "rank": 1,
+   "cost": [
+    "4x Orb of Transmutation"
+   ]
+  },
+  "EinharMasterSpellAddedColdDamage2": {
+   "where": "campaign",
+   "location": "The Causeway",
+   "tier": null,
+   "rank": 2,
+   "cost": [
+    "2x Orb of Alchemy"
+   ]
+  },
+  "EinharMasterSpellAddedColdDamage3": {
+   "where": "map",
+   "location": "Caldera",
+   "tier": 8,
+   "rank": 3,
+   "cost": [
+    "4x Chaos Orb"
+   ]
+  },
+  "EinharMasterSpellAddedColdDamageTwoHand1": {
+   "where": "campaign",
+   "location": "The Crystal Veins",
+   "tier": null,
+   "rank": 1,
+   "cost": [
+    "4x Orb of Transmutation"
+   ]
+  },
+  "EinharMasterSpellAddedColdDamageTwoHand2_": {
+   "where": "campaign",
+   "location": "The Causeway",
+   "tier": null,
+   "rank": 2,
+   "cost": [
+    "2x Orb of Alchemy"
+   ]
+  },
+  "EinharMasterSpellAddedColdDamageTwoHand3": {
+   "where": "map",
+   "location": "Caldera",
+   "tier": 8,
+   "rank": 3,
+   "cost": [
+    "4x Chaos Orb"
+   ]
+  },
+  "EinharMasterSpellAddedFireDamage1": {
+   "where": "campaign",
+   "location": "The Solaris Temple Level 2",
+   "tier": null,
+   "rank": 1,
+   "cost": [
+    "4x Orb of Transmutation"
+   ]
+  },
+  "EinharMasterSpellAddedFireDamage2": {
+   "where": "campaign",
+   "location": "The Dread Thicket",
+   "tier": null,
+   "rank": 2,
+   "cost": [
+    "2x Orb of Alchemy"
+   ]
+  },
+  "EinharMasterSpellAddedFireDamage3": {
+   "where": "map",
+   "location": "Factory",
+   "tier": 11,
+   "rank": 3,
+   "cost": [
+    "4x Chaos Orb"
+   ]
+  },
+  "EinharMasterSpellAddedFireDamageTwoHand1": {
+   "where": "campaign",
+   "location": "The Solaris Temple Level 2",
+   "tier": null,
+   "rank": 1,
+   "cost": [
+    "4x Orb of Transmutation"
+   ]
+  },
+  "EinharMasterSpellAddedFireDamageTwoHand2": {
+   "where": "campaign",
+   "location": "The Dread Thicket",
+   "tier": null,
+   "rank": 2,
+   "cost": [
+    "2x Orb of Alchemy"
+   ]
+  },
+  "EinharMasterSpellAddedFireDamageTwoHand3": {
+   "where": "map",
+   "location": "Factory",
+   "tier": 11,
+   "rank": 3,
+   "cost": [
+    "4x Chaos Orb"
+   ]
+  },
+  "EinharMasterSpellAddedLightningDamage1": {
+   "where": "campaign",
+   "location": "The Lunaris Temple Level 2",
+   "tier": null,
+   "rank": 1,
+   "cost": [
+    "4x Orb of Transmutation"
+   ]
+  },
+  "EinharMasterSpellAddedLightningDamage2": {
+   "where": "campaign",
+   "location": "The Chamber of Sins Level 1",
+   "tier": null,
+   "rank": 2,
+   "cost": [
+    "2x Orb of Alchemy"
+   ]
+  },
+  "EinharMasterSpellAddedLightningDamage3_": {
+   "where": "map",
+   "location": "Desert Spring",
+   "tier": 8,
+   "rank": 3,
+   "cost": [
+    "4x Chaos Orb"
+   ]
+  },
+  "EinharMasterSpellAddedLightningDamageTwoHand1": {
+   "where": "campaign",
+   "location": "The Lunaris Temple Level 2",
+   "tier": null,
+   "rank": 1,
+   "cost": [
+    "4x Orb of Transmutation"
+   ]
+  },
+  "EinharMasterSpellAddedLightningDamageTwoHand2": {
+   "where": "campaign",
+   "location": "The Chamber of Sins Level 1",
+   "tier": null,
+   "rank": 2,
+   "cost": [
+    "2x Orb of Alchemy"
+   ]
+  },
+  "EinharMasterSpellAddedLightningDamageTwoHand3": {
+   "where": "map",
+   "location": "Desert Spring",
+   "tier": 8,
+   "rank": 3,
+   "cost": [
+    "4x Chaos Orb"
+   ]
+  },
+  "EinharMasterSpellBlockPercentage1": {
+   "where": "map",
+   "location": "Relic Chambers",
+   "tier": 5,
+   "rank": 1,
+   "cost": [
+    "4x Orb of Chance"
+   ]
+  },
+  "EinharMasterSpellBlockPercentage2": {
+   "where": "map",
+   "location": "City Square",
+   "tier": 9,
+   "rank": 2,
+   "cost": [
+    "3x Regal Orb"
+   ]
+  },
+  "EinharMasterSpellDamageOnTwoHandWeapon1": {
+   "where": "campaign",
+   "location": "The Ancient Pyramid",
+   "tier": null,
+   "rank": 1,
+   "cost": [
+    "4x Orb of Alteration"
+   ]
+  },
+  "EinharMasterSpellDamageOnTwoHandWeapon2": {
+   "where": "campaign",
+   "location": "Shavronne's Tower",
+   "tier": null,
+   "rank": 2,
+   "cost": [
+    "8x Orb of Alteration"
+   ]
+  },
+  "EinharMasterSpellDamageOnTwoHandWeapon3": {
+   "where": "campaign",
+   "location": "The Boiling Lake",
+   "tier": null,
+   "rank": 3,
+   "cost": [
+    "4x Chaos Orb"
+   ]
+  },
+  "EinharMasterSpellDamageOnTwoHandWeapon4_": {
+   "where": "map",
+   "location": "Malformation",
+   "tier": 12,
+   "rank": 4,
+   "cost": [
+    "4x Exalted Orb"
+   ]
+  },
+  "EinharMasterSpellDamageOnWeapon1_": {
+   "where": "campaign",
+   "location": "The Ancient Pyramid",
+   "tier": null,
+   "rank": 1,
+   "cost": [
+    "4x Orb of Alteration"
+   ]
+  },
+  "EinharMasterSpellDamageOnWeapon2": {
+   "where": "campaign",
+   "location": "Shavronne's Tower",
+   "tier": null,
+   "rank": 2,
+   "cost": [
+    "8x Orb of Alteration"
+   ]
+  },
+  "EinharMasterSpellDamageOnWeapon3": {
+   "where": "campaign",
+   "location": "The Boiling Lake",
+   "tier": null,
+   "rank": 3,
+   "cost": [
+    "4x Chaos Orb"
+   ]
+  },
+  "EinharMasterSpellDamageOnWeapon4": {
+   "where": "map",
+   "location": "Malformation",
+   "tier": 12,
+   "rank": 4,
+   "cost": [
+    "4x Exalted Orb"
+   ]
+  },
+  "EinharMasterStaffAttackBlock1": {
+   "where": "map",
+   "location": "Relic Chambers",
+   "tier": 5,
+   "rank": 1,
+   "cost": [
+    "9x Orb of Alteration"
+   ]
+  },
+  "EinharMasterStaffAttackBlock2": {
+   "where": "map",
+   "location": "City Square",
+   "tier": 9,
+   "rank": 2,
+   "cost": [
+    "3x Chaos Orb"
+   ]
+  },
+  "EinharMasterStaffSpellBlock1": {
+   "where": "map",
+   "location": "Relic Chambers",
+   "tier": 5,
+   "rank": 1,
+   "cost": [
+    "9x Orb of Alteration"
+   ]
+  },
+  "EinharMasterStaffSpellBlock2": {
+   "where": "map",
+   "location": "City Square",
+   "tier": 9,
+   "rank": 2,
+   "cost": [
+    "3x Chaos Orb"
+   ]
+  },
+  "EinharMasterStrength2": {
+   "where": "campaign",
+   "location": "The Western Forest",
+   "tier": null,
+   "rank": 2,
+   "cost": [
+    "2x Orb of Alchemy"
+   ]
+  },
+  "EinharMasterStrength3": {
+   "where": "map",
+   "location": "Primordial Blocks",
+   "tier": 5,
+   "rank": 3,
+   "cost": [
+    "2x Chaos Orb"
+   ]
+  },
+  "EinharMasterTrapDamageOnWeapon1h1": {
+   "where": "campaign",
+   "location": "The Solaris Temple Level 2",
+   "tier": null,
+   "rank": 1,
+   "cost": [
+    "2x Orb of Alchemy"
+   ]
+  },
+  "EinharMasterTrapDamageOnWeapon1h2": {
+   "where": "map",
+   "location": "Overgrown Shrine",
+   "tier": 5,
+   "rank": 2,
+   "cost": [
+    "4x Chaos Orb"
+   ]
+  },
+  "EinharMasterTrapDamageOnWeapon2h1": {
+   "where": "campaign",
+   "location": "The Solaris Temple Level 2",
+   "tier": null,
+   "rank": 1,
+   "cost": [
+    "2x Orb of Alchemy"
+   ]
+  },
+  "EinharMasterTrapDamageOnWeapon2h2": {
+   "where": "map",
+   "location": "Overgrown Shrine",
+   "tier": 5,
+   "rank": 2,
+   "cost": [
+    "4x Chaos Orb"
+   ]
+  },
+  "EinharMasterTrapThrowingSpeed1": {
+   "where": "campaign",
+   "location": "The Solaris Temple Level 2",
+   "tier": null,
+   "rank": 1,
+   "cost": [
+    "6x Orb of Augmentation"
+   ]
+  },
+  "EinharMasterTrapThrowingSpeed2": {
+   "where": "map",
+   "location": "Overgrown Shrine",
+   "tier": 5,
+   "rank": 2,
+   "cost": [
+    "2x Orb of Alchemy"
+   ]
+  },
+  "EinharMasterTrapThrowingSpeed2h1": {
+   "where": "campaign",
+   "location": "The Solaris Temple Level 2",
+   "tier": null,
+   "rank": 1,
+   "cost": [
+    "6x Orb of Augmentation"
+   ]
+  },
+  "EinharMasterTrapThrowingSpeed2h2_": {
+   "where": "map",
+   "location": "Overgrown Shrine",
+   "tier": 5,
+   "rank": 2,
+   "cost": [
+    "2x Orb of Alchemy"
+   ]
+  },
+  "EinharMasterTriggerSocketedSpellOnSkillUse1": {
+   "where": "campaign",
+   "location": "The Refinery",
+   "tier": null,
+   "rank": 0,
+   "cost": [
+    "3x Chaos Orb"
+   ]
+  },
+  "EinharMasterVaalSkillDamage1": {
+   "where": "campaign",
+   "location": "The Caverns",
+   "tier": null,
+   "rank": 1,
+   "cost": [
+    "1x Vaal Orb"
+   ]
+  },
+  "EinharMasterWarcrySpeed1": {
+   "where": "campaign",
+   "location": "The Dried Lake",
+   "tier": null,
+   "rank": 0,
+   "cost": [
+    "6x Orb of Alteration"
+   ]
+  },
+  "EinharMasterWeaponElementalDamage1_": {
+   "where": "labyrinth",
+   "location": "Labyrinth Trial in The Catacombs",
+   "tier": null,
+   "rank": 1,
+   "cost": [
+    "6x Orb of Alteration"
+   ]
+  },
+  "EinharMasterWeaponElementalDamage2": {
+   "where": "map",
+   "location": "Mesa",
+   "tier": 3,
+   "rank": 2,
+   "cost": [
+    "4x Orb of Alchemy"
+   ]
+  },
+  "FlaskEnchantmentInjectorAdjacentFlasks___": {
+   "where": "campaign",
+   "location": "Epilogue",
+   "tier": null,
+   "rank": 0,
+   "cost": [
+    "5x Glassblower's Bauble",
+    "5x Instilling Orb"
+   ]
+  },
+  "FlaskEnchantmentInjectorFlaskEffectEnd": {
+   "where": "campaign",
+   "location": "Epilogue",
+   "tier": null,
+   "rank": 0,
+   "cost": [
+    "5x Glassblower's Bauble",
+    "5x Instilling Orb"
+   ]
+  },
+  "FlaskEnchantmentInjectorOnAffectedByBleed": {
+   "where": "campaign",
+   "location": "Epilogue",
+   "tier": null,
+   "rank": 0,
+   "cost": [
+    "5x Glassblower's Bauble",
+    "5x Instilling Orb"
+   ]
+  },
+  "FlaskEnchantmentInjectorOnAffectedByChill": {
+   "where": "campaign",
+   "location": "Epilogue",
+   "tier": null,
+   "rank": 0,
+   "cost": [
+    "5x Glassblower's Bauble",
+    "5x Instilling Orb"
+   ]
+  },
+  "FlaskEnchantmentInjectorOnAffectedByFreeze__": {
+   "where": "campaign",
+   "location": "Epilogue",
+   "tier": null,
+   "rank": 0,
+   "cost": [
+    "5x Glassblower's Bauble",
+    "5x Instilling Orb"
+   ]
+  },
+  "FlaskEnchantmentInjectorOnAffectedByIgnite": {
+   "where": "campaign",
+   "location": "Epilogue",
+   "tier": null,
+   "rank": 0,
+   "cost": [
+    "5x Glassblower's Bauble",
+    "5x Instilling Orb"
+   ]
+  },
+  "FlaskEnchantmentInjectorOnAffectedByPoison_": {
+   "where": "campaign",
+   "location": "Epilogue",
+   "tier": null,
+   "rank": 0,
+   "cost": [
+    "5x Glassblower's Bauble",
+    "5x Instilling Orb"
+   ]
+  },
+  "FlaskEnchantmentInjectorOnAffectedByShock_": {
+   "where": "campaign",
+   "location": "Epilogue",
+   "tier": null,
+   "rank": 0,
+   "cost": [
+    "5x Glassblower's Bauble",
+    "5x Instilling Orb"
+   ]
+  },
+  "FlaskEnchantmentInjectorOnDamageBlocked": {
+   "where": "campaign",
+   "location": "Epilogue",
+   "tier": null,
+   "rank": 0,
+   "cost": [
+    "5x Glassblower's Bauble",
+    "5x Instilling Orb"
+   ]
+  },
+  "FlaskEnchantmentInjectorOnFullCharges__": {
+   "where": "campaign",
+   "location": "Epilogue",
+   "tier": null,
+   "rank": 0,
+   "cost": [
+    "5x Glassblower's Bauble",
+    "5x Instilling Orb"
+   ]
+  },
+  "FlaskEnchantmentInjectorOnGuardSkillUsed": {
+   "where": "campaign",
+   "location": "Epilogue",
+   "tier": null,
+   "rank": 0,
+   "cost": [
+    "5x Glassblower's Bauble",
+    "5x Instilling Orb"
+   ]
+  },
+  "FlaskEnchantmentInjectorOnHittingRareOrUnique_": {
+   "where": "campaign",
+   "location": "Epilogue",
+   "tier": null,
+   "rank": 0,
+   "cost": [
+    "5x Glassblower's Bauble",
+    "5x Instilling Orb"
+   ]
+  },
+  "FlaskEnchantmentInjectorOnTakingSavageHit_": {
+   "where": "campaign",
+   "location": "Epilogue",
+   "tier": null,
+   "rank": 0,
+   "cost": [
+    "5x Glassblower's Bauble",
+    "5x Instilling Orb"
+   ]
+  },
+  "FlaskEnchantmentInjectorOnTravelSkillUsed": {
+   "where": "campaign",
+   "location": "Epilogue",
+   "tier": null,
+   "rank": 0,
+   "cost": [
+    "5x Glassblower's Bauble",
+    "5x Instilling Orb"
+   ]
+  },
+  "FlaskEnchantmentInjectorOnUsingLifeFlask": {
+   "where": "campaign",
+   "location": "Epilogue",
+   "tier": null,
+   "rank": 0,
+   "cost": [
+    "5x Glassblower's Bauble",
+    "5x Instilling Orb"
+   ]
+  },
+  "HarvestInfusedHarbingerLeagueCrafted": {
+   "where": "start",
+   "location": "",
+   "tier": null,
+   "rank": 0,
+   "cost": []
+  },
+  "HarvestInfusedMapAnarchyExiles": {
+   "where": "start",
+   "location": "",
+   "tier": null,
+   "rank": 0,
+   "cost": []
+  },
+  "HarvestInfusedMapBloodlinesLeagueCrafted": {
+   "where": "start",
+   "location": "",
+   "tier": null,
+   "rank": 0,
+   "cost": []
+  },
+  "HarvestInfusedMapExtraShrinesCrafted": {
+   "where": "start",
+   "location": "",
+   "tier": null,
+   "rank": 0,
+   "cost": []
+  },
+  "HarvestInfusedMapExtraStrongBoxes_": {
+   "where": "start",
+   "location": "",
+   "tier": null,
+   "rank": 0,
+   "cost": []
+  },
+  "HarvestInfusedMapNemesisZana": {
+   "where": "start",
+   "location": "",
+   "tier": null,
+   "rank": 0,
+   "cost": []
+  },
+  "HarvestInfusedMapRampageLeagueCrafted": {
+   "where": "start",
+   "location": "",
+   "tier": null,
+   "rank": 0,
+   "cost": []
+  },
+  "HelenaMasterColdResist1_": {
+   "where": "start",
+   "location": "",
+   "tier": null,
+   "rank": 1,
+   "cost": [
+    "1x Orb of Transmutation"
+   ]
+  },
+  "HelenaMasterDexterity1": {
+   "where": "start",
+   "location": "",
+   "tier": null,
+   "rank": 1,
+   "cost": [
+    "1x Orb of Augmentation"
+   ]
+  },
+  "HelenaMasterFireResist1": {
+   "where": "start",
+   "location": "",
+   "tier": null,
+   "rank": 1,
+   "cost": [
+    "1x Orb of Transmutation"
+   ]
+  },
+  "HelenaMasterIncreasedLife1": {
+   "where": "start",
+   "location": "",
+   "tier": null,
+   "rank": 1,
+   "cost": [
+    "1x Orb of Alteration"
+   ]
+  },
+  "HelenaMasterIntelligence1": {
+   "where": "start",
+   "location": "",
+   "tier": null,
+   "rank": 1,
+   "cost": [
+    "1x Orb of Augmentation"
+   ]
+  },
+  "HelenaMasterLightningResist1": {
+   "where": "start",
+   "location": "",
+   "tier": null,
+   "rank": 1,
+   "cost": [
+    "1x Orb of Transmutation"
+   ]
+  },
+  "HelenaMasterStrength1": {
+   "where": "start",
+   "location": "",
+   "tier": null,
+   "rank": 1,
+   "cost": [
+    "1x Orb of Augmentation"
+   ]
+  },
+  "ImprovedLabyrinthTrialCrafted": {
+   "where": "start",
+   "location": "",
+   "tier": null,
+   "rank": 0,
+   "cost": []
+  },
+  "IntMasterItemGenerationCannotRollAttackAffixes": {
+   "where": "map",
+   "location": "Caer Blaidd, Wolfpack's Den",
+   "tier": null,
+   "rank": 0,
+   "cost": [
+    "1x Divine Orb"
+   ]
+  },
+  "JunMaster2AddedColdAndLightningDamage1": {
+   "where": "map",
+   "location": "Gardens",
+   "tier": 4,
+   "rank": 1,
+   "cost": [
+    "8x Orb of Transmutation"
+   ]
+  },
+  "JunMaster2AddedColdAndLightningDamage2": {
+   "where": "map",
+   "location": "Gardens",
+   "tier": 4,
+   "rank": 2,
+   "cost": [
+    "3x Orb of Alchemy"
+   ]
+  },
+  "JunMaster2AddedColdAndLightningDamage3_": {
+   "where": "map",
+   "location": "Gardens",
+   "tier": 4,
+   "rank": 3,
+   "cost": [
+    "3x Chaos Orb"
+   ]
+  },
+  "JunMaster2AddedFireAndColdDamage1": {
+   "where": "map",
+   "location": "Gardens",
+   "tier": 4,
+   "rank": 1,
+   "cost": [
+    "8x Orb of Transmutation"
+   ]
+  },
+  "JunMaster2AddedFireAndColdDamage2__": {
+   "where": "map",
+   "location": "Gardens",
+   "tier": 4,
+   "rank": 2,
+   "cost": [
+    "3x Orb of Alchemy"
+   ]
+  },
+  "JunMaster2AddedFireAndColdDamage3": {
+   "where": "map",
+   "location": "Gardens",
+   "tier": 4,
+   "rank": 3,
+   "cost": [
+    "3x Chaos Orb"
+   ]
+  },
+  "JunMaster2AddedFireAndLightningDamage1": {
+   "where": "map",
+   "location": "Gardens",
+   "tier": 4,
+   "rank": 1,
+   "cost": [
+    "8x Orb of Transmutation"
+   ]
+  },
+  "JunMaster2AddedFireAndLightningDamage2___": {
+   "where": "map",
+   "location": "Gardens",
+   "tier": 4,
+   "rank": 2,
+   "cost": [
+    "3x Orb of Alchemy"
+   ]
+  },
+  "JunMaster2AddedFireAndLightningDamage3": {
+   "where": "map",
+   "location": "Gardens",
+   "tier": 4,
+   "rank": 3,
+   "cost": [
+    "3x Chaos Orb"
+   ]
+  },
+  "JunMaster2AllDamage2_": {
+   "where": "map",
+   "location": "Laboratory",
+   "tier": 5,
+   "rank": 1,
+   "cost": [
+    "4x Chaos Orb"
+   ]
+  },
+  "JunMaster2AllDamage3": {
+   "where": "map",
+   "location": "Laboratory",
+   "tier": 5,
+   "rank": 2,
+   "cost": [
+    "4x Exalted Orb"
+   ]
+  },
+  "JunMaster2AlwaysHits1": {
+   "where": "map",
+   "location": "Arachnid Tomb",
+   "tier": 14,
+   "rank": 0,
+   "cost": [
+    "4x Exalted Orb"
+   ]
+  },
+  "JunMaster2AreaDamageAndAreaOfEffect1": {
+   "where": "map",
+   "location": "Bramble Valley",
+   "tier": 13,
+   "rank": 1,
+   "cost": [
+    "3x Orb of Alchemy"
+   ]
+  },
+  "JunMaster2AreaDamageAndAreaOfEffect2_": {
+   "where": "map",
+   "location": "Bramble Valley",
+   "tier": 13,
+   "rank": 2,
+   "cost": [
+    "3x Chaos Orb"
+   ]
+  },
+  "JunMaster2AreaDamageAndAreaOfEffect3": {
+   "where": "map",
+   "location": "Bramble Valley",
+   "tier": 13,
+   "rank": 3,
+   "cost": [
+    "4x Exalted Orb"
+   ]
+  },
+  "JunMaster2ArmourAndEnergyShield1": {
+   "where": "map",
+   "location": "Geode",
+   "tier": 6,
+   "rank": 1,
+   "cost": [
+    "8x Orb of Alteration"
+   ]
+  },
+  "JunMaster2ArmourAndEnergyShield2__": {
+   "where": "map",
+   "location": "Geode",
+   "tier": 6,
+   "rank": 2,
+   "cost": [
+    "2x Orb of Alchemy"
+   ]
+  },
+  "JunMaster2ArmourAndEnergyShield3": {
+   "where": "map",
+   "location": "Geode",
+   "tier": 6,
+   "rank": 3,
+   "cost": [
+    "4x Chaos Orb"
+   ]
+  },
+  "JunMaster2ArmourAndEvasionRating1_": {
+   "where": "map",
+   "location": "Geode",
+   "tier": 6,
+   "rank": 1,
+   "cost": [
+    "8x Orb of Alteration"
+   ]
+  },
+  "JunMaster2ArmourAndEvasionRating2": {
+   "where": "map",
+   "location": "Geode",
+   "tier": 6,
+   "rank": 2,
+   "cost": [
+    "2x Orb of Alchemy"
+   ]
+  },
+  "JunMaster2ArmourAndEvasionRating3": {
+   "where": "map",
+   "location": "Geode",
+   "tier": 6,
+   "rank": 3,
+   "cost": [
+    "4x Chaos Orb"
+   ]
+  },
+  "JunMaster2AttackAndCastSpeed1": {
+   "where": "map",
+   "location": "Residence",
+   "tier": 13,
+   "rank": 1,
+   "cost": [
+    "8x Orb of Alteration"
+   ]
+  },
+  "JunMaster2AttackAndCastSpeed2_": {
+   "where": "map",
+   "location": "Residence",
+   "tier": 13,
+   "rank": 2,
+   "cost": [
+    "4x Orb of Alchemy"
+   ]
+  },
+  "JunMaster2AttackAndCastSpeed3": {
+   "where": "map",
+   "location": "Residence",
+   "tier": 13,
+   "rank": 3,
+   "cost": [
+    "3x Chaos Orb"
+   ]
+  },
+  "JunMaster2AttackAndCastSpeedWhileFocused1": {
+   "where": "map",
+   "location": "Residence",
+   "tier": 13,
+   "rank": 1,
+   "cost": [
+    "6x Orb of Alteration"
+   ]
+  },
+  "JunMaster2AttackAndCastSpeedWhileFocused2_": {
+   "where": "map",
+   "location": "Residence",
+   "tier": 13,
+   "rank": 2,
+   "cost": [
+    "3x Orb of Alchemy"
+   ]
+  },
+  "JunMaster2AttackAndCastSpeedWhileFocused3": {
+   "where": "map",
+   "location": "Residence",
+   "tier": 13,
+   "rank": 3,
+   "cost": [
+    "2x Chaos Orb"
+   ]
+  },
+  "JunMaster2AttackSpeedPercentIfRareOrUniqueEnemyNearby1h1": {
+   "where": "map",
+   "location": "Summit",
+   "tier": 3,
+   "rank": 1,
+   "cost": [
+    "6x Orb of Alteration"
+   ]
+  },
+  "JunMaster2AttackSpeedPercentIfRareOrUniqueEnemyNearby1h2_": {
+   "where": "map",
+   "location": "Summit",
+   "tier": 3,
+   "rank": 2,
+   "cost": [
+    "2x Orb of Alchemy"
+   ]
+  },
+  "JunMaster2AttackSpeedPercentIfRareOrUniqueEnemyNearby1h3": {
+   "where": "map",
+   "location": "Summit",
+   "tier": 3,
+   "rank": 3,
+   "cost": [
+    "4x Chaos Orb"
+   ]
+  },
+  "JunMaster2AttackSpeedPercentIfRareOrUniqueEnemyNearby2h1": {
+   "where": "map",
+   "location": "Summit",
+   "tier": 3,
+   "rank": 1,
+   "cost": [
+    "6x Orb of Alteration"
+   ]
+  },
+  "JunMaster2AttackSpeedPercentIfRareOrUniqueEnemyNearby2h2_": {
+   "where": "map",
+   "location": "Summit",
+   "tier": 3,
+   "rank": 2,
+   "cost": [
+    "2x Orb of Alchemy"
+   ]
+  },
+  "JunMaster2AttackSpeedPercentIfRareOrUniqueEnemyNearby2h3": {
+   "where": "map",
+   "location": "Summit",
+   "tier": 3,
+   "rank": 3,
+   "cost": [
+    "4x Chaos Orb"
+   ]
+  },
+  "JunMaster2AvoidElementalDamageChanceDuringSoulGainPrevention1": {
+   "where": "map",
+   "location": "Shrine",
+   "tier": 5,
+   "rank": 1,
+   "cost": [
+    "2x Vaal Orb"
+   ]
+  },
+  "JunMaster2AvoidElementalDamageChanceDuringSoulGainPrevention2": {
+   "where": "map",
+   "location": "Shrine",
+   "tier": 5,
+   "rank": 2,
+   "cost": [
+    "4x Vaal Orb"
+   ]
+  },
+  "JunMaster2AvoidFreeze2_": {
+   "where": "map",
+   "location": "Core",
+   "tier": 10,
+   "rank": 1,
+   "cost": [
+    "4x Chaos Orb"
+   ]
+  },
+  "JunMaster2AvoidFreeze3": {
+   "where": "map",
+   "location": "Core",
+   "tier": 10,
+   "rank": 2,
+   "cost": [
+    "4x Exalted Orb"
+   ]
+  },
+  "JunMaster2AvoidStunAndElementalStatusAilments1__": {
+   "where": "map",
+   "location": "Core",
+   "tier": 10,
+   "rank": 0,
+   "cost": [
+    "6x Orb of Alchemy"
+   ]
+  },
+  "JunMaster2BannerAuraEffect1": {
+   "where": "map",
+   "location": "Pier",
+   "tier": 6,
+   "rank": 1,
+   "cost": [
+    "2x Orb of Alchemy"
+   ]
+  },
+  "JunMaster2BannerAuraEffect2": {
+   "where": "map",
+   "location": "Pier",
+   "tier": 6,
+   "rank": 2,
+   "cost": [
+    "4x Chaos Orb"
+   ]
+  },
+  "JunMaster2BaseLifeAndManaRegen1": {
+   "where": "map",
+   "location": "Silo",
+   "tier": 7,
+   "rank": 1,
+   "cost": [
+    "6x Orb of Alteration"
+   ]
+  },
+  "JunMaster2BaseLifeAndManaRegen2_": {
+   "where": "map",
+   "location": "Silo",
+   "tier": 7,
+   "rank": 2,
+   "cost": [
+    "2x Orb of Alchemy"
+   ]
+  },
+  "JunMaster2BaseLifeAndManaRegen3": {
+   "where": "map",
+   "location": "Silo",
+   "tier": 7,
+   "rank": 3,
+   "cost": [
+    "4x Chaos Orb"
+   ]
+  },
+  "JunMaster2BaseManaAndLifeRegen1": {
+   "where": "map",
+   "location": "Silo",
+   "tier": 7,
+   "rank": 1,
+   "cost": [
+    "6x Orb of Alteration"
+   ]
+  },
+  "JunMaster2BaseManaAndLifeRegen2": {
+   "where": "map",
+   "location": "Silo",
+   "tier": 7,
+   "rank": 2,
+   "cost": [
+    "2x Orb of Alchemy"
+   ]
+  },
+  "JunMaster2BaseManaAndLifeRegen3": {
+   "where": "map",
+   "location": "Silo",
+   "tier": 7,
+   "rank": 3,
+   "cost": [
+    "4x Chaos Orb"
+   ]
+  },
+  "JunMaster2BleedOnHitGained1h2_": {
+   "where": "map",
+   "location": "Cage",
+   "tier": 3,
+   "rank": 1,
+   "cost": [
+    "2x Orb of Alchemy"
+   ]
+  },
+  "JunMaster2BleedOnHitGained1h3_": {
+   "where": "map",
+   "location": "Cage",
+   "tier": 3,
+   "rank": 2,
+   "cost": [
+    "4x Chaos Orb"
+   ]
+  },
+  "JunMaster2BleedOnHitGained2h2": {
+   "where": "map",
+   "location": "Cage",
+   "tier": 3,
+   "rank": 1,
+   "cost": [
+    "2x Orb of Alchemy"
+   ]
+  },
+  "JunMaster2BleedOnHitGained2h3_": {
+   "where": "map",
+   "location": "Cage",
+   "tier": 3,
+   "rank": 2,
+   "cost": [
+    "4x Chaos Orb"
+   ]
+  },
+  "JunMaster2BlockPercent1": {
+   "where": "map",
+   "location": "City Square",
+   "tier": 9,
+   "rank": 0,
+   "cost": [
+    "4x Chaos Orb"
+   ]
+  },
+  "JunMaster2BrandAttachmentRange1": {
+   "where": "map",
+   "location": "Arachnid Nest",
+   "tier": 2,
+   "rank": 1,
+   "cost": [
+    "6x Orb of Augmentation"
+   ]
+  },
+  "JunMaster2BrandAttachmentRange2_": {
+   "where": "map",
+   "location": "Arachnid Nest",
+   "tier": 2,
+   "rank": 2,
+   "cost": [
+    "3x Orb of Alchemy"
+   ]
+  },
+  "JunMaster2BrandAttachmentRange3_": {
+   "where": "map",
+   "location": "Arachnid Nest",
+   "tier": 2,
+   "rank": 3,
+   "cost": [
+    "4x Chaos Orb"
+   ]
+  },
+  "JunMaster2CastSpeedAndGainArcaneSurgeOnKillChance1h1": {
+   "where": "map",
+   "location": "Courthouse",
+   "tier": 4,
+   "rank": 1,
+   "cost": [
+    "4x Orb of Alteration"
+   ]
+  },
+  "JunMaster2CastSpeedAndGainArcaneSurgeOnKillChance1h2": {
+   "where": "map",
+   "location": "Courthouse",
+   "tier": 4,
+   "rank": 2,
+   "cost": [
+    "4x Orb of Alchemy"
+   ]
+  },
+  "JunMaster2CastSpeedAndGainArcaneSurgeOnKillChance1h3": {
+   "where": "map",
+   "location": "Courthouse",
+   "tier": 4,
+   "rank": 3,
+   "cost": [
+    "4x Chaos Orb"
+   ]
+  },
+  "JunMaster2CastSpeedAndGainArcaneSurgeOnKillChance2h1_": {
+   "where": "map",
+   "location": "Courthouse",
+   "tier": 4,
+   "rank": 1,
+   "cost": [
+    "4x Orb of Alteration"
+   ]
+  },
+  "JunMaster2CastSpeedAndGainArcaneSurgeOnKillChance2h2_": {
+   "where": "map",
+   "location": "Courthouse",
+   "tier": 4,
+   "rank": 2,
+   "cost": [
+    "4x Orb of Alchemy"
+   ]
+  },
+  "JunMaster2CastSpeedAndGainArcaneSurgeOnKillChance2h3": {
+   "where": "map",
+   "location": "Courthouse",
+   "tier": 4,
+   "rank": 3,
+   "cost": [
+    "4x Chaos Orb"
+   ]
+  },
+  "JunMaster2ChanceToDealDoubleDamageWhileFocused1h1": {
+   "where": "map",
+   "location": "Colonnade",
+   "tier": 5,
+   "rank": 1,
+   "cost": [
+    "4x Orb of Alteration"
+   ]
+  },
+  "JunMaster2ChanceToDealDoubleDamageWhileFocused1h2": {
+   "where": "map",
+   "location": "Colonnade",
+   "tier": 5,
+   "rank": 2,
+   "cost": [
+    "8x Orb of Alchemy"
+   ]
+  },
+  "JunMaster2ChanceToDealDoubleDamageWhileFocused1h3": {
+   "where": "map",
+   "location": "Colonnade",
+   "tier": 5,
+   "rank": 3,
+   "cost": [
+    "8x Chaos Orb"
+   ]
+  },
+  "JunMaster2ChanceToDealDoubleDamageWhileFocused2h1_": {
+   "where": "map",
+   "location": "Colonnade",
+   "tier": 5,
+   "rank": 1,
+   "cost": [
+    "4x Orb of Alteration"
+   ]
+  },
+  "JunMaster2ChanceToDealDoubleDamageWhileFocused2h2": {
+   "where": "map",
+   "location": "Colonnade",
+   "tier": 5,
+   "rank": 2,
+   "cost": [
+    "8x Orb of Alchemy"
+   ]
+  },
+  "JunMaster2ChanceToDealDoubleDamageWhileFocused2h3": {
+   "where": "map",
+   "location": "Colonnade",
+   "tier": 5,
+   "rank": 3,
+   "cost": [
+    "8x Chaos Orb"
+   ]
+  },
+  "JunMaster2ChaosDamageAndChaosSkillDuration1h1": {
+   "where": "map",
+   "location": "Crater",
+   "tier": 10,
+   "rank": 1,
+   "cost": [
+    "3x Orb of Alchemy"
+   ]
+  },
+  "JunMaster2ChaosDamageAndChaosSkillDuration1h2": {
+   "where": "map",
+   "location": "Crater",
+   "tier": 10,
+   "rank": 2,
+   "cost": [
+    "3x Chaos Orb"
+   ]
+  },
+  "JunMaster2ChaosDamageAndChaosSkillDuration1h3": {
+   "where": "map",
+   "location": "Crater",
+   "tier": 10,
+   "rank": 3,
+   "cost": [
+    "8x Chaos Orb"
+   ]
+  },
+  "JunMaster2ChaosDamageAndChaosSkillDuration2h1": {
+   "where": "map",
+   "location": "Crater",
+   "tier": 10,
+   "rank": 1,
+   "cost": [
+    "3x Orb of Alchemy"
+   ]
+  },
+  "JunMaster2ChaosDamageAndChaosSkillDuration2h2": {
+   "where": "map",
+   "location": "Crater",
+   "tier": 10,
+   "rank": 2,
+   "cost": [
+    "3x Chaos Orb"
+   ]
+  },
+  "JunMaster2ChaosDamageAndChaosSkillDuration2h3_": {
+   "where": "map",
+   "location": "Crater",
+   "tier": 10,
+   "rank": 3,
+   "cost": [
+    "8x Chaos Orb"
+   ]
+  },
+  "JunMaster2ChaosDamageOverTimeMultiplier1_": {
+   "where": "map",
+   "location": "Excavation",
+   "tier": 7,
+   "rank": 1,
+   "cost": [
+    "8x Orb of Alteration"
+   ]
+  },
+  "JunMaster2ChaosDamageOverTimeMultiplier2": {
+   "where": "map",
+   "location": "Excavation",
+   "tier": 7,
+   "rank": 2,
+   "cost": [
+    "2x Orb of Alchemy"
+   ]
+  },
+  "JunMaster2ChaosDamageOverTimeMultiplier3": {
+   "where": "map",
+   "location": "Excavation",
+   "tier": 7,
+   "rank": 3,
+   "cost": [
+    "4x Chaos Orb"
+   ]
+  },
+  "JunMaster2ChaosDamageOverTimeMultiplierTwoHand1": {
+   "where": "map",
+   "location": "Excavation",
+   "tier": 7,
+   "rank": 1,
+   "cost": [
+    "8x Orb of Alteration"
+   ]
+  },
+  "JunMaster2ChaosDamageOverTimeMultiplierTwoHand2_": {
+   "where": "map",
+   "location": "Excavation",
+   "tier": 7,
+   "rank": 2,
+   "cost": [
+    "2x Orb of Alchemy"
+   ]
+  },
+  "JunMaster2ChaosDamageOverTimeMultiplierTwoHand3": {
+   "where": "map",
+   "location": "Excavation",
+   "tier": 7,
+   "rank": 3,
+   "cost": [
+    "4x Chaos Orb"
+   ]
+  },
+  "JunMaster2ChaosPenetrationWithAttacks1": {
+   "where": "map",
+   "location": "Crater",
+   "tier": 10,
+   "rank": 1,
+   "cost": [
+    "8x Orb of Alteration"
+   ]
+  },
+  "JunMaster2ChaosPenetrationWithAttacks2": {
+   "where": "map",
+   "location": "Crater",
+   "tier": 10,
+   "rank": 2,
+   "cost": [
+    "4x Orb of Alchemy"
+   ]
+  },
+  "JunMaster2ChaosPenetrationWithAttacks3_": {
+   "where": "map",
+   "location": "Crater",
+   "tier": 10,
+   "rank": 3,
+   "cost": [
+    "4x Chaos Orb"
+   ]
+  },
+  "JunMaster2ColdAddedAsChaos1h2": {
+   "where": "map",
+   "location": "Palace",
+   "tier": 9,
+   "rank": 1,
+   "cost": [
+    "6x Vaal Orb"
+   ]
+  },
+  "JunMaster2ColdAddedAsChaos1h3": {
+   "where": "map",
+   "location": "Palace",
+   "tier": 9,
+   "rank": 2,
+   "cost": [
+    "8x Vaal Orb"
+   ]
+  },
+  "JunMaster2ColdAddedAsChaos2h2": {
+   "where": "map",
+   "location": "Palace",
+   "tier": 9,
+   "rank": 1,
+   "cost": [
+    "6x Vaal Orb"
+   ]
+  },
+  "JunMaster2ColdAddedAsChaos2h3": {
+   "where": "map",
+   "location": "Palace",
+   "tier": 9,
+   "rank": 2,
+   "cost": [
+    "8x Vaal Orb"
+   ]
+  },
+  "JunMaster2ColdAndChaosDamageResistance1_": {
+   "where": "map",
+   "location": "Shipyard",
+   "tier": 6,
+   "rank": 1,
+   "cost": [
+    "8x Orb of Transmutation"
+   ]
+  },
+  "JunMaster2ColdAndChaosDamageResistance2_": {
+   "where": "map",
+   "location": "Shipyard",
+   "tier": 6,
+   "rank": 2,
+   "cost": [
+    "2x Orb of Alchemy"
+   ]
+  },
+  "JunMaster2ColdAndChaosDamageResistance3": {
+   "where": "map",
+   "location": "Shipyard",
+   "tier": 6,
+   "rank": 3,
+   "cost": [
+    "3x Chaos Orb"
+   ]
+  },
+  "JunMaster2ColdDamageAndBaseChanceToFreeze1h1": {
+   "where": "map",
+   "location": "Caldera",
+   "tier": 8,
+   "rank": 1,
+   "cost": [
+    "3x Orb of Alchemy"
+   ]
+  },
+  "JunMaster2ColdDamageAndBaseChanceToFreeze1h2__": {
+   "where": "map",
+   "location": "Caldera",
+   "tier": 8,
+   "rank": 2,
+   "cost": [
+    "3x Chaos Orb"
+   ]
+  },
+  "JunMaster2ColdDamageAndBaseChanceToFreeze1h3": {
+   "where": "map",
+   "location": "Caldera",
+   "tier": 8,
+   "rank": 3,
+   "cost": [
+    "8x Chaos Orb"
+   ]
+  },
+  "JunMaster2ColdDamageAndBaseChanceToFreeze2h1": {
+   "where": "map",
+   "location": "Caldera",
+   "tier": 8,
+   "rank": 1,
+   "cost": [
+    "3x Orb of Alchemy"
+   ]
+  },
+  "JunMaster2ColdDamageAndBaseChanceToFreeze2h2": {
+   "where": "map",
+   "location": "Caldera",
+   "tier": 8,
+   "rank": 2,
+   "cost": [
+    "3x Chaos Orb"
+   ]
+  },
+  "JunMaster2ColdDamageAndBaseChanceToFreeze2h3_": {
+   "where": "map",
+   "location": "Caldera",
+   "tier": 8,
+   "rank": 3,
+   "cost": [
+    "8x Chaos Orb"
+   ]
+  },
+  "JunMaster2ColdDamageOverTimeMultiplier1__": {
+   "where": "map",
+   "location": "Ramparts",
+   "tier": 2,
+   "rank": 1,
+   "cost": [
+    "8x Orb of Alteration"
+   ]
+  },
+  "JunMaster2ColdDamageOverTimeMultiplier2": {
+   "where": "map",
+   "location": "Ramparts",
+   "tier": 2,
+   "rank": 2,
+   "cost": [
+    "2x Orb of Alchemy"
+   ]
+  },
+  "JunMaster2ColdDamageOverTimeMultiplier3_": {
+   "where": "map",
+   "location": "Ramparts",
+   "tier": 2,
+   "rank": 3,
+   "cost": [
+    "4x Chaos Orb"
+   ]
+  },
+  "JunMaster2ColdDamageOverTimeMultiplierTwoHand1": {
+   "where": "map",
+   "location": "Ramparts",
+   "tier": 2,
+   "rank": 1,
+   "cost": [
+    "8x Orb of Alteration"
+   ]
+  },
+  "JunMaster2ColdDamageOverTimeMultiplierTwoHand2": {
+   "where": "map",
+   "location": "Ramparts",
+   "tier": 2,
+   "rank": 2,
+   "cost": [
+    "2x Orb of Alchemy"
+   ]
+  },
+  "JunMaster2ColdDamageOverTimeMultiplierTwoHand3": {
+   "where": "map",
+   "location": "Ramparts",
+   "tier": 2,
+   "rank": 3,
+   "cost": [
+    "4x Chaos Orb"
+   ]
+  },
+  "JunMaster2CriticalChanceAndAddedChaosDamageIfHaveCritRecently1": {
+   "where": "map",
+   "location": "Belfry",
+   "tier": 14,
+   "rank": 1,
+   "cost": [
+    "6x Orb of Alteration"
+   ]
+  },
+  "JunMaster2CriticalChanceAndAddedChaosDamageIfHaveCritRecently2": {
+   "where": "map",
+   "location": "Belfry",
+   "tier": 14,
+   "rank": 2,
+   "cost": [
+    "2x Orb of Alchemy"
+   ]
+  },
+  "JunMaster2CriticalChanceAndAddedChaosDamageIfHaveCritRecently3": {
+   "where": "map",
+   "location": "Belfry",
+   "tier": 14,
+   "rank": 3,
+   "cost": [
+    "4x Chaos Orb"
+   ]
+  },
+  "JunMaster2CriticalChanceAndElementalDamagePercentIfHaveCritRecently1_": {
+   "where": "map",
+   "location": "Belfry",
+   "tier": 14,
+   "rank": 1,
+   "cost": [
+    "6x Orb of Alteration"
+   ]
+  },
+  "JunMaster2CriticalChanceAndElementalDamagePercentIfHaveCritRecently2": {
+   "where": "map",
+   "location": "Belfry",
+   "tier": 14,
+   "rank": 2,
+   "cost": [
+    "2x Orb of Alchemy"
+   ]
+  },
+  "JunMaster2CriticalChanceAndElementalDamagePercentIfHaveCritRecently3": {
+   "where": "map",
+   "location": "Belfry",
+   "tier": 14,
+   "rank": 3,
+   "cost": [
+    "4x Chaos Orb"
+   ]
+  },
+  "JunMaster2CriticalChanceAndGainFrenzyChargeOnCriticalStrikePercent1": {
+   "where": "map",
+   "location": "Iceberg",
+   "tier": 12,
+   "rank": 1,
+   "cost": [
+    "6x Orb of Alteration"
+   ]
+  },
+  "JunMaster2CriticalChanceAndGainFrenzyChargeOnCriticalStrikePercent2": {
+   "where": "map",
+   "location": "Iceberg",
+   "tier": 12,
+   "rank": 2,
+   "cost": [
+    "2x Orb of Alchemy"
+   ]
+  },
+  "JunMaster2CriticalChanceAndGainFrenzyChargeOnCriticalStrikePercent3": {
+   "where": "map",
+   "location": "Iceberg",
+   "tier": 12,
+   "rank": 3,
+   "cost": [
+    "4x Chaos Orb"
+   ]
+  },
+  "JunMaster2CriticalMultiplierOnShatter2": {
+   "where": "map",
+   "location": "Belfry",
+   "tier": 14,
+   "rank": 1,
+   "cost": [
+    "2x Orb of Alchemy"
+   ]
+  },
+  "JunMaster2CriticalMultiplierOnShatter3": {
+   "where": "map",
+   "location": "Belfry",
+   "tier": 14,
+   "rank": 2,
+   "cost": [
+    "4x Chaos Orb"
+   ]
+  },
+  "JunMaster2CriticalStrikeMultiplierIfRareOrUniqueEnemyNearby1h1": {
+   "where": "map",
+   "location": "Summit",
+   "tier": 3,
+   "rank": 1,
+   "cost": [
+    "6x Orb of Alteration"
+   ]
+  },
+  "JunMaster2CriticalStrikeMultiplierIfRareOrUniqueEnemyNearby1h2": {
+   "where": "map",
+   "location": "Summit",
+   "tier": 3,
+   "rank": 2,
+   "cost": [
+    "2x Orb of Alchemy"
+   ]
+  },
+  "JunMaster2CriticalStrikeMultiplierIfRareOrUniqueEnemyNearby1h3": {
+   "where": "map",
+   "location": "Summit",
+   "tier": 3,
+   "rank": 3,
+   "cost": [
+    "4x Chaos Orb"
+   ]
+  },
+  "JunMaster2CriticalStrikeMultiplierIfRareOrUniqueEnemyNearby2h1_": {
+   "where": "map",
+   "location": "Summit",
+   "tier": 3,
+   "rank": 1,
+   "cost": [
+    "6x Orb of Alteration"
+   ]
+  },
+  "JunMaster2CriticalStrikeMultiplierIfRareOrUniqueEnemyNearby2h2": {
+   "where": "map",
+   "location": "Summit",
+   "tier": 3,
+   "rank": 2,
+   "cost": [
+    "2x Orb of Alchemy"
+   ]
+  },
+  "JunMaster2CriticalStrikeMultiplierIfRareOrUniqueEnemyNearby2h3": {
+   "where": "map",
+   "location": "Summit",
+   "tier": 3,
+   "rank": 3,
+   "cost": [
+    "4x Chaos Orb"
+   ]
+  },
+  "JunMaster2CurseEffect1": {
+   "where": "map",
+   "location": "Strand",
+   "tier": 3,
+   "rank": 1,
+   "cost": [
+    "2x Chaos Orb"
+   ]
+  },
+  "JunMaster2CurseEffect2": {
+   "where": "map",
+   "location": "Strand",
+   "tier": 3,
+   "rank": 2,
+   "cost": [
+    "4x Exalted Orb"
+   ]
+  },
+  "JunMaster2DamageDuringFlaskEffect2_": {
+   "where": "map",
+   "location": "Port",
+   "tier": 4,
+   "rank": 1,
+   "cost": [
+    "2x Orb of Alchemy"
+   ]
+  },
+  "JunMaster2DamageDuringFlaskEffect3": {
+   "where": "map",
+   "location": "Port",
+   "tier": 4,
+   "rank": 2,
+   "cost": [
+    "4x Chaos Orb"
+   ]
+  },
+  "JunMaster2DamagePerEnduranceCharge1h1_": {
+   "where": "map",
+   "location": "Dark Forest",
+   "tier": 12,
+   "rank": 0,
+   "cost": [
+    "3x Chaos Orb"
+   ]
+  },
+  "JunMaster2DamagePerEnduranceCharge2h1": {
+   "where": "map",
+   "location": "Dark Forest",
+   "tier": 12,
+   "rank": 0,
+   "cost": [
+    "3x Chaos Orb"
+   ]
+  },
+  "JunMaster2DamagePerFrenzyCharge1h1": {
+   "where": "map",
+   "location": "Iceberg",
+   "tier": 12,
+   "rank": 0,
+   "cost": [
+    "3x Chaos Orb"
+   ]
+  },
+  "JunMaster2DamagePerFrenzyCharge2h1": {
+   "where": "map",
+   "location": "Iceberg",
+   "tier": 12,
+   "rank": 0,
+   "cost": [
+    "3x Chaos Orb"
+   ]
+  },
+  "JunMaster2DamagePerPowerCharge1h1": {
+   "where": "map",
+   "location": "Temple",
+   "tier": 12,
+   "rank": 0,
+   "cost": [
+    "3x Chaos Orb"
+   ]
+  },
+  "JunMaster2DamagePerPowerCharge2h1__": {
+   "where": "map",
+   "location": "Temple",
+   "tier": 12,
+   "rank": 0,
+   "cost": [
+    "3x Chaos Orb"
+   ]
+  },
+  "JunMaster2DamageRemovedFromManaBeforeLifeWhileFocused1_": {
+   "where": "map",
+   "location": "Sunken City",
+   "tier": 6,
+   "rank": 0,
+   "cost": [
+    "3x Chaos Orb"
+   ]
+  },
+  "JunMaster2DamageWhileLeeching2": {
+   "where": "map",
+   "location": "Jungle Valley",
+   "tier": 9,
+   "rank": 1,
+   "cost": [
+    "3x Chaos Orb"
+   ]
+  },
+  "JunMaster2DamageWhileLeeching3": {
+   "where": "map",
+   "location": "Jungle Valley",
+   "tier": 9,
+   "rank": 2,
+   "cost": [
+    "4x Exalted Orb"
+   ]
+  },
+  "JunMaster2DamageWithNonVaalSkillsDuringSoulGainPrevention1": {
+   "where": "map",
+   "location": "Shrine",
+   "tier": 5,
+   "rank": 1,
+   "cost": [
+    "1x Vaal Orb"
+   ]
+  },
+  "JunMaster2DamageWithNonVaalSkillsDuringSoulGainPrevention2": {
+   "where": "map",
+   "location": "Shrine",
+   "tier": 5,
+   "rank": 2,
+   "cost": [
+    "2x Vaal Orb"
+   ]
+  },
+  "JunMaster2DamageWithNonVaalSkillsDuringSoulGainPrevention3": {
+   "where": "map",
+   "location": "Shrine",
+   "tier": 5,
+   "rank": 3,
+   "cost": [
+    "4x Vaal Orb"
+   ]
+  },
+  "JunMaster2DexterityAndAvoidFreeze1": {
+   "where": "map",
+   "location": "Maelstr\u00f6m of Chaos",
+   "tier": null,
+   "rank": 1,
+   "cost": [
+    "8x Armourer's Scrap"
+   ]
+  },
+  "JunMaster2DexterityAndAvoidFreeze2___": {
+   "where": "map",
+   "location": "Maelstr\u00f6m of Chaos",
+   "tier": null,
+   "rank": 2,
+   "cost": [
+    "3x Orb of Alchemy"
+   ]
+  },
+  "JunMaster2DexterityAndAvoidFreeze3": {
+   "where": "map",
+   "location": "Maelstr\u00f6m of Chaos",
+   "tier": null,
+   "rank": 3,
+   "cost": [
+    "4x Chaos Orb"
+   ]
+  },
+  "JunMaster2DexterityAndIntelligence1_": {
+   "where": "map",
+   "location": "Primordial Blocks",
+   "tier": 5,
+   "rank": 1,
+   "cost": [
+    "6x Orb of Alteration"
+   ]
+  },
+  "JunMaster2DexterityAndIntelligence2": {
+   "where": "map",
+   "location": "Primordial Blocks",
+   "tier": 5,
+   "rank": 2,
+   "cost": [
+    "2x Orb of Alchemy"
+   ]
+  },
+  "JunMaster2DexterityAndIntelligence3__": {
+   "where": "map",
+   "location": "Primordial Blocks",
+   "tier": 5,
+   "rank": 3,
+   "cost": [
+    "4x Chaos Orb"
+   ]
+  },
+  "JunMaster2DodgeChanceDuringFocus1_": {
+   "where": "map",
+   "location": "Geode",
+   "tier": 6,
+   "rank": 1,
+   "cost": [
+    "4x Orb of Alteration"
+   ]
+  },
+  "JunMaster2DodgeChanceDuringFocus2": {
+   "where": "map",
+   "location": "Geode",
+   "tier": 6,
+   "rank": 2,
+   "cost": [
+    "2x Orb of Alchemy"
+   ]
+  },
+  "JunMaster2DodgeChanceDuringFocus3": {
+   "where": "map",
+   "location": "Geode",
+   "tier": 6,
+   "rank": 3,
+   "cost": [
+    "4x Chaos Orb"
+   ]
+  },
+  "JunMaster2DoubleDamageChance1h1": {
+   "where": "map",
+   "location": "Colonnade",
+   "tier": 5,
+   "rank": 1,
+   "cost": [
+    "2x Chaos Orb"
+   ]
+  },
+  "JunMaster2DoubleDamageChance1h2": {
+   "where": "map",
+   "location": "Colonnade",
+   "tier": 5,
+   "rank": 2,
+   "cost": [
+    "8x Chaos Orb"
+   ]
+  },
+  "JunMaster2DoubleDamageChance2h1": {
+   "where": "map",
+   "location": "Colonnade",
+   "tier": 5,
+   "rank": 1,
+   "cost": [
+    "2x Chaos Orb"
+   ]
+  },
+  "JunMaster2DoubleDamageChance2h2": {
+   "where": "map",
+   "location": "Colonnade",
+   "tier": 5,
+   "rank": 2,
+   "cost": [
+    "8x Chaos Orb"
+   ]
+  },
+  "JunMaster2EffectOfAilments1_": {
+   "where": "map",
+   "location": "Cage",
+   "tier": 3,
+   "rank": 1,
+   "cost": [
+    "2x Orb of Chance"
+   ]
+  },
+  "JunMaster2EffectOfAilments2": {
+   "where": "map",
+   "location": "Cage",
+   "tier": 3,
+   "rank": 2,
+   "cost": [
+    "2x Regal Orb"
+   ]
+  },
+  "JunMaster2ElementalPenetrationWithAttacks1": {
+   "where": "map",
+   "location": "Mesa",
+   "tier": 3,
+   "rank": 1,
+   "cost": [
+    "4x Orb of Alchemy"
+   ]
+  },
+  "JunMaster2ElementalPenetrationWithAttacks2": {
+   "where": "map",
+   "location": "Mesa",
+   "tier": 3,
+   "rank": 2,
+   "cost": [
+    "4x Chaos Orb"
+   ]
+  },
+  "JunMaster2ElementalPenetrationWithAttacks3": {
+   "where": "map",
+   "location": "Mesa",
+   "tier": 3,
+   "rank": 3,
+   "cost": [
+    "4x Exalted Orb"
+   ]
+  },
+  "JunMaster2EnergyShieldRegenerationRatePerMinuteIfRareOrUniqueEnemyNearby1": {
+   "where": "map",
+   "location": "Summit",
+   "tier": 3,
+   "rank": 1,
+   "cost": [
+    "6x Orb of Alteration"
+   ]
+  },
+  "JunMaster2EnergyShieldRegenerationRatePerMinuteIfRareOrUniqueEnemyNearby2_": {
+   "where": "map",
+   "location": "Summit",
+   "tier": 3,
+   "rank": 2,
+   "cost": [
+    "2x Orb of Alchemy"
+   ]
+  },
+  "JunMaster2EnergyShieldRegenerationRatePerMinuteIfRareOrUniqueEnemyNearby3_": {
+   "where": "map",
+   "location": "Summit",
+   "tier": 3,
+   "rank": 3,
+   "cost": [
+    "4x Chaos Orb"
+   ]
+  },
+  "JunMaster2EvasionRatingAndEnergyShield1__": {
+   "where": "map",
+   "location": "Geode",
+   "tier": 6,
+   "rank": 1,
+   "cost": [
+    "8x Orb of Alteration"
+   ]
+  },
+  "JunMaster2EvasionRatingAndEnergyShield2": {
+   "where": "map",
+   "location": "Geode",
+   "tier": 6,
+   "rank": 2,
+   "cost": [
+    "2x Orb of Alchemy"
+   ]
+  },
+  "JunMaster2EvasionRatingAndEnergyShield3": {
+   "where": "map",
+   "location": "Geode",
+   "tier": 6,
+   "rank": 3,
+   "cost": [
+    "4x Chaos Orb"
+   ]
+  },
+  "JunMaster2FireAddedAsChaos1h2": {
+   "where": "map",
+   "location": "Lookout",
+   "tier": 9,
+   "rank": 1,
+   "cost": [
+    "6x Vaal Orb"
+   ]
+  },
+  "JunMaster2FireAddedAsChaos1h3_": {
+   "where": "map",
+   "location": "Lookout",
+   "tier": 9,
+   "rank": 2,
+   "cost": [
+    "8x Vaal Orb"
+   ]
+  },
+  "JunMaster2FireAddedAsChaos2h2": {
+   "where": "map",
+   "location": "Lookout",
+   "tier": 9,
+   "rank": 1,
+   "cost": [
+    "6x Vaal Orb"
+   ]
+  },
+  "JunMaster2FireAddedAsChaos2h3_": {
+   "where": "map",
+   "location": "Lookout",
+   "tier": 9,
+   "rank": 2,
+   "cost": [
+    "8x Vaal Orb"
+   ]
+  },
+  "JunMaster2FireAndChaosDamageResistance1_": {
+   "where": "map",
+   "location": "Shipyard",
+   "tier": 6,
+   "rank": 1,
+   "cost": [
+    "8x Orb of Transmutation"
+   ]
+  },
+  "JunMaster2FireAndChaosDamageResistance2_": {
+   "where": "map",
+   "location": "Shipyard",
+   "tier": 6,
+   "rank": 2,
+   "cost": [
+    "2x Orb of Alchemy"
+   ]
+  },
+  "JunMaster2FireAndChaosDamageResistance3": {
+   "where": "map",
+   "location": "Shipyard",
+   "tier": 6,
+   "rank": 3,
+   "cost": [
+    "3x Chaos Orb"
+   ]
+  },
+  "JunMaster2FireDamageAndChanceToIgnite1h1": {
+   "where": "map",
+   "location": "Factory",
+   "tier": 11,
+   "rank": 1,
+   "cost": [
+    "3x Orb of Alchemy"
+   ]
+  },
+  "JunMaster2FireDamageAndChanceToIgnite1h2": {
+   "where": "map",
+   "location": "Factory",
+   "tier": 11,
+   "rank": 2,
+   "cost": [
+    "3x Chaos Orb"
+   ]
+  },
+  "JunMaster2FireDamageAndChanceToIgnite1h3": {
+   "where": "map",
+   "location": "Factory",
+   "tier": 11,
+   "rank": 3,
+   "cost": [
+    "8x Chaos Orb"
+   ]
+  },
+  "JunMaster2FireDamageAndChanceToIgnite2h1": {
+   "where": "map",
+   "location": "Factory",
+   "tier": 11,
+   "rank": 1,
+   "cost": [
+    "3x Orb of Alchemy"
+   ]
+  },
+  "JunMaster2FireDamageAndChanceToIgnite2h2": {
+   "where": "map",
+   "location": "Factory",
+   "tier": 11,
+   "rank": 2,
+   "cost": [
+    "3x Chaos Orb"
+   ]
+  },
+  "JunMaster2FireDamageAndChanceToIgnite2h3": {
+   "where": "map",
+   "location": "Factory",
+   "tier": 11,
+   "rank": 3,
+   "cost": [
+    "8x Chaos Orb"
+   ]
+  },
+  "JunMaster2FireDamageOverTimeMultiplier1_": {
+   "where": "map",
+   "location": "Tropical Island",
+   "tier": 7,
+   "rank": 1,
+   "cost": [
+    "8x Orb of Alteration"
+   ]
+  },
+  "JunMaster2FireDamageOverTimeMultiplier2": {
+   "where": "map",
+   "location": "Tropical Island",
+   "tier": 7,
+   "rank": 2,
+   "cost": [
+    "2x Orb of Alchemy"
+   ]
+  },
+  "JunMaster2FireDamageOverTimeMultiplier3_": {
+   "where": "map",
+   "location": "Tropical Island",
+   "tier": 7,
+   "rank": 3,
+   "cost": [
+    "4x Chaos Orb"
+   ]
+  },
+  "JunMaster2FireDamageOverTimeMultiplierTwoHand1_": {
+   "where": "map",
+   "location": "Tropical Island",
+   "tier": 7,
+   "rank": 1,
+   "cost": [
+    "8x Orb of Alteration"
+   ]
+  },
+  "JunMaster2FireDamageOverTimeMultiplierTwoHand2": {
+   "where": "map",
+   "location": "Tropical Island",
+   "tier": 7,
+   "rank": 2,
+   "cost": [
+    "2x Orb of Alchemy"
+   ]
+  },
+  "JunMaster2FireDamageOverTimeMultiplierTwoHand3": {
+   "where": "map",
+   "location": "Tropical Island",
+   "tier": 7,
+   "rank": 3,
+   "cost": [
+    "4x Chaos Orb"
+   ]
+  },
+  "JunMaster2FlaskEffectAndFlaskChargesGained1": {
+   "where": "map",
+   "location": "Marshes",
+   "tier": 2,
+   "rank": 1,
+   "cost": [
+    "2x Chaos Orb"
+   ]
+  },
+  "JunMaster2FlaskEffectAndFlaskChargesGained2": {
+   "where": "map",
+   "location": "Marshes",
+   "tier": 2,
+   "rank": 2,
+   "cost": [
+    "4x Exalted Orb"
+   ]
+  },
+  "JunMaster2FocusCooldownRecovery1_": {
+   "where": "map",
+   "location": "Volcano",
+   "tier": 11,
+   "rank": 0,
+   "cost": [
+    "3x Chaos Orb"
+   ]
+  },
+  "JunMaster2FortifyEffectWhileFocused1_": {
+   "where": "map",
+   "location": "Geode",
+   "tier": 6,
+   "rank": 1,
+   "cost": [
+    "4x Orb of Alteration"
+   ]
+  },
+  "JunMaster2FortifyEffectWhileFocused2": {
+   "where": "map",
+   "location": "Geode",
+   "tier": 6,
+   "rank": 2,
+   "cost": [
+    "2x Orb of Alchemy"
+   ]
+  },
+  "JunMaster2FortifyEffectWhileFocused3": {
+   "where": "map",
+   "location": "Geode",
+   "tier": 6,
+   "rank": 3,
+   "cost": [
+    "2x Chaos Orb"
+   ]
+  },
+  "JunMaster2GainOnslaughtDuringSoulGainPrevention1": {
+   "where": "map",
+   "location": "Shrine",
+   "tier": 5,
+   "rank": 0,
+   "cost": [
+    "3x Vaal Orb"
+   ]
+  },
+  "JunMaster2GlobalCooldownRecovery1": {
+   "where": "map",
+   "location": "Volcano",
+   "tier": 11,
+   "rank": 1,
+   "cost": [
+    "2x Chaos Orb"
+   ]
+  },
+  "JunMaster2GlobalCooldownRecovery2": {
+   "where": "map",
+   "location": "Volcano",
+   "tier": 11,
+   "rank": 2,
+   "cost": [
+    "4x Exalted Orb"
+   ]
+  },
+  "JunMaster2ImmuneToStatusAilmentsWhileFocused1": {
+   "where": "map",
+   "location": "Cage",
+   "tier": 3,
+   "rank": 0,
+   "cost": [
+    "3x Chaos Orb"
+   ]
+  },
+  "JunMaster2IncreasedChaosAndPhysicalDamage2": {
+   "where": "map",
+   "location": "Foundry",
+   "tier": 11,
+   "rank": 1,
+   "cost": [
+    "2x Orb of Alchemy"
+   ]
+  },
+  "JunMaster2IncreasedChaosAndPhysicalDamage3_": {
+   "where": "map",
+   "location": "Foundry",
+   "tier": 11,
+   "rank": 2,
+   "cost": [
+    "4x Chaos Orb"
+   ]
+  },
+  "JunMaster2IncreasedFireAndLightningDamage2": {
+   "where": "map",
+   "location": "Gardens",
+   "tier": 4,
+   "rank": 1,
+   "cost": [
+    "2x Orb of Alchemy"
+   ]
+  },
+  "JunMaster2IncreasedFireAndLightningDamage3_": {
+   "where": "map",
+   "location": "Gardens",
+   "tier": 4,
+   "rank": 2,
+   "cost": [
+    "4x Chaos Orb"
+   ]
+  },
+  "JunMaster2IncreasedManaAndRegen1": {
+   "where": "map",
+   "location": "Sunken City",
+   "tier": 6,
+   "rank": 1,
+   "cost": [
+    "6x Orb of Augmentation"
+   ]
+  },
+  "JunMaster2IncreasedManaAndRegen2": {
+   "where": "map",
+   "location": "Sunken City",
+   "tier": 6,
+   "rank": 2,
+   "cost": [
+    "4x Orb of Alchemy"
+   ]
+  },
+  "JunMaster2IncreasedManaAndRegen3": {
+   "where": "map",
+   "location": "Sunken City",
+   "tier": 6,
+   "rank": 3,
+   "cost": [
+    "4x Chaos Orb"
+   ]
+  },
+  "JunMaster2IntelligenceAndAvoidShock1": {
+   "where": "map",
+   "location": "Maelstr\u00f6m of Chaos",
+   "tier": null,
+   "rank": 1,
+   "cost": [
+    "8x Armourer's Scrap"
+   ]
+  },
+  "JunMaster2IntelligenceAndAvoidShock2": {
+   "where": "map",
+   "location": "Maelstr\u00f6m of Chaos",
+   "tier": null,
+   "rank": 2,
+   "cost": [
+    "3x Orb of Alchemy"
+   ]
+  },
+  "JunMaster2IntelligenceAndAvoidShock3____": {
+   "where": "map",
+   "location": "Maelstr\u00f6m of Chaos",
+   "tier": null,
+   "rank": 3,
+   "cost": [
+    "4x Chaos Orb"
+   ]
+  },
+  "JunMaster2ItemRarityFromRareAndUniqueEnemies2": {
+   "where": "map",
+   "location": "Terrace",
+   "tier": 7,
+   "rank": 1,
+   "cost": [
+    "8x Orb of Chance"
+   ]
+  },
+  "JunMaster2ItemRarityFromRareAndUniqueEnemies3": {
+   "where": "map",
+   "location": "Terrace",
+   "tier": 7,
+   "rank": 2,
+   "cost": [
+    "4x Regal Orb"
+   ]
+  },
+  "JunMaster2LifeLeechFromAnyDamageAndVaalPactWhileFocused1": {
+   "where": "map",
+   "location": "Jungle Valley",
+   "tier": 9,
+   "rank": 0,
+   "cost": [
+    "3x Chaos Orb"
+   ]
+  },
+  "JunMaster2LifeRegenerationPerEvasionDuringFocus1": {
+   "where": "map",
+   "location": "Geode",
+   "tier": 6,
+   "rank": 0,
+   "cost": [
+    "3x Chaos Orb"
+   ]
+  },
+  "JunMaster2LightningAddedAsChaos1h2__": {
+   "where": "map",
+   "location": "Cemetery",
+   "tier": 8,
+   "rank": 1,
+   "cost": [
+    "6x Vaal Orb"
+   ]
+  },
+  "JunMaster2LightningAddedAsChaos1h3": {
+   "where": "map",
+   "location": "Cemetery",
+   "tier": 8,
+   "rank": 2,
+   "cost": [
+    "8x Vaal Orb"
+   ]
+  },
+  "JunMaster2LightningAddedAsChaos2h2": {
+   "where": "map",
+   "location": "Cemetery",
+   "tier": 8,
+   "rank": 1,
+   "cost": [
+    "6x Vaal Orb"
+   ]
+  },
+  "JunMaster2LightningAddedAsChaos2h3___": {
+   "where": "map",
+   "location": "Cemetery",
+   "tier": 8,
+   "rank": 2,
+   "cost": [
+    "8x Vaal Orb"
+   ]
+  },
+  "JunMaster2LightningAndChaosDamageResistance1": {
+   "where": "map",
+   "location": "Shipyard",
+   "tier": 6,
+   "rank": 1,
+   "cost": [
+    "8x Orb of Transmutation"
+   ]
+  },
+  "JunMaster2LightningAndChaosDamageResistance2_": {
+   "where": "map",
+   "location": "Shipyard",
+   "tier": 6,
+   "rank": 2,
+   "cost": [
+    "2x Orb of Alchemy"
+   ]
+  },
+  "JunMaster2LightningAndChaosDamageResistance3": {
+   "where": "map",
+   "location": "Shipyard",
+   "tier": 6,
+   "rank": 3,
+   "cost": [
+    "3x Chaos Orb"
+   ]
+  },
+  "JunMaster2LightningDamageAndChanceToShock1h1_": {
+   "where": "map",
+   "location": "Desert Spring",
+   "tier": 8,
+   "rank": 1,
+   "cost": [
+    "3x Orb of Alchemy"
+   ]
+  },
+  "JunMaster2LightningDamageAndChanceToShock1h2": {
+   "where": "map",
+   "location": "Desert Spring",
+   "tier": 8,
+   "rank": 2,
+   "cost": [
+    "3x Chaos Orb"
+   ]
+  },
+  "JunMaster2LightningDamageAndChanceToShock1h3": {
+   "where": "map",
+   "location": "Desert Spring",
+   "tier": 8,
+   "rank": 3,
+   "cost": [
+    "8x Chaos Orb"
+   ]
+  },
+  "JunMaster2LightningDamageAndChanceToShock2h1": {
+   "where": "map",
+   "location": "Desert Spring",
+   "tier": 8,
+   "rank": 1,
+   "cost": [
+    "3x Orb of Alchemy"
+   ]
+  },
+  "JunMaster2LightningDamageAndChanceToShock2h2": {
+   "where": "map",
+   "location": "Desert Spring",
+   "tier": 8,
+   "rank": 2,
+   "cost": [
+    "3x Chaos Orb"
+   ]
+  },
+  "JunMaster2LightningDamageAndChanceToShock2h3": {
+   "where": "map",
+   "location": "Desert Spring",
+   "tier": 8,
+   "rank": 3,
+   "cost": [
+    "8x Chaos Orb"
+   ]
+  },
+  "JunMaster2LocalAccuracyRatingStrengthDexterity1": {
+   "where": "map",
+   "location": "Dunes",
+   "tier": 5,
+   "rank": 1,
+   "cost": [
+    "4x Orb of Alteration"
+   ]
+  },
+  "JunMaster2LocalAccuracyRatingStrengthDexterity2": {
+   "where": "map",
+   "location": "Dunes",
+   "tier": 5,
+   "rank": 2,
+   "cost": [
+    "4x Orb of Alchemy"
+   ]
+  },
+  "JunMaster2LocalAttackSpeedAndLocalDisplayTriggerLevel1BloodRageOnKillChance1_": {
+   "where": "map",
+   "location": "Courthouse",
+   "tier": 4,
+   "rank": 1,
+   "cost": [
+    "4x Chaos Orb"
+   ]
+  },
+  "JunMaster2LocalAttackSpeedAndLocalDisplayTriggerLevel1BloodRageOnKillChance2": {
+   "where": "map",
+   "location": "Courthouse",
+   "tier": 4,
+   "rank": 2,
+   "cost": [
+    "4x Exalted Orb"
+   ]
+  },
+  "JunMaster2LocalAttackSpeedDexterityIntelligence1____": {
+   "where": "map",
+   "location": "Residence",
+   "tier": 13,
+   "rank": 1,
+   "cost": [
+    "4x Chaos Orb"
+   ]
+  },
+  "JunMaster2LocalAttackSpeedDexterityIntelligence2": {
+   "where": "map",
+   "location": "Residence",
+   "tier": 13,
+   "rank": 2,
+   "cost": [
+    "4x Exalted Orb"
+   ]
+  },
+  "JunMaster2LocalCriticalStrikeChanceStrengthIntelligence1": {
+   "where": "map",
+   "location": "Belfry",
+   "tier": 14,
+   "rank": 1,
+   "cost": [
+    "2x Chaos Orb"
+   ]
+  },
+  "JunMaster2LocalCriticalStrikeChanceStrengthIntelligence2___": {
+   "where": "map",
+   "location": "Belfry",
+   "tier": 14,
+   "rank": 2,
+   "cost": [
+    "4x Exalted Orb"
+   ]
+  },
+  "JunMaster2LocalFlaskAvoidStunChanceDuringFlaskEffect1": {
+   "where": "map",
+   "location": "Port",
+   "tier": 4,
+   "rank": 0,
+   "cost": [
+    "6x Glassblower's Bauble"
+   ]
+  },
+  "JunMaster2LocalFlaskItemFoundRarityDuringFlaskEffect1": {
+   "where": "map",
+   "location": "Port",
+   "tier": 4,
+   "rank": 0,
+   "cost": [
+    "6x Glassblower's Bauble"
+   ]
+  },
+  "JunMaster2LocalFlaskLifeLeechOnDamageTakenPermyriadDuringFlaskEffect1": {
+   "where": "map",
+   "location": "Port",
+   "tier": 4,
+   "rank": 0,
+   "cost": [
+    "6x Glassblower's Bauble"
+   ]
+  },
+  "JunMaster2LocalFlaskLifeRegenerationPerMinuteDuringFlaskEffect1_": {
+   "where": "map",
+   "location": "Port",
+   "tier": 4,
+   "rank": 0,
+   "cost": [
+    "6x Glassblower's Bauble"
+   ]
+  },
+  "JunMaster2LocalFlaskReducedReflectDuringEffect": {
+   "where": "map",
+   "location": "Port",
+   "tier": 4,
+   "rank": 0,
+   "cost": [
+    "6x Glassblower's Bauble"
+   ]
+  },
+  "JunMaster2LocalIncreaseSocketedSupportGemLevel1": {
+   "where": "map",
+   "location": "Primordial Pool",
+   "tier": 16,
+   "rank": 1,
+   "cost": [
+    "8x Chaos Orb"
+   ]
+  },
+  "JunMaster2LocalIncreaseSocketedSupportGemLevel2": {
+   "where": "map",
+   "location": "Primordial Pool",
+   "tier": 16,
+   "rank": 2,
+   "cost": [
+    "4x Exalted Orb"
+   ]
+  },
+  "JunMaster2LocalIncreasedArmourAndEnergyShieldAndLife1": {
+   "where": "map",
+   "location": "Coral Ruins",
+   "tier": 6,
+   "rank": 1,
+   "cost": [
+    "8x Orb of Alteration"
+   ]
+  },
+  "JunMaster2LocalIncreasedArmourAndEnergyShieldAndLife2": {
+   "where": "map",
+   "location": "Coral Ruins",
+   "tier": 6,
+   "rank": 2,
+   "cost": [
+    "2x Orb of Alchemy"
+   ]
+  },
+  "JunMaster2LocalIncreasedArmourAndEnergyShieldAndLife3__": {
+   "where": "map",
+   "location": "Coral Ruins",
+   "tier": 6,
+   "rank": 3,
+   "cost": [
+    "2x Chaos Orb"
+   ]
+  },
+  "JunMaster2LocalIncreasedArmourAndEnergyShieldAndLifeHigh1": {
+   "where": "map",
+   "location": "Coral Ruins",
+   "tier": 6,
+   "rank": 1,
+   "cost": [
+    "8x Orb of Alteration"
+   ]
+  },
+  "JunMaster2LocalIncreasedArmourAndEnergyShieldAndLifeHigh2": {
+   "where": "map",
+   "location": "Coral Ruins",
+   "tier": 6,
+   "rank": 2,
+   "cost": [
+    "2x Orb of Alchemy"
+   ]
+  },
+  "JunMaster2LocalIncreasedArmourAndEnergyShieldAndLifeHigh3": {
+   "where": "map",
+   "location": "Coral Ruins",
+   "tier": 6,
+   "rank": 3,
+   "cost": [
+    "2x Chaos Orb"
+   ]
+  },
+  "JunMaster2LocalIncreasedArmourAndEnergyShieldAndLifeMed1__": {
+   "where": "map",
+   "location": "Coral Ruins",
+   "tier": 6,
+   "rank": 1,
+   "cost": [
+    "8x Orb of Alteration"
+   ]
+  },
+  "JunMaster2LocalIncreasedArmourAndEnergyShieldAndLifeMed2": {
+   "where": "map",
+   "location": "Coral Ruins",
+   "tier": 6,
+   "rank": 2,
+   "cost": [
+    "2x Orb of Alchemy"
+   ]
+  },
+  "JunMaster2LocalIncreasedArmourAndEnergyShieldAndLifeMed3_": {
+   "where": "map",
+   "location": "Coral Ruins",
+   "tier": 6,
+   "rank": 3,
+   "cost": [
+    "2x Chaos Orb"
+   ]
+  },
+  "JunMaster2LocalIncreasedArmourAndEvasionAndLife1": {
+   "where": "map",
+   "location": "Coral Ruins",
+   "tier": 6,
+   "rank": 1,
+   "cost": [
+    "8x Orb of Alteration"
+   ]
+  },
+  "JunMaster2LocalIncreasedArmourAndEvasionAndLife2": {
+   "where": "map",
+   "location": "Coral Ruins",
+   "tier": 6,
+   "rank": 2,
+   "cost": [
+    "2x Orb of Alchemy"
+   ]
+  },
+  "JunMaster2LocalIncreasedArmourAndEvasionAndLife3": {
+   "where": "map",
+   "location": "Coral Ruins",
+   "tier": 6,
+   "rank": 3,
+   "cost": [
+    "2x Chaos Orb"
+   ]
+  },
+  "JunMaster2LocalIncreasedArmourAndEvasionAndLifeHigh1": {
+   "where": "map",
+   "location": "Coral Ruins",
+   "tier": 6,
+   "rank": 1,
+   "cost": [
+    "8x Orb of Alteration"
+   ]
+  },
+  "JunMaster2LocalIncreasedArmourAndEvasionAndLifeHigh2": {
+   "where": "map",
+   "location": "Coral Ruins",
+   "tier": 6,
+   "rank": 2,
+   "cost": [
+    "2x Orb of Alchemy"
+   ]
+  },
+  "JunMaster2LocalIncreasedArmourAndEvasionAndLifeHigh3": {
+   "where": "map",
+   "location": "Coral Ruins",
+   "tier": 6,
+   "rank": 3,
+   "cost": [
+    "2x Chaos Orb"
+   ]
+  },
+  "JunMaster2LocalIncreasedArmourAndEvasionAndLifeMed1__": {
+   "where": "map",
+   "location": "Coral Ruins",
+   "tier": 6,
+   "rank": 1,
+   "cost": [
+    "8x Orb of Alteration"
+   ]
+  },
+  "JunMaster2LocalIncreasedArmourAndEvasionAndLifeMed2_": {
+   "where": "map",
+   "location": "Coral Ruins",
+   "tier": 6,
+   "rank": 2,
+   "cost": [
+    "2x Orb of Alchemy"
+   ]
+  },
+  "JunMaster2LocalIncreasedArmourAndEvasionAndLifeMed3": {
+   "where": "map",
+   "location": "Coral Ruins",
+   "tier": 6,
+   "rank": 3,
+   "cost": [
+    "2x Chaos Orb"
+   ]
+  },
+  "JunMaster2LocalIncreasedArmourAndLife1": {
+   "where": "map",
+   "location": "Coral Ruins",
+   "tier": 6,
+   "rank": 1,
+   "cost": [
+    "8x Orb of Alteration"
+   ]
+  },
+  "JunMaster2LocalIncreasedArmourAndLife2": {
+   "where": "map",
+   "location": "Coral Ruins",
+   "tier": 6,
+   "rank": 2,
+   "cost": [
+    "2x Orb of Alchemy"
+   ]
+  },
+  "JunMaster2LocalIncreasedArmourAndLife3": {
+   "where": "map",
+   "location": "Coral Ruins",
+   "tier": 6,
+   "rank": 3,
+   "cost": [
+    "2x Chaos Orb"
+   ]
+  },
+  "JunMaster2LocalIncreasedArmourAndLifeHigh1": {
+   "where": "map",
+   "location": "Coral Ruins",
+   "tier": 6,
+   "rank": 1,
+   "cost": [
+    "8x Orb of Alteration"
+   ]
+  },
+  "JunMaster2LocalIncreasedArmourAndLifeHigh2": {
+   "where": "map",
+   "location": "Coral Ruins",
+   "tier": 6,
+   "rank": 2,
+   "cost": [
+    "2x Orb of Alchemy"
+   ]
+  },
+  "JunMaster2LocalIncreasedArmourAndLifeHigh3": {
+   "where": "map",
+   "location": "Coral Ruins",
+   "tier": 6,
+   "rank": 3,
+   "cost": [
+    "2x Chaos Orb"
+   ]
+  },
+  "JunMaster2LocalIncreasedArmourAndLifeMed1": {
+   "where": "map",
+   "location": "Coral Ruins",
+   "tier": 6,
+   "rank": 1,
+   "cost": [
+    "8x Orb of Alteration"
+   ]
+  },
+  "JunMaster2LocalIncreasedArmourAndLifeMed2": {
+   "where": "map",
+   "location": "Coral Ruins",
+   "tier": 6,
+   "rank": 2,
+   "cost": [
+    "2x Orb of Alchemy"
+   ]
+  },
+  "JunMaster2LocalIncreasedArmourAndLifeMed3": {
+   "where": "map",
+   "location": "Coral Ruins",
+   "tier": 6,
+   "rank": 3,
+   "cost": [
+    "2x Chaos Orb"
+   ]
+  },
+  "JunMaster2LocalIncreasedDefencesAndLife1_": {
+   "where": "map",
+   "location": "Coral Ruins",
+   "tier": 6,
+   "rank": 1,
+   "cost": [
+    "8x Orb of Alteration"
+   ]
+  },
+  "JunMaster2LocalIncreasedDefencesAndLife2_": {
+   "where": "map",
+   "location": "Coral Ruins",
+   "tier": 6,
+   "rank": 2,
+   "cost": [
+    "2x Orb of Alchemy"
+   ]
+  },
+  "JunMaster2LocalIncreasedDefencesAndLife3_": {
+   "where": "map",
+   "location": "Coral Ruins",
+   "tier": 6,
+   "rank": 3,
+   "cost": [
+    "2x Chaos Orb"
+   ]
+  },
+  "JunMaster2LocalIncreasedDefencesAndLifeHigh1": {
+   "where": "map",
+   "location": "Coral Ruins",
+   "tier": 6,
+   "rank": 1,
+   "cost": [
+    "8x Orb of Alteration"
+   ]
+  },
+  "JunMaster2LocalIncreasedDefencesAndLifeHigh2": {
+   "where": "map",
+   "location": "Coral Ruins",
+   "tier": 6,
+   "rank": 2,
+   "cost": [
+    "2x Orb of Alchemy"
+   ]
+  },
+  "JunMaster2LocalIncreasedDefencesAndLifeHigh3_": {
+   "where": "map",
+   "location": "Coral Ruins",
+   "tier": 6,
+   "rank": 3,
+   "cost": [
+    "2x Chaos Orb"
+   ]
+  },
+  "JunMaster2LocalIncreasedDefencesAndLifeMed1_": {
+   "where": "map",
+   "location": "Coral Ruins",
+   "tier": 6,
+   "rank": 1,
+   "cost": [
+    "8x Orb of Alteration"
+   ]
+  },
+  "JunMaster2LocalIncreasedDefencesAndLifeMed2": {
+   "where": "map",
+   "location": "Coral Ruins",
+   "tier": 6,
+   "rank": 2,
+   "cost": [
+    "2x Orb of Alchemy"
+   ]
+  },
+  "JunMaster2LocalIncreasedDefencesAndLifeMed3": {
+   "where": "map",
+   "location": "Coral Ruins",
+   "tier": 6,
+   "rank": 3,
+   "cost": [
+    "2x Chaos Orb"
+   ]
+  },
+  "JunMaster2LocalIncreasedEnergyShieldAndLife1": {
+   "where": "map",
+   "location": "Coral Ruins",
+   "tier": 6,
+   "rank": 1,
+   "cost": [
+    "8x Orb of Alteration"
+   ]
+  },
+  "JunMaster2LocalIncreasedEnergyShieldAndLife2": {
+   "where": "map",
+   "location": "Coral Ruins",
+   "tier": 6,
+   "rank": 2,
+   "cost": [
+    "2x Orb of Alchemy"
+   ]
+  },
+  "JunMaster2LocalIncreasedEnergyShieldAndLife3": {
+   "where": "map",
+   "location": "Coral Ruins",
+   "tier": 6,
+   "rank": 3,
+   "cost": [
+    "2x Chaos Orb"
+   ]
+  },
+  "JunMaster2LocalIncreasedEnergyShieldAndLifeHigh1_": {
+   "where": "map",
+   "location": "Coral Ruins",
+   "tier": 6,
+   "rank": 1,
+   "cost": [
+    "8x Orb of Alteration"
+   ]
+  },
+  "JunMaster2LocalIncreasedEnergyShieldAndLifeHigh2": {
+   "where": "map",
+   "location": "Coral Ruins",
+   "tier": 6,
+   "rank": 2,
+   "cost": [
+    "2x Orb of Alchemy"
+   ]
+  },
+  "JunMaster2LocalIncreasedEnergyShieldAndLifeHigh3_": {
+   "where": "map",
+   "location": "Coral Ruins",
+   "tier": 6,
+   "rank": 3,
+   "cost": [
+    "2x Chaos Orb"
+   ]
+  },
+  "JunMaster2LocalIncreasedEnergyShieldAndLifeMed1": {
+   "where": "map",
+   "location": "Coral Ruins",
+   "tier": 6,
+   "rank": 1,
+   "cost": [
+    "8x Orb of Alteration"
+   ]
+  },
+  "JunMaster2LocalIncreasedEnergyShieldAndLifeMed2": {
+   "where": "map",
+   "location": "Coral Ruins",
+   "tier": 6,
+   "rank": 2,
+   "cost": [
+    "2x Orb of Alchemy"
+   ]
+  },
+  "JunMaster2LocalIncreasedEnergyShieldAndLifeMed3": {
+   "where": "map",
+   "location": "Coral Ruins",
+   "tier": 6,
+   "rank": 3,
+   "cost": [
+    "2x Chaos Orb"
+   ]
+  },
+  "JunMaster2LocalIncreasedEvasionAndEnergyShieldAndLife1": {
+   "where": "map",
+   "location": "Coral Ruins",
+   "tier": 6,
+   "rank": 1,
+   "cost": [
+    "8x Orb of Alteration"
+   ]
+  },
+  "JunMaster2LocalIncreasedEvasionAndEnergyShieldAndLife2": {
+   "where": "map",
+   "location": "Coral Ruins",
+   "tier": 6,
+   "rank": 2,
+   "cost": [
+    "2x Orb of Alchemy"
+   ]
+  },
+  "JunMaster2LocalIncreasedEvasionAndEnergyShieldAndLife3": {
+   "where": "map",
+   "location": "Coral Ruins",
+   "tier": 6,
+   "rank": 3,
+   "cost": [
+    "2x Chaos Orb"
+   ]
+  },
+  "JunMaster2LocalIncreasedEvasionAndEnergyShieldAndLifeHigh1": {
+   "where": "map",
+   "location": "Coral Ruins",
+   "tier": 6,
+   "rank": 1,
+   "cost": [
+    "8x Orb of Alteration"
+   ]
+  },
+  "JunMaster2LocalIncreasedEvasionAndEnergyShieldAndLifeHigh2": {
+   "where": "map",
+   "location": "Coral Ruins",
+   "tier": 6,
+   "rank": 2,
+   "cost": [
+    "2x Orb of Alchemy"
+   ]
+  },
+  "JunMaster2LocalIncreasedEvasionAndEnergyShieldAndLifeHigh3": {
+   "where": "map",
+   "location": "Coral Ruins",
+   "tier": 6,
+   "rank": 3,
+   "cost": [
+    "2x Chaos Orb"
+   ]
+  },
+  "JunMaster2LocalIncreasedEvasionAndEnergyShieldAndLifeMed1": {
+   "where": "map",
+   "location": "Coral Ruins",
+   "tier": 6,
+   "rank": 1,
+   "cost": [
+    "8x Orb of Alteration"
+   ]
+  },
+  "JunMaster2LocalIncreasedEvasionAndEnergyShieldAndLifeMed2": {
+   "where": "map",
+   "location": "Coral Ruins",
+   "tier": 6,
+   "rank": 2,
+   "cost": [
+    "2x Orb of Alchemy"
+   ]
+  },
+  "JunMaster2LocalIncreasedEvasionAndEnergyShieldAndLifeMed3": {
+   "where": "map",
+   "location": "Coral Ruins",
+   "tier": 6,
+   "rank": 3,
+   "cost": [
+    "2x Chaos Orb"
+   ]
+  },
+  "JunMaster2LocalIncreasedEvasionAndLife1": {
+   "where": "map",
+   "location": "Coral Ruins",
+   "tier": 6,
+   "rank": 1,
+   "cost": [
+    "8x Orb of Alteration"
+   ]
+  },
+  "JunMaster2LocalIncreasedEvasionAndLife2": {
+   "where": "map",
+   "location": "Coral Ruins",
+   "tier": 6,
+   "rank": 2,
+   "cost": [
+    "2x Orb of Alchemy"
+   ]
+  },
+  "JunMaster2LocalIncreasedEvasionAndLife3": {
+   "where": "map",
+   "location": "Coral Ruins",
+   "tier": 6,
+   "rank": 3,
+   "cost": [
+    "2x Chaos Orb"
+   ]
+  },
+  "JunMaster2LocalIncreasedEvasionAndLifeHigh1": {
+   "where": "map",
+   "location": "Coral Ruins",
+   "tier": 6,
+   "rank": 1,
+   "cost": [
+    "8x Orb of Alteration"
+   ]
+  },
+  "JunMaster2LocalIncreasedEvasionAndLifeHigh2": {
+   "where": "map",
+   "location": "Coral Ruins",
+   "tier": 6,
+   "rank": 2,
+   "cost": [
+    "2x Orb of Alchemy"
+   ]
+  },
+  "JunMaster2LocalIncreasedEvasionAndLifeHigh3": {
+   "where": "map",
+   "location": "Coral Ruins",
+   "tier": 6,
+   "rank": 3,
+   "cost": [
+    "2x Chaos Orb"
+   ]
+  },
+  "JunMaster2LocalIncreasedEvasionAndLifeMed1": {
+   "where": "map",
+   "location": "Coral Ruins",
+   "tier": 6,
+   "rank": 1,
+   "cost": [
+    "8x Orb of Alteration"
+   ]
+  },
+  "JunMaster2LocalIncreasedEvasionAndLifeMed2": {
+   "where": "map",
+   "location": "Coral Ruins",
+   "tier": 6,
+   "rank": 2,
+   "cost": [
+    "2x Orb of Alchemy"
+   ]
+  },
+  "JunMaster2LocalIncreasedEvasionAndLifeMed3_": {
+   "where": "map",
+   "location": "Coral Ruins",
+   "tier": 6,
+   "rank": 3,
+   "cost": [
+    "2x Chaos Orb"
+   ]
+  },
+  "JunMaster2LocalIncreasedPhysicalDamageAndBleedChanceCrafted1": {
+   "where": "map",
+   "location": "Cage",
+   "tier": 3,
+   "rank": 1,
+   "cost": [
+    "3x Orb of Alchemy"
+   ]
+  },
+  "JunMaster2LocalIncreasedPhysicalDamageAndBleedChanceCrafted2": {
+   "where": "map",
+   "location": "Cage",
+   "tier": 3,
+   "rank": 2,
+   "cost": [
+    "3x Chaos Orb"
+   ]
+  },
+  "JunMaster2LocalIncreasedPhysicalDamageAndBleedChanceCrafted3": {
+   "where": "map",
+   "location": "Cage",
+   "tier": 3,
+   "rank": 3,
+   "cost": [
+    "8x Chaos Orb"
+   ]
+  },
+  "JunMaster2LocalIncreasedPhysicalDamageAndBlindChanceCrafted1_": {
+   "where": "map",
+   "location": "Foundry",
+   "tier": 11,
+   "rank": 1,
+   "cost": [
+    "3x Orb of Alchemy"
+   ]
+  },
+  "JunMaster2LocalIncreasedPhysicalDamageAndBlindChanceCrafted2": {
+   "where": "map",
+   "location": "Foundry",
+   "tier": 11,
+   "rank": 2,
+   "cost": [
+    "3x Chaos Orb"
+   ]
+  },
+  "JunMaster2LocalIncreasedPhysicalDamageAndBlindChanceCrafted3": {
+   "where": "map",
+   "location": "Foundry",
+   "tier": 11,
+   "rank": 3,
+   "cost": [
+    "8x Chaos Orb"
+   ]
+  },
+  "JunMaster2LocalIncreasedPhysicalDamageAndImpaleCrafted1": {
+   "where": "map",
+   "location": "Foundry",
+   "tier": 11,
+   "rank": 1,
+   "cost": [
+    "3x Orb of Alchemy"
+   ]
+  },
+  "JunMaster2LocalIncreasedPhysicalDamageAndImpaleCrafted2": {
+   "where": "map",
+   "location": "Foundry",
+   "tier": 11,
+   "rank": 2,
+   "cost": [
+    "3x Chaos Orb"
+   ]
+  },
+  "JunMaster2LocalIncreasedPhysicalDamageAndImpaleCrafted3": {
+   "where": "map",
+   "location": "Foundry",
+   "tier": 11,
+   "rank": 3,
+   "cost": [
+    "8x Chaos Orb"
+   ]
+  },
+  "JunMaster2LocalIncreasedPhysicalDamageAndPoisonChanceCrafted1": {
+   "where": "map",
+   "location": "Cage",
+   "tier": 3,
+   "rank": 1,
+   "cost": [
+    "3x Orb of Alchemy"
+   ]
+  },
+  "JunMaster2LocalIncreasedPhysicalDamageAndPoisonChanceCrafted2_": {
+   "where": "map",
+   "location": "Cage",
+   "tier": 3,
+   "rank": 2,
+   "cost": [
+    "3x Chaos Orb"
+   ]
+  },
+  "JunMaster2LocalIncreasedPhysicalDamageAndPoisonChanceCrafted3": {
+   "where": "map",
+   "location": "Cage",
+   "tier": 3,
+   "rank": 3,
+   "cost": [
+    "8x Chaos Orb"
+   ]
+  },
+  "JunMaster2LuckyCriticalsDuringFocus1": {
+   "where": "map",
+   "location": "Belfry",
+   "tier": 14,
+   "rank": 0,
+   "cost": [
+    "9x Orb of Alteration"
+   ]
+  },
+  "JunMaster2ManaAndDamageTakenGoesToManaPercent1": {
+   "where": "map",
+   "location": "Sunken City",
+   "tier": 6,
+   "rank": 1,
+   "cost": [
+    "6x Orb of Augmentation"
+   ]
+  },
+  "JunMaster2ManaAndDamageTakenGoesToManaPercent2": {
+   "where": "map",
+   "location": "Sunken City",
+   "tier": 6,
+   "rank": 2,
+   "cost": [
+    "4x Orb of Alchemy"
+   ]
+  },
+  "JunMaster2ManaAndDamageTakenGoesToManaPercent3": {
+   "where": "map",
+   "location": "Sunken City",
+   "tier": 6,
+   "rank": 3,
+   "cost": [
+    "4x Chaos Orb"
+   ]
+  },
+  "JunMaster2ManaAndManaCostEfficiency1": {
+   "where": "map",
+   "location": "Tower",
+   "tier": 14,
+   "rank": 1,
+   "cost": [
+    "6x Orb of Augmentation"
+   ]
+  },
+  "JunMaster2ManaAndManaCostEfficiency2": {
+   "where": "map",
+   "location": "Tower",
+   "tier": 14,
+   "rank": 2,
+   "cost": [
+    "4x Orb of Alchemy"
+   ]
+  },
+  "JunMaster2ManaAndManaCostEfficiency3": {
+   "where": "map",
+   "location": "Tower",
+   "tier": 14,
+   "rank": 3,
+   "cost": [
+    "4x Chaos Orb"
+   ]
+  },
+  "JunMaster2MaximumZombieAndSkeleton1_": {
+   "where": "map",
+   "location": "Orchard",
+   "tier": 11,
+   "rank": 0,
+   "cost": [
+    "4x Chaos Orb"
+   ]
+  },
+  "JunMaster2MeleeDamageAndMeleeRange1": {
+   "where": "map",
+   "location": "Mausoleum",
+   "tier": 13,
+   "rank": 1,
+   "cost": [
+    "3x Orb of Alchemy"
+   ]
+  },
+  "JunMaster2MeleeDamageAndMeleeRange2_": {
+   "where": "map",
+   "location": "Mausoleum",
+   "tier": 13,
+   "rank": 2,
+   "cost": [
+    "3x Chaos Orb"
+   ]
+  },
+  "JunMaster2MeleeDamageAndMeleeRange3_": {
+   "where": "map",
+   "location": "Mausoleum",
+   "tier": 13,
+   "rank": 3,
+   "cost": [
+    "4x Exalted Orb"
+   ]
+  },
+  "JunMaster2MeleeRangeAndMeleeGemLevel1_": {
+   "where": "map",
+   "location": "Mausoleum",
+   "tier": 13,
+   "rank": 0,
+   "cost": [
+    "4x Chaos Orb"
+   ]
+  },
+  "JunMaster2MineLayingSpeed1": {
+   "where": "map",
+   "location": "Overgrown Shrine",
+   "tier": 5,
+   "rank": 1,
+   "cost": [
+    "6x Orb of Augmentation"
+   ]
+  },
+  "JunMaster2MineLayingSpeed2": {
+   "where": "map",
+   "location": "Overgrown Shrine",
+   "tier": 5,
+   "rank": 2,
+   "cost": [
+    "3x Orb of Alchemy"
+   ]
+  },
+  "JunMaster2MineLayingSpeed3": {
+   "where": "map",
+   "location": "Overgrown Shrine",
+   "tier": 5,
+   "rank": 3,
+   "cost": [
+    "4x Chaos Orb"
+   ]
+  },
+  "JunMaster2MinimumEnduranceCharges1": {
+   "where": "map",
+   "location": "Dark Forest",
+   "tier": 12,
+   "rank": 0,
+   "cost": [
+    "4x Exalted Orb"
+   ]
+  },
+  "JunMaster2MinimumFrenzyCharges1_": {
+   "where": "map",
+   "location": "Iceberg",
+   "tier": 12,
+   "rank": 0,
+   "cost": [
+    "4x Exalted Orb"
+   ]
+  },
+  "JunMaster2MinimumPowerCharges1": {
+   "where": "map",
+   "location": "Temple",
+   "tier": 12,
+   "rank": 0,
+   "cost": [
+    "4x Exalted Orb"
+   ]
+  },
+  "JunMaster2MinionAttackAndCastSpeedOnWeapon1h1": {
+   "where": "map",
+   "location": "Orchard",
+   "tier": 11,
+   "rank": 1,
+   "cost": [
+    "8x Orb of Alteration"
+   ]
+  },
+  "JunMaster2MinionAttackAndCastSpeedOnWeapon1h2": {
+   "where": "map",
+   "location": "Orchard",
+   "tier": 11,
+   "rank": 2,
+   "cost": [
+    "2x Orb of Alchemy"
+   ]
+  },
+  "JunMaster2MinionAttackAndCastSpeedOnWeapon1h3": {
+   "where": "map",
+   "location": "Orchard",
+   "tier": 11,
+   "rank": 3,
+   "cost": [
+    "4x Chaos Orb"
+   ]
+  },
+  "JunMaster2MinionAttackAndCastSpeedOnWeapon2h1_": {
+   "where": "map",
+   "location": "Orchard",
+   "tier": 11,
+   "rank": 1,
+   "cost": [
+    "8x Orb of Alteration"
+   ]
+  },
+  "JunMaster2MinionAttackAndCastSpeedOnWeapon2h2": {
+   "where": "map",
+   "location": "Orchard",
+   "tier": 11,
+   "rank": 2,
+   "cost": [
+    "2x Orb of Alchemy"
+   ]
+  },
+  "JunMaster2MinionAttackAndCastSpeedOnWeapon2h3_": {
+   "where": "map",
+   "location": "Orchard",
+   "tier": 11,
+   "rank": 3,
+   "cost": [
+    "4x Chaos Orb"
+   ]
+  },
+  "JunMaster2MinionDamageAndMinionMaximumLife1h1": {
+   "where": "map",
+   "location": "Orchard",
+   "tier": 11,
+   "rank": 1,
+   "cost": [
+    "8x Orb of Alteration"
+   ]
+  },
+  "JunMaster2MinionDamageAndMinionMaximumLife1h2": {
+   "where": "map",
+   "location": "Orchard",
+   "tier": 11,
+   "rank": 2,
+   "cost": [
+    "4x Orb of Alchemy"
+   ]
+  },
+  "JunMaster2MinionDamageAndMinionMaximumLife1h3": {
+   "where": "map",
+   "location": "Orchard",
+   "tier": 11,
+   "rank": 3,
+   "cost": [
+    "4x Chaos Orb"
+   ]
+  },
+  "JunMaster2MinionDamageAndMinionMaximumLife2h1": {
+   "where": "map",
+   "location": "Orchard",
+   "tier": 11,
+   "rank": 1,
+   "cost": [
+    "8x Orb of Alteration"
+   ]
+  },
+  "JunMaster2MinionDamageAndMinionMaximumLife2h2_": {
+   "where": "map",
+   "location": "Orchard",
+   "tier": 11,
+   "rank": 2,
+   "cost": [
+    "4x Orb of Alchemy"
+   ]
+  },
+  "JunMaster2MinionDamageAndMinionMaximumLife2h3": {
+   "where": "map",
+   "location": "Orchard",
+   "tier": 11,
+   "rank": 3,
+   "cost": [
+    "4x Chaos Orb"
+   ]
+  },
+  "JunMaster2MinionsRecoverMaximumLifeWhenYouFocus1_": {
+   "where": "map",
+   "location": "Orchard",
+   "tier": 11,
+   "rank": 0,
+   "cost": [
+    "3x Chaos Orb"
+   ]
+  },
+  "JunMaster2MovementVelocityAndCannotBeChilled1_": {
+   "where": "map",
+   "location": "Promenade",
+   "tier": 10,
+   "rank": 1,
+   "cost": [
+    "4x Orb of Chance"
+   ]
+  },
+  "JunMaster2MovementVelocityAndCannotBeChilled2": {
+   "where": "map",
+   "location": "Promenade",
+   "tier": 10,
+   "rank": 2,
+   "cost": [
+    "4x Orb of Alchemy"
+   ]
+  },
+  "JunMaster2MovementVelocityAndCannotBeChilled3": {
+   "where": "map",
+   "location": "Promenade",
+   "tier": 10,
+   "rank": 3,
+   "cost": [
+    "4x Chaos Orb"
+   ]
+  },
+  "JunMaster2MovementVelocityAndMovementVelocityIfNotHitRecently1__": {
+   "where": "map",
+   "location": "Promenade",
+   "tier": 10,
+   "rank": 1,
+   "cost": [
+    "4x Orb of Chance"
+   ]
+  },
+  "JunMaster2MovementVelocityAndMovementVelocityIfNotHitRecently2__": {
+   "where": "map",
+   "location": "Promenade",
+   "tier": 10,
+   "rank": 2,
+   "cost": [
+    "4x Orb of Alchemy"
+   ]
+  },
+  "JunMaster2MovementVelocityAndMovementVelocityIfNotHitRecently3": {
+   "where": "map",
+   "location": "Promenade",
+   "tier": 10,
+   "rank": 3,
+   "cost": [
+    "4x Chaos Orb"
+   ]
+  },
+  "JunMaster2MovementVelocityAndOnslaughtOnKill1": {
+   "where": "map",
+   "location": "Promenade",
+   "tier": 10,
+   "rank": 1,
+   "cost": [
+    "4x Orb of Chance"
+   ]
+  },
+  "JunMaster2MovementVelocityAndOnslaughtOnKill2": {
+   "where": "map",
+   "location": "Promenade",
+   "tier": 10,
+   "rank": 2,
+   "cost": [
+    "4x Orb of Alchemy"
+   ]
+  },
+  "JunMaster2MovementVelocityAndOnslaughtOnKill3_": {
+   "where": "map",
+   "location": "Promenade",
+   "tier": 10,
+   "rank": 3,
+   "cost": [
+    "4x Chaos Orb"
+   ]
+  },
+  "JunMaster2PercentageAllAttributes2": {
+   "where": "map",
+   "location": "Primordial Blocks",
+   "tier": 5,
+   "rank": 1,
+   "cost": [
+    "2x Orb of Alchemy"
+   ]
+  },
+  "JunMaster2PercentageAllAttributes3": {
+   "where": "map",
+   "location": "Primordial Blocks",
+   "tier": 5,
+   "rank": 2,
+   "cost": [
+    "4x Chaos Orb"
+   ]
+  },
+  "JunMaster2PercentageLifeAndMana1": {
+   "where": "map",
+   "location": "Silo",
+   "tier": 7,
+   "rank": 0,
+   "cost": [
+    "6x Chaos Orb"
+   ]
+  },
+  "JunMaster2PhysicalAddedAsChaos1h2_": {
+   "where": "map",
+   "location": "Vault",
+   "tier": 9,
+   "rank": 1,
+   "cost": [
+    "6x Vaal Orb"
+   ]
+  },
+  "JunMaster2PhysicalAddedAsChaos1h3": {
+   "where": "map",
+   "location": "Vault",
+   "tier": 9,
+   "rank": 2,
+   "cost": [
+    "8x Vaal Orb"
+   ]
+  },
+  "JunMaster2PhysicalAddedAsChaos2h2": {
+   "where": "map",
+   "location": "Vault",
+   "tier": 9,
+   "rank": 1,
+   "cost": [
+    "6x Vaal Orb"
+   ]
+  },
+  "JunMaster2PhysicalAddedAsChaos2h3": {
+   "where": "map",
+   "location": "Vault",
+   "tier": 9,
+   "rank": 2,
+   "cost": [
+    "8x Vaal Orb"
+   ]
+  },
+  "JunMaster2PhysicalDamageConvertedToCold1": {
+   "where": "map",
+   "location": "Atoll",
+   "tier": 10,
+   "rank": 0,
+   "cost": [
+    "4x Chaos Orb"
+   ]
+  },
+  "JunMaster2PhysicalDamageConvertedToFire1": {
+   "where": "map",
+   "location": "Atoll",
+   "tier": 10,
+   "rank": 0,
+   "cost": [
+    "4x Chaos Orb"
+   ]
+  },
+  "JunMaster2PhysicalDamageConvertedToLightning1": {
+   "where": "map",
+   "location": "Atoll",
+   "tier": 10,
+   "rank": 0,
+   "cost": [
+    "4x Chaos Orb"
+   ]
+  },
+  "JunMaster2PhysicalDamageOverTimeMultiplier1_": {
+   "where": "map",
+   "location": "Haunted Mansion",
+   "tier": 7,
+   "rank": 1,
+   "cost": [
+    "8x Orb of Alteration"
+   ]
+  },
+  "JunMaster2PhysicalDamageOverTimeMultiplier2": {
+   "where": "map",
+   "location": "Haunted Mansion",
+   "tier": 7,
+   "rank": 2,
+   "cost": [
+    "2x Orb of Alchemy"
+   ]
+  },
+  "JunMaster2PhysicalDamageOverTimeMultiplier3": {
+   "where": "map",
+   "location": "Haunted Mansion",
+   "tier": 7,
+   "rank": 3,
+   "cost": [
+    "4x Chaos Orb"
+   ]
+  },
+  "JunMaster2PhysicalDamageOverTimeMultiplierTwoHand1": {
+   "where": "map",
+   "location": "Haunted Mansion",
+   "tier": 7,
+   "rank": 1,
+   "cost": [
+    "8x Orb of Alteration"
+   ]
+  },
+  "JunMaster2PhysicalDamageOverTimeMultiplierTwoHand2": {
+   "where": "map",
+   "location": "Haunted Mansion",
+   "tier": 7,
+   "rank": 2,
+   "cost": [
+    "2x Orb of Alchemy"
+   ]
+  },
+  "JunMaster2PhysicalDamageOverTimeMultiplierTwoHand3": {
+   "where": "map",
+   "location": "Haunted Mansion",
+   "tier": 7,
+   "rank": 3,
+   "cost": [
+    "4x Chaos Orb"
+   ]
+  },
+  "JunMaster2PhysicalDamageReductionDuringFocus1": {
+   "where": "map",
+   "location": "Geode",
+   "tier": 6,
+   "rank": 1,
+   "cost": [
+    "4x Orb of Alteration"
+   ]
+  },
+  "JunMaster2PhysicalDamageReductionDuringFocus2__": {
+   "where": "map",
+   "location": "Geode",
+   "tier": 6,
+   "rank": 2,
+   "cost": [
+    "2x Orb of Alchemy"
+   ]
+  },
+  "JunMaster2PhysicalDamageReductionDuringFocus3_": {
+   "where": "map",
+   "location": "Geode",
+   "tier": 6,
+   "rank": 3,
+   "cost": [
+    "4x Chaos Orb"
+   ]
+  },
+  "JunMaster2PhysicalDamageReductionRatingDuringSoulGainPrevention1_": {
+   "where": "map",
+   "location": "Shrine",
+   "tier": 5,
+   "rank": 1,
+   "cost": [
+    "2x Vaal Orb"
+   ]
+  },
+  "JunMaster2PhysicalDamageReductionRatingDuringSoulGainPrevention2": {
+   "where": "map",
+   "location": "Shrine",
+   "tier": 5,
+   "rank": 2,
+   "cost": [
+    "3x Vaal Orb"
+   ]
+  },
+  "JunMaster2PhysicalDamageReductionRatingDuringSoulGainPrevention3___": {
+   "where": "map",
+   "location": "Shrine",
+   "tier": 5,
+   "rank": 3,
+   "cost": [
+    "4x Vaal Orb"
+   ]
+  },
+  "JunMaster2ProjectileDamageAndProjectileSpeed1_": {
+   "where": "map",
+   "location": "Ivory Temple",
+   "tier": 13,
+   "rank": 1,
+   "cost": [
+    "3x Orb of Alchemy"
+   ]
+  },
+  "JunMaster2ProjectileDamageAndProjectileSpeed2_": {
+   "where": "map",
+   "location": "Ivory Temple",
+   "tier": 13,
+   "rank": 2,
+   "cost": [
+    "3x Chaos Orb"
+   ]
+  },
+  "JunMaster2ProjectileDamageAndProjectileSpeed3": {
+   "where": "map",
+   "location": "Ivory Temple",
+   "tier": 13,
+   "rank": 3,
+   "cost": [
+    "4x Exalted Orb"
+   ]
+  },
+  "JunMaster2ProjectilePierceAndProjectileGemLevel1": {
+   "where": "map",
+   "location": "Ivory Temple",
+   "tier": 13,
+   "rank": 0,
+   "cost": [
+    "4x Chaos Orb"
+   ]
+  },
+  "JunMaster2ReduceGlobalFlatManaCostChannelling1": {
+   "where": "map",
+   "location": "Tower",
+   "tier": 14,
+   "rank": 1,
+   "cost": [
+    "2x Orb of Alchemy"
+   ]
+  },
+  "JunMaster2ReduceGlobalFlatManaCostChannelling2": {
+   "where": "map",
+   "location": "Tower",
+   "tier": 14,
+   "rank": 2,
+   "cost": [
+    "2x Chaos Orb"
+   ]
+  },
+  "JunMaster2ReduceGlobalFlatManaCostChannelling3": {
+   "where": "map",
+   "location": "Tower",
+   "tier": 14,
+   "rank": 3,
+   "cost": [
+    "4x Chaos Orb"
+   ]
+  },
+  "JunMaster2ReduceGlobalFlatManaCostNonChannelling1": {
+   "where": "map",
+   "location": "Tower",
+   "tier": 14,
+   "rank": 1,
+   "cost": [
+    "2x Orb of Alchemy"
+   ]
+  },
+  "JunMaster2ReduceGlobalFlatManaCostNonChannelling2": {
+   "where": "map",
+   "location": "Tower",
+   "tier": 14,
+   "rank": 2,
+   "cost": [
+    "2x Chaos Orb"
+   ]
+  },
+  "JunMaster2ReduceGlobalFlatManaCostNonChannelling3": {
+   "where": "map",
+   "location": "Tower",
+   "tier": 14,
+   "rank": 3,
+   "cost": [
+    "4x Chaos Orb"
+   ]
+  },
+  "JunMaster2RestoreManaAndEnergyShieldOnFocus1": {
+   "where": "map",
+   "location": "Basilica",
+   "tier": 8,
+   "rank": 1,
+   "cost": [
+    "6x Orb of Alteration"
+   ]
+  },
+  "JunMaster2RestoreManaAndEnergyShieldOnFocus2": {
+   "where": "map",
+   "location": "Basilica",
+   "tier": 8,
+   "rank": 2,
+   "cost": [
+    "2x Orb of Alchemy"
+   ]
+  },
+  "JunMaster2RestoreManaAndEnergyShieldOnFocus3": {
+   "where": "map",
+   "location": "Basilica",
+   "tier": 8,
+   "rank": 3,
+   "cost": [
+    "4x Chaos Orb"
+   ]
+  },
+  "JunMaster2ShockNearbyEnemiesOnFocus1": {
+   "where": "map",
+   "location": "Cage",
+   "tier": 3,
+   "rank": 1,
+   "cost": [
+    "4x Orb of Alteration"
+   ]
+  },
+  "JunMaster2ShockNearbyEnemiesOnFocus2": {
+   "where": "map",
+   "location": "Cage",
+   "tier": 3,
+   "rank": 2,
+   "cost": [
+    "2x Orb of Alchemy"
+   ]
+  },
+  "JunMaster2ShockNearbyEnemiesOnFocus3": {
+   "where": "map",
+   "location": "Cage",
+   "tier": 3,
+   "rank": 3,
+   "cost": [
+    "2x Chaos Orb"
+   ]
+  },
+  "JunMaster2SkillAreaOfEffectPercentAndAreaOfEffectGemLevel1-": {
+   "where": "map",
+   "location": "Bramble Valley",
+   "tier": 13,
+   "rank": 0,
+   "cost": [
+    "4x Chaos Orb"
+   ]
+  },
+  "JunMaster2SocketedGemQuality2": {
+   "where": "map",
+   "location": "Beach",
+   "tier": 13,
+   "rank": 1,
+   "cost": [
+    "8x Gemcutter's Prism"
+   ]
+  },
+  "JunMaster2SocketedGemQuality3": {
+   "where": "map",
+   "location": "Beach",
+   "tier": 13,
+   "rank": 2,
+   "cost": [
+    "4x Exalted Orb"
+   ]
+  },
+  "JunMaster2SpellBlockPercent1_": {
+   "where": "map",
+   "location": "City Square",
+   "tier": 9,
+   "rank": 0,
+   "cost": [
+    "4x Chaos Orb"
+   ]
+  },
+  "JunMaster2SpellDamageAndManaRegenerationRate1h1": {
+   "where": "map",
+   "location": "Malformation",
+   "tier": 12,
+   "rank": 1,
+   "cost": [
+    "8x Orb of Transmutation"
+   ]
+  },
+  "JunMaster2SpellDamageAndManaRegenerationRate1h2": {
+   "where": "map",
+   "location": "Malformation",
+   "tier": 12,
+   "rank": 2,
+   "cost": [
+    "2x Chaos Orb"
+   ]
+  },
+  "JunMaster2SpellDamageAndManaRegenerationRate1h3": {
+   "where": "map",
+   "location": "Malformation",
+   "tier": 12,
+   "rank": 3,
+   "cost": [
+    "6x Chaos Orb"
+   ]
+  },
+  "JunMaster2SpellDamageAndManaRegenerationRate2h1_": {
+   "where": "map",
+   "location": "Malformation",
+   "tier": 12,
+   "rank": 1,
+   "cost": [
+    "8x Orb of Transmutation"
+   ]
+  },
+  "JunMaster2SpellDamageAndManaRegenerationRate2h2_": {
+   "where": "map",
+   "location": "Malformation",
+   "tier": 12,
+   "rank": 2,
+   "cost": [
+    "2x Chaos Orb"
+   ]
+  },
+  "JunMaster2SpellDamageAndManaRegenerationRate2h3_": {
+   "where": "map",
+   "location": "Malformation",
+   "tier": 12,
+   "rank": 3,
+   "cost": [
+    "6x Chaos Orb"
+   ]
+  },
+  "JunMaster2SpellDamageAndNonChaosDamageToAddAsChaosDamage1h1": {
+   "where": "map",
+   "location": "Malformation",
+   "tier": 12,
+   "rank": 1,
+   "cost": [
+    "1x Chaos Orb"
+   ]
+  },
+  "JunMaster2SpellDamageAndNonChaosDamageToAddAsChaosDamage1h2": {
+   "where": "map",
+   "location": "Malformation",
+   "tier": 12,
+   "rank": 2,
+   "cost": [
+    "4x Chaos Orb"
+   ]
+  },
+  "JunMaster2SpellDamageAndNonChaosDamageToAddAsChaosDamage1h3": {
+   "where": "map",
+   "location": "Malformation",
+   "tier": 12,
+   "rank": 3,
+   "cost": [
+    "4x Exalted Orb"
+   ]
+  },
+  "JunMaster2SpellDamageAndNonChaosDamageToAddAsChaosDamage2h1": {
+   "where": "map",
+   "location": "Malformation",
+   "tier": 12,
+   "rank": 1,
+   "cost": [
+    "1x Chaos Orb"
+   ]
+  },
+  "JunMaster2SpellDamageAndNonChaosDamageToAddAsChaosDamage2h2": {
+   "where": "map",
+   "location": "Malformation",
+   "tier": 12,
+   "rank": 2,
+   "cost": [
+    "4x Chaos Orb"
+   ]
+  },
+  "JunMaster2SpellDamageAndNonChaosDamageToAddAsChaosDamage2h3": {
+   "where": "map",
+   "location": "Malformation",
+   "tier": 12,
+   "rank": 3,
+   "cost": [
+    "4x Exalted Orb"
+   ]
+  },
+  "JunMaster2StatusAilmentsYouInflictDurationWhileFocused1": {
+   "where": "map",
+   "location": "Cage",
+   "tier": 3,
+   "rank": 1,
+   "cost": [
+    "4x Orb of Alteration"
+   ]
+  },
+  "JunMaster2StatusAilmentsYouInflictDurationWhileFocused2": {
+   "where": "map",
+   "location": "Cage",
+   "tier": 3,
+   "rank": 2,
+   "cost": [
+    "4x Orb of Alchemy"
+   ]
+  },
+  "JunMaster2StatusAilmentsYouInflictDurationWhileFocused3": {
+   "where": "map",
+   "location": "Cage",
+   "tier": 3,
+   "rank": 3,
+   "cost": [
+    "4x Chaos Orb"
+   ]
+  },
+  "JunMaster2StrengthAndAvoidIgnite1": {
+   "where": "map",
+   "location": "Maelstr\u00f6m of Chaos",
+   "tier": null,
+   "rank": 1,
+   "cost": [
+    "8x Armourer's Scrap"
+   ]
+  },
+  "JunMaster2StrengthAndAvoidIgnite2_": {
+   "where": "map",
+   "location": "Maelstr\u00f6m of Chaos",
+   "tier": null,
+   "rank": 2,
+   "cost": [
+    "3x Orb of Alchemy"
+   ]
+  },
+  "JunMaster2StrengthAndAvoidIgnite3_": {
+   "where": "map",
+   "location": "Maelstr\u00f6m of Chaos",
+   "tier": null,
+   "rank": 3,
+   "cost": [
+    "4x Chaos Orb"
+   ]
+  },
+  "JunMaster2StrengthAndDexterity1__": {
+   "where": "map",
+   "location": "Primordial Blocks",
+   "tier": 5,
+   "rank": 1,
+   "cost": [
+    "6x Orb of Alteration"
+   ]
+  },
+  "JunMaster2StrengthAndDexterity2": {
+   "where": "map",
+   "location": "Primordial Blocks",
+   "tier": 5,
+   "rank": 2,
+   "cost": [
+    "2x Orb of Alchemy"
+   ]
+  },
+  "JunMaster2StrengthAndDexterity3_": {
+   "where": "map",
+   "location": "Primordial Blocks",
+   "tier": 5,
+   "rank": 3,
+   "cost": [
+    "4x Chaos Orb"
+   ]
+  },
+  "JunMaster2StrengthAndIntelligence1": {
+   "where": "map",
+   "location": "Primordial Blocks",
+   "tier": 5,
+   "rank": 1,
+   "cost": [
+    "6x Orb of Alteration"
+   ]
+  },
+  "JunMaster2StrengthAndIntelligence2": {
+   "where": "map",
+   "location": "Primordial Blocks",
+   "tier": 5,
+   "rank": 2,
+   "cost": [
+    "2x Orb of Alchemy"
+   ]
+  },
+  "JunMaster2StrengthAndIntelligence3": {
+   "where": "map",
+   "location": "Primordial Blocks",
+   "tier": 5,
+   "rank": 3,
+   "cost": [
+    "4x Chaos Orb"
+   ]
+  },
+  "JunMaster2SummonTotemCastSpeed1": {
+   "where": "map",
+   "location": "Ghetto",
+   "tier": 3,
+   "rank": 1,
+   "cost": [
+    "6x Orb of Augmentation"
+   ]
+  },
+  "JunMaster2SummonTotemCastSpeed2": {
+   "where": "map",
+   "location": "Ghetto",
+   "tier": 3,
+   "rank": 2,
+   "cost": [
+    "3x Orb of Alchemy"
+   ]
+  },
+  "JunMaster2SummonTotemCastSpeed3": {
+   "where": "map",
+   "location": "Ghetto",
+   "tier": 3,
+   "rank": 3,
+   "cost": [
+    "3x Chaos Orb"
+   ]
+  },
+  "JunMaster2TrapThrowSpeed1": {
+   "where": "map",
+   "location": "Overgrown Shrine",
+   "tier": 5,
+   "rank": 1,
+   "cost": [
+    "6x Orb of Augmentation"
+   ]
+  },
+  "JunMaster2TrapThrowSpeed2_": {
+   "where": "map",
+   "location": "Overgrown Shrine",
+   "tier": 5,
+   "rank": 2,
+   "cost": [
+    "3x Orb of Alchemy"
+   ]
+  },
+  "JunMaster2TrapThrowSpeed3": {
+   "where": "map",
+   "location": "Overgrown Shrine",
+   "tier": 5,
+   "rank": 3,
+   "cost": [
+    "4x Chaos Orb"
+   ]
+  },
+  "JunMaster2TriggerSocketedSpellWhenYouFocus1": {
+   "where": "campaign",
+   "location": "The Refinery",
+   "tier": null,
+   "rank": 0,
+   "cost": [
+    "3x Chaos Orb"
+   ]
+  },
+  "JunMaster2WarcryBuffEffect1": {
+   "where": "map",
+   "location": "Fungal Hollow",
+   "tier": 2,
+   "rank": 1,
+   "cost": [
+    "2x Orb of Alchemy"
+   ]
+  },
+  "JunMaster2WarcryBuffEffect2": {
+   "where": "map",
+   "location": "Fungal Hollow",
+   "tier": 2,
+   "rank": 2,
+   "cost": [
+    "4x Chaos Orb"
+   ]
+  },
+  "JunMaster2WolfOnKill1": {
+   "where": "map",
+   "location": "Alleyways",
+   "tier": 4,
+   "rank": 0,
+   "cost": [
+    "3x Chaos Orb"
+   ]
+  },
+  "MapAnarchyExilesCrafted": {
+   "where": "start",
+   "location": "",
+   "tier": null,
+   "rank": 0,
+   "cost": [
+    "3x Chaos Orb"
+   ]
+  },
+  "MapBeyondLeagueCrafted": {
+   "where": "start",
+   "location": "",
+   "tier": null,
+   "rank": 0,
+   "cost": [
+    "4x Chaos Orb"
+   ]
+  },
+  "MapBlightLeagueCrafted_": {
+   "where": "start",
+   "location": "",
+   "tier": null,
+   "rank": 0,
+   "cost": [
+    "3x Chaos Orb"
+   ]
+  },
+  "MapBreachLeagueCrafted": {
+   "where": "start",
+   "location": "",
+   "tier": null,
+   "rank": 0,
+   "cost": [
+    "4x Chaos Orb"
+   ]
+  },
+  "MapDeliriumCrafted": {
+   "where": "start",
+   "location": "",
+   "tier": null,
+   "rank": 0,
+   "cost": [
+    "6x Chaos Orb"
+   ]
+  },
+  "MapEssenceLeagueCrafted__": {
+   "where": "start",
+   "location": "",
+   "tier": null,
+   "rank": 0,
+   "cost": [
+    "4x Chaos Orb"
+   ]
+  },
+  "MapExpeditionLeagueCrafted": {
+   "where": "start",
+   "location": "",
+   "tier": null,
+   "rank": 0,
+   "cost": [
+    "5x Chaos Orb"
+   ]
+  },
+  "MapExtraShrinesCrafted_": {
+   "where": "start",
+   "location": "",
+   "tier": null,
+   "rank": 0,
+   "cost": [
+    "4x Chaos Orb"
+   ]
+  },
+  "MapExtraStrongBoxesCrafted": {
+   "where": "start",
+   "location": "",
+   "tier": null,
+   "rank": 0,
+   "cost": [
+    "4x Chaos Orb"
+   ]
+  },
+  "MapHarbingerLeagueCrafted": {
+   "where": "start",
+   "location": "",
+   "tier": null,
+   "rank": 0,
+   "cost": [
+    "3x Chaos Orb"
+   ]
+  },
+  "MapHarvestLeagueCrafted": {
+   "where": "start",
+   "location": "",
+   "tier": null,
+   "rank": 0,
+   "cost": [
+    "6x Chaos Orb"
+   ]
+  },
+  "MapHeistLeagueCrafted": {
+   "where": "start",
+   "location": "",
+   "tier": null,
+   "rank": 0,
+   "cost": [
+    "5x Chaos Orb"
+   ]
+  },
+  "MapLegionLeagueCrafted": {
+   "where": "start",
+   "location": "",
+   "tier": null,
+   "rank": 0,
+   "cost": [
+    "3x Chaos Orb"
+   ]
+  },
+  "MapRitualLeagueCrafted__": {
+   "where": "start",
+   "location": "",
+   "tier": null,
+   "rank": 0,
+   "cost": [
+    "5x Chaos Orb"
+   ]
+  },
+  "MapTormentLeagueCrafted": {
+   "where": "start",
+   "location": "",
+   "tier": null,
+   "rank": 0,
+   "cost": [
+    "2x Chaos Orb"
+   ]
+  },
+  "MapUberScarabCraftAbyss": {
+   "where": "start",
+   "location": "",
+   "tier": null,
+   "rank": 0,
+   "cost": []
+  },
+  "MapUberScarabCraftAmbush": {
+   "where": "start",
+   "location": "",
+   "tier": null,
+   "rank": 0,
+   "cost": []
+  },
+  "MapUberScarabCraftAnarchy": {
+   "where": "start",
+   "location": "",
+   "tier": null,
+   "rank": 0,
+   "cost": []
+  },
+  "MapUberScarabCraftBeyond": {
+   "where": "start",
+   "location": "",
+   "tier": null,
+   "rank": 0,
+   "cost": []
+  },
+  "MapUberScarabCraftBlight": {
+   "where": "start",
+   "location": "",
+   "tier": null,
+   "rank": 0,
+   "cost": []
+  },
+  "MapUberScarabCraftBreach": {
+   "where": "start",
+   "location": "",
+   "tier": null,
+   "rank": 0,
+   "cost": []
+  },
+  "MapUberScarabCraftDelirium": {
+   "where": "start",
+   "location": "",
+   "tier": null,
+   "rank": 0,
+   "cost": []
+  },
+  "MapUberScarabCraftDomination": {
+   "where": "start",
+   "location": "",
+   "tier": null,
+   "rank": 0,
+   "cost": []
+  },
+  "MapUberScarabCraftEssence": {
+   "where": "start",
+   "location": "",
+   "tier": null,
+   "rank": 0,
+   "cost": []
+  },
+  "MapUberScarabCraftExpedition": {
+   "where": "start",
+   "location": "",
+   "tier": null,
+   "rank": 0,
+   "cost": []
+  },
+  "MapUberScarabCraftHarbinger": {
+   "where": "start",
+   "location": "",
+   "tier": null,
+   "rank": 0,
+   "cost": []
+  },
+  "MapUberScarabCraftHarvest": {
+   "where": "start",
+   "location": "",
+   "tier": null,
+   "rank": 0,
+   "cost": []
+  },
+  "MapUberScarabCraftHeist": {
+   "where": "start",
+   "location": "",
+   "tier": null,
+   "rank": 0,
+   "cost": []
+  },
+  "MapUberScarabCraftLegion": {
+   "where": "start",
+   "location": "",
+   "tier": null,
+   "rank": 0,
+   "cost": []
+  },
+  "MapUberScarabCraftPrefixes": {
+   "where": "start",
+   "location": "",
+   "tier": null,
+   "rank": 0,
+   "cost": []
+  },
+  "MapUberScarabCraftRitual": {
+   "where": "start",
+   "location": "",
+   "tier": null,
+   "rank": 0,
+   "cost": []
+  },
+  "MapUberScarabCraftSuffixes": {
+   "where": "start",
+   "location": "",
+   "tier": null,
+   "rank": 0,
+   "cost": []
+  },
+  "MapUberScarabCraftTorment": {
+   "where": "start",
+   "location": "",
+   "tier": null,
+   "rank": 0,
+   "cost": []
+  },
+  "MapUberScarabCraftUltimatum": {
+   "where": "start",
+   "location": "",
+   "tier": null,
+   "rank": 0,
+   "cost": []
+  },
+  "MapUltimatumLeagueCrafted": {
+   "where": "start",
+   "location": "",
+   "tier": null,
+   "rank": 0,
+   "cost": [
+    "4x Chaos Orb"
+   ]
+  },
+  "MapVillageLeagueCrafted": {
+   "where": "start",
+   "location": "",
+   "tier": null,
+   "rank": 0,
+   "cost": [
+    "5x Chaos Orb"
+   ]
+  },
+  "MonstrousTreasureCrafted": {
+   "where": "start",
+   "location": "",
+   "tier": null,
+   "rank": 0,
+   "cost": []
+  },
+  "StrDexIntMasterMapQuantity1": {
+   "where": "start",
+   "location": "",
+   "tier": null,
+   "rank": 0,
+   "cost": []
+  },
+  "StrDexIntMasterMapQuantity2": {
+   "where": "start",
+   "location": "",
+   "tier": null,
+   "rank": 0,
+   "cost": []
+  },
+  "StrDexIntMasterMapQuantity3": {
+   "where": "start",
+   "location": "",
+   "tier": null,
+   "rank": 0,
+   "cost": []
+  },
+  "StrDexIntMasterMapQuantity4_": {
+   "where": "start",
+   "location": "",
+   "tier": null,
+   "rank": 0,
+   "cost": []
+  },
+  "StrDexIntMasterMapQuantity5": {
+   "where": "start",
+   "location": "",
+   "tier": null,
+   "rank": 0,
+   "cost": []
+  },
+  "StrDexIntMasterMapQuantity6": {
+   "where": "start",
+   "location": "",
+   "tier": null,
+   "rank": 0,
+   "cost": []
+  },
+  "StrDexIntMasterMapQuantity7": {
+   "where": "start",
+   "location": "",
+   "tier": null,
+   "rank": 0,
+   "cost": []
+  },
+  "StrDexIntMasterMapQuantity8": {
+   "where": "start",
+   "location": "",
+   "tier": null,
+   "rank": 0,
+   "cost": []
+  },
+  "StrDexMasterItemGenerationCannotRollCasterAffixes": {
+   "where": "map",
+   "location": "Whakawairua Tuahu",
+   "tier": null,
+   "rank": 0,
+   "cost": [
+    "1x Divine Orb"
+   ]
+  },
+  "StrIntMasterItemGenerationCanHaveMultipleCraftedMods": {
+   "where": "map",
+   "location": "The Putrid Cloister",
+   "tier": null,
+   "rank": 0,
+   "cost": [
+    "2x Divine Orb"
+   ]
+  },
+  "StrMasterItemGenerationCannotChangePrefixes": {
+   "where": "map",
+   "location": "The Coward's Trial",
+   "tier": null,
+   "rank": 0,
+   "cost": [
+    "2x Divine Orb"
+   ]
+  }
+ },
+ "by_name": {
+  "Alternate of Same Tier (Tier 1-10)": {
+   "where": "start",
+   "location": "",
+   "tier": null,
+   "rank": 0,
+   "cost": [
+    "1x Chaos Orb"
+   ]
+  },
+  "At Least Four Non-White Sockets": {
+   "where": "campaign",
+   "location": "The Mines Level 1",
+   "tier": null,
+   "rank": 0,
+   "cost": [
+    "75x Chromatic Orb"
+   ]
+  },
+  "At Least Three Non-White Sockets": {
+   "where": "campaign",
+   "location": "The Mines Level 1",
+   "tier": null,
+   "rank": 0,
+   "cost": [
+    "20x Chromatic Orb"
+   ]
+  },
+  "At Least Two Non-White Sockets": {
+   "where": "campaign",
+   "location": "The Mines Level 1",
+   "tier": null,
+   "rank": 0,
+   "cost": [
+    "5x Chromatic Orb"
+   ]
+  },
+  "Elder (Tier 1-15)": {
+   "where": "start",
+   "location": "",
+   "tier": null,
+   "rank": 0,
+   "cost": [
+    "15x Chaos Orb"
+   ]
+  },
+  "Five Linked Sockets": {
+   "where": "map",
+   "location": "Plaza",
+   "tier": 12,
+   "rank": 0,
+   "cost": [
+    "150x Orb of Fusing"
+   ]
+  },
+  "Five Sockets": {
+   "where": "map",
+   "location": "Pit",
+   "tier": 8,
+   "rank": 0,
+   "cost": [
+    "70x Jeweller's Orb"
+   ]
+  },
+  "Fortune Favours the Brave": {
+   "where": "start",
+   "location": "",
+   "tier": null,
+   "rank": 0,
+   "cost": [
+    "3x Chaos Orb"
+   ]
+  },
+  "Four Linked Sockets": {
+   "where": "campaign",
+   "location": "Kaom's Stronghold",
+   "tier": null,
+   "rank": 0,
+   "cost": [
+    "5x Orb of Fusing"
+   ]
+  },
+  "Four Sockets": {
+   "where": "campaign",
+   "location": "The Grand Arena",
+   "tier": null,
+   "rank": 0,
+   "cost": [
+    "10x Jeweller's Orb"
+   ]
+  },
+  "Remove Crafted Mods": {
+   "where": "start",
+   "location": "",
+   "tier": null,
+   "rank": 0,
+   "cost": [
+    "1x Orb of Scouring"
+   ]
+  },
+  "Remove Enchantments": {
+   "where": "start",
+   "location": "",
+   "tier": null,
+   "rank": 0,
+   "cost": [
+    "3x Orb of Scouring"
+   ]
+  },
+  "Reroll 3 random modifiers on a Rare item": {
+   "where": "start",
+   "location": "",
+   "tier": null,
+   "rank": 0,
+   "cost": [
+    "3x Chaos Orb"
+   ]
+  },
+  "Reroll a random modifier on a Rare item": {
+   "where": "start",
+   "location": "",
+   "tier": null,
+   "rank": 0,
+   "cost": [
+    "8x Chaos Orb"
+   ]
+  },
+  "Reroll the Rarity of a non-Unique item": {
+   "where": "start",
+   "location": "",
+   "tier": null,
+   "rank": 0,
+   "cost": [
+    "1x Orb of Chance"
+   ]
+  },
+  "Shaped (Tier 1-10)": {
+   "where": "start",
+   "location": "",
+   "tier": null,
+   "rank": 0,
+   "cost": [
+    "6x Chaos Orb"
+   ]
+  },
+  "Shaped (Tier 1-5)": {
+   "where": "start",
+   "location": "",
+   "tier": null,
+   "rank": 0,
+   "cost": [
+    "2x Chaos Orb"
+   ]
+  },
+  "Six Linked Sockets": {
+   "where": "map",
+   "location": "Grotto",
+   "tier": 16,
+   "rank": 0,
+   "cost": [
+    "1500x Orb of Fusing"
+   ]
+  },
+  "Six Sockets": {
+   "where": "map",
+   "location": "Arid Lake",
+   "tier": 11,
+   "rank": 0,
+   "cost": [
+    "350x Jeweller's Orb"
+   ]
+  },
+  "Three Linked Sockets": {
+   "where": "campaign",
+   "location": "Kaom's Stronghold",
+   "tier": null,
+   "rank": 0,
+   "cost": [
+    "3x Orb of Fusing"
+   ]
+  },
+  "Three Sockets": {
+   "where": "campaign",
+   "location": "The Grand Arena",
+   "tier": null,
+   "rank": 0,
+   "cost": [
+    "3x Jeweller's Orb"
+   ]
+  },
+  "Two Linked Sockets": {
+   "where": "campaign",
+   "location": "Kaom's Stronghold",
+   "tier": null,
+   "rank": 0,
+   "cost": [
+    "1x Orb of Fusing"
+   ]
+  },
+  "Two Sockets": {
+   "where": "campaign",
+   "location": "The Grand Arena",
+   "tier": null,
+   "rank": 0,
+   "cost": [
+    "1x Jeweller's Orb"
+   ]
+  }
+ }
+}

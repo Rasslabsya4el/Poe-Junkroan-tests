@@ -1,0 +1,545 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/schemas/pob/pob.mod-corpus-bundle.schema.json",
+  "title": "PoB mod corpus family bundle",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "corpus_id",
+    "family",
+    "record_count",
+    "provenance",
+    "metadata",
+    "records"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "1.0.0"
+    },
+    "corpus_id": {
+      "type": "string",
+      "const": "pob_mod_corpus"
+    },
+    "family": {
+      "type": "string",
+      "enum": [
+        "mod_families",
+        "stat_families"
+      ]
+    },
+    "record_count": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "provenance": {
+      "$ref": "#/$defs/source_game_corpus"
+    },
+    "metadata": {
+      "$ref": "#/$defs/bundle_metadata"
+    },
+    "records": {
+      "type": "array",
+      "minItems": 1
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "family": {
+            "const": "stat_families"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "records": {
+            "items": {
+              "$ref": "#/$defs/stat_family_record"
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "family": {
+            "const": "mod_families"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "records": {
+            "items": {
+              "$ref": "#/$defs/mod_family_record"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "$defs": {
+    "sha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "source_family": {
+      "type": "string",
+      "enum": [
+        "items",
+        "passives",
+        "keystones",
+        "masteries"
+      ]
+    },
+    "surface_kind": {
+      "type": "string",
+      "enum": [
+        "item_implicit",
+        "passive_node",
+        "keystone_node",
+        "mastery_effect"
+      ]
+    },
+    "source_families": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "$ref": "#/$defs/source_family"
+      }
+    },
+    "surface_kinds": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "$ref": "#/$defs/surface_kind"
+      }
+    },
+    "query_tokens": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z]+(?:'[a-z]+)?$"
+      }
+    },
+    "operator_kind": {
+      "type": "string",
+      "enum": [
+        "added",
+        "chance",
+        "conversion",
+        "flat",
+        "gain",
+        "grant",
+        "increased",
+        "leech",
+        "less",
+        "more",
+        "other",
+        "recovery",
+        "reduced",
+        "regeneration"
+      ]
+    },
+    "value_shape": {
+      "type": "string",
+      "enum": [
+        "flat",
+        "none",
+        "percent",
+        "range",
+        "range_percent"
+      ]
+    },
+    "string_list": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "context": {
+      "type": "object"
+    },
+    "source_lane": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "lane_id",
+        "canonical_path",
+        "lock_path",
+        "repo",
+        "repo_url",
+        "pinned_ref",
+        "pinned_commit",
+        "observed_commit",
+        "tree_version"
+      ],
+      "properties": {
+        "lane_id": {
+          "type": "string",
+          "const": "pob_source_lane"
+        },
+        "canonical_path": {
+          "type": "string",
+          "const": "vendor/pob/source"
+        },
+        "lock_path": {
+          "type": "string",
+          "const": "locks/pob.source.lock.json"
+        },
+        "repo": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+$"
+        },
+        "repo_url": {
+          "type": "string",
+          "format": "uri",
+          "pattern": "^https://github\\.com/[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+\\.git$"
+        },
+        "pinned_ref": {
+          "type": "string",
+          "pattern": "^refs/tags/v.+$"
+        },
+        "pinned_commit": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{40}$"
+        },
+        "observed_commit": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{40}$"
+        },
+        "tree_version": {
+          "type": "string",
+          "pattern": "^\\d+_\\d+(?:_[a-z]+(?:_[a-z]+)?)?$"
+        }
+      }
+    },
+    "bundle_input": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "family",
+        "record_count",
+        "relative_path",
+        "sha256"
+      ],
+      "properties": {
+        "family": {
+          "$ref": "#/$defs/source_family"
+        },
+        "record_count": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "relative_path": {
+          "type": "string",
+          "pattern": "^src/poe_build_research/pob/corpus_data/[A-Za-z0-9_.-]+\\.json$"
+        },
+        "sha256": {
+          "$ref": "#/$defs/sha256"
+        }
+      }
+    },
+    "source_game_corpus": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "bundle_inputs",
+        "corpus_id",
+        "manifest_path",
+        "manifest_sha256",
+        "schema_version",
+        "source_lane"
+      ],
+      "properties": {
+        "bundle_inputs": {
+          "type": "array",
+          "minItems": 4,
+          "items": {
+            "$ref": "#/$defs/bundle_input"
+          }
+        },
+        "corpus_id": {
+          "type": "string",
+          "const": "pob_game_corpus"
+        },
+        "manifest_path": {
+          "type": "string",
+          "const": "src/poe_build_research/pob/corpus_data/manifest.json"
+        },
+        "manifest_sha256": {
+          "$ref": "#/$defs/sha256"
+        },
+        "schema_version": {
+          "type": "string",
+          "const": "1.0.0"
+        },
+        "source_lane": {
+          "$ref": "#/$defs/source_lane"
+        }
+      }
+    },
+    "bundle_metadata": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "grouping_rule",
+        "source_families"
+      ],
+      "properties": {
+        "grouping_rule": {
+          "type": "string",
+          "minLength": 1
+        },
+        "source_families": {
+          "$ref": "#/$defs/source_families"
+        }
+      }
+    },
+    "stat_family_id": {
+      "type": "string",
+      "pattern": "^stat\\.[a-z0-9-]+\\.[a-f0-9]{12}$"
+    },
+    "mod_family_id": {
+      "type": "string",
+      "pattern": "^mod\\.[a-z0-9-]+\\.[a-f0-9]{12}$"
+    },
+    "surface_member_id": {
+      "type": "string",
+      "pattern": "^surface\\.(item_implicit|passive_node|keystone_node|mastery_effect)\\.[a-f0-9]{12}$"
+    },
+    "stat_family_ids": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/stat_family_id"
+      }
+    },
+    "stat_member_record": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "context",
+        "line_index",
+        "original_surface_texts",
+        "original_text",
+        "reminder_text",
+        "source_family",
+        "source_record_id",
+        "source_record_name",
+        "surface_kind",
+        "surface_member_id",
+        "surface_stat_family_ids"
+      ],
+      "properties": {
+        "context": {
+          "$ref": "#/$defs/context"
+        },
+        "line_index": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "original_surface_texts": {
+          "$ref": "#/$defs/string_list"
+        },
+        "original_text": {
+          "type": "string",
+          "minLength": 1
+        },
+        "reminder_text": {
+          "$ref": "#/$defs/string_list"
+        },
+        "source_family": {
+          "$ref": "#/$defs/source_family"
+        },
+        "source_record_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "source_record_name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "surface_kind": {
+          "$ref": "#/$defs/surface_kind"
+        },
+        "surface_member_id": {
+          "$ref": "#/$defs/surface_member_id"
+        },
+        "surface_stat_family_ids": {
+          "$ref": "#/$defs/stat_family_ids"
+        }
+      }
+    },
+    "mod_member_record": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "context",
+        "original_texts",
+        "reminder_text",
+        "source_family",
+        "source_record_id",
+        "source_record_name",
+        "stat_family_ids",
+        "surface_kind",
+        "surface_member_id"
+      ],
+      "properties": {
+        "context": {
+          "$ref": "#/$defs/context"
+        },
+        "original_texts": {
+          "$ref": "#/$defs/string_list"
+        },
+        "reminder_text": {
+          "$ref": "#/$defs/string_list"
+        },
+        "source_family": {
+          "$ref": "#/$defs/source_family"
+        },
+        "source_record_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "source_record_name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "stat_family_ids": {
+          "$ref": "#/$defs/stat_family_ids"
+        },
+        "surface_kind": {
+          "$ref": "#/$defs/surface_kind"
+        },
+        "surface_member_id": {
+          "$ref": "#/$defs/surface_member_id"
+        }
+      }
+    },
+    "stat_family_record": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "family_id",
+        "member_count",
+        "members",
+        "normalized_text",
+        "operator_kind",
+        "original_texts",
+        "query_tokens",
+        "source_families",
+        "surface_kinds",
+        "value_shapes"
+      ],
+      "properties": {
+        "family_id": {
+          "$ref": "#/$defs/stat_family_id"
+        },
+        "member_count": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "members": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/stat_member_record"
+          }
+        },
+        "normalized_text": {
+          "type": "string",
+          "minLength": 1
+        },
+        "operator_kind": {
+          "$ref": "#/$defs/operator_kind"
+        },
+        "original_texts": {
+          "$ref": "#/$defs/string_list"
+        },
+        "query_tokens": {
+          "$ref": "#/$defs/query_tokens"
+        },
+        "source_families": {
+          "$ref": "#/$defs/source_families"
+        },
+        "surface_kinds": {
+          "$ref": "#/$defs/surface_kinds"
+        },
+        "value_shapes": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "$ref": "#/$defs/value_shape"
+          }
+        }
+      }
+    },
+    "mod_family_record": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "family_id",
+        "member_count",
+        "members",
+        "normalized_surface_texts",
+        "operator_kinds",
+        "original_surface_examples",
+        "query_tokens",
+        "source_families",
+        "stat_family_ids",
+        "surface_kinds"
+      ],
+      "properties": {
+        "family_id": {
+          "$ref": "#/$defs/mod_family_id"
+        },
+        "member_count": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "members": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/mod_member_record"
+          }
+        },
+        "normalized_surface_texts": {
+          "$ref": "#/$defs/string_list"
+        },
+        "operator_kinds": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "$ref": "#/$defs/operator_kind"
+          }
+        },
+        "original_surface_examples": {
+          "$ref": "#/$defs/string_list"
+        },
+        "query_tokens": {
+          "$ref": "#/$defs/query_tokens"
+        },
+        "source_families": {
+          "$ref": "#/$defs/source_families"
+        },
+        "stat_family_ids": {
+          "$ref": "#/$defs/stat_family_ids"
+        },
+        "surface_kinds": {
+          "$ref": "#/$defs/surface_kinds"
+        }
+      }
+    }
+  }
+}

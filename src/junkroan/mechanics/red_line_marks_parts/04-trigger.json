@@ -1,0 +1,1258 @@
+[
+ {
+  "line": "10% Chance for Traps to Trigger an additional time",
+  "surfaces": [
+   "notable"
+  ],
+  "sources": [
+   "55380"
+  ],
+  "group": "trigger",
+  "kind": "trap_extra_trigger",
+  "boss_lane": [],
+  "optimistic_lane": [
+   "10% more Trap Damage"
+  ],
+  "zero_reason": "",
+  "why": "each Trap trigger is a full hit: a 10% chance of one more trigger is x1.10 hit damage of Trap skills; PoB has no trigger count, its own Trap Damage line is the carrier",
+  "partial_part": "",
+  "stand_blind": {
+   "reason_kind": "trap",
+   "why": "no Trap skill on the stands: Trap Damage has no consumer"
+  }
+ },
+ {
+  "line": "10% chance to Blind nearby Enemies when you use an Elemental Skill",
+  "surfaces": [
+   "notable"
+  ],
+  "sources": [
+   "17255"
+  ],
+  "group": "trigger",
+  "kind": "chance_enemy_debuff",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "chance_enemy_debuff: the effect is the enemy condition Blinded, set by the config rule (uptime rule on the boss lane), not by a mod line",
+  "why": "a chance to Blind on skill use is the kind's enemy condition (conditionEnemyBlinded), a config state; no PoB mod line sets an enemy Blinded condition, and the boss lane needs the kind's uptime rule at config time",
+  "partial_part": ""
+ },
+ {
+  "line": "10% chance to Recover 10% of Mana when you use a Skill",
+  "surfaces": [
+   "mastery"
+  ],
+  "sources": [
+   "10495",
+   "13862",
+   "25186",
+   "2841",
+   "3571",
+   "44948",
+   "48007",
+   "48859",
+   "53188",
+   "63559",
+   "65395",
+   "8732"
+  ],
+  "group": "trigger",
+  "kind": "recover_on_skill_use",
+  "boss_lane": [],
+  "optimistic_lane": [
+   "Regenerate {formula}% of Mana per second"
+  ],
+  "zero_reason": "",
+  "why": "10% chance x 10% of Mana per skill use = 1% of Mana per use, so Mana regeneration of 1% x skill uses per second (Speed); PoB's own regeneration line carries it",
+  "partial_part": "Recover 10% of Mana when you use a Skill",
+  "formula": "Speed",
+  "stand_blind": {
+   "reason_kind": "mechanic-absent",
+   "why": "no stand spends Mana the line would refill"
+  }
+ },
+ {
+  "line": "10% chance when you use a Retaliation Skill for a different Retaliation Skill to become Usable",
+  "surfaces": [
+   "mastery"
+  ],
+  "sources": [
+   "26037",
+   "41744",
+   "4327",
+   "55017",
+   "58728"
+  ],
+  "group": "trigger",
+  "kind": "retaliation_usable",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "cooldown: a Retaliation Skill is a limited-use skill (Cooldown Uses), PoB has no Usable count",
+  "why": "gaining a use of a different Retaliation Skill changes the number of cooldown uses, which PoB does not model",
+  "partial_part": ""
+ },
+ {
+  "line": "15% chance to gain a Frenzy Charge when your Trap is triggered by an Enemy",
+  "surfaces": [
+   "notable"
+  ],
+  "sources": [
+   "7136"
+  ],
+  "group": "trigger",
+  "kind": "charge_on_trap_trigger",
+  "boss_lane": [],
+  "optimistic_lane": [
+   "+{formula} to Minimum Frenzy Charges"
+  ],
+  "zero_reason": "",
+  "why": "15% of trap triggers give a Frenzy Charge: expected charges in the 2.5 s ramp window = 0.15 x trap triggers per second (Speed) x RampSeconds, carried as Minimum Frenzy Charges (CalcPerform.lua:1033 raises FrenzyCharges to the minimum)",
+  "partial_part": "",
+  "formula": "0.15 * Speed * RampSeconds",
+  "vars": {
+   "RampSeconds": 2.5
+  },
+  "stand_blind": {
+   "reason_kind": "charge-without-consumer",
+   "why": "'+N to Minimum Frenzy Charges' moves none of the 7 outputs: Frenzy at max 3 on spell and minion stands, 1 on attack"
+  }
+ },
+ {
+  "line": "15% chance to gain a Power Charge when your Trap is triggered by an Enemy",
+  "surfaces": [
+   "notable"
+  ],
+  "sources": [
+   "21297"
+  ],
+  "group": "trigger",
+  "kind": "charge_on_trap_trigger",
+  "boss_lane": [],
+  "optimistic_lane": [
+   "+{formula} to Minimum Power Charges"
+  ],
+  "zero_reason": "",
+  "why": "15% of trap triggers give a Power Charge: expected charges in the 2.5 s ramp window = 0.15 x trap triggers per second (Speed) x RampSeconds, carried as Minimum Power Charges (CalcPerform.lua:1021 raises PowerCharges to the minimum)",
+  "partial_part": "",
+  "formula": "0.15 * Speed * RampSeconds",
+  "vars": {
+   "RampSeconds": 2.5
+  }
+ },
+ {
+  "line": "20% chance for used Retaliation Skills to remain Usable and not consume a Cooldown Use",
+  "surfaces": [
+   "notable"
+  ],
+  "sources": [
+   "20605"
+  ],
+  "group": "trigger",
+  "kind": "retaliation_usable",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "cooldown: a Retaliation Skill is a limited-use skill (Cooldown Uses), PoB has no Usable count",
+  "why": "a used Retaliation Skill that keeps its Cooldown Use changes the number of uses, which PoB does not model",
+  "partial_part": "for used Retaliation Skills to remain Usable and not consume a Cooldown Use"
+ },
+ {
+  "line": "25% chance to gain a Power Charge when you use a Mana Flask",
+  "surfaces": [
+   "notable"
+  ],
+  "sources": [
+   "4958"
+  ],
+  "group": "trigger",
+  "kind": "charge_on_flask_use",
+  "boss_lane": [],
+  "optimistic_lane": [
+   "+0.25 to Minimum Power Charges"
+  ],
+  "zero_reason": "",
+  "why": "one Mana Flask use in the 2.5 s ramp window at 25% = 0.25 Power Charge, carried as Minimum Power Charges",
+  "partial_part": "",
+  "stand_blind": {
+   "reason_kind": "charge-without-consumer",
+   "why": "'+0.25 to Minimum Power Charges' raises PowerCharges 0 -> 0.25 on all 3 stands and moves none of the 7 outputs"
+  }
+ },
+ {
+  "line": "25% chance when you use a Retaliation Skill for a different Retaliation Skill to become Usable",
+  "surfaces": [
+   "notable"
+  ],
+  "sources": [
+   "2599"
+  ],
+  "group": "trigger",
+  "kind": "retaliation_usable",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "cooldown: a Retaliation Skill is a limited-use skill (Cooldown Uses), PoB has no Usable count",
+  "why": "gaining a use of a different Retaliation Skill changes the number of cooldown uses, which PoB does not model",
+  "partial_part": ""
+ },
+ {
+  "line": "30% chance to Trigger a Socketed Lightning Spell on Hit, with a 0.25 second Cooldown",
+  "surfaces": [
+   "unique"
+  ],
+  "sources": [
+   "Mjolner, Gavel"
+  ],
+  "group": "trigger",
+  "kind": "trigger_socketed_spell",
+  "boss_lane": [],
+  "optimistic_lane": [
+   "Trigger a Socketed Lightning Spell on Hit, with a 0.25 second Cooldown"
+  ],
+  "zero_reason": "",
+  "why": "the leading '30% chance to' keeps the line unparsed; PoB's own line for the cooldown variant (ModParser.lua:5281) enables the Mjolner support on the socketed spell, whose trigger chance PoB reads from the support itself",
+  "partial_part": "",
+  "stand_blind": {
+   "reason_kind": "flag-only",
+   "why": "socketed trigger line has no numeric PoB consumer on the stands"
+  }
+ },
+ {
+  "line": "50% chance for used Retaliation Skills to remain Usable and not consume a Cooldown Use",
+  "surfaces": [
+   "ascendancy"
+  ],
+  "sources": [
+   "63490"
+  ],
+  "group": "trigger",
+  "kind": "retaliation_usable",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "cooldown: a Retaliation Skill is a limited-use skill (Cooldown Uses), PoB has no Usable count",
+  "why": "a used Retaliation Skill that keeps its Cooldown Use changes the number of uses, which PoB does not model",
+  "partial_part": "for used Retaliation Skills to remain Usable and not consume a Cooldown Use"
+ },
+ {
+  "line": "50% chance to Trigger a Socketed Lightning Spell on Hit, with a 0.25 second Cooldown",
+  "surfaces": [
+   "unique"
+  ],
+  "sources": [
+   "Mjolner, Gavel"
+  ],
+  "group": "trigger",
+  "kind": "trigger_socketed_spell",
+  "boss_lane": [],
+  "optimistic_lane": [
+   "Trigger a Socketed Lightning Spell on Hit, with a 0.25 second Cooldown"
+  ],
+  "zero_reason": "",
+  "why": "the leading '50% chance to' keeps the line unparsed; PoB's own line for the cooldown variant (ModParser.lua:5281) enables the Mjolner support on the socketed spell, whose trigger chance PoB reads from the support itself",
+  "partial_part": "",
+  "stand_blind": {
+   "reason_kind": "flag-only",
+   "why": "socketed trigger line has no numeric PoB consumer on the stands"
+  }
+ },
+ {
+  "line": "8% Chance for Traps to Trigger an additional time",
+  "surfaces": [
+   "mastery"
+  ],
+  "sources": [
+   "10429",
+   "17906",
+   "37616",
+   "44540"
+  ],
+  "group": "trigger",
+  "kind": "trap_extra_trigger",
+  "boss_lane": [],
+  "optimistic_lane": [
+   "8% more Trap Damage"
+  ],
+  "zero_reason": "",
+  "why": "each Trap trigger is a full hit: an 8% chance of one more trigger is x1.08 hit damage of Trap skills; PoB has no trigger count, its own Trap Damage line is the carrier",
+  "partial_part": "",
+  "stand_blind": {
+   "reason_kind": "trap",
+   "why": "no Trap skill on the stands: Trap Damage has no consumer"
+  }
+ },
+ {
+  "line": "Consumes Frenzy Charges on use",
+  "surfaces": [
+   "unique"
+  ],
+  "sources": [
+   "Rotgut, Quicksilver Flask"
+  ],
+  "group": "trigger",
+  "kind": "uptime_dependent",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "uptime_dependent: paired with the Onslaught-per-charge lines (their lane is Onslaught at full uptime); the charges lost on use are not a PoB number",
+  "why": "the flask spends Frenzy Charges to buy Onslaught duration; the consumption only feeds the paired Onslaught lines, the lost charges are a per-use cost PoB does not show",
+  "partial_part": ""
+ },
+ {
+  "line": "Damaging Retaliation Skills become Usable every sixth Hit from Enemies instead",
+  "surfaces": [
+   "keystone"
+  ],
+  "sources": [
+   "21210"
+  ],
+  "group": "trigger",
+  "kind": "retaliation_usable",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "cooldown: a Retaliation Skill is a limited-use skill (Cooldown Uses), PoB has no Usable count",
+  "why": "Usable only every sixth Hit taken: a rate of hits from enemies PoB has no input for, and the limit is a cooldown use",
+  "partial_part": ""
+ },
+ {
+  "line": "Detonate Mines is Triggered while you are moving",
+  "surfaces": [
+   "mastery"
+  ],
+  "sources": [
+   "10166",
+   "27872",
+   "53738",
+   "59926",
+   "89"
+  ],
+  "group": "trigger",
+  "kind": "trigger_extra_skill",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "no_representation: PoB has no input for triggering Detonate Mines",
+  "why": "Detonate Mines triggered while moving changes how mines are detonated, not their damage; PoB's mine speed has no input for it",
+  "partial_part": ""
+ },
+ {
+  "line": "Gain 1 Endurance Charge on use",
+  "surfaces": [
+   "unique"
+  ],
+  "sources": [
+   "Doedre's Elixir, Greater Mana Flask"
+  ],
+  "group": "trigger",
+  "kind": "ramp_window",
+  "boss_lane": [
+   "+1 to Minimum Endurance Charges"
+  ],
+  "optimistic_lane": [
+   "+1 to Minimum Endurance Charges"
+  ],
+  "zero_reason": "",
+  "why": "a flask use gives 1 Endurance Charge at once, inside the 2.5 s ramp window, carried as Minimum Endurance Charges; the boss lane takes the same line: a flask use inside the 2.5 s ramp window is on the boss lane under the ramp_window rule (boss = optimistic)",
+  "partial_part": ""
+ },
+ {
+  "line": "Gain 1 Frenzy Charge on use",
+  "surfaces": [
+   "unique"
+  ],
+  "sources": [
+   "Doedre's Elixir, Greater Mana Flask"
+  ],
+  "group": "trigger",
+  "kind": "ramp_window",
+  "boss_lane": [
+   "+1 to Minimum Frenzy Charges"
+  ],
+  "optimistic_lane": [
+   "+1 to Minimum Frenzy Charges"
+  ],
+  "zero_reason": "",
+  "why": "a flask use gives 1 Frenzy Charge at once, inside the 2.5 s ramp window, carried as Minimum Frenzy Charges; the boss lane takes the same line: a flask use inside the 2.5 s ramp window is on the boss lane under the ramp_window rule (boss = optimistic)",
+  "partial_part": ""
+ },
+ {
+  "line": "Gain 1 Gale Force when you use a Skill 10% increased Effect of Tailwind on you per Gale Force",
+  "surfaces": [
+   "ascendancy"
+  ],
+  "sources": [
+   "24848"
+  ],
+  "group": "trigger",
+  "kind": "gale_force_ramp",
+  "boss_lane": [],
+  "optimistic_lane": [
+   "Gain 1 Gale Force when you use a Skill",
+   "10% increased Effect of Tailwind on you per Gale Force"
+  ],
+  "zero_reason": "",
+  "why": "Gale Force stacks per skill use (a ramp, counted by the stack count the build's config holds); PoB parses each of the two node lines on its own, only the joined text is red",
+  "partial_part": "10% increased Effect of Tailwind on you per Gale Force",
+  "stand_blind": {
+   "reason_kind": "mechanic-absent",
+   "why": "no stand carries Tailwind, so the 10% increased Effect of Tailwind per Gale Force moves no output"
+  }
+ },
+ {
+  "line": "Gain 1 Power Charge on use",
+  "surfaces": [
+   "unique"
+  ],
+  "sources": [
+   "Doedre's Elixir, Greater Mana Flask"
+  ],
+  "group": "trigger",
+  "kind": "charge_on_flask_use",
+  "boss_lane": [],
+  "optimistic_lane": [
+   "+1 to Minimum Power Charges"
+  ],
+  "zero_reason": "",
+  "why": "a flask use gives 1 Power Charge at once, inside the 2.5 s ramp window, carried as Minimum Power Charges",
+  "partial_part": ""
+ },
+ {
+  "line": "Gain 2 Endurance Charge on use",
+  "surfaces": [
+   "unique"
+  ],
+  "sources": [
+   "Doedre's Elixir, Greater Mana Flask"
+  ],
+  "group": "trigger",
+  "kind": "ramp_window",
+  "boss_lane": [
+   "+2 to Minimum Endurance Charges"
+  ],
+  "optimistic_lane": [
+   "+2 to Minimum Endurance Charges"
+  ],
+  "zero_reason": "",
+  "why": "a flask use gives 2 Endurance Charge at once, inside the 2.5 s ramp window, carried as Minimum Endurance Charges; the boss lane takes the same line: a flask use inside the 2.5 s ramp window is on the boss lane under the ramp_window rule (boss = optimistic)",
+  "partial_part": ""
+ },
+ {
+  "line": "Gain 2 Frenzy Charge on use",
+  "surfaces": [
+   "unique"
+  ],
+  "sources": [
+   "Doedre's Elixir, Greater Mana Flask"
+  ],
+  "group": "trigger",
+  "kind": "charge_on_flask_use",
+  "boss_lane": [],
+  "optimistic_lane": [
+   "+2 to Minimum Frenzy Charges"
+  ],
+  "zero_reason": "",
+  "why": "a flask use gives 2 Frenzy Charge at once, inside the 2.5 s ramp window, carried as Minimum Frenzy Charges",
+  "partial_part": ""
+ },
+ {
+  "line": "Gain 2 Power Charge on use",
+  "surfaces": [
+   "unique"
+  ],
+  "sources": [
+   "Doedre's Elixir, Greater Mana Flask"
+  ],
+  "group": "trigger",
+  "kind": "charge_on_flask_use",
+  "boss_lane": [],
+  "optimistic_lane": [
+   "+2 to Minimum Power Charges"
+  ],
+  "zero_reason": "",
+  "why": "a flask use gives 2 Power Charge at once, inside the 2.5 s ramp window, carried as Minimum Power Charges",
+  "partial_part": ""
+ },
+ {
+  "line": "Gain Onslaught for 1 second per Frenzy Charge consumed on use",
+  "surfaces": [
+   "unique"
+  ],
+  "sources": [
+   "Rotgut, Quicksilver Flask"
+  ],
+  "group": "trigger",
+  "kind": "uptime_dependent",
+  "boss_lane": [],
+  "optimistic_lane": [
+   "Onslaught"
+  ],
+  "zero_reason": "",
+  "why": "Onslaught for 1 second per Frenzy Charge consumed is a buff for a time after an event (parked #965): the optimistic lane counts Onslaught at full uptime, the boss lane stays empty",
+  "partial_part": "for 1 second per Frenzy Charge consumed on use",
+  "stand_blind": {
+   "reason_kind": "uptime-saturated",
+   "why": "optimistic lane already has Onslaught on: the 'Onslaught' line moves nothing there on spell, attack and minion stands (boss lane stays empty by the uptime rule)"
+  }
+ },
+ {
+  "line": "Gain Onslaught for 2 seconds per Frenzy Charge consumed on use",
+  "surfaces": [
+   "unique"
+  ],
+  "sources": [
+   "Rotgut, Quicksilver Flask"
+  ],
+  "group": "trigger",
+  "kind": "uptime_dependent",
+  "boss_lane": [],
+  "optimistic_lane": [
+   "Onslaught"
+  ],
+  "zero_reason": "",
+  "why": "Onslaught for 2 seconds per Frenzy Charge consumed is a buff for a time after an event (parked #965): the optimistic lane counts Onslaught at full uptime, the boss lane stays empty",
+  "partial_part": "for 2 seconds per Frenzy Charge consumed on use",
+  "stand_blind": {
+   "reason_kind": "uptime-saturated",
+   "why": "optimistic lane already has Onslaught on: the 'Onslaught' line moves nothing there on spell, attack and minion stands (boss lane stays empty by the uptime rule)"
+  }
+ },
+ {
+  "line": "Gain Onslaught for 3 seconds per Frenzy Charge consumed on use",
+  "surfaces": [
+   "unique"
+  ],
+  "sources": [
+   "Rotgut, Quicksilver Flask"
+  ],
+  "group": "trigger",
+  "kind": "uptime_dependent",
+  "boss_lane": [],
+  "optimistic_lane": [
+   "Onslaught"
+  ],
+  "zero_reason": "",
+  "why": "Onslaught for 3 seconds per Frenzy Charge consumed is a buff for a time after an event (parked #965): the optimistic lane counts Onslaught at full uptime, the boss lane stays empty",
+  "partial_part": "for 3 seconds per Frenzy Charge consumed on use",
+  "stand_blind": {
+   "reason_kind": "uptime-saturated",
+   "why": "optimistic lane already has Onslaught on: the 'Onslaught' line moves nothing there on spell, attack and minion stands (boss lane stays empty by the uptime rule)"
+  }
+ },
+ {
+  "line": "Lose 10% of Life and Energy Shield when you use a Chaos Skill",
+  "surfaces": [
+   "mastery"
+  ],
+  "sources": [
+   "21801",
+   "23547",
+   "42361"
+  ],
+  "group": "trigger",
+  "kind": "self_cost_on_use",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "self_cost_on_use: counted by the self-cost rail (SelfCostPerSecond)",
+  "why": "exactly the kind's pattern (lose X% of Life and Energy Shield when you use a Chaos skill): a per-second cost read by the self-cost rail, not a PoB line",
+  "partial_part": "when you use a Chaos Skill"
+ },
+ {
+  "line": "Recover 10% of Mana over 1 second when you use a Guard Skill",
+  "surfaces": [
+   "mastery"
+  ],
+  "sources": [
+   "10495",
+   "13862",
+   "25186",
+   "2841",
+   "3571",
+   "44948",
+   "48007",
+   "48859",
+   "53188",
+   "63559",
+   "65395",
+   "8732"
+  ],
+  "group": "trigger",
+  "kind": "guard_skill_effect",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "guard_skill: effect of using a guard skill, 0 on every lane",
+  "why": "an effect of using a Guard Skill: guard skills count 0 on every lane (owner's standing verdict)",
+  "partial_part": ""
+ },
+ {
+  "line": "Recover 15% of Life when you use a Warcry",
+  "surfaces": [
+   "mastery"
+  ],
+  "sources": [
+   "25031",
+   "26154",
+   "35977",
+   "60992",
+   "62015",
+   "8460"
+  ],
+  "group": "trigger",
+  "kind": "recover_on_use",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "cooldown: Warcry uses are cooldown-limited and PoB has no use rate",
+  "why": "15% Life per Warcry use; a Warcry is cooldown-limited and PoB has no use count to turn it into regeneration",
+  "partial_part": ""
+ },
+ {
+  "line": "Recover 30 Life when your Trap is triggered by an Enemy",
+  "surfaces": [
+   "mastery"
+  ],
+  "sources": [
+   "10429",
+   "17906",
+   "37616",
+   "44540"
+  ],
+  "group": "trigger",
+  "kind": "recover_on_trap_trigger",
+  "boss_lane": [],
+  "optimistic_lane": [
+   "Regenerate {formula} Life per second"
+  ],
+  "zero_reason": "",
+  "why": "30 Life per trap trigger = 30 x trap triggers per second (Speed) of regeneration; PoB's own flat regeneration line carries it",
+  "partial_part": "",
+  "formula": "30 * Speed"
+ },
+ {
+  "line": "Recover 4% of Life when you use a Flask",
+  "surfaces": [
+   "mastery"
+  ],
+  "sources": [
+   "18750",
+   "20736",
+   "41016",
+   "45019",
+   "46665",
+   "46761",
+   "9393",
+   "9458"
+  ],
+  "group": "trigger",
+  "kind": "recover_on_use",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "cooldown: Flask uses are charge- and cooldown-limited and PoB has no use rate",
+  "why": "4% Life per Flask use; Flask uses are limited by charges and PoB gives no use rate for a generic Flask",
+  "partial_part": ""
+ },
+ {
+  "line": "Remove Bleeding when you use a Guard Skill",
+  "surfaces": [
+   "notable"
+  ],
+  "sources": [
+   "49416"
+  ],
+  "group": "trigger",
+  "kind": "guard_skill_effect",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "guard_skill: effect of using a guard skill, 0 on every lane",
+  "why": "an effect of using a Guard Skill: guard skills count 0 on every lane (owner's standing verdict)",
+  "partial_part": ""
+ },
+ {
+  "line": "Remove Bleeding when you use a Life Flask",
+  "surfaces": [
+   "notable"
+  ],
+  "sources": [
+   "41509"
+  ],
+  "group": "trigger",
+  "kind": "no_representation",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "no_representation: ailment or curse removal is defensive quality of life outside EHP",
+  "why": "a quality-of-life ailment or curse removal: no PoB output among the objective's numbers moves",
+  "partial_part": ""
+ },
+ {
+  "line": "Remove Chill and Freeze when you use a Flask",
+  "surfaces": [
+   "gear_affix"
+  ],
+  "sources": [
+   "RemoveFreezeOnFlaskUseInfluence1",
+   "RemoveFreezeOnFlaskUseUber1_"
+  ],
+  "group": "trigger",
+  "kind": "no_representation",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "no_representation: ailment or curse removal is defensive quality of life outside EHP",
+  "why": "a quality-of-life ailment or curse removal: no PoB output among the objective's numbers moves",
+  "partial_part": ""
+ },
+ {
+  "line": "Remove Corrupted Blood when you use a Guard Skill",
+  "surfaces": [
+   "notable"
+  ],
+  "sources": [
+   "49416"
+  ],
+  "group": "trigger",
+  "kind": "guard_skill_effect",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "guard_skill: effect of using a guard skill, 0 on every lane",
+  "why": "an effect of using a Guard Skill: guard skills count 0 on every lane (owner's standing verdict)",
+  "partial_part": ""
+ },
+ {
+  "line": "Remove Ignite and Burning when you use a Flask",
+  "surfaces": [
+   "gear_affix"
+  ],
+  "sources": [
+   "RemoveIgniteOnFlaskUseInfluence1",
+   "RemoveIgniteOnFlaskUseUber1"
+  ],
+  "group": "trigger",
+  "kind": "no_representation",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "no_representation: ailment or curse removal is defensive quality of life outside EHP",
+  "why": "a quality-of-life ailment or curse removal: no PoB output among the objective's numbers moves",
+  "partial_part": ""
+ },
+ {
+  "line": "Remove Maim and Hinder when you use a Flask",
+  "surfaces": [
+   "notable"
+  ],
+  "sources": [
+   "41420"
+  ],
+  "group": "trigger",
+  "kind": "no_representation",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "no_representation: ailment or curse removal is defensive quality of life outside EHP",
+  "why": "a quality-of-life ailment or curse removal: no PoB output among the objective's numbers moves",
+  "partial_part": ""
+ },
+ {
+  "line": "Remove Shock when you use a Flask",
+  "surfaces": [
+   "gear_affix"
+  ],
+  "sources": [
+   "RemoveShockOnFlaskUseInfluence1",
+   "RemoveShockOnFlaskUseUber1_"
+  ],
+  "group": "trigger",
+  "kind": "no_representation",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "no_representation: ailment or curse removal is defensive quality of life outside EHP",
+  "why": "a quality-of-life ailment or curse removal: no PoB output among the objective's numbers moves",
+  "partial_part": ""
+ },
+ {
+  "line": "Remove a random Elemental Ailment when you use a Mana Flask",
+  "surfaces": [
+   "mastery"
+  ],
+  "sources": [
+   "18750",
+   "20736",
+   "41016",
+   "45019",
+   "46665",
+   "46761",
+   "9393",
+   "9458"
+  ],
+  "group": "trigger",
+  "kind": "no_representation",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "no_representation: ailment or curse removal is defensive quality of life outside EHP",
+  "why": "a quality-of-life ailment or curse removal: no PoB output among the objective's numbers moves",
+  "partial_part": ""
+ },
+ {
+  "line": "Remove a random Non-Elemental Ailment when you use a Life Flask",
+  "surfaces": [
+   "mastery"
+  ],
+  "sources": [
+   "18750",
+   "20736",
+   "41016",
+   "45019",
+   "46665",
+   "46761",
+   "9393",
+   "9458"
+  ],
+  "group": "trigger",
+  "kind": "no_representation",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "no_representation: ailment or curse removal is defensive quality of life outside EHP",
+  "why": "a quality-of-life ailment or curse removal: no PoB output among the objective's numbers moves",
+  "partial_part": ""
+ },
+ {
+  "line": "Removes 20% of your maximum Energy Shield on use",
+  "surfaces": [
+   "unique"
+  ],
+  "sources": [
+   "Doedre's Elixir, Greater Mana Flask"
+  ],
+  "group": "trigger",
+  "kind": "self_cost_on_use",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "self_cost_on_use: counted by the self-cost rail as a per-use loss",
+  "why": "20% of maximum Energy Shield lost per flask use: a per-use cost, read by the self-cost rail",
+  "partial_part": "of your maximum Energy Shield on use"
+ },
+ {
+  "line": "Removes 80% of your maximum Energy Shield on use",
+  "surfaces": [
+   "unique"
+  ],
+  "sources": [
+   "Doedre's Elixir, Greater Mana Flask"
+  ],
+  "group": "trigger",
+  "kind": "self_cost_on_use",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "self_cost_on_use: counted by the self-cost rail as a per-use loss",
+  "why": "80% of maximum Energy Shield lost per flask use: a per-use cost, read by the self-cost rail",
+  "partial_part": "of your maximum Energy Shield on use"
+ },
+ {
+  "line": "Removes Bleeding when you use a Flask",
+  "surfaces": [
+   "ascendancy"
+  ],
+  "sources": [
+   "9327"
+  ],
+  "group": "trigger",
+  "kind": "no_representation",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "no_representation: ailment or curse removal is defensive quality of life outside EHP",
+  "why": "a quality-of-life ailment or curse removal: no PoB output among the objective's numbers moves",
+  "partial_part": ""
+ },
+ {
+  "line": "Removes Bleeding when you use a Warcry",
+  "surfaces": [
+   "gear_affix"
+  ],
+  "sources": [
+   "RemoveBleedingOnWarcryUber1"
+  ],
+  "group": "trigger",
+  "kind": "no_representation",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "no_representation: ailment or curse removal is defensive quality of life outside EHP",
+  "why": "a quality-of-life ailment or curse removal: no PoB output among the objective's numbers moves",
+  "partial_part": ""
+ },
+ {
+  "line": "Removes Burning on use",
+  "surfaces": [
+   "flask"
+  ],
+  "sources": [
+   "FlaskIgniteImmunityDuringEffect2",
+   "FlaskIgniteImmunityDuringEffect3",
+   "FlaskIgniteImmunityDuringEffect_"
+  ],
+  "group": "trigger",
+  "kind": "no_representation",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "no_representation: ailment or curse removal is defensive quality of life outside EHP",
+  "why": "a quality-of-life ailment or curse removal: no PoB output among the objective's numbers moves",
+  "partial_part": ""
+ },
+ {
+  "line": "Removes Curses on use",
+  "surfaces": [
+   "flask"
+  ],
+  "sources": [
+   "FlaskCurseImmunity1"
+  ],
+  "group": "trigger",
+  "kind": "no_representation",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "no_representation: ailment or curse removal is defensive quality of life outside EHP",
+  "why": "a quality-of-life ailment or curse removal: no PoB output among the objective's numbers moves",
+  "partial_part": ""
+ },
+ {
+  "line": "Removes Elemental Ailments when you use a Flask",
+  "surfaces": [
+   "ascendancy"
+  ],
+  "sources": [
+   "61805"
+  ],
+  "group": "trigger",
+  "kind": "no_representation",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "no_representation: ailment or curse removal is defensive quality of life outside EHP",
+  "why": "a quality-of-life ailment or curse removal: no PoB output among the objective's numbers moves",
+  "partial_part": ""
+ },
+ {
+  "line": "Removes all but one Life on use",
+  "surfaces": [
+   "unique"
+  ],
+  "sources": [
+   "Coruscating Elixir, Ruby Flask"
+  ],
+  "group": "trigger",
+  "kind": "self_cost_on_use",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "self_cost_on_use: Life lost on every use, read by the self-cost rail",
+  "why": "Life drops to 1 on every use: a per-use loss the self-cost rail must see, no PoB line can stand for it without collapsing the Life floor of the whole build",
+  "partial_part": ""
+ },
+ {
+  "line": "Retaliation Skills become Usable for 30% longer",
+  "surfaces": [
+   "notable"
+  ],
+  "sources": [
+   "2599"
+  ],
+  "group": "trigger",
+  "kind": "retaliation_usable",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "uptime_dependent: the worth is the Usable window's uptime (parked #965) and PoB has no Usable window to carry it",
+  "why": "the Usable window of a Retaliation Skill is a duration after an event; PoB has no Usable window, so there is no line to lift to full uptime",
+  "partial_part": ""
+ },
+ {
+  "line": "Retaliation Skills become Usable for an additional 2 seconds",
+  "surfaces": [
+   "ascendancy"
+  ],
+  "sources": [
+   "63490"
+  ],
+  "group": "trigger",
+  "kind": "retaliation_usable",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "uptime_dependent: the worth is the Usable window's uptime (parked #965) and PoB has no Usable window to carry it",
+  "why": "the Usable window of a Retaliation Skill is a duration after an event; PoB has no Usable window, so there is no line to lift to full uptime",
+  "partial_part": ""
+ },
+ {
+  "line": "Socketed Lightning Spells deal 100% increased Spell Damage if Triggered",
+  "surfaces": [
+   "unique"
+  ],
+  "sources": [
+   "Mjolner, Gavel"
+  ],
+  "group": "trigger",
+  "kind": "trigger_socketed_spell",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "no_representation: carried by PoB's Mjolner support data (ModParser.lua:5818 maps the line to nothing)",
+  "why": "PoB maps the line to an empty mod list (ModParser.lua:5818): the 100% increased Spell Damage if Triggered comes from the Mjolner support's own data, so a lane line would count it twice",
+  "partial_part": ""
+ },
+ {
+  "line": "Socketed Lightning Spells have no Cost if Triggered",
+  "surfaces": [
+   "unique"
+  ],
+  "sources": [
+   "Mjolner, Gavel"
+  ],
+  "group": "trigger",
+  "kind": "trigger_socketed_spell",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "no_representation: PoB triggered skills carry no cost already",
+  "why": "triggered skills pay no cost in PoB, so the line has nothing left to remove",
+  "partial_part": ""
+ },
+ {
+  "line": "Spells Triggered this way have 150% more Cost",
+  "surfaces": [
+   "gear_affix"
+  ],
+  "sources": [
+   "ModMaster#304"
+  ],
+  "group": "trigger",
+  "kind": "self_cost_on_use",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "self_cost_on_use: a cost paid per trigger, read by the self-cost rail",
+  "why": "the triggered spell pays 150% more Mana cost per trigger: a per-second cost (cost x triggers per second) that no PoB output among the objective's numbers shows; the self-cost rail reads such costs",
+  "partial_part": ""
+ },
+ {
+  "line": "Trigger Level 20 Surging Torrent when you cast an Elemental Spell",
+  "surfaces": [
+   "ascendancy"
+  ],
+  "sources": [
+   "17080"
+  ],
+  "group": "trigger",
+  "kind": "trigger_extra_skill",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "no_representation: the skill is not in PoB's skill data",
+  "why": "Surging Torrent is not a skill in PoB's skill data, so the trigger line has no skill to enable",
+  "partial_part": ""
+ },
+ {
+  "line": "Trigger Level 20 Tawhoa's Chosen when you Attack with a Non-Vaal Slam or Strike Skill near an Enemy",
+  "surfaces": [
+   "unique"
+  ],
+  "sources": [
+   "Tawhoa's Felling, Piledriver"
+  ],
+  "group": "trigger",
+  "kind": "trigger_extra_skill",
+  "boss_lane": [],
+  "optimistic_lane": [
+   "Trigger Level 20 Tawhoa's Chosen when you Attack with a Non-Vaal Slam or Strike Skill near an Enemy"
+  ],
+  "zero_reason": "",
+  "why": "PoB parses this line (ModParser.lua:2610) when its two item-text lines are joined; the corpus line is red only for the wrapped text, the lane is the joined line",
+  "partial_part": "",
+  "stand_blind": {
+   "reason_kind": "flag-only",
+   "why": "triggered-skill line has no numeric PoB consumer on the stands"
+  }
+ },
+ {
+  "line": "Trigger Level 30 Assassin's Mark on Attack Critical Strike against a Rare or Unique Enemy and you have no Mark",
+  "surfaces": [
+   "ascendancy"
+  ],
+  "sources": [
+   "48239"
+  ],
+  "group": "trigger",
+  "kind": "trigger_extra_skill",
+  "boss_lane": [],
+  "optimistic_lane": [
+   "Trigger Level 30 Assassin's Mark on Attack Critical Strike against a Rare or Unique Enemy and you have no Mark"
+  ],
+  "zero_reason": "",
+  "why": "PoB parses this line (ModParser.lua:3324) when its two item-text lines are joined; the corpus line is red only for the wrapped text, the lane is the joined line",
+  "partial_part": "",
+  "stand_blind": {
+   "reason_kind": "flag-only",
+   "why": "triggered-skill line has no numeric PoB consumer on the stands"
+  }
+ },
+ {
+  "line": "Trigger a Socketed Warcry Skill on losing Endurance Charges, with a 0.25 second Cooldown",
+  "surfaces": [
+   "unique"
+  ],
+  "sources": [
+   "The Eternal Apple, Chiming Spirit Shield"
+  ],
+  "group": "trigger",
+  "kind": "trigger_socketed_spell",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "no_representation: no PoB pattern or skill for this trigger",
+  "why": "ModParser has no pattern for triggering a socketed Warcry on losing Endurance Charges",
+  "partial_part": ""
+ },
+ {
+  "line": "Trigger level 1 Suspend in Time on Casting a Spell",
+  "surfaces": [
+   "ascendancy"
+  ],
+  "sources": [
+   "8081"
+  ],
+  "group": "trigger",
+  "kind": "trigger_extra_skill",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "no_representation: the skill is not in PoB's skill data",
+  "why": "Suspend in Time is not a skill in PoB's skill data, so the trigger line has no skill to enable",
+  "partial_part": ""
+ },
+ {
+  "line": "Triggers Drowning Domain when Allocated",
+  "surfaces": [
+   "ascendancy"
+  ],
+  "sources": [
+   "51685"
+  ],
+  "group": "trigger",
+  "kind": "trigger_extra_skill",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "no_representation: the skill is not in PoB's skill data",
+  "why": "Drowning Domain is not a skill in PoB's skill data, so the trigger line has no skill to enable",
+  "partial_part": ""
+ },
+ {
+  "line": "Triggers Level 20 Primal Aegis when Allocated Primal Aegis can take 75 Elemental Damage per Allocated Notable Passive Skill",
+  "surfaces": [
+   "ascendancy"
+  ],
+  "sources": [
+   "4917"
+  ],
+  "group": "trigger",
+  "kind": "trigger_extra_skill",
+  "boss_lane": [],
+  "optimistic_lane": [
+   "Primal Aegis can take 75 Elemental Damage per Allocated Notable Passive Skill"
+  ],
+  "zero_reason": "",
+  "why": "the trigger itself has no PoB pattern; the second half (ModParser.lua:2828) is parsed and sets the Elemental Aegis value per Allocated Notable, which PoB's defence calculation reads",
+  "partial_part": ""
+ },
+ {
+  "line": "When your Traps Trigger, your nearby Traps also Trigger",
+  "surfaces": [
+   "ascendancy"
+  ],
+  "sources": [
+   "38918"
+  ],
+  "group": "trigger",
+  "kind": "trap_extra_trigger",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "no_representation: PoB has no count of nearby Traps, so no PoB line can stand for the chain trigger",
+  "why": "the number of nearby Traps that also trigger is not an input PoB has (no trap count or density); nothing to carry",
+  "partial_part": ""
+ },
+ {
+  "line": "You gain Onslaught for 20 seconds on using a Vaal Skill",
+  "surfaces": [
+   "ascendancy"
+  ],
+  "sources": [
+   "16994"
+  ],
+  "group": "trigger",
+  "kind": "uptime_dependent",
+  "boss_lane": [],
+  "optimistic_lane": [
+   "Onslaught"
+  ],
+  "zero_reason": "",
+  "why": "Onslaught for 20 seconds after a Vaal Skill use is a buff for a time after an event (parked #965): the optimistic lane counts Onslaught at full uptime, the boss lane stays empty",
+  "partial_part": "for 20 seconds on using a Vaal Skill",
+  "stand_blind": {
+   "reason_kind": "uptime-saturated",
+   "why": "optimistic lane already has Onslaught on: the 'Onslaught' line moves nothing there on spell, attack and minion stands (boss lane stays empty by the uptime rule)"
+  }
+ },
+ {
+  "line": "You gain Phasing for 10 seconds on using a Vaal Skill",
+  "surfaces": [
+   "unique"
+  ],
+  "sources": [
+   "Allure, Vaal Claw"
+  ],
+  "group": "trigger",
+  "kind": "uptime_dependent",
+  "boss_lane": [],
+  "optimistic_lane": [
+   "Phasing"
+  ],
+  "zero_reason": "",
+  "why": "Phasing for 10 seconds after a Vaal Skill use is a buff for a time after an event (parked #965): the optimistic lane counts Phasing at full uptime (PoB's own Phasing condition), the boss lane stays empty",
+  "partial_part": "for 10 seconds on using a Vaal Skill",
+  "stand_blind": {
+   "reason_kind": "flag-only",
+   "why": "Phasing is a flag: no lane moves any of the 7 outputs on any stand"
+  }
+ },
+ {
+  "line": "You gain Phasing for 3 seconds on using a Vaal Skill",
+  "surfaces": [
+   "unique"
+  ],
+  "sources": [
+   "Allure, Vaal Claw"
+  ],
+  "group": "trigger",
+  "kind": "uptime_dependent",
+  "boss_lane": [],
+  "optimistic_lane": [
+   "Phasing"
+  ],
+  "zero_reason": "",
+  "why": "Phasing for 3 seconds after a Vaal Skill use is a buff for a time after an event (parked #965): the optimistic lane counts Phasing at full uptime (PoB's own Phasing condition), the boss lane stays empty",
+  "partial_part": "for 3 seconds on using a Vaal Skill",
+  "stand_blind": {
+   "reason_kind": "flag-only",
+   "why": "Phasing is a flag: no lane moves any of the 7 outputs on any stand"
+  }
+ },
+ {
+  "line": "You take 10% of your maximum Life as Chaos Damage on use",
+  "surfaces": [
+   "unique"
+  ],
+  "sources": [
+   "Doedre's Elixir, Greater Mana Flask"
+  ],
+  "group": "trigger",
+  "kind": "self_cost_on_use",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "self_cost_on_use: counted by the self-cost rail as a per-use loss",
+  "why": "10% of maximum Life taken as Chaos Damage per flask use: a per-use cost, read by the self-cost rail",
+  "partial_part": ""
+ },
+ {
+  "line": "You take 50% of your maximum Life as Chaos Damage on use",
+  "surfaces": [
+   "unique"
+  ],
+  "sources": [
+   "Doedre's Elixir, Greater Mana Flask"
+  ],
+  "group": "trigger",
+  "kind": "self_cost_on_use",
+  "boss_lane": [],
+  "optimistic_lane": [],
+  "zero_reason": "self_cost_on_use: counted by the self-cost rail as a per-use loss",
+  "why": "50% of maximum Life taken as Chaos Damage per flask use: a per-use cost, read by the self-cost rail",
+  "partial_part": ""
+ }
+]

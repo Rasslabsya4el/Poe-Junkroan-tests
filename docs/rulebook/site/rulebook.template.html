@@ -1,0 +1,325 @@
+<title>Junkroan Loadout Rulebook</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Sans+Condensed:wght@500;600&display=swap">
+<style>
+:root {
+  --ground: #eef2f0; --surface: #f9fbfa; --sunk: #e4eae7; --line: #cfd9d5; --ink: #15211d; --muted: #566963;
+  --accent: #1c7565; --accent-ink: #ffffff; --warn: #9a5b12; --warn-bg: #fbf1df; --edit: #7a3fa0; --edit-bg: #f3e9f8; --off: #7d8a86;
+  --l1: #cfe9e1; --l2: #a6d6c9; --l3: #74bba9; --l4: #4a9f8c; --l5: #2f8573; --l6: #1a6657;
+  --focus: #0b57d0;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --ground: #101614; --surface: #18211e; --sunk: #131b18; --line: #2c3a35; --ink: #e3ebe8; --muted: #94a7a0;
+    --accent: #5cc3ae; --accent-ink: #06201a; --warn: #e0a458; --warn-bg: #2b2415; --edit: #c79be3; --edit-bg: #271d30; --off: #7f8e89;
+    --l1: #1f4038; --l2: #27594d; --l3: #2f7366; --l4: #3a8f7e; --l5: #4bab97; --l6: #66c9b3;
+    --focus: #8ab4f8;
+  }
+}
+:root[data-theme="dark"] {
+  --ground: #101614; --surface: #18211e; --sunk: #131b18; --line: #2c3a35; --ink: #e3ebe8; --muted: #94a7a0;
+  --accent: #5cc3ae; --accent-ink: #06201a; --warn: #e0a458; --warn-bg: #2b2415; --edit: #c79be3; --edit-bg: #271d30; --off: #7f8e89;
+  --l1: #1f4038; --l2: #27594d; --l3: #2f7366; --l4: #3a8f7e; --l5: #4bab97; --l6: #66c9b3;
+  --focus: #8ab4f8;
+}
+* { box-sizing: border-box; }
+body { background: var(--ground); color: var(--ink); font: 15px/1.5 "IBM Plex Sans", "Segoe UI", system-ui, sans-serif; }
+.wrap { max-width: 1240px; margin-inline: auto; padding-inline: 20px; padding-block: 28px 96px; display: flex; flex-direction: column; gap: 20px; }
+h1 { font: 600 30px/1.15 "IBM Plex Sans Condensed", "IBM Plex Sans", sans-serif; margin: 0; text-wrap: balance; }
+.lede { color: var(--muted); max-width: 72ch; margin: 0; }
+.mono { font-family: "IBM Plex Mono", ui-monospace, monospace; }
+.ladder { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 6px; }
+.ladder div { border-top: 5px solid var(--c); background: var(--surface); border-inline: 1px solid var(--line); border-bottom: 1px solid var(--line); padding: 8px 10px; display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+.ladder b { font: 600 14px/1.2 "IBM Plex Sans Condensed", sans-serif; }
+.ladder span { font: 400 11px/1.3 "IBM Plex Mono", monospace; color: var(--muted); overflow-wrap: anywhere; }
+.bar { position: sticky; top: 0; z-index: 5; background: var(--ground); border-bottom: 1px solid var(--line); padding-block: 10px; display: flex; flex-wrap: wrap; gap: 10px 14px; align-items: center; }
+.bar input[type="search"] { flex: 1 1 220px; min-width: 0; font: 400 14px/1.2 "IBM Plex Sans", sans-serif; color: var(--ink); background: var(--surface); border: 1px solid var(--line); border-radius: 4px; padding: 9px 11px; }
+button, .toggle, select { font: 500 13px/1 "IBM Plex Sans", sans-serif; color: var(--ink); background: var(--surface); border: 1px solid var(--line); border-radius: 4px; padding: 9px 12px; cursor: pointer; }
+button.primary { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
+button.ghost { background: transparent; border-color: transparent; color: var(--muted); padding: 6px 8px; }
+button:focus-visible, input:focus-visible, textarea:focus-visible, select:focus-visible, .cell:focus-visible, summary:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }
+.toggle { display: inline-flex; gap: 8px; align-items: center; }
+.save { font: 400 12px/1.2 "IBM Plex Mono", monospace; color: var(--muted); margin-left: auto; }
+.save[data-state="error"] { color: var(--warn); }
+.counts { display: flex; flex-wrap: wrap; gap: 4px 16px; font: 400 12px/1.3 "IBM Plex Mono", monospace; color: var(--muted); font-variant-numeric: tabular-nums; }
+.counts strong { color: var(--ink); font-weight: 500; }
+nav.cats { display: flex; flex-wrap: wrap; gap: 6px; }
+nav.cats a { font: 500 12px/1 "IBM Plex Sans", sans-serif; color: var(--ink); text-decoration: none; border: 1px solid var(--line); border-radius: 999px; padding: 7px 11px; background: var(--surface); }
+nav.cats a span { color: var(--muted); font-family: "IBM Plex Mono", monospace; font-weight: 400; margin-left: 4px; }
+.general { background: var(--surface); border: 1px solid var(--line); border-radius: 4px; padding: 14px 16px; display: flex; flex-direction: column; gap: 8px; }
+.general label { font: 600 13px/1.2 "IBM Plex Sans Condensed", sans-serif; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+textarea { width: 100%; font: 400 14px/1.45 "IBM Plex Sans", sans-serif; color: var(--ink); background: var(--ground); border: 1px solid var(--line); border-radius: 4px; padding: 8px 10px; resize: vertical; min-height: 40px; }
+details.cat > summary { list-style: none; cursor: pointer; font: 600 13px/1.2 "IBM Plex Sans Condensed", sans-serif; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); padding-block: 0 8px; border-bottom: 2px solid var(--ink); display: flex; justify-content: space-between; gap: 12px; scroll-margin-top: 70px; }
+details.cat > summary::-webkit-details-marker { display: none; }
+details.cat > summary::before { content: "+"; font-family: "IBM Plex Mono", monospace; margin-right: 8px; }
+details.cat[open] > summary::before { content: "-"; }
+details.cat > summary span { font: 400 12px/1.2 "IBM Plex Mono", monospace; letter-spacing: 0; text-transform: none; margin-left: auto; }
+.entry { padding-block: 16px; border-bottom: 1px solid var(--line); display: flex; flex-direction: column; gap: 10px; scroll-margin-top: 70px; }
+.entry[hidden] { display: none; }
+.head { display: flex; flex-wrap: wrap; gap: 4px 12px; align-items: baseline; }
+.head h3 { font: 600 16px/1.3 "IBM Plex Sans", sans-serif; margin: 0; text-wrap: balance; }
+.head .en { font: 400 12px/1.3 "IBM Plex Mono", monospace; color: var(--muted); overflow-wrap: anywhere; }
+.chips { display: flex; flex-wrap: wrap; gap: 5px; }
+.chip { font: 500 11px/1 "IBM Plex Mono", monospace; padding: 4px 6px; border-radius: 3px; border: 1px solid var(--line); color: var(--muted); white-space: nowrap; }
+.chip[data-k="open"] { color: var(--warn); border-color: currentColor; }
+.chip[data-k="never"], .chip[data-k="backlog"] { border-style: dashed; }
+.chip[data-k="edited"] { color: var(--edit); border-color: currentColor; }
+.strip { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 6px; }
+.cell { position: relative; text-align: left; border: 1px solid var(--line); border-top: 4px solid var(--c); background: var(--surface); border-radius: 0 0 3px 3px; padding: 7px 9px 9px; display: flex; flex-direction: column; gap: 4px; min-width: 0; min-height: 64px; cursor: text; font: inherit; color: inherit; }
+.cell .lo { font: 500 10.5px/1 "IBM Plex Mono", monospace; letter-spacing: .04em; text-transform: uppercase; color: var(--muted); display: flex; justify-content: space-between; gap: 6px; }
+.cell .val { font-size: 13.5px; line-height: 1.4; overflow-wrap: anywhere; }
+.cell[data-kind="none"] { background: var(--sunk); border-top-color: var(--line); }
+.cell[data-kind="none"] .val, .cell[data-kind="inherit"] .val { color: var(--off); }
+.cell[data-kind="inherit"] { background: transparent; border-style: dashed; border-top-style: solid; }
+.cell[data-assumed="1"] .lo::after { content: "предположение"; color: var(--warn); text-transform: none; letter-spacing: 0; }
+.cell[data-edited="1"] { background: var(--edit-bg); border-color: var(--edit); }
+.cell[data-edited="1"] .lo::after { content: "ваша правка"; color: var(--edit); text-transform: none; letter-spacing: 0; }
+.cell:hover { border-color: var(--accent); }
+.cell.editing { cursor: default; grid-column: span 2; }
+.cell.editing textarea { min-height: 84px; font-size: 13.5px; background: var(--surface); }
+.cell .row { display: flex; flex-wrap: wrap; gap: 6px; }
+.cell .row button { padding: 6px 9px; font-size: 12px; }
+.wide { border: 1px solid var(--line); border-left: 4px solid var(--l3); background: var(--surface); padding: 9px 12px; font-size: 14px; border-radius: 0 3px 3px 0; }
+.wide[data-k="never"], .wide[data-k="backlog"] { border-left-color: var(--off); color: var(--muted); background: var(--sunk); }
+.explain { color: var(--ink); max-width: 96ch; margin: 0; font-size: 14px; }
+.quote { margin: 0; padding-left: 12px; border-left: 2px solid var(--line); color: var(--muted); font-size: 13.5px; max-width: 96ch; }
+.quote b { font: 500 11px/1 "IBM Plex Mono", monospace; text-transform: uppercase; letter-spacing: .04em; display: block; margin-bottom: 3px; }
+.ask { background: var(--warn-bg); border: 1px solid var(--warn); border-radius: 4px; padding: 9px 12px; font-size: 14px; max-width: 96ch; }
+.ask b { color: var(--warn); font: 600 12px/1 "IBM Plex Sans Condensed", sans-serif; letter-spacing: .06em; text-transform: uppercase; display: block; margin-bottom: 4px; }
+.meta { font: 400 11.5px/1.3 "IBM Plex Mono", monospace; color: var(--muted); display: flex; flex-wrap: wrap; gap: 4px 14px; }
+.meta a { color: var(--accent); }
+.note-row { display: flex; flex-direction: column; gap: 4px; }
+.note-row label { font: 500 11px/1 "IBM Plex Mono", monospace; text-transform: uppercase; letter-spacing: .04em; color: var(--muted); }
+.entry.narrow { padding-block: 10px; gap: 7px; }
+.entry.narrow .head h3 { font-size: 14.5px; }
+.entry.narrow .cell { min-height: 0; padding: 5px 8px 7px; }
+.entry.narrow .cell .val { font-size: 12.5px; }
+.entry.narrow details.more > summary { font: 400 12px/1.3 "IBM Plex Mono", monospace; color: var(--muted); cursor: pointer; }
+.entry.narrow details.more[open] > summary { margin-bottom: 6px; }
+.empty { color: var(--muted); padding-block: 24px; }
+@media (max-width: 860px) {
+  .ladder, .strip { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+@media (max-width: 520px) {
+  .ladder, .strip { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .cell.editing { grid-column: 1 / -1; }
+  .save { margin-left: 0; }
+}
+</style>
+
+<div class="wrap">
+  <header style="display:flex;flex-direction:column;gap:10px">
+    <h1>Лодаут‑рулбук</h1>
+    <p class="lede" id="about"></p>
+    <div class="ladder" id="ladder" aria-label="Лестница лодаутов"></div>
+  </header>
+
+  <div class="bar" role="search">
+    <input type="search" id="q" placeholder="поиск: название, правило, пояснение" autocomplete="off" aria-label="Поиск по рулбуку">
+    <label class="toggle"><input type="checkbox" id="f-ask"> с вопросами к вам</label>
+    <label class="toggle"><input type="checkbox" id="f-mine"> с моими правками и заметками</label>
+    <label class="toggle"><input type="checkbox" id="f-broad"> без уник‑джевелов</label>
+    <button id="copy" type="button">Скопировать мои правки</button>
+    <span class="save" id="save" role="status" aria-live="polite">загрузка…</span>
+  </div>
+
+  <div class="counts" id="counts"></div>
+  <nav class="cats" id="cats" aria-label="Категории"></nav>
+
+  <div class="general">
+    <label for="note-_general">Общая заметка: чего не хватает, новые записи, что переделать</label>
+    <textarea id="note-_general" rows="2" placeholder="Например: добавить запись про …; разделить … на две записи"></textarea>
+  </div>
+
+  <main id="list" style="display:flex;flex-direction:column;gap:26px"></main>
+  <p class="meta" id="foot"></p>
+</div>
+
+<script>
+const BOOK = /*__DATA__*/null;
+const LO = BOOK.loadouts;
+const state = { cells: {}, notes: {} };   // cells: "<entry>--<loadout>" -> text; notes: entry id -> text
+let db = null;
+const timers = {};
+const saveEl = document.getElementById("save");
+const $ = id => document.getElementById(id);
+
+function setSave(text, mode) { saveEl.textContent = text; saveEl.dataset.state = mode || "idle"; }
+function esc(s) { return String(s == null ? "" : s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c])); }
+function localLoad() { try { return JSON.parse(localStorage.getItem("loadout-rulebook") || "{}"); } catch (e) { return {}; } }
+function localSave() { try { localStorage.setItem("loadout-rulebook", JSON.stringify(state)); } catch (e) { /* storage may be blocked */ } }
+const STATUS = { rule: "", base: "база: одинаково везде", open: "есть вопрос", never: "не используем", backlog: "бэклог" };
+
+function effective(e) {
+  // per loadout: {kind: own|inherit|none, text, from, edited, assumed}
+  const out = []; let last = null, lastName = "";
+  for (const lo of LO) {
+    const key = e.id + "--" + lo.id;
+    const edited = Object.prototype.hasOwnProperty.call(state.cells, key) && state.cells[key] !== ((e.rules || {})[lo.id] || "");
+    const own = edited ? state.cells[key] : (e.rules || {})[lo.id];
+    if (own) { last = own; lastName = lo.name; out.push({ lo, kind: "own", text: own, edited, assumed: !edited && (e.assumed || []).includes(lo.id) }); }
+    else if (last != null) out.push({ lo, kind: "inherit", text: "как " + lastName, edited });
+    else out.push({ lo, kind: "none", text: "—", edited });
+  }
+  return out;
+}
+function hasMine(e) { return !!(state.notes[e.id] || "").trim() || LO.some(lo => { const k = e.id + "--" + lo.id; return Object.prototype.hasOwnProperty.call(state.cells, k) && state.cells[k] !== ((e.rules || {})[lo.id] || ""); }); }
+
+function cellHtml(e, c) {
+  return `<div class="cell" tabindex="0" role="button" aria-label="${esc(c.lo.name)}: ${esc(c.text)}. Нажмите, чтобы изменить" data-entry="${e.id}" data-lo="${c.lo.id}" data-kind="${c.kind}" data-edited="${c.edited ? 1 : 0}" data-assumed="${c.assumed ? 1 : 0}" style="--c:var(--l${LO.indexOf(c.lo) + 1})"><span class="lo"><span>${esc(c.lo.name)}</span></span><span class="val">${esc(c.text)}</span></div>`;
+}
+function stripHtml(e) {
+  const flat = e.status === "never" || e.status === "backlog" || (e.status === "base" && Object.keys(e.rules || {}).length <= 1 && !LO.some(lo => Object.prototype.hasOwnProperty.call(state.cells, e.id + "--" + lo.id)));
+  if (flat && e.status !== "base") return `<div class="wide" data-k="${e.status}">${e.status === "never" ? "Не используем ни в одном лодауте." : "Бэклог: по лодаутам не разложено."} <button class="ghost" type="button" data-unflat="${e.id}">разложить по лодаутам</button></div>`;
+  if (flat) return `<div class="wide" data-k="base">${esc(Object.values(e.rules || {})[0] || "")} <button class="ghost" type="button" data-unflat="${e.id}">разложить по лодаутам</button></div>`;
+  return `<div class="strip">${effective(e).map(c => cellHtml(e, c)).join("")}</div>`;
+}
+function entryHtml(e) {
+  const narrow = e.scope === "narrow";
+  const chips = [].concat(STATUS[e.status] ? [`<span class="chip" data-k="${e.status}">${STATUS[e.status]}</span>`] : [], (e.tags || []).map(t => `<span class="chip">${esc(t)}</span>`), [`<span class="chip" data-k="edited" data-mine="${e.id}" hidden>есть ваши правки</span>`]);
+  const body = `${e.explain ? `<p class="explain">${esc(e.explain)}</p>` : ""}
+    ${e.user_note ? `<blockquote class="quote"><b>ваши слова</b>${esc(e.user_note)}</blockquote>` : ""}`;
+  const see = e.see ? `<span>общее правило: <a href="#e-${e.see}">${esc((BOOK.entries.find(x => x.id === e.see) || {}).title || e.see)}</a></span>` : "";
+  return `<article class="entry${narrow ? " narrow" : ""}" id="e-${e.id}" data-id="${e.id}">
+    <div class="head"><h3>${esc(e.title)}</h3>${e.title_en ? `<span class="en">${esc(e.title_en)}</span>` : ""}<div class="chips">${chips.join("")}</div></div>
+    <div data-strip="${e.id}">${stripHtml(e)}</div>
+    ${e.question ? `<div class="ask"><b>Вопрос к вам</b>${esc(e.question)}</div>` : ""}
+    ${narrow ? (body.trim() ? `<details class="more"><summary>моды и пояснение</summary>${body}</details>` : "") : body}
+    <div class="meta">${e.source ? `<span>источник: ${esc(e.source)}</span>` : ""}${see}<span>id: ${e.id}</span></div>
+    <div class="note-row"><label for="note-${e.id}">ваша пометка</label><textarea id="note-${e.id}" rows="1" data-note="${e.id}" placeholder="пометка к записи — сохраняется сама"></textarea></div>
+  </article>`;
+}
+
+function render() {
+  $("about").textContent = BOOK.about;
+  $("ladder").innerHTML = LO.map((lo, i) => `<div style="--c:var(--l${i + 1})"><b>${esc(lo.name)}</b><span>${esc(lo.sub || "")}</span><span>уровень ${esc(lo.level || "")}</span></div>`).join("");
+  $("cats").innerHTML = BOOK.categories.map(c => `<a href="#cat-${c.id}">${esc(c.name)}<span>${BOOK.entries.filter(e => e.category === c.id).length}</span></a>`).join("");
+  $("list").innerHTML = BOOK.categories.map(c => {
+    const items = BOOK.entries.filter(e => e.category === c.id);
+    return `<details class="cat" id="cat-${c.id}" data-cat="${c.id}" ${c.id === "never" ? "" : "open"}><summary>${esc(c.name)}<span data-cat-count="${c.id}">${items.length}</span></summary>${items.map(entryHtml).join("")}</details>`;
+  }).join("") + `<p class="empty" id="empty" hidden>Ничего не найдено. Сбросьте поиск или фильтры.</p>`;
+  $("foot").innerHTML = `<span>версия ${esc(BOOK.version)} · обновлено ${esc(BOOK.updated)}</span><span>канонический файл системы: docs/rulebook/loadout-rulebook.json</span>`;
+  paintAll();
+}
+function paintEntry(e) {
+  const holder = document.querySelector(`[data-strip="${e.id}"]`);
+  if (holder && !holder.querySelector(".editing")) holder.innerHTML = stripHtml(e);
+  const mine = document.querySelector(`[data-mine="${e.id}"]`); if (mine) mine.hidden = !hasMine(e);
+  const ta = $("note-" + e.id); if (ta && document.activeElement !== ta) { ta.value = state.notes[e.id] || ""; grow(ta); }
+}
+function paintAll() {
+  BOOK.entries.forEach(paintEntry);
+  const g = $("note-_general"); if (document.activeElement !== g) { g.value = state.notes._general || ""; grow(g); }
+  filter();
+}
+function grow(ta) { ta.style.height = ""; if (!ta.value) return; ta.style.height = "auto"; ta.style.height = Math.min(600, Math.max(40, ta.scrollHeight + 2)) + "px"; }
+window.addEventListener("load", () => document.querySelectorAll("textarea[data-note], #note-_general").forEach(grow));
+
+function filter() {
+  const q = $("q").value.trim().toLowerCase(), ask = $("f-ask").checked, mine = $("f-mine").checked, broad = $("f-broad").checked;
+  let shown = 0, asks = 0, mines = 0;
+  for (const e of BOOK.entries) {
+    const text = [e.title, e.title_en, e.explain, e.user_note, e.question, (e.tags || []).join(" "), Object.values(e.rules || {}).join(" "), state.notes[e.id]].join(" ").toLowerCase();
+    const m = hasMine(e); if (m) mines++; if (e.question) asks++;
+    const ok = (!q || text.includes(q)) && (!ask || !!e.question) && (!mine || m) && (!broad || e.category !== "unique_jewels");
+    const el = $("e-" + e.id); if (el) el.hidden = !ok; if (ok) shown++;
+  }
+  document.querySelectorAll("details.cat").forEach(d => {
+    const n = d.querySelectorAll(".entry:not([hidden])").length; d.hidden = n === 0;
+    const c = d.querySelector("[data-cat-count]"); if (c) c.textContent = n;
+    if ((q || ask || mine) && n) d.open = true;
+  });
+  $("empty").hidden = shown !== 0;
+  $("counts").innerHTML = `<span>записей <strong>${BOOK.entries.length}</strong></span><span>показано <strong>${shown}</strong></span><span>с вопросами к вам <strong>${asks}</strong></span><span>с вашими правками / заметками <strong>${mines}</strong></span>`;
+}
+
+function persistCell(key) {
+  localSave();
+  const [entry, lo] = key.split("--");
+  if (!db) { setSave("сохранено в этом браузере", "idle"); return; }
+  setSave("сохраняю…", "busy");
+  const has = Object.prototype.hasOwnProperty.call(state.cells, key);
+  const op = has ? db.doc("cells/" + key).set({ entry, loadout: lo, text: state.cells[key], was: ((BOOK.entries.find(e => e.id === entry) || {}).rules || {})[lo] || "", updated: new Date().toISOString() }) : db.doc("cells/" + key).delete();
+  op.then(() => setSave("сохранено " + new Date().toLocaleTimeString().slice(0, 5), "idle")).catch(e => setSave("не сохранилось на сервере (" + (e && e.code || "ошибка") + "): осталось в браузере", "error"));
+}
+function persistNote(id) {
+  localSave();
+  if (!db) { setSave("сохранено в этом браузере", "idle"); return; }
+  setSave("сохраняю…", "busy");
+  const title = id === "_general" ? "общая заметка" : ((BOOK.entries.find(e => e.id === id) || {}).title || id);
+  db.doc("notes/" + id).set({ entry: id, title, note: state.notes[id] || "", updated: new Date().toISOString() })
+    .then(() => setSave("сохранено " + new Date().toLocaleTimeString().slice(0, 5), "idle")).catch(e => setSave("не сохранилось на сервере (" + (e && e.code || "ошибка") + "): осталось в браузере", "error"));
+}
+
+function openEditor(cell) {
+  if (cell.classList.contains("editing")) return;
+  const entry = BOOK.entries.find(e => e.id === cell.dataset.entry), lo = cell.dataset.lo, key = entry.id + "--" + lo;
+  const orig = (entry.rules || {})[lo] || "";
+  const cur = Object.prototype.hasOwnProperty.call(state.cells, key) ? state.cells[key] : orig;
+  cell.classList.add("editing"); cell.removeAttribute("role");
+  const name = LO.find(l => l.id === lo).name;
+  cell.innerHTML = `<span class="lo"><span>${esc(name)}</span></span>
+    <textarea id="edit-${key}" aria-label="Правило: ${esc(entry.title)}, ${esc(name)}" placeholder="пусто = наследует предыдущий лодаут">${esc(cur)}</textarea>
+    <div class="row"><button class="primary" type="button" data-act="save">Сохранить</button><button type="button" data-act="cancel">Отмена</button>${cur !== orig ? `<button type="button" data-act="reset">Вернуть исходное</button>` : ""}</div>
+    ${orig ? `<span class="lo"><span>в системе сейчас: ${esc(orig)}</span></span>` : ""}`;
+  const ta = cell.querySelector("textarea"); ta.focus(); ta.setSelectionRange(ta.value.length, ta.value.length);
+  const close = () => { cell.classList.remove("editing"); paintEntry(entry); filter(); };
+  cell.querySelector(".row").addEventListener("click", ev => {
+    const act = ev.target.dataset.act; if (!act) return; ev.stopPropagation();
+    if (act === "save") { const v = ta.value.trim(); if (v === orig) delete state.cells[key]; else state.cells[key] = v; persistCell(key); }
+    if (act === "reset") { delete state.cells[key]; persistCell(key); }
+    close();
+  });
+  ta.addEventListener("keydown", ev => { if (ev.key === "Escape") close(); if (ev.key === "Enter" && (ev.ctrlKey || ev.metaKey)) cell.querySelector('[data-act="save"]').click(); });
+}
+
+document.addEventListener("click", ev => {
+  const un = ev.target.closest("[data-unflat]");
+  if (un) { const e = BOOK.entries.find(x => x.id === un.dataset.unflat); const holder = document.querySelector(`[data-strip="${e.id}"]`); holder.innerHTML = `<div class="strip">${effective(e).map(c => cellHtml(e, c)).join("")}</div>`; return; }
+  const cell = ev.target.closest(".cell"); if (cell && !cell.classList.contains("editing")) openEditor(cell);
+});
+document.addEventListener("keydown", ev => { if ((ev.key === "Enter" || ev.key === " ") && ev.target.classList && ev.target.classList.contains("cell") && !ev.target.classList.contains("editing")) { ev.preventDefault(); openEditor(ev.target); } });
+document.addEventListener("input", ev => {
+  const t = ev.target;
+  if (t.id === "q") { filter(); return; }
+  const id = t.dataset && t.dataset.note ? t.dataset.note : (t.id === "note-_general" ? "_general" : null);
+  if (!id) return;
+  state.notes[id] = t.value; grow(t);
+  clearTimeout(timers[id]); timers[id] = setTimeout(() => { persistNote(id); const e = BOOK.entries.find(x => x.id === id); if (e) { const mine = document.querySelector(`[data-mine="${e.id}"]`); if (mine) mine.hidden = !hasMine(e); } }, 700);
+});
+["f-ask", "f-mine", "f-broad"].forEach(id => $(id).addEventListener("change", filter));
+$("copy").addEventListener("click", async () => {
+  const lines = ["Loadout rulebook: мои правки и заметки"];
+  for (const e of BOOK.entries) {
+    const parts = [];
+    for (const lo of LO) { const k = e.id + "--" + lo.id; if (Object.prototype.hasOwnProperty.call(state.cells, k) && state.cells[k] !== ((e.rules || {})[lo.id] || "")) parts.push(`  ${lo.name}: ${state.cells[k] || "(пусто)"}`); }
+    if ((state.notes[e.id] || "").trim()) parts.push("  пометка: " + state.notes[e.id].trim());
+    if (parts.length) lines.push(`${e.title} [${e.id}]`, ...parts);
+  }
+  if ((state.notes._general || "").trim()) lines.push("Общая заметка: " + state.notes._general.trim());
+  const text = lines.join("\n");
+  try { await navigator.clipboard.writeText(text); setSave("скопировано — вставьте в чат", "idle"); }
+  catch (e) { const ta = document.createElement("textarea"); ta.value = text; ta.style.cssText = "height:240px;margin-top:12px"; document.querySelector(".wrap").appendChild(ta); ta.select(); setSave("выделите текст и скопируйте", "idle"); }
+});
+
+function start(carried) {
+  const saved = Object.assign({ cells: {}, notes: {} }, localLoad(), (carried && carried.state) || {});
+  Object.assign(state.cells, saved.cells || {}); Object.assign(state.notes, saved.notes || {});
+  render();
+  const c = window.claude;
+  if (!c || !c.use) { setSave("сохранение только в этом браузере", "idle"); return; }
+  c.use("db").then(handle => {
+    if (!handle) { setSave("сохранение только в этом браузере", "idle"); return; }
+    db = handle;
+    return Promise.all([db.collection("cells").get(), db.collection("notes").get()]).then(([cells, notes]) => {
+      const serverCells = {}, serverNotes = {};
+      cells.docs.forEach(d => { const v = d.data() || {}; serverCells[d.id] = v.text || ""; });
+      notes.docs.forEach(d => { const v = d.data() || {}; serverNotes[d.id] = v.note || ""; });
+      state.cells = serverCells; state.notes = serverNotes; localSave();
+      paintAll(); setSave("сохранение включено", "idle");
+    });
+  }).catch(e => setSave("сервер недоступен (" + (e && e.code || "ошибка") + "): сохраняю в браузере", "error"));
+}
+const hot = window.claude && window.claude.hot;
+if (hot && hot.snapshot) hot.snapshot(() => ({ state }));
+if (hot && hot.ready) hot.ready(start); else start((hot && hot.data) || {});
+</script>

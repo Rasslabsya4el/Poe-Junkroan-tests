@@ -1,0 +1,2 @@
+{"kind": "orch_end", "session": "a1b2c3d4-0000-0000-0000-000000000001", "issue": 796, "outcome": "closed"}
+{"kind": "orch_session_end", "session": "a1b2c3d4-0000-0000-0000-000000000001"}

@@ -1,0 +1,5 @@
+{
+  "_comment": "fixture prices, not real -- every kind at $1/million so a cost is just tokens/1e6",
+  "claude-sonnet-5": {"input": 1.0, "cache_write": 1.0, "cache_read": 1.0, "output": 1.0},
+  "claude-opus-5-5": {"input": 1.0, "cache_write": 1.0, "cache_read": 1.0, "output": 1.0}
+}
