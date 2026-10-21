@@ -44,7 +44,7 @@ jobs:
   test:
     needs: plan
     runs-on: ubuntu-latest
-    timeout-minutes: 90
+    timeout-minutes: 14
     strategy:
       fail-fast: false
       matrix:
@@ -56,7 +56,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - run: pip install -e ".[dev,research]" psutil
+      - run: pip install -e ".[dev,research]" psutil pytest-timeout
       - name: git identity
         run: |
           git config --global user.name ci
@@ -74,13 +74,13 @@ jobs:
       - name: pytest part
         env:
           TEST_SHARD: ${{ matrix.part }}/${{ inputs.parts }}
-        run: python -m pytest tests -q -n auto -p tools.agentops.test_shard_plugin -m "not slow" -p no:faulthandler || { rc=$?; [ "$rc" -eq 5 ] && [ -n "${TEST_IDS_FILE:-}" ]; }  # exit 5 = nothing collected: a selection with no test for this job is a pass
+        run: python -m pytest tests -v -n auto --timeout=240 --timeout-method=thread -p tools.agentops.test_shard_plugin -m "not slow" -p no:faulthandler || { rc=$?; [ "$rc" -eq 5 ] && [ -n "${TEST_IDS_FILE:-}" ]; }  # exit 5 = nothing collected: a selection with no test for this job is a pass
 
   windows:
     if: ${{ inputs.windows == 'true' }}
     name: test (windows)
     runs-on: windows-latest
-    timeout-minutes: 90
+    timeout-minutes: 14
     steps:
       - uses: actions/checkout@v4
         with:
@@ -88,7 +88,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - run: pip install -e ".[dev,research]" psutil
+      - run: pip install -e ".[dev,research]" psutil pytest-timeout
       - name: git identity
         shell: bash
         run: |
